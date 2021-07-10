@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/schema",
   "cli": "nx",
-  "$id": "NxReactApp",
-  "title": "Create a React Application for Nx",
+  "$id": "app",
+  "title": "Qwilt - React Application for Nx",
   "examples": [
     {
       "command": "g app myapp --directory=myorg",
@@ -96,18 +96,6 @@
       "description": "Skip updating workspace.json with default options based on values provided to this app (e.g. babel, style).",
       "type": "boolean",
       "default": false
-    },
-    "unitTestRunner": {
-      "type": "string",
-      "enum": ["jest", "none"],
-      "description": "Test runner to use for unit tests.",
-      "default": "jest"
-    },
-    "e2eTestRunner": {
-      "type": "string",
-      "enum": ["cypress", "none"],
-      "description": "Test runner to use for end to end (e2e) tests.",
-      "default": "cypress"
     },
     "tags": {
       "type": "string",

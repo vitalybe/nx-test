@@ -1,5 +1,4 @@
 import { NormalizedSchema, Schema } from '../schema';
-import { assertValidStyle } from '../../../utils/assertion';
 import { names, Tree, normalizePath, getWorkspaceLayout } from '@nrwl/devkit';
 
 export function normalizeOptions(
@@ -22,12 +21,6 @@ export function normalizeOptions(
 
   const fileName = options.pascalCaseFiles ? 'App' : 'app';
 
-  const styledModule = /^(css|scss|less|styl|none)$/.test(options.style)
-    ? null
-    : options.style;
-
-  assertValidStyle(options.style);
-
   options.routing = options.routing ?? false;
   options.strict = options.strict ?? true;
   options.classComponent = options.classComponent ?? false;
@@ -42,7 +35,6 @@ export function normalizeOptions(
     e2eProjectName,
     parsedTags,
     fileName,
-    styledModule,
-    hasStyles: options.style !== 'none',
+    hasStyles: true,
   };
 }

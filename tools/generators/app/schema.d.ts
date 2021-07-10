@@ -1,9 +1,7 @@
 import { Linter } from '@nrwl/linter';
-import { SupportedStyles } from '../../../typings/style';
 
 export interface Schema {
   name: string;
-  style: SupportedStyles;
   skipFormat: boolean;
   directory?: string;
   tags?: string;
@@ -28,6 +26,5 @@ export interface NormalizedSchema extends Schema {
   e2eProjectName: string;
   parsedTags: string[];
   fileName: string;
-  styledModule: null | SupportedStyles;
   hasStyles: boolean;
 }

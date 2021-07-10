@@ -59,15 +59,7 @@ function createBuildTarget(options: NormalizedSchema): TargetConfiguration {
         joinPathFragments(options.appProjectRoot, 'src/favicon.ico'),
         joinPathFragments(options.appProjectRoot, 'src/assets'),
       ],
-      styles:
-        options.styledModule || !options.hasStyles
-          ? []
-          : [
-              joinPathFragments(
-                options.appProjectRoot,
-                `src/styles.${options.style}`
-              ),
-            ],
+      styles: [],
       scripts: [],
       webpackConfig: '@nrwl/react/plugins/webpack',
     },
