@@ -23,7 +23,7 @@ interface MySchema {
   name: string;
 }
 
-export default async function (host: Tree, options: MySchema) {
+async function generateApp(host: Tree, options: MySchema) {
   const schema: Schema = {
     name: options.name,
     style: 'styled-components',
@@ -35,12 +35,14 @@ export default async function (host: Tree, options: MySchema) {
     linter: Linter.EsLint,
     routing: false,
   };
-
   await applicationGenerator(host, schema);
+}
 
+function addSrcTemplateFiles(host: Tree, options: MySchema) {
   const appDirectory = names(options.name).fileName;
   const { appsDir } = getWorkspaceLayout(host);
   const appProjectRoot = normalizePath(`${appsDir}/${appDirectory}`);
+
   host.delete(joinPathFragments(appProjectRoot, 'src', 'app'));
 
   generateFiles(
@@ -52,6 +54,10 @@ export default async function (host: Tree, options: MySchema) {
     }
   );
 
+  return appProjectRoot;
+}
+
+function addE2e(host: Tree, options: MySchema, appProjectRoot: string) {
   const e2eProjectRoot = joinPathFragments(appProjectRoot, 'e2e');
   generateFiles(
     host,
@@ -67,6 +73,7 @@ export default async function (host: Tree, options: MySchema) {
     }
   );
 
+  // app tsconfig shouldn't compile cypress folders
   updateJson(
     host,
     joinPathFragments(appProjectRoot, 'tsconfig.app.json'),
@@ -76,6 +83,14 @@ export default async function (host: Tree, options: MySchema) {
     }
   );
 
+  let jestConfigPath = joinPathFragments(appProjectRoot, 'jest.config.js');
+  const contents = host.read(jestConfigPath).toString('utf8');
+  host.write(
+    jestConfigPath,
+    contents.replace(/(displayName.+$)/gm, `$1\n  roots: ["src"],`)
+  );
+
+  // Add e2e executor
   const currentWorkspaceJson = getProjects(host);
   const projectConfig = currentWorkspaceJson.get(options.name);
   projectConfig.targets['e2e'] = {
@@ -92,6 +107,15 @@ export default async function (host: Tree, options: MySchema) {
     },
   };
   updateProjectConfiguration(host, options.name, projectConfig);
+}
+
+export default async function (host: Tree, options: MySchema) {
+  // Nx app generator (without cypress)
+  await generateApp(host, options);
+
+  // Add src files
+  const appProjectRoot = addSrcTemplateFiles(host, options);
+  addE2e(host, options, appProjectRoot);
 
   await formatFiles(host);
   return () => {
