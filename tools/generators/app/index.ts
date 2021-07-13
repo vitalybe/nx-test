@@ -9,6 +9,7 @@ import {
   normalizePath,
   offsetFromRoot,
   Tree,
+  updateJson,
   updateProjectConfiguration,
 } from '@nrwl/devkit';
 import { applicationGenerator } from '@nrwl/react';
@@ -42,8 +43,6 @@ export default async function (host: Tree, options: MySchema) {
   const appProjectRoot = normalizePath(`${appsDir}/${appDirectory}`);
   host.delete(joinPathFragments(appProjectRoot, 'src', 'app'));
 
-  const e2eProjectRoot = joinPathFragments(appProjectRoot, 'e2e');
-
   generateFiles(
     host,
     joinPathFragments(__dirname, './files/src'),
@@ -53,6 +52,7 @@ export default async function (host: Tree, options: MySchema) {
     }
   );
 
+  const e2eProjectRoot = joinPathFragments(appProjectRoot, 'e2e');
   generateFiles(
     host,
     joinPathFragments(__dirname, './files/e2e'),
@@ -64,6 +64,15 @@ export default async function (host: Tree, options: MySchema) {
       project: options.name,
       projectRoot: e2eProjectRoot,
       offsetFromRoot: offsetFromRoot(e2eProjectRoot),
+    }
+  );
+
+  updateJson(
+    host,
+    joinPathFragments(appProjectRoot, 'tsconfig.app.json'),
+    (json) => {
+      json['exclude'].push('e2e/**/*');
+      return json;
     }
   );
 
