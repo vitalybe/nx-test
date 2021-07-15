@@ -1,6 +1,8 @@
 {
+  "$schema": "http://json-schema.org/schema",
   "cli": "nx",
-  "id": "app",
+  "$id": "app",
+  "title": "Qwilt UI project",
   "type": "object",
   "properties": {
     "name": {
