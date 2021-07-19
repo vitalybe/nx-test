@@ -2375,10 +2375,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-stable-stringify/-/json-stable-stringify-1.0.33.tgz#099b0712d824d15e2660c20e1c16e6a8381f308c"
   integrity sha512-qEWiQff6q2tA5gcJGWwzplQcXdJtm+0oy6IHGHzlOf3eFAkGE/FIPXZK9ofWgNSHVp8AFFI33PJJshS0ei3Gvw==
 
-"@types/jsoneditor@^5.28.1":
-  version "5.28.2"
-  resolved "https://registry.yarnpkg.com/@types/jsoneditor/-/jsoneditor-5.28.2.tgz#a786981fc4c125a1368e2c32b5d225e96350ddc2"
-  integrity sha512-vkX7YEDpOWnv95K43uB5KStOJb6k076uvhwgQHlrGvnqHfey283/CuJ+PTXGawSDPMHlTjQVpzJaTk3HKY/+MA==
+"@types/jsoneditor@5.28.1":
+  version "5.28.1"
+  resolved "https://registry.yarnpkg.com/@types/jsoneditor/-/jsoneditor-5.28.1.tgz#95183e26191e28efea541711db662368981a829c"
+  integrity sha512-WgN/fKOKjytFAzA4bHR1/7XbGnS29ILEQy0MnHJ4wcmXiq4ZXpHPUgGBcCaR4hoKSfilHeYMGKb01UOTUeaHEg==
   dependencies:
     "@types/ace" "*"
     ajv "*"
@@ -8646,10 +8646,10 @@ jsonc-parser@3.0.0:
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.0.0.tgz#abdd785701c7e7eaca8a9ec8cf070ca51a745a22"
   integrity sha512-fQzRfAbIBnR0IQvftw9FJveWiHp72Fg20giDrHz6TdfB12UH/uue0D3hm57UB5KgAVuniLMCaS8P1IMj9NR7cA==
 
-jsoneditor@^7.2.1:
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/jsoneditor/-/jsoneditor-7.5.0.tgz#5ddea26c1256ec348dff0a88e75317fcd7f6a618"
-  integrity sha512-t6bgAy1+G5kUc7T6G4kfAX+ue8wOgHr7eDgVo2cjy5yhruXTNB0HoWCHfTqngyL5qYeQ48BPkAWYOJzxqy+FGA==
+jsoneditor@7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/jsoneditor/-/jsoneditor-7.2.1.tgz#a4510f71cc49b1d6c204fbbd73fbea57339fc7c9"
+  integrity sha512-CyijVJj5wgq/X+whWKCCWGt+Rx0hrL/SPoRYI4DkbL/I27oNEfmOAt+b23Gq4tmkmwtxWbt4A38svnswheIYdg==
   dependencies:
     ace-builds "^1.4.7"
     ajv "^6.10.2"
@@ -13785,10 +13785,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@~4.2.4:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
-  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
+typescript@3.8.3:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
+  integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
 
 ua-parser-js@^0.7.18:
   version "0.7.28"

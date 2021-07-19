@@ -16,8 +16,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "highcharts": ["./libs/common/src/@qwiltTypes/highcharts"]
-    }
+      "highcharts": ["./libs/common/src/@qwiltTypes/highcharts"],
+      "ajv": ["./libs/common/src/@qwiltTypes/ajv"]
+    },
+    "noImplicitReturns": false
   },
   "exclude": ["node_modules", "tmp"]
 }
