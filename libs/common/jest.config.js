@@ -1,9 +1,11 @@
 module.exports = {
-  displayName: 'common',
-  preset: '../../jest.preset.js',
+  displayName: "common",
+  preset: "../../jest.preset.js",
+  setupFiles: ["<rootDir>/../../config/jest/setupFile.js"],
   transform: {
-    '^.+\\.[tj]sx?$': 'babel-jest',
+    "^.+\\.[tj]sx?$": "ts-jest",
+    "^.+\\.(css|less|svg|png)$": "jest-transform-stub",
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/common',
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
+  coverageDirectory: "../../coverage/libs/common",
 };

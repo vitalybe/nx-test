@@ -1,3 +1,11 @@
-const nxPreset = require('@nrwl/jest/preset');
+const nxPreset = require("@nrwl/jest/preset");
 
-module.exports = { ...nxPreset };
+module.exports = {
+  ...nxPreset,
+  globals: {
+    "ts-jest": {
+      compiler: "ttypescript",
+      isolatedModules: true,
+    },
+  },
+};
