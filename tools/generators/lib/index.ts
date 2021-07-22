@@ -29,7 +29,7 @@ export default async function (host: Tree, options: MySchema) {
     linter: Linter.EsLint,
     routing: false,
     pascalCaseFiles: true,
-    skipTsConfig: true,
+    skipTsConfig: false,
   };
 
   await libraryGenerator(host, schema);
@@ -49,7 +49,7 @@ export default async function (host: Tree, options: MySchema) {
     projectConfig.targets["tsc"] = {
       executor: "@nrwl/workspace:run-commands",
       options: {
-        command: `yarn run tsc -- -b ${tsConfigPath} --incremental`,
+        command: `yarn run tsc -b ${tsConfigPath} --incremental`,
       },
     };
   });

@@ -16,8 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "highcharts": ["./@qwiltTypes/highcharts"],
-      "ajv": ["./@qwiltTypes/ajv"]
+      "@qwilt/common": ["libs/common/src/index.ts"],
+      "ajv": ["./@qwiltTypes/ajv"],
+      "highcharts": ["./@qwiltTypes/highcharts"]
     },
     "noImplicitReturns": false
   },
