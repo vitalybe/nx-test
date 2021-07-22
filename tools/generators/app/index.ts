@@ -53,7 +53,7 @@ async function generateApp(host: Tree, options: MySchema) {
     projectConfig.targets["tsc"] = {
       executor: "@nrwl/workspace:run-commands",
       options: {
-        command: `yarn run tsc -- -b ${tsConfigPath} --incremental`,
+        command: `yarn run tsc -b ${tsConfigPath} --incremental`,
       },
     };
   });

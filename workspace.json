@@ -23,7 +23,7 @@
         "tsc": {
           "executor": "@nrwl/workspace:run-commands",
           "options": {
-            "command": "yarn run tsc -- -b libs/common/tsconfig.lib.json --incremental"
+            "command": "yarn run tsc -b libs/common/tsconfig.lib.json --incremental"
           }
         }
       }
@@ -102,7 +102,7 @@
         "tsc": {
           "executor": "@nrwl/workspace:run-commands",
           "options": {
-            "command": "yarn run tsc -- -b apps/reports/tsconfig.app.json --incremental"
+            "command": "yarn run tsc -b apps/reports/tsconfig.app.json --incremental"
           }
         },
         "e2e": {
