@@ -1,0 +1,2727 @@
+{
+  "context": {
+    "CDN": {
+      "https://cdn-i-cdns.rnd.cqloud.com/api/1/cdns/74fc1710-7bee-4291-872d-82883cfaa016": {
+        "_links": {
+          "self": {
+            "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016"
+          }
+        },
+        "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+        "description": "amiry cdn",
+        "dnsCdnSubDomain": "",
+        "dnsRootHostedZone": "cqloud.com",
+        "dnsSubDomain": "http.amiry-cdn.cqloud.com",
+        "httpCdnSubDomain": "",
+        "httpRootHostedZone": "cqloud.com",
+        "httpSubDomain": "http.amiry-cdn.cqloud.com",
+        "name": "amiry-cdn",
+        "operationalDomain": "oper.cqloud.com"
+      }
+    },
+    "DELEGATION": {
+      "https://cdn-i-static-dns.rnd.cqloud.com/api/1/records?cdnId=74fc1710-7bee-4291-872d-82883cfaa016": {
+        "staticDnsResponseList": [
+          {
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryServiceId": "5fa1b7e0d6dcf000019b7ce1",
+            "dnsRecordId": "e847b196-6bf5-4156-b2db-241162104353",
+            "name": "amiry-test-1",
+            "orgId": "devorg",
+            "ttl": 1,
+            "type": "TXT_RECORD",
+            "value": "1"
+          },
+          {
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryServiceId": "5fa1b7e0d6dcf000019b7ce1",
+            "dnsRecordId": "efeca482-43df-4686-955f-dad74cd41ea3",
+            "name": "amiry-2",
+            "orgId": "devorg",
+            "ttl": 300,
+            "type": "CNAME_RECORD",
+            "value": "bar"
+          },
+          {
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryServiceId": "5fa1b7e0d6dcf000019b7ce1",
+            "dnsRecordId": "f57a086a-fd78-4bd1-83bf-ce0f2242a235",
+            "name": "amiry-1",
+            "orgId": "devorg",
+            "ttl": 300,
+            "type": "CNAME_RECORD",
+            "value": "foo"
+          }
+        ]
+      }
+    },
+    "DS-ASSIGNMENTS/3": {
+      "https://cdn-i-ds-assignments.rnd.cqloud.com/api/3/ds-assignments/rules/delivery-unit?cdnId=74fc1710-7bee-4291-872d-82883cfaa016&networkId=3": {
+        "deliveryUnit": []
+      },
+      "https://cdn-i-ds-assignments.rnd.cqloud.com/api/3/ds-assignments/rules/network?cdnId=74fc1710-7bee-4291-872d-82883cfaa016&networkId=3": {
+        "network": [
+          {
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryService": {
+              "id": "5fa1b7e0d6dcf000019b7ce1",
+              "label": "stable"
+            },
+            "enabled": true,
+            "networkId": 3,
+            "ruleId": "d9c7a7cd-8a68-4690-8897-4c58b06e4826"
+          }
+        ]
+      }
+    },
+    "DS/5fa1b7e0d6dcf000019b7ce1": {
+      "https://cdn-i-delivery-services.rnd.cqloud.com/api/4/delivery-services/5fa1b7e0d6dcf000019b7ce1": {
+        "apiVersion": "4.0.0",
+        "description": "opencachehub",
+        "dsId": "5fa1b7e0d6dcf000019b7ce1",
+        "dsRevisionDescriptions": [
+          {
+            "creationTimeFormatted": "2020-11-04T13:30:18.708Z",
+            "creationTimeMilli": 1604496618708,
+            "dsRevisionId": "5fa2acead6dcf000019b7ce5",
+            "labels": [],
+            "username": "nirs@qwilt.com"
+          },
+          {
+            "creationTimeFormatted": "2020-11-04T13:20:48.269Z",
+            "creationTimeMilli": 1604496048269,
+            "dsRevisionId": "5fa2aab0d6dcf000019b7ce4",
+            "labels": [
+              "amiry-test-2"
+            ],
+            "username": "nirs@qwilt.com"
+          },
+          {
+            "creationTimeFormatted": "2020-11-03T20:06:39.964Z",
+            "creationTimeMilli": 1604433999964,
+            "dsRevisionId": "5fa1b84fd6dcf000019b7ce3",
+            "labels": [
+              "amiry-test-1"
+            ],
+            "username": "ofirh@qwilt.com"
+          },
+          {
+            "creationTimeFormatted": "2020-11-03T20:06:01.562Z",
+            "creationTimeMilli": 1604433961562,
+            "dsRevisionId": "5fa1b829d6dcf000019b7ce2",
+            "labels": [
+              "stable"
+            ],
+            "username": "ofirh@qwilt.com"
+          }
+        ],
+        "isActive": true,
+        "name": "opencachehub",
+        "ownerOrgId": "devorg",
+        "userData": {}
+      },
+      "https://cdn-i-delivery-services.rnd.cqloud.com/api/4/delivery-services/5fa1b7e0d6dcf000019b7ce1/label-mapping": {
+        "amiry-test-1": "5fa1b84fd6dcf000019b7ce3",
+        "amiry-test-2": "5fa2aab0d6dcf000019b7ce4",
+        "stable": "5fa1b829d6dcf000019b7ce2"
+      },
+      "https://cdn-i-delivery-services.rnd.cqloud.com/api/4/delivery-services/5fa1b7e0d6dcf000019b7ce1/revisions/5fa1b829d6dcf000019b7ce2": {
+        "apiVersion": "4.0.0",
+        "components": [
+          {
+            "classification": {
+              "item": {
+                "mode": "item",
+                "originalPathRegex": "(.*)"
+              }
+            },
+            "contentType": "video",
+            "identification": {
+              "match": {
+                "all": [
+                  {
+                    "rule": {
+                      "originalPathRegex": ".*\\.mp4"
+                    }
+                  }
+                ]
+              },
+              "priority": 10
+            },
+            "name": "opencachehub-vod-prog",
+            "redirectRouting": {
+              "enabled": true
+            },
+            "serve": {
+              "delivery": {
+                "headers": {
+                  "manipulations": [
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Origin",
+                      "valueFrom": {
+                        "name": "Origin",
+                        "source": "clientRequest",
+                        "type": "header"
+                      },
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Credentials",
+                      "value": "true",
+                      "when": "always"
+                    },
+                    {
+                      "action": "insert",
+                      "name": "Vary",
+                      "value": "Origin",
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Cache-Control",
+                      "value": "no-cache",
+                      "when": "always"
+                    }
+                  ]
+                }
+              },
+              "method": "cache"
+            },
+            "tech": {
+              "deviceTypeOverride": {
+                "cache": {
+                  "tech": {
+                    "isComponentForDevice": true,
+                    "rawConfiguration": {
+                      "signature": {
+                        "cgid": 5000,
+                        "contentAlgorithmName": "first-hit",
+                        "deliverySessionReuseDirectives": {
+                          "reuseType": "kForceAllowReuse"
+                        },
+                        "deliverySiteEngineClassificationMode": "kClassifyAndUse",
+                        "maxDeliveryBwKbps": 1000000,
+                        "originHeaderHandlingType": "ECHO_AND_CREDENTIALS",
+                        "shouldDeliveryClassifyCidByDeliverySession": false,
+                        "shouldDeliveryTakeUriRangeFromDeliverySession": true,
+                        "shouldReuseDeliverySession": true,
+                        "siteNameForTopper": "opencachehub-open-caching"
+                      },
+                      "useBuiltinBase": true
+                    }
+                  }
+                },
+                "httpRouter": {
+                  "tech": {
+                    "isComponentForDevice": true
+                  }
+                }
+              }
+            }
+          },
+          {
+            "classification": {
+              "item": {
+                "mode": "title",
+                "originalPathRegex": "(/.*)index\\d+(\\.ts)",
+                "titleMode": {
+                  "segmentClassifier": {
+                    "originalPathRegex": "/.*index(\\d+)\\.ts"
+                  }
+                }
+              }
+            },
+            "contentType": "video",
+            "identification": {
+              "match": {
+                "all": [
+                  {
+                    "rule": {
+                      "originalPathRegex": ".*index\\d+\\.ts"
+                    }
+                  }
+                ]
+              },
+              "priority": 20
+            },
+            "name": "opencachehub-vod-hls-frag",
+            "redirectRouting": {
+              "enabled": true,
+              "headers": [
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "when": "always"
+                },
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Credentials",
+                  "value": "true",
+                  "when": "always"
+                }
+              ]
+            },
+            "serve": {
+              "delivery": {
+                "headers": {
+                  "manipulations": [
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Origin",
+                      "valueFrom": {
+                        "name": "Origin",
+                        "source": "clientRequest",
+                        "type": "header"
+                      },
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Credentials",
+                      "value": "true",
+                      "when": "always"
+                    },
+                    {
+                      "action": "insert",
+                      "name": "Vary",
+                      "value": "Origin",
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Cache-Control",
+                      "value": "no-cache",
+                      "when": "always"
+                    }
+                  ]
+                }
+              },
+              "method": "cache"
+            },
+            "streamingFormat": "hls",
+            "tech": {
+              "deviceTypeOverride": {
+                "cache": {
+                  "tech": {
+                    "isComponentForDevice": true,
+                    "rawConfiguration": {
+                      "signature": {
+                        "cgid": 5000,
+                        "contentAlgorithmName": "first-hit",
+                        "deliverySessionReuseDirectives": {
+                          "reuseType": "kForceAllowReuse"
+                        },
+                        "deliverySiteEngineClassificationMode": "kClassifyAndUse",
+                        "maxDeliveryBwKbps": 1000000,
+                        "originHeaderHandlingType": "ECHO_AND_CREDENTIALS",
+                        "shouldDeliveryClassifyCidByDeliverySession": false,
+                        "shouldDeliveryTakeUriRangeFromDeliverySession": true,
+                        "shouldReuseDeliverySession": true,
+                        "siteNameForTopper": "opencachehub-open-caching"
+                      },
+                      "useBuiltinBase": true
+                    }
+                  }
+                },
+                "httpRouter": {
+                  "tech": {
+                    "isComponentForDevice": true
+                  }
+                }
+              }
+            }
+          },
+          {
+            "classification": {
+              "item": {
+                "mode": "item",
+                "originalPathRegex": "(.*)"
+              }
+            },
+            "contentType": "video",
+            "identification": {
+              "match": {
+                "all": [
+                  {
+                    "rule": {
+                      "originalPathRegex": ".*index\\.m3u8"
+                    }
+                  }
+                ]
+              },
+              "priority": 30
+            },
+            "name": "opencachehub-vod-hls-manifest",
+            "redirectRouting": {
+              "enabled": true,
+              "headers": [
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "when": "always"
+                },
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Credentials",
+                  "value": "true",
+                  "when": "always"
+                }
+              ]
+            },
+            "serve": {
+              "delivery": {
+                "headers": {
+                  "manipulations": [
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Origin",
+                      "valueFrom": {
+                        "name": "Origin",
+                        "source": "clientRequest",
+                        "type": "header"
+                      },
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Credentials",
+                      "value": "true",
+                      "when": "always"
+                    },
+                    {
+                      "action": "insert",
+                      "name": "Vary",
+                      "value": "Origin",
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Cache-Control",
+                      "value": "no-cache",
+                      "when": "always"
+                    }
+                  ]
+                }
+              },
+              "method": "cache"
+            },
+            "streamingFormat": "hls",
+            "tech": {
+              "deviceTypeOverride": {
+                "cache": {
+                  "tech": {
+                    "isComponentForDevice": true,
+                    "rawConfiguration": {
+                      "signature": {
+                        "cgid": 5000,
+                        "contentAlgorithmName": "first-hit",
+                        "deliverySessionReuseDirectives": {
+                          "reuseType": "kForceAllowReuse"
+                        },
+                        "deliverySiteEngineClassificationMode": "kClassifyAndUse",
+                        "maxDeliveryBwKbps": 1000000,
+                        "originHeaderHandlingType": "ECHO_AND_CREDENTIALS",
+                        "shouldDeliveryClassifyCidByDeliverySession": false,
+                        "shouldDeliveryTakeUriRangeFromDeliverySession": true,
+                        "shouldReuseDeliverySession": true,
+                        "siteNameForTopper": "opencachehub-open-caching"
+                      },
+                      "useBuiltinBase": true
+                    }
+                  }
+                },
+                "httpRouter": {
+                  "tech": {
+                    "isComponentForDevice": true
+                  }
+                }
+              }
+            }
+          },
+          {
+            "classification": {
+              "item": {
+                "mode": "item",
+                "originalPathRegex": "(.*)"
+              }
+            },
+            "contentType": "other",
+            "identification": {
+              "match": {
+                "all": [
+                  {
+                    "rule": {
+                      "originalPathRegex": "\\.(jpg|jpeg|png|gif|webp)"
+                    }
+                  }
+                ]
+              },
+              "priority": 50
+            },
+            "name": "opencachehub-images",
+            "redirectRouting": {
+              "enabled": true,
+              "headers": [
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "when": "always"
+                },
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Credentials",
+                  "value": "true",
+                  "when": "always"
+                }
+              ]
+            },
+            "serve": {
+              "delivery": {
+                "headers": {
+                  "manipulations": [
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Origin",
+                      "valueFrom": {
+                        "name": "Origin",
+                        "source": "clientRequest",
+                        "type": "header"
+                      },
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Credentials",
+                      "value": "true",
+                      "when": "always"
+                    },
+                    {
+                      "action": "insert",
+                      "name": "Vary",
+                      "value": "Origin",
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Cache-Control",
+                      "value": "max-age=3600",
+                      "when": "always"
+                    }
+                  ]
+                }
+              },
+              "method": "cache"
+            },
+            "tech": {
+              "deviceTypeOverride": {
+                "cache": {
+                  "tech": {
+                    "isComponentForDevice": true,
+                    "rawConfiguration": {
+                      "signature": {
+                        "cacheControlKnobs": {
+                          "fallbackMinExpirySec": 0,
+                          "invalidateByEtag": true,
+                          "maxExpirySec": 0,
+                          "minExpirySec": 0,
+                          "shouldStoreEtagInMeta": true,
+                          "useExpires": true,
+                          "useMaxAge": true,
+                          "useMinMaxExpiryWhenHeaderMissing": true,
+                          "useMustRevalidate": true,
+                          "useSMaxAge": true
+                        },
+                        "cgid": 5000,
+                        "contentAlgorithmName": "first-hit",
+                        "deliverySessionReuseDirectives": {
+                          "reuseType": "kForceAllowReuse"
+                        },
+                        "deliverySiteEngineClassificationMode": "kClassifyAndUse",
+                        "maxDeliveryBwKbps": 1000000,
+                        "originHeaderHandlingType": "ECHO_AND_CREDENTIALS",
+                        "shouldDeliveryClassifyCidByDeliverySession": false,
+                        "shouldDeliveryTakeUriRangeFromDeliverySession": true,
+                        "shouldReuseDeliverySession": true,
+                        "shouldStoreOrigServerResponseHeadersInMeta": true,
+                        "siteNameForTopper": "opencachehub-open-caching"
+                      },
+                      "useBuiltinBase": true
+                    }
+                  }
+                },
+                "httpRouter": {
+                  "tech": {
+                    "isComponentForDevice": true
+                  }
+                }
+              }
+            }
+          },
+          {
+            "classification": {
+              "item": {
+                "mode": "item",
+                "originalPathRegex": "(.*)"
+              }
+            },
+            "contentType": "video",
+            "identification": {
+              "match": {
+                "all": [
+                  {
+                    "rule": {
+                      "originalPathRegex": ".*/manifest"
+                    }
+                  }
+                ]
+              },
+              "priority": 60
+            },
+            "name": "opencachehub-vod-mss-manifest",
+            "redirectRouting": {
+              "enabled": true,
+              "headers": [
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "when": "always"
+                },
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Credentials",
+                  "value": "true",
+                  "when": "always"
+                }
+              ]
+            },
+            "serve": {
+              "delivery": {
+                "headers": {
+                  "manipulations": [
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Origin",
+                      "valueFrom": {
+                        "name": "Origin",
+                        "source": "clientRequest",
+                        "type": "header"
+                      },
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Credentials",
+                      "value": "true",
+                      "when": "always"
+                    },
+                    {
+                      "action": "insert",
+                      "name": "Vary",
+                      "value": "Origin",
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Cache-Control",
+                      "value": "no-cache",
+                      "when": "always"
+                    }
+                  ]
+                }
+              },
+              "method": "cache"
+            },
+            "streamingFormat": "mss",
+            "tech": {
+              "deviceTypeOverride": {
+                "cache": {
+                  "tech": {
+                    "isComponentForDevice": true,
+                    "rawConfiguration": {
+                      "signature": {
+                        "cgid": 5000,
+                        "contentAlgorithmName": "first-hit",
+                        "deliverySessionReuseDirectives": {
+                          "reuseType": "kForceAllowReuse"
+                        },
+                        "deliverySiteEngineClassificationMode": "kClassifyAndUse",
+                        "maxDeliveryBwKbps": 1000000,
+                        "originHeaderHandlingType": "ECHO_AND_CREDENTIALS",
+                        "shouldDeliveryClassifyCidByDeliverySession": false,
+                        "shouldDeliveryTakeUriRangeFromDeliverySession": true,
+                        "shouldReuseDeliverySession": true,
+                        "siteNameForTopper": "opencachehub-open-caching"
+                      },
+                      "useBuiltinBase": true
+                    }
+                  }
+                },
+                "httpRouter": {
+                  "tech": {
+                    "isComponentForDevice": true
+                  }
+                }
+              }
+            }
+          },
+          {
+            "classification": {
+              "item": {
+                "mode": "title",
+                "originalPathRegex": "(/.*)/QualityLevels\\((\\d+)\\)/Fragments\\((.*=)(\\d+)\\)",
+                "titleMode": {
+                  "segmentClassifier": {
+                    "originalPathRegex": "/.*/QualityLevels\\(\\d+\\)/Fragments\\(.*=(\\d+)\\)"
+                  }
+                }
+              }
+            },
+            "contentType": "video",
+            "identification": {
+              "match": {
+                "all": [
+                  {
+                    "rule": {
+                      "originalPathRegex": "/QualityLevels\\((\\d+)\\)/Fragments\\((.*=)(\\d+)\\)"
+                    }
+                  }
+                ]
+              },
+              "priority": 70
+            },
+            "name": "opencachehub-vod-mss-frag",
+            "redirectRouting": {
+              "enabled": true,
+              "headers": [
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "when": "always"
+                },
+                {
+                  "action": "insert",
+                  "name": "Access-Control-Allow-Credentials",
+                  "value": "true",
+                  "when": "always"
+                }
+              ]
+            },
+            "serve": {
+              "delivery": {
+                "headers": {
+                  "manipulations": [
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Origin",
+                      "valueFrom": {
+                        "name": "Origin",
+                        "source": "clientRequest",
+                        "type": "header"
+                      },
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Access-Control-Allow-Credentials",
+                      "value": "true",
+                      "when": "always"
+                    },
+                    {
+                      "action": "insert",
+                      "name": "Vary",
+                      "value": "Origin",
+                      "when": "always"
+                    },
+                    {
+                      "action": "replaceOrInsert",
+                      "name": "Cache-Control",
+                      "value": "no-cache",
+                      "when": "always"
+                    }
+                  ]
+                }
+              },
+              "method": "cache"
+            },
+            "streamingFormat": "mss",
+            "tech": {
+              "deviceTypeOverride": {
+                "cache": {
+                  "tech": {
+                    "isComponentForDevice": true,
+                    "rawConfiguration": {
+                      "signature": {
+                        "cgid": 5000,
+                        "contentAlgorithmName": "first-hit",
+                        "deliverySessionReuseDirectives": {
+                          "reuseType": "kForceAllowReuse"
+                        },
+                        "deliverySiteEngineClassificationMode": "kClassifyAndUse",
+                        "maxDeliveryBwKbps": 1000000,
+                        "originHeaderHandlingType": "ECHO_AND_CREDENTIALS",
+                        "shouldDeliveryClassifyCidByDeliverySession": false,
+                        "shouldDeliveryTakeUriRangeFromDeliverySession": true,
+                        "shouldReuseDeliverySession": true,
+                        "siteNameForTopper": "opencachehub-open-caching"
+                      },
+                      "useBuiltinBase": true
+                    }
+                  }
+                },
+                "httpRouter": {
+                  "tech": {
+                    "isComponentForDevice": true
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "creationTimeFormatted": "2020-11-03T20:06:01.562Z",
+        "creationTimeMilli": 1604433961562,
+        "dsId": "5fa1b7e0d6dcf000019b7ce1",
+        "dsRevisionId": "5fa1b829d6dcf000019b7ce2",
+        "httpVersions": [
+          "http/1.1"
+        ],
+        "manifestRewriteRouting": {
+          "enabled": false
+        },
+        "origin": {
+          "target": {
+            "roundRobinSelectionPolicy": {
+              "targets": [
+                {
+                  "hostname": "origin.videos.opencachehub.com",
+                  "isGlobalDefault": true
+                },
+                {
+                  "hostname": "origin.videos.opencachehub.com",
+                  "regions": [
+                    {
+                      "name": "country:USA"
+                    }
+                  ]
+                },
+                {
+                  "hostname": "america-origin.videos.opencachehub.com",
+                  "regions": [
+                    {
+                      "name": "region:America"
+                    }
+                  ]
+                },
+                {
+                  "hostname": "emea-origin.videos.opencachehub.com",
+                  "regions": [
+                    {
+                      "name": "region:LATAM"
+                    }
+                  ]
+                },
+                {
+                  "hostname": "africa-origin.videos.opencachehub.com",
+                  "regions": [
+                    {
+                      "name": "region:Africa2"
+                    }
+                  ]
+                }
+              ]
+            },
+            "selectionPolicy": "roundRobin"
+          }
+        },
+        "ownerOrgId": "devorg",
+        "protocols": [
+          "http"
+        ],
+        "redirectHttpToHttps": {
+          "enabled": false
+        },
+        "redirectRouting": {
+          "enabled": true
+        },
+        "serviceToken": "opencachehub",
+        "serviceType": "vod",
+        "unidentifiedComponent": {
+          "tech": {
+            "deviceTypeOverride": {
+              "cache": {
+                "tech": {
+                  "isComponentForDevice": true,
+                  "rawConfiguration": {
+                    "signature": {
+                      "allowDyceFetchingForTransaction": false,
+                      "cgid": 5000,
+                      "isIspCdnSignature": true,
+                      "multiSignatureSearchRank": 0,
+                      "siteNameForTopper": "opencachehub-open-caching"
+                    },
+                    "useBuiltinBase": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "username": "ofirh@qwilt.com"
+      }
+    },
+    "NETWORK/3": {
+      "https://cdn-i-cdns.rnd.cqloud.com/api/1/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-unit-groups?network_id=3": {
+        "_links": {
+          "self": {
+            "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-unit-groups?network_id=3"
+          }
+        },
+        "duGroups": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-unit-groups/032c6f80-6cc8-408e-95a0-7a72a057bf87"
+              }
+            },
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "duGroupId": "032c6f80-6cc8-408e-95a0-7a72a057bf87",
+            "fallbackDeliveryUnitGroups": [],
+            "latitude": 0,
+            "locationId": "bcf442d5-c5e1-40fd-a2d1-e50ab9683cf6",
+            "longitude": 0,
+            "name": "mid-1",
+            "networkId": 3,
+            "parentDeliveryUnitGroupId": null,
+            "type": "mid"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-unit-groups/5830ddd8-bc15-4295-9e5b-e9d816f3524e"
+              }
+            },
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "duGroupId": "5830ddd8-bc15-4295-9e5b-e9d816f3524e",
+            "fallbackDeliveryUnitGroups": [],
+            "latitude": 0,
+            "locationId": "bcf442d5-c5e1-40fd-a2d1-e50ab9683cf6",
+            "longitude": 0,
+            "name": "edge-1",
+            "networkId": 3,
+            "parentDeliveryUnitGroupId": "032c6f80-6cc8-408e-95a0-7a72a057bf87",
+            "type": "edge"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-unit-groups/8eab5205-e2bd-4468-b41b-6ab40d89c4e1"
+              }
+            },
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "duGroupId": "8eab5205-e2bd-4468-b41b-6ab40d89c4e1",
+            "fallbackDeliveryUnitGroups": [],
+            "latitude": 0,
+            "locationId": "bcf442d5-c5e1-40fd-a2d1-e50ab9683cf6",
+            "longitude": 0,
+            "name": "edge-2",
+            "networkId": 3,
+            "parentDeliveryUnitGroupId": "95a79a30-8ee3-493e-a7a2-be305e3cb8bd",
+            "type": "edge"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-unit-groups/95a79a30-8ee3-493e-a7a2-be305e3cb8bd"
+              }
+            },
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "duGroupId": "95a79a30-8ee3-493e-a7a2-be305e3cb8bd",
+            "fallbackDeliveryUnitGroups": [],
+            "latitude": 0,
+            "locationId": "bcf442d5-c5e1-40fd-a2d1-e50ab9683cf6",
+            "longitude": 0,
+            "name": "mid-2",
+            "networkId": 3,
+            "parentDeliveryUnitGroupId": null,
+            "type": "mid"
+          }
+        ]
+      },
+      "https://cdn-i-cdns.rnd.cqloud.com/api/1/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-units?network_id=3": {
+        "_links": {
+          "self": {
+            "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-units?network_id=3"
+          }
+        },
+        "deliveryUnits": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-units/0b5d38b2-9f1f-452e-a24e-13f270c54559"
+              }
+            },
+            "cacheHashId": "",
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryUnitId": "0b5d38b2-9f1f-452e-a24e-13f270c54559",
+            "deliveryUnitInterfaces": {
+              "if-1": {
+                "hashCount": null,
+                "hashCountOffset": null,
+                "hashId": null,
+                "interfaceName": "if-1",
+                "routingName": ""
+              }
+            },
+            "duGroupId": "8eab5205-e2bd-4468-b41b-6ab40d89c4e1",
+            "healthConnectionTimeoutMs": 2000,
+            "healthHistoryCount": 30,
+            "healthMaxLoadAverage": 25,
+            "healthMaxQueryTimeMs": 2000,
+            "healthMinAvailableBwKbps": 0,
+            "healthMinAvailableBwKbpsEnabled": false,
+            "healthPollUrlTemplate": null,
+            "healthReportTimeMs": 200,
+            "healthRequestTimeWarnMs": 100,
+            "healthRequestTimeoutMs": 400,
+            "healthSampleTimeMs": 1000,
+            "monitoringSegmentId": "amiry-ms-1",
+            "name": "amiry-qn-4",
+            "networkId": 3,
+            "numericId": 15,
+            "operationalMode": "online",
+            "systemId": "amiry-qn-4"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-units/6ff856d0-34d1-42a1-8712-90c51aa80e9f"
+              }
+            },
+            "cacheHashId": "",
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryUnitId": "6ff856d0-34d1-42a1-8712-90c51aa80e9f",
+            "deliveryUnitInterfaces": {
+              "if-1": {
+                "hashCount": null,
+                "hashCountOffset": null,
+                "hashId": null,
+                "interfaceName": "if-1",
+                "routingName": ""
+              }
+            },
+            "duGroupId": "8eab5205-e2bd-4468-b41b-6ab40d89c4e1",
+            "healthConnectionTimeoutMs": 2000,
+            "healthHistoryCount": 30,
+            "healthMaxLoadAverage": 25,
+            "healthMaxQueryTimeMs": 2000,
+            "healthMinAvailableBwKbps": 0,
+            "healthMinAvailableBwKbpsEnabled": false,
+            "healthPollUrlTemplate": null,
+            "healthReportTimeMs": 200,
+            "healthRequestTimeWarnMs": 100,
+            "healthRequestTimeoutMs": 400,
+            "healthSampleTimeMs": 1000,
+            "monitoringSegmentId": "amiry-ms-1",
+            "name": "amiry-qn-3",
+            "networkId": 3,
+            "numericId": 14,
+            "operationalMode": "online",
+            "systemId": "amiry-qn-3"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-units/a4971d26-55b2-4e0b-9863-79aef38f9c29"
+              }
+            },
+            "cacheHashId": "",
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryUnitId": "a4971d26-55b2-4e0b-9863-79aef38f9c29",
+            "deliveryUnitInterfaces": {
+              "if-1": {
+                "hashCount": null,
+                "hashCountOffset": null,
+                "hashId": null,
+                "interfaceName": "if-1",
+                "routingName": ""
+              }
+            },
+            "duGroupId": "032c6f80-6cc8-408e-95a0-7a72a057bf87",
+            "healthConnectionTimeoutMs": 2000,
+            "healthHistoryCount": 30,
+            "healthMaxLoadAverage": 25,
+            "healthMaxQueryTimeMs": 2000,
+            "healthMinAvailableBwKbps": 0,
+            "healthMinAvailableBwKbpsEnabled": false,
+            "healthPollUrlTemplate": null,
+            "healthReportTimeMs": 200,
+            "healthRequestTimeWarnMs": 100,
+            "healthRequestTimeoutMs": 400,
+            "healthSampleTimeMs": 1000,
+            "monitoringSegmentId": "amiry-ms-1",
+            "name": "amiry-qn-10",
+            "networkId": 3,
+            "numericId": 16,
+            "operationalMode": "online",
+            "systemId": "amiry-qn-10"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-units/c090342d-3e0a-486c-8eaa-c266cd2238d3"
+              }
+            },
+            "cacheHashId": "",
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryUnitId": "c090342d-3e0a-486c-8eaa-c266cd2238d3",
+            "deliveryUnitInterfaces": {
+              "if-1": {
+                "hashCount": null,
+                "hashCountOffset": null,
+                "hashId": null,
+                "interfaceName": "if-1",
+                "routingName": ""
+              }
+            },
+            "duGroupId": "5830ddd8-bc15-4295-9e5b-e9d816f3524e",
+            "healthConnectionTimeoutMs": 2000,
+            "healthHistoryCount": 30,
+            "healthMaxLoadAverage": 25,
+            "healthMaxQueryTimeMs": 2000,
+            "healthMinAvailableBwKbps": 0,
+            "healthMinAvailableBwKbpsEnabled": false,
+            "healthPollUrlTemplate": null,
+            "healthReportTimeMs": 200,
+            "healthRequestTimeWarnMs": 100,
+            "healthRequestTimeoutMs": 400,
+            "healthSampleTimeMs": 1000,
+            "monitoringSegmentId": "amiry-ms-1",
+            "name": "amiry-qn-1",
+            "networkId": 3,
+            "numericId": 10,
+            "operationalMode": "online",
+            "systemId": "amiry-qn-1"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-units/c7d478c0-151f-45f6-9ea7-660e95917b43"
+              }
+            },
+            "cacheHashId": "",
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryUnitId": "c7d478c0-151f-45f6-9ea7-660e95917b43",
+            "deliveryUnitInterfaces": {
+              "if-1": {
+                "hashCount": null,
+                "hashCountOffset": null,
+                "hashId": null,
+                "interfaceName": "if-1",
+                "routingName": ""
+              }
+            },
+            "duGroupId": "95a79a30-8ee3-493e-a7a2-be305e3cb8bd",
+            "healthConnectionTimeoutMs": 2000,
+            "healthHistoryCount": 30,
+            "healthMaxLoadAverage": 25,
+            "healthMaxQueryTimeMs": 2000,
+            "healthMinAvailableBwKbps": 0,
+            "healthMinAvailableBwKbpsEnabled": false,
+            "healthPollUrlTemplate": null,
+            "healthReportTimeMs": 200,
+            "healthRequestTimeWarnMs": 100,
+            "healthRequestTimeoutMs": 400,
+            "healthSampleTimeMs": 1000,
+            "monitoringSegmentId": "amiry-ms-1",
+            "name": "amiry-qn-11",
+            "networkId": 3,
+            "numericId": 17,
+            "operationalMode": "online",
+            "systemId": "amiry-qn-11"
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/delivery-units/c8f7f751-e3ca-4d5e-a5e3-78bb0570519d"
+              }
+            },
+            "cacheHashId": "",
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryUnitId": "c8f7f751-e3ca-4d5e-a5e3-78bb0570519d",
+            "deliveryUnitInterfaces": {
+              "if-1": {
+                "hashCount": null,
+                "hashCountOffset": null,
+                "hashId": null,
+                "interfaceName": "if-1",
+                "routingName": ""
+              }
+            },
+            "duGroupId": "5830ddd8-bc15-4295-9e5b-e9d816f3524e",
+            "healthConnectionTimeoutMs": 2000,
+            "healthHistoryCount": 30,
+            "healthMaxLoadAverage": 25,
+            "healthMaxQueryTimeMs": 2000,
+            "healthMinAvailableBwKbps": 0,
+            "healthMinAvailableBwKbpsEnabled": false,
+            "healthPollUrlTemplate": null,
+            "healthReportTimeMs": 200,
+            "healthRequestTimeWarnMs": 100,
+            "healthRequestTimeoutMs": 400,
+            "healthSampleTimeMs": 1000,
+            "monitoringSegmentId": "amiry-ms-1",
+            "name": "amiry-qn-2",
+            "networkId": 3,
+            "numericId": 11,
+            "operationalMode": "online",
+            "systemId": "amiry-qn-2"
+          }
+        ]
+      },
+      "https://cdn-i-infrastructure.rnd.cqloud.com/api/1/cdn/caches?cdn=74fc1710-7bee-4291-872d-82883cfaa016&network_id=3": {
+        "_links": {
+          "self": {
+            "href": "https://cdn-i-infrastructure.rnd.cqloud.com/api/1/cdn/caches?cdn=74fc1710-7bee-4291-872d-82883cfaa016&network_id=3"
+          }
+        },
+        "caches": [
+          {
+            "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "domain": "cqloud.com",
+            "hostname": "amiry-qn-3",
+            "interfaces": [
+              {
+                "interfaceName": "if-1",
+                "ipv4Address": "1.2.3.4",
+                "ipv6Address": null,
+                "isTunnelEnabled": "false",
+                "publicAddress": null
+              }
+            ],
+            "networkId": 3,
+            "systemId": "amiry-qn-3"
+          },
+          {
+            "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "domain": "cqloud.com",
+            "hostname": "amiry-qn-10",
+            "interfaces": [
+              {
+                "interfaceName": "if-1",
+                "ipv4Address": "1.2.3.4",
+                "ipv6Address": null,
+                "isTunnelEnabled": "false",
+                "publicAddress": null
+              }
+            ],
+            "networkId": 3,
+            "systemId": "amiry-qn-10"
+          },
+          {
+            "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "domain": "cqloud.com",
+            "hostname": "amiry-qn-11",
+            "interfaces": [
+              {
+                "interfaceName": "if-1",
+                "ipv4Address": "1.2.3.4",
+                "ipv6Address": null,
+                "isTunnelEnabled": "false",
+                "publicAddress": null
+              }
+            ],
+            "networkId": 3,
+            "systemId": "amiry-qn-11"
+          },
+          {
+            "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "domain": "cqloud.com",
+            "hostname": "amiry-qn-1",
+            "interfaces": [
+              {
+                "interfaceName": "if-1",
+                "ipv4Address": "1.2.3.4",
+                "ipv6Address": null,
+                "isTunnelEnabled": "false",
+                "publicAddress": null
+              }
+            ],
+            "networkId": 3,
+            "systemId": "amiry-qn-1"
+          },
+          {
+            "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "domain": "cqloud.com",
+            "hostname": "amiry-qn-2",
+            "interfaces": [
+              {
+                "interfaceName": "if-1",
+                "ipv4Address": "1.2.3.4",
+                "ipv6Address": null,
+                "isTunnelEnabled": "false",
+                "publicAddress": null
+              }
+            ],
+            "networkId": 3,
+            "systemId": "amiry-qn-2"
+          },
+          {
+            "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "domain": "cqloud.com",
+            "hostname": "amiry-qn-4",
+            "interfaces": [
+              {
+                "interfaceName": "if-1",
+                "ipv4Address": "1.2.3.4",
+                "ipv6Address": null,
+                "isTunnelEnabled": "false",
+                "publicAddress": null
+              }
+            ],
+            "networkId": 3,
+            "systemId": "amiry-qn-4"
+          }
+        ]
+      },
+      "https://cdn-i-qn-deployment.rnd.cqloud.com/api/2/entities?contained_in_list_format=none&contains_list_format=none&entities_list_format=details&ids=3&types=network": {
+        "entities": [
+          {
+            "attributes": {},
+            "id": 3,
+            "name": "Qwilt",
+            "type": "network",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+          }
+        ]
+      }
+    },
+    "ROUTING-AND-MONITORING": {
+      "https://cdn-i-cdns.rnd.cqloud.com/api/1/cdns/74fc1710-7bee-4291-872d-82883cfaa016/dns-routing-segments": {
+        "_links": {
+          "self": {
+            "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/dns-routing-segments"
+          }
+        },
+        "dnsRoutingSegments": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/dns-routing-segments/dns_router_1"
+              }
+            },
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "dnsRoutingSegmentId": "dns_router_1",
+            "subDomain": "euw1"
+          }
+        ]
+      },
+      "https://cdn-i-cdns.rnd.cqloud.com/api/1/cdns/74fc1710-7bee-4291-872d-82883cfaa016/http-router-groups": {
+        "_links": {
+          "self": {
+            "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/http-router-groups"
+          }
+        },
+        "httpRouterGroups": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/http-router-groups/5fb24720b1ecb000012dd22c"
+              }
+            },
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "dnsName": "manifest-router-euw1",
+            "fallbackGroups": [
+              "5fb24757b1ecb000012dd22d"
+            ],
+            "httpRouterGroupId": "5fb24720b1ecb000012dd22c",
+            "httpRouterGroupName": "manifest-router-euw1",
+            "ttl": 30
+          },
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/http-router-groups/5fb24757b1ecb000012dd22d"
+              }
+            },
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "dnsName": "manifest-router-euc1",
+            "fallbackGroups": [],
+            "httpRouterGroupId": "5fb24757b1ecb000012dd22d",
+            "httpRouterGroupName": "manifest-router-euc1",
+            "ttl": 30
+          }
+        ]
+      },
+      "https://cdn-i-cdns.rnd.cqloud.com/api/1/cdns/74fc1710-7bee-4291-872d-82883cfaa016/monitoring-segments": {
+        "_links": {
+          "self": {
+            "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/monitoring-segments"
+          }
+        },
+        "monitoringSegments": [
+          {
+            "_links": {
+              "self": {
+                "href": "https://cdn-i-cdns.rnd.cqloud.com/api/1.0.0/cdns/74fc1710-7bee-4291-872d-82883cfaa016/monitoring-segments/amiry-ms-1"
+              }
+            },
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "fallbackSegments": [],
+            "healthCollectorSystemIds": [
+              "health-collector-cdn-i.opencaching.gcp-eu-3"
+            ],
+            "monitoringSegmentId": "amiry-ms-1",
+            "region": null
+          }
+        ]
+      },
+      "https://cdn-i-ds-assignments.rnd.cqloud.com/api/3/ds-assignments/rules/manifest-router?cdnId=74fc1710-7bee-4291-872d-82883cfaa016": {
+        "manifestRouter": [
+          {
+            "assignmentBlocked": false,
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryService": {
+              "id": "5fa1b7e0d6dcf000019b7ce1",
+              "label": "stable"
+            },
+            "enabled": true,
+            "manifestRouterId": "manifest-router-lb-0-euw1-green.opencaching",
+            "ruleId": "84187ebd-779c-4e29-91d8-bf62ee372b47"
+          },
+          {
+            "assignmentBlocked": false,
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryService": {
+              "id": "5fa1b7e0d6dcf000019b7ce1",
+              "label": "stable"
+            },
+            "enabled": true,
+            "manifestRouterId": "manifest-router-lb-0-euc1-green.opencaching",
+            "ruleId": "96e4b9d7-ac79-42fb-a45c-83189964c418"
+          },
+          {
+            "assignmentBlocked": false,
+            "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+            "deliveryService": {
+              "id": "5fa1b7e0d6dcf000019b7ce1",
+              "label": "stable"
+            },
+            "enabled": true,
+            "manifestRouterId": "http-router-container-test-1",
+            "ruleId": "ec216609-dc77-4f14-b4ef-bce6e5f484c5"
+          }
+        ]
+      },
+      "https://cdn-i-traffic-routers-monitors.rnd.cqloud.com/api/2.0/cdns/amiry-cdn/dns-routers": {
+        "dnsRouters": [
+          {
+            "dnsRoutingSegmentId": "dns_router_1",
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "dns-router-container-test-1",
+            "ipv4Address": "34.89.230.10",
+            "ipv6Address": null,
+            "links": [],
+            "status": "offline",
+            "systemId": "dns-router-container-test-1",
+            "type": "DNS Router"
+          },
+          {
+            "dnsRoutingSegmentId": "dns_router_1",
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "dns-router-cdn-i-opencaching-1",
+            "ipv4Address": "35.198.103.120",
+            "ipv6Address": null,
+            "links": [],
+            "status": "offline",
+            "systemId": "DR-DevCdn-iOpencachingEu-w3",
+            "type": "DNS Router"
+          },
+          {
+            "dnsRoutingSegmentId": "dns_router_1",
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "dns-router-0-euw1-green",
+            "ipv4Address": "52.214.12.20",
+            "ipv6Address": null,
+            "links": [],
+            "status": "online",
+            "systemId": "dns-router-0-euw1-green.opencaching.tc-rnd",
+            "type": "DNS Router"
+          }
+        ]
+      },
+      "https://cdn-i-traffic-routers-monitors.rnd.cqloud.com/api/2.0/cdns/amiry-cdn/health-collectors": {
+        "healthCollectors": [
+          {
+            "domain": "gcp-eu-3.dep.rnd.cqloud.com",
+            "healthCollectorRegion": "gcp-europe-west3",
+            "hostname": "health-collector-cdn-i.opencaching",
+            "links": [],
+            "status": "online",
+            "systemId": "health-collector-cdn-i.opencaching.gcp-eu-3",
+            "type": "Health Collector"
+          },
+          {
+            "domain": "gcp-eu-3.dep.rnd.cqloud.com",
+            "healthCollectorRegion": "gcp-europe-west3",
+            "hostname": "health-collector-cdn-2.opencaching",
+            "links": [],
+            "status": "online",
+            "systemId": "health-collector-cdn-2.opencaching.opencaching.gcp-eu-3",
+            "type": "Health Collector"
+          }
+        ]
+      },
+      "https://cdn-i-traffic-routers-monitors.rnd.cqloud.com/api/2.0/cdns/amiry-cdn/http-routers": {
+        "httpRouters": [
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "manifest-router-0",
+            "httpRouterGroupName": "manifest-router-euw1",
+            "ipv4Address": "34.89.190.210",
+            "ipv6Address": null,
+            "links": [],
+            "status": "offline",
+            "systemId": "http-router-container-test-1",
+            "type": "Manifest Router"
+          },
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "manifest-router-lb-0-euc1-green",
+            "httpRouterGroupName": "manifest-router-euc1",
+            "ipv4Address": "18.157.97.96",
+            "ipv6Address": null,
+            "links": [],
+            "status": "online",
+            "systemId": "manifest-router-lb-0-euc1-green.opencaching",
+            "type": "Manifest Router"
+          },
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "manifest-router-lb-0-euw1-green",
+            "httpRouterGroupName": "manifest-router-euw1",
+            "ipv4Address": "34.241.175.34",
+            "ipv6Address": null,
+            "links": [],
+            "status": "online",
+            "systemId": "manifest-router-lb-0-euw1-green.opencaching",
+            "type": "Manifest Router"
+          }
+        ]
+      }
+    },
+    "TEMP-LEGACY": {
+      "https://cdn-i-cert-manager.rnd.cqloud.com/api/1.0.0/certificates?detailed=true": [
+        {
+          "certId": 3,
+          "certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVBRENDQXVpZ0F3SUJBZ0lDQTNzd0RRWUpLb1pJaHZjTkFRRUxCUUF3Z1lVeEN6QUpCZ05WQkFZVEFsVlQKTVJNd0VRWURWUVFJRXdwRFlXeHBabTl5Ym1saE1SRXdEd1lEVlFRSEV3aFNaV1IzYjI5eVpERVNNQkFHQTFVRQpDaE1KVVhkcGJIUWdTVzVqTVIwd0d3WURWUVFMRXhSUmQybHNkQ0JRY205a2RXTjBjeUJUZEdGblpURWJNQmtHCkExVUVBeE1TVVhkcGJIUWdSR1YyYVdObElFTkJJRkV4TUI0WERURTFNVEV4T1RFd01EYzBPVm9YRFRNNE1ERXgKT0RFd01EYzBPVm93Z1lReEN6QUpCZ05WQkFZVEFsVlRNUk13RVFZRFZRUUlFd3BEWVd4cFptOXlibWxoTVJBdwpEZ1lEVlFRSEV3ZFNaV1IzYjI5a01SSXdFQVlEVlFRS0V3bFJkMmxzZENCSmJtTXhIVEFiQmdOVkJBc1RGRkYzCmFXeDBJRkJ5YjJSMVkzUnpJRk4wWVdkbE1Sc3dHUVlEVlFRREV4SkVaWFpwWTJVZ1VWRldWazFOTXpBdE5EZ3cKZ2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQzMzbzZNYVI5V2dDSUJkbmVwWXNSUApkZnljYXFKSEJFTGxNRmQ3TFZUTW10dEUvblRzbmlNR3FRQUVTOFZybW1ERldpc3Z1UVpjZUlNWUxxSkpTbXFFCmJ1L1ZOc3V4aHVJV0loTzY3ZysrMkxVNDVlbTA0ajdOTTd6TWE2MHdFYS9tbElSTENwcC92Qmdwek50MHh3eSsKL1gzaExLUk1tWExzb2RMWmFFSHZyRWdqVTdxSnJKNTY1Q29QZURTOE5KazlSclJ3eG9pd0tRcFZaVWg1NjB6Kwo5c1NUYi9xaXFqQzJacGdaMXB3N0hTZ3JtdFpNNGZSbkZDWnl4ZWJRd0xmVVJhTjhqbEZybllmb0FQQ0M2cXVjCkFGUXM4M1hPMTFlOVY4SlF2M21sTWVHQUYvWFZrTmFhQm5HOTIvYkhRbGFhZGlyanBpclZ6SWNKNkpCcWREU3IKQWdNQkFBR2plVEIzTUFrR0ExVWRFd1FDTUFBd0hRWURWUjBPQkJZRUZPRExOTHAyaVpnbHVoMVNZcEIzakFneQp1dVNHTUI4R0ExVWRJd1FZTUJhQUZJZHBBaHByY3poZWJJQ3BVRUMzc3E5NHhMa0dNQXNHQTFVZER3UUVBd0lGCm9EQWRCZ05WSFNVRUZqQVVCZ2dyQmdFRkJRY0RBUVlJS3dZQkJRVUhBd0l3RFFZSktvWklodmNOQVFFTEJRQUQKZ2dFQkFLS0gvV1NHL0p5ZjBnZFprbFE0akF5YWxHUDFCdHZZNWtuK2J2ZFBRc0tNdE1USGF2YXBHZ3Z5Z0V5RwpTUFYycDFta3hlTHZQR0VMSGtkRnVxMS9teENOWE5paXk3QlpEMnNIYXJYWklWSGRpQ1FUUTZVdnBOaWdvMmJLCk1hb3R5WVg5emFsMFJNWkpYdHhveUgxbXZzUS9KOE50alhDRTd2MXlGU0paMzZHd29iYW1scFprMDROK3I5RVoKWDRWUmY0dVF1azVhNVZyODFvL2l5bWs0ZGs2aVRiY0pia3ArNTJmRDhjRExYQ05kU2Z1SU15M1djQWhGQTZnTQo2Um5zd1pBbEYxTzFMWDlSenBKd0lJaDZsVmcvQUIwT2RuMnVtR0Z0QUg3c0hIaVl0NFNGNWc4M1AyNnQ0ZVZnCkxFbEttZGlMMDF0Qi9sR1hMYW9xTVFoUVhacz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQoK",
+          "certificateChain": "",
+          "creationDate": "2020-11-16T08:11:41.000+0000",
+          "description": null,
+          "domain": "Device QQVVMM30-48",
+          "links": [],
+          "notAfter": "2038-01-18T10:07:49.000+0000",
+          "notBefore": "2015-11-19T10:07:49.000+0000",
+          "pkHash": "71d4b3e99051dc01655df3b9b0b0dfd34218e13d",
+          "secretId": "f9b4254f-7496-46e3-a2c7-96e63de982f2",
+          "serialNumber": 891,
+          "status": "ACTIVE",
+          "tenant": "devorg",
+          "thumbprint": "edcb13a9e6a5f8adf325ed03bbdf907c73c22595",
+          "type": "X.509"
+        }
+      ],
+      "https://cdn-i-ds-assignments.rnd.cqloud.com/api/2/ds-assignments/rules?cdnId=74fc1710-7bee-4291-872d-82883cfaa016": {
+        "rules": {
+          "cdn": [],
+          "deliveryUnit": [],
+          "manifestRouter": [
+            {
+              "assignmentBlocked": false,
+              "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryService": {
+                "id": "5fa1b7e0d6dcf000019b7ce1",
+                "label": "stable"
+              },
+              "enabled": true,
+              "manifestRouterId": "manifest-router-lb-0-euw1-green.opencaching",
+              "ruleId": "84187ebd-779c-4e29-91d8-bf62ee372b47"
+            },
+            {
+              "assignmentBlocked": false,
+              "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryService": {
+                "id": "5fa1b7e0d6dcf000019b7ce1",
+                "label": "stable"
+              },
+              "enabled": true,
+              "manifestRouterId": "manifest-router-lb-0-euc1-green.opencaching",
+              "ruleId": "96e4b9d7-ac79-42fb-a45c-83189964c418"
+            },
+            {
+              "assignmentBlocked": false,
+              "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryService": {
+                "id": "5fa1b7e0d6dcf000019b7ce1",
+                "label": "stable"
+              },
+              "enabled": true,
+              "manifestRouterId": "http-router-container-test-1",
+              "ruleId": "ec216609-dc77-4f14-b4ef-bce6e5f484c5"
+            }
+          ],
+          "network": [
+            {
+              "assignmentBlocked": false,
+              "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryService": {
+                "id": "5fa1b7e0d6dcf000019b7ce1",
+                "label": "stable"
+              },
+              "enabled": true,
+              "networkId": 3,
+              "ruleId": "d9c7a7cd-8a68-4690-8897-4c58b06e4826"
+            }
+          ]
+        }
+      },
+      "https://cdn-i-ds-assignments.rnd.cqloud.com/api/2/ds-routing/rules/delivery-unit?cdnId=74fc1710-7bee-4291-872d-82883cfaa016": {
+        "deliveryUnit": []
+      },
+      "https://cdn-i-keys-manager.rnd.cqloud.com/api/1.1.0/key-sets": {
+        "keySets": []
+      },
+      "https://cdn-i-keys-manager.rnd.cqloud.com/api/debug/keys": {
+        "keys": []
+      },
+      "https://cdn-i-qn-deployment.rnd.cqloud.com/api/2/entities?contained_in_list_deep=True&contained_in_list_format=ids&contained_in_list_group_by_type=True&contains_list_format=none&entities_list_format=details&types=qn&types=network&types=region&types=country": {
+        "entities": [
+          {
+            "attributes": {},
+            "containedInByType": {},
+            "id": 1,
+            "name": "MiddleEast",
+            "type": "region",
+            "uniqueName": "rgnMiddleEast"
+          },
+          {
+            "attributes": {
+              "countryCode": "Israel"
+            },
+            "containedInByType": {
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 2,
+            "name": "Israel",
+            "type": "country",
+            "uniqueName": "rgnMiddleEast_cnIsrael"
+          },
+          {
+            "attributes": {},
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 3,
+            "name": "Qwilt",
+            "type": "network",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+          },
+          {
+            "attributes": {
+              "asn": "1010",
+              "cdn": "8cec91e0-c34b-4a9b-ad41-cd8bba1af15c",
+              "deliveryIf::TenGigE0/8::ipv4Address": "172.240.0.3",
+              "deliveryIf::TenGigE0/8::ipv6Address": "fd00:6239:24::1",
+              "deliveryIf::TenGigE0/8::isTunnelEnabled": "true",
+              "deliveryIf::TenGigE0/9::ipv4Address": "172.241.0.3",
+              "deliveryIf::TenGigE0/9::ipv6Address": "fd00:6239:24:0:1::1",
+              "deliveryIf::TenGigE0/9::isTunnelEnabled": "true",
+              "domain": "tc-rdn.cqloud.com",
+              "hideInNMA": "true",
+              "hostname": "qwilt-lab-pe10",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qb-100",
+              "support-name": "qwilt-lab-pe10",
+              "systemId": "2PSBJ5J"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 4,
+            "name": "qwilt-lab-pe10",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qn2PSBJ5J"
+          },
+          {
+            "attributes": {
+              "asn": "1010",
+              "cdn": "8cec91e0-c34b-4a9b-ad41-cd8bba1af15c",
+              "deliveryIf::GigabitEthernet0/0::ipv4Address": "172.31.43.166",
+              "deliveryIf::GigabitEthernet0/0::isTunnelEnabled": "false",
+              "deliveryIf::GigabitEthernet0/0::publicAddress": "54.73.112.61",
+              "deliveryIf::GigabitEthernet0/1::ipv4Address": "172.31.44.5",
+              "deliveryIf::GigabitEthernet0/1::isTunnelEnabled": "false",
+              "deliveryIf::GigabitEthernet0/1::publicAddress": "52.210.150.51",
+              "domain": "tc-rnd.cqloud.com",
+              "hideInNMA": "true",
+              "hostname": "qwilt-aws-mid-ofirh",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qa-1a2",
+              "support-name": "qwilt-aws-mid-ofirh",
+              "systemId": "QW0120251266"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 5,
+            "name": "qwilt-aws-mid-ofirh",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qnQW0120251266"
+          },
+          {
+            "attributes": {
+              "asn": "1234",
+              "cdn": "fec56596-f4d3-4b72-9217-b4083b96bfbd",
+              "deliveryIf::AAAA::ipv4Address": "123.123.123.1",
+              "deliveryIf::AAAA::isTunnelEnabled": "false",
+              "hideInNMA": "true",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qa-1a2",
+              "systemId": "testQn001"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 6,
+            "name": "testQn001",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qntestQn001"
+          },
+          {
+            "attributes": {
+              "asn": "12345",
+              "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryIf::if-1::ipv4Address": "1.2.3.4",
+              "deliveryIf::if-1::isTunnelEnabled": "false",
+              "domain": "cqloud.com",
+              "hideInNMA": "true",
+              "hostname": "amiry-qn-1",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qb-100",
+              "systemId": "amiry-qn-1"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 7,
+            "name": "amiry-qn-1",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qnamiry-qn-1"
+          },
+          {
+            "attributes": {
+              "asn": "12345",
+              "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryIf::if-1::ipv4Address": "1.2.3.4",
+              "deliveryIf::if-1::isTunnelEnabled": "false",
+              "domain": "cqloud.com",
+              "hideInNMA": "true",
+              "hostname": "amiry-qn-2",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qb-100",
+              "systemId": "amiry-qn-2"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 8,
+            "name": "amiry-qn-2",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qnamiry-qn-2"
+          },
+          {
+            "attributes": {
+              "asn": "1234",
+              "cdn": "fec56596-f4d3-4b72-9217-b4083b96bfbd",
+              "deliveryIf::AAAA::ipv4Address": "123.123.123.1",
+              "deliveryIf::AAAA::isTunnelEnabled": "false",
+              "hideInNMA": "true",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qa-1a2",
+              "systemId": "testQn002"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 10,
+            "name": "testQn002",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qntestQn002"
+          },
+          {
+            "attributes": {
+              "countryCode": "efilia"
+            },
+            "containedInByType": {
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 11,
+            "name": "Efi-Land",
+            "type": "country",
+            "uniqueName": "rgnMiddleEast_cnEfi-Land"
+          },
+          {
+            "attributes": {
+              "ispId": "1234",
+              "wide-qwos-6.2-deployment": "false"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 11,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnEfi-Land"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 12,
+            "name": "EfiNet",
+            "type": "network",
+            "uniqueName": "rgnMiddleEast_cnEfi-Land_nwkEfiNet"
+          },
+          {
+            "attributes": {
+              "asn": "972",
+              "hideInNMA": "true",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qa-1a2",
+              "serial-number": "2RNFQK2",
+              "support-name": "Shmulik",
+              "systemId": "2RNFQK2"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 13,
+            "name": "Shmulik",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qn2RNFQK2"
+          },
+          {
+            "attributes": {
+              "asn": "972",
+              "hideInNMA": "true",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qa-1a2",
+              "support-name": "Shmulik2",
+              "systemId": "JV2FD5J"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 14,
+            "name": "Shmulik2",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qnJV2FD5J"
+          },
+          {
+            "attributes": {
+              "asn": "12345",
+              "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryIf::if-1::ipv4Address": "1.2.3.4",
+              "deliveryIf::if-1::isTunnelEnabled": "false",
+              "domain": "cqloud.com",
+              "hideInNMA": "true",
+              "hostname": "amiry-qn-4",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qb-100",
+              "systemId": "amiry-qn-4"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 15,
+            "name": "amiry-qn-4",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qnamiry-qn-4"
+          },
+          {
+            "attributes": {
+              "asn": "12345",
+              "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryIf::if-1::ipv4Address": "1.2.3.4",
+              "deliveryIf::if-1::isTunnelEnabled": "false",
+              "domain": "cqloud.com",
+              "hideInNMA": "true",
+              "hostname": "amiry-qn-3",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qb-100",
+              "systemId": "amiry-qn-3"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 16,
+            "name": "amiry-qn-3",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qnamiry-qn-3"
+          },
+          {
+            "attributes": {
+              "asn": "12345",
+              "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryIf::if-1::ipv4Address": "1.2.3.4",
+              "deliveryIf::if-1::isTunnelEnabled": "false",
+              "domain": "cqloud.com",
+              "hideInNMA": "true",
+              "hostname": "amiry-qn-10",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qb-100",
+              "systemId": "amiry-qn-10"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 17,
+            "name": "amiry-qn-10",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qnamiry-qn-10"
+          },
+          {
+            "attributes": {
+              "asn": "12345",
+              "cdn": "74fc1710-7bee-4291-872d-82883cfaa016",
+              "deliveryIf::if-1::ipv4Address": "1.2.3.4",
+              "deliveryIf::if-1::isTunnelEnabled": "false",
+              "domain": "cqloud.com",
+              "hideInNMA": "true",
+              "hostname": "amiry-qn-11",
+              "lisa-area-temp": "field",
+              "locationLatitude": "0",
+              "locationLongitude": "0",
+              "platformType": "qb-100",
+              "systemId": "amiry-qn-11"
+            },
+            "containedInByType": {
+              "country": [
+                {
+                  "id": 2,
+                  "type": "country",
+                  "uniqueName": "rgnMiddleEast_cnIsrael"
+                }
+              ],
+              "network": [
+                {
+                  "id": 3,
+                  "type": "network",
+                  "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt"
+                }
+              ],
+              "region": [
+                {
+                  "id": 1,
+                  "type": "region",
+                  "uniqueName": "rgnMiddleEast"
+                }
+              ]
+            },
+            "id": 18,
+            "name": "amiry-qn-11",
+            "type": "qn",
+            "uniqueName": "rgnMiddleEast_cnIsrael_nwkQwilt_qnamiry-qn-11"
+          }
+        ]
+      },
+      "https://cdn-i-traffic-routers-monitors.rnd.cqloud.com/api/1.0/cdns/amiry-cdn/traffic-routers-monitors/configuration/devops": {
+        "buckets": {
+          "ops-published-data": "https://qwilt-rnd-cdn-i-opencaching-routing-data.s3-us-west-1.amazonaws.com"
+        }
+      },
+      "https://cdn-i-traffic-routers-monitors.rnd.cqloud.com/api/1.0/cdns/amiry-cdn/traffic-routers-monitors/configuration/monitors": {
+        "hack.ttl": 30,
+        "health.event-count": 200,
+        "health.polling.interval": 6000,
+        "health.threadPool": 4,
+        "health.timepad": 0,
+        "heartbeat.polling.interval": 2000,
+        "peers.polling.interval": 1000,
+        "tm.crConfig.polling.url": "https://${tmHostname}/CRConfig-Snapshots/${cdnName}/CRConfig.xml",
+        "tm.dataServer.polling.url": "https://${tmHostname}/dataserver/orderby/id",
+        "tm.healthParams.polling.url": "https://${tmHostname}/health/${cdnName}",
+        "tm.polling.interval": 60000
+      },
+      "https://cdn-i-traffic-routers-monitors.rnd.cqloud.com/api/1.0/cdns/amiry-cdn/traffic-routers-monitors/configuration/routers": {
+        "config": {
+          "api.cache-control.max-age": "10",
+          "certificates.polling.interval": "300000",
+          "consistent.dns.routing": "true",
+          "coveragezone.polling.interval": "3600000",
+          "coveragezone.polling.url": null,
+          "dnssec.dynamic.response.expiration": "300s",
+          "dnssec.enabled": "false",
+          "federationmapping.polling.interval": "60000",
+          "geolocation.polling.interval": "300000",
+          "geolocation.polling.url": null,
+          "geolocation6.polling.url": null,
+          "keystore.maintenance.interval": "300",
+          "soa": {
+            "admin": "admin",
+            "expire": "604800",
+            "minimum": "30",
+            "refresh": "28800",
+            "retry": "7200"
+          },
+          "steeringmapping.polling.interval": "60000",
+          "ttls": {
+            "A": "60",
+            "AAAA": "60",
+            "DNSKEY": "30",
+            "DS": "30",
+            "NS": "60",
+            "SOA": "60"
+          },
+          "weight": "1.0",
+          "zonemanager.cache.maintenance.interval": "300",
+          "zonemanager.threadpool.scale": "0.50"
+        },
+        "params": [
+          {
+            "configFile": "CRConfig.json",
+            "id": 407,
+            "lastUpdated": "2018-04-08 12:48:40.748348+00",
+            "name": "steeringmapping.polling.interval",
+            "secure": false,
+            "value": "60000"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 406,
+            "lastUpdated": "2018-04-08 12:48:40.489766+00",
+            "name": "certificates.polling.interval",
+            "secure": false,
+            "value": "300000"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 405,
+            "lastUpdated": "2018-04-08 12:48:40.231191+00",
+            "name": "consistent.dns.routing",
+            "secure": false,
+            "value": "true"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 404,
+            "lastUpdated": "2018-04-08 12:48:39.260375+00",
+            "name": "zonemanager.threadpool.scale",
+            "secure": false,
+            "value": "0.50"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 403,
+            "lastUpdated": "2018-04-08 12:48:38.998843+00",
+            "name": "dnssec.dynamic.response.expiration",
+            "secure": false,
+            "value": "300s"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 402,
+            "lastUpdated": "2018-04-08 12:48:38.727664+00",
+            "name": "keystore.maintenance.interval",
+            "secure": false,
+            "value": "300"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 401,
+            "lastUpdated": "2018-04-08 12:48:38.470175+00",
+            "name": "zonemanager.cache.maintenance.interval",
+            "secure": false,
+            "value": "300"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 400,
+            "lastUpdated": "2018-04-08 12:48:38.213518+00",
+            "name": "tld.ttls.DS",
+            "secure": false,
+            "value": "30"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 399,
+            "lastUpdated": "2018-04-08 12:48:37.237402+00",
+            "name": "tld.ttls.DNSKEY",
+            "secure": false,
+            "value": "30"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 398,
+            "lastUpdated": "2018-04-08 12:48:36.97602+00",
+            "name": "federationmapping.polling.interval",
+            "secure": false,
+            "value": "60000"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 396,
+            "lastUpdated": "2018-04-08 12:48:36.423588+00",
+            "name": "api.cache-control.max-age",
+            "secure": false,
+            "value": "10"
+          },
+          {
+            "configFile": "server.xml",
+            "id": 395,
+            "lastUpdated": "2018-04-08 12:48:36.163161+00",
+            "name": "api.port",
+            "secure": false,
+            "value": "3333"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 394,
+            "lastUpdated": "2018-04-08 12:48:35.03041+00",
+            "name": "tld.ttls.NS",
+            "secure": false,
+            "value": "60"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 393,
+            "lastUpdated": "2018-04-08 12:48:34.771741+00",
+            "name": "tld.soa.refresh",
+            "secure": false,
+            "value": "28800"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 392,
+            "lastUpdated": "2018-04-08 12:48:34.500946+00",
+            "name": "tld.soa.retry",
+            "secure": false,
+            "value": "7200"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 391,
+            "lastUpdated": "2018-04-08 12:48:34.230996+00",
+            "name": "tld.soa.admin",
+            "secure": false,
+            "value": "admin"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 390,
+            "lastUpdated": "2018-04-08 12:48:33.543569+00",
+            "name": "tld.soa.minimum",
+            "secure": false,
+            "value": "30"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 389,
+            "lastUpdated": "2018-04-08 12:48:33.281131+00",
+            "name": "tld.soa.expire",
+            "secure": false,
+            "value": "604800"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 388,
+            "lastUpdated": "2018-04-08 12:48:33.020396+00",
+            "name": "tld.ttls.A",
+            "secure": false,
+            "value": "3600"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 387,
+            "lastUpdated": "2018-04-08 12:48:32.760494+00",
+            "name": "tld.ttls.AAAA",
+            "secure": false,
+            "value": "3600"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 386,
+            "lastUpdated": "2018-12-03 13:29:12.985233+00",
+            "name": "coveragezone.polling.url",
+            "secure": false,
+            "value": null
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 385,
+            "lastUpdated": "2019-01-11 17:47:04.175191+00",
+            "name": "coveragezone.polling.interval",
+            "secure": false,
+            "value": "3600000"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 384,
+            "lastUpdated": "2018-04-08 12:52:38.462788+00",
+            "name": "geolocation.polling.interval",
+            "secure": false,
+            "value": "300000"
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 383,
+            "lastUpdated": "2018-12-03 13:29:12.985233+00",
+            "name": "geolocation.polling.url",
+            "secure": false,
+            "value": null
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 383,
+            "lastUpdated": "2018-12-03 13:29:12.985233+00",
+            "name": "geolocation6.polling.url",
+            "secure": false,
+            "value": null
+          },
+          {
+            "configFile": "CRConfig.json",
+            "id": 382,
+            "lastUpdated": "2018-04-08 12:48:30.71978+00",
+            "name": "tld.ttls.SOA",
+            "secure": false,
+            "value": "60"
+          }
+        ]
+      },
+      "https://cdn-i-traffic-routers-monitors.rnd.cqloud.com/api/1.0/cdns/amiry-cdn/traffic-routers-monitors/servers": {
+        "servers": [
+          {
+            "domain": "gcp-eu-3.dep.rnd.cqloud.com",
+            "groupServerDsRemapConfigEnabled": null,
+            "healthCollectorRegion": "gcp-europe-west3",
+            "healthProviderDnsName": null,
+            "healthProviders": null,
+            "hostname": "health-collector-cdn-i.opencaching",
+            "httpRouterGroupName": null,
+            "httpsPort": 443,
+            "ipv4Address": "35.190.92.205",
+            "ipv6Address": null,
+            "links": [],
+            "segmentId": "push_based_monitor_segment_id",
+            "status": "online",
+            "systemId": "health-collector-cdn-i.opencaching.gcp-eu-3",
+            "tcpPort": 80,
+            "type": "Health Collector"
+          },
+          {
+            "domain": "gcp-eu-3.dep.rnd.cqloud.com",
+            "groupServerDsRemapConfigEnabled": null,
+            "healthCollectorRegion": "gcp-europe-west3",
+            "healthProviderDnsName": null,
+            "healthProviders": null,
+            "hostname": "health-collector-cdn-2.opencaching",
+            "httpRouterGroupName": null,
+            "httpsPort": 443,
+            "ipv4Address": "35.190.92.205",
+            "ipv6Address": null,
+            "links": [],
+            "segmentId": "push_based_monitor_segment_id",
+            "status": "online",
+            "systemId": "health-collector-cdn-2.opencaching.opencaching.gcp-eu-3",
+            "tcpPort": 80,
+            "type": "Health Collector"
+          },
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "groupServerDsRemapConfigEnabled": null,
+            "healthCollectorRegion": null,
+            "healthProviderDnsName": "cdn-i-healthprovider.dep.rnd.cqloud.com",
+            "healthProviders": null,
+            "hostname": "monitor-0-euw1-green",
+            "httpRouterGroupName": "",
+            "httpsPort": 443,
+            "ipv4Address": "3.250.245.205",
+            "ipv6Address": null,
+            "links": [],
+            "segmentId": "monitor_segment_1",
+            "status": "online",
+            "systemId": "monitor-0-euw1-green.opencaching.tc-rnd",
+            "tcpPort": 80,
+            "type": "Monitor"
+          },
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "groupServerDsRemapConfigEnabled": true,
+            "healthCollectorRegion": null,
+            "healthProviderDnsName": null,
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "manifest-router-0",
+            "httpRouterGroupName": "manifest-router-euw1",
+            "httpsPort": 443,
+            "ipv4Address": "34.89.190.210",
+            "ipv6Address": null,
+            "links": [],
+            "segmentId": "null",
+            "status": "offline",
+            "systemId": "http-router-container-test-1",
+            "tcpPort": 80,
+            "type": "Manifest Router"
+          },
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "groupServerDsRemapConfigEnabled": true,
+            "healthCollectorRegion": null,
+            "healthProviderDnsName": null,
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "dns-router-container-test-1",
+            "httpRouterGroupName": null,
+            "httpsPort": 443,
+            "ipv4Address": "34.89.230.10",
+            "ipv6Address": null,
+            "links": [],
+            "segmentId": "dns_router_1",
+            "status": "offline",
+            "systemId": "dns-router-container-test-1",
+            "tcpPort": 80,
+            "type": "DNS Router"
+          },
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "groupServerDsRemapConfigEnabled": true,
+            "healthCollectorRegion": null,
+            "healthProviderDnsName": null,
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "manifest-router-lb-0-euc1-green",
+            "httpRouterGroupName": "manifest-router-euc1",
+            "httpsPort": 443,
+            "ipv4Address": "18.157.97.96",
+            "ipv6Address": null,
+            "links": [],
+            "segmentId": "null",
+            "status": "online",
+            "systemId": "manifest-router-lb-0-euc1-green.opencaching",
+            "tcpPort": 80,
+            "type": "Manifest Router"
+          },
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "groupServerDsRemapConfigEnabled": true,
+            "healthCollectorRegion": null,
+            "healthProviderDnsName": null,
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "dns-router-cdn-i-opencaching-1",
+            "httpRouterGroupName": null,
+            "httpsPort": 443,
+            "ipv4Address": "35.198.103.120",
+            "ipv6Address": null,
+            "links": [],
+            "segmentId": "dns_router_1",
+            "status": "offline",
+            "systemId": "DR-DevCdn-iOpencachingEu-w3",
+            "tcpPort": 80,
+            "type": "DNS Router"
+          },
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "groupServerDsRemapConfigEnabled": true,
+            "healthCollectorRegion": null,
+            "healthProviderDnsName": null,
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "manifest-router-lb-0-euw1-green",
+            "httpRouterGroupName": "manifest-router-euw1",
+            "httpsPort": 443,
+            "ipv4Address": "34.241.175.34",
+            "ipv6Address": null,
+            "links": [],
+            "segmentId": "null",
+            "status": "online",
+            "systemId": "manifest-router-lb-0-euw1-green.opencaching",
+            "tcpPort": 80,
+            "type": "Manifest Router"
+          },
+          {
+            "domain": "oper.opencaching.tc-rnd.cqloud.com",
+            "groupServerDsRemapConfigEnabled": true,
+            "healthCollectorRegion": null,
+            "healthProviderDnsName": null,
+            "healthProviders": [
+              {
+                "links": [],
+                "name": "health-provider-cdn-i.opencaching.gcp-eu-3.dep.rnd.cqloud.com",
+                "priority": 1
+              }
+            ],
+            "hostname": "dns-router-0-euw1-green",
+            "httpRouterGroupName": "",
+            "httpsPort": 443,
+            "ipv4Address": "52.214.12.20",
+            "ipv6Address": null,
+            "links": [],
+            "segmentId": "dns_router_1",
+            "status": "online",
+            "systemId": "dns-router-0-euw1-green.opencaching.tc-rnd",
+            "tcpPort": 80,
+            "type": "DNS Router"
+          }
+        ]
+      }
+    }
+  },
+  "meta": {
+    "cdnId": "74fc1710-7bee-4291-872d-82883cfaa016",
+    "qcEnv": "cdn-i"
+  }
+}
