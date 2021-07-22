@@ -45,6 +45,7 @@ async function generateApp(host: Tree, options: MySchema) {
   // app tsconfig shouldn't compile cypress folders
   updateJson(host, joinPathFragments(projectConfig.root, "tsconfig.json"), (json) => {
     json["compilerOptions"]["jsx"] = "react";
+    delete json["compilerOptions"]["noImplicitReturns"];
     return json;
   });
 
