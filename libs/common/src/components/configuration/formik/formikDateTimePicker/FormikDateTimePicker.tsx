@@ -1,15 +1,15 @@
 import * as React from "react";
 import { ReactNode } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import Flatpickr from "react-flatpickr";
 import { Field, FieldProps } from "formik";
 import flatpickr from "flatpickr";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
 import "flatpickr/dist/themes/material_blue.css";
 import { DateTime } from "luxon";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

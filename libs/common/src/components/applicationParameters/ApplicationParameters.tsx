@@ -1,28 +1,28 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { loggerCreator } from "../../utils/logger";
+import { Clickable } from "../configuration/clickable/Clickable";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import {
   ApplicationParamsTabRouter,
   TabOptionEnum,
-} from "common/components/applicationParameters/ApplicationParamsTabRouter/ApplicationParamsTabRouter";
-import { SearchBox } from "common/components/applicationParameters/searchBox/SearchBox";
-import { ParamsMetadata } from "common/components/applicationParameters/_types/paramsMetadataTypes";
-import { CommonUrlParams, commonUrlParamsMetadata } from "common/urlParams/commonUrlParams";
+} from "./ApplicationParamsTabRouter/ApplicationParamsTabRouter";
+import { SearchBox } from "./searchBox/SearchBox";
+import { ParamsMetadata } from "./_types/paramsMetadataTypes";
+import { CommonUrlParams, commonUrlParamsMetadata } from "../../urlParams/commonUrlParams";
 import { Switch } from "antd";
 import { PushpinFilled, PushpinOutlined, ReloadOutlined } from "@ant-design/icons";
-import { useUrlBooleanState } from "common/utils/hooks/useUrlState";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { OverridesGrid } from "common/components/applicationParameters/overridesGrid/OverridesGrid";
+import { useUrlBooleanState } from "../../utils/hooks/useUrlState";
+import { TextTooltip } from "../textTooltip/TextTooltip";
+import { OverridesGrid } from "./overridesGrid/OverridesGrid";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "antd/dist/antd.css";
-import { ParamsGridContainer } from "common/components/applicationParameters/paramsGridContainer/ParamsGridContainer";
-import { QcButton } from "common/components/qcComponents/_styled/qcButton/QcButton";
+import { ParamsGridContainer } from "./paramsGridContainer/ParamsGridContainer";
+import { QcButton } from "../qcComponents/_styled/qcButton/QcButton";
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

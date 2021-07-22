@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
+import { ChartBehavior } from "../../../../qwiltChart/_domain/chartBehavior";
 import { Options, PointObject, SeriesObject, TooltipOptions } from "highcharts";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
+import { ChartSeriesData } from "../../../../qwiltChart/_domain/chartSeriesData";
 import { renderToString } from "react-dom/server";
 
 export interface ThisTooltipShared {

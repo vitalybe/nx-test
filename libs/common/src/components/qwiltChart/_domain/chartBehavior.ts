@@ -1,6 +1,6 @@
 import { Options } from "highcharts";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
+import { ChartSeriesData } from "./chartSeriesData";
+import { ChartSeriesArray } from "./chartSeriesArray";
 
 export interface ChartBehavior {
   addSeriesData?(chartSeriesData: ChartSeriesData[]): ChartSeriesData[];

@@ -1,14 +1,14 @@
 import * as React from "react";
 import { useEffect, useMemo, useRef } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ReactHighchartWrapper } from "common/components/qwiltChart/reactHighchartWrapper/ReactHighchartWrapper";
+import { loggerCreator } from "../../utils/logger";
+import { ReactHighchartWrapper } from "../qwiltChart/reactHighchartWrapper/ReactHighchartWrapper";
 import { ChartObject } from "highcharts";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { getChartOptions } from "common/components/qwiltPieChart/_utils";
-import { QwiltPieChartOptions, QwiltPieChartPart } from "common/components/qwiltPieChart/_types";
+import { useEventCallback } from "../../utils/hooks/useEventCallback";
+import { getChartOptions } from "./_utils";
+import { QwiltPieChartOptions, QwiltPieChartPart } from "./_types";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]
 const ReactHighchartWrapperStyled = styled(ReactHighchartWrapper)`

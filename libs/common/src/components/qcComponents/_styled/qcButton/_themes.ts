@@ -1,4 +1,4 @@
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../styling/commonColors";
 import { darken } from "polished";
 
 export interface QcButtonTheme {

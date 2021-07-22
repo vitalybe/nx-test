@@ -1,8 +1,8 @@
 import { loggerCreator } from "./logger";
 
 // @ts-ignore
-const orgsImagesContext = require?.context?.("common/images/orgs/", false);
-const moduleLogger = loggerCreator(__filename);
+const orgsImagesContext = require?.context?.("../images/orgs/", false);
+const moduleLogger = loggerCreator("__filename");
 
 export class OrgUtils {
   static getOrgLogo(orgId: string) {

@@ -1,8 +1,8 @@
 import { ChartObject, PlotPoint } from "highcharts";
-import { MetadataServiceTypeEnum } from "common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
+import { MetadataServiceTypeEnum } from "../../../../backend/deliveryServices/_types/deliveryServiceMetadataTypes";
 import _ from "lodash";
-import { enumValues } from "common/utils/typescriptUtils";
-import { CommonColors } from "common/styling/commonColors";
+import { enumValues } from "../../../../utils/typescriptUtils";
+import { CommonColors } from "../../../../styling/commonColors";
 
 export function tooltipDynamicPositioner(
   this: { chart: ChartObject },

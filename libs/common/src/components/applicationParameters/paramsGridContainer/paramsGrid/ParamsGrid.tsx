@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useMemo, useState } from "react";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { ParamsMetadataType } from "../../_types/paramsMetadataTypes";
 import { GridReactRenderer, QwiltGrid, QwiltGridColumnDef } from "../../../qwiltGrid/QwiltGrid";
 import "ag-grid-community/dist/styles/ag-theme-material.css";
@@ -13,7 +13,7 @@ import { devToolsStore } from "../../../devTools/_stores/devToolsStore";
 import { TextTooltip } from "../../../textTooltip/TextTooltip";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

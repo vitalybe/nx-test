@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { ContentPublisherEntity } from "common/domain/contentPublishers/contentPublisherEntity";
+import { ContentPublisherEntity } from "./contentPublisherEntity";
 
 export interface EntitiesRestrictionsObject {
   ispIds?: string[];

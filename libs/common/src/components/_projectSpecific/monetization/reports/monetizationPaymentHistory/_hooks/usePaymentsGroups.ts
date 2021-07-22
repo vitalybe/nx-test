@@ -1,4 +1,4 @@
-import { MonetizationPaymentEntity } from "common/components/_projectSpecific/monetization/_domain/monetizationPaymentEntity";
+import { MonetizationPaymentEntity } from "../../../_domain/monetizationPaymentEntity";
 import { useMemo, useState } from "react";
 import _ from "lodash";
 

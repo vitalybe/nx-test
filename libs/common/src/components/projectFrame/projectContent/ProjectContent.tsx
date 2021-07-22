@@ -1,27 +1,27 @@
 import * as React from "react";
 import { ReactElement } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { SideBar } from "common/components/sideBar/SideBar";
-import { UserStore } from "common/stores/userStore";
-import { ErrorBoundary } from "common/components/ErrorBoundary";
-import { RecordingBar } from "common/components/supportRecording/recordingBar/RecordingBar";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { RecordingStyles } from "common/components/supportRecording/_styles/recordingStyles";
-import { ExperimentsToolbar } from "common/components/experimentsToolbar/ExperimentsToolbar";
+import { loggerCreator } from "../../../utils/logger";
+import { SideBar } from "../../sideBar/SideBar";
+import { UserStore } from "../../../stores/userStore";
+import { ErrorBoundary } from "../../ErrorBoundary";
+import { RecordingBar } from "../../supportRecording/recordingBar/RecordingBar";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { RecordingStyles } from "../../supportRecording/_styles/recordingStyles";
+import { ExperimentsToolbar } from "../../experimentsToolbar/ExperimentsToolbar";
 import { observer } from "mobx-react-lite";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { GlobalStore } from "common/stores/globalStore";
-import { useUrlState } from "common/utils/hooks/useUrlState";
-import { useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { VersionsProvider } from "common/components/experimentsToolbar/_providers/versionsProvider";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import { Notifier } from "common/utils/notifications/notifier";
-import { AjaxMetadata } from "common/utils/ajax";
-import { LoadingSpinnerGlobal } from "common/components/loadingSpinner/loadingSpinnerGlobal/LoadingSpinnerGlobal";
-import { ParamsMetadata } from "common/components/applicationParameters/_types/paramsMetadataTypes";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
+import { GlobalStore } from "../../../stores/globalStore";
+import { useUrlState } from "../../../utils/hooks/useUrlState";
+import { useProvider } from "../../providerDataContainer/_providers/useProvider";
+import { VersionsProvider } from "../../experimentsToolbar/_providers/versionsProvider";
+import { ProviderDataContainer } from "../../providerDataContainer/ProviderDataContainer";
+import { Notifier } from "../../../utils/notifications/notifier";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { LoadingSpinnerGlobal } from "../../loadingSpinner/loadingSpinnerGlobal/LoadingSpinnerGlobal";
+import { ParamsMetadata } from "../../applicationParameters/_types/paramsMetadataTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

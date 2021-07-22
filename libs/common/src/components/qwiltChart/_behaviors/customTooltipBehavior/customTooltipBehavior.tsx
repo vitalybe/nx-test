@@ -1,12 +1,12 @@
 import { ChartObject, Options, PlotPoint, PointObject } from "highcharts";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { ChartSeriesData } from "../../_domain/chartSeriesData";
 // eslint-disable-next-line unused-imports/no-unused-vars
 import { ReactElement } from "react";
 import ReactDOMServer from "react-dom/server";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class CustomTooltipBehavior implements ChartBehavior {
   constructor(

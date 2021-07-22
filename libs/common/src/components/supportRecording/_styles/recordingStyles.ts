@@ -1,4 +1,4 @@
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../styling/commonColors";
 
 export class RecordingStyles {
   static readonly COLOR_RECORDING = CommonColors.TREE_POPPY;

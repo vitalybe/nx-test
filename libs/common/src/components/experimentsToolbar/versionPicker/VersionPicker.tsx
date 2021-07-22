@@ -1,16 +1,16 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Tooltip } from "common/components/Tooltip";
-import { Icons } from "common/styling/icons";
-import { ExperimentsBarStyles } from "common/components/experimentsToolbar/_styling/experimentsBarStyles";
+import { loggerCreator } from "../../../utils/logger";
+import { Tooltip } from "../../Tooltip";
+import { Icons } from "../../../styling/icons";
+import { ExperimentsBarStyles } from "../_styling/experimentsBarStyles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { darken } from "polished";
 import { useState } from "react";
-import { VersionPickerDropdown } from "common/components/experimentsToolbar/versionPicker/versionPickerDropdown/VersionPickerDropdown";
-import { VersionEntity } from "common/components/experimentsToolbar/_domain/versionEntity";
+import { VersionPickerDropdown } from "./versionPickerDropdown/VersionPickerDropdown";
+import { VersionEntity } from "../_domain/versionEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

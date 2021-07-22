@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CommonColors as Colors } from "common/styling/commonColors";
+import { CommonColors as Colors } from "../../../styling/commonColors";
 
-const noDataIcon = require("common/images/no-data-cloud.svg");
+const noDataIcon = require("../../../images/no-data-cloud.svg");
 
 //region [[ Styles ]]
 

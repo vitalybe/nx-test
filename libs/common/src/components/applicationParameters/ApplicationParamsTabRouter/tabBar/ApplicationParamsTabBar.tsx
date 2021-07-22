@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { TabData } from "../ApplicationParamsTabRouter";
-import { ApplicationParamsTabButton } from "common/components/applicationParameters/ApplicationParamsTabRouter/tabBar/tabButton/ApplicationParamsTabButton";
-import { CommonColors } from "common/styling/commonColors";
+import { ApplicationParamsTabButton } from "./tabButton/ApplicationParamsTabButton";
+import { CommonColors } from "../../../../styling/commonColors";
 import _ from "lodash";
 
 //region [[ Styles ]]

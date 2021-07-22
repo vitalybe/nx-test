@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DistributionPartInfo } from "common/components/distributionBars/DistributionBars";
-import { UtilizationBar } from "common/components/utilizationBar/UtilizationBar";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { Utils } from "common/utils/utils";
+import { DistributionPartInfo } from "../../DistributionBars";
+import { UtilizationBar } from "../../../utilizationBar/UtilizationBar";
+import { CommonColors as Colors } from "../../../../styling/commonColors";
+import { UnitKindEnum, unitsFormatter } from "../../../../utils/unitsFormatter";
+import { Utils } from "../../../../utils/utils";
 import _ from "lodash";
 
 //region [[ Styles ]]

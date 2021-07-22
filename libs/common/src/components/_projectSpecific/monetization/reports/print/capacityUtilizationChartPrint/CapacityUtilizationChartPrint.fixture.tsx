@@ -5,12 +5,12 @@ import styled from "styled-components";
 import {
   CapacityUtilizationChartPrint,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/print/capacityUtilizationChartPrint/CapacityUtilizationChartPrint";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./CapacityUtilizationChartPrint";
+import FixtureDecorator from "../../../../../../utils/cosmos/FixtureDecorator";
 import {
   createCapacitySeriesData,
   createYearOfMonthlyMockPoints,
-} from "common/components/_projectSpecific/monetization/_utils/monetizationMockUtils";
+} from "../../../_utils/monetizationMockUtils";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

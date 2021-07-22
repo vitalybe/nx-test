@@ -2,33 +2,33 @@ import * as _ from "lodash";
 import * as React from "react";
 import { useRef, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CommonColors } from "common/styling/commonColors";
-import { RouteMetadata } from "common/stores/_models/routeMetadata";
-import { NavButtonsContainer } from "common/components/sideBar/navButtons/NavButtonsContainer";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { CommonUrls } from "common/utils/commonUrls";
-import { Ajax } from "common/utils/ajax";
-import { Title } from "common/components/sideBar/_styles/sideBarCommon";
-import { SideBarStyles } from "common/components/sideBar/_styles/sideBarStyles";
-import { SidebarButton } from "common/components/sideBar/sidebarButton/SidebarButton";
+import { loggerCreator } from "../../utils/logger";
+import { CommonColors } from "../../styling/commonColors";
+import { RouteMetadata } from "../../stores/_models/routeMetadata";
+import { NavButtonsContainer } from "./navButtons/NavButtonsContainer";
+import { TextTooltip } from "../textTooltip/TextTooltip";
+import { CommonUrls } from "../../utils/commonUrls";
+import { Ajax } from "../../utils/ajax";
+import { Title } from "./_styles/sideBarCommon";
+import { SideBarStyles } from "./_styles/sideBarStyles";
+import { SidebarButton } from "./sidebarButton/SidebarButton";
 import { openQwiltModal } from "../qwiltModal/QwiltModal";
 import { RecordFinishedDialog } from "../supportRecording/recordFinishedDialog/RecordFinishedDialog";
 import { ContactSupportDialog } from "../supportRecording/contactSupportDialog/ContactSupportDialog";
-import { LogRocketUtils } from "common/utils/telemetryRecording/logRocketUtils";
-import { Notifier } from "common/utils/notifications/notifier";
-import { ApplicationParameters } from "common/components/applicationParameters/ApplicationParameters";
-import { ParamsMetadata } from "common/components/applicationParameters/_types/paramsMetadataTypes";
-import { UserStore } from "common/stores/userStore";
+import { LogRocketUtils } from "../../utils/telemetryRecording/logRocketUtils";
+import { Notifier } from "../../utils/notifications/notifier";
+import { ApplicationParameters } from "../applicationParameters/ApplicationParameters";
+import { ParamsMetadata } from "../applicationParameters/_types/paramsMetadataTypes";
+import { UserStore } from "../../stores/userStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
-const logoutLogo = require("common/images/sideBar/logout.svg");
-const qwiltLogoWithLabel = require("common/images/logo/qwilt-logo.png");
-const qwiltLogo = require("common/components/sideBar/_images/qwilt.png");
-const qcLogo = require("common/images/logo/qc-logo.png");
-const pinNarrowLogo = require("common/images/sideBar/pin-narrow.svg");
-const pinWideLogo = require("common/images/sideBar/pin-wide.svg");
+const logoutLogo = require("../../images/sideBar/logout.svg");
+const qwiltLogoWithLabel = require("../../images/logo/qwilt-logo.png");
+const qwiltLogo = require("./_images/qwilt.png");
+const qcLogo = require("../../images/logo/qc-logo.png");
+const pinNarrowLogo = require("../../images/sideBar/pin-narrow.svg");
+const pinWideLogo = require("../../images/sideBar/pin-wide.svg");
 
 //region [[ Styles ]]
 
@@ -230,7 +230,7 @@ export const SideBar = (props: Props) => {
   const viewRef = useRef<HTMLDivElement | null>(null);
 
   // @ts-ignore - Comes from webpack
-  let version = __VERSION__;
+  let version = process.env.NX_QC_VERSION;
   if (typeof version !== "string") {
     version = "vDEV";
   }

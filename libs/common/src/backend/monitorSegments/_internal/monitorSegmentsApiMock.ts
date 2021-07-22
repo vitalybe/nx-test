@@ -1,13 +1,13 @@
-import { sleep } from "common/utils/sleep";
-import { MonitorSegmentsApi } from "common/backend/monitorSegments";
+import { sleep } from "../../../utils/sleep";
+import { MonitorSegmentsApi } from "../../monitorSegments";
 import {
   MonitorSegmentsApiResult,
   MonitorSegmentsApiType,
-} from "common/backend/monitorSegments/_types/monitorSegmentsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/monitorSegmentsTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class MonitorSegmentsApiMock extends MonitorSegmentsApi {
   async list(cdnId: string): Promise<MonitorSegmentsApiResult> {

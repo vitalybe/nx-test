@@ -1,13 +1,13 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { Field, FieldProps } from "formik";
 import {
   Props as PropsQwiltReactSelect,
   QwiltReactSelect,
   SelectComponentProps,
-} from "common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
+} from "../../qwiltForm/qwiltReactSelect/QwiltReactSelect";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

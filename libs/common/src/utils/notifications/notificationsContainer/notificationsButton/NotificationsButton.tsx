@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { NotificationLevel } from "common/utils/notifications/_domain/notificationEntity";
-import { NotificationIcon } from "common/utils/notifications/notificationsContainer/notificationIcon/NotificationIcon";
+import { loggerCreator } from "../../../logger";
+import { NotificationLevel } from "../../_domain/notificationEntity";
+import { NotificationIcon } from "../notificationIcon/NotificationIcon";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

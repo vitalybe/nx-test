@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { Props, TextValues } from "common/components/percentBar/_parts/textValues/TextValues";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { CommonColors } from "common/styling/commonColors";
+import { Props, TextValues } from "./TextValues";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { CommonColors } from "../../../../styling/commonColors";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

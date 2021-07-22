@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { NotificationsButton } from "common/utils/notifications/notificationsContainer/notificationsButton/NotificationsButton";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { NotificationLevel } from "common/utils/notifications/_domain/notificationEntity";
+import { NotificationsButton } from "./NotificationsButton";
+import FixtureDecorator from "../../../cosmos/FixtureDecorator";
+import { NotificationLevel } from "../../_domain/notificationEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

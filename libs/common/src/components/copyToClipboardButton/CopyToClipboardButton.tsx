@@ -1,17 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../utils/logger";
 import {
   copyToClipboardToast,
   Props as ToastProps,
-} from "common/components/copyToClipboardButton/copyToClipboardToast/CopyToClipboardToast";
-import { Icons } from "common/styling/icons";
-import { CommonColors } from "common/styling/commonColors";
+} from "./copyToClipboardToast/CopyToClipboardToast";
+import { Icons } from "../../styling/icons";
+import { CommonColors } from "../../styling/commonColors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CopyToClipboard from "react-copy-to-clipboard";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { Clickable } from "../configuration/clickable/Clickable";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,17 +1,17 @@
 import * as React from "react";
 import { useContext } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Icons } from "common/styling/icons";
+import { loggerCreator } from "../../../../../utils/logger";
+import { Icons } from "../../../../../styling/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CommonColors } from "common/styling/commonColors";
-import { VersionEntity } from "common/components/experimentsToolbar/_domain/versionEntity";
-import { MainStoreContext } from "common/components/experimentsToolbar/_stores/mainStore";
+import { CommonColors } from "../../../../../styling/commonColors";
+import { VersionEntity } from "../../../_domain/versionEntity";
+import { MainStoreContext } from "../../../_stores/mainStore";
 import { observer } from "mobx-react-lite";
 import { lighten } from "polished";
-import { GlobalStore } from "common/stores/globalStore";
+import { GlobalStore } from "../../../../../stores/globalStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const TEXT_COLOR = "#07394c";
 

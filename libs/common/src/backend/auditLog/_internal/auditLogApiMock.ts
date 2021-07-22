@@ -1,13 +1,13 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { AuditLogApi } from "common/backend/auditLog";
-import { AuditLogApiRequest, AuditLogApiResult } from "common/backend/auditLog/_types/auditLogTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { AuditLogApi } from "../../auditLog";
+import { AuditLogApiRequest, AuditLogApiResult } from "../_types/auditLogTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class AuditLogApiMock implements AuditLogApi {
   async listRecords(metadata: AjaxMetadata, requestBody: AuditLogApiRequest): Promise<AuditLogApiResult> {

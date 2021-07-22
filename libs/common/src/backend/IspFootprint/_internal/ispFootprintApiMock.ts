@@ -1,12 +1,12 @@
 /* eslint-disable unused-imports/no-unused-vars,unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
 
-import { loggerCreator } from "common/utils/logger";
-import { IspFootprintApi } from "common/backend/IspFootprint";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { loggerCreator } from "../../../utils/logger";
+import { IspFootprintApi } from "../../IspFootprint";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class IspFootprintApiMock extends IspFootprintApi {
   async getNetworks(asn: string, metadata: AjaxMetadata): Promise<string[]> {

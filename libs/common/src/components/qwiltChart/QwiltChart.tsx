@@ -5,18 +5,18 @@ import styled from "styled-components";
 import {
   getBaseChartConfig,
   ReactHighchartWrapper,
-} from "common/components/qwiltChart/reactHighchartWrapper/ReactHighchartWrapper";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { ChartSeries } from "common/components/qwiltChart/_domain/chartSeries";
+} from "./reactHighchartWrapper/ReactHighchartWrapper";
+import { ChartBehavior } from "./_domain/chartBehavior";
+import { ChartSeriesArray } from "./_domain/chartSeriesArray";
+import { ChartSeriesData } from "./_domain/chartSeriesData";
+import { ChartSeries } from "./_domain/chartSeries";
 import { ChartObject, Options, SeriesObject } from "highcharts";
-import { useAlertIfCallTooSoon } from "common/utils/hooks/useAlertIfCallTooSoon";
+import { useAlertIfCallTooSoon } from "../../utils/hooks/useAlertIfCallTooSoon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons/faExclamationTriangle";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../utils/logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

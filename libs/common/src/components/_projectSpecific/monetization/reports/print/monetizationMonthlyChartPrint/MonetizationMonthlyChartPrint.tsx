@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { unitsFormatter } from "common/utils/unitsFormatter";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
-import { MonetizationMonthlyChart } from "common/components/_projectSpecific/monetization/reports/monetizationMonthlyChart/MonetizationMonthlyChart";
+import { loggerCreator } from "../../../../../../utils/logger";
+import { ChartSeriesData } from "../../../../../qwiltChart/_domain/chartSeriesData";
+import { unitsFormatter } from "../../../../../../utils/unitsFormatter";
+import { HistogramSeries } from "../../../../../../utils/histograms/domain/histogramSeries";
+import { MonetizationMonthlyChart } from "../../monetizationMonthlyChart/MonetizationMonthlyChart";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const Label = styled.div`

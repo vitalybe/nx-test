@@ -8,15 +8,15 @@ import {
   QwiltGridColumnDef,
   QwiltGridTreeColumnDef,
   TreeData,
-} from "common/components/qwiltGrid/QwiltGrid";
+} from "../../../qwiltGrid/QwiltGrid";
 import {
   dsGridStyles,
   GridClasses,
-} from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_styles/dsGridStyles";
+} from "./_styles/dsGridStyles";
 import _ from "lodash";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { TextTooltip } from "../../../textTooltip/TextTooltip";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
+import { useEventCallback } from "../../../../utils/hooks/useEventCallback";
 import {
   ColumnApi,
   GridApi,
@@ -28,17 +28,17 @@ import {
   RowNode,
   SortChangedEvent,
 } from "ag-grid-community";
-import { NoDataFallback } from "common/components/qcComponents/noDataFallback/NoDataFallback";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
+import { NoDataFallback } from "../../../qcComponents/noDataFallback/NoDataFallback";
+import { ProviderDataContainer } from "../../../providerDataContainer/ProviderDataContainer";
 import { DateTime } from "luxon";
-import { CommonDsEntity } from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
-import { IconImg } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_styles/iconImg";
-import { Cell } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_styles/cell";
-import { getTreeColumnRenderer } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_renderers/treeColumnRenderer";
-import { GenericMemoHOC } from "common/utils/typescriptUtils";
+import { CommonDsEntity } from "../_domain/commonDsEntity";
+import { IconImg } from "./_styles/iconImg";
+import { Cell } from "./_styles/cell";
+import { getTreeColumnRenderer } from "./_renderers/treeColumnRenderer";
+import { GenericMemoHOC } from "../../../../utils/typescriptUtils";
 
-const exportIcon = require("common/images/dsDashboardImages/export.svg");
-const drilldownIcon = require("common/images/dsDashboardImages/drill-down-chart.svg");
+const exportIcon = require("../../../../images/dsDashboardImages/export.svg");
+const drilldownIcon = require("../../../../images/dsDashboardImages/drill-down-chart.svg");
 
 //region [[ Styles ]]
 

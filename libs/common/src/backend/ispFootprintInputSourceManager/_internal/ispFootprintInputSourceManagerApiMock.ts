@@ -1,16 +1,16 @@
 /* eslint-disable unused-imports/no-unused-vars,unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { IspFootprintInputSourceManagerApi } from "common/backend/ispFootprintInputSourceManager";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { IspFootprintInputSourceManagerApi } from "../../ispFootprintInputSourceManager";
 import {
   BgpInputApiType,
   BgpInputResultApiType,
-} from "common/backend/ispFootprintInputSourceManager/_types/ispFootprintInputSourceManagerTypes";
-import { loggerCreator } from "common/utils/logger";
+} from "../_types/ispFootprintInputSourceManagerTypes";
+import { loggerCreator } from "../../../utils/logger";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class IspFootprintInputSourceManagerApiMock implements IspFootprintInputSourceManagerApi {
   async list(metadata: AjaxMetadata): Promise<BgpInputResultApiType> {

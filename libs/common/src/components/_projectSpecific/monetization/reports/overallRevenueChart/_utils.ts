@@ -1,23 +1,23 @@
 import { CSSObject, PlotLines } from "highcharts";
-import { Fonts } from "common/styling/fonts";
+import { Fonts } from "../../../../../styling/fonts";
 import { transparentize } from "polished";
 import { DateTime, Duration } from "luxon";
-import { MarkersOnHoverBehavior } from "common/components/qwiltChart/_behaviors/markersOnHoverBehavior/markersOnHoverBehavior";
-import { AddSeriesBehavior } from "common/components/qwiltChart/_behaviors/addSeriesBehavior/addSeriesBehavior";
-import { XAxisBehavior } from "common/components/qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
-import { YAxisBehavior } from "common/components/qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
+import { MarkersOnHoverBehavior } from "../../../../qwiltChart/_behaviors/markersOnHoverBehavior/markersOnHoverBehavior";
+import { AddSeriesBehavior } from "../../../../qwiltChart/_behaviors/addSeriesBehavior/addSeriesBehavior";
+import { XAxisBehavior } from "../../../../qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
+import { YAxisBehavior } from "../../../../qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
 import {
   FinancingPhaseData,
   MonetizationProjectEntity,
-} from "common/components/_projectSpecific/monetization/_domain/monetizationProjectEntity";
-import { CurrencyUnitEnum } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { OnlyData } from "common/utils/typescriptUtils";
-import { getCommonYAxisOptions } from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/_constants";
-import { ProjectPhasesBehavior } from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/projectPhasesBehavior";
-import { NoTooltipBehavior } from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/noTooltipBehavior";
-import { CommonColors } from "common/styling/commonColors";
-import { MultiProjectPhaseMarkersBehavior } from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/bubbleMarkers/multiProjectPhaseMarkersBehavior";
+} from "../../_domain/monetizationProjectEntity";
+import { CurrencyUnitEnum } from "../../_utils/currencyUtils";
+import { ChartBehavior } from "../../../../qwiltChart/_domain/chartBehavior";
+import { OnlyData } from "../../../../../utils/typescriptUtils";
+import { getCommonYAxisOptions } from "../_chartBehaviors/_constants";
+import { ProjectPhasesBehavior } from "../_chartBehaviors/projectPhasesBehavior";
+import { NoTooltipBehavior } from "../_chartBehaviors/noTooltipBehavior";
+import { CommonColors } from "../../../../../styling/commonColors";
+import { MultiProjectPhaseMarkersBehavior } from "../_chartBehaviors/bubbleMarkers/multiProjectPhaseMarkersBehavior";
 
 export function getOverallRevenueChartBehaviors(
   markersBehavior: MarkersOnHoverBehavior,

@@ -1,14 +1,14 @@
 import * as React from "react";
 import { ReactChild } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { Match, navigate } from "@reach/router";
 import {
   TabRouterTabStore,
   TabRouterTabStoreContextProvider,
-} from "common/components/tabRouter/_stores/tabRouterTabStore";
+} from "../_stores/tabRouterTabStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

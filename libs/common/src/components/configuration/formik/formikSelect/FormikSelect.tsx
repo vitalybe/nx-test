@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
 import { Field, FieldProps } from "formik";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../styling/commonColors";
 
 const FormikSelectView = styled.div``;
 

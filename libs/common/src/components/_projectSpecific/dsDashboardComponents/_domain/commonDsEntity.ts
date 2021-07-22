@@ -1,7 +1,7 @@
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
-import { HierarchyEntity } from "common/utils/hierarchyUtils";
-import { mockUtils } from "common/utils/mockUtils";
-import { MetadataServiceTypeEnum } from "common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
+import { HistogramSeries } from "../../../../utils/histograms/domain/histogramSeries";
+import { HierarchyEntity } from "../../../../utils/hierarchyUtils";
+import { mockUtils } from "../../../../utils/mockUtils";
+import { MetadataServiceTypeEnum } from "../../../../backend/deliveryServices/_types/deliveryServiceMetadataTypes";
 
 export type EntityTypeDictionary<T = string> = { [k in DsEntityType]?: T };
 

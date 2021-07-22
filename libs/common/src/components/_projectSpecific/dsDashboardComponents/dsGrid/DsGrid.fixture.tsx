@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DsGrid, Props } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/DsGrid";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { CommonDsEntity } from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
+import { DsGrid, Props } from "./DsGrid";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { CommonDsEntity } from "../_domain/commonDsEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

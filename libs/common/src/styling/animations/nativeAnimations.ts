@@ -1,4 +1,4 @@
-import { Utils } from "common/utils/utils";
+import { Utils } from "../../utils/utils";
 
 type NativeAnimationCallback = (value: number) => void;
 

@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { FormikToggle } from "common/components/configuration/formik/formikToggle/FormikToggle";
+import { FormikToggle } from "./FormikToggle";
 import { Formik } from "formik";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../styling/commonColors";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,7 +1,7 @@
 import { DateTime, Duration, Interval } from "luxon";
 import { useState } from "react";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
 
 const urlStore = UrlStore.getInstance<CommonUrlParams>();
 

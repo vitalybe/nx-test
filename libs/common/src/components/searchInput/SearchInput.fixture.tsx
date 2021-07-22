@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { SearchInput } from "common/components/searchInput/SearchInput";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { SearchInput } from "./SearchInput";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

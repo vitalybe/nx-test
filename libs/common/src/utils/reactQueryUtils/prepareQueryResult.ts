@@ -1,11 +1,11 @@
 import { loggerCreator } from "../logger";
 import { useQuery, UseQueryOptions } from "react-query";
-import { GlobalStore } from "common/stores/globalStore";
-import { ReactQueryDependencyGraph } from "common/utils/reactQueryUtils/reactQueryDependencyGraph";
+import { GlobalStore } from "../../stores/globalStore";
+import { ReactQueryDependencyGraph } from "./reactQueryDependencyGraph";
 import stableStringify from "json-stable-stringify";
 import { UseQueryResult } from "react-query/types/react/types";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type PromiseFunction = (...args: any) => Promise<any>;

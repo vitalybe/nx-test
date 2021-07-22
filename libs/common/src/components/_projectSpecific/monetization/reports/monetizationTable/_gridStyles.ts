@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { Fonts } from "common/styling/fonts";
-import { CommonColors } from "common/styling/commonColors";
+import { Fonts } from "../../../../../styling/fonts";
+import { CommonColors } from "../../../../../styling/commonColors";
 
 export enum MonetizationGridClasses {
   CELL_CENTERED = "cell-centered",

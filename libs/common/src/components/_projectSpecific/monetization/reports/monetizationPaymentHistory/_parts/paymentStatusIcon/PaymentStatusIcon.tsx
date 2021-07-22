@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../../../utils/logger";
 import { DateTime } from "luxon";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { TextTooltip } from "../../../../../../textTooltip/TextTooltip";
 
-const checkIconSrc = require("common/components/_projectSpecific/monetization/_media/svg/checkIcon.svg");
-const pendingInputIconSrc = require("common/components/_projectSpecific/monetization/_media/svg/pendingInputIcon.svg");
-const pendingPaymentIconSrc = require("common/components/_projectSpecific/monetization/_media/svg/pendingPaymentIcon.svg");
+const checkIconSrc = require("../../../../_media/svg/checkIcon.svg");
+const pendingInputIconSrc = require("../../../../_media/svg/pendingInputIcon.svg");
+const pendingPaymentIconSrc = require("../../../../_media/svg/pendingPaymentIcon.svg");
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const tooltipTextCss = css`

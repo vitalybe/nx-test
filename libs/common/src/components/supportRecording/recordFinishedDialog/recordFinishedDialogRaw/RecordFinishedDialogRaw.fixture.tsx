@@ -4,8 +4,8 @@ import styled from "styled-components";
 import {
   Props,
   RecordFinishedDialogRaw,
-} from "common/components/supportRecording/recordFinishedDialog/recordFinishedDialogRaw/RecordFinishedDialogRaw";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./RecordFinishedDialogRaw";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

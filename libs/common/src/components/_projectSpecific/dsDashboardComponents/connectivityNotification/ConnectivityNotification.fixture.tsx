@@ -3,8 +3,8 @@ import styled from "styled-components";
 import {
   ConnectivityNotification,
   Props,
-} from "common/components/_projectSpecific/dsDashboardComponents/connectivityNotification/ConnectivityNotification";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./ConnectivityNotification";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

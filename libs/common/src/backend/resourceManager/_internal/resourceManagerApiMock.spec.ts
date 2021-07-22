@@ -1,7 +1,7 @@
-import { ResourceManagerApiMock } from "common/backend/resourceManager";
-import { AjaxMetadata } from "common/utils/ajax";
+import { ResourceManagerApiMock } from "../../resourceManager";
+import { AjaxMetadata } from "../../../utils/ajax";
 import { Duration } from "luxon";
-import mockData from "common/backend/_utils/mockData";
+import mockData from "../../_utils/mockData";
 
 describe("ResourceManagerApiMock", function() {
   it("should return capacity", async () => {

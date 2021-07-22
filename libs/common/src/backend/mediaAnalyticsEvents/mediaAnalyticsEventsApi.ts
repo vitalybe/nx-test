@@ -1,6 +1,6 @@
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { getOriginForApi } from "common/backend/backendOrigin";
+import { Ajax, AjaxMetadata } from "../../utils/ajax";
+import { UrlParams } from "../_utils/urlParams";
+import { getOriginForApi } from "../backendOrigin";
 
 export interface MediaAnalyticsSubEvent {
   "sub-header": string;

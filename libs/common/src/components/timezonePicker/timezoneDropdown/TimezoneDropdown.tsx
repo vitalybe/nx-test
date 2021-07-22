@@ -1,13 +1,13 @@
 import * as React from "react";
 import { useEffect, useRef } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { TimezoneUtil, ZoneMetadata } from "common/components/timezonePicker/_utils/timezoneUtil";
+import { loggerCreator } from "../../../utils/logger";
+import { TimezoneUtil, ZoneMetadata } from "../_utils/timezoneUtil";
 import Downshift, { DownshiftState, StateChangeOptions } from "downshift";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../styling/commonColors";
 import { Zone } from "luxon";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

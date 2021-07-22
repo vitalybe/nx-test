@@ -1,18 +1,18 @@
 import * as React from "react";
 import styled from "styled-components";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
+import { ChartSeriesData } from "../../_domain/chartSeriesData";
+import { MediaAnalyticsSeries } from "../../../../backend/mediaAnalytics/mediaAnalyticsSeries";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
-import { TimeConfig } from "common/utils/timeConfig";
+import { TimeConfig } from "../../../../utils/timeConfig";
 import { DateTime } from "luxon";
-import { QwiltChart } from "common/components/qwiltChart/QwiltChart";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { CustomTooltipBehavior } from "common/components/qwiltChart/_behaviors/customTooltipBehavior/customTooltipBehavior";
-import { YAxisBehavior } from "common/components/qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
-import { AddSeriesBehavior } from "common/components/qwiltChart/_behaviors/addSeriesBehavior/addSeriesBehavior";
-import { XAxisBehavior } from "common/components/qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
+import { QwiltChart } from "../../QwiltChart";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { CustomTooltipBehavior } from "./customTooltipBehavior";
+import { YAxisBehavior } from "../yAxisBehavior/yAxisBehavior";
+import { AddSeriesBehavior } from "../addSeriesBehavior/addSeriesBehavior";
+import { XAxisBehavior } from "../xAxisBehavior/xAxisBehavior";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

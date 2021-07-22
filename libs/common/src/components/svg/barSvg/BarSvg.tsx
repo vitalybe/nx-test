@@ -1,6 +1,6 @@
 import * as React from "react";
 import { memo, useEffect, useRef, useState } from "react";
-import { NativeAnimations } from "common/styling/animations/nativeAnimations";
+import { NativeAnimations } from "../../../styling/animations/nativeAnimations";
 import styled from "styled-components";
 
 const Svg = styled.svg<{ disableHeightTransition?: boolean }>`

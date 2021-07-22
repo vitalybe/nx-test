@@ -1,7 +1,7 @@
 import React, { MouseEvent } from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../styling/commonColors";
 // @ts-ignore
 import ReactImage from "react-image";
 

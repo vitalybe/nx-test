@@ -1,10 +1,10 @@
-import { sleep } from "common/utils/sleep";
-import { DnsSegmentsApi } from "common/backend/dnsSegments";
-import { DnsSegmentsApiResult, DnsSegmentsApiType } from "common/backend/dnsSegments/_types/dnsSegmentsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { DnsSegmentsApi } from "../../dnsSegments";
+import { DnsSegmentsApiResult, DnsSegmentsApiType } from "../_types/dnsSegmentsTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DnsSegmentsApiMock extends DnsSegmentsApi {
   async list(cdnId: string): Promise<DnsSegmentsApiResult> {

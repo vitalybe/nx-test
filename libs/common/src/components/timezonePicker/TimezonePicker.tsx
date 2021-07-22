@@ -1,14 +1,14 @@
 import * as React from "react";
 import { useRef, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../utils/logger";
 import { Zone } from "luxon";
-import { TimezoneUtil } from "common/components/timezonePicker/_utils/timezoneUtil";
-import { Tooltip } from "common/components/Tooltip";
-import { TimezoneDropdown } from "common/components/timezonePicker/timezoneDropdown/TimezoneDropdown";
+import { TimezoneUtil } from "./_utils/timezoneUtil";
+import { Tooltip } from "../Tooltip";
+import { TimezoneDropdown } from "./timezoneDropdown/TimezoneDropdown";
 import { Instance } from "tippy.js";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 
