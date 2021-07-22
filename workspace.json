@@ -27,6 +27,98 @@
           }
         }
       }
+    },
+    "reports": {
+      "root": "apps/reports",
+      "sourceRoot": "apps/reports/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/reports",
+            "index": "apps/reports/src/index.html",
+            "main": "apps/reports/src/main.tsx",
+            "polyfills": "apps/reports/src/polyfills.ts",
+            "tsConfig": "apps/reports/tsconfig.app.json",
+            "assets": ["apps/reports/src/favicon.ico", "apps/reports/src/assets"],
+            "styles": [],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/reports/src/environments/environment.ts",
+                  "with": "apps/reports/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/web:dev-server",
+          "options": {
+            "buildTarget": "reports:build",
+            "hmr": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "reports:build:production",
+              "hmr": false
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/reports/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/reports"],
+          "options": {
+            "jestConfig": "apps/reports/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "tsc": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "yarn run tsc -- -b apps/reports/tsconfig.app.json --incremental"
+          }
+        },
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/reports/e2e/cypress.json",
+            "tsConfig": "apps/reports/e2e/tsconfig.e2e.json",
+            "devServerTarget": "reports:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "reports:serve:production"
+            }
+          }
+        }
+      }
     }
   },
   "cli": {
@@ -47,5 +139,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "reports"
 }
