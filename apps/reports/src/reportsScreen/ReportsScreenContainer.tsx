@@ -1,14 +1,14 @@
 import * as React from "react";
-import { loggerCreator } from "common/index";
-import { AjaxMetadata } from "common/index";
-import { useProvider } from "common/index";
-import { ReportsScreen } from "src/reportsScreen/ReportsScreen";
-import { UrlParameterTypeEnum } from "common/index";
-import { DeploymentEntity } from "common/index";
-import { QnDeploymentEntity } from "common/index";
-import { DeploymentEntitiesProvider } from "common/index";
+import { loggerCreator } from "@qwilt/common";
+import { AjaxMetadata } from "@qwilt/common";
+import { useProvider } from "@qwilt/common";
+import { ReportsScreen } from "./ReportsScreen";
+import { UrlParameterTypeEnum } from "@qwilt/common";
+import { DeploymentEntity } from "@qwilt/common";
+import { QnDeploymentEntity } from "@qwilt/common";
+import { DeploymentEntitiesProvider } from "@qwilt/common";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

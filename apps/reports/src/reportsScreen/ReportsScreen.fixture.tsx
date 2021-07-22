@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { ReportsScreen, Props } from "src/reportsScreen/ReportsScreen";
-import { FixtureDecorator } from "common/index";
+import { ReportsScreen, Props } from "./ReportsScreen";
+import { FixtureDecorator } from "@qwilt/common";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

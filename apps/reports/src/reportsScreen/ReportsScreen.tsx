@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/index";
-import { ReportItem } from "src/reportsScreen/reportItem/ReportItem";
-import { QnDeploymentEntity } from "common/index";
+import { loggerCreator } from "@qwilt/common";
+import { ReportItem } from "./reportItem/ReportItem";
+import { QnDeploymentEntity } from "@qwilt/common";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

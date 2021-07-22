@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/index";
-import { CommonUrls } from "common/index";
-import { UrlParameterTypeEnum } from "common/index";
-import { QnDeploymentEntity } from "common/index";
+import { loggerCreator } from "@qwilt/common";
+import { CommonUrls } from "@qwilt/common";
+import { UrlParameterTypeEnum } from "@qwilt/common";
+import { QnDeploymentEntity } from "@qwilt/common";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

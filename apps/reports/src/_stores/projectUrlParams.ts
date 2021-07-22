@@ -1,4 +1,4 @@
-import { ReportsUrlParams } from "common/index";
+import { ReportsUrlParams } from "@qwilt/common";
 
 type ProjectUrlParamsType = ReportsUrlParams.Params;
 const ProjectUrlParams = ReportsUrlParams.Params;
