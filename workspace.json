@@ -39,7 +39,7 @@
           "options": {
             "outputPath": "dist/apps/reports",
             "index": "apps/reports/src/index.html",
-            "main": "apps/reports/src/main.tsx",
+            "main": "apps/reports/src/index.tsx",
             "polyfills": "apps/reports/src/polyfills.ts",
             "tsConfig": "apps/reports/tsconfig.app.json",
             "assets": ["apps/reports/src/favicon.ico", "apps/reports/src/assets"],
