@@ -42,9 +42,18 @@ async function generateApp(host: Tree, options: MySchema) {
   const currentWorkspaceJson = getProjects(host);
   const projectConfig = currentWorkspaceJson.get(options.name);
 
-  // app tsconfig shouldn't compile cypress folders
+  updateJson(host, joinPathFragments(projectConfig.root, "tsconfig.app.json"), (json) => {
+    // https://stackoverflow.com/questions/48935663/webpack-property-context-does-not-exist-on-type-noderequire/48935668
+    json["compilerOptions"]["types"].push("webpack-env");
+    // exclude e2e folder
+    json["include"] = ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"];
+    return json;
+  });
+
   updateJson(host, joinPathFragments(projectConfig.root, "tsconfig.json"), (json) => {
+    // for older typescript version
     json["compilerOptions"]["jsx"] = "react";
+    // implicit returns
     delete json["compilerOptions"]["noImplicitReturns"];
     return json;
   });
