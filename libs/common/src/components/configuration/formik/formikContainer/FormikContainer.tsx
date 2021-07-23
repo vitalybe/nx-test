@@ -2,14 +2,14 @@
 import * as React from "react";
 import { ReactChild, useEffect } from "react";
 import styled from "styled-components";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
 import { lighten } from "polished";
-import { SmallTitle } from "common/components/configuration/_styles/configurationCommon";
+import { SmallTitle } from "../../_styles/configurationCommon";
 import { Form, Formik, FormikActions, FormikProps } from "formik";
-import { CommonColors } from "common/styling/commonColors";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { Notifier } from "common/utils/notifications/notifier";
+import { CommonColors } from "../../../../styling/commonColors";
+import { TextTooltip } from "../../../textTooltip/TextTooltip";
+import { LoadingSpinner } from "../../../loadingSpinner/loadingSpinner/LoadingSpinner";
+import { Notifier } from "../../../../utils/notifications/notifier";
 import _ from "lodash";
 import { FormikConfig } from "formik/dist/types";
 

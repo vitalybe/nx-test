@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { BarSvg, Props } from "common/components/svg/barSvg/BarSvg";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { BarSvg, Props } from "./BarSvg";
+import { CommonColors as Colors } from "../../../styling/commonColors";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

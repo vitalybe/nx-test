@@ -1,5 +1,5 @@
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { DropdownEntity } from "../_domain/dropdownEntity";
+import { SelectionModeEnum } from "../../../utils/hierarchyUtils";
 
 type TransformFunction = (entity: DropdownEntity, index: number, array: DropdownEntity[]) => Partial<DropdownEntity>;
 

@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
 import { transparentize } from "polished";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { formatPercentage } from "common/components/qwiltPieChart/_utils";
-import { TooltipProps } from "common/components/qwiltPieChart/_types";
-import { CommonColors } from "common/styling/commonColors";
+import { UnitKindEnum, unitsFormatter } from "../../../utils/unitsFormatter";
+import { formatPercentage } from "../_utils";
+import { TooltipProps } from "../_types";
+import { CommonColors } from "../../../styling/commonColors";
 
 const Header = styled.div`
   display: flex;

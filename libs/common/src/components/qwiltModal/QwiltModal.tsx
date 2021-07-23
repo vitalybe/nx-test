@@ -1,15 +1,15 @@
 import * as React from "react";
 import { ReactChild, ReactNode } from "react";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../utils/logger";
 import { confirmAlert, ReactConfirmAlertProps } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
-import { QwiltConfirm } from "common/components/configuration/qwiltForm/qwiltConfirm/QwiltConfirm";
-import { Notifier } from "common/utils/notifications/notifier";
-import { ErrorBoundary } from "common/components/ErrorBoundary";
+import { QwiltConfirm } from "../configuration/qwiltForm/qwiltConfirm/QwiltConfirm";
+import { Notifier } from "../../utils/notifications/notifier";
+import { ErrorBoundary } from "../ErrorBoundary";
 import { QueryClientProvider } from "react-query";
-import { GlobalStore } from "common/stores/globalStore";
+import { GlobalStore } from "../../stores/globalStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export function openQwiltModal<T>(
   getModalElement: (closeModalWithResult: (result?: T) => void) => ReactChild,

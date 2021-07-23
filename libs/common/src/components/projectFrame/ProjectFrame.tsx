@@ -1,27 +1,27 @@
 import * as React from "react";
 import { ReactChild, ReactElement, useEffect, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { RootComponents } from "common/components/RootComponents";
-import { UserStore } from "common/stores/userStore";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { ErrorBoundary } from "common/components/ErrorBoundary";
+import { loggerCreator } from "../../utils/logger";
+import { RootComponents } from "../RootComponents";
+import { UserStore } from "../../stores/userStore";
+import { LoadingSpinner } from "../loadingSpinner/loadingSpinner/LoadingSpinner";
+import { ErrorBoundary } from "../ErrorBoundary";
 import { observer } from "mobx-react-lite";
-import { LoadingFailed } from "common/components/projectFrame/loadingFailed/LoadingFailed";
-import { ProjectContent } from "common/components/projectFrame/projectContent/ProjectContent";
-import { useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { getRedirectPathForEnv } from "common/components/projectFrame/_util/getRedirectPathForEnv";
-import { RedirectToVersion } from "common/components/projectFrame/redirectToVersion/RedirectToVersion";
-import { getQcServicesWindow } from "common/utils/qcServicesWindow";
-import { ParamsMetadata } from "common/components/applicationParameters/_types/paramsMetadataTypes";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams, commonUrlParamsMetadata } from "common/urlParams/commonUrlParams";
+import { LoadingFailed } from "./loadingFailed/LoadingFailed";
+import { ProjectContent } from "./projectContent/ProjectContent";
+import { useProvider } from "../providerDataContainer/_providers/useProvider";
+import { getRedirectPathForEnv } from "./_util/getRedirectPathForEnv";
+import { RedirectToVersion } from "./redirectToVersion/RedirectToVersion";
+import { getQcServicesWindow } from "../../utils/qcServicesWindow";
+import { ParamsMetadata } from "../applicationParameters/_types/paramsMetadataTypes";
+import { devToolsStore } from "../devTools/_stores/devToolsStore";
+import { UrlStore } from "../../stores/urlStore/urlStore";
+import { CommonUrlParams, commonUrlParamsMetadata } from "../../urlParams/commonUrlParams";
 import { QueryClientProvider } from "react-query";
-import { GlobalStore } from "common/stores/globalStore";
+import { GlobalStore } from "../../stores/globalStore";
 import { ReactQueryDevtools } from "react-query/devtools";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

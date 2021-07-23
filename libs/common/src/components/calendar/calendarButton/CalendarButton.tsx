@@ -3,12 +3,12 @@ import { useRef, useState } from "react";
 import styled, { FlattenSimpleInterpolation as StyledCSS } from "styled-components";
 import { Instance } from "tippy.js";
 import { DateTime, Duration, Interval } from "luxon";
-import { CalendarButtonRaw } from "common/components/calendar/calendarButton/calendarButtonRaw/CalendarButtonRaw";
-import { QwiltCalendar } from "common/components/calendar/calendarButton/qwiltCalendar/QwiltCalendar";
-import { loggerCreator } from "common/utils/logger";
-import { Tooltip } from "common/components/Tooltip";
+import { CalendarButtonRaw } from "./calendarButtonRaw/CalendarButtonRaw";
+import { QwiltCalendar } from "./qwiltCalendar/QwiltCalendar";
+import { loggerCreator } from "../../../utils/logger";
+import { Tooltip } from "../../Tooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

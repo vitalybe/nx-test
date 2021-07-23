@@ -1,17 +1,17 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { ParamValue, UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { SystemEventsExternalApiMock } from "common/backend/systemEvents";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { ParamValue, UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { SystemEventsExternalApiMock } from "../../systemEvents";
 import {
   SystemEventsApiResult,
   SystemUpdatesExternalResult,
   SystemEventsExternalSearchParams,
-} from "common/backend/systemEvents/_types/systemEventsTypes";
+} from "../_types/systemEventsTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("system-updates"), "/api/1");
 
 export class SystemEventsExternalApi {

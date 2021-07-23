@@ -2,18 +2,18 @@ import * as _ from "lodash";
 import * as React from "react";
 import { useEffect, useRef, useState } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import Downshift, { DownshiftState, StateChangeOptions } from "downshift";
-import { Checkbox } from "common/components/checkbox/Checkbox";
-import { CommonColors } from "common/styling/commonColors";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { Checkbox } from "../../../checkbox/Checkbox";
+import { CommonColors } from "../../../../styling/commonColors";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
 import { Virtuoso } from "react-virtuoso";
 import { darken } from "polished";
-import { QwiltMultiSelectItem } from "common/components/configuration/qwiltForm/qwiltMultiSelect/_domain/QwiltMultiSelectItem";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { QwiltMultiSelectItem } from "./_domain/QwiltMultiSelectItem";
+import { useEventCallback } from "../../../../utils/hooks/useEventCallback";
+import { Clickable } from "../../clickable/Clickable";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

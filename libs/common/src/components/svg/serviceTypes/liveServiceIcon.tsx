@@ -1,7 +1,7 @@
 import * as React from "react";
-import { CommonColors } from "common/styling/commonColors";
-import { ServiceIconProps } from "common/components/svg/serviceTypes/dsServiceTypeIconRenderer/DsServiceTypeIconRenderer";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { CommonColors } from "../../../styling/commonColors";
+import { ServiceIconProps } from "./dsServiceTypeIconRenderer/DsServiceTypeIconRenderer";
+import { TextTooltip } from "../../textTooltip/TextTooltip";
 
 //region [[ Props ]]
 export interface Props extends ServiceIconProps {}

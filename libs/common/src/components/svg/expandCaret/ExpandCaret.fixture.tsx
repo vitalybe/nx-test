@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { ExpandCaret, Props } from "common/components/svg/expandCaret/ExpandCaret";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { ExpandCaret, Props } from "./ExpandCaret";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

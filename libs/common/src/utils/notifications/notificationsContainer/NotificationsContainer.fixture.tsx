@@ -4,10 +4,10 @@ import styled from "styled-components";
 import {
   NotificationsContainer,
   Props,
-} from "common/utils/notifications/notificationsContainer/NotificationsContainer";
-import { Notifier } from "common/utils/notifications/notifier";
-import { GlobalStyle } from "common/styling/AppGlobalStyle";
-import { NetworkError } from "common/utils/ajax";
+} from "./NotificationsContainer";
+import { Notifier } from "../notifier";
+import { GlobalStyle } from "../../../styling/AppGlobalStyle";
+import { NetworkError } from "../../ajax";
 
 class TestDecorator extends React.Component<{ className?: string }> {
   render() {

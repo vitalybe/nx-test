@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Copyright, Props } from "common/components/copyright/Copyright";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Copyright, Props } from "./Copyright";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

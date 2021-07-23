@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { BARS_GROUP_MAX_WIDTH } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_parts/BarsGroup";
+import { CommonColors as Colors } from "../../../../../styling/commonColors";
+import { BARS_GROUP_MAX_WIDTH } from "./BarsGroup";
 
 //region [[ Styles ]]
 export const BarView = styled.div<{

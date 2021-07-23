@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 // @ts-ignore
-import { ApplicationParamsTabBar } from "common/components/applicationParameters/ApplicationParamsTabRouter/tabBar/ApplicationParamsTabBar";
+import { ApplicationParamsTabBar } from "./tabBar/ApplicationParamsTabBar";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

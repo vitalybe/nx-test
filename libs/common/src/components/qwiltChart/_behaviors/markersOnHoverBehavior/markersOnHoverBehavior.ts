@@ -1,8 +1,8 @@
 import Highcharts, { ChartObject, ElementObject, PointObject, SeriesObject } from "highcharts";
 import { lighten } from "polished";
-import { ChartSeries } from "common/components/qwiltChart/_domain/chartSeries";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
+import { ChartSeries } from "../../_domain/chartSeries";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { ChartSeriesArray } from "../../_domain/chartSeriesArray";
 
 export interface MarkersOnHoverOptions {
   bubbles?: boolean;

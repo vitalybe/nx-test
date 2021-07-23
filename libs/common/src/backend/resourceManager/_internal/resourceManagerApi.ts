@@ -1,17 +1,17 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import {
   CapacityApiResultType,
   ConfigApiResultType,
   DsgsApiResultType,
-} from "common/backend/resourceManager/_types/resourceManagerTypes";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { ResourceManagerApiMock } from "common/backend/resourceManager";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
+} from "../_types/resourceManagerTypes";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { ResourceManagerApiMock } from "../../resourceManager";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const BACKEND_URL = combineUrl(getOriginForApi("resource-mng-config-mng"), "/api/1/");
 

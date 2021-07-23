@@ -5,8 +5,8 @@ import styled from "styled-components";
 import {
   ProjectBubbleTooltip,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/bubbleMarkers/_parts/projectBubbleTooltip/ProjectBubbleTooltip";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./ProjectBubbleTooltip";
+import FixtureDecorator from "../../../../../../../../utils/cosmos/FixtureDecorator";
 import { DateTime } from "luxon";
 
 const View = styled(FixtureDecorator)`

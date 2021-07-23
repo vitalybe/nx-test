@@ -1,6 +1,6 @@
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { API_OVERRIDE_PREFIX } from "common/urlParams/commonUrlParams";
+import { devToolsStore } from "../components/devTools/_stores/devToolsStore";
+import { UrlStore } from "../stores/urlStore/urlStore";
+import { API_OVERRIDE_PREFIX } from "../urlParams/commonUrlParams";
 
 export function getEnv(apiName?: string) {
   let env = "";

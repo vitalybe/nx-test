@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
 import * as _ from "lodash";
-import { PercentBar } from "common/components/percentBar/PercentBar";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
-import { DistributionUtilizationBar } from "common/components/distributionBars/_parts/distibutionUtilizationBar/DistributionUtilizationBar";
-import { CommonColors } from "common/styling/commonColors";
+import { PercentBar } from "../percentBar/PercentBar";
+import { UnitKindEnum } from "../../utils/unitsFormatter";
+import { DistributionUtilizationBar } from "./_parts/distibutionUtilizationBar/DistributionUtilizationBar";
+import { CommonColors } from "../../styling/commonColors";
 
 //region [[ Styles ]]
 const Title = styled.span`

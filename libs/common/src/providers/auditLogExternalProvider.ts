@@ -1,9 +1,9 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
+import { loggerCreator } from "../utils/logger";
+import { AjaxMetadata } from "../utils/ajax";
 import { AuditLogApiRequest, AuditLogApiType } from "../backend/auditLog/_types/auditLogTypes";
 import { AuditLogApi } from "../backend/auditLog";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class AuditLogExternalProvider {
   private constructor() {}

@@ -1,9 +1,9 @@
 import { observable } from "mobx";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../utils/logger";
 import { QueryClient } from "react-query";
 import { Duration } from "luxon";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class GlobalStore {
   //function runs on experiments toolbar version selection

@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
+import { loggerCreator } from "../../../../utils/logger";
+import { mockUtils } from "../../../../utils/mockUtils";
 import { DateTime } from "luxon";
-import { OnlyData } from "common/utils/typescriptUtils";
-import { ComponentTypeEnum, SystemUpdateType } from "common/backend/systemEvents/_types/systemEventsTypes";
+import { OnlyData } from "../../../../utils/typescriptUtils";
+import { ComponentTypeEnum, SystemUpdateType } from "../../../../backend/systemEvents/_types/systemEventsTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SystemUpdateInternalEntity {
   id!: string;

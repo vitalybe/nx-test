@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ErrorInfo } from "react";
 import styled, { css } from "styled-components";
-import { Notifier } from "common/utils/notifications/notifier";
+import { Notifier } from "../utils/notifications/notifier";
 
 const ErrorBoundaryView = styled.div`
   ${(props: { hidden?: boolean }) => css`

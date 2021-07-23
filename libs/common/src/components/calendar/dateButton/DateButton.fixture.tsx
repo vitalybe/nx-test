@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DateButton } from "common/components/calendar/dateButton/DateButton";
+import { DateButton } from "./DateButton";
 import { Duration } from "luxon";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

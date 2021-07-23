@@ -1,10 +1,10 @@
 import * as React from "react";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { loggerCreator } from "../../utils/logger";
+import { TextTooltip } from "../textTooltip/TextTooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,22 +1,22 @@
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { GlobalStore } from "common/stores/globalStore";
+import { CommonUrlParams } from "../urlParams/commonUrlParams";
+import { GlobalStore } from "../stores/globalStore";
 import {
   EntitiesParams,
   EntitiesParamsEnum,
   EntityApiModel,
   EntityTypeEnum,
-} from "common/backend/qnDeployment/_types/entitiesApiType";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { AjaxMetadata } from "common/utils/ajax";
-import { loggerCreator } from "common/utils/logger";
-import { QnDeploymentEntity } from "common/domain/qwiltDeployment/qnDeploymentEntity";
-import { DeploymentEntityWithChildren } from "common/domain/qwiltDeployment/deploymentEntityWithChildren";
-import { QnDeploymentApi } from "common/backend/qnDeployment";
-import { Utils } from "common/utils/utils";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+} from "../backend/qnDeployment/_types/entitiesApiType";
+import { UrlStore } from "../stores/urlStore/urlStore";
+import { DeploymentEntity } from "../domain/qwiltDeployment/deploymentEntity";
+import { AjaxMetadata } from "../utils/ajax";
+import { loggerCreator } from "../utils/logger";
+import { QnDeploymentEntity } from "../domain/qwiltDeployment/qnDeploymentEntity";
+import { DeploymentEntityWithChildren } from "../domain/qwiltDeployment/deploymentEntityWithChildren";
+import { QnDeploymentApi } from "../backend/qnDeployment";
+import { Utils } from "../utils/utils";
+import { PrepareQueryResult } from "../utils/reactQueryUtils/prepareQueryResult";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DeploymentEntitiesProvider {
   provideQns = async (

@@ -1,18 +1,18 @@
 /* eslint-disable unused-imports/no-unused-vars,unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { MediaReportApi } from "common/backend/mediaReport";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { MediaReportApi } from "../../mediaReport";
 import {
   MediaReportParams,
   MediaReportResponseType,
   MediaReportTypeEnum,
-} from "common/backend/mediaReport/_types/mediaReportTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/mediaReportTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 import { TimeConfig } from "../../../utils/timeConfig";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class MediaReportApiMock implements MediaReportApi {
   async getReport(

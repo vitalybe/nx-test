@@ -2,9 +2,9 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../../../utils/cosmos/FixtureDecorator";
 import { Props, VolumeChartPrint } from "./VolumeChartPrint";
-import { createVolumeSeriesData } from "common/components/_projectSpecific/monetization/_utils/monetizationMockUtils";
+import { createVolumeSeriesData } from "../../../_utils/monetizationMockUtils";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,10 +1,10 @@
-import { sleep } from "common/utils/sleep";
-import { CertificatesApi } from "common/backend/certificates";
-import { CertificateCreateApiType, CertificatesApiType } from "common/backend/certificates/_types/certificatesTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { CertificatesApi } from "../../certificates";
+import { CertificateCreateApiType, CertificatesApiType } from "../_types/certificatesTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class CertificatesApiMock extends CertificatesApi {
   async list(): Promise<CertificatesApiType[]> {

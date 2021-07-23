@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 import { darken, lighten, mix } from "polished";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { ConfigurationStyles } from "../components/configuration/_styles/configurationStyles";
 
 export interface ClickableStyleOptions {
   hoverColor?: string;

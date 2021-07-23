@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { FormInputRaw } from "common/components/qcComponents/form/_raw/formInputRaw/FormInputRaw";
+import { FormInputRaw } from "../_raw/formInputRaw/FormInputRaw";
 import { Control, FieldError, FieldName, useFormContext } from "react-hook-form";
 import { useTypedController } from "@hookform/strictly-typed";
 import {

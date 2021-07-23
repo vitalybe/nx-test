@@ -2,7 +2,7 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../../../../utils/cosmos/FixtureDecorator";
 import { DateTime } from "luxon";
 import { PaymentStatusIcon, Props } from "./PaymentStatusIcon";
 

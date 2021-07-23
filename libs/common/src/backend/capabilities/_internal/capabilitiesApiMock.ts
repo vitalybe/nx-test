@@ -1,12 +1,12 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { CapabilitiesApi } from "common/backend/capabilities";
-import { CapabilitiesApiResult, CapabilitiesEnum } from "common/backend/capabilities/_types/capabilitiesTypes";
-import { loggerCreator } from "common/utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { CapabilitiesApi } from "../../capabilities";
+import { CapabilitiesApiResult, CapabilitiesEnum } from "../_types/capabilitiesTypes";
+import { loggerCreator } from "../../../utils/logger";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class CapabilitiesApiMock implements CapabilitiesApi {
   async cpCapabilities(): Promise<CapabilitiesApiResult> {

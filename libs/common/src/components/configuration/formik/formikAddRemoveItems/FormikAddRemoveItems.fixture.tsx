@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { FormikInput } from "common/components/configuration/formik/formikInput/FormikInput";
-import { FormikContainer } from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { FormikAddRemoveItems } from "common/components/configuration/formik/formikAddRemoveItems/FormikAddRemoveItems";
+import { FormikInput } from "../formikInput/FormikInput";
+import { FormikContainer } from "../formikContainer/FormikContainer";
+import { FormikAddRemoveItems } from "./FormikAddRemoveItems";
 
 const FormikContainerStyled = styled(FormikContainer)`
   margin: 1rem;

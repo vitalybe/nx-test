@@ -1,4 +1,4 @@
-import { BrowserHrefReal } from "common/stores/urlStore/browserUrl/browserHrefReal";
+import { BrowserHrefReal } from "./browserHrefReal";
 
 export class BrowserHrefBuilder implements BrowserHrefReal {
   href = document.location.href;

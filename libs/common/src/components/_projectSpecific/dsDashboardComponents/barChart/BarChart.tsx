@@ -1,15 +1,15 @@
 import * as React from "react";
 import { memo, useMemo } from "react";
 import styled from "styled-components";
-import { Background } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_parts/Background";
-import { Plot } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_parts/Plot";
+import { Background } from "./_parts/Background";
+import { Plot } from "./_parts/Plot";
 import {
   BarChartDataItem,
   BarChartPlotOptions,
   BarChartYAxisOptions,
-} from "common/components/_projectSpecific/dsDashboardComponents/barChart/_types/_types";
-import { BarChartModel } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_types/barChartModel";
-import { Utils } from "common/utils/utils";
+} from "./_types/_types";
+import { BarChartModel } from "./_types/barChartModel";
+import { Utils } from "../../../../utils/utils";
 import _ from "lodash";
 
 //region [[ Styles ]]

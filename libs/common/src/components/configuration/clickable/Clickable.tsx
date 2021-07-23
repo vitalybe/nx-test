@@ -1,11 +1,11 @@
 import * as React from "react";
 import { MouseEventHandler, ReactNode } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { ClickableStyleOptions, CommonStyles } from "common/styling/commonStyles";
+import { loggerCreator } from "../../../utils/logger";
+import { ConfigurationStyles } from "../_styles/configurationStyles";
+import { ClickableStyleOptions, CommonStyles } from "../../../styling/commonStyles";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 type Props = { textColor?: string; className?: string } & ClickableStyleOptions;
 

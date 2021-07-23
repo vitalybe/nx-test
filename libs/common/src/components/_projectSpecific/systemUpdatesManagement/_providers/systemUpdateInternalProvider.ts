@@ -1,21 +1,21 @@
-import { SystemEventsInternalApi } from "common/backend/systemEvents";
+import { SystemEventsInternalApi } from "../../../../backend/systemEvents";
 import {
   ScopeTypeDs,
   ScopeTypeQn,
   SystemUpdateInternalApiPayloadType,
   SystemUpdateInternalApiType,
-} from "common/backend/systemEvents/_types/systemEventsTypes";
-import { SystemUpdateInternalEntity } from "common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateInternalEntity";
+} from "../../../../backend/systemEvents/_types/systemEventsTypes";
+import { SystemUpdateInternalEntity } from "../_domain/systemUpdateInternalEntity";
 import {
   SystemUpdateKind,
   SystemUpdateSchemaType,
-} from "common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateSchema";
-import { AjaxMetadata } from "common/utils/ajax";
-import { loggerCreator } from "common/utils/logger";
-import { Utils } from "common/utils/utils";
+} from "../_domain/systemUpdateSchema";
+import { AjaxMetadata } from "../../../../utils/ajax";
+import { loggerCreator } from "../../../../utils/logger";
+import { Utils } from "../../../../utils/utils";
 import { DateTime } from "luxon";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SystemUpdateInternalProvider {
   private constructor() {}

@@ -3,9 +3,9 @@ import styled from "styled-components";
 import {
   DsDashboardTopBar,
   Props,
-} from "common/components/_projectSpecific/dsDashboardComponents/dsDashboardTopbar/DsDashboardTopBar";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./DsDashboardTopBar";
+import { UnitKindEnum, unitsFormatter } from "../../../../utils/unitsFormatter";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

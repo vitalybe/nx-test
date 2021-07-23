@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { ExperimentsToolbar, Props } from "common/components/experimentsToolbar/ExperimentsToolbar";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { ExperimentsToolbar, Props } from "./ExperimentsToolbar";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

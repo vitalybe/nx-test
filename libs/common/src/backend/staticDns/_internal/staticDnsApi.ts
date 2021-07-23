@@ -1,14 +1,14 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { StaticDnsApiMock } from "common/backend/staticDns";
-import { StaticDnsApiResult, StaticDnsEditApiType } from "common/backend/staticDns/_types/staticDnsTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { StaticDnsApiMock } from "../../staticDns";
+import { StaticDnsApiResult, StaticDnsEditApiType } from "../_types/staticDnsTypes";
 import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("static-dns"), "/api/1.0/records");
 
 export class StaticDnsApi {

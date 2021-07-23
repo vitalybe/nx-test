@@ -1,11 +1,11 @@
 import { transparentize } from "polished";
-import { YAxisBehavior } from "common/components/qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
-import { OnlyData } from "common/utils/typescriptUtils";
-import { CurrencyUnitEnum, CurrencyUtils } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
-import { Fonts } from "common/styling/fonts";
+import { YAxisBehavior } from "../../../../qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
+import { OnlyData } from "../../../../../utils/typescriptUtils";
+import { CurrencyUnitEnum, CurrencyUtils } from "../../_utils/currencyUtils";
+import { Fonts } from "../../../../../styling/fonts";
 import { Duration } from "luxon";
-import { XAxisBehavior } from "common/components/qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
-import { CommonColors } from "common/styling/commonColors";
+import { XAxisBehavior } from "../../../../qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
+import { CommonColors } from "../../../../../styling/commonColors";
 
 export const getCommonYAxisOptions = (currencyUnit?: CurrencyUnitEnum) => {
   const currencySign = currencyUnit && CurrencyUtils.getCurrencySign(currencyUnit);

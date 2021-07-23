@@ -4,7 +4,7 @@ import * as React from "react";
 import { PropsWithChildren } from "react";
 import styled from "styled-components";
 import { FormRadio, Props } from "./FormRadio";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 import { FormProvider, useForm } from "react-hook-form";
 
 const View = styled(FixtureDecorator)`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../styling/commonColors";
 import { lighten } from "polished";
 
 export const SmallTitle = styled.div`

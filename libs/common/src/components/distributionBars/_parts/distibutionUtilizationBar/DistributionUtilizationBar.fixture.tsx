@@ -4,10 +4,10 @@ import styled from "styled-components";
 import {
   DistributionUtilizationBar,
   Props,
-} from "common/components/distributionBars/_parts/distibutionUtilizationBar/DistributionUtilizationBar";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
-import { CommonColors } from "common/styling/commonColors";
+} from "./DistributionUtilizationBar";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { UnitKindEnum } from "../../../../utils/unitsFormatter";
+import { CommonColors } from "../../../../styling/commonColors";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

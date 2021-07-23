@@ -3,7 +3,7 @@ import Graph from "graph-data-structure";
 import { loggerCreator } from "../logger";
 import { GlobalStore } from "../../stores/globalStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ReactQueryDependencyGraph {
   private dependenciesGraph = Graph();

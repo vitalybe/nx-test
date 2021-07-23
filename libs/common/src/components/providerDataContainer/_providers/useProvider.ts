@@ -1,9 +1,9 @@
 import { DependencyList, useEffect, useRef, useState } from "react";
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata, AjaxMetadataUsedUrl } from "common/utils/ajax";
-import { Notifier } from "common/utils/notifications/notifier";
+import { loggerCreator } from "../../../utils/logger";
+import { AjaxMetadata, AjaxMetadataUsedUrl } from "../../../utils/ajax";
+import { Notifier } from "../../../utils/notifications/notifier";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface State<T> {
   providedData: T | undefined;

@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Icons } from "common/styling/icons";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { Icons } from "../../../styling/icons";
+import { Clickable } from "../clickable/Clickable";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

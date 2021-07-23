@@ -1,4 +1,4 @@
-import { MockNetworkRequestEntity } from "common/backend/_utils/mockWrapperProxy/mockNetworkRequestEntity";
+import { MockNetworkRequestEntity } from "../backend/_utils/mockWrapperProxy/mockNetworkRequestEntity";
 
 export interface QcServicesWindow {
   Cypress: object | undefined;

@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, UtilizationTooltip } from "common/components/utilizationBar/utilizationTooltip/UtilizationTooltip";
-import { CommonColors as Colors } from "common/styling/commonColors";
+import { Props, UtilizationTooltip } from "./UtilizationTooltip";
+import { CommonColors as Colors } from "../../../styling/commonColors";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

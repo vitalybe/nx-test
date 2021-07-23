@@ -5,8 +5,8 @@ import styled from "styled-components";
 import {
   InputErrorIndication,
   Props,
-} from "common/components/qcComponents/form/_parts/inputErrorIndication/InputErrorIndication";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./InputErrorIndication";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

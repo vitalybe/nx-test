@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useRef, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../utils/logger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ExperimentsBarStyles } from "common/components/experimentsToolbar/_styling/experimentsBarStyles";
-import { Icons } from "common/styling/icons";
+import { ExperimentsBarStyles } from "./_styling/experimentsBarStyles";
+import { Icons } from "../../styling/icons";
 import { darken } from "polished";
-import { CloseButton } from "common/components/closeButton/CloseButton";
-import { VersionPicker } from "common/components/experimentsToolbar/versionPicker/VersionPicker";
-import { MainStore, MainStoreContext } from "common/components/experimentsToolbar/_stores/mainStore";
+import { CloseButton } from "../closeButton/CloseButton";
+import { VersionPicker } from "./versionPicker/VersionPicker";
+import { MainStore, MainStoreContext } from "./_stores/mainStore";
 import { observer } from "mobx-react-lite";
 import { DescriptionPanel } from "./descriptionPanel/DescriptionPanel";
-import { VersionEntity } from "common/components/experimentsToolbar/_domain/versionEntity";
+import { VersionEntity } from "./_domain/versionEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const EXPANDED_HEIGHT = "32px";
 

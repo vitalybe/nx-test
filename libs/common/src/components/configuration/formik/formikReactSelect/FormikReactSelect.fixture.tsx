@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { FormikReactSelect, Props } from "common/components/configuration/formik/formikReactSelect/FormikReactSelect";
+import { FormikReactSelect, Props } from "./FormikReactSelect";
 import { Formik } from "formik";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { mockUtils } from "common/utils/mockUtils";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { mockUtils } from "../../../../utils/mockUtils";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

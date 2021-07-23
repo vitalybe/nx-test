@@ -1,4 +1,4 @@
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
+import { ProviderDataContainer } from "../../../providerDataContainer/ProviderDataContainer";
 import styled from "styled-components";
 
 export const PANELS_CONTAINER_HEIGHT = "22rem";

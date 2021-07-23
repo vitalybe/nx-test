@@ -1,18 +1,18 @@
-import { Ajax, NetworkError } from "common/utils/ajax";
+import { Ajax, NetworkError } from "../utils/ajax";
 import { action, computed, observable, runInAction } from "mobx";
-import { mockUtils } from "common/utils/mockUtils";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { loggerCreator } from "common/utils/logger";
-import { RouteMetadata } from "common/stores/_models/routeMetadata";
-import { LOGIN_ORIGIN } from "common/backend/backendOrigin";
-import { CapabilitiesApiType, SnowBallPermissionsEnum } from "common/stores/_models/CapabilitiesApiType";
-import { RecordSession } from "common/utils/telemetryRecording/recordSession";
-import { CommonUrls } from "common/utils/commonUrls";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { Cookies } from "common/utils/cookies";
+import { mockUtils } from "../utils/mockUtils";
+import { devToolsStore } from "../components/devTools/_stores/devToolsStore";
+import { loggerCreator } from "../utils/logger";
+import { RouteMetadata } from "./_models/routeMetadata";
+import { LOGIN_ORIGIN } from "../backend/backendOrigin";
+import { CapabilitiesApiType, SnowBallPermissionsEnum } from "./_models/CapabilitiesApiType";
+import { RecordSession } from "../utils/telemetryRecording/recordSession";
+import { CommonUrls } from "../utils/commonUrls";
+import { UrlStore } from "./urlStore/urlStore";
+import { CommonUrlParams } from "../urlParams/commonUrlParams";
+import { Cookies } from "../utils/cookies";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 export class UserStore {
   private constructor() {
     this.initialize();

@@ -2,7 +2,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { QcButton, Props } from "./QcButton";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 import { QcButtonThemes } from "./_themes";
 
 const View = styled(FixtureDecorator)`

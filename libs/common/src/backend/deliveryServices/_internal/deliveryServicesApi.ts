@@ -1,21 +1,21 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
 import {
   DeliveryServicesApiDocsType,
   DeliveryServicesApiResult,
   DeliveryServicesApiType,
   DeliveryServicesEditApiType,
   DeliveryServicesLabelsApiType,
-} from "common/backend/deliveryServices/_types/deliveryServicesTypes";
-import { DeliveryServicesApiMock } from "common/backend/deliveryServices";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { DeliveryServicesUtils } from "common/backend/deliveryServices/_utils/utils";
+} from "../_types/deliveryServicesTypes";
+import { DeliveryServicesApiMock } from "../../deliveryServices";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
+import { DeliveryServicesUtils } from "../_utils/utils";
 import {
   BatchApiType,
   TemplateRevisionApiResult,
@@ -25,19 +25,19 @@ import {
   TemplatesApiResult,
   TemplatesApiType,
   TemplatesEditApiType,
-} from "common/backend/deliveryServices/_types/deliveryServicesTemplatesTypes";
+} from "../_types/deliveryServicesTemplatesTypes";
 import {
   RevisionApiType,
   RevisionLabelsApiType,
-} from "common/backend/deliveryServices/_types/deliveryServiceRevisionTypes";
+} from "../_types/deliveryServiceRevisionTypes";
 import {
   DeliveryServiceMetadataApiResult,
   DeliveryServiceMetadataCreateApiType,
   DeliveryServiceMetadataEditApiType,
   DeliveryServiceMetadataIconType,
-} from "common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
+} from "../_types/deliveryServiceMetadataTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("delivery-services"), "/api/4.0/");
 const ORG_ID_HEADER = "X-QC-OrgId";
 

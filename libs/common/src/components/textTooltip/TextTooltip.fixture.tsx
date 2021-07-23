@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, TextTooltip } from "common/components/textTooltip/TextTooltip";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Props, TextTooltip } from "./TextTooltip";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../utils/logger";
 import InfiniteCalendar, {
   Calendar,
   ReactInfiniteCalendarProps,
@@ -9,21 +9,21 @@ import InfiniteCalendar, {
   withKeyboardSupport,
 } from "react-infinite-calendar";
 import "react-infinite-calendar/styles.css";
-import { CommonColors } from "common/styling/commonColors";
-import { Tooltip, useTooltip } from "common/components/Tooltip";
+import { CommonColors } from "../../../../../styling/commonColors";
+import { Tooltip, useTooltip } from "../../../../Tooltip";
 import {
   ButtonPart,
   CalendarButtonRaw,
-} from "common/components/calendar/calendarButton/calendarButtonRaw/CalendarButtonRaw";
+} from "../../../../calendar/calendarButton/calendarButtonRaw/CalendarButtonRaw";
 import { DateTime } from "luxon";
 import {
   FormInputContainer,
   FormInputLabel,
   HelpTextIcon,
-} from "common/components/qcComponents/form/_parts/formInputContainer/FormInputContainer";
-import { ErrorIndicationIconAbsolute } from "common/components/qcComponents/form/_parts/inputErrorIndication/InputErrorIndication";
+} from "../../_parts/formInputContainer/FormInputContainer";
+import { ErrorIndicationIconAbsolute } from "../../_parts/inputErrorIndication/InputErrorIndication";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const ValueSpn = styled.span`

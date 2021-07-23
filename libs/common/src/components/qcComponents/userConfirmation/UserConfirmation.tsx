@@ -1,14 +1,14 @@
 import * as React from "react";
 import { ReactNode, useEffect, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { AsyncQcButton } from "common/components/qcComponents/asyncQcButton/AsyncQcButton";
-import { QcButton } from "common/components/qcComponents/_styled/qcButton/QcButton";
-import { Notifier } from "common/utils/notifications/notifier";
-import { AlertIcon } from "common/components/qcComponents/_styled/styledIcons";
-import { QcButtonTheme } from "common/components/qcComponents/_styled/qcButton/_themes";
+import { loggerCreator } from "../../../utils/logger";
+import { AsyncQcButton } from "../asyncQcButton/AsyncQcButton";
+import { QcButton } from "../_styled/qcButton/QcButton";
+import { Notifier } from "../../../utils/notifications/notifier";
+import { AlertIcon } from "../_styled/styledIcons";
+import { QcButtonTheme } from "../_styled/qcButton/_themes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

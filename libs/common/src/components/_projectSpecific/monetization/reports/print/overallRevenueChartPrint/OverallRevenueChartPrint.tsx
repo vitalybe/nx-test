@@ -1,18 +1,18 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { MonetizationProjectEntity } from "common/components/_projectSpecific/monetization/_domain/monetizationProjectEntity";
-import { OverallRevenueChart } from "common/components/_projectSpecific/monetization/reports/overallRevenueChart/OverallRevenueChart";
-import { CommonColors } from "common/styling/commonColors";
+import { loggerCreator } from "../../../../../../utils/logger";
+import { ChartSeriesData } from "../../../../../qwiltChart/_domain/chartSeriesData";
+import { MonetizationProjectEntity } from "../../../_domain/monetizationProjectEntity";
+import { OverallRevenueChart } from "../../overallRevenueChart/OverallRevenueChart";
+import { CommonColors } from "../../../../../../styling/commonColors";
 import {
   MonetizationProviderUtils,
   ProjectEventData,
-} from "common/components/_projectSpecific/monetization/_utils/monetizationProviderUtils/monetizationProviderUtils";
+} from "../../../_utils/monetizationProviderUtils/monetizationProviderUtils";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const MultiProjectOverallRevenueTable = styled.div`

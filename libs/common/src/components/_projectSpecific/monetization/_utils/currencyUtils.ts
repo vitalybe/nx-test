@@ -1,4 +1,4 @@
-import { UnitNameEnum, unitsFormatter } from "common/utils/unitsFormatter";
+import { UnitNameEnum, unitsFormatter } from "../../../../utils/unitsFormatter";
 
 interface PricingRateParams {
   revenue: number | undefined;

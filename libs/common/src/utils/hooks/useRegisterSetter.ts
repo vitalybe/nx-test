@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useMountedRef } from "common/utils/hooks/useMountedRef";
+import { useMountedRef } from "./useMountedRef";
 
 export type SetterRegisterFn<T> = (setter: (data: T) => void) => void;
 
