@@ -1,0 +1,774 @@
+{
+  "groups": {
+    "tenant-warner-media": {
+      "identifiers": { "name": "warner-media", "type": "CDP", "orgId": "warner-media" },
+      "permissions": {},
+      "dataAccessControl": {
+        "footprint": ["warnerMedia"],
+        "CDN": ["warner-media"],
+        "keys": ["warner-media"],
+        "secrets": ["warner-media"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-charter-hawaii": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkCharter"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkCharter", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-ctc": {
+      "identifiers": {},
+      "permissions": { "reporting": { "mdlList": true } },
+      "dataAccessControl": {
+        "footprint": ["ctcFootprint"],
+        "qnDeploymentContainedIn.ids": ["rgnJapan_cnJapan_nwkCTC"],
+        "CDN": ["ctc"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-vodafone": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnEmea_cnItaly_nwkVodafone"],
+        "nmaEvents": ["rgnEmea_cnItaly_nwkVodafone", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-hotstar": {
+      "identifiers": { "name": "hotstar", "type": "CDP" },
+      "permissions": {},
+      "dataAccessControl": {
+        "contentPublishers": ["97e1e982-6a26-4147-8fa4-9aa890be53ef"],
+        "footprint": ["hotstar"],
+        "CDN": ["hotstar"],
+        "keys": ["hotstar"],
+        "secrets": ["hotstar"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-tv5": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "contentPublishers": ["23d17461-d973-4491-90cb-7ecae6c0efb6"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-cbs": {
+      "identifiers": { "name": "cbs", "orgId": "cbs", "type": "CDP" },
+      "permissions": {},
+      "dataAccessControl": {
+        "keys": ["cbs"],
+        "contentPublishers": ["fe48634b-4ce5-42c4-a147-3174ba45fd6e"],
+        "CDN": ["cbs"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-jazz": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "qnDeploymentContainedIn.ids": ["rgnSouthAsia_cnPakistan_nwkJazz"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-inara": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnSouthAsia_cnPakistan_nwkPTCL", "rgnSouthAsia_cnPakistan_nwkJazz"],
+        "nmaEvents": ["rgnSouthAsia_cnPakistan_nwkPTCL", "rgnSouthAsia_cnPakistan_nwkJazz", "rgnSouthAsia_cnPakistan"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-zain": {
+      "identifiers": {},
+      "permissions": { "dnsStatisticsSystems": { "viewLogs": true } },
+      "dataAccessControl": { "dnsStatisticsSystems": ["CP0S7J2", "DMGLXJ2", "93N9DP2", "2YHZJF2", "CZ0Z8F2"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-system-test-deployment": {
+      "identifiers": { "orgId": "system-test-deployment" },
+      "permissions": {},
+      "dataAccessControl": { "qnDeploymentContainedIn.ids": ["rgnSystem"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-pldt": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnSouthAsia_cnPhilippines_nwkPLDT"],
+        "qnDeployment": ["rgnSouthAsia_cnPhilippines_nwkPLDT"],
+        "nmaEvents": ["rgnSouthAsia_cnPhilippines_nwkPLDT"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-grand-canyon-university": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkUniversities-GrandCanyonUniversity"],
+        "qnDeployment": ["rgnAmerica_cnUsa_nwkUniversities-GrandCanyonUniversity"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkUniversities-GrandCanyonUniversity", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-claro-brazil": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnLatam_cnBrazil_nwkClaroBrazil"],
+        "qnDeployment": ["rgnLatam_cnBrazil_nwkClaroBrazil"],
+        "nmaEvents": ["rgnLatam_cnBrazil_nwkClaroBrazil"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-cat": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnSouthAsia_cnThailand_nwkCAT"],
+        "nmaEvents": ["rgnSouthAsia_cnThailand_nwkCAT", "rgnSouthAsia_cnThailand"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-saint-louis-university": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkUniversities_stStLouisUniversity_qn3LXRG62"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-gemini": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "CDN": ["gemini"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-zeetv": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "contentPublishers": ["8030ba13-63c4-4874-b570-855deb5b2438"],
+        "footprint": ["zeetvFootprint"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-health-api-all": {
+      "identifiers": { "orgId": "health-api" },
+      "permissions": {},
+      "dataAccessControl": {
+        "allowedOrgIds": ["health-api", "health-api-sec"],
+        "qnDeploymentContainedIn.ids": ["rgnIsrael_nwkHealthApi", "rgnIsrael_nwkHealthApiSec"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-tune-pk": {
+      "identifiers": { "name": "tune-pk", "type": "CDP" },
+      "permissions": {},
+      "dataAccessControl": {
+        "footprint": ["tunePkFootprint"],
+        "contentPublishers": ["b8445118-03a0-419e-958e-3eaca5830650"],
+        "CDN": ["tune-pk"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-ptcl": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnSouthAsia_cnPakistan_nwkPTCL"],
+        "nmaEvents": ["rgnSouthAsia_cnPakistan_nwkPTCL", "rgnSouthAsia_cnPakistan"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-cable-america": {
+      "identifiers": { "orgId": "cable-america" },
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkCableAmerica"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkCableAmerica", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-dailymotion": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "footprint": ["dailymotion"],
+        "contentPublishers": ["cf9aa2af-8a9e-4eba-8466-a972555fb0df"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-wind3-steam": {
+      "identifiers": { "orgId": "wind3-steam" },
+      "permissions": {},
+      "dataAccessControl": { "CDN": ["wind3-steam"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-system-test": {
+      "identifiers": { "orgId": "system-test-deployment" },
+      "permissions": {},
+      "dataAccessControl": { "qnDeployment": ["*"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-peer5": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "contentPublishers": ["a40acade-6f9b-43ee-b33f-ee3b568d0cb1"],
+        "footprint": ["peer5Footprint"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-idt": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "CDN": ["idt"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-brio": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "contentPublishers": ["1de1a5bc-ba8c-46f1-90e2-78ee5308ca71"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-dazn": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "contentPublishers": ["0a590cde-4567-4677-9224-839d319eb753"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-charter-uber": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkCharterUber"],
+        "qnDeployment": ["qnQW1017221177"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkCharterUber", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-llnw": {
+      "identifiers": { "name": "llnw", "type": "CDP" },
+      "permissions": { "reporting": { "mdlList": true } },
+      "dataAccessControl": { "footprint": ["llnwFootprint"], "CDN": ["llnw"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-qwilt": {
+      "identifiers": { "name": "qwilt", "orgId": "qwilt", "allowedOrgIds": "*" },
+      "permissions": {},
+      "dataAccessControl": {
+        "footprint": ["*"],
+        "qnDeployment": ["*"],
+        "qnDeploymentContainedIn": ["*"],
+        "CDN": ["*"],
+        "nmaEvents": ["*"],
+        "keys": ["*"],
+        "secrets": ["*"],
+        "contentPublishers": ["*"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-valve": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "footprint": ["steamFootprint"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-lake-forest-college": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkUniversities_stLakeForestCollege"],
+        "qnDeployment": ["rgnAmerica_cnUsa_nwkUniversities"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkUniversities", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-tennessee-university": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkUniversities-TennesseeTechnologicalUniversity"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-tim-brazil": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "qnDeploymentContainedIn.ids": ["rgnLatam_cnBrazil_nwkTIM-Brazil"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-system-events": {
+      "identifiers": { "orgId": "system-events" },
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-ntt-east": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "footprint": ["nttEast"],
+        "CDN": ["ntt-east"],
+        "qnDeploymentContainedIn.ids": ["rgnJapan_cnJapan_nwkNTT-East"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-verizon-wireless": {
+      "identifiers": { "name": "vz-wireless", "type": "CDP", "orgId": "verizon-wireless" },
+      "permissions": {},
+      "dataAccessControl": {
+        "CDN": ["verizon-wireless"],
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkVerizonWireless"],
+        "qnDeployment": ["rgnAmerica_cnUsa_nwkVerizonWireless"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkVerizonWireless", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-telecom-italia": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnEmea_cnItaly_nwkTelecomItalia"],
+        "qnDeployment": ["rgnEmea_cnItaly_nwkTelecomItalia"],
+        "nmaEvents": ["rgnEmea_cnItaly_nwkTelecomItalia", "rgnEmea_cnItaly"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-cignal-tv": {
+      "identifiers": { "name": "cignal-tv", "type": "CDP" },
+      "permissions": {},
+      "dataAccessControl": {
+        "contentPublishers": ["0048ae98-bca6-4577-b39f-2a8e233132f9"],
+        "footprint": ["cignal-tv"],
+        "CDN": ["cignal-tv"],
+        "keys": ["cignal-tv"],
+        "secrets": ["cignal-tv"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-wynk": {
+      "identifiers": { "name": "wynk", "type": "CDP" },
+      "permissions": {},
+      "dataAccessControl": {
+        "contentPublishers": ["ed5d806c-2aae-43d2-8556-2ead4b8912c8"],
+        "footprint": ["wynk"],
+        "CDN": ["wynk"],
+        "keys": ["wynk"],
+        "secrets": ["wynk"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-mediacom": {
+      "identifiers": { "orgId": "mediacom" },
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkMediacom"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkMediacom", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-hall-ag": {
+      "identifiers": { "orgId": "hall-ag" },
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnEmea_cnAustria_nwkHallAG"],
+        "qnDeployment": ["rgnEmea_cnAustria_nwkHallAG"],
+        "nmaEvents": ["rgnEmea_cnAustria_nwkHallAG"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-verizon-fios-and-wireless": {
+      "identifiers": { "orgId": "verizon-fios" },
+      "permissions": {},
+      "dataAccessControl": {
+        "allowedOrgIds": ["verizon-fios", "verizon-wireless"],
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkVerizonFiOS", "rgnAmerica_cnUsa_nwkVerizonWireless"],
+        "qnDeployment": ["rgnAmerica_cnUsa_nwkVerizonFiOS", "rgnAmerica_cnUsa_nwkVerizonWireless"],
+        "CDN": ["vz-llnw", "verizon-wireless"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkVerizonFiOS", "rgnAmerica_cnUsa_nwkVerizonWireless", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-british-telecom": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnEmea_cnUK_nwkBritishTelecom"],
+        "qnDeployment": ["rgnEmea_cnUK_nwkBritishTelecom"],
+        "nmaEvents": ["rgnEmea_cnUK_nwkBritishTelecom", "rgnEmea_cnUK"],
+        "CDN": ["bt"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-wind3": {
+      "identifiers": { "orgId": "wind3" },
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnEmea_cnItaly_nwkWind3"],
+        "qnDeployment": ["rgnEmea_cnItaly_nwkWind3"],
+        "nmaEvents": ["rgnEmea_cnItaly_nwkWind3", "rgnEmea_cnItaly"],
+        "CDN": ["wind3"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-cox": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkCox"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkCox", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-telefonica-peru": {
+      "identifiers": { "orgId": "telefonica-peru" },
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnLatam_cnPeru_nwkTelefonicaPeru"],
+        "qnDeployment": ["rgnLatam_cnPeru_nwkTelefonicaPeru"],
+        "nmaEvents": ["rgnLatam_cnPeru_nwkTelefonicaPeru"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-ntt-west": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "qnDeploymentContainedIn.ids": ["rgnJapan_cnJapan_nwkNTT-West"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-clear-gate-pen-testing": {
+      "identifiers": { "name": "clear-gate-pen-test", "type": "CDP" },
+      "permissions": {
+        "certManager": { "certUpdate": true, "certView": true, "certList": true, "certDelete": true },
+        "keys": { "create": true, "read": true },
+        "secrets": { "create": true, "read": true }
+      },
+      "dataAccessControl": { "keys": ["clear-gate-pen-test"], "secrets": ["clear-gate-pen-test"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-tcsj": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnJapan_cnJapan_nwkTCSJ", "rgnJapan_cnJapan_nwkToyama"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-health-api-site": {
+      "identifiers": { "orgId": "health-api" },
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnIsrael_nwkHealthApi_mktHealthApiMarket_stHealthApiSite"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-telecom-italia-cdn-poc": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "CDN": ["tim"], "qnDeploymentContainedIn.ids": ["rgnEmea_cnItaly_nwkTIM-CDN-POC"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-stackpath": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "footprint": ["StackpathFootprint"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-disney": {
+      "identifiers": { "name": "disney", "type": "CDP" },
+      "permissions": {},
+      "dataAccessControl": {
+        "contentPublishers": ["a1db3352-e2a8-496f-bdf7-61378b377246"],
+        "footprint": ["disneyPlus"],
+        "CDN": ["disney"],
+        "keys": ["disney"],
+        "secrets": ["disney"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-devenv-qwilt": {
+      "identifiers": { "name": "qwilt", "orgId": "qwilt", "allowedOrgIds": "*" },
+      "permissions": {},
+      "dataAccessControl": {
+        "footprint": ["*"],
+        "qnDeployment": ["*"],
+        "qnDeploymentContainedIn": ["*"],
+        "CDN": ["*"],
+        "nmaEvents": ["*"],
+        "keys": ["*"],
+        "secrets": ["*"],
+        "contentPublishers": ["*"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-globo": {
+      "identifiers": { "name": "globo", "type": "CDP" },
+      "permissions": { "reporting": { "mdlList": true } },
+      "dataAccessControl": {
+        "contentPublishers": ["fdb8e84a-e72e-4bb9-8936-ad615d6ae0cc"],
+        "footprint": ["globoFootprint"],
+        "CDN": ["globo"],
+        "keys": ["globo"],
+        "secrets": ["globo"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-blutv": {
+      "identifiers": { "name": "blutv", "type": "CDP" },
+      "permissions": {},
+      "dataAccessControl": { "footprint": ["bluTvFootprint"], "CDN": ["blutv"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-verizon-wireless-atp-staging": {
+      "identifiers": { "name": "verizon-wireless-staging", "type": "ISP", "orgId": "verizon-wireless-staging" },
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkVerizonWireless_mktVCP_stStaging"],
+        "CDN": ["vz-wireless-vcp-staging"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-digicel": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnLatam_cnCaribbean_nwkDigicelGroup"],
+        "nmaEvents": ["rgnLatam_cnCaribbean_nwkDigicelGroup", "rgnLatam_cnCaribbean"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-airtel": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnSouthAsia_cnIndia_nwkAirtel"],
+        "qnDeployment": ["rgnSouthAsia_cnIndia_nwkAirtel"],
+        "nmaEvents": ["rgnSouthAsia_cnIndia_nwkAirtel"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-health-api": {
+      "identifiers": { "orgId": "health-api" },
+      "permissions": {},
+      "dataAccessControl": { "qnDeploymentContainedIn.ids": ["rgnIsrael_nwkHealthApi"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-system-test-b": {
+      "identifiers": { "name": "devorg", "type": "CDP", "orgId": "verizon-fios" },
+      "permissions": {},
+      "dataAccessControl": { "allowedOrgIds": ["verizon-fios"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-system-test-c": {
+      "identifiers": { "name": "devorg", "type": "CDP", "orgId": "ti" },
+      "permissions": {},
+      "dataAccessControl": { "allowedOrgIds": ["ti"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-admin": {
+      "identifiers": { "name": "qwilt-internal-temp", "orgId": "qwilt-admin", "allowedOrgIds": "*" },
+      "permissions": {
+        "footprint": { "footprintEndpointsView": true },
+        "certManager": { "readAll": true },
+        "keys": { "readAll": true },
+        "verizon-alarms": { "read": true, "debug": true }
+      },
+      "dataAccessControl": {
+        "footprint": ["*"],
+        "qnDeployment": ["*"],
+        "qnDeploymentContainedIn": ["*"],
+        "CDN": ["*"],
+        "nmaEvents": ["*"],
+        "keys": ["*"],
+        "secrets": ["*"],
+        "contentPublishers": ["*"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-system-test-a": {
+      "identifiers": { "name": "devorg", "type": "CDP", "orgId": "verizon-fios", "orgName": "Verizon FIOS" },
+      "permissions": {},
+      "dataAccessControl": { "allowedOrgIds": ["verizon-fios"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-kbro": {
+      "identifiers": { "orgId": "kbro" },
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnNorthAsia_cnTaiwan_nwkKBRO"],
+        "nmaEvents": ["rgnNorthAsia_cnTaiwan_nwkKBRO"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-demo": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "qnDeployment": ["nwkDemo*"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-kt": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": { "footprint": ["kt"] },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "tenant-verizon-fios": {
+      "identifiers": { "name": "vz-llnw", "type": "CDP", "orgId": "verizon-fios" },
+      "permissions": {},
+      "dataAccessControl": {
+        "qnDeploymentContainedIn.ids": ["rgnAmerica_cnUsa_nwkVerizonFiOS"],
+        "qnDeployment": ["rgnAmerica_cnUsa_nwkVerizonFiOS"],
+        "CDN": ["verizon-fios"],
+        "nmaEvents": ["rgnAmerica_cnUsa_nwkVerizonFiOS", "rgnAmerica_cnUsa"]
+      },
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    }
+  }
+}
