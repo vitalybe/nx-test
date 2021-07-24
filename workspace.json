@@ -45,7 +45,7 @@
             "assets": ["apps/reports/src/favicon.ico", "apps/reports/src/assets"],
             "styles": [],
             "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack"
+            "webpackConfig": "config/webpack/webpackCustomized.config.js"
           },
           "configurations": {
             "production": {

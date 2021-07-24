@@ -76,7 +76,7 @@ export interface Props {
 
 export const ReportItem = React.memo(({ ...props }: Props) => {
   const imageName = props.icon + ".png";
-  const pathToImagesContext = require.context("common/images/reports/", true);
+  const pathToImagesContext = require.context("@qwilt/common/images/reports/", true);
   const iconPath = pathToImagesContext(`./${props.icon}/${imageName}`);
 
   const queryParams = new URLSearchParams();
