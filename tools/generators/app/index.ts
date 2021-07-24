@@ -20,6 +20,8 @@ import { Schema } from "@nrwl/react/src/generators/application/schema";
 import { normalizeOptions } from "@nrwl/react/src/generators/application/lib/normalize-options";
 import { cypressProjectGenerator } from "@nrwl/cypress";
 import { GeneratorUtils } from "../_utils/generatorUtils";
+import * as fs from "fs";
+import path = require("path");
 
 interface MySchema {
   name: string;
@@ -49,7 +51,6 @@ async function generateApp(host: Tree, options: MySchema) {
     json["include"] = ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"];
     return json;
   });
-
   updateJson(host, joinPathFragments(projectConfig.root, "tsconfig.json"), (json) => {
     // for older typescript version
     json["compilerOptions"]["jsx"] = "react";
@@ -60,12 +61,20 @@ async function generateApp(host: Tree, options: MySchema) {
 
   GeneratorUtils.getAndUpdateProject(options.name, host, (projectConfig) => {
     const tsConfigPath = joinPathFragments(projectConfig.root, "tsconfig.app.json");
+    // tsc target - check the project via tsc
     projectConfig.targets["tsc"] = {
       executor: "@nrwl/workspace:run-commands",
       options: {
         command: `yarn run tsc -b ${tsConfigPath} --incremental`,
       },
     };
+
+    // we're using index.tsx, not main.tsx
+    projectConfig.targets["build"]["options"]["main"] = joinPathFragments(projectConfig.root, "src", "index.tsx");
+    host.delete(joinPathFragments(projectConfig.root, "src", "main.tsx"));
+
+    // override webpack config
+    projectConfig.targets["build"]["options"]["webpackConfig"] = `config/webpack/webpackCustomized.config.js`;
   });
 }
 
