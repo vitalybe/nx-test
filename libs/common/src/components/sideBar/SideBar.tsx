@@ -17,9 +17,13 @@ import { RecordFinishedDialog } from "../supportRecording/recordFinishedDialog/R
 import { ContactSupportDialog } from "../supportRecording/contactSupportDialog/ContactSupportDialog";
 import { LogRocketUtils } from "../../utils/telemetryRecording/logRocketUtils";
 import { Notifier } from "../../utils/notifications/notifier";
-import { ApplicationParameters } from "../applicationParameters/ApplicationParameters";
 import { ParamsMetadata } from "../applicationParameters/_types/paramsMetadataTypes";
 import { UserStore } from "../../stores/userStore";
+const ApplicationParameters = React.lazy(() =>
+  import("../applicationParameters/ApplicationParameters").then(({ ApplicationParameters }) => ({
+    default: ApplicationParameters,
+  }))
+);
 
 const moduleLogger = loggerCreator("__filename");
 
@@ -366,7 +370,9 @@ function showHelpModal() {
 function showApplicationParameters(projectParams: ParamsMetadata | undefined) {
   openQwiltModal(
     (closeModalWithResult) => (
-      <ApplicationParameters projectParamsMetadata={projectParams} onClose={closeModalWithResult} />
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <ApplicationParameters projectParamsMetadata={projectParams} onClose={closeModalWithResult} />
+      </React.Suspense>
     ),
     {
       closeOnClickOutside: true,
