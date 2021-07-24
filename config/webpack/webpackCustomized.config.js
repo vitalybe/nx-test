@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = (config, context) => {
   nrwlConfig(config);
@@ -11,7 +11,7 @@ module.exports = (config, context) => {
       process: "process/browser",
     })
   );
-  config.plugins.push(new BundleAnalyzerPlugin());
+  // config.plugins.push(new BundleAnalyzerPlugin());
 
   console.log("CUSTOMIZING CONFIG");
   console.log(JSON.stringify(config, null, 2));

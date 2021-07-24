@@ -20,6 +20,7 @@ import { Schema } from "@nrwl/react/src/generators/application/schema";
 import { normalizeOptions } from "@nrwl/react/src/generators/application/lib/normalize-options";
 import { cypressProjectGenerator } from "@nrwl/cypress";
 import { GeneratorUtils } from "../_utils/generatorUtils";
+import * as fs from "fs";
 
 interface MySchema {
   name: string;
@@ -66,7 +67,14 @@ async function generateApp(host: Tree, options: MySchema) {
         command: `yarn run tsc -b ${tsConfigPath} --incremental`,
       },
     };
+
+    projectConfig.targets["build"]["options"]["main"] = joinPathFragments(projectConfig.root, "src", "index.tsx");
   });
+
+  const polyfillsPath = joinPathFragments(projectConfig.root, "src", "polyfills.ts");
+  let polyfillsContent = fs.readFileSync(polyfillsPath, "utf8");
+  polyfillsContent += `import "reflect-metadata"`;
+  fs.writeFileSync(polyfillsPath, polyfillsContent);
 }
 
 function addSrcTemplateFiles(host: Tree, options: MySchema, appProjectRoot: string) {
