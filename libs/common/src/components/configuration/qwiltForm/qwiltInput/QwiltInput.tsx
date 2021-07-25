@@ -1,13 +1,13 @@
 import * as React from "react";
 import { ChangeEvent } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { loggerCreator } from "../../../../utils/logger";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { Clickable } from "../../clickable/Clickable";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

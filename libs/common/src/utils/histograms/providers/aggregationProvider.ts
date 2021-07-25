@@ -1,9 +1,9 @@
-import { TimeConfig } from "common/utils/timeConfig";
-import { AnalyticsParams, ApiAggregationType } from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
-import { AjaxMetadata } from "common/utils/ajax";
-import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
-import { MediaAnalyticsApi } from "common/backend/mediaAnalytics";
-import { NumericValue } from "common/utils/histograms/domain/numericValue";
+import { TimeConfig } from "../../timeConfig";
+import { AnalyticsParams, ApiAggregationType } from "../../../backend/mediaAnalytics/mediaAnalyticsTypes";
+import { AjaxMetadata } from "../../ajax";
+import { MediaAnalyticsSeries } from "../../../backend/mediaAnalytics/mediaAnalyticsSeries";
+import { MediaAnalyticsApi } from "../../../backend/mediaAnalytics";
+import { NumericValue } from "../domain/numericValue";
 
 type MediaAnalyticsSeriesByKey = { [key: string]: MediaAnalyticsSeries };
 type ValueByKey<T> = { [key in keyof T]: NumericValue };

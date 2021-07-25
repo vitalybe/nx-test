@@ -3,7 +3,7 @@ import _ from "lodash";
 import {
   ExportDataType,
   FeatureSectionData,
-} from "common/components/_projectSpecific/monetization/_utils/export/_types";
+} from "./_types";
 
 export class ExportFeaturesData {
   data: ExportDataType = {};

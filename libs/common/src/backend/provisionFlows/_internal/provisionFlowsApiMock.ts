@@ -1,17 +1,17 @@
 /* eslint-disable unused-imports/no-unused-vars,unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { ProvisionFlowsApi, ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { ProvisionFlowsApi, ProvisionFlowsStepsEnum } from "../../provisionFlows";
 import {
   ExecutionStatusApiResult,
   FlowStatusApiResult,
   StepOutputApiResult,
   StepsApiResult,
-} from "common/backend/provisionFlows/_types/provisionFlowsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { sleep } from "common/utils/sleep";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/provisionFlowsTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { sleep } from "../../../utils/sleep";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ProvisionFlowsApiMock extends ProvisionFlowsApi {
   async listOperationalSteps(): Promise<StepsApiResult> {

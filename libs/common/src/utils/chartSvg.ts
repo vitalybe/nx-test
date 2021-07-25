@@ -1,6 +1,6 @@
 import { ElementObject, RendererObject } from "highcharts";
-import { CommonColors } from "common/styling/commonColors";
-import { Fonts } from "common/styling/fonts";
+import { CommonColors } from "../styling/commonColors";
+import { Fonts } from "../styling/fonts";
 import anime, { AnimeParams } from "animejs";
 import { darken, rgba, transparentize } from "polished";
 import { DateTime } from "luxon";

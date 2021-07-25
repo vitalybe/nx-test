@@ -1,15 +1,15 @@
 import * as _ from "lodash";
 import * as React from "react";
 import styled, { FlattenSimpleInterpolation as StyledCSS } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Props as TooltipProps, Tooltip } from "common/components/Tooltip";
+import { loggerCreator } from "../../utils/logger";
+import { Props as TooltipProps, Tooltip } from "../Tooltip";
 import {
   CopyToClipboardButton,
   Props as CopyToClipboardProps,
-} from "common/components/copyToClipboardButton/CopyToClipboardButton";
+} from "../copyToClipboardButton/CopyToClipboardButton";
 import { ReactNode } from "react";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const ContentContainer = styled.div`

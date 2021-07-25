@@ -1,12 +1,12 @@
 import * as React from "react";
 import { ReactNode, useEffect, useState } from "react";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import styled from "styled-components";
 import { useRef } from "react";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { TextTooltip } from "../../textTooltip/TextTooltip";
 import { ICellRendererParams } from "ag-grid-community";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const ReactCellWrapperView = styled.div`
   height: 100%;

@@ -1,11 +1,11 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { DsAssignmentsApiMock } from "common/backend/ds-assignments";
-import { Omit } from "common/utils/typescriptUtils";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { DsAssignmentsApiMock } from "../../ds-assignments";
+import { Omit } from "../../../utils/typescriptUtils";
 import {
   ApiEntityRuleType,
   ApiRuleAssignment,
@@ -16,10 +16,10 @@ import {
   NetworkRuleApiType,
   RoutingDuApiType,
   RoutingNetworkApiType,
-} from "common/backend/ds-assignments/_types/dsAssignmentsTypes";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
+} from "../_types/dsAssignmentsTypes";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const BACKEND_URL = combineUrl(getOriginForApi("ds-assignments"), "/api/3.0/");
 

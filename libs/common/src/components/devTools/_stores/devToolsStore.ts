@@ -1,12 +1,12 @@
 import { computed } from "mobx";
 
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { Settings } from "luxon";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { Utils } from "common/utils/utils";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
+import { Utils } from "../../../utils/utils";
 //noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 class DevToolsStore {
   private urlStore = UrlStore.getInstance();

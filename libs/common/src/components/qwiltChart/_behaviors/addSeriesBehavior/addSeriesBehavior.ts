@@ -1,6 +1,6 @@
 import { AreaChartSeriesOptions, DataPoint, Options } from "highcharts";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { ChartSeriesData } from "../../_domain/chartSeriesData";
 
 export class AddSeriesBehavior implements ChartBehavior {
   modifyConfig(chartOptions: Options, chartSeriesData: ChartSeriesData[]): void {

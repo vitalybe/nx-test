@@ -1,16 +1,16 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Content, EntitiesDropdown } from "common/components/entitiesDropdown/EntitiesDropdown";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { HierarchyUtils, SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { DeploymentEntityWithChildren } from "common/domain/qwiltDeployment/deploymentEntityWithChildren";
-import { QnDropdownEntitiesFactory } from "common/components/entitiesDropdown/_util/qnDropdownEntitiesFactory";
+import { loggerCreator } from "../../../../../utils/logger";
+import { Content, EntitiesDropdown } from "../../../../entitiesDropdown/EntitiesDropdown";
+import { DropdownEntity } from "../../../../entitiesDropdown/_domain/dropdownEntity";
+import { HierarchyUtils, SelectionModeEnum } from "../../../../../utils/hierarchyUtils";
+import { ConfigurationStyles } from "../../../../configuration/_styles/configurationStyles";
+import { DeploymentEntityWithChildren } from "../../../../../domain/qwiltDeployment/deploymentEntityWithChildren";
+import { QnDropdownEntitiesFactory } from "../../../../entitiesDropdown/_util/qnDropdownEntitiesFactory";
 import { SystemUpdatesUtils } from "../../_utils/systemUpdatesUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

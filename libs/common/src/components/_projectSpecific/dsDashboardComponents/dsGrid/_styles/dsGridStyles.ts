@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 import { transparentize } from "polished";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { Cell } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_styles/cell";
+import { CommonColors as Colors } from "../../../../../styling/commonColors";
+import { Cell } from "./cell";
 
 export enum GridClasses {
   GROUP_CHILD_CELL = "group-child-cell",

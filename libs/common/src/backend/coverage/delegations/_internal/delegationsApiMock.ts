@@ -1,28 +1,28 @@
 /* eslint-disable */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { DelegationsApi } from "common/backend/coverage/delegations";
-import { DltsApiResult } from "common/backend/coverage/delegations/_types/dltTypes";
-import { loggerCreator } from "common/utils/logger";
+import { AjaxMetadata } from "../../../../utils/ajax";
+import { sleep } from "../../../../utils/sleep";
+import { DelegationsApi } from "../../delegations";
+import { DltsApiResult } from "../_types/dltTypes";
+import { loggerCreator } from "../../../../utils/logger";
 import {
   RouterSelectionRuleApiEditType,
   RouterSelectionRulesApiResult,
-} from "common/backend/coverage/delegations/_types/routerSelectionRulesTypes";
+} from "../_types/routerSelectionRulesTypes";
 import {
   DelegationApiEditType,
   DelegationApiType,
   DelegationsApiResult,
   FootprintTypeEnum,
-} from "common/backend/coverage/delegations/_types/delegationTypes";
+} from "../_types/delegationTypes";
 import {
   DelegationSelectionApiEditType,
   DelegationSelectionApiType,
   DelegationSelectionsApiResult,
-} from "common/backend/coverage/delegations/_types/delegationSelectionTypes";
-import mockData from "common/backend/_utils/mockData";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/delegationSelectionTypes";
+import mockData from "../../../_utils/mockData";
+import { mockNetworkSleep } from "../../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DelegationsApiMock extends DelegationsApi {
   async listDlts(metadata: AjaxMetadata): Promise<DltsApiResult> {

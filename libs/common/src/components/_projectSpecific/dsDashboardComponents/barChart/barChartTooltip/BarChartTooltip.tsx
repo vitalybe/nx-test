@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { UnitsFormatterResult } from "common/utils/unitsFormatter";
-import { CommonColors as Colors } from "common/styling/commonColors";
+import { UnitsFormatterResult } from "../../../../../utils/unitsFormatter";
+import { CommonColors as Colors } from "../../../../../styling/commonColors";
 import {
   IconImg,
   ItemUnitSpn,
   ItemValueSpn,
   PercentValueSpn,
-} from "common/components/_projectSpecific/dsDashboardComponents/barChart/_parts/BarsGroup";
+} from "../_parts/BarsGroup";
 
 //region [[ Styles ]]
 

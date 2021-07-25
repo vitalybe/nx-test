@@ -1,17 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { DeepPath, FieldValuesFromControl, UnpackNestedValue } from "@hookform/strictly-typed/dist/types";
 import { Control, FieldError, FieldName, useFormContext } from "react-hook-form";
 import { useTypedController } from "@hookform/strictly-typed";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
+import { DropdownEntity } from "../../../entitiesDropdown/_domain/dropdownEntity";
 import {
   DropdownEntityIdType,
   FormEntitiesDropdownRaw,
-} from "common/components/qcComponents/form/_raw/formEntitiesDropdownRaw/FormEntitiesDropdownRaw";
-import { EntitiesDropdownSelectionMode } from "common/components/entitiesDropdown/EntitiesDropdown";
+} from "../_raw/formEntitiesDropdownRaw/FormEntitiesDropdownRaw";
+import { EntitiesDropdownSelectionMode } from "../../../entitiesDropdown/EntitiesDropdown";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,13 +1,13 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { ContentManagementApiMock } from "common/backend/contentManagement";
-import { PurgeRuleApi, PurgeRuleApiEdit } from "common/backend/contentManagement/_types/contentManagementTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { ContentManagementApiMock } from "../../contentManagement";
+import { PurgeRuleApi, PurgeRuleApiEdit } from "../_types/contentManagementTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("content-management"), "/api/1/content-management/rules/");
 
 export class ContentManagementApi {

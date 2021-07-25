@@ -1,26 +1,26 @@
 /* eslint-disable unused-imports/no-unused-vars,unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { CdnsApi } from "common/backend/cdns";
-import { loggerCreator } from "common/utils/logger";
-import { CdnApiResult, CdnEditApiType } from "common/backend/cdns/_types/cdnApiType";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { CdnsApi } from "../../cdns";
+import { loggerCreator } from "../../../utils/logger";
+import { CdnApiResult, CdnEditApiType } from "../_types/cdnApiType";
 import {
   DeliveryUnitGroupApiResult,
   DeliveryUnitGroupEditApiType,
   DispersionCalculationMethodsEnum,
-} from "common/backend/cdns/_types/deliveryUnitGroupApiType";
+} from "../_types/deliveryUnitGroupApiType";
 import {
   CacheOperationalModeApiEnum,
   DeliveryUnitApiResult,
   DeliveryUnitEditApiType,
   DeliveryUnitHealthProfileApiType,
-} from "common/backend/cdns/_types/deliveryUnitApiType";
-import { CdnLocationApiResult, CdnLocationEditApiType } from "common/backend/cdns/_types/cdnLocationApiType";
-import { HttpRouterGroupsApiResult, HttpRouterGroupType } from "common/backend/cdns/_types/httpRouterGroupType";
-import mockData from "common/backend/_utils/mockData";
+} from "../_types/deliveryUnitApiType";
+import { CdnLocationApiResult, CdnLocationEditApiType } from "../_types/cdnLocationApiType";
+import { HttpRouterGroupsApiResult, HttpRouterGroupType } from "../_types/httpRouterGroupType";
+import mockData from "../../_utils/mockData";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const defaultHealthProfile: DeliveryUnitHealthProfileApiType = {
   healthMinAvailableBwKbpsEnabled: false,

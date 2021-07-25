@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { VolumeChart } from "common/components/_projectSpecific/monetization/reports/monetizationMiniCharts/volumeChart/VolumeChart";
+import { loggerCreator } from "../../../../../../utils/logger";
+import { ChartSeriesData } from "../../../../../qwiltChart/_domain/chartSeriesData";
+import { VolumeChart } from "../../monetizationMiniCharts/volumeChart/VolumeChart";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

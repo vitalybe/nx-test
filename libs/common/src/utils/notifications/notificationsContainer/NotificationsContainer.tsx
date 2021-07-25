@@ -2,16 +2,16 @@ import * as _ from "lodash";
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../logger";
 import { ToastContainer as ToastContainerToastify } from "react-toastify";
 import { observer } from "mobx-react-lite";
-import { Notifier } from "common/utils/notifications/notifier";
-import { NotifierShared } from "common/utils/notifications/notifierShared";
-import { NotificationsButton } from "common/utils/notifications/notificationsContainer/notificationsButton/NotificationsButton";
-import { NotificationsList } from "common/utils/notifications/notificationsContainer/notificationsList/NotificationsList";
-import { SideBarStyles } from "common/components/sideBar/_styles/sideBarStyles";
+import { Notifier } from "../notifier";
+import { NotifierShared } from "../notifierShared";
+import { NotificationsButton } from "./notificationsButton/NotificationsButton";
+import { NotificationsList } from "./notificationsList/NotificationsList";
+import { SideBarStyles } from "../../../components/sideBar/_styles/sideBarStyles";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,7 +1,7 @@
 import {
   ApiCpContractType,
   ApiSpContractType,
-} from "common/backend/monetizationConfiguration/_types/monetizationConfigurationTypes";
+} from "../../monetizationConfiguration/_types/monetizationConfigurationTypes";
 
 export interface AuditLogApiType {
   id: string;

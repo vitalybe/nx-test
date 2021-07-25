@@ -1,8 +1,8 @@
-import { HierarchyUtils } from "common/utils/hierarchyUtils";
+import { HierarchyUtils } from "../../../../utils/hierarchyUtils";
 import {
   CommonDsEntity,
   DsEntityType,
-} from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
+} from "./commonDsEntity";
 
 export class DsViewData<T extends CommonDsEntity = CommonDsEntity> {
   isDataPopulated?: boolean = true;

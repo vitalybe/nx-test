@@ -7,10 +7,10 @@ import { Clickable } from "../clickable/Clickable";
 import { useTabRouterTabStore } from "../../tabRouter/_stores/tabRouterTabStore";
 import { DateTime } from "luxon";
 import { TextTooltip } from "../../textTooltip/TextTooltip";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

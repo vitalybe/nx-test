@@ -3,13 +3,13 @@ import {
   ApiGeoEntities,
   ApiIspEntities,
   GeoEntitiesParams,
-} from "common/backend/geoDeployment/geoDeploymentTypes";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { GeoDeploymentUtils } from "common/backend/geoDeployment/_utils/utils";
+} from "./geoDeploymentTypes";
+import { UrlParams } from "../_utils/urlParams";
+import { getOriginForApi } from "../backendOrigin";
+import { Ajax, AjaxMetadata } from "../../utils/ajax";
+import { UrlStore } from "../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../urlParams/commonUrlParams";
+import { GeoDeploymentUtils } from "./_utils/utils";
 
 // Source - https://docs.google.com/document/u/1/d/1iwGKaq9azbMy6xRU1s7GpKPxvGhstIOKL9q-qipm1UM/edit?usp=sharing_eil&ts=5b7e8b87
 class GeoDeploymentApi {

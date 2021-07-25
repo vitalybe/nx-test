@@ -2,20 +2,20 @@ import * as _ from "lodash";
 import * as React from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import styled, { FlattenSimpleInterpolation } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import JSONEditor, { JSONEditorOptions } from "jsoneditor";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown, faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
+import { useEventCallback } from "../../../../utils/hooks/useEventCallback";
 // @ts-ignore
 import jsonlint from "jsonlint";
 import "jsoneditor/dist/jsoneditor.min.css";
-import { CommonColors } from "common/styling/commonColors";
-import { Icons } from "common/styling/icons";
+import { CommonColors } from "../../../../styling/commonColors";
+import { Icons } from "../../../../styling/icons";
 import Switch from "react-switch";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const MINIMIZED_HEIGHT = "36px";
 
 //region [[ Styles ]]

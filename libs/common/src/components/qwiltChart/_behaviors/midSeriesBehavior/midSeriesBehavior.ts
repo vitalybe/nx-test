@@ -1,11 +1,11 @@
 import { ElementObject } from "highcharts";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { ChartSeries } from "common/components/qwiltChart/_domain/chartSeries";
+import { ChartSeriesArray } from "../../_domain/chartSeriesArray";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { ChartSeries } from "../../_domain/chartSeries";
 import { darken } from "polished";
-import { BehaviorUtils } from "common/components/qwiltChart/_behaviors/utils/behaviorUtils";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { ChartSvg } from "common/utils/chartSvg";
+import { BehaviorUtils } from "../utils/behaviorUtils";
+import { ChartSeriesData } from "../../_domain/chartSeriesData";
+import { ChartSvg } from "../../../../utils/chartSvg";
 
 interface MidSeriesOptions {
   lineWidth: number;

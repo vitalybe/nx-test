@@ -2,11 +2,11 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../../../utils/cosmos/FixtureDecorator";
 import {
   createCapacitySeriesData,
   createYearOfMonthlyMockPoints,
-} from "common/components/_projectSpecific/monetization/_utils/monetizationMockUtils";
+} from "../../../_utils/monetizationMockUtils";
 import { CapacityUtilizationChart, Props } from "./CapacityUtilizationChart";
 
 const View = styled(FixtureDecorator)`

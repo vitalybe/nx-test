@@ -1,9 +1,9 @@
-import { loggerCreator } from "common/utils/logger";
-import { ChartSeries } from "common/components/qwiltChart/_domain/chartSeries";
-import { HistogramUtils, HistogramPointType } from "common/utils/histograms/utils/histogramUtils";
+import { loggerCreator } from "../../../utils/logger";
+import { ChartSeries } from "./chartSeries";
+import { HistogramUtils, HistogramPointType } from "../../../utils/histograms/utils/histogramUtils";
 import { ChartObject } from "highcharts";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ChartSeriesArray {
   constructor(public readonly series: ChartSeries[]) {

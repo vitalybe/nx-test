@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MonetizationPanelHeader } from "common/components/_projectSpecific/monetization/reports/monetizationPanelHeader/MonetizationPanelHeader";
+import { MonetizationPanelHeader } from "../reports/monetizationPanelHeader/MonetizationPanelHeader";
 
 export const MiniChartPanelHeader = styled(MonetizationPanelHeader)`
   padding: 0;

@@ -1,13 +1,13 @@
-import { sleep } from "common/utils/sleep";
-import { KeysManagerApi } from "common/backend/keysManager";
+import { sleep } from "../../../utils/sleep";
+import { KeysManagerApi } from "../../keysManager";
 import {
   KeysManagerKeysApiResult,
   KeysManagerKeysSetsApiResult,
-} from "common/backend/keysManager/_types/keysManagerTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/keysManagerTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class KeysManagerApiMock extends KeysManagerApi {
   async listKeys(): Promise<KeysManagerKeysApiResult> {

@@ -1,5 +1,5 @@
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { TrafficRoutersMonitorsApiMock } from "common/backend/trafficRoutersMonitors";
+import { getOriginForApi } from "../../backendOrigin";
+import { TrafficRoutersMonitorsApiMock } from "../../trafficRoutersMonitors";
 import {
   ServerDnsRouterApiType,
   ServerDnsRouterResultApiType,
@@ -13,15 +13,15 @@ import {
   ServerBgpCollectorResultApiType,
   ServerHealthProviderResultApiType,
   ServerHealthProviderApiType,
-} from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { combineUrl } from "common/utils/combineUrl";
-import { loggerCreator } from "common/utils/logger";
+} from "../_types/trafficRoutersMonitorsTypes";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
+import { UrlParams } from "../../_utils/urlParams";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { combineUrl } from "../../../utils/combineUrl";
+import { loggerCreator } from "../../../utils/logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const BACKEND_URL = combineUrl(getOriginForApi("traffic-routers-monitors"), `/api/`);
 

@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { LoadingSpinner, Props } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { LoadingSpinner, Props } from "./LoadingSpinner";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

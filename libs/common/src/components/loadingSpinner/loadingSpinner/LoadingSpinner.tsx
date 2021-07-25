@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QwiltLogo } from "common/components/qwiltLogo/QwiltLogo";
+import { loggerCreator } from "../../../utils/logger";
+import { QwiltLogo } from "../../qwiltLogo/QwiltLogo";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, QwiltToggle } from "common/components/configuration/qwiltForm/qwiltToggle/QwiltToggle";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Props, QwiltToggle } from "./QwiltToggle";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

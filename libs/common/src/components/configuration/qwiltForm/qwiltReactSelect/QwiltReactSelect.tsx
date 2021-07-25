@@ -1,18 +1,18 @@
 import * as React from "react";
 import { ReactElement } from "react";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import Select, { SingleValueProps } from "react-select";
 import SelectCreatable, { CreatableProps } from "react-select/creatable";
 import { ActionMeta, ValueType } from "react-select/src/types";
 import styled from "styled-components";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { CommonColors } from "common/styling/commonColors";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
+import { CommonColors } from "../../../../styling/commonColors";
 import { Props as SelectProps } from "react-select/base";
-import { SelectOption } from "common/components/configuration/qwiltForm/qwiltReactSelect/selectOption/SelectOption";
+import { SelectOption } from "./selectOption/SelectOption";
 import { OptionProps } from "react-select/src/components/Option";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { TextTooltip } from "../../../textTooltip/TextTooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

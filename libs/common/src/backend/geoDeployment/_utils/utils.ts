@@ -1,4 +1,4 @@
-import { ApiIspEntities } from "common/backend/geoDeployment/geoDeploymentTypes";
+import { ApiIspEntities } from "../geoDeploymentTypes";
 
 export class GeoDeploymentUtils {
   static lastId = 0;

@@ -25,7 +25,7 @@ const ApplicationParameters = React.lazy(() =>
   }))
 );
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const logoutLogo = require("../../images/sideBar/logout.svg");
 const qwiltLogoWithLabel = require("../../images/logo/qwilt-logo.png");

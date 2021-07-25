@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { TrafficRoutersMonitorsApi } from "common/backend/trafficRoutersMonitors";
+import { TrafficRoutersMonitorsApi } from "../../trafficRoutersMonitors";
 import {
   ServerApiType,
   ServerBgpCollectorResultApiType,
@@ -12,13 +12,13 @@ import {
   ServerStatus,
   ServerType,
   TrafficRoutersMonitorsApiResult,
-} from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { AjaxMetadata } from "common/utils/ajax";
+} from "../_types/trafficRoutersMonitorsTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { AjaxMetadata } from "../../../utils/ajax";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class TrafficRoutersMonitorsApiMock implements TrafficRoutersMonitorsApi {
   //region Deprecated - tempFlag_serversTabMoreConfigurations

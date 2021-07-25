@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { DateTime, Duration } from "luxon";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
+import { useEventCallback } from "./useEventCallback";
 
 // if no refresh interval duration is passed, auto refresh interval is disabled
 export function useRefreshInterval(refreshInterval?: Duration) {

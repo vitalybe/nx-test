@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
+import { UnitKindEnum } from "../../../../../utils/unitsFormatter";
 import {
   OverallPeak,
   Props,
-} from "common/components/qwiltChart/_behaviors/overallPeakBehavior/overallPeak/OverallPeak";
+} from "./OverallPeak";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

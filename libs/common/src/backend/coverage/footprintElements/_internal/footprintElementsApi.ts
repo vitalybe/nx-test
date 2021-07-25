@@ -1,17 +1,17 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { FootprintElementsApiMock } from "common/backend/coverage/footprintElements/index";
+import { loggerCreator } from "../../../../utils/logger";
+import { getOriginForApi } from "../../../backendOrigin";
+import { combineUrl } from "../../../../utils/combineUrl";
+import { UrlParams } from "../../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../../utils/ajax";
+import { devToolsStore } from "../../../../components/devTools/_stores/devToolsStore";
+import { FootprintElementsApiMock } from "../index";
 import {
   FootprintApiType,
   FootprintElementsApiResult,
   FootprintElementsApiType,
-} from "common/backend/coverage/footprintElements/_types/footprintElementsTypes";
+} from "../_types/footprintElementsTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("coverage"), "/api/1.0.0/coverage/config/");
 
 export class FootprintElementsApi {

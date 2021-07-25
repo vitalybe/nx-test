@@ -1,5 +1,5 @@
 import { CSSObject, ElementObject, RendererObject } from "highcharts";
-import { Fonts } from "common/styling/fonts";
+import { Fonts } from "../../../../styling/fonts";
 
 export class BehaviorUtils {
   static readonly axisCommonLabelStyleOption: CSSObject = {

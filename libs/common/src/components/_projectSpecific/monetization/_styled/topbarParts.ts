@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { QcButton } from "common/components/qcComponents/_styled/qcButton/QcButton";
-import { CommonColors } from "common/styling/commonColors";
+import { QcButton } from "../../../qcComponents/_styled/qcButton/QcButton";
+import { CommonColors } from "../../../../styling/commonColors";
 
-const paymentHistoryIcon = require("common/components/_projectSpecific/monetization/_media/icons/billing.svg");
-const exportIcon = require("common/components/_projectSpecific/monetization/_media/icons/export.svg");
-const backIcon = require("common/components/_projectSpecific/monetization/_media/icons/left-arrow.svg");
+const paymentHistoryIcon = require("../_media/icons/billing.svg");
+const exportIcon = require("../_media/icons/export.svg");
+const backIcon = require("../_media/icons/left-arrow.svg");
 
 export const PaymentHistoryIcon = styled.img.attrs({ src: paymentHistoryIcon, alt: "payment history" })``;
 export const ExportIcon = styled.img.attrs({ src: exportIcon, alt: "export" })``;

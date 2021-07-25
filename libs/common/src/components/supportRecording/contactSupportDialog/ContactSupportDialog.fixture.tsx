@@ -4,8 +4,8 @@ import styled from "styled-components";
 import {
   ContactSupportDialog,
   Props,
-} from "common/components/supportRecording/contactSupportDialog/ContactSupportDialog";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./ContactSupportDialog";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,22 +1,22 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Tooltip } from "common/components/Tooltip";
-import { ColoredCircle } from "common/components/styled/ColoredCircle";
-import { CurrencyUnitEnum, CurrencyUtils } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { MetricData } from "common/components/_projectSpecific/dsDashboardComponents/dsDashboardTopbar/DsDashboardTopBar";
+import { loggerCreator } from "../../../../../utils/logger";
+import { Tooltip } from "../../../../Tooltip";
+import { ColoredCircle } from "../../../../styled/ColoredCircle";
+import { CurrencyUnitEnum, CurrencyUtils } from "../../_utils/currencyUtils";
+import { TextTooltip } from "../../../../textTooltip/TextTooltip";
+import { MetricData } from "../../../dsDashboardComponents/dsDashboardTopbar/DsDashboardTopBar";
 import {
   Description as MetricDescription,
   Metric,
   Value as MetricValue,
   ValueRow as MetricValueRow,
-} from "common/components/metrics/Metric";
-import { CommonColors } from "common/styling/commonColors";
+} from "../../../../metrics/Metric";
+import { CommonColors } from "../../../../../styling/commonColors";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
-const approvedIcon = require("common/components/_projectSpecific/monetization/_media/icons/approved.svg");
+const moduleLogger = loggerCreator("__filename");
+const approvedIcon = require("../../_media/icons/approved.svg");
 
 //region [[ Styles ]]
 const ApprovedIcon = styled.img.attrs({ src: approvedIcon })`

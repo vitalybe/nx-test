@@ -1,11 +1,11 @@
 import { AxisLabelFormatterOptions, AxisLabels, AxisOptions, Options, PlotLines } from "highcharts";
-import { UnitKindEnum, UnitNameEnum, unitsFormatter } from "common/utils/unitsFormatter";
+import { UnitKindEnum, UnitNameEnum, unitsFormatter } from "../../../../utils/unitsFormatter";
 import * as _ from "lodash";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
-import { BehaviorUtils } from "common/components/qwiltChart/_behaviors/utils/behaviorUtils";
-import { OnlyData } from "common/utils/typescriptUtils";
+import { ChartSeriesData } from "../../_domain/chartSeriesData";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { HistogramSeries } from "../../../../utils/histograms/domain/histogramSeries";
+import { BehaviorUtils } from "../utils/behaviorUtils";
+import { OnlyData } from "../../../../utils/typescriptUtils";
 
 export class YAxisBehavior implements ChartBehavior {
   gridLineColor: string = "";

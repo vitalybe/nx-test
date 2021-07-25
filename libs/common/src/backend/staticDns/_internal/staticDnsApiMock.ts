@@ -1,12 +1,12 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { StaticDnsApi } from "common/backend/staticDns";
-import { StaticDnsApiResult, StaticDnsEditApiType } from "common/backend/staticDns/_types/staticDnsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { StaticDnsApi } from "../../staticDns";
+import { StaticDnsApiResult, StaticDnsEditApiType } from "../_types/staticDnsTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class StaticDnsApiMock implements StaticDnsApi {
   async list(metadata: AjaxMetadata): Promise<StaticDnsApiResult> {

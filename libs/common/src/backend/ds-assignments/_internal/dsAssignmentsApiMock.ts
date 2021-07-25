@@ -1,8 +1,8 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { mockNetworkSleep, mockUtils } from "common/utils/mockUtils";
-import { DsAssignmentsApi } from "common/backend/ds-assignments";
-import { sleep } from "common/utils/sleep";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { mockNetworkSleep, mockUtils } from "../../../utils/mockUtils";
+import { DsAssignmentsApi } from "../../ds-assignments";
+import { sleep } from "../../../utils/sleep";
 import {
   ApiEntityRuleType,
   ApiRuleAssignment,
@@ -13,9 +13,9 @@ import {
   NetworkRuleApiType,
   RoutingDuApiType,
   RoutingNetworkApiType,
-} from "common/backend/ds-assignments/_types/dsAssignmentsTypes";
-import { Omit } from "common/utils/typescriptUtils";
-import mockData from "common/backend/_utils/mockData";
+} from "../_types/dsAssignmentsTypes";
+import { Omit } from "../../../utils/typescriptUtils";
+import mockData from "../../_utils/mockData";
 
 export class DsAssignmentsApiMock implements DsAssignmentsApi {
   //region [[DS Assignment Rules]]

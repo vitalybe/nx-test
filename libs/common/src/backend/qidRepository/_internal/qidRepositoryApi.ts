@@ -1,14 +1,14 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { QidRepositoryApiMock } from "common/backend/qidRepository";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { QidMetadata } from "common/backend/qidRepository/_types/qidRepositoryTypes";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { QidRepositoryApiMock } from "../../qidRepository";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { QidMetadata } from "../_types/qidRepositoryTypes";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("qid-repository"), "/api/1/");
 
 export class QidRepositoryApi {

@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { mockUtils } from "common/utils/mockUtils";
-import { Props, TabContainer } from "common/components/tabContainer/TabContainer";
+import { mockUtils } from "../../utils/mockUtils";
+import { Props, TabContainer } from "./TabContainer";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 0.5em;

@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { HelpIcon, Props } from "common/components/svg/helpIcon/HelpIcon";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { HelpIcon, Props } from "./HelpIcon";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

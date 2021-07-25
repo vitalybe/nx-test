@@ -1,6 +1,6 @@
 import * as _ from "lodash";
-import { Ajax } from "common/utils/ajax";
-import { UrlParams } from "common/backend/_utils/urlParams";
+import { Ajax } from "../../utils/ajax";
+import { UrlParams } from "./urlParams";
 
 export class RequestModel {
   constructor(public url: URL, private options?: RequestInit) {}

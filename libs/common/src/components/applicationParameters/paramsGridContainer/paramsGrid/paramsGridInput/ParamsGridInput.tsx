@@ -1,14 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../utils/logger";
 import { ParamsGridItem } from "../ParamsGrid";
 import { Input, Switch } from "antd";
 import { ChangeEvent } from "react";
-import { CommonColors } from "common/styling/commonColors";
-import { useUrlBooleanState, useUrlState } from "common/utils/hooks/useUrlState";
+import { CommonColors } from "../../../../../styling/commonColors";
+import { useUrlBooleanState, useUrlState } from "../../../../../utils/hooks/useUrlState";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

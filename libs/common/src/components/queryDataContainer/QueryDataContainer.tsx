@@ -3,14 +3,14 @@ import { ReactNode } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons/faExclamationTriangle";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { loggerCreator } from "common/utils/logger";
+import { LoadingSpinner } from "../loadingSpinner/loadingSpinner/LoadingSpinner";
+import { loggerCreator } from "../../utils/logger";
 import { transparentize } from "polished";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../styling/commonColors";
 import { UseQueryResult } from "react-query/types/react/types";
 import { TextTooltip } from "../textTooltip/TextTooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region Styles
 const QueryDataContainerView = styled.div`

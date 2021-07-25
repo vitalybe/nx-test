@@ -1,15 +1,15 @@
 /* eslint-disable no-console */
-import { CommonUrls } from "common/utils/commonUrls";
+import { CommonUrls } from "../commonUrls";
 import * as Sentry from "@sentry/browser";
-import { LogRocketUtils } from "common/utils/telemetryRecording/logRocketUtils";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
+import { LogRocketUtils } from "./logRocketUtils";
+import { CommonUrlParams } from "../../urlParams/commonUrlParams";
 
 const LogRocket = require("logrocket");
 
 // @ts-ignore - Comes from webpack
-const appVersion = __VERSION__;
+const appVersion = process.env.NX_QC_VERSION;
 // @ts-ignore - Comes from webpack
-const sentryDsn = __SENTRY_DSN__;
+const sentryDsn = process.env.NX_SENTRY_DSN;
 
 export class RecordSession {
   private static didInit = false;

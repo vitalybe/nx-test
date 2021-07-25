@@ -1,4 +1,4 @@
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
+import { ChartSeriesData } from "../../../qwiltChart/_domain/chartSeriesData";
 import { useMemo } from "react";
 import _ from "lodash";
 import { DateTime } from "luxon";

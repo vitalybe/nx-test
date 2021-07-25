@@ -1,13 +1,13 @@
 import * as React from "react";
 import { FocusEventHandler } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { SideBarStyles } from "common/components/sideBar/_styles/sideBarStyles";
-import { Title } from "common/components/sideBar/_styles/sideBarCommon";
-import { Icons } from "common/styling/icons";
+import { loggerCreator } from "../../../utils/logger";
+import { SideBarStyles } from "../_styles/sideBarStyles";
+import { Title } from "../_styles/sideBarCommon";
+import { Icons } from "../../../styling/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

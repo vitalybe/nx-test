@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { Props, SideBar } from "common/components/sideBar/SideBar";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { RouteMetadata } from "common/stores/_models/routeMetadata";
+import { Props, SideBar } from "./SideBar";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
+import { RouteMetadata } from "../../stores/_models/routeMetadata";
 
 const View = styled(FixtureDecorator)`
   position: relative;
@@ -14,7 +14,7 @@ const View = styled(FixtureDecorator)`
   display: grid;
 `;
 
-const routeIcon = require("common/components/sideBar/_images/route-icon-example.svg");
+const routeIcon = require("./_images/route-icon-example.svg");
 
 function getProps(): Props {
   const firstRoutesGroup: RouteMetadata[] = [

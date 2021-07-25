@@ -1,11 +1,11 @@
 /* eslint-disable unused-imports/no-unused-vars */
 import * as React from "react";
 import styled from "styled-components";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { QueryDataContainer } from "./QueryDataContainer";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 import { useQuery } from "react-query";
-import { mockUtils } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
+import { mockUtils } from "../../utils/mockUtils";
+import { sleep } from "../../utils/sleep";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

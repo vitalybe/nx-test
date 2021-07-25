@@ -1,17 +1,17 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { loggerCreator } from "common/utils/logger";
-import { DeliveryServiceMetadataApi } from "common/backend/deliveryServiceMetadata/_internal/deliveryServiceMetadataApi";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { loggerCreator } from "../../../utils/logger";
+import { DeliveryServiceMetadataApi } from "./deliveryServiceMetadataApi";
 import {
   DeliveryServiceMetadataApiResult,
   DeliveryServiceMetadataCreateApiType,
   DeliveryServiceMetadataEditApiType,
   DeliveryServiceMetadataIconType,
   MetadataServiceTypeEnum,
-} from "common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
+} from "../../deliveryServices/_types/deliveryServiceMetadataTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DeliveryServiceMetadataApiMock implements DeliveryServiceMetadataApi {
   async getMetadata(): Promise<DeliveryServiceMetadataApiResult> {
