@@ -1,9 +1,12 @@
-import { StrictMode } from "react";
+import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { ProjectFrame } from "common/components/projectFrame/ProjectFrame";
+import { ReportsScreenContainer } from "src/reportsScreen/ReportsScreenContainer";
+import { ProjectUrlParamsMetadata } from "src/_stores/projectUrlParams";
 
 ReactDOM.render(
-  <StrictMode>
-    <div>Hello</div>
-  </StrictMode>,
-  document.getElementById("root")
+  <ProjectFrame title={"Reports"} projectParamsMetadata={ProjectUrlParamsMetadata}>
+    <ReportsScreenContainer />
+  </ProjectFrame>,
+  document.getElementById("root") as HTMLElement
 );
