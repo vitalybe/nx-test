@@ -1,0 +1,121 @@
+// ag-grid.scss defines structural styles and should be imported first
+@import "~ag-grid-community/src/styles/ag-grid.scss";
+@import "~ag-grid-community/src/styles/ag-theme-base/sass/ag-theme-base";
+
+$header-background-color: #d3e1e6;
+$border-bold-width: 3px;
+$border-color: $header-background-color;
+
+.ag-theme-qwilt-configuration {
+  // pass parameters to the base theme to control look and feel
+  @include ag-theme-base(
+                  (
+                          header-background-color: $header-background-color,
+                          border-color: $header-background-color,
+                          grid-size: 5px,
+                          cell-horizontal-padding: 5px,
+                          icon-size: 12px,
+                  )
+  );
+
+  .ag-root-wrapper {
+    border-radius: 6px;
+  }
+
+  .ag-ltr .ag-row-group-leaf-indent {
+    margin-left: 17px;
+  }
+
+  .ag-icon-contracted:before {
+    content: "\E933";
+  }
+
+  .ag-icon-expanded:before {
+    content: "\E911";
+  }
+
+  .ag-header {
+    border-radius: 5px 5px 0 0;
+
+    .ag-header-cell, .ag-header-group-cell {
+      font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      color: rgba(0, 0, 0, 0.54);
+      font-weight: 700;
+    }
+  }
+
+  .ag-cell {
+    font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+
+  // feat - border separator
+  .ag-cell.actions-column {
+    border-right: $border-bold-width solid $border-color;
+  }
+
+  // fix - clicking action in action column shows an outline
+  .ag-has-focus .ag-cell-focus.actions-column {
+    border: 1px solid transparent;
+    border-left: 1px solid $border-color;
+    border-right: $border-bold-width solid $border-color;
+  }
+
+  // fix - clicking cell below label doesn't trigger sort
+  .ag-cell-label-container {
+    height: 100%;
+  }
+
+  .ag-header-group-cell-label {
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .ag-header-cell-label {
+    font-size: 14px;
+  }
+
+  .ag-cell {
+    font-size: 14px;
+  }
+  .ag-cell-highlight {
+    background-color: #cccccc !important;
+  }
+
+  .ag-header-cell-resize {
+    border-right: 1px solid darken($border-color, 10%);
+    height: 100%;
+    width: 3px;
+    right: 0;
+  }
+
+  .ag-has-focus .ag-cell-focus.actions-column {
+    border: 1px solid transparent;
+    border-left: 1px solid $border-color;
+    border-right: $border-bold-width solid $border-color;
+  }
+
+  .ag-cell.separator-right {
+    border-right: $border-bold-width solid $border-color;
+  }
+
+  .ag-cell.separator-left {
+    border-left: $border-bold-width solid $border-color;
+  }
+
+  .ag-header-cell:not(.ag-header-group-cell-no-group),
+  .ag-header-group-cell:not(.ag-header-group-cell-no-group) {
+    border-top-width: 0;
+  }
+
+  .ag-row-selected {
+    background-color: rgba(117, 216, 255, 0.8);
+
+    &.ag-row-hover {
+      background-color: rgba(117, 216, 255, 1);
+    }
+  }
+
+  .ag-row-hover {
+    background-color: rgba(163, 226, 255, 0.2);
+  }
+}

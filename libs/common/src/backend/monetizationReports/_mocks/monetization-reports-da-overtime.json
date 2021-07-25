@@ -1,0 +1,1139 @@
+{
+  "monthSamples": [
+    {
+      "month": "12-2019",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 3420,
+              "cqRevenue": 6880,
+              "daRevenue": 6880,
+              "overallRevenue": 17180,
+              "spRevenueFromProjectStart": 3420,
+              "cqRevenueFromProjectStart": 6880,
+              "daRevenueFromProjectStart": 6880,
+              "overallRevenueFromProjectStart": 17180,
+              "volume": 6000000000
+            }
+          ],
+          "spRevenue": 3420.0,
+          "cqRevenue": 6880.0,
+          "daRevenue": 6880.0,
+          "overallRevenue": 17180,
+          "spRevenueFromProjectStart": 3420,
+          "cqRevenueFromProjectStart": 6880,
+          "daRevenueFromProjectStart": 6880,
+          "overallRevenueFromProjectStart": 17180,
+          "volume": 6000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 3420,
+              "cqRevenue": 6880,
+              "daRevenue": 6880,
+              "overallRevenue": 17180,
+              "spRevenueFromProjectStart": 3420,
+              "cqRevenueFromProjectStart": 6880,
+              "daRevenueFromProjectStart": 6880,
+              "overallRevenueFromProjectStart": 17180,
+              "volume": 6000000000
+            }
+          ],
+          "spRevenue": 3420.0,
+          "cqRevenue": 6880.0,
+          "daRevenue": 6880.0,
+          "overallRevenue": 17180,
+          "spRevenueFromProjectStart": 3420,
+          "cqRevenueFromProjectStart": 6880,
+          "daRevenueFromProjectStart": 6880,
+          "overallRevenueFromProjectStart": 17180,
+          "volume": 6000000000
+        }
+
+      ],
+      "spRevenue": 3420.0,
+      "cqRevenue": 6880.0,
+      "daRevenue": 6880.0,
+      "overallRevenue": 17180,
+      "spRevenueFromProjectStart": 3420,
+      "cqRevenueFromProjectStart": 6880,
+      "daRevenueFromProjectStart": 6880,
+      "overallRevenueFromProjectStart": 17180,
+      "volume": 6000000000
+    },
+    {
+      "month": "01-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 3762,
+              "cqRevenue": 7568,
+              "daRevenue": 7568,
+              "overallRevenue": 18898,
+              "spRevenueFromProjectStart": 7182,
+              "cqRevenueFromProjectStart": 14448,
+              "daRevenueFromProjectStart": 14448,
+              "overallRevenueFromProjectStart": 36078,
+              "volume": 6500000000
+            }
+          ],
+          "spRevenue": 3762,
+          "cqRevenue": 7568,
+          "daRevenue": 7568,
+          "overallRevenue": 18898,
+          "spRevenueFromProjectStart": 7182,
+          "cqRevenueFromProjectStart": 14448,
+          "daRevenueFromProjectStart": 14448,
+          "overallRevenueFromProjectStart": 36078,
+          "volume": 6500000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 3762,
+              "cqRevenue": 7568,
+              "daRevenue": 7568,
+              "overallRevenue": 18898,
+              "spRevenueFromProjectStart": 7182,
+              "cqRevenueFromProjectStart": 14448,
+              "daRevenueFromProjectStart": 14448,
+              "overallRevenueFromProjectStart": 36078,
+              "volume": 6500000000
+            }
+          ],
+          "spRevenue": 3762,
+          "cqRevenue": 7568,
+          "daRevenue": 7568,
+          "overallRevenue": 18898,
+          "spRevenueFromProjectStart": 7182,
+          "cqRevenueFromProjectStart": 14448,
+          "daRevenueFromProjectStart": 14448,
+          "overallRevenueFromProjectStart": 36078,
+          "volume": 6500000000
+        }
+
+      ],
+      "spRevenue": 3762,
+      "cqRevenue": 7568,
+      "daRevenue": 7568,
+      "overallRevenue": 18898,
+      "spRevenueFromProjectStart": 7182,
+      "cqRevenueFromProjectStart": 14448,
+      "daRevenueFromProjectStart": 14448,
+      "overallRevenueFromProjectStart": 36078,
+      "volume": 6500000000
+    },
+    {
+      "month": "02-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 4138,
+              "cqRevenue": 8325,
+              "daRevenue": 8325,
+              "overallRevenue": 20788,
+              "spRevenueFromProjectStart": 11320,
+              "cqRevenueFromProjectStart": 22773,
+              "daRevenueFromProjectStart": 22773,
+              "overallRevenueFromProjectStart": 75764,
+              "volume": 7000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 3420,
+              "cqRevenue": 6880,
+              "daRevenue": 6880,
+              "overallRevenue": 17180,
+              "spRevenueFromProjectStart": 3420,
+              "cqRevenueFromProjectStart": 6880,
+              "daRevenueFromProjectStart": 6880,
+              "overallRevenueFromProjectStart": 17180,
+              "volume": 6000000000
+            }
+          ],
+          "spRevenue": 5360.0,
+          "cqRevenue": 9840.0,
+          "daRevenue": 9840.0,
+          "overallRevenue": 15200.0,
+          "spRevenueFromProjectStart": 26800,
+          "cqRevenueFromProjectStart": 49200,
+          "daRevenueFromProjectStart": 49200,
+          "overallRevenueFromProjectStart": 76000,
+          "volume": 13000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 4138,
+              "cqRevenue": 8325,
+              "daRevenue": 8325,
+              "overallRevenue": 20788,
+              "spRevenueFromProjectStart": 11320,
+              "cqRevenueFromProjectStart": 22773,
+              "daRevenueFromProjectStart": 22773,
+              "overallRevenueFromProjectStart": 75764,
+              "volume": 7000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 3420,
+              "cqRevenue": 6880,
+              "daRevenue": 6880,
+              "overallRevenue": 17180,
+              "spRevenueFromProjectStart": 3420,
+              "cqRevenueFromProjectStart": 6880,
+              "daRevenueFromProjectStart": 6880,
+              "overallRevenueFromProjectStart": 17180,
+              "volume": 6000000000
+            }
+          ],
+          "spRevenue": 5360.0,
+          "cqRevenue": 9840.0,
+          "daRevenue": 9840.0,
+          "overallRevenue": 15200.0,
+          "spRevenueFromProjectStart": 26800,
+          "cqRevenueFromProjectStart": 49200,
+          "daRevenueFromProjectStart": 49200,
+          "overallRevenueFromProjectStart": 76000,
+          "volume": 13000000000
+        }
+
+      ],
+      "spRevenue": 7524,
+      "cqRevenue": 15136,
+      "daRevenue": 15136,
+      "overallRevenue": 37796,
+      "spRevenueFromProjectStart": 14364,
+      "cqRevenueFromProjectStart": 28896,
+      "daRevenueFromProjectStart": 28896,
+      "overallRevenueFromProjectStart": 72156,
+      "volume": 13000000000
+    },
+    {
+      "month": "03-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 4552,
+              "cqRevenue": 9158,
+              "daRevenue": 9158,
+              "overallRevenue": 22867,
+              "spRevenueFromProjectStart": 15872,
+              "cqRevenueFromProjectStart": 31931,
+              "daRevenueFromProjectStart": 31931,
+              "overallRevenueFromProjectStart": 159104,
+              "volume": 7500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 3762,
+              "cqRevenue": 7568,
+              "daRevenue": 7568,
+              "overallRevenue": 18898,
+              "spRevenueFromProjectStart": 7182,
+              "cqRevenueFromProjectStart": 14448,
+              "daRevenueFromProjectStart": 14448,
+              "overallRevenueFromProjectStart": 36078,
+              "volume": 6500000000
+            }
+          ],
+          "spRevenue": 6700.0,
+          "cqRevenue": 12300.0,
+          "daRevenue": 12300.0,
+          "overallRevenue": 19000.0,
+          "spRevenueFromProjectStart": 33500,
+          "cqRevenueFromProjectStart": 61500,
+          "daRevenueFromProjectStart": 61500,
+          "overallRevenueFromProjectStart": 95000,
+          "volume": 15000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 4552,
+              "cqRevenue": 9158,
+              "daRevenue": 9158,
+              "overallRevenue": 22867,
+              "spRevenueFromProjectStart": 15872,
+              "cqRevenueFromProjectStart": 31931,
+              "daRevenueFromProjectStart": 31931,
+              "overallRevenueFromProjectStart": 159104,
+              "volume": 7500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 3762,
+              "cqRevenue": 7568,
+              "daRevenue": 7568,
+              "overallRevenue": 18898,
+              "spRevenueFromProjectStart": 7182,
+              "cqRevenueFromProjectStart": 14448,
+              "daRevenueFromProjectStart": 14448,
+              "overallRevenueFromProjectStart": 36078,
+              "volume": 6500000000
+            }
+          ],
+          "spRevenue": 6700.0,
+          "cqRevenue": 12300.0,
+          "daRevenue": 12300.0,
+          "overallRevenue": 19000.0,
+          "spRevenueFromProjectStart": 33500,
+          "cqRevenueFromProjectStart": 61500,
+          "daRevenueFromProjectStart": 61500,
+          "overallRevenueFromProjectStart": 95000,
+          "volume": 15000000000
+        }
+
+      ],
+      "spRevenue": 8276,
+      "cqRevenue": 16650,
+      "daRevenue": 16650,
+      "overallRevenue": 41576,
+      "spRevenueFromProjectStart": 22640,
+      "cqRevenueFromProjectStart": 45546,
+      "daRevenueFromProjectStart": 45546,
+      "overallRevenueFromProjectStart": 151528,
+      "volume": 13000000000
+    },
+    {
+      "month": "04-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 5007,
+              "cqRevenue": 10074,
+              "daRevenue": 10074,
+              "overallRevenue": 25154,
+              "spRevenueFromProjectStart": 20879,
+              "cqRevenueFromProjectStart": 42005,
+              "daRevenueFromProjectStart": 42005,
+              "overallRevenueFromProjectStart": 334118,
+              "volume": 8000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 4138,
+              "cqRevenue": 8325,
+              "daRevenue": 8325,
+              "overallRevenue": 20788,
+              "spRevenueFromProjectStart": 11320,
+              "cqRevenueFromProjectStart": 22773,
+              "daRevenueFromProjectStart": 22773,
+              "overallRevenueFromProjectStart": 75764,
+              "volume": 7000000000
+            }
+          ],
+          "spRevenue": 8040.0,
+          "cqRevenue": 14760.0,
+          "daRevenue": 14760.0,
+          "overallRevenue": 22800.0,
+          "spRevenueFromProjectStart": 41540,
+          "cqRevenueFromProjectStart": 76260,
+          "daRevenueFromProjectStart": 76260,
+          "overallRevenueFromProjectStart": 117800,
+          "volume": 18000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 5007,
+              "cqRevenue": 10074,
+              "daRevenue": 10074,
+              "overallRevenue": 25154,
+              "spRevenueFromProjectStart": 20879,
+              "cqRevenueFromProjectStart": 42005,
+              "daRevenueFromProjectStart": 42005,
+              "overallRevenueFromProjectStart": 334118,
+              "volume": 8000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 4138,
+              "cqRevenue": 8325,
+              "daRevenue": 8325,
+              "overallRevenue": 20788,
+              "spRevenueFromProjectStart": 11320,
+              "cqRevenueFromProjectStart": 22773,
+              "daRevenueFromProjectStart": 22773,
+              "overallRevenueFromProjectStart": 75764,
+              "volume": 7000000000
+            }
+          ],
+          "spRevenue": 8040.0,
+          "cqRevenue": 14760.0,
+          "daRevenue": 14760.0,
+          "overallRevenue": 22800.0,
+          "spRevenueFromProjectStart": 41540,
+          "cqRevenueFromProjectStart": 76260,
+          "daRevenueFromProjectStart": 76260,
+          "overallRevenueFromProjectStart": 117800,
+          "volume": 18000000000
+        }
+
+      ],
+      "spRevenue": 9104,
+      "cqRevenue": 18315,
+      "daRevenue": 18315,
+      "overallRevenue": 45734,
+      "spRevenueFromProjectStart": 31744,
+      "cqRevenueFromProjectStart": 63861,
+      "daRevenueFromProjectStart": 63861,
+      "overallRevenueFromProjectStart": 318209,
+      "volume": 13500000000
+    },
+    {
+      "month": "05-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 5508,
+              "cqRevenue": 11081,
+              "daRevenue": 11081,
+              "overallRevenue": 27669,
+              "spRevenueFromProjectStart": 26387,
+              "cqRevenueFromProjectStart": 53086,
+              "daRevenueFromProjectStart": 53086,
+              "overallRevenueFromProjectStart": 701648,
+              "volume": 8500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 4552,
+              "cqRevenue": 9158,
+              "daRevenue": 9158,
+              "overallRevenue": 22867,
+              "spRevenueFromProjectStart": 15872,
+              "cqRevenueFromProjectStart": 31931,
+              "daRevenueFromProjectStart": 31931,
+              "overallRevenueFromProjectStart": 159104,
+              "volume": 7500000000
+            }
+          ],
+          "spRevenue": 9380.0,
+          "cqRevenue": 17220.0,
+          "daRevenue": 17220.0,
+          "overallRevenue": 26600.0,
+          "spRevenueFromProjectStart": 50920,
+          "cqRevenueFromProjectStart": 93480,
+          "daRevenueFromProjectStart": 93480,
+          "overallRevenueFromProjectStart": 144400,
+          "volume": 21000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 5508,
+              "cqRevenue": 11081,
+              "daRevenue": 11081,
+              "overallRevenue": 27669,
+              "spRevenueFromProjectStart": 26387,
+              "cqRevenueFromProjectStart": 53086,
+              "daRevenueFromProjectStart": 53086,
+              "overallRevenueFromProjectStart": 701648,
+              "volume": 8500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 4552,
+              "cqRevenue": 9158,
+              "daRevenue": 9158,
+              "overallRevenue": 22867,
+              "spRevenueFromProjectStart": 15872,
+              "cqRevenueFromProjectStart": 31931,
+              "daRevenueFromProjectStart": 31931,
+              "overallRevenueFromProjectStart": 159104,
+              "volume": 7500000000
+            }
+          ],
+          "spRevenue": 9380.0,
+          "cqRevenue": 17220.0,
+          "daRevenue": 17220.0,
+          "overallRevenue": 26600.0,
+          "spRevenueFromProjectStart": 50920,
+          "cqRevenueFromProjectStart": 93480,
+          "daRevenueFromProjectStart": 93480,
+          "overallRevenueFromProjectStart": 144400,
+          "volume": 21000000000
+        }
+
+      ],
+      "spRevenue": 10014,
+      "cqRevenue": 20147,
+      "daRevenue": 20147,
+      "overallRevenue": 50307,
+      "spRevenueFromProjectStart": 41758,
+      "cqRevenueFromProjectStart": 84008,
+      "daRevenueFromProjectStart": 84008,
+      "overallRevenueFromProjectStart": 668239,
+      "volume": 14000000000
+    },
+    {
+      "month": "06-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 6059,
+              "cqRevenue": 12189,
+              "daRevenue": 12189,
+              "overallRevenue": 30436,
+              "spRevenueFromProjectStart": 32446,
+              "cqRevenueFromProjectStart": 65275,
+              "daRevenueFromProjectStart": 65275,
+              "overallRevenueFromProjectStart": 1473461,
+              "volume": 9000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 5007,
+              "cqRevenue": 10074,
+              "daRevenue": 10074,
+              "overallRevenue": 25154,
+              "spRevenueFromProjectStart": 20879,
+              "cqRevenueFromProjectStart": 42005,
+              "daRevenueFromProjectStart": 42005,
+              "overallRevenueFromProjectStart": 334118,
+              "volume": 8000000000
+            }
+          ],
+          "spRevenue": 10720.0,
+          "cqRevenue": 19680.0,
+          "daRevenue": 19680.0,
+          "overallRevenue": 30400.0,
+          "spRevenueFromProjectStart": 61640,
+          "cqRevenueFromProjectStart": 113160,
+          "daRevenueFromProjectStart": 113160,
+          "overallRevenueFromProjectStart": 174800,
+          "volume": 24000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 6059,
+              "cqRevenue": 12189,
+              "daRevenue": 12189,
+              "overallRevenue": 30436,
+              "spRevenueFromProjectStart": 32446,
+              "cqRevenueFromProjectStart": 65275,
+              "daRevenueFromProjectStart": 65275,
+              "overallRevenueFromProjectStart": 1473461,
+              "volume": 9000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 5007,
+              "cqRevenue": 10074,
+              "daRevenue": 10074,
+              "overallRevenue": 25154,
+              "spRevenueFromProjectStart": 20879,
+              "cqRevenueFromProjectStart": 42005,
+              "daRevenueFromProjectStart": 42005,
+              "overallRevenueFromProjectStart": 334118,
+              "volume": 8000000000
+            }
+          ],
+          "spRevenue": 10720.0,
+          "cqRevenue": 19680.0,
+          "daRevenue": 19680.0,
+          "overallRevenue": 30400.0,
+          "spRevenueFromProjectStart": 61640,
+          "cqRevenueFromProjectStart": 113160,
+          "daRevenueFromProjectStart": 113160,
+          "overallRevenueFromProjectStart": 174800,
+          "volume": 24000000000
+        }
+
+      ],
+      "spRevenue": 11015,
+      "cqRevenue": 22162,
+      "daRevenue": 22162,
+      "overallRevenue": 55338,
+      "spRevenueFromProjectStart": 52773,
+      "cqRevenueFromProjectStart": 106170,
+      "daRevenueFromProjectStart": 106170,
+      "overallRevenueFromProjectStart": 1403302,
+      "volume": 14500000000
+    },
+    {
+      "month": "07-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 6665,
+              "cqRevenue": 13408,
+              "daRevenue": 13408,
+              "overallRevenue": 33480,
+              "spRevenueFromProjectStart": 39111,
+              "cqRevenueFromProjectStart": 78683,
+              "daRevenueFromProjectStart": 78683,
+              "overallRevenueFromProjectStart": 3094268,
+              "volume": 9500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 5508,
+              "cqRevenue": 11081,
+              "daRevenue": 11081,
+              "overallRevenue": 27669,
+              "spRevenueFromProjectStart": 26387,
+              "cqRevenueFromProjectStart": 53086,
+              "daRevenueFromProjectStart": 53086,
+              "overallRevenueFromProjectStart": 701648,
+              "volume": 8500000000
+            }
+          ],
+          "spRevenue": 12060.0,
+          "cqRevenue": 22140.0,
+          "daRevenue": 22140.0,
+          "overallRevenue": 34200.0,
+          "spRevenueFromProjectStart": 73700,
+          "cqRevenueFromProjectStart": 135300,
+          "daRevenueFromProjectStart": 135300,
+          "overallRevenueFromProjectStart": 209000,
+          "volume": 27000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 6665,
+              "cqRevenue": 13408,
+              "daRevenue": 13408,
+              "overallRevenue": 33480,
+              "spRevenueFromProjectStart": 39111,
+              "cqRevenueFromProjectStart": 78683,
+              "daRevenueFromProjectStart": 78683,
+              "overallRevenueFromProjectStart": 3094268,
+              "volume": 9500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 5508,
+              "cqRevenue": 11081,
+              "daRevenue": 11081,
+              "overallRevenue": 27669,
+              "spRevenueFromProjectStart": 26387,
+              "cqRevenueFromProjectStart": 53086,
+              "daRevenueFromProjectStart": 53086,
+              "overallRevenueFromProjectStart": 701648,
+              "volume": 8500000000
+            }
+          ],
+          "spRevenue": 12060.0,
+          "cqRevenue": 22140.0,
+          "daRevenue": 22140.0,
+          "overallRevenue": 34200.0,
+          "spRevenueFromProjectStart": 73700,
+          "cqRevenueFromProjectStart": 135300,
+          "daRevenueFromProjectStart": 135300,
+          "overallRevenueFromProjectStart": 209000,
+          "volume": 27000000000
+        }
+
+      ],
+      "spRevenue": 12117,
+      "cqRevenue": 24378,
+      "daRevenue": 24378,
+      "overallRevenue": 60872,
+      "spRevenueFromProjectStart": 64890,
+      "cqRevenueFromProjectStart": 130548,
+      "daRevenueFromProjectStart": 130548,
+      "overallRevenueFromProjectStart": 2946934,
+      "volume": 15000000000
+    },
+    {
+      "month": "08-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 7332,
+              "cqRevenue": 14749,
+              "daRevenue": 14749,
+              "overallRevenue": 36828,
+              "spRevenueFromProjectStart": 46443,
+              "cqRevenueFromProjectStart": 93432,
+              "daRevenueFromProjectStart": 93432,
+              "overallRevenueFromProjectStart": 6497963,
+              "volume": 10000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 6059,
+              "cqRevenue": 12189,
+              "daRevenue": 12189,
+              "overallRevenue": 30436,
+              "spRevenueFromProjectStart": 32446,
+              "cqRevenueFromProjectStart": 65275,
+              "daRevenueFromProjectStart": 65275,
+              "overallRevenueFromProjectStart": 1473461,
+              "volume": 9000000000
+            }
+          ],
+          "spRevenue": 13400.0,
+          "cqRevenue": 24600.0,
+          "daRevenue": 24600.0,
+          "overallRevenue": 38000.0,
+          "spRevenueFromProjectStart": 87100,
+          "cqRevenueFromProjectStart": 159900,
+          "daRevenueFromProjectStart": 159900,
+          "overallRevenueFromProjectStart": 247000,
+          "volume": 30000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 7332,
+              "cqRevenue": 14749,
+              "daRevenue": 14749,
+              "overallRevenue": 36828,
+              "spRevenueFromProjectStart": 46443,
+              "cqRevenueFromProjectStart": 93432,
+              "daRevenueFromProjectStart": 93432,
+              "overallRevenueFromProjectStart": 6497963,
+              "volume": 10000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 6059,
+              "cqRevenue": 12189,
+              "daRevenue": 12189,
+              "overallRevenue": 30436,
+              "spRevenueFromProjectStart": 32446,
+              "cqRevenueFromProjectStart": 65275,
+              "daRevenueFromProjectStart": 65275,
+              "overallRevenueFromProjectStart": 1473461,
+              "volume": 9000000000
+            }
+          ],
+          "spRevenue": 13400.0,
+          "cqRevenue": 24600.0,
+          "daRevenue": 24600.0,
+          "overallRevenue": 38000.0,
+          "spRevenueFromProjectStart": 87100,
+          "cqRevenueFromProjectStart": 159900,
+          "daRevenueFromProjectStart": 159900,
+          "overallRevenueFromProjectStart": 247000,
+          "volume": 30000000000
+        }
+
+      ],
+      "spRevenue": 13329,
+      "cqRevenue": 26816,
+      "daRevenue": 26816,
+      "overallRevenue": 66959,
+      "spRevenueFromProjectStart": 78219,
+      "cqRevenueFromProjectStart": 157364,
+      "daRevenueFromProjectStart": 157364,
+      "overallRevenueFromProjectStart": 6188561,
+      "volume": 15500000000
+    },
+    {
+      "month": "09-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 8065,
+              "cqRevenue": 16224,
+              "daRevenue": 16224,
+              "overallRevenue": 40511,
+              "spRevenueFromProjectStart": 54508,
+              "cqRevenueFromProjectStart": 109656,
+              "daRevenueFromProjectStart": 109656,
+              "overallRevenueFromProjectStart": 13645722,
+              "volume": 10500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 6665,
+              "cqRevenue": 13408,
+              "daRevenue": 13408,
+              "overallRevenue": 33480,
+              "spRevenueFromProjectStart": 39111,
+              "cqRevenueFromProjectStart": 78683,
+              "daRevenueFromProjectStart": 78683,
+              "overallRevenueFromProjectStart": 3094268,
+              "volume": 9500000000
+            }
+          ],
+          "spRevenue": 14740.0,
+          "cqRevenue": 27060.0,
+          "daRevenue": 27060.0,
+          "overallRevenue": 41800.0,
+          "spRevenueFromProjectStart": 101840,
+          "cqRevenueFromProjectStart": 186960,
+          "daRevenueFromProjectStart": 186960,
+          "overallRevenueFromProjectStart": 288800,
+          "volume": 33000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 8065,
+              "cqRevenue": 16224,
+              "daRevenue": 16224,
+              "overallRevenue": 40511,
+              "spRevenueFromProjectStart": 54508,
+              "cqRevenueFromProjectStart": 109656,
+              "daRevenueFromProjectStart": 109656,
+              "overallRevenueFromProjectStart": 13645722,
+              "volume": 10500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 6665,
+              "cqRevenue": 13408,
+              "daRevenue": 13408,
+              "overallRevenue": 33480,
+              "spRevenueFromProjectStart": 39111,
+              "cqRevenueFromProjectStart": 78683,
+              "daRevenueFromProjectStart": 78683,
+              "overallRevenueFromProjectStart": 3094268,
+              "volume": 9500000000
+            }
+          ],
+          "spRevenue": 14740.0,
+          "cqRevenue": 27060.0,
+          "daRevenue": 27060.0,
+          "overallRevenue": 41800.0,
+          "spRevenueFromProjectStart": 101840,
+          "cqRevenueFromProjectStart": 186960,
+          "daRevenueFromProjectStart": 186960,
+          "overallRevenueFromProjectStart": 288800,
+          "volume": 33000000000
+        }
+
+      ],
+      "spRevenue": 14662,
+      "cqRevenue": 29498,
+      "daRevenue": 29498,
+      "overallRevenue": 73655,
+      "spRevenueFromProjectStart": 92881,
+      "cqRevenueFromProjectStart": 186862,
+      "daRevenueFromProjectStart": 186862,
+      "overallRevenueFromProjectStart": 12995978,
+      "volume": 16000000000
+    },
+    {
+      "month": "10-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 8872,
+              "cqRevenue": 17846,
+              "daRevenue": 17846,
+              "overallRevenue": 44562,
+              "spRevenueFromProjectStart": 63380,
+              "cqRevenueFromProjectStart": 127502,
+              "daRevenueFromProjectStart": 127502,
+              "overallRevenueFromProjectStart": 28656016,
+              "volume": 11000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 7332,
+              "cqRevenue": 14749,
+              "daRevenue": 14749,
+              "overallRevenue": 36828,
+              "spRevenueFromProjectStart": 46443,
+              "cqRevenueFromProjectStart": 93432,
+              "daRevenueFromProjectStart": 93432,
+              "overallRevenueFromProjectStart": 6497963,
+              "volume": 10000000000
+            }
+          ],
+          "spRevenue": 16080.0,
+          "cqRevenue": 29520.0,
+          "daRevenue": 29520.0,
+          "overallRevenue": 45600.0,
+          "spRevenueFromProjectStart": 117920,
+          "cqRevenueFromProjectStart": 216480,
+          "daRevenueFromProjectStart": 216480,
+          "overallRevenueFromProjectStart": 334400,
+          "volume": 36000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 8872,
+              "cqRevenue": 17846,
+              "daRevenue": 17846,
+              "overallRevenue": 44562,
+              "spRevenueFromProjectStart": 63380,
+              "cqRevenueFromProjectStart": 127502,
+              "daRevenueFromProjectStart": 127502,
+              "overallRevenueFromProjectStart": 28656016,
+              "volume": 11000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 7332,
+              "cqRevenue": 14749,
+              "daRevenue": 14749,
+              "overallRevenue": 36828,
+              "spRevenueFromProjectStart": 46443,
+              "cqRevenueFromProjectStart": 93432,
+              "daRevenueFromProjectStart": 93432,
+              "overallRevenueFromProjectStart": 6497963,
+              "volume": 10000000000
+            }
+          ],
+          "spRevenue": 16080.0,
+          "cqRevenue": 29520.0,
+          "daRevenue": 29520.0,
+          "overallRevenue": 45600.0,
+          "spRevenueFromProjectStart": 117920,
+          "cqRevenueFromProjectStart": 216480,
+          "daRevenueFromProjectStart": 216480,
+          "overallRevenueFromProjectStart": 334400,
+          "volume": 36000000000
+        }
+
+      ],
+      "spRevenue": 16128,
+      "cqRevenue": 32448,
+      "daRevenue": 32448,
+      "overallRevenue": 81021,
+      "spRevenueFromProjectStart": 109009,
+      "cqRevenueFromProjectStart": 219310,
+      "daRevenueFromProjectStart": 219310,
+      "overallRevenueFromProjectStart": 27291554,
+      "volume": 16500000000
+    },
+    {
+      "month": "11-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 9759,
+              "cqRevenue": 19631,
+              "daRevenue": 19631,
+              "overallRevenue": 49018,
+              "spRevenueFromProjectStart": 73139,
+              "cqRevenueFromProjectStart": 147133,
+              "daRevenueFromProjectStart": 147133,
+              "overallRevenueFromProjectStart": 60177634,
+              "volume": 11500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 8065,
+              "cqRevenue": 16224,
+              "daRevenue": 16224,
+              "overallRevenue": 40511,
+              "spRevenueFromProjectStart": 54508,
+              "cqRevenueFromProjectStart": 109656,
+              "daRevenueFromProjectStart": 109656,
+              "overallRevenueFromProjectStart": 13645722,
+              "volume": 10500000000
+            }
+          ],
+          "spRevenue": 17420.0,
+          "cqRevenue": 31980.0,
+          "daRevenue": 31980.0,
+          "overallRevenue": 49400.0,
+          "spRevenueFromProjectStart": 135340,
+          "cqRevenueFromProjectStart": 248460,
+          "daRevenueFromProjectStart": 248460,
+          "overallRevenueFromProjectStart": 632260,
+          "volume": 39000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 9759,
+              "cqRevenue": 19631,
+              "daRevenue": 19631,
+              "overallRevenue": 49018,
+              "spRevenueFromProjectStart": 73139,
+              "cqRevenueFromProjectStart": 147133,
+              "daRevenueFromProjectStart": 147133,
+              "overallRevenueFromProjectStart": 60177634,
+              "volume": 11500000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 8065,
+              "cqRevenue": 16224,
+              "daRevenue": 16224,
+              "overallRevenue": 40511,
+              "spRevenueFromProjectStart": 54508,
+              "cqRevenueFromProjectStart": 109656,
+              "daRevenueFromProjectStart": 109656,
+              "overallRevenueFromProjectStart": 13645722,
+              "volume": 10500000000
+            }
+          ],
+          "spRevenue": 17420.0,
+          "cqRevenue": 31980.0,
+          "daRevenue": 31980.0,
+          "overallRevenue": 49400.0,
+          "spRevenueFromProjectStart": 135340,
+          "cqRevenueFromProjectStart": 248460,
+          "daRevenueFromProjectStart": 248460,
+          "overallRevenueFromProjectStart": 632260,
+          "volume": 39000000000
+        }
+
+      ],
+      "spRevenue": 17741,
+      "cqRevenue": 35693,
+      "daRevenue": 35693,
+      "overallRevenue": 89123,
+      "spRevenueFromProjectStart": 126750,
+      "cqRevenueFromProjectStart": 255003,
+      "daRevenueFromProjectStart": 255003,
+      "overallRevenueFromProjectStart": 57312263,
+      "volume": 17000000000
+    },
+    {
+      "month": "12-2020",
+      "sps": [
+        {
+          "spName": "british-telecom",
+          "projects": [
+            {
+              "contractId": "project-british-telecom-1",
+              "spRevenue": 10735,
+              "cqRevenue": 21594,
+              "daRevenue": 21594,
+              "overallRevenue": 53920,
+              "spRevenueFromProjectStart": 83874,
+              "cqRevenueFromProjectStart": 168727,
+              "daRevenueFromProjectStart": 168727,
+              "overallRevenueFromProjectStart": 126373031,
+              "volume": 12000000000
+            },
+            {
+              "contractId": "project-british-telecom-2",
+              "spRevenue": 8872,
+              "cqRevenue": 17846,
+              "daRevenue": 17846,
+              "overallRevenue": 44562,
+              "spRevenueFromProjectStart": 63380,
+              "cqRevenueFromProjectStart": 127502,
+              "daRevenueFromProjectStart": 127502,
+              "overallRevenueFromProjectStart": 28656016,
+              "volume": 11000000000
+            }
+          ],
+          "spRevenue": 18760.0,
+          "cqRevenue": 34440.0,
+          "daRevenue": 34440.0,
+          "overallRevenue": 53200.0,
+          "spRevenueFromProjectStart": 154100,
+          "cqRevenueFromProjectStart": 282900,
+          "daRevenueFromProjectStart": 282900,
+          "overallRevenueFromProjectStart": 437000,
+          "volume": 42000000000
+        },
+                {
+          "spName": "tim-brazil",
+          "projects": [
+            {
+              "contractId": "project-tim-brazil-1",
+              "spRevenue": 10735,
+              "cqRevenue": 21594,
+              "daRevenue": 21594,
+              "overallRevenue": 53920,
+              "spRevenueFromProjectStart": 83874,
+              "cqRevenueFromProjectStart": 168727,
+              "daRevenueFromProjectStart": 168727,
+              "overallRevenueFromProjectStart": 126373031,
+              "volume": 12000000000
+            },
+            {
+              "contractId": "project-tim-brazil-2",
+              "spRevenue": 8872,
+              "cqRevenue": 17846,
+              "daRevenue": 17846,
+              "overallRevenue": 44562,
+              "spRevenueFromProjectStart": 63380,
+              "cqRevenueFromProjectStart": 127502,
+              "daRevenueFromProjectStart": 127502,
+              "overallRevenueFromProjectStart": 28656016,
+              "volume": 11000000000
+            }
+          ],
+          "spRevenue": 18760.0,
+          "cqRevenue": 34440.0,
+          "daRevenue": 34440.0,
+          "overallRevenue": 53200.0,
+          "spRevenueFromProjectStart": 154100,
+          "cqRevenueFromProjectStart": 282900,
+          "daRevenueFromProjectStart": 282900,
+          "overallRevenueFromProjectStart": 437000,
+          "volume": 42000000000
+        }
+
+      ],
+      "spRevenue": 19515,
+      "cqRevenue": 39262,
+      "daRevenue": 39262,
+      "overallRevenue": 98035,
+      "spRevenueFromProjectStart": 146265,
+      "cqRevenueFromProjectStart": 294265,
+      "daRevenueFromProjectStart": 294265,
+      "overallRevenueFromProjectStart": 120355752,
+      "volume": 17500000000
+    }
+  ]
+}

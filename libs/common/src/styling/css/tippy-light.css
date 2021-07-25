@@ -1,0 +1,5 @@
+.tippy-tooltip.light-theme, .tippy-tooltip.light-theme[data-animateFill] {
+  background-color: white;
+  padding: 0;
+  box-shadow: 0 4px 10px 1px rgba(0,0,0,0.3);
+}
