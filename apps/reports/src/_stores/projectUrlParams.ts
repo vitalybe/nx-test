@@ -1,4 +1,4 @@
-import { Metadata, Params } from "common/urlParams/reportsUrlParams";
+import { Metadata, Params } from "@qwilt/common/urlParams/reportsUrlParams";
 
 type ProjectUrlParamsType = Params;
 const ProjectUrlParams = Params;
