@@ -76,7 +76,12 @@
           "executor": "@nrwl/web:dev-server",
           "options": {
             "buildTarget": "reports:build",
-            "hmr": true
+            "hmr": true,
+            "host": "dev-localhost.cqloud.com",
+            "port": 8001,
+            "ssl": true,
+            "sslCert": "config/devServer/certificates/dev-localhost.cqloud.com.pem",
+            "sslKey": "config/devServer/certificates/dev-localhost.cqloud.com-key.pem"
           },
           "configurations": {
             "production": {
