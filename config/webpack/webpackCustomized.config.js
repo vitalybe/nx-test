@@ -13,9 +13,6 @@ module.exports = (config, context) => {
   );
   // config.plugins.push(new BundleAnalyzerPlugin());
 
-  console.log("CUSTOMIZING CONFIG");
-  console.log(JSON.stringify(config, null, 2));
-
   return {
     ...config,
     plugins: [...config.plugins],
