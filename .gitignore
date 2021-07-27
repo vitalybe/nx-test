@@ -38,4 +38,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-config/devServer/certificates/*.pem
+**/certificates/*.pem
+.env.local

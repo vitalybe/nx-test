@@ -1,7 +1,7 @@
 module.exports = {
   displayName: "<%= name %>",
   preset: "<%= offsetFromRoot %>jest.preset.js",
-  setupFiles: ["<rootDir><%= offsetFromRoot %>config/jest/setupFile.js"],
+  setupFiles: ["<rootDir><%= offsetFromRoot %>scripts/config/jest/setupFile.js"],
   transform: {
     "^.+\\.[tj]sx?$": "ts-jest",
     "^.+\\.(css|less|svg|png)$": "jest-transform-stub",

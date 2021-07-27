@@ -45,7 +45,7 @@
             "assets": ["apps/reports/src/favicon.ico", "apps/reports/src/assets"],
             "styles": [],
             "scripts": [],
-            "webpackConfig": "config/webpack/webpackCustomized.config.js"
+            "webpackConfig": "tools/config/webpack/webpackCustomized.config.js"
           },
           "configurations": {
             "production": {
@@ -80,15 +80,21 @@
             "host": "dev-localhost.cqloud.com",
             "port": 8001,
             "ssl": true,
-            "sslCert": "config/devServer/certificates/dev-localhost.cqloud.com.pem",
-            "sslKey": "config/devServer/certificates/dev-localhost.cqloud.com-key.pem"
+            "sslCert": "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com.pem",
+            "sslKey": "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com-key.pem"
           },
           "configurations": {
             "production": {
               "buildTarget": "reports:build:production",
               "hmr": false
             }
-          }
+          },
+          "dependsOn": [
+            {
+              "target": "z-internal-validate",
+              "projects": "self"
+            }
+          ]
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
@@ -121,6 +127,16 @@
             "production": {
               "devServerTarget": "reports:serve:production"
             }
+          }
+        },
+        "z-internal-validate": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "tools/scripts/validate/validate.sh"
+              }
+            ]
           }
         }
       }
