@@ -74,7 +74,38 @@ async function generateApp(host: Tree, options: MySchema) {
     host.delete(joinPathFragments(projectConfig.root, "src", "main.tsx"));
 
     // override webpack config
-    projectConfig.targets["build"]["options"]["webpackConfig"] = `config/webpack/webpackCustomized.config.js`;
+    projectConfig.targets["build"]["options"]["webpackConfig"] = `tools/config/webpack/webpackCustomized.config.js`;
+
+    // Add validation target
+    projectConfig.targets["z-internal-validate"] = {
+      executor: "@nrwl/workspace:run-commands",
+      options: {
+        commands: [
+          {
+            command: "tools/scripts/validate/validate.sh",
+          },
+        ],
+      },
+    };
+
+    // Serve target - Support HTTPS
+    const serveTarget = projectConfig.targets["serve"];
+    serveTarget["options"] = {
+      ...serveTarget["options"],
+      host: "dev-localhost.cqloud.com",
+      port: 8001,
+      ssl: true,
+      sslCert: "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com.pem",
+      sslKey: "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com-key.pem",
+    };
+
+    // Serve target - Add validation depedency
+    serveTarget["dependsOn"] = [
+      {
+        target: "z-internal-validate",
+        projects: "self",
+      },
+    ];
   });
 }
 
