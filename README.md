@@ -2,7 +2,8 @@
 
 ## Generation
 
-* New app - `nx workspace-generator app <NAME>`
+* New app - `nx workspace-generator app <NAME> --addE2e=<false|true>`
+  * Add e2e to project without - `nx workspace-generator addE2e --appName=<name>`
 * New lib - `nx workspace-generator lib <NAME>`
 
 ## NX Development

@@ -1,0 +1,12 @@
+{
+  "cli": "nx",
+  "id": "addE2e",
+  "type": "object",
+  "properties": {
+    "appName": {
+      "type": "string",
+      "description": "Add Cypress E2E to this existing app"
+    }
+  },
+  "required": ["appName"]
+}

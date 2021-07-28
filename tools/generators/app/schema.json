@@ -12,6 +12,11 @@
         "$source": "argv",
         "index": 0
       }
+    },
+    "addE2e": {
+      "description": "Should Cypress e2e testing be added",
+      "type": "boolean",
+      "default": true
     }
   },
   "required": ["name"]

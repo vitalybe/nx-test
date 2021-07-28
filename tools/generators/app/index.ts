@@ -7,29 +7,23 @@ import {
   joinPathFragments,
   names,
   normalizePath,
-  offsetFromRoot,
-  ProjectConfiguration,
   Tree,
   updateJson,
-  updateProjectConfiguration,
 } from "@nrwl/devkit";
 import { applicationGenerator } from "@nrwl/react";
 import { Linter } from "@nrwl/linter";
-import { addCypress } from "@nrwl/react/src/generators/application/lib/add-cypress";
-import { Schema } from "@nrwl/react/src/generators/application/schema";
-import { normalizeOptions } from "@nrwl/react/src/generators/application/lib/normalize-options";
-import { cypressProjectGenerator } from "@nrwl/cypress";
+import { Schema as NwAppSchema } from "@nrwl/react/src/generators/application/schema";
 import { GeneratorUtils } from "../_utils/generatorUtils";
-import * as fs from "fs";
-import path = require("path");
+import generateAddE2E from "../addE2e";
 
-interface MySchema {
+interface Schema {
   name: string;
+  addE2e: boolean;
 }
 
-async function generateApp(host: Tree, options: MySchema) {
-  const schema: Schema = {
-    name: options.name,
+async function generateApp(host: Tree, schema: Schema) {
+  const nwAppSchema: NwAppSchema = {
+    name: schema.name,
     style: "styled-components",
     skipFormat: false,
     strict: true,
@@ -39,10 +33,10 @@ async function generateApp(host: Tree, options: MySchema) {
     linter: Linter.EsLint,
     routing: false,
   };
-  await applicationGenerator(host, schema);
+  await applicationGenerator(host, nwAppSchema);
 
   const currentWorkspaceJson = getProjects(host);
-  const projectConfig = currentWorkspaceJson.get(options.name);
+  const projectConfig = currentWorkspaceJson.get(schema.name);
 
   updateJson(host, joinPathFragments(projectConfig.root, "tsconfig.app.json"), (json) => {
     // https://stackoverflow.com/questions/48935663/webpack-property-context-does-not-exist-on-type-noderequire/48935668
@@ -59,7 +53,7 @@ async function generateApp(host: Tree, options: MySchema) {
     return json;
   });
 
-  GeneratorUtils.getAndUpdateProject(options.name, host, (projectConfig) => {
+  GeneratorUtils.getAndUpdateProject(schema.name, host, (projectConfig) => {
     const tsConfigPath = joinPathFragments(projectConfig.root, "tsconfig.app.json");
     // tsc target - check the project via tsc
     projectConfig.targets["tsc"] = {
@@ -109,7 +103,7 @@ async function generateApp(host: Tree, options: MySchema) {
   });
 }
 
-function addSrcTemplateFiles(host: Tree, options: MySchema, appProjectRoot: string) {
+function addSrcTemplateFiles(host: Tree, options: Schema, appProjectRoot: string) {
   host.delete(joinPathFragments(appProjectRoot, "src", "app"));
 
   generateFiles(host, joinPathFragments(__dirname, "./files/src"), joinPathFragments(appProjectRoot, "src"), {
@@ -119,56 +113,19 @@ function addSrcTemplateFiles(host: Tree, options: MySchema, appProjectRoot: stri
   return appProjectRoot;
 }
 
-function addE2e(host: Tree, options: MySchema, appProjectRoot: string) {
-  const e2eProjectRoot = joinPathFragments(appProjectRoot, "e2e");
-  generateFiles(host, joinPathFragments(__dirname, "./files/e2e"), e2eProjectRoot, {
-    ...options,
-    tmpl: "",
-    linter: "eslint",
-    project: options.name,
-    projectRoot: e2eProjectRoot,
-    offsetFromRoot: offsetFromRoot(e2eProjectRoot),
-  });
-
-  // app tsconfig shouldn't compile cypress folders
-  updateJson(host, joinPathFragments(appProjectRoot, "tsconfig.app.json"), (json) => {
-    json["exclude"].push("e2e/**/*");
-    return json;
-  });
-
-  let jestConfigPath = joinPathFragments(appProjectRoot, "jest.config.js");
-  const contents = host.read(jestConfigPath).toString("utf8");
-  host.write(jestConfigPath, contents.replace(/(displayName.+$)/gm, `$1\n  roots: ["src"],`));
-
-  // Add e2e executor
-  GeneratorUtils.getAndUpdateProject(options.name, host, (projectConfig) => {
-    projectConfig.targets["e2e"] = {
-      executor: "@nrwl/cypress:cypress",
-      options: {
-        cypressConfig: joinPathFragments(e2eProjectRoot, "cypress.json"),
-        tsConfig: joinPathFragments(e2eProjectRoot, "tsconfig.e2e.json"),
-        devServerTarget: `${options.name}:serve`,
-      },
-      configurations: {
-        production: {
-          devServerTarget: `${options.name}:serve:production`,
-        },
-      },
-    };
-  });
-}
-
-export default async function (host: Tree, options: MySchema) {
-  const appDirectory = names(options.name).fileName;
+export default async function (host: Tree, schema: Schema) {
+  const appDirectory = names(schema.name).fileName;
   const { appsDir } = getWorkspaceLayout(host);
   const appProjectRoot = normalizePath(`${appsDir}/${appDirectory}`);
 
   // Nx app generator (without cypress)
-  await generateApp(host, options);
+  await generateApp(host, schema);
 
   // Add src files
-  addSrcTemplateFiles(host, options, appProjectRoot);
-  addE2e(host, options, appProjectRoot);
+  addSrcTemplateFiles(host, schema, appProjectRoot);
+  if (schema.addE2e) {
+    await generateAddE2E(host, { appName: schema.name });
+  }
 
   await formatFiles(host);
   return () => {
