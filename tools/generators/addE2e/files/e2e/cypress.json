@@ -5,8 +5,9 @@
   "modifyObstructiveCode": false,
   "pluginsFile": "./plugins/index",
   "supportFile": "./support/index.ts",
-  "video": true,
   "videosFolder": "<%= offsetFromRoot %>dist/cypress/<%= projectRoot %>/videos",
   "screenshotsFolder": "<%= offsetFromRoot %>dist/cypress/<%= projectRoot %>/screenshots",
-  "chromeWebSecurity": false
+  "chromeWebSecurity": false,
+  "video": false,
+  "screenshotOnRunFailure": false
 }

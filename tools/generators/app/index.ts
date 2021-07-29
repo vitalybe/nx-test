@@ -93,6 +93,12 @@ async function generateApp(host: Tree, schema: Schema) {
       sslKey: "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com-key.pem",
     };
 
+    // Serve target - E2E mode
+    serveTarget["configurations"]["e2e"] = {
+      port: 8005,
+      ssl: false,
+    };
+
     // Serve target - Add validation depedency
     serveTarget["dependsOn"] = [
       {

@@ -40,7 +40,7 @@ export async function generateAddE2E(host: Tree, schema: { appName: string }) {
       options: {
         cypressConfig: joinPathFragments(e2eProjectRoot, "cypress.json"),
         tsConfig: joinPathFragments(e2eProjectRoot, "tsconfig.e2e.json"),
-        devServerTarget: `${schema.appName}:serve`,
+        devServerTarget: `${schema.appName}:serve:e2e`,
       },
       configurations: {
         production: {
