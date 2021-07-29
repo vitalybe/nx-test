@@ -1,22 +1,22 @@
 import * as React from "react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DeliveryAgreementsProvider } from "src/_providers/deliveryAgreementsProvider";
-import { ProviderMetadata, useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import { TabContainer } from "common/components/tabContainer/TabContainer";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { getEditAction, GridValueRenderer, QwiltGrid, QwiltGridColumnDef } from "common/components/qwiltGrid/QwiltGrid";
-import { DeliveryAgreementsGroupEntity } from "src/_domain/deliveryAgreementsGroupEntity";
-import { openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { EditorDeliveryAgreement } from "src/editorDeliveryAgreement/EditorDeliveryAgreement";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { useUrlState } from "common/utils/hooks/useUrlState";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { Notifier } from "common/utils/notifications/notifier";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DeliveryAgreementsProvider } from "./_providers/deliveryAgreementsProvider";
+import { ProviderMetadata, useProvider } from "@qwilt/common/components/providerDataContainer/_providers/useProvider";
+import { ProviderDataContainer } from "@qwilt/common/components/providerDataContainer/ProviderDataContainer";
+import { TabContainer } from "@qwilt/common/components/tabContainer/TabContainer";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { getEditAction, GridValueRenderer, QwiltGrid, QwiltGridColumnDef } from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { DeliveryAgreementsGroupEntity } from "./_domain/deliveryAgreementsGroupEntity";
+import { openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { EditorDeliveryAgreement } from "./editorDeliveryAgreement/EditorDeliveryAgreement";
+import { useEventCallback } from "@qwilt/common/utils/hooks/useEventCallback";
+import { useUrlState } from "@qwilt/common/utils/hooks/useUrlState";
+import { ProjectUrlParams } from "./_stores/projectUrlParams";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

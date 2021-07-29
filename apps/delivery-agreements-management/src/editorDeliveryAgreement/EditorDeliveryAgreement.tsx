@@ -2,20 +2,20 @@ import _ from "lodash";
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DeliveryAgreementsGroupEntity } from "src/_domain/deliveryAgreementsGroupEntity";
-import { FormikContainer } from "common/components/configuration/formik/formikContainer/FormikContainer";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DeliveryAgreementsGroupEntity } from "../_domain/deliveryAgreementsGroupEntity";
+import { FormikContainer } from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
 import { Field, FieldProps } from "formik";
-import { useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import { EditorDropdownProvider } from "src/editorDeliveryAgreement/_providers/editorDropdownProvider";
-import { DeliveryAgreementsProvider } from "src/_providers/deliveryAgreementsProvider";
-import { QwiltMultiSelect } from "common/components/configuration/qwiltForm/qwiltMultiSelect/QwiltMultiSelect";
-import { QwiltFormGroup } from "common/components/configuration/qwiltForm/qwiltFormGroup/QwiltFormGroup";
-import { DaNetworkConnectionEntity } from "src/_domain/daNetworkConnectionEntity";
-import { Notifier } from "common/utils/notifications/notifier";
+import { useProvider } from "@qwilt/common/components/providerDataContainer/_providers/useProvider";
+import { ProviderDataContainer } from "@qwilt/common/components/providerDataContainer/ProviderDataContainer";
+import { EditorDropdownProvider } from "./_providers/editorDropdownProvider";
+import { DeliveryAgreementsProvider } from "../_providers/deliveryAgreementsProvider";
+import { QwiltMultiSelect } from "@qwilt/common/components/configuration/qwiltForm/qwiltMultiSelect/QwiltMultiSelect";
+import { QwiltFormGroup } from "@qwilt/common/components/configuration/qwiltForm/qwiltFormGroup/QwiltFormGroup";
+import { DaNetworkConnectionEntity } from "../_domain/daNetworkConnectionEntity";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

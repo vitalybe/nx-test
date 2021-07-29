@@ -1,9 +1,9 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { DeploymentEntitiesProvider } from "@qwilt/common/providers/deploymentEntitiesProvider";
+import { DeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/deploymentEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class EditorDropdownProvider {
   private constructor() {}

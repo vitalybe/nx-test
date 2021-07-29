@@ -1,8 +1,8 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
-import { DaNetworkConnectionEntity } from "src/_domain/daNetworkConnectionEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { DaNetworkConnectionEntity } from "./daNetworkConnectionEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DeliveryAgreementsGroupEntity {
   dsMetadataId!: string;

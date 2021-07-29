@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { ProjectFrame } from "common/components/projectFrame/ProjectFrame";
-import { DeliveryAgreements } from "src/DeliveryAgreements";
+import { ProjectFrame } from "@qwilt/common/components/projectFrame/ProjectFrame";
+import { DeliveryAgreements } from "./DeliveryAgreements";
 import { ProjectUrlParamsMetadata } from "./_stores/projectUrlParams";
 
 ReactDOM.render(

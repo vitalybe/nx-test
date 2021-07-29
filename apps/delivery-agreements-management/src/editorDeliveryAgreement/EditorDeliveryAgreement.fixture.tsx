@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { EditorDeliveryAgreement, Props } from "src/editorDeliveryAgreement/EditorDeliveryAgreement";
-import { DeliveryAgreementsGroupEntity } from "src/_domain/deliveryAgreementsGroupEntity";
+import { EditorDeliveryAgreement, Props } from "./EditorDeliveryAgreement";
+import { DeliveryAgreementsGroupEntity } from "../_domain/deliveryAgreementsGroupEntity";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

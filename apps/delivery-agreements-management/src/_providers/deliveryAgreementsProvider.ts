@@ -1,16 +1,16 @@
 import * as _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { DeliveryAgreementsGroupEntity } from "src/_domain/deliveryAgreementsGroupEntity";
-import { DeliveryAgreementsApi } from "common/backend/deliveryAgreements";
-import { DaNetworkConnectionEntity } from "src/_domain/daNetworkConnectionEntity";
-import { DeliveryAgreementUpdateApiEntity } from "common/backend/deliveryAgreements/_types/deliveryAgreementsTypes";
-import { Utils } from "common/utils/utils";
-import { Notifier } from "common/utils/notifications/notifier";
-import { OrganizationsProvider } from "common/providers/organizationsProvider";
-import { DeliveryServicesApi } from "common/backend/deliveryServices";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { DeliveryAgreementsGroupEntity } from "../_domain/deliveryAgreementsGroupEntity";
+import { DeliveryAgreementsApi } from "@qwilt/common/backend/deliveryAgreements";
+import { DaNetworkConnectionEntity } from "../_domain/daNetworkConnectionEntity";
+import { DeliveryAgreementUpdateApiEntity } from "@qwilt/common/backend/deliveryAgreements/_types/deliveryAgreementsTypes";
+import { Utils } from "@qwilt/common/utils/utils";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { OrganizationsProvider } from "@qwilt/common/providers/organizationsProvider";
+import { DeliveryServicesApi } from "@qwilt/common/backend/deliveryServices";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DeliveryAgreementsProvider {
   private constructor() {}
