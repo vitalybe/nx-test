@@ -1,10 +1,12 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { StrictMode } from "react";
+import { ProjectFrame } from "common/components/projectFrame/ProjectFrame";
+import { DeliveryAgreements } from "src/DeliveryAgreements";
+import { ProjectUrlParamsMetadata } from "./_stores/projectUrlParams";
 
 ReactDOM.render(
-  <StrictMode>
-    <div>Hello</div>
-  </StrictMode>,
-  document.getElementById("root")
+  <ProjectFrame title={"Delivery Agreements"} projectParamsMetadata={ProjectUrlParamsMetadata}>
+    <DeliveryAgreements />
+  </ProjectFrame>,
+  document.getElementById("root") as HTMLElement
 );
