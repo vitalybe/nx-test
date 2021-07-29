@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const IgnoreNotFoundExportPlugin = require("ignore-not-found-export-webpack-plugin");
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = (config, context) => {
@@ -11,6 +12,7 @@ module.exports = (config, context) => {
       process: "process/browser",
     })
   );
+  config.plugins.push(new IgnoreNotFoundExportPlugin({ include: [/userStore\.ts$/] }));
   // config.plugins.push(new BundleAnalyzerPlugin());
 
   return {
