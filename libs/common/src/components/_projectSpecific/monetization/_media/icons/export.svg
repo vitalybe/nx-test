@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>71AB53AC-AC0F-4937-BE55-3E7C35875239</title>
+    <g id="2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.01-billing-report----all-publishers---all-projects---revenue-phase" transform="translate(-1303.000000, -36.000000)" fill="#07394C">
+            <g id="Group-2" transform="translate(64.000000, 0.000000)">
+                <g id="ui/buttons/white/regular" transform="translate(1231.000000, 28.000000)">
+                    <g id="icons/table/export_16px_reg" transform="translate(8.000000, 8.000000)">
+                        <path d="M3.5,9.5 L3.5,13.5 L12.5,13.5 L12.5,9.5 L3.5,9.5 Z M5,9.5 L10.9631297,9.5 L10.9631297,7 L12.3333333,7 C13.8060927,7 15,8.23121694 15,9.75 L15,13.25 C15,14.7687831 13.8060927,16 12.3333333,16 L3.66666667,16 C2.19390733,16 1,14.7687831 1,13.25 L1,9.75 C1,8.23121694 2.19390733,7 3.66666667,7 L5,7 L5,9.5 Z" id="Shape"></path>
+                        <polygon id="Path" points="4 4 8 0 12 4 9 4 9 11 7 11 7 4"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

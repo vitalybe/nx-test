@@ -1,0 +1,324 @@
+{
+  "organizations": [
+    {
+      "id": "charter-uber",
+      "name": "Charter Uber",
+      "type": "SP"
+    },
+    {
+      "id": "qwilt-admin",
+      "name": "Qwilt Admin",
+      "type": "SP"
+    },
+    {
+      "id": "jazz",
+      "name": "Jazz",
+      "type": "SP"
+    },
+    {
+      "id": "cignal-tv",
+      "name": "Cignal TV",
+      "type": "CP"
+    },
+    {
+      "id": "hall-ag",
+      "name": "Hall AG",
+      "type": "SP"
+    },
+    {
+      "id": "cox",
+      "name": "Cox",
+      "type": "SP"
+    },
+    {
+      "id": "airtel",
+      "name": "Airtel",
+      "type": "SP"
+    },
+    {
+      "id": "ctc",
+      "name": "CTC",
+      "type": "SP"
+    },
+    {
+      "id": "lake-forest-college",
+      "name": "Lake Forest College",
+      "type": "SP"
+    },
+    {
+      "id": "british-telecom",
+      "name": "British Telecom",
+      "type": "SP"
+    },
+    {
+      "id": "hotstar",
+      "name": "Hotstar",
+      "type": "CP"
+    },
+    {
+      "id": "wind3",
+      "name": "Wind3",
+      "type": "SP"
+    },
+    {
+      "id": "ntt-west",
+      "name": "NTT West",
+      "type": "SP"
+    },
+    {
+      "id": "telefonica-peru",
+      "name": "Telefonica Peru",
+      "type": "SP"
+    },
+    {
+      "id": "claro-brazil",
+      "name": "Claro Brazil",
+      "type": "SP"
+    },
+    {
+      "id": "tim-brazil",
+      "name": "TIM Brazil",
+      "type": "SP"
+    },
+    {
+      "id": "telecom-italia",
+      "name": "Telecom Italia",
+      "type": "SP"
+    },
+    {
+      "id": "system-test-deployment",
+      "name": null,
+      "type": "NONE"
+    },
+    {
+      "id": "verizon-wireless",
+      "name": "Verizon Wireless",
+      "type": "SP"
+    },
+    {
+      "id": "health-api",
+      "name": null,
+      "type": "NONE"
+    },
+    {
+      "id": "wynk",
+      "name": "Wynk",
+      "type": "CP"
+    },
+    {
+      "id": "globo",
+      "name": "Globo",
+      "type": "CP"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "type": "CP"
+    },
+    {
+      "id": "tcsj",
+      "name": "TCSJ",
+      "type": "SP"
+    },
+    {
+      "id": "zain",
+      "name": "Zain",
+      "type": "SP"
+    },
+    {
+      "id": "pldt",
+      "name": "PLDT",
+      "type": "SP"
+    },
+    {
+      "id": "idt",
+      "name": "IDT",
+      "type": "SP"
+    },
+    {
+      "id": "blutv",
+      "name": "BluTV",
+      "type": "CP"
+    },
+    {
+      "id": "qwilt",
+      "name": "Qwilt",
+      "type": "SP"
+    },
+    {
+      "id": "digicel",
+      "name": "Digicel",
+      "type": "SP"
+    },
+    {
+      "id": "valve",
+      "name": "Valve",
+      "type": "CP"
+    },
+    {
+      "id": "telecom-italia-cdn-poc",
+      "name": "Telecom Italia CDN POC",
+      "type": "SP"
+    },
+    {
+      "id": "system-events",
+      "name": null,
+      "type": "NONE"
+    },
+    {
+      "id": "devorg",
+      "name": null,
+      "type": "NONE"
+    },
+    {
+      "id": "tune-pk",
+      "name": "TunePK",
+      "type": "CP"
+    },
+    {
+      "id": "peer5",
+      "name": "Peer5",
+      "type": "CP"
+    },
+    {
+      "id": "demo",
+      "name": "Demo",
+      "type": "SP"
+    },
+    {
+      "id": "saint-louis-university",
+      "name": "St Louis University",
+      "type": "SP"
+    },
+    {
+      "id": "wind3-steam",
+      "name": null,
+      "type": "NONE"
+    },
+    {
+      "id": "dailymotion",
+      "name": "Dailymotion",
+      "type": "CP"
+    },
+    {
+      "id": "mediacom",
+      "name": "Mediacom",
+      "type": "SP"
+    },
+    {
+      "id": "ntt-east",
+      "name": "NTT East",
+      "type": "SP"
+    },
+    {
+      "id": "grand-canyon-university",
+      "name": "Grand Canyon University",
+      "type": "SP"
+    },
+    {
+      "id": "cat",
+      "name": "CAT",
+      "type": "SP"
+    },
+    {
+      "id": "charter-hawaii",
+      "name": "Charter Hawaii",
+      "type": "SP"
+    },
+    {
+      "id": "brio",
+      "name": "Brio",
+      "type": "CP"
+    },
+    {
+      "id": "ptcl",
+      "name": "PTCL",
+      "type": "SP"
+    },
+    {
+      "id": "tennessee-university",
+      "name": "Tennessee University",
+      "type": "SP"
+    },
+    {
+      "id": "clear-gate-pen-test",
+      "name": "Clear Gate Pen Test",
+      "type": "CP"
+    },
+    {
+      "id": "dazn",
+      "name": "Dazn",
+      "type": "CP"
+    },
+    {
+      "id": "warner-media",
+      "name": "Warner Media",
+      "type": "CP"
+    },
+    {
+      "id": "verizon-fios",
+      "name": "Verizon FiOS and Wireless",
+      "type": "SP"
+    },
+    {
+      "id": "verizon-wireless-staging",
+      "name": "Verizon Wireless Staging",
+      "type": "SP"
+    },
+    {
+      "id": "kbro",
+      "name": "KBRO",
+      "type": "SP"
+    },
+    {
+      "id": "cable-america",
+      "name": "Cable America",
+      "type": "SP"
+    },
+    {
+      "id": "kt",
+      "name": "KT",
+      "type": "CP"
+    },
+    {
+      "id": "inara",
+      "name": "Inara",
+      "type": "SP"
+    },
+    {
+      "id": "tv5",
+      "name": "Tv5",
+      "type": "CP"
+    },
+    {
+      "id": "cbs",
+      "name": "CNS",
+      "type": "CP"
+    },
+    {
+      "id": "ti",
+      "name": null,
+      "type": "NONE"
+    },
+    {
+      "id": "disney",
+      "name": "Disney",
+      "type": "CP"
+    },
+    {
+      "id": "zeetv",
+      "name": "ZeeTV",
+      "type": "CP"
+    },
+    {
+      "id": "llnw",
+      "name": "LLNW",
+      "type": "CP"
+    },
+    {
+      "id": "vodafone",
+      "name": "Vodafone",
+      "type": "SP"
+    }
+  ]
+}

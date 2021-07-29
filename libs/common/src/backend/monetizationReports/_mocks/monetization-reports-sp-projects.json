@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "reportId": "bt-12-2020",
+      "currentPhase": "financing",
+      "currency": "USD",
+      "capacity": 50000,
+      "markers": {
+        "projectStartDate": "12-01-2019",
+        "projectStartDateEpoch": 1575151200,
+        "projectEndDate": "12-01-2024",
+        "projectEndDateEpoch": 1733004000,
+        "revenueThreshold": 1200000,
+        "expectedFinancingCompletionDate": "01-01-2021",
+        "expectedFinancingCompletionDateEpoch": 1609452000,
+        "actualFinancingCompletionDate": "02-01-2021",
+        "actualFinancingCompletionDateEpoch": 1612130400
+      },
+      "cps": [
+        "disney",
+        "hotstar",
+        "dazn",
+        "valve",
+        "globo"
+      ]
+    }
+  ]
+}
