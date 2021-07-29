@@ -61,6 +61,7 @@
     "animejs": "^2.2.0",
     "antd": "^4.9.1",
     "await-semaphore": "0.1.3",
+    "babel-plugin-transform-require-context": "0.1.1",
     "core-js": "^3.6.5",
     "document-register-element": "1.13.1",
     "downshift": "^3.3.5",
