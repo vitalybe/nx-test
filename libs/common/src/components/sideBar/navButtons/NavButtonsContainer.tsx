@@ -1,12 +1,12 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { RouteMetadata } from "common/stores/_models/routeMetadata";
-import { CommonColors } from "common/styling/commonColors";
-import { NavButton } from "common/components/sideBar/navButtons/NavButton";
+import { loggerCreator } from "../../../utils/logger";
+import { RouteMetadata } from "../../../stores/_models/routeMetadata";
+import { CommonColors } from "../../../styling/commonColors";
+import { NavButton } from "./NavButton";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

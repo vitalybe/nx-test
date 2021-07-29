@@ -5,8 +5,8 @@ import styled from "styled-components";
 import {
   MonetizationPanelHeader,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/monetizationPanelHeader/MonetizationPanelHeader";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./MonetizationPanelHeader";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 import { MonetizationChartLegend } from "../monetizationChartLegend/MonetizationChartLegend";
 import { DateTime } from "luxon";
 

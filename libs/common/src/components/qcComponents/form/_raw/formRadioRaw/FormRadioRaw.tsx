@@ -1,10 +1,10 @@
 import * as React from "react";
 import { ReactNode, ReactText, useEffect } from "react";
-import { FormInputContainer } from "common/components/qcComponents/form/_parts/formInputContainer/FormInputContainer";
+import { FormInputContainer } from "../../_parts/formInputContainer/FormInputContainer";
 import styled from "styled-components";
 import { Radio } from "antd";
 import { CheckboxOptionType } from "antd/es/checkbox";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../../styling/commonColors";
 
 //region [[ Styles ]]
 const RadioGroup = styled(Radio.Group)`

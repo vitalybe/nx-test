@@ -1,24 +1,24 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { DeliveryAgreementsApi, ValidatedDeliveryAgreement } from "common/backend/deliveryAgreements";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { DeliveryAgreementsApi, ValidatedDeliveryAgreement } from "../../deliveryAgreements";
 import {
   DeliveryAgreementApiEntity,
   DeliveryAgreementUpdateApiEntity,
-} from "common/backend/deliveryAgreements/_types/deliveryAgreementsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
+} from "../_types/deliveryAgreementsTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
 import {
   DeliveryAgreementsObfuscation,
   validateDeliveryAgreements,
-} from "common/backend/deliveryAgreements/deliveryAgreementsUtils";
+} from "../deliveryAgreementsUtils";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
-const mock = require("common/backend/deliveryAgreements/_mocks/daMock.json");
+const mock = require("../_mocks/daMock.json");
 
 export class DeliveryAgreementsApiMock implements DeliveryAgreementsApi {
   async listValidated(): Promise<ValidatedDeliveryAgreement[]> {

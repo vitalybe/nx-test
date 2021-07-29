@@ -5,15 +5,15 @@ import styled from "styled-components";
 import {
   MonetizationMonthlyChart,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/monetizationMonthlyChart/MonetizationMonthlyChart";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { HistogramPoint } from "common/utils/histograms/domain/histogramPoint";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
+} from "./MonetizationMonthlyChart";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
+import { ChartSeriesData } from "../../../../qwiltChart/_domain/chartSeriesData";
+import { HistogramPoint } from "../../../../../utils/histograms/domain/histogramPoint";
+import { HistogramSeries } from "../../../../../utils/histograms/domain/histogramSeries";
 import { darken } from "polished";
 import { ColumnChartSeriesOptions } from "highcharts";
-import { MonetizationColors } from "common/components/_projectSpecific/monetization/_utils/monetizationColors";
-import { createYearOfMonthlyMockPoints } from "common/components/_projectSpecific/monetization/_utils/monetizationMockUtils";
+import { MonetizationColors } from "../../_utils/monetizationColors";
+import { createYearOfMonthlyMockPoints } from "../../_utils/monetizationMockUtils";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

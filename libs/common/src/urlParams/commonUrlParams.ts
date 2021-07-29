@@ -1,4 +1,4 @@
-import { ParamsMetadataType } from "common/components/applicationParameters/_types/paramsMetadataTypes";
+import { ParamsMetadataType } from "../components/applicationParameters/_types/paramsMetadataTypes";
 
 export const API_OVERRIDE_PREFIX = "api_override_";
 

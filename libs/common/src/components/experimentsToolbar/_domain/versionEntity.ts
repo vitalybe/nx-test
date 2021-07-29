@@ -1,7 +1,7 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
+import { loggerCreator } from "../../../utils/logger";
+import { mockUtils } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class VersionEntity {
   versionQnNames!: string[];

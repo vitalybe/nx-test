@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CurrencyUnitEnum, CurrencyUtils } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
-import { ColoredDiv } from "common/components/styled/ColoredDiv";
-import { LiveLegendState } from "common/components/_projectSpecific/monetization/_hooks/useLiveValuesLegend";
-import { CommonColors } from "common/styling/commonColors";
+import { loggerCreator } from "../../../../../utils/logger";
+import { CurrencyUnitEnum, CurrencyUtils } from "../../_utils/currencyUtils";
+import { ColoredDiv } from "../../../../styled/ColoredDiv";
+import { LiveLegendState } from "../../_hooks/useLiveValuesLegend";
+import { CommonColors } from "../../../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const LegendItemView = styled.div`

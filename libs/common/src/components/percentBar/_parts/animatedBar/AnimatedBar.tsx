@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { ColoredDiv } from "common/components/styled/ColoredDiv";
-import { CssAnimations } from "common/styling/animations/cssAnimations";
+import { CommonColors as Colors } from "../../../../styling/commonColors";
+import { ColoredDiv } from "../../../styled/ColoredDiv";
+import { CssAnimations } from "../../../../styling/animations/cssAnimations";
 
 //region [[ Styles ]]
 

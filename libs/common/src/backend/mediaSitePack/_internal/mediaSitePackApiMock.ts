@@ -1,10 +1,10 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { MediaSitePackApi } from "common/backend/mediaSitePack";
-import { MediaSitePackAllSitesData } from "common/backend/mediaSitePack/_types/mediaSitePackTypes";
-import mockData from "common/backend/_utils/mockData";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { MediaSitePackApi } from "../../mediaSitePack";
+import { MediaSitePackAllSitesData } from "../_types/mediaSitePackTypes";
+import mockData from "../../_utils/mockData";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
 export class MediaSitePackApiMock extends MediaSitePackApi {
   async getAllSitesData(metadata: AjaxMetadata): Promise<MediaSitePackAllSitesData> {

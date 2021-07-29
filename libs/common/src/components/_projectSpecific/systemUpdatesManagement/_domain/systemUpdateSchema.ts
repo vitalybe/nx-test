@@ -1,5 +1,5 @@
-import { ComponentTypeEnum } from "common/backend/systemEvents/_types/systemEventsTypes";
-import { enumValues } from "common/utils/typescriptUtils";
+import { ComponentTypeEnum } from "../../../../backend/systemEvents/_types/systemEventsTypes";
+import { enumValues } from "../../../../utils/typescriptUtils";
 import { DateTime } from "luxon";
 import * as yup from "yup";
 

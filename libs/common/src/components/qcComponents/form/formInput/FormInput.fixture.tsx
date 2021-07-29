@@ -3,8 +3,8 @@
 import * as React from "react";
 import { PropsWithChildren, ReactNode } from "react";
 import styled from "styled-components";
-import { FormInput, Props } from "common/components/qcComponents/form/formInput/FormInput";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { FormInput, Props } from "./FormInput";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 import { FormProvider, useForm, UseFormMethods } from "react-hook-form";
 
 const View = styled(FixtureDecorator)`

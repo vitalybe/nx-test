@@ -1,13 +1,13 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ImageWithFallback } from "common/components/imageWithFallback/ImageWithFallback";
-import { HierarchyUtils } from "common/utils/hierarchyUtils";
-import { ComponentTheme, useEntitiesDropdownContext } from "common/components/entitiesDropdown/EntitiesDropdown";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
+import { loggerCreator } from "../../../../utils/logger";
+import { ImageWithFallback } from "../../../imageWithFallback/ImageWithFallback";
+import { HierarchyUtils } from "../../../../utils/hierarchyUtils";
+import { ComponentTheme, useEntitiesDropdownContext } from "../../EntitiesDropdown";
+import { DropdownEntity } from "../../_domain/dropdownEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

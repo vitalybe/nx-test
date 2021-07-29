@@ -1,4 +1,4 @@
-import { BrowserHrefReal } from "common/stores/urlStore/browserUrl/browserHrefReal";
+import { BrowserHrefReal } from "./browserHrefReal";
 
 export class BrowserHrefMock implements BrowserHrefReal {
   href = "http://qc-services-mock.cqloud.com/";

@@ -5,10 +5,10 @@ import styled from "styled-components";
 import {
   AffectedEntitiesDropdown,
   Props,
-} from "common/components/_projectSpecific/systemUpdatesManagement/systemUpdatesForm/affectedEntitiesDropdown/AffectedEntitiesDropdown";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { EntityTypeEnum } from "common/backend/qnDeployment/_types/entitiesApiType";
-import { DeploymentEntityWithChildren } from "common/domain/qwiltDeployment/deploymentEntityWithChildren";
+} from "./AffectedEntitiesDropdown";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
+import { EntityTypeEnum } from "../../../../../backend/qnDeployment/_types/entitiesApiType";
+import { DeploymentEntityWithChildren } from "../../../../../domain/qwiltDeployment/deploymentEntityWithChildren";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

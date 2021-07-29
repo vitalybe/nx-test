@@ -1,4 +1,4 @@
-import { ParamValue } from "common/backend/_utils/urlParams";
+import { ParamValue } from "../_utils/urlParams";
 
 export type ApiReportType =
   | ApiHistogramType

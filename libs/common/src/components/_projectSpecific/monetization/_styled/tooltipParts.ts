@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Fonts } from "common/styling/fonts";
+import { Fonts } from "../../../../styling/fonts";
 
 export const TooltipContentView = styled.div`
   display: flex;

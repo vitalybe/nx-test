@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { darken, transparentize } from "polished";
 import { Tooltip, useTooltip } from "../../Tooltip";
 import { Placement } from "tippy.js";
-import { loggerCreator } from "common/utils/logger";
-import { CommonColors } from "common/styling/commonColors";
+import { loggerCreator } from "../../../utils/logger";
+import { CommonColors } from "../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const OptionItem = styled.div`

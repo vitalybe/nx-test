@@ -1,6 +1,6 @@
 import * as _ from "lodash";
 import { DateTime, Duration, Interval } from "luxon";
-import { ApiMinimumBinIntervals } from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
+import { ApiMinimumBinIntervals } from "./mediaAnalyticsTypes";
 
 export enum SeriesGroupEnum {
   BASIC,

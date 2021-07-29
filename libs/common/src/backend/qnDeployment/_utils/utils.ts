@@ -6,7 +6,7 @@ import {
   ParentEntityApiModel,
   ContainsByTypeEntity,
   ChildEntityApiModel,
-} from "common/backend/qnDeployment/_types/entitiesApiType";
+} from "../_types/entitiesApiType";
 
 export class QnDeploymentUtils {
   static lastId = 0;

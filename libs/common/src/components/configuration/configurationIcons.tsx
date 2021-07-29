@@ -1,5 +1,5 @@
 import React from "react";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../styling/commonColors";
 import styled from "styled-components";
 
 export interface IconProps {

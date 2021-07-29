@@ -5,10 +5,10 @@ import styled from "styled-components";
 import {
   Props,
   ServiceTypeIconRenderer,
-} from "common/components/svg/serviceTypes/serviceTypeIconRenderer/ServiceTypeIconRenderer";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { ServiceTypesEnum } from "common/providers/mediaSitePackProvider";
-import { CommonColors } from "common/styling/commonColors";
+} from "./ServiceTypeIconRenderer";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { ServiceTypesEnum } from "../../../../providers/mediaSitePackProvider";
+import { CommonColors } from "../../../../styling/commonColors";
 
 const ServiceTypeIconRendererStyled = styled(ServiceTypeIconRenderer)`
   width: 3rem;

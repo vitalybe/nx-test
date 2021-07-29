@@ -1,16 +1,16 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components";
-import { CommonColors, CommonColors as Colors } from "common/styling/commonColors";
+import { CommonColors, CommonColors as Colors } from "../../../../styling/commonColors";
 
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { SearchInput } from "common/components/searchInput/SearchInput";
+import { DropdownEntity } from "../../_domain/dropdownEntity";
+import { SearchInput } from "../../../searchInput/SearchInput";
 import { transparentize } from "polished";
-import { DropdownListItem } from "common/components/entitiesDropdown/_parts/entitiesSelectionMenu/_parts/dropdownListItem/DropdownListItem";
-import { useSelectedItems } from "common/components/entitiesDropdown/_parts/entitiesSelectionMenu/_hooks/useSelectedItems";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { Notifier } from "common/utils/notifications/notifier";
-import { DynamicVirtualizedList } from "common/components/virtualizedList/DynamicVirtualizedList";
-import { HierarchyUtils, SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { DropdownListItem } from "./_parts/dropdownListItem/DropdownListItem";
+import { useSelectedItems } from "./_hooks/useSelectedItems";
+import { Clickable } from "../../../configuration/clickable/Clickable";
+import { Notifier } from "../../../../utils/notifications/notifier";
+import { DynamicVirtualizedList } from "../../../virtualizedList/DynamicVirtualizedList";
+import { HierarchyUtils, SelectionModeEnum } from "../../../../utils/hierarchyUtils";
 
 //region [[ Styles ]]
 

@@ -1,6 +1,6 @@
 import { ElementObject } from "highcharts";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { ChartSeriesArray } from "../../_domain/chartSeriesArray";
 import { CSSProperties } from "react";
 
 export class LabeledSeriesBehavior implements ChartBehavior {

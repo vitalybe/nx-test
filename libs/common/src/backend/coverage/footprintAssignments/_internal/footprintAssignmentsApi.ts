@@ -1,13 +1,13 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { FootprintAssignmentsApiMock } from "common/backend/coverage/footprintAssignments/index";
-import { FootprintAssignmentsApiResult } from "common/backend/coverage/footprintAssignments/_types/footprintAssignmentsTypes";
+import { loggerCreator } from "../../../../utils/logger";
+import { getOriginForApi } from "../../../backendOrigin";
+import { combineUrl } from "../../../../utils/combineUrl";
+import { UrlParams } from "../../../_utils/urlParams";
+import { Ajax } from "../../../../utils/ajax";
+import { devToolsStore } from "../../../../components/devTools/_stores/devToolsStore";
+import { FootprintAssignmentsApiMock } from "../index";
+import { FootprintAssignmentsApiResult } from "../_types/footprintAssignmentsTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("coverage"), "/api/1.0.0/coverage/config/");
 
 export class FootprintAssignmentsApi {

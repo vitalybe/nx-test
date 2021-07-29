@@ -1,12 +1,12 @@
 import * as React from "react";
 import { useCallback } from "react";
 import styled from "styled-components";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { TruncatedSpn } from "common/components/styled/TruncatedSpn";
-import { DynamicVirtualizedList } from "common/components/virtualizedList/DynamicVirtualizedList";
+import { UnitKindEnum, unitsFormatter } from "../../../utils/unitsFormatter";
+import { TruncatedSpn } from "../../styled/TruncatedSpn";
+import { DynamicVirtualizedList } from "../../virtualizedList/DynamicVirtualizedList";
 import { transparentize } from "polished";
-import { CommonColors } from "common/styling/commonColors";
-import { CurrencyUnitEnum, CurrencyUtils } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
+import { CommonColors } from "../../../styling/commonColors";
+import { CurrencyUnitEnum, CurrencyUtils } from "../../_projectSpecific/monetization/_utils/currencyUtils";
 import _ from "lodash";
 
 const NO_DATA_CHILD_TEXT = "NO DATA";

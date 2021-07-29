@@ -1,42 +1,42 @@
 import * as React from "react";
 //endregion [[ Props ]]
 import { useMemo } from "react";
-import { loggerCreator } from "common/utils/logger";
-import { QwiltChart } from "common/components/qwiltChart/QwiltChart";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { AddSeriesBehavior } from "common/components/qwiltChart/_behaviors/addSeriesBehavior/addSeriesBehavior";
-import { YAxisBehavior } from "common/components/qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
-import { GlobalFontStore } from "common/components/GlobalFontProvider";
+import { loggerCreator } from "../../../../../../utils/logger";
+import { QwiltChart } from "../../../../../qwiltChart/QwiltChart";
+import { ChartSeriesData } from "../../../../../qwiltChart/_domain/chartSeriesData";
+import { AddSeriesBehavior } from "../../../../../qwiltChart/_behaviors/addSeriesBehavior/addSeriesBehavior";
+import { YAxisBehavior } from "../../../../../qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
+import { GlobalFontStore } from "../../../../../GlobalFontProvider";
 import { DateTime } from "luxon";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { Utils } from "common/utils/utils";
+import { UnitKindEnum, unitsFormatter } from "../../../../../../utils/unitsFormatter";
+import { Utils } from "../../../../../../utils/utils";
 import {
   MiniChartPanelHeader,
   MiniChartView,
-} from "common/components/_projectSpecific/monetization/_styled/miniChartPanelHeader";
+} from "../../../_styled/miniChartPanelHeader";
 import {
   TooltipContentView,
   TooltipSubValue,
   TooltipTitle,
   TooltipValue,
-} from "common/components/_projectSpecific/monetization/_styled/tooltipParts";
-import { XAxisBehavior } from "common/components/qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
+} from "../../../_styled/tooltipParts";
+import { XAxisBehavior } from "../../../../../qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
 import { SeriesObject } from "highcharts";
-import { ColumnSeriesBehavior } from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/columnSeriesBehavior";
+import { ColumnSeriesBehavior } from "../../_chartBehaviors/columnSeriesBehavior";
 import {
   commonDataLabelsOption,
   commonXAxisOptions,
   getCommonYAxisOptions,
-} from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/_constants";
+} from "../../_chartBehaviors/_constants";
 
 import {
   BasicChartsTooltipBehavior,
   ThisTooltipShared,
-} from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/basicChartsTooltipBehavior";
+} from "../../_chartBehaviors/basicChartsTooltipBehavior";
 
-import { NoXAxisBehavior } from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/noXAxisBehavior";
+import { NoXAxisBehavior } from "../../_chartBehaviors/noXAxisBehavior";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export const CAPACITY_UTIL_REST_SERIES_ID = "capacity-utilization-rest";
 export const CAPACITY_UTIL_PEAK_SERIES_ID = "capacity-utilization-peak";

@@ -1,18 +1,18 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
+import { UnitKindEnum } from "../../utils/unitsFormatter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListAlt } from "@fortawesome/free-regular-svg-icons";
-import { Tooltip } from "common/components/Tooltip";
-import { CommonColors } from "common/styling/commonColors";
+import { Tooltip } from "../Tooltip";
+import { CommonColors } from "../../styling/commonColors";
 import {
   ListItem as VirtualizedListItem,
   Row as OthersListRow,
   VirtualizedListPopup,
-} from "common/components/virtualizedListButton/_parts/VirtualizedListPopup";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { CurrencyUnitEnum } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
+} from "./_parts/VirtualizedListPopup";
+import { useEventCallback } from "../../utils/hooks/useEventCallback";
+import { CurrencyUnitEnum } from "../_projectSpecific/monetization/_utils/currencyUtils";
 
 // region [[ Styles ]]
 const VirtualizedListPopupStyled = styled(VirtualizedListPopup)`

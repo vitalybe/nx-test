@@ -1,16 +1,16 @@
 import * as React from "react";
-import { CommonDsEntity } from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { CommonDsEntity } from "../../_domain/commonDsEntity";
+import { TextTooltip } from "../../../../textTooltip/TextTooltip";
 import _ from "lodash";
 import styled from "styled-components";
-import { Cell } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_styles/cell";
-import { GridReactRenderer } from "common/components/qwiltGrid/QwiltGrid";
-import { MetadataServiceTypeEnum } from "common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
+import { Cell } from "../_styles/cell";
+import { GridReactRenderer } from "../../../../qwiltGrid/QwiltGrid";
+import { MetadataServiceTypeEnum } from "../../../../../backend/deliveryServices/_types/deliveryServiceMetadataTypes";
 
-const dsTypeVod = require("common/images/dsDashboardImages/serviceTypes/dsTypeVod.svg");
-const dsTypeLive = require("common/images/dsDashboardImages/serviceTypes/dsTypeLive.svg");
-const dsTypeMusic = require("common/images/dsDashboardImages/serviceTypes/dsTypeMusic.svg");
-const dsTypeDownload = require("common/images/dsDashboardImages/serviceTypes/dsTypeDownload.svg");
+const dsTypeVod = require("../../../../../images/dsDashboardImages/serviceTypes/dsTypeVod.svg");
+const dsTypeLive = require("../../../../../images/dsDashboardImages/serviceTypes/dsTypeLive.svg");
+const dsTypeMusic = require("../../../../../images/dsDashboardImages/serviceTypes/dsTypeMusic.svg");
+const dsTypeDownload = require("../../../../../images/dsDashboardImages/serviceTypes/dsTypeDownload.svg");
 
 const ServiceTypeIconImg = styled.img`
   margin-right: 4px;

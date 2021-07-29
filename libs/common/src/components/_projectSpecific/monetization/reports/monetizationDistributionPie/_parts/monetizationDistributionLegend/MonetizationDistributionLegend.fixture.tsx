@@ -5,8 +5,8 @@ import styled from "styled-components";
 import {
   MonetizationDistributionLegend,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/monetizationDistributionPie/_parts/monetizationDistributionLegend/MonetizationDistributionLegend";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./MonetizationDistributionLegend";
+import FixtureDecorator from "../../../../../../../utils/cosmos/FixtureDecorator";
 import { MonetizationColors } from "../../../../_utils/monetizationColors";
 
 const View = styled(FixtureDecorator)`

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { MouseEvent } from "react";
 import styled from "styled-components";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../styling/commonColors";
 import { darken } from "polished";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";

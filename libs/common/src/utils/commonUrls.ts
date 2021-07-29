@@ -1,5 +1,5 @@
-import { combineUrl } from "common/utils/combineUrl";
-import { API_OVERRIDE_PREFIX, CommonUrlParams } from "common/urlParams/commonUrlParams";
+import { combineUrl } from "./combineUrl";
+import { API_OVERRIDE_PREFIX, CommonUrlParams } from "../urlParams/commonUrlParams";
 
 export class CommonUrls {
   private static QC_SERVICES_DEV = "https://qc-services-dev.cqloud.com";

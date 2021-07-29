@@ -1,16 +1,16 @@
 import * as React from "react";
 import { PropsWithChildren, ReactNode } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Props as ControlButtonProps, QcButton } from "common/components/qcComponents/_styled/qcButton/QcButton";
-import { useProgressPercent } from "common/utils/hooks/useProgressPercent";
+import { loggerCreator } from "../../../utils/logger";
+import { Props as ControlButtonProps, QcButton } from "../_styled/qcButton/QcButton";
+import { useProgressPercent } from "../../../utils/hooks/useProgressPercent";
 import { Duration } from "luxon";
 import { darken } from "polished";
-import { Tooltip } from "common/components/Tooltip";
-import { CommonColors } from "common/styling/commonColors";
-import { QcButtonThemes } from "common/components/qcComponents/_styled/qcButton/_themes";
+import { Tooltip } from "../../Tooltip";
+import { CommonColors } from "../../../styling/commonColors";
+import { QcButtonThemes } from "../_styled/qcButton/_themes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

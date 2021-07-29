@@ -9,7 +9,7 @@ import {
   FieldValuesFromControl,
   UnpackNestedValue,
 } from "@hookform/strictly-typed/dist/types";
-import { Checkbox } from "common/components/checkbox/Checkbox";
+import { Checkbox } from "../../../checkbox/Checkbox";
 
 //region [[ Styles ]]
 const FormCheckboxView = styled.div<{ colSpan?: string }>`

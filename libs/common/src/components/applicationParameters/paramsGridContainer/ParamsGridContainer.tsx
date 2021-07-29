@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { ParamsMetadata, ParamsMetadataType } from "../_types/paramsMetadataTypes";
 import { ParamsGrid, ParamsGridItem } from "./paramsGrid/ParamsGrid";
-import { API_OVERRIDE_PREFIX, CommonUrlParams, commonUrlParamsMetadata } from "common/urlParams/commonUrlParams";
+import { API_OVERRIDE_PREFIX, CommonUrlParams, commonUrlParamsMetadata } from "../../../urlParams/commonUrlParams";
 import _ from "lodash";
 import { useMemo } from "react";
-import { UrlStore } from "common/stores/urlStore/urlStore";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

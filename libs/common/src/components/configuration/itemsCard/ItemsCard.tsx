@@ -1,16 +1,16 @@
 import * as React from "react";
 import { ReactNode, useCallback, useState } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { SmallTitle } from "common/components/configuration/_styles/configurationCommon";
-import { Icons } from "common/styling/icons";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { loggerCreator } from "../../../utils/logger";
+import { SmallTitle } from "../_styles/configurationCommon";
+import { Icons } from "../../../styling/icons";
+import { ConfigurationStyles } from "../_styles/configurationStyles";
+import { Clickable } from "../clickable/Clickable";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { QwiltInput } from "common/components/configuration/qwiltForm/qwiltInput/QwiltInput";
+import { QwiltInput } from "../qwiltForm/qwiltInput/QwiltInput";
 import _ from "lodash";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,27 +1,27 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { DelegationsApiMock } from "common/backend/coverage/delegations";
-import { DltApiEditType, DltsApiResult } from "common/backend/coverage/delegations/_types/dltTypes";
+import { loggerCreator } from "../../../../utils/logger";
+import { getOriginForApi } from "../../../backendOrigin";
+import { combineUrl } from "../../../../utils/combineUrl";
+import { UrlParams } from "../../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../../utils/ajax";
+import { devToolsStore } from "../../../../components/devTools/_stores/devToolsStore";
+import { DelegationsApiMock } from "../../delegations";
+import { DltApiEditType, DltsApiResult } from "../_types/dltTypes";
 import {
   RouterSelectionRuleApiEditType,
   RouterSelectionRulesApiResult,
-} from "common/backend/coverage/delegations/_types/routerSelectionRulesTypes";
+} from "../_types/routerSelectionRulesTypes";
 import {
   DelegationApiEditType,
   DelegationApiType,
   DelegationsApiResult,
-} from "common/backend/coverage/delegations/_types/delegationTypes";
+} from "../_types/delegationTypes";
 import {
   DelegationSelectionApiEditType,
   DelegationSelectionApiType,
   DelegationSelectionsApiResult,
-} from "common/backend/coverage/delegations/_types/delegationSelectionTypes";
+} from "../_types/delegationSelectionTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("coverage"), "/api/1.0.0/delegation");
 
 export class DelegationsApi {

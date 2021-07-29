@@ -4,8 +4,8 @@ import * as React from "react";
 import { PropsWithChildren } from "react";
 import styled from "styled-components";
 import { FormEntitiesDropdown, Props } from "./FormEntitiesDropdown";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { DropdownEntity } from "../../../entitiesDropdown/_domain/dropdownEntity";
 import { FormProvider, useForm, UseFormMethods } from "react-hook-form";
 
 const View = styled(FixtureDecorator)`

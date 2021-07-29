@@ -1,15 +1,15 @@
-import { sleep } from "common/utils/sleep";
-import { FootprintElementsApi } from "common/backend/coverage/footprintElements/index";
+import { sleep } from "../../../../utils/sleep";
+import { FootprintElementsApi } from "../index";
 import {
   FootprintApiType,
   FootprintElementsApiResult,
   FootprintElementsApiType,
-} from "common/backend/coverage/footprintElements/_types/footprintElementsTypes";
-import { loggerCreator } from "common/utils/logger";
-import mockData from "common/backend/_utils/mockData";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/footprintElementsTypes";
+import { loggerCreator } from "../../../../utils/logger";
+import mockData from "../../../_utils/mockData";
+import { mockNetworkSleep } from "../../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class FootprintElementsApiMock extends FootprintElementsApi {
   async list(): Promise<FootprintElementsApiResult> {

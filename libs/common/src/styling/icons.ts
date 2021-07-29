@@ -43,34 +43,25 @@ import {
   faTrashAlt,
   faWifi,
 } from "@fortawesome/free-solid-svg-icons";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { EntityTypeEnum } from "common/backend/qnDeployment/_types/entitiesApiType";
-import { loggerCreator } from "common/utils/logger";
-import { QnDeploymentEntity } from "common/domain/qwiltDeployment/qnDeploymentEntity";
+import { DeploymentEntity } from "../domain/qwiltDeployment/deploymentEntity";
+import { EntityTypeEnum } from "../backend/qnDeployment/_types/entitiesApiType";
+import { loggerCreator } from "../utils/logger";
+import { QnDeploymentEntity } from "../domain/qwiltDeployment/qnDeploymentEntity";
 
 interface DeploymentIconOptions {
   isBold?: boolean;
   hideIspIcon?: boolean;
 }
 
-// NX-TRANSITION-REMOVE-START
-// NOTE: Helper to ignore "require.context" in Jest
-// @ts-ignore
-if (typeof require.context === "undefined") {
-  // @ts-ignore
-  require.context = () => {
-    return () => {};
-  };
-}
-// NX-TRANSITION-REMOVE-END
+
 
 // @ts-ignore
-const entitiesIconsCtx = require.context("common/images/deploymentEntities");
+const entitiesIconsCtx = require.context("../images/deploymentEntities");
 
 // @ts-ignore
-const ispIconsCtx = require.context("common/images/isps/icons");
+const ispIconsCtx = require.context("../images/isps/icons");
 
-const ispIcon = require("common/images/no-isp.svg");
+const ispIcon = require("../images/no-isp.svg");
 const qnIcon = entitiesIconsCtx("./node-regular.svg");
 const qnIconBold = entitiesIconsCtx("./node-selected.svg");
 const marketIconBold = entitiesIconsCtx("./market-selected.svg");
@@ -78,7 +69,7 @@ const marketIcon = entitiesIconsCtx("./market-regular.svg");
 const siteIconBold = entitiesIconsCtx("./site-selected.svg");
 const siteIcon = entitiesIconsCtx("./site-regular.svg");
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class Icons {
   // Actions
@@ -132,7 +123,7 @@ export class Icons {
   public static readonly DNS_ROUTER = faNetworkWired;
   public static readonly HTTP_ROUTER = faWifi;
   public static readonly HEALTH_COLLECTOR = faPlus;
-  public static readonly HTTP_ROUTER_GROUP = require("common/images/wifi-group.svg");
+  public static readonly HTTP_ROUTER_GROUP = require("../images/wifi-group.svg");
   public static readonly ISP_PLACEHOLDER = ispIcon;
   public static readonly CP_PLACEHOLDER = ispIcon;
 

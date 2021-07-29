@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as _ from "lodash";
 import styled from "styled-components";
-import { Props, ReactHighchartWrapper } from "common/components/qwiltChart/reactHighchartWrapper/ReactHighchartWrapper";
+import { Props, ReactHighchartWrapper } from "./ReactHighchartWrapper";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 let lastData: number[] | undefined;
 let lastProps: Props | undefined;

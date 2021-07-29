@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { DateTime, Duration, Zone } from "luxon";
-import { Utils } from "common/utils/utils";
+import { Utils } from "../../../utils/utils";
 import * as _ from "lodash";
-import { Notifier } from "common/utils/notifications/notifier";
+import { Notifier } from "../../../utils/notifications/notifier";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export interface ZoneMetadata {
   offsetNameShort: string;

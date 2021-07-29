@@ -1,8 +1,8 @@
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
+import { DeploymentEntity } from "./deploymentEntity";
+import { loggerCreator } from "../../utils/logger";
+import { mockUtils } from "../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class QnDeploymentEntity {
   id!: number;

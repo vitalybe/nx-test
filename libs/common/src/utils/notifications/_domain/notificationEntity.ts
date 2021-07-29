@@ -1,6 +1,6 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export enum NotificationLevel {
   INFO,

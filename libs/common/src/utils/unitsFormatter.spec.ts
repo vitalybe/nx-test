@@ -1,4 +1,4 @@
-import { UnitKindEnum, UnitNameEnum, unitsFormatter } from "common/utils/unitsFormatter";
+import { UnitKindEnum, UnitNameEnum, unitsFormatter } from "./unitsFormatter";
 
 describe("unitsFormatter", function() {
   describe("format", function() {

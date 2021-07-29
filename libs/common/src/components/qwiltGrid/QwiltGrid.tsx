@@ -4,7 +4,7 @@ import { MutableRefObject, ReactChild, ReactElement, ReactNode, useMemo, useRef,
 import styled from "styled-components";
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/dist/styles/ag-grid.css";
-import "common/components/qwiltGrid/_styles/ag-theme-qwilt-configuration/ag-theme-qwilt-configuration.scss";
+import "./_styles/ag-theme-qwilt-configuration/ag-theme-qwilt-configuration.scss";
 import {
   ColDef as ColDefOriginal,
   ColGroupDef,
@@ -16,19 +16,19 @@ import {
   ValueGetterParams,
 } from "ag-grid-community";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { Icons } from "common/styling/icons";
+import { Clickable } from "../configuration/clickable/Clickable";
+import { Icons } from "../../styling/icons";
 import { LicenseManager } from "ag-grid-enterprise";
 import "ag-grid-enterprise";
 import ReactDOMServer from "react-dom/server";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { UnitNameEnum } from "common/utils/unitsFormatter";
-import { GenericMemoHOC } from "common/utils/typescriptUtils";
-import { ReactCellContainer } from "common/components/qwiltGrid/reactCellContainer/ReactCellContainer";
-import { ReactCellWrapper } from "common/components/qwiltGrid/reactCellWrapper/ReactCellWrapper";
-import { ImageWithFallback } from "common/components/imageWithFallback/ImageWithFallback";
+import { TextTooltip } from "../textTooltip/TextTooltip";
+import { UnitNameEnum } from "../../utils/unitsFormatter";
+import { GenericMemoHOC } from "../../utils/typescriptUtils";
+import { ReactCellContainer } from "./reactCellContainer/ReactCellContainer";
+import { ReactCellWrapper } from "./reactCellWrapper/ReactCellWrapper";
+import { ImageWithFallback } from "../imageWithFallback/ImageWithFallback";
 
 export interface ColDef extends ColDefOriginal {
   userData?: unknown;

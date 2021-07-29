@@ -1,17 +1,17 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { ContentPublishersApi } from "common/backend/contentPublishers";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { ContentPublishersApi } from "../../contentPublishers";
 import {
   ContentPublisherApiType,
   ContentPublisherUpdateApiType,
-} from "common/backend/contentPublishers/_types/contentPublishersTypes";
-import mockData from "common/backend/_utils/mockData";
+} from "../_types/contentPublishersTypes";
+import mockData from "../../_utils/mockData";
 
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ContentPublishersApiMock extends ContentPublishersApi {
   async contentPublishersList(metadata: AjaxMetadata): Promise<ContentPublisherApiType[]> {

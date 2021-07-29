@@ -1,5 +1,5 @@
 import { action, computed, observable } from "mobx";
-import { mockUtils } from "common/utils/mockUtils";
+import { mockUtils } from "../../utils/mockUtils";
 
 export class StoreStatus {
   @observable

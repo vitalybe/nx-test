@@ -1,5 +1,5 @@
 import { MetadataServiceTypeEnum } from "../../../../backend/deliveryServices/_types/deliveryServiceMetadataTypes";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../styling/commonColors";
 
 export class MonetizationColors {
   static readonly CQDA_COLOR = "#3d77f3";

@@ -1,15 +1,15 @@
 import * as React from "react";
 import { ReactElement } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { MonetizationPanelHeader } from "common/components/_projectSpecific/monetization/reports/monetizationPanelHeader/MonetizationPanelHeader";
-import { QwiltPieChartOptions, QwiltPieChartPart } from "common/components/qwiltPieChart/_types";
-import { CommonColors } from "common/styling/commonColors";
-import { QwiltPieChart } from "common/components/qwiltPieChart/QwiltPieChart";
-import { MonetizationDistributionLegend } from "common/components/_projectSpecific/monetization/reports/monetizationDistributionPie/_parts/monetizationDistributionLegend/MonetizationDistributionLegend";
+import { loggerCreator } from "../../../../../utils/logger";
+import { MonetizationPanelHeader } from "../monetizationPanelHeader/MonetizationPanelHeader";
+import { QwiltPieChartOptions, QwiltPieChartPart } from "../../../../qwiltPieChart/_types";
+import { CommonColors } from "../../../../../styling/commonColors";
+import { QwiltPieChart } from "../../../../qwiltPieChart/QwiltPieChart";
+import { MonetizationDistributionLegend } from "./_parts/monetizationDistributionLegend/MonetizationDistributionLegend";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

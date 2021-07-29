@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   PeakBandwidthChart,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/monetizationMiniCharts/peakBandwidthChart/PeakBandwidthChart";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { createPeakBandwidthSeriesData } from "common/components/_projectSpecific/monetization/_utils/monetizationMockUtils";
+} from "./PeakBandwidthChart";
+import FixtureDecorator from "../../../../../../utils/cosmos/FixtureDecorator";
+import { createPeakBandwidthSeriesData } from "../../../_utils/monetizationMockUtils";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

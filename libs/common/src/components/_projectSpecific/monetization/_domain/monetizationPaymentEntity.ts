@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
+import { loggerCreator } from "../../../../utils/logger";
+import { mockUtils } from "../../../../utils/mockUtils";
 import { DateTime } from "luxon";
 import { CurrencyUnitEnum } from "../_utils/currencyUtils";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface MonetizationPaymentEntityParams {
   paymentId: string;

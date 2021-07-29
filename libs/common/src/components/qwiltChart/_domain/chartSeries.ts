@@ -1,9 +1,9 @@
-import { HistogramPoint } from "common/utils/histograms/domain/histogramPoint";
+import { HistogramPoint } from "../../../utils/histograms/domain/histogramPoint";
 import { ChartObject, PlotPoint, PointObject, SeriesObject } from "highcharts";
-import { HistogramPointType, HistogramPointsSeries } from "common/utils/histograms/utils/histogramUtils";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { ChartPoint } from "common/components/qwiltChart/_domain/chartPoint";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
+import { HistogramPointType, HistogramPointsSeries } from "../../../utils/histograms/utils/histogramUtils";
+import { ChartSeriesData } from "./chartSeriesData";
+import { ChartPoint } from "./chartPoint";
+import { HistogramSeries } from "../../../utils/histograms/domain/histogramSeries";
 
 interface ChartSeriesObject extends SeriesObject {
   // this is missing from highcharts types so added manually

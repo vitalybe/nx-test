@@ -1,5 +1,5 @@
-import { VersionsProvider } from "common/components/experimentsToolbar/_providers/versionsProvider";
-import { AjaxMetadata } from "common/utils/ajax";
+import { VersionsProvider } from "../_providers/versionsProvider";
+import { AjaxMetadata } from "../../../utils/ajax";
 import _ from "lodash";
 
 export class VersionsUtils {

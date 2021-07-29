@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { TransactionsIcon } from "common/components/metrics/icons/transactionsIcon/TransactionsIcon";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { TransactionsIcon } from "./TransactionsIcon";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,9 +1,9 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { ConfigWorkflowApi } from "common/backend/configWorkflow";
-import { ConfigWorkflowStatusApiResult } from "common/backend/configWorkflow/_types/configWorkflowTypes";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { ConfigWorkflowApi } from "../../configWorkflow";
+import { ConfigWorkflowStatusApiResult } from "../_types/configWorkflowTypes";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
 export class ConfigWorkflowApiMock extends ConfigWorkflowApi {
   // SAMPLE

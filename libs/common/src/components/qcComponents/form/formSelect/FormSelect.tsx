@@ -1,10 +1,10 @@
 import * as React from "react";
 import { ReactNode, ReactText } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { Control, FieldError, FieldName, useFormContext } from "react-hook-form";
 import { useTypedController } from "@hookform/strictly-typed";
-import { FormSelectRaw, SelectOption } from "common/components/qcComponents/form/_raw/formSelectRaw/FormSelectRaw";
+import { FormSelectRaw, SelectOption } from "../_raw/formSelectRaw/FormSelectRaw";
 import {
   DeepPath,
   DeepPathValue,
@@ -12,7 +12,7 @@ import {
   UnpackNestedValue,
 } from "@hookform/strictly-typed/dist/types";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const FormSelectView = styled.div<{ colSpan?: string }>`
