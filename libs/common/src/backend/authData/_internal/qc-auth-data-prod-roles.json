@@ -1,0 +1,1039 @@
+{
+  "groups": {
+    "role-qc-service-content-publishers-owner": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": ["role-frontend-content-publishers-management", "role-backend-content-publishers-modify"]
+    },
+    "role-backend-keys-manager-modify": {
+      "identifiers": {},
+      "permissions": { "keys": { "create": true, "read": true }, "secrets": { "create": true, "read": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-ds-dashboard-ds-viewer": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-ds-dashboard-for-sp",
+        "role-backend-media-analytics-read",
+        "role-backend-qn-deployment-read"
+      ]
+    },
+    "role-coverage-upload-read": {
+      "identifiers": {},
+      "permissions": {
+        "coverage-upload.client-locations": { "read": true },
+        "coverage-upload.physical-locations": { "read": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-frontend-snowball": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "snowball": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-snowball-owner": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-snowball",
+        "role-backend-qn-deployment-modify",
+        "role-backend-qn-config-modify",
+        "role-backend-qid-repository-modify"
+      ]
+    },
+    "role-cp-dashboard-view": {
+      "identifiers": {},
+      "permissions": {
+        "contentPublishers": { "read": true },
+        "mediaAnalytics": { "reportView": true, "mspView": true, "cpDashboard": true, "geoReportView": true },
+        "qnDeployment": { "entityView": true },
+        "geoDeployment": { "entityView": true, "ispView": true, "systemView": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": {
+        "permissions": { "qcServices": { "contentPublishers": true, "dsDashboardCp": true } },
+        "dataAccessControl": {}
+      },
+      "groups": []
+    },
+    "role-backend-media-analytics-events-modify": {
+      "identifiers": {},
+      "permissions": { "nmaEvents": { "eventView": true, "eventUpdate": true, "eventDelete": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-snowball-edit": {
+      "identifiers": {},
+      "permissions": {
+        "qnDeployment": {
+          "entityView": true,
+          "entityUpdate": true,
+          "entityPatch": true,
+          "entityAccessRestrictedFields": true,
+          "historyView": true
+        },
+        "qn-config": { "manage": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "snowball": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-client-mapping": {
+      "identifiers": {},
+      "permissions": { "clientMapping": { "ip2dug": true, "routingDecision": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-keys-manager-read": {
+      "identifiers": {},
+      "permissions": { "keys": { "read": true }, "secrets": { "read": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-cert-manager-read": {
+      "identifiers": {},
+      "permissions": { "certManager": { "certView": true, "certList": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-delivery-services-cdn-admin": {
+      "identifiers": {},
+      "permissions": { "delivery-services.cdn.ds": { "create": true, "read": true, "delete": true, "update": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-frontend-content-publishers-management": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "contentPublishersManagement": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-marketplace-view": {
+      "identifiers": {},
+      "permissions": {
+        "geoDeployment": { "entityView": true, "ispView": true, "systemView": true },
+        "mediaAnalytics": { "geoReportView": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "marketplace": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-qn-deployment-read": {
+      "identifiers": {},
+      "permissions": { "qnDeployment": { "entityView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-marketplace-debug": {
+      "identifiers": {},
+      "permissions": {
+        "geoDeployment": { "entityView": true, "ispView": true, "systemView": true, "debug": true },
+        "mediaAnalytics": { "geoReportView": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "marketplace": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-infrastructure-owner": {
+      "identifiers": {},
+      "permissions": {
+        "infrastructure.native.cache-assignment": { "create": true, "read": true, "delete": true, "write": true },
+        "qid-repository.native.qid": { "read": true, "write": true, "delete": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-dns-statistics-read": {
+      "identifiers": {},
+      "permissions": { "dnsStatisticsSystems": { "viewLogs": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-nma-owner": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-reports",
+        "role-backend-media-analytics-read",
+        "role-backend-media-analytics-events-modify",
+        "role-backend-qn-deployment-read"
+      ]
+    },
+    "role-frontend-footprint": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "footprint": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-media-analytics-read": {
+      "identifiers": {},
+      "permissions": {
+        "mediaAnalytics": { "reportView": true, "mspView": true, "clientApplication": true, "clientApplications": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-infrastructure-modify": {
+      "identifiers": {},
+      "permissions": {
+        "infrastructure.native.cache-assignment": { "create": true, "read": true, "delete": true, "write": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-content-publishers-read": {
+      "identifiers": {},
+      "permissions": { "contentPublishers": { "read": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-frontend-cdn-management": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "cdnManagement": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-user-management-view": {
+      "identifiers": {},
+      "permissions": { "auth-data.groups": { "read": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-cdp": {
+      "identifiers": {},
+      "permissions": { "footprint": { "QNsFootprint": true }, "reporting": { "mdlList": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-tc-topology-viewer": {
+      "identifiers": {},
+      "permissions": { "tc": { "topologyView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-geo-deployment-read": {
+      "identifiers": {},
+      "permissions": { "geoDeployment": { "entityView": true, "ispView": true, "systemView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-content-publishers-write": {
+      "identifiers": {},
+      "permissions": { "contentPublishers": { "write": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "contentPublishersManagement": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-content-publishers-read": {
+      "identifiers": {},
+      "permissions": { "contentPublishers": { "read": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-frontend-ds-dashboard-for-cp": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "dsDashboardCp": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-nma-view": {
+      "identifiers": {},
+      "permissions": {
+        "mediaAnalytics": {
+          "reportView": true,
+          "mspView": true,
+          "clientApplication": true,
+          "clientApplications": true
+        },
+        "qnDeployment": { "entityView": true },
+        "nmaEvents": { "eventView": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "reports": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-cdn-owner": {
+      "identifiers": {},
+      "permissions": {
+        "certManager": {
+          "certUpdate": true,
+          "certView": true,
+          "certList": true,
+          "certDelete": true,
+          "debug": true,
+          "readAll": true
+        },
+        "keys": { "create": true, "read": true, "delete": true, "readAll": true },
+        "secrets": { "create": true, "read": true, "delete": true },
+        "ds-assignments.native.rule": { "create": true, "read": true, "delete": true, "update": true },
+        "cdns.native": { "tempFullControl": true },
+        "cdns.infra": { "tempFullControl": true },
+        "infrastructure.cdn-owner.cache": { "read": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "cdnManagement": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-qn-config-modify": {
+      "identifiers": {},
+      "permissions": { "qn-config": { "manage": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-client-mapping-read": {
+      "identifiers": {},
+      "permissions": { "clientMapping": { "ip2dug": true, "routingDecision": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-devenv-function-cdn-operator": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-qc-service-snowball-owner",
+        "role-qc-service-cdn-owner",
+        "role-qc-service-content-management-owner"
+      ]
+    },
+    "role-frontend-content-management": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "contentManagement": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-auth-data-read": {
+      "identifiers": {},
+      "permissions": { "auth-data.groups": { "read": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-system-events-infra-owner": {
+      "identifiers": {},
+      "permissions": { "system-updates.infra-owner": { "read": true }, "qnDeployment": { "entityView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-cdn-owner": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-cdn-management",
+        "role-backend-infrastructure-modify",
+        "role-backend-qid-repository-modify",
+        "role-backend-cert-manager-admin",
+        "role-backend-keys-manager-admin",
+        "role-backend-cdn-admin"
+      ]
+    },
+    "role-backend-qid-repository-read": {
+      "identifiers": {},
+      "permissions": { "qid-repository.native.qid": { "read": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-external-footprint-read": {
+      "identifiers": {},
+      "permissions": { "footprint": { "footprintView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-content-owner": {
+      "identifiers": {},
+      "permissions": {
+        "delivery-services.native.ds": { "create": true, "read": true, "delete": true, "update": true },
+        "delivery-services.cdn.ds": { "create": true, "read": true, "delete": true, "update": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "contentManagement": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-discovery-footprint-read": {
+      "identifiers": {},
+      "permissions": { "discovery": { "qnFootprintCalculation": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-cert-manager-admin": {
+      "identifiers": {},
+      "permissions": {
+        "certManager": {
+          "certUpdate": true,
+          "certView": true,
+          "certList": true,
+          "certDelete": true,
+          "debug": true,
+          "readAll": true
+        }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-ops-dashboard-view": {
+      "identifiers": {},
+      "permissions": {
+        "mediaAnalytics": {
+          "reportView": true,
+          "mspView": true,
+          "clientApplication": true,
+          "clientApplications": true
+        },
+        "qnDeployment": { "entityView": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "opsDashboard": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-devenv-function-analytics": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-reports",
+        "role-qc-service-customer-dashboard-viewer",
+        "role-qc-service-cp-dashboard-viewer",
+        "role-qc-service-ds-dashboard-ds-viewer",
+        "role-qc-service-ops-dashboard-viewer",
+        "role-qc-service-marketplace-viewer"
+      ]
+    },
+    "role-cert-manager-edit": {
+      "identifiers": {},
+      "permissions": { "certManager": { "certUpdate": true, "certView": true, "certList": true, "certDelete": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-dns-statistics-view": {
+      "identifiers": {},
+      "permissions": { "dnsStatisticsSystems": { "viewLogs": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-discovery-footprint-view": {
+      "identifiers": {},
+      "permissions": { "discovery": { "qnFootprintCalculation": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-customer-dashboard-viewer": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": ["role-backend-media-analytics-customer-dashboard-read", "role-backend-qn-deployment-read"]
+    },
+    "role-qc-service-content-management-owner": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-content-management",
+        "role-backend-delivery-services-native-admin",
+        "role-backend-delivery-services-cdn-admin"
+      ]
+    },
+    "role-system-events": {
+      "identifiers": {},
+      "permissions": {
+        "system-updates.infra-owner": { "read": true },
+        "system-updates.ops": { "write": true, "read": true },
+        "qnDeployment": { "entityView": true },
+        "qc": { "debug": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-debug": {
+      "identifiers": {},
+      "permissions": { "qc": { "debug": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-coverage-upload-write": {
+      "identifiers": {},
+      "permissions": {
+        "coverage-upload.client-locations": { "write": true },
+        "coverage-upload.physical-locations": { "write": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-cp-dashboard-viewer": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-content-publishers",
+        "role-frontend-ds-dashboard-for-cp",
+        "role-backend-media-analytics-cp-dashboard-read",
+        "role-backend-geo-deployment-read",
+        "role-backend-qn-deployment-read",
+        "role-backend-content-publishers-read"
+      ]
+    },
+    "role-external-footprint-view": {
+      "identifiers": {},
+      "permissions": { "footprint": { "footprintView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-devenv-function-admin": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-devenv-function-analytics",
+        "role-devenv-function-monitoring",
+        "role-devenv-function-cdn-operator",
+        "role-qc-service-user-management-viewer"
+      ]
+    },
+    "role-keys-manager-edit": {
+      "identifiers": {},
+      "permissions": { "keys": { "create": true, "read": true }, "secrets": { "create": true, "read": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-mdl-view": {
+      "identifiers": {},
+      "permissions": { "reporting": { "mdlList": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-content-publishers-modify": {
+      "identifiers": {},
+      "permissions": { "contentPublishers": { "read": true, "write": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-ds-dashboard-sp-view": {
+      "identifiers": {},
+      "permissions": {
+        "mediaAnalytics": {
+          "reportView": true,
+          "mspView": true,
+          "clientApplication": true,
+          "clientApplications": true
+        },
+        "qnDeployment": { "entityView": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "dsDashboardSp": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-qn-deployment-read-all-fields": {
+      "identifiers": {},
+      "permissions": { "qnDeployment": { "entityView": true, "entityAccessRestrictedFields": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-customer-dashboard-view": {
+      "identifiers": {},
+      "permissions": {
+        "mediaAnalytics": { "reportView": true, "customerDashboardApplication": true },
+        "qnDeployment": { "entityView": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-geo-deployment-admin": {
+      "identifiers": {},
+      "permissions": { "geoDeployment": { "entityView": true, "ispView": true, "systemView": true, "debug": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-ops-dashboard-viewer": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": ["role-frontend-ops-dashboard", "role-backend-media-analytics-read", "role-backend-qn-deployment-read"]
+    },
+    "role-isp": {
+      "identifiers": {},
+      "permissions": {
+        "mediaAnalytics": {
+          "clientApplication": true,
+          "clientApplications": true,
+          "mspView": true,
+          "reportView": true
+        },
+        "qnDeployment": { "entityView": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-keys-manager-debug": {
+      "identifiers": {},
+      "permissions": { "keys": { "readAll": true }, "secrets": { "readAll": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-frontend-ds-dashboard-for-sp": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "dsDashboardSp": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-test-group-hierarchy": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": ["role-isp", "role-tc-topology-viewer"]
+    },
+    "role-snowball-view": {
+      "identifiers": {},
+      "permissions": {
+        "qnDeployment": { "entityView": true, "entityAccessRestrictedFields": true },
+        "qid-repository.native.qid": { "read": true, "write": true, "delete": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "snowball": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-media-analytics-geo-report-read": {
+      "identifiers": {},
+      "permissions": { "mediaAnalytics": { "geoReportView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-frontend-marketplace": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "marketplace": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-footprint-viewer": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": ["role-frontend-footprint", "role-backend-coverage-read"]
+    },
+    "role-qc-service-marketplace-viewer": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-marketplace",
+        "role-backend-media-analytics-geo-report-read",
+        "role-backend-geo-deployment-read"
+      ]
+    },
+    "role-qc-service-user-management-viewer": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": ["role-backend-auth-data-read"]
+    },
+    "role-coverage": {
+      "identifiers": {},
+      "permissions": { "coverage": { "ispFootprintView": true, "coverageConfig": true, "coverageCalculation": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "footprint": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-nma-viewer": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-reports",
+        "role-backend-media-analytics-read",
+        "role-backend-media-analytics-events-read",
+        "role-backend-qn-deployment-read"
+      ]
+    },
+    "role-keys-manager-delete": {
+      "identifiers": {},
+      "permissions": { "keys": { "delete": true }, "secrets": { "delete": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-delivery-services-native-admin": {
+      "identifiers": {},
+      "permissions": {
+        "delivery-services.native.ds": { "create": true, "read": true, "delete": true, "update": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-network-status": {
+      "identifiers": {},
+      "permissions": {
+        "verizon-alarms": { "read": true },
+        "network-status": { "read": true },
+        "subscriptions": { "write": true, "read": true, "delete": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-cert-manager-debug": {
+      "identifiers": {},
+      "permissions": { "certManager": { "debug": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-media-analytics-customer-dashboard-read": {
+      "identifiers": {},
+      "permissions": { "mediaAnalytics": { "reportView": true, "customerDashboardApplication": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-media-analytics-events-read": {
+      "identifiers": {},
+      "permissions": { "nmaEvents": { "eventView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-mdl-read": {
+      "identifiers": {},
+      "permissions": { "reporting": { "mdlList": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-media-analytics-cp-dashboard-read": {
+      "identifiers": {},
+      "permissions": {
+        "mediaAnalytics": { "reportView": true, "mspView": true, "cpDashboard": true, "geoReportView": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-cert-manager-modify": {
+      "identifiers": {},
+      "permissions": { "certManager": { "certUpdate": true, "certView": true, "certList": true, "certDelete": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-frontend-reports": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "reports": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-devenv-function-monitoring": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": ["role-qc-service-footprint-viewer"]
+    },
+    "role-dep-data-adapter": {
+      "identifiers": {},
+      "permissions": { "qnDeployment": { "entityAccessRestrictedFields": true, "entityView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-qid-repository-modify": {
+      "identifiers": {},
+      "permissions": { "qid-repository.native.qid": { "read": true, "write": true, "delete": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-cdn-admin": {
+      "identifiers": {},
+      "permissions": {
+        "cdns.native": { "tempFullControl": true },
+        "cdns.infra": { "tempFullControl": true },
+        "infrastructure.cdn-owner.cache": { "read": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-qn-deployment-modify": {
+      "identifiers": {},
+      "permissions": {
+        "qnDeployment": {
+          "entityView": true,
+          "entityUpdate": true,
+          "entityPatch": true,
+          "entityAccessRestrictedFields": true,
+          "historyView": true
+        }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-nma-events-edit": {
+      "identifiers": {},
+      "permissions": { "nmaEvents": { "eventView": true, "eventUpdate": true, "eventDelete": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-network-status-read": {
+      "identifiers": {},
+      "permissions": { "verizon-alarms": { "read": true }, "network-status": { "read": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-coverage-read": {
+      "identifiers": {},
+      "permissions": { "coverage": { "ispFootprintView": true, "coverageConfig": true, "coverageCalculation": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-backend-keys-manager-admin": {
+      "identifiers": {},
+      "permissions": {
+        "keys": { "create": true, "read": true, "readAll": true, "delete": true },
+        "secrets": { "create": true, "read": true, "readAll": true, "delete": true }
+      },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-charter-gemini": {
+      "identifiers": {},
+      "permissions": { "reporting": { "mdlList": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-external-footprint-viewer": {
+      "identifiers": {},
+      "permissions": { "footprint": { "footprintView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-qc-service-snowball-viewer": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-snowball",
+        "role-backend-qn-deployment-read-all-fields",
+        "role-backend-qid-repository-read"
+      ]
+    },
+    "role-qc-service-marketplace-admin": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": [
+        "role-frontend-marketplace",
+        "role-backend-media-analytics-geo-report-read",
+        "role-backend-geo-deployment-admin"
+      ]
+    },
+    "role-backend-tc-topology-read": {
+      "identifiers": {},
+      "permissions": { "tc": { "topologyView": true } },
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": {}, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-frontend-ops-dashboard": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "opsDashboard": true } }, "dataAccessControl": {} },
+      "groups": []
+    },
+    "role-frontend-content-publishers": {
+      "identifiers": {},
+      "permissions": {},
+      "dataAccessControl": {},
+      "env": {},
+      "frontend": { "permissions": { "qcServices": { "contentPublishers": true } }, "dataAccessControl": {} },
+      "groups": []
+    }
+  }
+}

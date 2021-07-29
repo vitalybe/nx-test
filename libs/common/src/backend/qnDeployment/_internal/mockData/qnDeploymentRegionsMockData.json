@@ -1,0 +1,18 @@
+{
+  "entities": [
+    {
+      "id": 4516,
+      "name": "system-test-region",
+      "uniqueName": "rgnSystem-test-region",
+      "type": "region",
+      "attributes": {}
+    },
+    {
+      "id": 4568,
+      "name": "dt-man-region",
+      "uniqueName": "rgnDt-man-region",
+      "type": "region",
+      "attributes": {}
+    }
+  ]
+}

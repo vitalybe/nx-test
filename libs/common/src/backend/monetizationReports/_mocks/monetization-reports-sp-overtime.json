@@ -1,0 +1,142 @@
+{
+  "_self": {
+    "link": "https://nsd-monetization-reports.rnd.cqloud.com/api/1/reports/isp/overtime?sp=bt"
+  },
+  "projects": [
+    {
+      "reportId": "bt-12-2020",
+      "monthSamples": [
+        {
+          "month": "12-2019",
+          "spRevenue": 3420.0,
+          "cqdaRevenue": 6880.0,
+          "overallRevenue": 10300.0,
+          "spRevenueFromProjectStart": 17420,
+          "cqdaRevenueFromProjectStart": 31980,
+          "overallRevenueFromProjectStart": 49400,
+          "volume": 6000000000
+        },
+        {
+          "month": "01-2020",
+          "spRevenue": 4020.0,
+          "cqdaRevenue": 7380.0,
+          "overallRevenue": 11400.0,
+          "spRevenueFromProjectStart": 21440,
+          "cqdaRevenueFromProjectStart": 39360,
+          "overallRevenueFromProjectStart": 60800,
+          "volume": 9000000000
+        },
+        {
+          "month": "02-2020",
+          "spRevenue": 5360.0,
+          "cqdaRevenue": 9840.0,
+          "overallRevenue": 15200.0,
+          "spRevenueFromProjectStart": 26800,
+          "cqdaRevenueFromProjectStart": 49200,
+          "overallRevenueFromProjectStart": 76000,
+          "volume": 12000000000
+        },
+        {
+          "month": "03-2020",
+          "spRevenue": 6700.0,
+          "cqdaRevenue": 12300.0,
+          "overallRevenue": 19000.0,
+          "spRevenueFromProjectStart": 33500,
+          "cqdaRevenueFromProjectStart": 61500,
+          "overallRevenueFromProjectStart": 95000,
+          "volume": 15000000000
+        },
+        {
+          "month": "04-2020",
+          "spRevenue": 8040.0,
+          "cqdaRevenue": 14760.0,
+          "overallRevenue": 22800.0,
+          "spRevenueFromProjectStart": 41540,
+          "cqdaRevenueFromProjectStart": 76260,
+          "overallRevenueFromProjectStart": 117800,
+          "volume": 18000000000
+        },
+        {
+          "month": "05-2020",
+          "spRevenue": 9380.0,
+          "cqdaRevenue": 17220.0,
+          "overallRevenue": 26600.0,
+          "spRevenueFromProjectStart": 50920,
+          "cqdaRevenueFromProjectStart": 93480,
+          "overallRevenueFromProjectStart": 144400,
+          "volume": 21000000000
+        },
+        {
+          "month": "06-2020",
+          "spRevenue": 10720.0,
+          "cqdaRevenue": 19680.0,
+          "overallRevenue": 30400.0,
+          "spRevenueFromProjectStart": 61640,
+          "cqdaRevenueFromProjectStart": 113160,
+          "overallRevenueFromProjectStart": 174800,
+          "volume": 24000000000
+        },
+        {
+          "month": "07-2020",
+          "spRevenue": 12060.0,
+          "cqdaRevenue": 22140.0,
+          "overallRevenue": 34200.0,
+          "spRevenueFromProjectStart": 73700,
+          "cqdaRevenueFromProjectStart": 135300,
+          "overallRevenueFromProjectStart": 209000,
+          "volume": 27000000000
+        },
+        {
+          "month": "08-2020",
+          "spRevenue": 13400.0,
+          "cqdaRevenue": 24600.0,
+          "overallRevenue": 38000.0,
+          "spRevenueFromProjectStart": 87100,
+          "cqdaRevenueFromProjectStart": 159900,
+          "overallRevenueFromProjectStart": 247000,
+          "volume": 30000000000
+        },
+        {
+          "month": "09-2020",
+          "spRevenue": 14740.0,
+          "cqdaRevenue": 27060.0,
+          "overallRevenue": 41800.0,
+          "spRevenueFromProjectStart": 101840,
+          "cqdaRevenueFromProjectStart": 186960,
+          "overallRevenueFromProjectStart": 288800,
+          "volume": 33000000000
+        },
+        {
+          "month": "10-2020",
+          "spRevenue": 16080.0,
+          "cqdaRevenue": 29520.0,
+          "overallRevenue": 45600.0,
+          "spRevenueFromProjectStart": 117920,
+          "cqdaRevenueFromProjectStart": 216480,
+          "overallRevenueFromProjectStart": 334400,
+          "volume": 36000000000
+        },
+        {
+          "month": "11-2020",
+          "spRevenue": 17420.0,
+          "cqdaRevenue": 31980.0,
+          "overallRevenue": 49400.0,
+          "spRevenueFromProjectStart": 135340,
+          "cqdaRevenueFromProjectStart": 248460,
+          "overallRevenueFromProjectStart": 383800,
+          "volume": 39000000000
+        },
+        {
+          "month": "12-2020",
+          "spRevenue": 18760.0,
+          "cqdaRevenue": 34440.0,
+          "overallRevenue": 53200.0,
+          "spRevenueFromProjectStart": 154100,
+          "cqdaRevenueFromProjectStart": 282900,
+          "overallRevenueFromProjectStart": 437000,
+          "volume": 42000000000
+        }
+      ]
+    }
+  ]
+}

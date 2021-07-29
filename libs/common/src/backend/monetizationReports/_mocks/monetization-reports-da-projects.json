@@ -1,0 +1,68 @@
+{
+  "sps": [
+    {
+      "spName": "british-telecom",
+      "projects": [
+        {
+          "contractId": "project-british-telecom-1",
+          "contractName": "British Telecom December 2019",
+          "currentPhase": "revenueSharing",
+          "currency": "USD",
+          "capacity": 50000,
+          "markers": {
+            "projectStartDate": "12-01-2019",
+            "projectStartDateEpoch": 1575151200,
+            "projectEndDate": "12-01-2024",
+            "projectEndDateEpoch": 1733004000,
+            "investment": 1200000,
+            "actualFinancingCompletionDate": "02-01-2021",
+            "actualFinancingCompletionDateEpoch": 1612130400
+          }
+        },
+        {
+          "contractId": "project-british-telecom-2",
+          "contractName": "British Telecom February 2020",
+          "currentPhase": "revenueSharing",
+          "currency": "USD",
+          "capacity": 30000,
+          "markers": {
+            "projectStartDate": "10-02-2020",
+            "projectStartDateEpoch": 1581336000,
+            "projectEndDate": "10-02-2024",
+            "projectEndDateEpoch": 1707566400,
+            "investment": 600000,
+            "actualFinancingCompletionDate": "02-01-2022",
+            "actualFinancingCompletionDateEpoch": 1643666400
+          }
+        }
+      ],
+      "capacity": 80000,
+      "investment": 1800000
+    },
+    {
+      "spName": "tim-brazil",
+      "capacity": 30000,
+      "investment": 600000,
+      "projects": [
+        {
+          "contractId": "project-tim-brazil-1",
+          "contractName": "TIM Brazil February 2020",
+          "currentPhase": "revenueSharing",
+          "currency": "USD",
+          "capacity": 30000,
+          "markers": {
+            "projectStartDate": "10-02-2020",
+            "projectStartDateEpoch": 1581336000,
+            "projectEndDate": "10-02-2024",
+            "projectEndDateEpoch": 1707566400,
+            "investment": 600000,
+            "actualFinancingCompletionDate": "12-01-2021",
+            "actualFinancingCompletionDateEpoch": 1638309600
+          }
+        }
+      ]
+    }
+  ],
+  "capacity": 80000,
+  "investment": 1800000
+}
