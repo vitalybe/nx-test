@@ -1,18 +1,18 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { StepEntity, StepStateEnum } from "src/workflowStatus/_domain/stepEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { StepEntity, StepStateEnum } from "../../../_domain/stepEntity";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons/faSpinner";
 import { faTasks } from "@fortawesome/free-solid-svg-icons/faTasks";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons/faCheckCircle";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons/faTimesCircle";
 import { faStopCircle } from "@fortawesome/free-solid-svg-icons/faStopCircle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { Utils } from "src/workflowStatus/_util/utils";
-import { Constants } from "src/workflowStatus/_util/constants";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { Utils } from "../../../_util/utils";
+import { Constants } from "../../../_util/constants";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

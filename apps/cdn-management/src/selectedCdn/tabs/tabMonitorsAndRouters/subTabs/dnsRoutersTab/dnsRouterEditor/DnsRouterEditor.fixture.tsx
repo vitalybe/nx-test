@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   DnsRouterEditor,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/dnsRouterEditor/DnsRouterEditor";
-import { DnsRouterEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/_domain/dnsRouterEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+} from "./DnsRouterEditor";
+import { DnsRouterEntity } from "../_domain/dnsRouterEntity";
+import { SelectedCdnFixtureDecorator } from "../../../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

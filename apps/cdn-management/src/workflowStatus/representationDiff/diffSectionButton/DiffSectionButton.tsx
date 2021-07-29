@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons/faSearchPlus";
-import { Colors } from "src/_styling/colors";
-import { CommonStyles } from "common/styling/commonStyles";
+import { Colors } from "../../../_styling/colors";
+import { CommonStyles } from "@qwilt/common/styling/commonStyles";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

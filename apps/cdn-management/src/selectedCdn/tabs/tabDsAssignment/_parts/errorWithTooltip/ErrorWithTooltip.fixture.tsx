@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { ErrorWithTooltip, Props } from "src/selectedCdn/tabs/tabDsAssignment/_parts/errorWithTooltip/ErrorWithTooltip";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { ErrorWithTooltip, Props } from "./ErrorWithTooltip";
+import { SelectedCdnFixtureDecorator } from "../../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

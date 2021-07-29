@@ -7,9 +7,9 @@ import {
   HttpRouterIcon,
   HttpRoutersGroupIcon,
   MonitorIcon,
-} from "common/components/configuration/configurationIcons";
+} from "@qwilt/common/components/configuration/configurationIcons";
 import styled from "styled-components";
-import { ServerType } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
 
 export interface Props {
   type: ServerType;

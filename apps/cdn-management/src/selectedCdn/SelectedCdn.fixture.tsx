@@ -1,9 +1,9 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { Props, SelectedCdn } from "src/selectedCdn/SelectedCdn";
+import { Props, SelectedCdn } from "./SelectedCdn";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, TabCaches } from "src/selectedCdn/tabs/tabCaches/TabCaches";
+import { Props, TabCaches } from "./TabCaches";
 
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { QnEntity } from "src/_domain/qnEntity";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { DeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/deploymentEntity";
+import { QnEntity } from "../../../_domain/qnEntity";
+import { CacheEntity } from "../../../_domain/cacheEntity";
+import { CacheGroupEntity } from "../../../_domain/cacheGroupEntity";
+import { SelectedCdnFixtureDecorator } from "../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

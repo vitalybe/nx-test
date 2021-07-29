@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { QwiltToggle } from "common/components/configuration/qwiltForm/qwiltToggle/QwiltToggle";
-import { Constants } from "src/_utils/constants";
-import { CacheEntity } from "src/_domain/cacheEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { QwiltToggle } from "@qwilt/common/components/configuration/qwiltForm/qwiltToggle/QwiltToggle";
+import { Constants } from "../../../../../_utils/constants";
+import { CacheEntity } from "../../../../../_domain/cacheEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

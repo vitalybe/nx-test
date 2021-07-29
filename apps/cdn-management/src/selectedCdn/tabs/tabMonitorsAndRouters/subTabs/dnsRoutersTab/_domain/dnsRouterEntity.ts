@@ -1,11 +1,11 @@
-import { loggerCreator } from "common/utils/logger";
-import { HealthProviderEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/healthProvider/healthProviderEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { HealthProviderEntity } from "../../../_domain/healthProvider/healthProviderEntity";
 import {
   ServerEntity,
   ServerEntityParams,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/serverEntity";
+} from "../../../_domain/server/serverEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface DnsRouterEntityParams extends ServerEntityParams {
   healthProviders: HealthProviderEntity[];

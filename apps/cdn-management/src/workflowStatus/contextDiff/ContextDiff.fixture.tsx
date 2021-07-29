@@ -3,14 +3,14 @@
 import * as React from "react";
 import { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
-import { ContextDiff, Props } from "src/workflowStatus/contextDiff/ContextDiff";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { ContextDiffSegmentEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffSegmentEntity";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { ContextDiffSegmentsProvider } from "src/workflowStatus/contextDiff/_providers/contextDiffSegmentsProvider";
-import { AjaxMetadata } from "common/utils/ajax";
-import { ProvisionFlowsApiMock } from "common/backend/provisionFlows";
-import { StepOutputApiResult } from "common/backend/provisionFlows/_types/provisionFlowsTypes";
+import { ContextDiff, Props } from "./ContextDiff";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { ContextDiffSegmentEntity } from "./_domain/contextDiffSegmentEntity";
+import { WorkflowEntity } from "../_domain/workflowEntity";
+import { ContextDiffSegmentsProvider } from "./_providers/contextDiffSegmentsProvider";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { ProvisionFlowsApiMock } from "@qwilt/common/backend/provisionFlows";
+import { StepOutputApiResult } from "@qwilt/common/backend/provisionFlows/_types/provisionFlowsTypes";
 
 const fixtureData = require("./ContextDiff.fixture.data.json");
 

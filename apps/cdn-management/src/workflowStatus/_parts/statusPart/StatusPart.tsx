@@ -1,29 +1,29 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { StepEntity, StepStateEnum } from "src/workflowStatus/_domain/stepEntity";
-import { StatusPartRaw } from "src/workflowStatus/_parts/statusPart/statusPartRaw/StatusPartRaw";
-import { Colors } from "src/_styling/colors";
-import { CommonStyles } from "common/styling/commonStyles";
-import { openQwiltModal } from "common/components/qwiltModal/QwiltModal";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { WorkflowEntity } from "../../_domain/workflowEntity";
+import { StepEntity, StepStateEnum } from "../../_domain/stepEntity";
+import { StatusPartRaw } from "./statusPartRaw/StatusPartRaw";
+import { Colors } from "../../../_styling/colors";
+import { CommonStyles } from "@qwilt/common/styling/commonStyles";
+import { openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
 import {
   useWorkflowStore,
   WorkflowStore,
   WorkflowStoreContextProvider,
-} from "src/workflowStatus/_stores/workflowStore";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { UserStore } from "common/stores/userStore";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
-import { WizardDiffUpdate } from "src/workflowStatus/wizardDiffUpdate/WizardDiffUpdate";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { ContextDiffContainer } from "src/workflowStatus/contextDiff/ContextDiffContainer";
-import { ProvisionFlowsApi, ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
-import { SystemUpdateInternalProvider } from "common/components/_projectSpecific/systemUpdatesManagement/_providers/systemUpdateInternalProvider";
-import { SystemUpdateSchemaType } from "common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateSchema";
-import { WorkflowStatusProvider } from "src/workflowStatus/workflowStatusBar/_providers/workflowStatusProvider";
+} from "../../_stores/workflowStore";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { UserStore } from "@qwilt/common/stores/userStore";
+import { ProjectUrlStore } from "../../../_stores/projectUrlStore";
+import { WizardDiffUpdate } from "../../wizardDiffUpdate/WizardDiffUpdate";
+import { ProjectUrlParams } from "../../../_stores/projectUrlParams";
+import { ContextDiffContainer } from "../../contextDiff/ContextDiffContainer";
+import { ProvisionFlowsApi, ProvisionFlowsStepsEnum } from "@qwilt/common/backend/provisionFlows";
+import { SystemUpdateInternalProvider } from "@qwilt/common/components/_projectSpecific/systemUpdatesManagement/_providers/systemUpdateInternalProvider";
+import { SystemUpdateSchemaType } from "@qwilt/common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateSchema";
+import { WorkflowStatusProvider } from "../../workflowStatusBar/_providers/workflowStatusProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,8 +1,8 @@
-import { DeliveryServicesMatchType } from "common/backend/deliveryServices/_types/deliveryServicesTypes";
-import { AjaxMetadata } from "common/utils/ajax";
-import { DeliveryServicesApi } from "common/backend/deliveryServices";
-import { DsMetadataEntity } from "src/_domain/dsMetadataEntity";
-import { MissingAgreementLinkEntity } from "src/_domain/missingAgreementLinkEntity";
+import { DeliveryServicesMatchType } from "@qwilt/common/backend/deliveryServices/_types/deliveryServicesTypes";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { DeliveryServicesApi } from "@qwilt/common/backend/deliveryServices";
+import { DsMetadataEntity } from "./dsMetadataEntity";
+import { MissingAgreementLinkEntity } from "./missingAgreementLinkEntity";
 
 let lastMockId = 1;
 

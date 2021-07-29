@@ -4,10 +4,10 @@ import styled from "styled-components";
 import {
   HttpRouterGroupsEditor,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/httpRouterGroupsEditor/HttpRouterGroupsEditor";
-import { HttpRouterGroupEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/_domain/httpRouterGroupEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
-import { CdnEntity } from "src/_domain/cdnEntity";
+} from "./HttpRouterGroupsEditor";
+import { HttpRouterGroupEntity } from "../_domain/httpRouterGroupEntity";
+import { SelectedCdnFixtureDecorator } from "../../../../_utils/SelectedCdnFixtureDecorator";
+import { CdnEntity } from "../../../../../../_domain/cdnEntity";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { ContextDiffSegmentsProvider } from "src/workflowStatus/contextDiff/_providers/contextDiffSegmentsProvider";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import { Button } from "common/components/configuration/button/Button";
-import { ContextDiff } from "src/workflowStatus/contextDiff/ContextDiff";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { useProvider } from "@qwilt/common/components/providerDataContainer/_providers/useProvider";
+import { ContextDiffSegmentsProvider } from "./_providers/contextDiffSegmentsProvider";
+import { WorkflowEntity } from "../_domain/workflowEntity";
+import { ProviderDataContainer } from "@qwilt/common/components/providerDataContainer/ProviderDataContainer";
+import { Button } from "@qwilt/common/components/configuration/button/Button";
+import { ContextDiff } from "./ContextDiff";
+import { CdnEntity } from "../../_domain/cdnEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

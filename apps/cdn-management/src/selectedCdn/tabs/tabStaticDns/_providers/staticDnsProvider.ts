@@ -1,12 +1,12 @@
-import { loggerCreator } from "common/utils/logger";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { StaticDnsEntity } from "src/selectedCdn/tabs/tabStaticDns/_domain/staticDnsEntity";
-import { StaticDnsApi } from "common/backend/staticDns";
-import { StaticDnsFormData } from "src/selectedCdn/tabs/tabStaticDns/editorStaticDns/EditorStaticDns";
-import { StaticDnsEditApiType } from "common/backend/staticDns/_types/staticDnsTypes";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { StaticDnsEntity } from "../_domain/staticDnsEntity";
+import { StaticDnsApi } from "@qwilt/common/backend/staticDns";
+import { StaticDnsFormData } from "../editorStaticDns/EditorStaticDns";
+import { StaticDnsEditApiType } from "@qwilt/common/backend/staticDns/_types/staticDnsTypes";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class StaticDnsProvider {
   private constructor() {}

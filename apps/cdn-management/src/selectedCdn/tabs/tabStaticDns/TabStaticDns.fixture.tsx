@@ -1,11 +1,11 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { Props, TabStaticDns } from "src/selectedCdn/tabs/tabStaticDns/TabStaticDns";
+import { Props, TabStaticDns } from "./TabStaticDns";
 
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { StaticDnsEntity } from "src/selectedCdn/tabs/tabStaticDns/_domain/staticDnsEntity";
+import { SelectedCdnFixtureDecorator } from "../_utils/SelectedCdnFixtureDecorator";
+import { DeliveryServiceEntity } from "../../../_domain/deliveryServiceEntity";
+import { StaticDnsEntity } from "./_domain/staticDnsEntity";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

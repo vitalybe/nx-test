@@ -1,29 +1,29 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { EntitiesDropdown } from "common/components/entitiesDropdown/EntitiesDropdown";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { Icons } from "common/styling/icons";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DropdownEntity } from "@qwilt/common/components/entitiesDropdown/_domain/dropdownEntity";
+import { EntitiesDropdown } from "@qwilt/common/components/entitiesDropdown/EntitiesDropdown";
+import { SelectionModeEnum } from "@qwilt/common/utils/hierarchyUtils";
+import { Icons } from "@qwilt/common/styling/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { CommonColors } from "common/styling/commonColors";
-import { TooltipControlType, useTooltip } from "common/components/Tooltip";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { openConfirmModal, openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { CdnsApi } from "common/backend/cdns";
-import { Notifier } from "common/utils/notifications/notifier";
-import { useUrlState } from "common/utils/hooks/useUrlState";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { CdnEditor } from "src/topBar/cdnsDropdown/cdnEditor/CdnEditor";
+import { Clickable } from "@qwilt/common/components/configuration/clickable/Clickable";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
+import { TooltipControlType, useTooltip } from "@qwilt/common/components/Tooltip";
+import { CdnEntity } from "../../_domain/cdnEntity";
+import { openConfirmModal, openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { CdnsApi } from "@qwilt/common/backend/cdns";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { useUrlState } from "@qwilt/common/utils/hooks/useUrlState";
+import { ProjectUrlParams } from "../../_stores/projectUrlParams";
+import { CdnEditor } from "./cdnEditor/CdnEditor";
 import { useMutation, UseMutationResult, useQueryClient } from "react-query";
-import { CdnsProvider } from "src/_providers/cdnsProvider";
-import { CachesProvider } from "src/_providers/cachesProvider";
+import { CdnsProvider } from "../../_providers/cdnsProvider";
+import { CachesProvider } from "../../_providers/cachesProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

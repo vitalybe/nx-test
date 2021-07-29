@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { StaticDnsEntity } from "src/selectedCdn/tabs/tabStaticDns/_domain/staticDnsEntity";
-import { FormikContainer } from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { FormikSelect } from "common/components/configuration/formik/formikSelect/FormikSelect";
-import { FormikInput } from "common/components/configuration/formik/formikInput/FormikInput";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { StaticDnsProvider } from "src/selectedCdn/tabs/tabStaticDns/_providers/staticDnsProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { StaticDnsEntity } from "../_domain/staticDnsEntity";
+import { FormikContainer } from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { FormikSelect } from "@qwilt/common/components/configuration/formik/formikSelect/FormikSelect";
+import { FormikInput } from "@qwilt/common/components/configuration/formik/formikInput/FormikInput";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
+import { StaticDnsProvider } from "../_providers/staticDnsProvider";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

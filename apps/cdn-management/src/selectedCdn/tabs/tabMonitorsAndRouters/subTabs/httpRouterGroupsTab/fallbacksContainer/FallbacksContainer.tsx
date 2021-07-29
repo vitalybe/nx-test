@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Icons } from "common/styling/icons";
+import { Icons } from "@qwilt/common/styling/icons";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

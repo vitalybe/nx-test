@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { Props, WduSummary } from "src/workflowStatus/wizardDiffUpdate/wduSummary/WduSummary";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Props, WduSummary } from "./WduSummary";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

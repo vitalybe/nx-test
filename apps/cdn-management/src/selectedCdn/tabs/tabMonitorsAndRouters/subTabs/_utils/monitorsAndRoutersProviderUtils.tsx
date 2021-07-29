@@ -1,9 +1,9 @@
 import {
   HealthProviderApiType,
   ServerApiTypeV2,
-} from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { HealthProviderEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/healthProvider/healthProviderEntity";
-import { HealthProviderFormType } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/healthProvider/healthProviderFormType";
+} from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { HealthProviderEntity } from "../../_domain/healthProvider/healthProviderEntity";
+import { HealthProviderFormType } from "../../_domain/healthProvider/healthProviderFormType";
 
 export class MonitorsAndRoutersProviderUtils {
   static toServerEntity(serverApiEntity: ServerApiTypeV2) {

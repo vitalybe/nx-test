@@ -1,22 +1,22 @@
-import { ProvisionFlowsApi, ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
-import { AjaxMetadata } from "common/utils/ajax";
-import { loggerCreator } from "common/utils/logger";
-import { Notifier } from "common/utils/notifications/notifier";
-import { UnknownObject } from "common/utils/typescriptUtils";
-import { Utils } from "common/utils/utils";
+import { ProvisionFlowsApi, ProvisionFlowsStepsEnum } from "@qwilt/common/backend/provisionFlows";
+import { DeploymentEntitiesProvider } from "@qwilt/common/providers/deploymentEntitiesProvider";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { UnknownObject } from "@qwilt/common/utils/typescriptUtils";
+import { Utils } from "@qwilt/common/utils/utils";
 import * as _ from "lodash";
-import { ContextDiffItemEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffItemEntity";
-import { ContextDiffListEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffListEntity";
-import { ContextDiffSegmentEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffSegmentEntity";
-import { ContextDiffEntityTypeEnum } from "src/workflowStatus/contextDiff/_domain/contextEntityType";
-import { IdReplacer } from "src/workflowStatus/contextDiff/_utils/idReplacer";
-import { JsonDiffEntity } from "src/workflowStatus/_domain/jsonDiffEntity";
-import { WorkflowEntity, WorkflowStateEnum } from "src/workflowStatus/_domain/workflowEntity";
-import { ActiveWorkflowProvider } from "src/workflowStatus/_providers/activeWorkflowProviderProvider";
-import { DeliveryServicesProvider } from "src/_providers/deliveryServicesProvider";
+import { ContextDiffItemEntity } from "../_domain/contextDiffItemEntity";
+import { ContextDiffListEntity } from "../_domain/contextDiffListEntity";
+import { ContextDiffSegmentEntity } from "../_domain/contextDiffSegmentEntity";
+import { ContextDiffEntityTypeEnum } from "../_domain/contextEntityType";
+import { IdReplacer } from "../_utils/idReplacer";
+import { JsonDiffEntity } from "../../_domain/jsonDiffEntity";
+import { WorkflowEntity, WorkflowStateEnum } from "../../_domain/workflowEntity";
+import { ActiveWorkflowProvider } from "../../_providers/activeWorkflowProviderProvider";
+import { DeliveryServicesProvider } from "../../../_providers/deliveryServicesProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface ContextDiffSegmentsProviderResult {
   left: WorkflowEntity | undefined;

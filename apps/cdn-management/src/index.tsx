@@ -1,7 +1,7 @@
-import { ProjectFrame } from "common/components/projectFrame/ProjectFrame";
+import { ProjectFrame } from "@qwilt/common/components/projectFrame/ProjectFrame";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { CdnManagement } from "src/CdnManagement";
+import { CdnManagement } from "./CdnManagement";
 import { ProjectUrlParamsMetadata } from "./_stores/projectUrlParams";
 
 ReactDOM.render(

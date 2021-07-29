@@ -1,4 +1,4 @@
-import { CdnCacheInterface } from "src/_domain/qnEntity";
+import { CdnCacheInterface } from "./qnEntity";
 
 export interface CacheNetworkInterface {
   cacheInterface: CdnCacheInterface | undefined;

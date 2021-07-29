@@ -1,9 +1,9 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { Props, TabMonitorsAndRouters } from "src/selectedCdn/tabs/tabMonitorsAndRouters/TabMonitorsAndRouters";
+import { Props, TabMonitorsAndRouters } from "./TabMonitorsAndRouters";
 
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { SelectedCdnFixtureDecorator } from "../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

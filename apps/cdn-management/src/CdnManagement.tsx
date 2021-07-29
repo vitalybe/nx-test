@@ -1,21 +1,21 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { GlobalFontProvider } from "common/components/GlobalFontProvider";
-import { SelectedCdn } from "src/selectedCdn/SelectedCdn";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { GlobalFontProvider } from "@qwilt/common/components/GlobalFontProvider";
+import { SelectedCdn } from "./selectedCdn/SelectedCdn";
 import { lighten } from "polished";
-import { CommonColors } from "common/styling/commonColors";
-import { Fonts } from "common/styling/fonts";
-import { ErrorBoundary } from "common/components/ErrorBoundary";
-import { TopBar } from "src/topBar/TopBar";
-import { CdnsProvider } from "src/_providers/cdnsProvider";
-import { LoadingSpinnerGlobal } from "common/components/loadingSpinner/loadingSpinnerGlobal/LoadingSpinnerGlobal";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { useUrlState } from "common/utils/hooks/useUrlState";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { SelectedCdnContextProvider } from "src/_stores/selectedCdnStore";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
+import { Fonts } from "@qwilt/common/styling/fonts";
+import { ErrorBoundary } from "@qwilt/common/components/ErrorBoundary";
+import { TopBar } from "./topBar/TopBar";
+import { CdnsProvider } from "./_providers/cdnsProvider";
+import { LoadingSpinnerGlobal } from "@qwilt/common/components/loadingSpinner/loadingSpinnerGlobal/LoadingSpinnerGlobal";
+import { CdnEntity } from "./_domain/cdnEntity";
+import { useUrlState } from "@qwilt/common/utils/hooks/useUrlState";
+import { ProjectUrlParams } from "./_stores/projectUrlParams";
+import { SelectedCdnContextProvider } from "./_stores/selectedCdnStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

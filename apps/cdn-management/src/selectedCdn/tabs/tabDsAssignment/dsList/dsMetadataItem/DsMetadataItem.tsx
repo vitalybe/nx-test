@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DsMetadataEntity } from "src/_domain/dsMetadataEntity";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { ItemWithActions } from "common/components/configuration/itemWithActions/ItemWithActions";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DsMetadataEntity } from "../../../../../_domain/dsMetadataEntity";
+import { DeliveryServiceEntity } from "../../../../../_domain/deliveryServiceEntity";
+import { ItemWithActions } from "@qwilt/common/components/configuration/itemWithActions/ItemWithActions";
 import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CommonColors } from "common/styling/commonColors";
-import { DsItem } from "src/selectedCdn/tabs/tabDsAssignment/dsList/dsItem/DsItem";
-import { ErrorWithTooltip } from "src/selectedCdn/tabs/tabDsAssignment/_parts/errorWithTooltip/ErrorWithTooltip";
-import { MissingAgreemenentError } from "src/selectedCdn/tabs/tabDsAssignment/_parts/missingAgreemenentError/MissingAgreemenentError";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
+import { DsItem } from "../dsItem/DsItem";
+import { ErrorWithTooltip } from "../../_parts/errorWithTooltip/ErrorWithTooltip";
+import { MissingAgreemenentError } from "../../_parts/missingAgreemenentError/MissingAgreemenentError";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

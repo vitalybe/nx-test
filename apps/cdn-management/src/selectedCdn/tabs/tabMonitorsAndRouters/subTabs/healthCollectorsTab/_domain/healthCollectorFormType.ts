@@ -1,6 +1,6 @@
-import { ServerStatus } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { enumValues } from "common/utils/typescriptUtils";
-import { ServerEntityStatus } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/oldServerEntity";
+import { ServerStatus } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { enumValues } from "@qwilt/common/utils/typescriptUtils";
+import { ServerEntityStatus } from "../../../_domain/server/oldServerEntity";
 import * as yup from "yup";
 
 export const HealthCollectorFormSchema = yup

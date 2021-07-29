@@ -1,11 +1,11 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QwiltInput } from "common/components/configuration/qwiltForm/qwiltInput/QwiltInput";
-import { Checkbox } from "common/components/checkbox/Checkbox";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { QwiltInput } from "@qwilt/common/components/configuration/qwiltForm/qwiltInput/QwiltInput";
+import { Checkbox } from "@qwilt/common/components/checkbox/Checkbox";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,24 +1,24 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CommonColors } from "common/styling/commonColors";
-import { DsRuleEntity, RuleType } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
+import { DsRuleEntity, RuleType } from "../../_domain/dsRuleEntity";
 import {
   GridReactRenderer,
   QwiltGrid,
   QwiltGridColumnDef,
   QwiltGridTreeColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
-import { Colors } from "src/_styling/colors";
-import { HierarchyUtils } from "common/utils/hierarchyUtils";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { Colors } from "../../../../../_styling/colors";
+import { HierarchyUtils } from "@qwilt/common/utils/hierarchyUtils";
 import { lighten } from "polished";
-import { getAssignmentValue } from "src/selectedCdn/tabs/tabDsAssignment/cardDsAssignment/CardDsAssignment";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
+import { getAssignmentValue } from "../../cardDsAssignment/CardDsAssignment";
+import { useEventCallback } from "@qwilt/common/utils/hooks/useEventCallback";
 import { GridReadyEvent } from "ag-grid-community";
-import { DsRuleEntityTypeIcon } from "src/selectedCdn/tabs/tabDsAssignment/DsRuleEntityTypeIcon";
+import { DsRuleEntityTypeIcon } from "../../DsRuleEntityTypeIcon";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

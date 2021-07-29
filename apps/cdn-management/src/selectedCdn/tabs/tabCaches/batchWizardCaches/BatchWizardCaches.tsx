@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { SmallTitle } from "common/components/configuration/_styles/configurationCommon";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { SmallTitle } from "@qwilt/common/components/configuration/_styles/configurationCommon";
 import _ from "lodash";
-import { BatchPreviewCaches } from "src/selectedCdn/tabs/tabCaches/batchWizardCaches/batchPreviewCaches/BatchPreviewCaches";
-import { CachesGridEntity } from "src/selectedCdn/tabs/tabCaches/_domain/cachesGridEntity";
-import { CacheEntityFormType } from "src/selectedCdn/tabs/tabCaches/batchWizardCaches/_domain/cacheEntitySchema";
-import { BatchFormCaches } from "src/selectedCdn/tabs/tabCaches/batchWizardCaches/batchFormCaches/BatchFormCaches";
-import { BatchUpdateCaches } from "src/selectedCdn/tabs/tabCaches/batchWizardCaches/batchUpdateCaches/BatchUpdateCaches";
-import { Utils } from "common/utils/utils";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
+import { BatchPreviewCaches } from "./batchPreviewCaches/BatchPreviewCaches";
+import { CachesGridEntity } from "../_domain/cachesGridEntity";
+import { CacheEntityFormType } from "./_domain/cacheEntitySchema";
+import { BatchFormCaches } from "./batchFormCaches/BatchFormCaches";
+import { BatchUpdateCaches } from "./batchUpdateCaches/BatchUpdateCaches";
+import { Utils } from "@qwilt/common/utils/utils";
+import { CacheGroupEntity } from "../../../../_domain/cacheGroupEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

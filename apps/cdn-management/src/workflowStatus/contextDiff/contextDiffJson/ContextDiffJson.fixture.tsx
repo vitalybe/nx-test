@@ -2,9 +2,9 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { ContextDiffJson, Props } from "src/workflowStatus/contextDiff/contextDiffJson/ContextDiffJson";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { ContextDiffItemEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffItemEntity";
+import { ContextDiffJson, Props } from "./ContextDiffJson";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { ContextDiffItemEntity } from "../_domain/contextDiffItemEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

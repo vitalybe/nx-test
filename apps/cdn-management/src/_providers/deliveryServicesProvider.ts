@@ -1,9 +1,9 @@
-import { DeliveryServiceEntity, Revision } from "src/_domain/deliveryServiceEntity";
-import { DeliveryServicesApi } from "common/backend/deliveryServices";
-import { AjaxMetadata } from "common/utils/ajax";
-import { DeliveryServiceMetadataProvider } from "src/_providers/deliveryServiceMetadataProvider";
-import { DsMetadataEntity } from "src/_domain/dsMetadataEntity";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+import { DeliveryServiceEntity, Revision } from "../_domain/deliveryServiceEntity";
+import { DeliveryServicesApi } from "@qwilt/common/backend/deliveryServices";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { DeliveryServiceMetadataProvider } from "./deliveryServiceMetadataProvider";
+import { DsMetadataEntity } from "../_domain/dsMetadataEntity";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
 
 export class DeliveryServicesProvider {
   prepareQuery(): PrepareQueryResult<DeliveryServiceEntity[]> {

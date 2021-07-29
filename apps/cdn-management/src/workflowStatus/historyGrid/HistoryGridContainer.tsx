@@ -1,17 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { HistoryGrid } from "src/workflowStatus/historyGrid/HistoryGrid";
-import { WorkflowsProvider } from "src/workflowStatus/_providers/workflowsProvider";
-import { StepMetadataProvider } from "src/workflowStatus/_providers/stepMetadataProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { HistoryGrid } from "./HistoryGrid";
+import { WorkflowsProvider } from "../_providers/workflowsProvider";
+import { StepMetadataProvider } from "../_providers/stepMetadataProvider";
 import { observer } from "mobx-react-lite";
-import { useWorkflowStore } from "src/workflowStatus/_stores/workflowStore";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { AjaxMetadata } from "common/utils/ajax";
-import { Utils } from "common/utils/utils";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
+import { useWorkflowStore } from "../_stores/workflowStore";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { Utils } from "@qwilt/common/utils/utils";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

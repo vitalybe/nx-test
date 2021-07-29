@@ -1,14 +1,14 @@
-import { loggerCreator } from "common/utils/logger";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { InfrastructureApi } from "common/backend/infrastructure";
-import { QnDeploymentApi } from "common/backend/qnDeployment";
-import { EntityTypeEnum } from "common/backend/qnDeployment/_types/entitiesApiType";
-import { CacheApiType } from "common/backend/infrastructure/_types/infrastructureTypes";
-import { QnEntity } from "src/_domain/qnEntity";
-import { CachesProvider } from "src/_providers/cachesProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { InfrastructureApi } from "@qwilt/common/backend/infrastructure";
+import { QnDeploymentApi } from "@qwilt/common/backend/qnDeployment";
+import { EntityTypeEnum } from "@qwilt/common/backend/qnDeployment/_types/entitiesApiType";
+import { CacheApiType } from "@qwilt/common/backend/infrastructure/_types/infrastructureTypes";
+import { QnEntity } from "../_domain/qnEntity";
+import { CachesProvider } from "./cachesProvider";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class QnsProvider {
   private constructor() {}

@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { CdnsApi } from "common/backend/cdns";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { CdnsApi } from "@qwilt/common/backend/cdns";
+import { CdnEntity } from "../_domain/cdnEntity";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class CdnsProvider {
   private constructor() {}

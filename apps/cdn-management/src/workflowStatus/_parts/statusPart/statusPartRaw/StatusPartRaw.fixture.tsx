@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { StatusPartRaw } from "src/workflowStatus/_parts/statusPart/statusPartRaw/StatusPartRaw";
-import { StepStateEnum } from "src/workflowStatus/_domain/stepEntity";
+import { StatusPartRaw } from "./StatusPartRaw";
+import { StepStateEnum } from "../../../_domain/stepEntity";
 import { DateTime } from "luxon";
-import FixtureStoreDecorator from "src/workflowStatus/_util/FixtureDecorator";
-import { ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
+import FixtureStoreDecorator from "../../../_util/FixtureDecorator";
+import { ProvisionFlowsStepsEnum } from "@qwilt/common/backend/provisionFlows";
 
 const View = styled(FixtureStoreDecorator)`
   margin: 1em;

@@ -1,26 +1,26 @@
 import * as React from "react";
 import { MutableRefObject, ReactElement, useRef, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { WorkflowEntity } from "../_domain/workflowEntity";
 import {
   GridReactRenderer,
   GridValueRenderer,
   Props as QwiltGridProps,
   QwiltGrid,
   QwiltGridColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
-import { StepMetadataEntity } from "src/workflowStatus/_domain/stepMetadataEntity";
-import { StepEntity } from "src/workflowStatus/_domain/stepEntity";
-import { StepGridCell } from "src/workflowStatus/historyGrid/stepGridCell/StepGridCell";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { StepMetadataEntity } from "../_domain/stepMetadataEntity";
+import { StepEntity } from "../_domain/stepEntity";
+import { StepGridCell } from "./stepGridCell/StepGridCell";
 import { CellFocusedEvent, RowClickedEvent } from "ag-grid-community";
-import { QwiltInput } from "common/components/configuration/qwiltForm/qwiltInput/QwiltInput";
-import { Button } from "common/components/configuration/button/Button";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { Utils } from "src/workflowStatus/_util/utils";
+import { QwiltInput } from "@qwilt/common/components/configuration/qwiltForm/qwiltInput/QwiltInput";
+import { Button } from "@qwilt/common/components/configuration/button/Button";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { Utils } from "../_util/utils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

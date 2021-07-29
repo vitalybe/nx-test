@@ -1,24 +1,24 @@
-import { ServerStatus } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { Content, FormikContainer } from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { FormikInput } from "common/components/configuration/formik/formikInput/FormikInput";
-import { FormikReactSelect } from "common/components/configuration/formik/formikReactSelect/FormikReactSelect";
-import { FormikUtils } from "common/utils/formikUtils";
-import { loggerCreator } from "common/utils/logger";
-import { enumValues } from "common/utils/typescriptUtils";
+import { ServerStatus } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { Content, FormikContainer } from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { FormikInput } from "@qwilt/common/components/configuration/formik/formikInput/FormikInput";
+import { FormikReactSelect } from "@qwilt/common/components/configuration/formik/formikReactSelect/FormikReactSelect";
+import { FormikUtils } from "@qwilt/common/utils/formikUtils";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { enumValues } from "@qwilt/common/utils/typescriptUtils";
 import * as _ from "lodash";
 import * as React from "react";
-import { MonitorEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/monitorsTab/_domain/monitorEntity";
+import { MonitorEntity } from "../_domain/monitorEntity";
 import {
   MonitorFormSchema,
   MonitorFormType,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/monitorsTab/_domain/monitorFormType";
-import { MonitorsAndRoutersEditorUtils } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/_utils/monitorsAndRoutersEditorUtils";
-import { ServerEntityStatus } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/oldServerEntity";
+} from "../_domain/monitorFormType";
+import { MonitorsAndRoutersEditorUtils } from "../../_utils/monitorsAndRoutersEditorUtils";
+import { ServerEntityStatus } from "../../../_domain/server/oldServerEntity";
 import styled from "styled-components";
-import { MonitorsProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/monitorsTab/_providers/monitorsProvider";
+import { MonitorsProvider } from "../_providers/monitorsProvider";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

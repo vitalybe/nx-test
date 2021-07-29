@@ -1,11 +1,11 @@
-import { loggerCreator } from "common/utils/logger";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { DiffSection } from "src/workflowStatus/representationDiff/_domain/diffSection";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { WorkflowEntity } from "../../_domain/workflowEntity";
+import { DiffSection } from "./diffSection";
 import * as _ from "lodash";
-import { JsonDiffEntity } from "src/workflowStatus/_domain/jsonDiffEntity";
-import { UnknownObject } from "common/utils/typescriptUtils";
+import { JsonDiffEntity } from "../../_domain/jsonDiffEntity";
+import { UnknownObject } from "@qwilt/common/utils/typescriptUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DiffMetadataEntity {
   stepId!: string;

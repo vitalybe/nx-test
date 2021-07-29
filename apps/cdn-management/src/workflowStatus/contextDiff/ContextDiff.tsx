@@ -1,27 +1,27 @@
 import * as React from "react";
 import { useCallback, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ItemsCard, ItemsCardContent } from "common/components/configuration/itemsCard/ItemsCard";
-import { DiffFlowTitle } from "src/workflowStatus/_parts/diffFlowTitle/DiffFlowTitle";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { ContextDiffSegmentEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffSegmentEntity";
-import { ContextDiffBaseEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffDomainShared";
-import { ContextDiffPathUtils } from "src/workflowStatus/contextDiff/_utils/contextDiffPathUtils";
-import { NavigationBar } from "src/workflowStatus/contextDiff/navigationBar/NavigationBar";
-import { ContextDiffEntityTypeEnum } from "src/workflowStatus/contextDiff/_domain/contextEntityType";
-import { ContextDiffListOfSegments } from "src/workflowStatus/contextDiff/contextDiffListOfSegments/ContextDiffListOfSegments";
-import { ContextDiffListOfLists } from "src/workflowStatus/contextDiff/contextDiffListOfLists/ContextDiffListOfLists";
-import { ContextDiffItemEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffItemEntity";
-import { ContextDiffListEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffListEntity";
-import { ContextDiffListOfItems } from "src/workflowStatus/contextDiff/contextDiffListOfItems/ContextDiffListOfItems";
-import { ContextDiffJson } from "src/workflowStatus/contextDiff/contextDiffJson/ContextDiffJson";
-import { Button } from "common/components/configuration/button/Button";
-import { Colors } from "src/_styling/colors";
-import { ContextDiffUtils } from "src/workflowStatus/contextDiff/_utils/contextDiffUtils";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ItemsCard, ItemsCardContent } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { DiffFlowTitle } from "../_parts/diffFlowTitle/DiffFlowTitle";
+import { WorkflowEntity } from "../_domain/workflowEntity";
+import { ContextDiffSegmentEntity } from "./_domain/contextDiffSegmentEntity";
+import { ContextDiffBaseEntity } from "./_domain/contextDiffDomainShared";
+import { ContextDiffPathUtils } from "./_utils/contextDiffPathUtils";
+import { NavigationBar } from "./navigationBar/NavigationBar";
+import { ContextDiffEntityTypeEnum } from "./_domain/contextEntityType";
+import { ContextDiffListOfSegments } from "./contextDiffListOfSegments/ContextDiffListOfSegments";
+import { ContextDiffListOfLists } from "./contextDiffListOfLists/ContextDiffListOfLists";
+import { ContextDiffItemEntity } from "./_domain/contextDiffItemEntity";
+import { ContextDiffListEntity } from "./_domain/contextDiffListEntity";
+import { ContextDiffListOfItems } from "./contextDiffListOfItems/ContextDiffListOfItems";
+import { ContextDiffJson } from "./contextDiffJson/ContextDiffJson";
+import { Button } from "@qwilt/common/components/configuration/button/Button";
+import { Colors } from "../../_styling/colors";
+import { ContextDiffUtils } from "./_utils/contextDiffUtils";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

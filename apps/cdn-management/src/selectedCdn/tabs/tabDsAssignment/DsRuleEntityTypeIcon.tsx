@@ -1,14 +1,14 @@
 import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestion } from "@fortawesome/free-solid-svg-icons/faQuestion";
-import { Icons } from "common/styling/icons";
-import { CacheIcon, CacheGroupIcon, HttpRouterIcon } from "common/components/configuration/configurationIcons";
+import { Icons } from "@qwilt/common/styling/icons";
+import { CacheIcon, CacheGroupIcon, HttpRouterIcon } from "@qwilt/common/components/configuration/configurationIcons";
 import styled from "styled-components";
-import { RuleType } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
-import { IspPlaceholderIcon } from "common/components/svg/entityIcons/IspPlaceholderIcon";
-import { Colors } from "src/_styling/colors";
+import { RuleType } from "./_domain/dsRuleEntity";
+import { IspPlaceholderIcon } from "@qwilt/common/components/svg/entityIcons/IspPlaceholderIcon";
+import { Colors } from "../../../_styling/colors";
 import _ from "lodash";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
 
 export interface Props {
   type: RuleType;

@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { FormikContainer } from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { DnsSegmentEntity } from "src/selectedCdn/tabs/tabDnsSegments/_domain/DnsSegmentEntity";
-import { FormikInput } from "common/components/configuration/formik/formikInput/FormikInput";
-import { Colors } from "src/_styling/colors";
-import { Fonts } from "common/styling/fonts";
+import { FormikContainer } from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { DnsSegmentEntity } from "../_domain/DnsSegmentEntity";
+import { FormikInput } from "@qwilt/common/components/configuration/formik/formikInput/FormikInput";
+import { Colors } from "../../../../_styling/colors";
+import { Fonts } from "@qwilt/common/styling/fonts";
 import { FormikState } from "formik";
-import { DnsSegmentProvider } from "src/selectedCdn/tabs/tabDnsSegments/_providers/DnsSegmentProvider";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { DnsSegmentProvider } from "../_providers/DnsSegmentProvider";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
 
 const EditorDnsSegmentView = styled.div``;
 

@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { DiffSectionButton, Props } from "src/workflowStatus/representationDiff/diffSectionButton/DiffSectionButton";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { DiffSectionButton, Props } from "./DiffSectionButton";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

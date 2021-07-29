@@ -1,13 +1,13 @@
 import * as React from "react";
 import { useMemo } from "react";
-import { loggerCreator } from "common/utils/logger";
-import { GridValueRenderer, QwiltGrid, QwiltGridColumnDef } from "common/components/qwiltGrid/QwiltGrid";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { GridValueRenderer, QwiltGrid, QwiltGridColumnDef } from "@qwilt/common/components/qwiltGrid/QwiltGrid";
 import styled from "styled-components";
-import { HealthProviderEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/healthProvider/healthProviderEntity";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { HealthProviderEntity } from "../../../_domain/healthProvider/healthProviderEntity";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

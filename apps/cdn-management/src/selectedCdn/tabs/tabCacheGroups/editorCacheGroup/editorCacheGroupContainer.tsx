@@ -1,16 +1,16 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { EditorCacheGroup } from "src/selectedCdn/tabs/tabCacheGroups/editorCacheGroup/EditorCacheGroup";
-import { CacheGroupsProvider } from "src/_providers/cacheGroupsProvider";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { NetworksProvider } from "src/_providers/networksProvider";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { CachesProvider } from "src/_providers/cachesProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { EditorCacheGroup } from "./EditorCacheGroup";
+import { CacheGroupsProvider } from "../../../../_providers/cacheGroupsProvider";
+import { CacheGroupEntity } from "../../../../_domain/cacheGroupEntity";
+import { NetworksProvider } from "../../../../_providers/networksProvider";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
+import { CachesProvider } from "../../../../_providers/cachesProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

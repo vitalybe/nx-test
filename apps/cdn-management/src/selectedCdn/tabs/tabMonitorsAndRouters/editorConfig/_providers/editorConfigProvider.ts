@@ -1,9 +1,9 @@
-import { loggerCreator } from "common/utils/logger";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { TrafficRoutersMonitorsApi } from "common/backend/trafficRoutersMonitors";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { TrafficRoutersMonitorsApi } from "@qwilt/common/backend/trafficRoutersMonitors";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class EditorConfigProvider {
   private constructor() {}

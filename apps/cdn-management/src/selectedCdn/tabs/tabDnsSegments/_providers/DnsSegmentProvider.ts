@@ -1,7 +1,7 @@
-import { DnsSegmentEntity } from "src/selectedCdn/tabs/tabDnsSegments/_domain/DnsSegmentEntity";
-import { DnsSegmentsApi } from "common/backend/dnsSegments";
-import { DnsSegmentsApiType } from "common/backend/dnsSegments/_types/dnsSegmentsTypes";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+import { DnsSegmentEntity } from "../_domain/DnsSegmentEntity";
+import { DnsSegmentsApi } from "@qwilt/common/backend/dnsSegments";
+import { DnsSegmentsApiType } from "@qwilt/common/backend/dnsSegments/_types/dnsSegmentsTypes";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
 
 export class DnsSegmentProvider {
   private constructor() {}

@@ -1,11 +1,11 @@
 import * as React from "react";
 import { ReactNode } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Tooltip } from "common/components/Tooltip";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { Tooltip } from "@qwilt/common/components/Tooltip";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

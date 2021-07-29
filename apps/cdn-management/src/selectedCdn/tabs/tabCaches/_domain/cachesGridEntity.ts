@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
-import { HierarchyEntity, SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { CacheOperationalModeApiEnum } from "common/backend/cdns/_types/deliveryUnitApiType";
-import { CacheEntity } from "src/_domain/cacheEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { HierarchyEntity, SelectionModeEnum } from "@qwilt/common/utils/hierarchyUtils";
+import { CacheOperationalModeApiEnum } from "@qwilt/common/backend/cdns/_types/deliveryUnitApiType";
+import { CacheEntity } from "../../../../_domain/cacheEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export enum CachesGridEntityType {
   NETWORK = "network",

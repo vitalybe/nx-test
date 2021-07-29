@@ -1,13 +1,13 @@
 import * as React from "react";
 import { ReactChild } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import { darken } from "polished";
-import { Colors } from "src/_styling/colors";
+import { Colors } from "../../../../../_styling/colors";
 import { ValueType } from "react-select/src/types";
 import { OptionProps } from "react-select/src/components/Option";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

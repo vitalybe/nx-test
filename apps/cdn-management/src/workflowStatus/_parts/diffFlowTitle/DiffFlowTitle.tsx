@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Colors } from "src/_styling/colors";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { IconWithLabel } from "src/workflowStatus/_parts/iconWithLabel/IconWithLabel";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { Colors } from "../../../_styling/colors";
+import { WorkflowEntity } from "../../_domain/workflowEntity";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { IconWithLabel } from "../iconWithLabel/IconWithLabel";
 import { faHashtag } from "@fortawesome/free-solid-svg-icons/faHashtag";
-import { Utils } from "src/workflowStatus/_util/utils";
+import { Utils } from "../../_util/utils";
 import { faCalendarAlt, faUser } from "@fortawesome/free-solid-svg-icons";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

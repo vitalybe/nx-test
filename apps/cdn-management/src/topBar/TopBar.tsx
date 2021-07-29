@@ -2,16 +2,16 @@ import * as React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { CommonUrls } from "common/utils/commonUrls";
-import { WorkflowStatusBarContainer } from "src/workflowStatus/workflowStatusBar/WorkflowStatusBarContainer";
-import { ErrorBoundary } from "common/components/ErrorBoundary";
-import { CommonStyles } from "common/styling/commonStyles";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
-import { CdnsDropdown } from "src/topBar/cdnsDropdown/CdnsDropdown";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { CommonUrls } from "@qwilt/common/utils/commonUrls";
+import { WorkflowStatusBarContainer } from "../workflowStatus/workflowStatusBar/WorkflowStatusBarContainer";
+import { ErrorBoundary } from "@qwilt/common/components/ErrorBoundary";
+import { CommonStyles } from "@qwilt/common/styling/commonStyles";
+import { CommonUrlParams } from "@qwilt/common/urlParams/commonUrlParams";
+import { ProjectUrlStore } from "../_stores/projectUrlStore";
+import { CdnsDropdown } from "./cdnsDropdown/CdnsDropdown";
+import { ProjectUrlParams } from "../_stores/projectUrlParams";
+import { CdnEntity } from "../_domain/cdnEntity";
 
 const TopBarView = styled.div`
   display: grid;

@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
-import { StepEntity, StepStateEnum } from "src/workflowStatus/_domain/stepEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { StepEntity, StepStateEnum } from "./stepEntity";
 import { DateTime } from "luxon";
-import { ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
+import { ProvisionFlowsStepsEnum } from "@qwilt/common/backend/provisionFlows";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export enum WorkflowStateEnum {
   IN_PROGRESS = "In Progress",

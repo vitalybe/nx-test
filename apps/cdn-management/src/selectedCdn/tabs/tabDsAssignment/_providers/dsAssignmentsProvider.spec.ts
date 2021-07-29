@@ -1,27 +1,27 @@
-import { DeliveryServicesProvider } from "src/_providers/deliveryServicesProvider";
-import { AjaxMetadata } from "common/utils/ajax";
-import { DsAssignmentsProvider } from "src/selectedCdn/tabs/tabDsAssignment/_providers/dsAssignmentsProvider";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { ServersProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_providers/oldServersProvider";
-import { DeliveryAgreementsApiMock } from "common/backend/deliveryAgreements";
-import { DeliveryAgreementApiEntity } from "common/backend/deliveryAgreements/_types/deliveryAgreementsTypes";
-import { DsAssignmentsApiMock } from "common/backend/ds-assignments";
+import { DeliveryServicesProvider } from "../../../../_providers/deliveryServicesProvider";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { DsAssignmentsProvider } from "./dsAssignmentsProvider";
+import { DeliveryServiceEntity } from "../../../../_domain/deliveryServiceEntity";
+import { ServersProvider } from "../../tabMonitorsAndRouters/_providers/oldServersProvider";
+import { DeliveryAgreementsApiMock } from "@qwilt/common/backend/deliveryAgreements";
+import { DeliveryAgreementApiEntity } from "@qwilt/common/backend/deliveryAgreements/_types/deliveryAgreementsTypes";
+import { DsAssignmentsApiMock } from "@qwilt/common/backend/ds-assignments";
 import {
   AssignmentsApiType,
   RoutingDuApiType,
   RoutingNetworkApiType,
-} from "common/backend/ds-assignments/_types/dsAssignmentsTypes";
-import { DsMetadataEntity } from "src/_domain/dsMetadataEntity";
-import { DsRuleEntity } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
-import { GenericServerEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/genericServerEntity";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { NameWithId } from "common/domain/nameWithId";
-import { CachesProvider } from "src/_providers/cachesProvider";
-import { CacheGroupsProvider } from "src/_providers/cacheGroupsProvider";
-import { CommonTestUtils } from "common/utils/commonTestUtils";
-import { MetadataServiceTypeEnum } from "common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
+} from "@qwilt/common/backend/ds-assignments/_types/dsAssignmentsTypes";
+import { DsMetadataEntity } from "../../../../_domain/dsMetadataEntity";
+import { DsRuleEntity } from "../_domain/dsRuleEntity";
+import { GenericServerEntity } from "../../tabMonitorsAndRouters/_domain/server/genericServerEntity";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
+import { CacheGroupEntity } from "../../../../_domain/cacheGroupEntity";
+import { CacheEntity } from "../../../../_domain/cacheEntity";
+import { NameWithId } from "@qwilt/common/domain/nameWithId";
+import { CachesProvider } from "../../../../_providers/cachesProvider";
+import { CacheGroupsProvider } from "../../../../_providers/cacheGroupsProvider";
+import { CommonTestUtils } from "@qwilt/common/utils/commonTestUtils";
+import { MetadataServiceTypeEnum } from "@qwilt/common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
 
 const CDN_ID = "CDN_ID";
 const DS_METADATA_ID = "DS_METADATA_ID";

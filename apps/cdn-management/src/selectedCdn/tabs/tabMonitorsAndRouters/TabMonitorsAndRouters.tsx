@@ -1,26 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ServerType } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { CommonColors } from "common/styling/commonColors";
-import { Icons } from "common/styling/icons";
-import { useUrlArrayState, useUrlState } from "common/utils/hooks/useUrlState";
+import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { Clickable } from "@qwilt/common/components/configuration/clickable/Clickable";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
+import { Icons } from "@qwilt/common/styling/icons";
+import { useUrlArrayState, useUrlState } from "@qwilt/common/utils/hooks/useUrlState";
 import { darken } from "polished";
 import * as React from "react";
-import { ServerTypeIcon } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_parts/ServerTypeIcon";
-import { DnsRoutersTabContainer } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/DnsRoutersTabContainer";
-import { HealthCollectorsTabContainer } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthCollectorsTab/HealthCollectorsTabContainer";
-import { HttpRouterGroupsTab } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/HttpRouterGroupsTab";
-import { HttpRoutersTabContainer } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRoutersTab/HttpRoutersTabContainer";
-import { MonitorsTabContainer } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/monitorsTab/MonitorsTabContainer";
-import { RoutersMonitorsTab } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/routersMonitorsTab/RoutersMonitorsTab";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
+import { ServerTypeIcon } from "./_parts/ServerTypeIcon";
+import { DnsRoutersTabContainer } from "./subTabs/dnsRoutersTab/DnsRoutersTabContainer";
+import { HealthCollectorsTabContainer } from "./subTabs/healthCollectorsTab/HealthCollectorsTabContainer";
+import { HttpRouterGroupsTab } from "./subTabs/httpRouterGroupsTab/HttpRouterGroupsTab";
+import { HttpRoutersTabContainer } from "./subTabs/httpRoutersTab/HttpRoutersTabContainer";
+import { MonitorsTabContainer } from "./subTabs/monitorsTab/MonitorsTabContainer";
+import { RoutersMonitorsTab } from "./subTabs/routersMonitorsTab/RoutersMonitorsTab";
+import { ProjectUrlParams } from "../../../_stores/projectUrlParams";
+import { ProjectUrlStore } from "../../../_stores/projectUrlStore";
 import styled, { css } from "styled-components";
-import { HealthProvidersTabContainer } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthProvidersTab/HealthProvidersTabContainer";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { EditorConfigContainer } from "src/selectedCdn/tabs/tabMonitorsAndRouters/editorConfig/EditorConfigContainer";
+import { HealthProvidersTabContainer } from "./subTabs/healthProvidersTab/HealthProvidersTabContainer";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { EditorConfigContainer } from "./editorConfig/EditorConfigContainer";
 
 //region [[Styles]]
 const ServerTypeIconStyled = styled(ServerTypeIcon)`

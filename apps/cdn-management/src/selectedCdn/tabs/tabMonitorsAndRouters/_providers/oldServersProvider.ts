@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { TrafficRoutersMonitorsApi } from "common/backend/trafficRoutersMonitors";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { TrafficRoutersMonitorsApi } from "@qwilt/common/backend/trafficRoutersMonitors";
 
-import { GenericServerEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/genericServerEntity";
-import { ServerStatus } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { GenericServerEntity } from "../_domain/server/genericServerEntity";
+import { ServerStatus } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ServersProvider {
   async provide(cdnName: string): Promise<GenericServerEntity[]> {

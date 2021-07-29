@@ -1,14 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CacheIcon, UnassignedQnIcon } from "common/components/configuration/configurationIcons";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { TabSelector } from "common/components/configuration/tabSelector/TabSelector";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CacheIcon, UnassignedQnIcon } from "@qwilt/common/components/configuration/configurationIcons";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { TabSelector } from "@qwilt/common/components/configuration/tabSelector/TabSelector";
 import { DateTime } from "luxon";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { TabCachesProvider } from "src/selectedCdn/tabs/tabCaches/_providers/tabCachesProvider";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { TabCachesProvider } from "./_providers/tabCachesProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

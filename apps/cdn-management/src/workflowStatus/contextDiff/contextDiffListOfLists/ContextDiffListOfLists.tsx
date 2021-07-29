@@ -1,15 +1,15 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { GridValueRenderer, QwiltGrid, QwiltGridColumnDef } from "common/components/qwiltGrid/QwiltGrid";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { GridValueRenderer, QwiltGrid, QwiltGridColumnDef } from "@qwilt/common/components/qwiltGrid/QwiltGrid";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons/faSearchPlus";
-import { ContextDiffUtils } from "src/workflowStatus/contextDiff/_utils/contextDiffUtils";
-import { ContextDiffGridFilter } from "src/workflowStatus/contextDiff/_parts/contextDiffGridFilter/ContextDiffGridFilter";
-import { ContextDiffListEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffListEntity";
-import { useModifiedItemsFilter } from "src/workflowStatus/contextDiff/_utils/useModifiedItemsFilter";
+import { ContextDiffUtils } from "../_utils/contextDiffUtils";
+import { ContextDiffGridFilter } from "../_parts/contextDiffGridFilter/ContextDiffGridFilter";
+import { ContextDiffListEntity } from "../_domain/contextDiffListEntity";
+import { useModifiedItemsFilter } from "../_utils/useModifiedItemsFilter";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

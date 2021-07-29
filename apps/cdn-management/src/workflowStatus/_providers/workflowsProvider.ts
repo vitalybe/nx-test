@@ -1,14 +1,14 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { WorkflowEntity, WorkflowStateEnum } from "src/workflowStatus/_domain/workflowEntity";
-import { ProvisionFlowsApi } from "common/backend/provisionFlows";
-import { StepEntity, StepStateEnum } from "src/workflowStatus/_domain/stepEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { WorkflowEntity, WorkflowStateEnum } from "../_domain/workflowEntity";
+import { ProvisionFlowsApi } from "@qwilt/common/backend/provisionFlows";
+import { StepEntity, StepStateEnum } from "../_domain/stepEntity";
 import { DateTime } from "luxon";
-import { ExecutionStatusApiResult, FlowStatusApiType } from "common/backend/provisionFlows/_types/provisionFlowsTypes";
-import { Utils } from "common/utils/utils";
-import { Notifier } from "common/utils/notifications/notifier";
+import { ExecutionStatusApiResult, FlowStatusApiType } from "@qwilt/common/backend/provisionFlows/_types/provisionFlowsTypes";
+import { Utils } from "@qwilt/common/utils/utils";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class WorkflowsProvider {
   private constructor() {}

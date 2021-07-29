@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { SystemUpdatesForm } from "common/components/_projectSpecific/systemUpdatesManagement/systemUpdatesForm/SystemUpdatesForm";
-import { useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { SystemUpdateFormProvider } from "common/components/_projectSpecific/systemUpdatesManagement/_providers/systemUpdateFormProvider";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import { SystemUpdateSchemaType } from "common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateSchema";
-import { ComponentTypeEnum } from "common/backend/systemEvents/_types/systemEventsTypes";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { SystemUpdatesForm } from "@qwilt/common/components/_projectSpecific/systemUpdatesManagement/systemUpdatesForm/SystemUpdatesForm";
+import { useProvider } from "@qwilt/common/components/providerDataContainer/_providers/useProvider";
+import { SystemUpdateFormProvider } from "@qwilt/common/components/_projectSpecific/systemUpdatesManagement/_providers/systemUpdateFormProvider";
+import { ProviderDataContainer } from "@qwilt/common/components/providerDataContainer/ProviderDataContainer";
+import { SystemUpdateSchemaType } from "@qwilt/common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateSchema";
+import { ComponentTypeEnum } from "@qwilt/common/backend/systemEvents/_types/systemEventsTypes";
 import {
   SystemUpdateChoiceType,
   UserFlowChoices,
-} from "src/workflowStatus/wizardDiffUpdate/wduSystemUpdateForm/userFlowChoices/UserFlowChoices";
+} from "./userFlowChoices/UserFlowChoices";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

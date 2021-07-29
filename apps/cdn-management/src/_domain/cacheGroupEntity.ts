@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
-import { DispersionCalculationMethodsEnum } from "common/backend/cdns/_types/deliveryUnitGroupApiType";
-import { NameWithId } from "common/domain/nameWithId";
-import mockData from "common/backend/_utils/mockData";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { DispersionCalculationMethodsEnum } from "@qwilt/common/backend/cdns/_types/deliveryUnitGroupApiType";
+import { NameWithId } from "@qwilt/common/domain/nameWithId";
+import mockData from "@qwilt/common/backend/_utils/mockData";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export type CacheGroupEntityType = "edge" | "mid" | "both";
 

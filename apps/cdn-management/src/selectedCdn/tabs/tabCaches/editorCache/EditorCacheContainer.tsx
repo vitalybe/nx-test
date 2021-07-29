@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { EditorCache } from "src/selectedCdn/tabs/tabCaches/editorCache/EditorCache";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { CacheGroupsProvider } from "src/_providers/cacheGroupsProvider";
-import { MonitorSegmentProvider } from "src/selectedCdn/tabs/tabMonitorSegments/_providers/MonitorSegmentProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { useSelectedCdn } from "../../../../_stores/selectedCdnStore";
+import { EditorCache } from "./EditorCache";
+import { CacheEntity } from "../../../../_domain/cacheEntity";
+import { CacheGroupsProvider } from "../../../../_providers/cacheGroupsProvider";
+import { MonitorSegmentProvider } from "../../tabMonitorSegments/_providers/MonitorSegmentProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

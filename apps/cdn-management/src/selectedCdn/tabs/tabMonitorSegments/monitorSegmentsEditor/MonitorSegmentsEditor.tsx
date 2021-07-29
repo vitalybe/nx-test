@@ -1,24 +1,24 @@
 import * as React from "react";
 import { ReactElement } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import {
   FormikContainer,
   Props as MonitorSegmentsEditorFormProps,
-} from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { FormikInput } from "common/components/configuration/formik/formikInput/FormikInput";
+} from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { FormikInput } from "@qwilt/common/components/configuration/formik/formikInput/FormikInput";
 import { ValidationError } from "yup";
-import { FormikAddRemoveItems } from "common/components/configuration/formik/formikAddRemoveItems/FormikAddRemoveItems";
-import { FormikSelect } from "common/components/configuration/formik/formikSelect/FormikSelect";
-import { MonitorSegmentEntity } from "src/selectedCdn/tabs/tabMonitorSegments/_domain/MonitorSegmentEntity";
+import { FormikAddRemoveItems } from "@qwilt/common/components/configuration/formik/formikAddRemoveItems/FormikAddRemoveItems";
+import { FormikSelect } from "@qwilt/common/components/configuration/formik/formikSelect/FormikSelect";
+import { MonitorSegmentEntity } from "../_domain/MonitorSegmentEntity";
 import {
   MonitorSegmentFormData,
   MonitorSegmentFormSchema,
-} from "src/selectedCdn/tabs/tabMonitorSegments/_domain/MonitorSegmentFormData";
-import { MonitorSegmentProvider } from "src/selectedCdn/tabs/tabMonitorSegments/_providers/MonitorSegmentProvider";
-import { CdnEntity } from "src/_domain/cdnEntity";
+} from "../_domain/MonitorSegmentFormData";
+import { MonitorSegmentProvider } from "../_providers/MonitorSegmentProvider";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

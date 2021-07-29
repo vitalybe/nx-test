@@ -1,18 +1,18 @@
 import * as React from "react";
 import styled from "styled-components";
-import { FormikContainer } from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { FormikInput } from "common/components/configuration/formik/formikInput/FormikInput";
+import { FormikContainer } from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { FormikInput } from "@qwilt/common/components/configuration/formik/formikInput/FormikInput";
 import { FormikState } from "formik";
-import { loggerCreator } from "common/utils/logger";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CdnEntity } from "../../../_domain/cdnEntity";
 import { useMutation } from "react-query";
-import { CdnsApi } from "common/backend/cdns";
-import { Notifier } from "common/utils/notifications/notifier";
-import { CdnsProvider } from "src/_providers/cdnsProvider";
-import { Colors } from "src/_styling/colors";
-import { InputRow } from "common/components/configuration/formik/inputRow/InputRow";
+import { CdnsApi } from "@qwilt/common/backend/cdns";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { CdnsProvider } from "../../../_providers/cdnsProvider";
+import { Colors } from "../../../_styling/colors";
+import { InputRow } from "@qwilt/common/components/configuration/formik/inputRow/InputRow";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

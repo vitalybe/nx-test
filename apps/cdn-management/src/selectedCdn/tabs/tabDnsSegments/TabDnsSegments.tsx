@@ -1,20 +1,20 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { DnsSegmentEntity } from "src/selectedCdn/tabs/tabDnsSegments/_domain/DnsSegmentEntity";
-import { ItemWithActions } from "common/components/configuration/itemWithActions/ItemWithActions";
-import { EditorDnsSegment } from "src/selectedCdn/tabs/tabDnsSegments/editorDnsSegment/EditorDnsSegment";
-import { openConfirmModal, openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { DnsSegmentProvider } from "src/selectedCdn/tabs/tabDnsSegments/_providers/DnsSegmentProvider";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { DnsSegmentEntity } from "./_domain/DnsSegmentEntity";
+import { ItemWithActions } from "@qwilt/common/components/configuration/itemWithActions/ItemWithActions";
+import { EditorDnsSegment } from "./editorDnsSegment/EditorDnsSegment";
+import { openConfirmModal, openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { DnsSegmentProvider } from "./_providers/DnsSegmentProvider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Icons } from "common/styling/icons";
-import { Utils } from "common/utils/utils";
-import { useUrlState } from "common/utils/hooks/useUrlState";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { DnsRouterIcon } from "common/components/configuration/configurationIcons";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
+import { Icons } from "@qwilt/common/styling/icons";
+import { Utils } from "@qwilt/common/utils/utils";
+import { useUrlState } from "@qwilt/common/utils/hooks/useUrlState";
+import { ProjectUrlParams } from "../../../_stores/projectUrlParams";
+import { DnsRouterIcon } from "@qwilt/common/components/configuration/configurationIcons";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
 
 //region [[ Styles ]]
 

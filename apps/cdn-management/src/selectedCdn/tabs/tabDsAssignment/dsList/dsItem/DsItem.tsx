@@ -1,13 +1,13 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
-import { ItemWithActions } from "common/components/configuration/itemWithActions/ItemWithActions";
-import { DeliveryServiceIcon } from "common/components/_projectSpecific/management/deliveryServiceIcon/DeliveryServiceIcon";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { MissingAgreemenentError } from "src/selectedCdn/tabs/tabDsAssignment/_parts/missingAgreemenentError/MissingAgreemenentError";
-import { ErrorWithTooltip } from "src/selectedCdn/tabs/tabDsAssignment/_parts/errorWithTooltip/ErrorWithTooltip";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ItemWithActions } from "@qwilt/common/components/configuration/itemWithActions/ItemWithActions";
+import { DeliveryServiceIcon } from "@qwilt/common/components/_projectSpecific/management/deliveryServiceIcon/DeliveryServiceIcon";
+import { DeliveryServiceEntity } from "../../../../../_domain/deliveryServiceEntity";
+import { MissingAgreemenentError } from "../../_parts/missingAgreemenentError/MissingAgreemenentError";
+import { ErrorWithTooltip } from "../../_parts/errorWithTooltip/ErrorWithTooltip";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Props ]]
 

@@ -1,9 +1,9 @@
 import * as _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
-import { UnknownObject } from "common/utils/typescriptUtils";
-import { Utils } from "common/utils/utils";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { UnknownObject } from "@qwilt/common/utils/typescriptUtils";
+import { Utils } from "@qwilt/common/utils/utils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface CollectedId {
   id: string;

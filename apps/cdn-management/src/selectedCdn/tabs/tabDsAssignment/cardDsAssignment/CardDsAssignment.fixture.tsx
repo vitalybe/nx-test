@@ -1,12 +1,12 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { CardDsAssignment, Props } from "src/selectedCdn/tabs/tabDsAssignment/cardDsAssignment/CardDsAssignment";
+import { CardDsAssignment, Props } from "./CardDsAssignment";
 
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { DsRuleEntity } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
-import { MissingAgreementLinkEntity } from "src/_domain/missingAgreementLinkEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { DeliveryServiceEntity } from "../../../../_domain/deliveryServiceEntity";
+import { DsRuleEntity } from "../_domain/dsRuleEntity";
+import { MissingAgreementLinkEntity } from "../../../../_domain/missingAgreementLinkEntity";
+import { SelectedCdnFixtureDecorator } from "../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

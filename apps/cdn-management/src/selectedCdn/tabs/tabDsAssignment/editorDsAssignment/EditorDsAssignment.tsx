@@ -1,25 +1,25 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
-import { FormikContainer } from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { DeliveryServiceEntity, Revision } from "src/_domain/deliveryServiceEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { FormikContainer } from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { DeliveryServiceEntity, Revision } from "../../../../_domain/deliveryServiceEntity";
 import {
   DsAssignmentsProvider,
   EMPTY_VALUE,
   UNASSIGNED_VALUE,
-} from "src/selectedCdn/tabs/tabDsAssignment/_providers/dsAssignmentsProvider";
-import { DropDownOption } from "common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
+} from "../_providers/dsAssignmentsProvider";
+import { DropDownOption } from "@qwilt/common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
 import _ from "lodash";
-import { Notifier } from "common/utils/notifications/notifier";
-import { DsRuleEntity } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
-import { EditorDsAssignmentFields } from "src/selectedCdn/tabs/tabDsAssignment/editorDsAssignment/editorDsAssignmentFields/EditorDsAssignmentFields";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { DsRuleEntity } from "../_domain/dsRuleEntity";
+import { EditorDsAssignmentFields } from "./editorDsAssignmentFields/EditorDsAssignmentFields";
 import {
   DsAssignmentFormData,
   DsAssignmentFormSchema,
-} from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsAssignmentFormData";
+} from "../_domain/dsAssignmentFormData";
 import { ValidationError } from "yup";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
+import { useSelectedCdn } from "../../../../_stores/selectedCdnStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

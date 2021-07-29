@@ -2,9 +2,9 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { MonitorsTab, Props } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/monitorsTab/MonitorsTab";
-import { MonitorEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/monitorsTab/_domain/monitorEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { MonitorsTab, Props } from "./MonitorsTab";
+import { MonitorEntity } from "./_domain/monitorEntity";
+import { SelectedCdnFixtureDecorator } from "../../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

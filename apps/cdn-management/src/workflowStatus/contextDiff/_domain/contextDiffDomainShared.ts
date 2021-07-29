@@ -1,4 +1,4 @@
-import { ContextDiffEntityTypeEnum } from "src/workflowStatus/contextDiff/_domain/contextEntityType";
+import { ContextDiffEntityTypeEnum } from "./contextEntityType";
 
 export interface ContextDiffBaseEntity {
   id: string;

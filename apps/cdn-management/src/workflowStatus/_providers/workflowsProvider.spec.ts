@@ -1,12 +1,12 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { WorkflowsProvider } from "src/workflowStatus/_providers/workflowsProvider";
-import { AjaxMetadata } from "common/utils/ajax";
-import { ProvisionFlowsApi } from "common/backend/provisionFlows";
+import { WorkflowsProvider } from "./workflowsProvider";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { ProvisionFlowsApi } from "@qwilt/common/backend/provisionFlows";
 import {
   ExecutionStatusApiResult,
   FlowStatusApiResult,
-} from "common/backend/provisionFlows/_types/provisionFlowsTypes";
-import { StepStateEnum } from "src/workflowStatus/_domain/stepEntity";
+} from "@qwilt/common/backend/provisionFlows/_types/provisionFlowsTypes";
+import { StepStateEnum } from "../_domain/stepEntity";
 
 function createProvisionFlow(data: {
   flowState: "inProgress" | "inProgressPending" | "active" | "nonActive";

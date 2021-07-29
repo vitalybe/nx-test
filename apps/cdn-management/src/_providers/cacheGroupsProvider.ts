@@ -1,14 +1,14 @@
-import { loggerCreator } from "common/utils/logger";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { Notifier } from "common/utils/notifications/notifier";
-import { Utils } from "common/utils/utils";
-import { CdnsApi } from "common/backend/cdns";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
-import { NameWithId } from "common/domain/nameWithId";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CacheGroupEntity } from "../_domain/cacheGroupEntity";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { Utils } from "@qwilt/common/utils/utils";
+import { CdnsApi } from "@qwilt/common/backend/cdns";
+import { DeploymentEntitiesProvider } from "@qwilt/common/providers/deploymentEntitiesProvider";
+import { NameWithId } from "@qwilt/common/domain/nameWithId";
 import _ from "lodash";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class CacheGroupsProvider {
   constructor() {}

@@ -1,8 +1,8 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import { useMemo } from "react";
-import { ContextDiffBaseEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffDomainShared";
+import { ContextDiffBaseEntity } from "../_domain/contextDiffDomainShared";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export function useModifiedItemsFilter<T extends ContextDiffBaseEntity>(items: T[], isShowUnmodified: boolean): T[] {
   return useMemo(() => {

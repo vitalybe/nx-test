@@ -1,7 +1,7 @@
 import * as _ from "lodash";
-import { ContextDiffBaseEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffDomainShared";
-import { ContextDiffEntityTypeEnum } from "src/workflowStatus/contextDiff/_domain/contextEntityType";
-import { ContextDiffPathUtils } from "src/workflowStatus/contextDiff/_utils/contextDiffPathUtils";
+import { ContextDiffBaseEntity } from "../_domain/contextDiffDomainShared";
+import { ContextDiffEntityTypeEnum } from "../_domain/contextEntityType";
+import { ContextDiffPathUtils } from "./contextDiffPathUtils";
 
 function createMockEntity(
   id: string,

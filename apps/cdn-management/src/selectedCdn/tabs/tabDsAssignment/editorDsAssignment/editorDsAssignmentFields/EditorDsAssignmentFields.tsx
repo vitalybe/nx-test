@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { FormikReactSelect } from "common/components/configuration/formik/formikReactSelect/FormikReactSelect";
-import { EMPTY_VALUE, UNASSIGNED_VALUE } from "src/selectedCdn/tabs/tabDsAssignment/_providers/dsAssignmentsProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { FormikReactSelect } from "@qwilt/common/components/configuration/formik/formikReactSelect/FormikReactSelect";
+import { EMPTY_VALUE, UNASSIGNED_VALUE } from "../../_providers/dsAssignmentsProvider";
 import { OptionProps } from "react-select/src/components/Option";
-import { DropDownOption } from "common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
+import { DropDownOption } from "@qwilt/common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
 import _ from "lodash";
-import { SelectOption } from "src/selectedCdn/tabs/tabDsAssignment/editorDsAssignment/selectOption/SelectOption";
+import { SelectOption } from "../selectOption/SelectOption";
 import { faTag } from "@fortawesome/free-solid-svg-icons/faTag";
 import { transparentize } from "polished";
-import { Colors } from "src/_styling/colors";
+import { Colors } from "../../../../../_styling/colors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

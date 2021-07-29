@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import { observer } from "mobx-react-lite";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { CardDsAssignment } from "src/selectedCdn/tabs/tabDsAssignment/cardDsAssignment/CardDsAssignment";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
-import { DsRuleEntity } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import { useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { DsList } from "src/selectedCdn/tabs/tabDsAssignment/dsList/DsList";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { DeliveryServiceEntity } from "../../../_domain/deliveryServiceEntity";
+import { CardDsAssignment } from "./cardDsAssignment/CardDsAssignment";
+import { ProjectUrlStore } from "../../../_stores/projectUrlStore";
+import { DsRuleEntity } from "./_domain/dsRuleEntity";
+import { ProjectUrlParams } from "../../../_stores/projectUrlParams";
+import { ProviderDataContainer } from "@qwilt/common/components/providerDataContainer/ProviderDataContainer";
+import { useProvider } from "@qwilt/common/components/providerDataContainer/_providers/useProvider";
+import { DsList } from "./dsList/DsList";
+import { CdnEntity } from "../../../_domain/cdnEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

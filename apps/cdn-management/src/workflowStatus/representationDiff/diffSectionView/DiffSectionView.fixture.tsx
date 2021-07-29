@@ -3,11 +3,11 @@
 import * as _ from "lodash";
 import * as React from "react";
 import styled from "styled-components";
-import { DiffSectionView, Props } from "src/workflowStatus/representationDiff/diffSectionView/DiffSectionView";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { DiffMetadataEntity } from "src/workflowStatus/representationDiff/_domain/diffMetadataEntity";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { JsonDiffEntity } from "src/workflowStatus/_domain/jsonDiffEntity";
+import { DiffSectionView, Props } from "./DiffSectionView";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { DiffMetadataEntity } from "../_domain/diffMetadataEntity";
+import { WorkflowEntity } from "../../_domain/workflowEntity";
+import { JsonDiffEntity } from "../../_domain/jsonDiffEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

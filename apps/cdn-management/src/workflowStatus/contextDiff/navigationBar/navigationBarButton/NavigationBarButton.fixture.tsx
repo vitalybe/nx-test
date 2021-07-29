@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   NavigationBarButton,
   Props,
-} from "src/workflowStatus/contextDiff/navigationBar/navigationBarButton/NavigationBarButton";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { ContextDiffEntityTypeEnum } from "src/workflowStatus/contextDiff/_domain/contextEntityType";
+} from "./NavigationBarButton";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { ContextDiffEntityTypeEnum } from "../../_domain/contextEntityType";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

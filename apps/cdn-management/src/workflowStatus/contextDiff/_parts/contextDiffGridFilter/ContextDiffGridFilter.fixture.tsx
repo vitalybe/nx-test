@@ -5,8 +5,8 @@ import styled from "styled-components";
 import {
   ContextDiffGridFilter,
   Props,
-} from "src/workflowStatus/contextDiff/_parts/contextDiffGridFilter/ContextDiffGridFilter";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./ContextDiffGridFilter";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

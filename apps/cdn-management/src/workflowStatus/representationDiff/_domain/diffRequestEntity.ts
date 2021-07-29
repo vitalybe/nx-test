@@ -1,8 +1,8 @@
-import { loggerCreator } from "common/utils/logger";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { WorkflowEntity } from "../../_domain/workflowEntity";
+import { ProvisionFlowsStepsEnum } from "@qwilt/common/backend/provisionFlows";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DiffRequestEntity {
   cdnId!: string;

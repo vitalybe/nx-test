@@ -1,13 +1,13 @@
-import { loggerCreator } from "common/utils/logger";
-import { GridReactRenderer, HeaderRendererProps, QwiltGridColumnDef } from "common/components/qwiltGrid/QwiltGrid";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { GridReactRenderer, HeaderRendererProps, QwiltGridColumnDef } from "@qwilt/common/components/qwiltGrid/QwiltGrid";
 import * as React from "react";
 import { ReactChild, RefObject, useCallback, useEffect } from "react";
 import styled from "styled-components";
-import { Checkbox } from "common/components/checkbox/Checkbox";
-import { CommonColors } from "common/styling/commonColors";
+import { Checkbox } from "@qwilt/common/components/checkbox/Checkbox";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import { GridApi } from "ag-grid-community";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const RowSelectionHeader = styled.div`
   display: flex;

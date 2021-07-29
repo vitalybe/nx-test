@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { NameWithId } from "common/domain/nameWithId";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { NameWithId } from "@qwilt/common/domain/nameWithId";
+import { DeploymentEntitiesProvider } from "@qwilt/common/providers/deploymentEntitiesProvider";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class NetworksProvider {
   private constructor() {}

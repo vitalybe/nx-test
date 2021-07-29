@@ -5,10 +5,10 @@ import styled from "styled-components";
 import {
   ContextDiffListOfItems,
   Props,
-} from "src/workflowStatus/contextDiff/contextDiffListOfItems/ContextDiffListOfItems";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { ContextDiffItemEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffItemEntity";
-import { JsonDiffEntity } from "src/workflowStatus/_domain/jsonDiffEntity";
+} from "./ContextDiffListOfItems";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { ContextDiffItemEntity } from "../_domain/contextDiffItemEntity";
+import { JsonDiffEntity } from "../../_domain/jsonDiffEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,11 +1,11 @@
 import * as React from "react";
-import { QwiltInput } from "common/components/configuration/qwiltForm/qwiltInput/QwiltInput";
+import { QwiltInput } from "@qwilt/common/components/configuration/qwiltForm/qwiltInput/QwiltInput";
 import styled from "styled-components";
-import { ServerEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/serverEntity";
+import { ServerEntity } from "../../_domain/server/serverEntity";
 import { FormikProps } from "formik";
-import { HealthProviderFormType } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/healthProvider/healthProviderFormType";
-import { FormikInput } from "common/components/configuration/formik/formikInput/FormikInput";
-import { FormikAddRemoveItems } from "common/components/configuration/formik/formikAddRemoveItems/FormikAddRemoveItems";
+import { HealthProviderFormType } from "../../_domain/healthProvider/healthProviderFormType";
+import { FormikInput } from "@qwilt/common/components/configuration/formik/formikInput/FormikInput";
+import { FormikAddRemoveItems } from "@qwilt/common/components/configuration/formik/formikAddRemoveItems/FormikAddRemoveItems";
 
 const HORIZONTAL_GAP = "1rem";
 

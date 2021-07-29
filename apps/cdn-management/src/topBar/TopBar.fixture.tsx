@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { Props, TopBar } from "src/topBar/TopBar";
+import { Props, TopBar } from "./TopBar";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { CdnEntity } from "../_domain/cdnEntity";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 

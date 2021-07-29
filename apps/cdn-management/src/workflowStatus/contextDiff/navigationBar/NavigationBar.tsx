@@ -1,16 +1,16 @@
 import * as React from "react";
 import { Fragment } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ContextDiffEntityTypeEnum } from "src/workflowStatus/contextDiff/_domain/contextEntityType";
-import { NavigationBarButton } from "src/workflowStatus/contextDiff/navigationBar/navigationBarButton/NavigationBarButton";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ContextDiffEntityTypeEnum } from "../_domain/contextEntityType";
+import { NavigationBarButton } from "./navigationBarButton/NavigationBarButton";
+import { Clickable } from "@qwilt/common/components/configuration/clickable/Clickable";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons/faCaretRight";
 import { faCaretLeft } from "@fortawesome/free-solid-svg-icons/faCaretLeft";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

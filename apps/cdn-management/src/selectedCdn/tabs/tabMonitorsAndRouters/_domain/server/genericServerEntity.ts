@@ -1,11 +1,11 @@
-import { ServerType } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { loggerCreator } from "common/utils/logger";
+import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import {
   ServerEntity,
   ServerEntityParams,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/serverEntity";
+} from "./serverEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface GenericServerEntityParams extends ServerEntityParams {
   type: ServerType;

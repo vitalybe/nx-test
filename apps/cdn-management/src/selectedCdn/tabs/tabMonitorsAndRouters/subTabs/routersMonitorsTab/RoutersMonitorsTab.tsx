@@ -1,31 +1,31 @@
 // NOTE: Delete file when tempFlag_serversTabMoreConfigurations removed
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import {
   GridReactRenderer,
   GridValueRenderer,
   QwiltGrid,
   QwiltGridColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
-import { ServerEntityStatus } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/oldServerEntity";
-import { CommonColors } from "common/styling/commonColors";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { ServerEntityStatus } from "../../_domain/server/oldServerEntity";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import Tippy from "@tippy.js/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { CommonStyles } from "common/styling/commonStyles";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { openConfirmModal } from "common/components/qwiltModal/QwiltModal";
-import { ProviderMetadata, useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { ServersProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_providers/oldServersProvider";
-import { ServerType } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { TrafficRoutersMonitorsApi } from "common/backend/trafficRoutersMonitors";
-import { ServerTypeIcon } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_parts/ServerTypeIcon";
-import { GenericServerEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/genericServerEntity";
-import { ServerApiUtil } from "src/selectedCdn/tabs/tabMonitorsAndRouters/util/serverApiUtil";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
+import { CommonStyles } from "@qwilt/common/styling/commonStyles";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { openConfirmModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { ProviderMetadata, useProvider } from "@qwilt/common/components/providerDataContainer/_providers/useProvider";
+import { ServersProvider } from "../../_providers/oldServersProvider";
+import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { TrafficRoutersMonitorsApi } from "@qwilt/common/backend/trafficRoutersMonitors";
+import { ServerTypeIcon } from "../../_parts/ServerTypeIcon";
+import { GenericServerEntity } from "../../_domain/server/genericServerEntity";
+import { ServerApiUtil } from "../../util/serverApiUtil";
+import { ProviderDataContainer } from "@qwilt/common/components/providerDataContainer/ProviderDataContainer";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,11 +1,11 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
-import { ContextDiffEntityTypeEnum } from "src/workflowStatus/contextDiff/_domain/contextEntityType";
-import { ContextDiffItemEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffItemEntity";
-import { ContextDiffBaseEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffDomainShared";
-import { JsonDiffEntity } from "src/workflowStatus/_domain/jsonDiffEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { ContextDiffEntityTypeEnum } from "./contextEntityType";
+import { ContextDiffItemEntity } from "./contextDiffItemEntity";
+import { ContextDiffBaseEntity } from "./contextDiffDomainShared";
+import { JsonDiffEntity } from "../../_domain/jsonDiffEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ContextDiffListEntity implements ContextDiffBaseEntity {
   id!: string;

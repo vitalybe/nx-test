@@ -1,14 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { FormikContainer } from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { FormikJson } from "common/components/configuration/formik/formikJson/FormikJson";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { TrafficRoutersMonitorsApi } from "common/backend/trafficRoutersMonitors";
-import { EditorConfigProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/editorConfig/_providers/editorConfigProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { FormikContainer } from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { FormikJson } from "@qwilt/common/components/configuration/formik/formikJson/FormikJson";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
+import { TrafficRoutersMonitorsApi } from "@qwilt/common/backend/trafficRoutersMonitors";
+import { EditorConfigProvider } from "./_providers/editorConfigProvider";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 
