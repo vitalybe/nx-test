@@ -149,6 +149,7 @@
     "eslint-plugin-react": "7.23.1",
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-unused-imports": "1.1.2",
+    "ignore-not-found-export-webpack-plugin": "1.0.2",
     "jest": "27.0.3",
     "jest-transform-stub": "2.0.0",
     "prettier": "^2.3.1",
