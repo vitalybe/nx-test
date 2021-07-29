@@ -1,14 +1,14 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { ReportsScreen } from "src/reportsScreen/ReportsScreen";
-import { UrlParameterTypeEnum } from "common/stores/urlParameterTypeEnum";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { QnDeploymentEntity } from "common/domain/qwiltDeployment/qnDeploymentEntity";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { useProvider } from "@qwilt/common/components/providerDataContainer/_providers/useProvider";
+import { ReportsScreen } from "./ReportsScreen";
+import { UrlParameterTypeEnum } from "@qwilt/common/stores/urlParameterTypeEnum";
+import { DeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/deploymentEntity";
+import { QnDeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/qnDeploymentEntity";
+import { DeploymentEntitiesProvider } from "@qwilt/common/providers/deploymentEntitiesProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

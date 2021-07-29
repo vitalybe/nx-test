@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CommonUrls } from "common/utils/commonUrls";
-import { UrlParameterTypeEnum } from "common/stores/urlParameterTypeEnum";
-import { QnDeploymentEntity } from "common/domain/qwiltDeployment/qnDeploymentEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CommonUrls } from "@qwilt/common/utils/commonUrls";
+import { UrlParameterTypeEnum } from "@qwilt/common/stores/urlParameterTypeEnum";
+import { QnDeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/qnDeploymentEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 
@@ -76,7 +76,7 @@ export interface Props {
 
 export const ReportItem = React.memo(({ ...props }: Props) => {
   const imageName = props.icon + ".png";
-  const pathToImagesContext = require.context("common/images/reports/", true);
+  const pathToImagesContext = require.context("@qwilt/common/images/reports/", true);
   const iconPath = pathToImagesContext(`./${props.icon}/${imageName}`);
 
   const queryParams = new URLSearchParams();
