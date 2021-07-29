@@ -28,6 +28,113 @@
         }
       }
     },
+    "delivery-agreements-management": {
+      "root": "apps/delivery-agreements-management",
+      "sourceRoot": "apps/delivery-agreements-management/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/delivery-agreements-management",
+            "index": "apps/delivery-agreements-management/src/index.html",
+            "main": "apps/delivery-agreements-management/src/index.tsx",
+            "polyfills": "apps/delivery-agreements-management/src/polyfills.ts",
+            "tsConfig": "apps/delivery-agreements-management/tsconfig.app.json",
+            "assets": [
+              "apps/delivery-agreements-management/src/favicon.ico",
+              "apps/delivery-agreements-management/src/assets"
+            ],
+            "styles": [],
+            "scripts": [],
+            "webpackConfig": "tools/config/webpack/webpackCustomized.config.js"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/delivery-agreements-management/src/environments/environment.ts",
+                  "with": "apps/delivery-agreements-management/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/web:dev-server",
+          "options": {
+            "buildTarget": "delivery-agreements-management:build",
+            "hmr": true,
+            "host": "dev-localhost.cqloud.com",
+            "port": 8001,
+            "ssl": true,
+            "sslCert": "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com.pem",
+            "sslKey": "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com-key.pem"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "delivery-agreements-management:build:production",
+              "hmr": false
+            },
+            "e2e": {
+              "port": 8005,
+              "ssl": false
+            }
+          },
+          "dependsOn": [
+            {
+              "target": "z-internal-validate",
+              "projects": "self"
+            }
+          ]
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/delivery-agreements-management/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/delivery-agreements-management"],
+          "options": {
+            "jestConfig": "apps/delivery-agreements-management/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "tsc": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "yarn run tsc -b apps/delivery-agreements-management/tsconfig.app.json --incremental"
+          }
+        },
+        "z-internal-validate": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "tools/scripts/validate/validate.sh"
+              }
+            ]
+          }
+        }
+      }
+    },
     "reports": {
       "root": "apps/reports",
       "sourceRoot": "apps/reports/src",
