@@ -7,5 +7,5 @@ module.exports = {
     "^.+\\.(css|less|svg|png)$": "jest-transform-stub",
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
-  coverageDirectory: "<%= offsetFromRoot %>coverage/libs/<%= name %>",
+  coverageDirectory: "<%= offsetFromRoot %>coverage/apps/<%= name %>",
 };

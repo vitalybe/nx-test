@@ -7,6 +7,7 @@ import {
   joinPathFragments,
   names,
   normalizePath,
+  offsetFromRoot,
   Tree,
   updateJson,
 } from "@nrwl/devkit";
@@ -109,6 +110,14 @@ async function generateApp(host: Tree, schema: Schema) {
   });
 }
 
+function addRootTemplateFiles(host: Tree, schema: Schema, appProjectRoot: string) {
+  generateFiles(host, joinPathFragments(__dirname, "./files/root"), appProjectRoot, {
+    tmpl: "",
+    name: schema.name,
+    offsetFromRoot: offsetFromRoot(appProjectRoot),
+  });
+}
+
 function addSrcTemplateFiles(host: Tree, options: Schema, appProjectRoot: string) {
   host.delete(joinPathFragments(appProjectRoot, "src", "app"));
 
@@ -128,6 +137,7 @@ export default async function (host: Tree, schema: Schema) {
   await generateApp(host, schema);
 
   // Add src files
+  addRootTemplateFiles(host, schema, appProjectRoot);
   addSrcTemplateFiles(host, schema, appProjectRoot);
   if (schema.addE2e) {
     await generateAddE2E(host, { appName: schema.name });
