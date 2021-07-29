@@ -1,4 +1,4 @@
-import { groupByToCollections } from "common/utils/groupByToCollecitons";
+import { groupByToCollections } from "./groupByToCollecitons";
 
 describe("groupByToCollecitons", function() {
   it("should group by string key", function() {

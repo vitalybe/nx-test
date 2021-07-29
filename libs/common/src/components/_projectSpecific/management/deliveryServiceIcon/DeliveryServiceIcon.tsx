@@ -1,10 +1,10 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
-import { Icons } from "common/styling/icons";
-import { ItemWithActionsIcon } from "common/components/configuration/itemWithActions/itemWithActionsIcon/ItemWithActionsIcon";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { loggerCreator } from "../../../../utils/logger";
+import { Icons } from "../../../../styling/icons";
+import { ItemWithActionsIcon } from "../../../configuration/itemWithActions/itemWithActionsIcon/ItemWithActionsIcon";
+import { TextTooltip } from "../../../textTooltip/TextTooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Props ]]
 

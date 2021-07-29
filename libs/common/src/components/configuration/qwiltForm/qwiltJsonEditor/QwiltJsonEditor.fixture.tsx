@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, QwiltJsonEditor } from "common/components/configuration/qwiltForm/qwiltJsonEditor/QwiltJsonEditor";
+import { Props, QwiltJsonEditor } from "./QwiltJsonEditor";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

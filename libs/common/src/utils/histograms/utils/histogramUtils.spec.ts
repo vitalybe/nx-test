@@ -1,4 +1,4 @@
-import { HistogramUtils } from "common/utils/histograms/utils/histogramUtils";
+import { HistogramUtils } from "./histogramUtils";
 
 describe("histogramUtils", function() {
   describe("groupAdjacentPoints", function() {

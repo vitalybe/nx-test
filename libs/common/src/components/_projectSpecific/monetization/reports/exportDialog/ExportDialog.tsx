@@ -1,20 +1,20 @@
 import * as React from "react";
 import { MutableRefObject, ReactChild, ReactElement, useEffect, useRef, useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Notifier } from "common/utils/notifications/notifier";
-import { AlertIcon, DuplicateIcon } from "common/components/qcComponents/_styled/styledIcons";
-import { AsyncQcButton } from "common/components/qcComponents/asyncQcButton/AsyncQcButton";
-import { QcButton } from "common/components/qcComponents/_styled/qcButton/QcButton";
-import { QcButtonThemes } from "common/components/qcComponents/_styled/qcButton/_themes";
+import { loggerCreator } from "../../../../../utils/logger";
+import { Notifier } from "../../../../../utils/notifications/notifier";
+import { AlertIcon, DuplicateIcon } from "../../../../qcComponents/_styled/styledIcons";
+import { AsyncQcButton } from "../../../../qcComponents/asyncQcButton/AsyncQcButton";
+import { QcButton } from "../../../../qcComponents/_styled/qcButton/QcButton";
+import { QcButtonThemes } from "../../../../qcComponents/_styled/qcButton/_themes";
 import html2canvas from "html2canvas";
 import jsPDF, { DocumentProperties } from "jspdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileExcel, faFilePdf } from "@fortawesome/free-regular-svg-icons";
-import { sleep } from "common/utils/sleep";
+import { sleep } from "../../../../../utils/sleep";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const GlobalExportStyle = createGlobalStyle`

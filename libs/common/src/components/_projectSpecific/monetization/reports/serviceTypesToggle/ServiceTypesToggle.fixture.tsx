@@ -3,7 +3,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { Props, ServiceTypesToggle } from "./ServiceTypesToggle";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 import { MetadataServiceTypeEnum } from "../../../../../backend/deliveryServices/_types/deliveryServiceMetadataTypes";
 
 const View = styled(FixtureDecorator)`

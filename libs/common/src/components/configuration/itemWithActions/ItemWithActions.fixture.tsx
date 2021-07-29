@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { ItemWithActions, Props } from "common/components/configuration/itemWithActions/ItemWithActions";
+import { ItemWithActions, Props } from "./ItemWithActions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
-import { mockUtils } from "common/utils/mockUtils";
-import { Icons } from "common/styling/icons";
-import { ItemWithActionsIcon } from "common/components/configuration/itemWithActions/itemWithActionsIcon/ItemWithActionsIcon";
+import { mockUtils } from "../../../utils/mockUtils";
+import { Icons } from "../../../styling/icons";
+import { ItemWithActionsIcon } from "./itemWithActionsIcon/ItemWithActionsIcon";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

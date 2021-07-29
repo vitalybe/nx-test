@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
+import { UnitKindEnum, unitsFormatter } from "../../../../utils/unitsFormatter";
 import { DateTime, Duration } from "luxon";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { HistogramPoint } from "common/utils/histograms/domain/histogramPoint";
-import { Shadows } from "common/styling/shadows";
+import { ChartSeriesData } from "../../../qwiltChart/_domain/chartSeriesData";
+import { HistogramPoint } from "../../../../utils/histograms/domain/histogramPoint";
+import { Shadows } from "../../../../styling/shadows";
 import { transparentize } from "polished";
-import { ColoredCircle } from "common/components/styled/ColoredCircle";
-import { TruncatedSpn } from "common/components/styled/TruncatedSpn";
-import { CssAnimations } from "common/styling/animations/cssAnimations";
-import { CommonColors } from "common/styling/commonColors";
+import { ColoredCircle } from "../../../styled/ColoredCircle";
+import { TruncatedSpn } from "../../../styled/TruncatedSpn";
+import { CssAnimations } from "../../../../styling/animations/cssAnimations";
+import { CommonColors } from "../../../../styling/commonColors";
 
 export const AVG_SERIES_NAME = "Average";
 export const INACTIVE_SERIES_COLOR = CommonColors.PATTENS_BLUE;

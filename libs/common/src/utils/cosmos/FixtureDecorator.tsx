@@ -1,7 +1,7 @@
 import React from "react";
-import { RootComponents } from "common/components/RootComponents";
+import { RootComponents } from "../../components/RootComponents";
 import { QueryClientProvider } from "react-query";
-import { GlobalStore } from "common/stores/globalStore";
+import { GlobalStore } from "../../stores/globalStore";
 
 const queryClient = GlobalStore.instance.queryClient;
 

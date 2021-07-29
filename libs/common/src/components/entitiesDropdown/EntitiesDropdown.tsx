@@ -5,15 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons/faChevronUp";
 import { lighten } from "polished";
-import { EntitiesSelectionMenu } from "common/components/entitiesDropdown/_parts/entitiesSelectionMenu/EntitiesSelectionMenu";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { Tooltip, TooltipControlType, useTooltip } from "common/components/Tooltip";
-import { collectSelectedLeavesRecursive } from "common/components/entitiesDropdown/_parts/entitiesSelectionMenu/_hooks/useSelectedItems";
-import { CommonStyles } from "common/styling/commonStyles";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { EntitiesSelectionMenu } from "./_parts/entitiesSelectionMenu/EntitiesSelectionMenu";
+import { CommonColors as Colors } from "../../styling/commonColors";
+import { DropdownEntity } from "./_domain/dropdownEntity";
+import { Tooltip, TooltipControlType, useTooltip } from "../Tooltip";
+import { collectSelectedLeavesRecursive } from "./_parts/entitiesSelectionMenu/_hooks/useSelectedItems";
+import { CommonStyles } from "../../styling/commonStyles";
+import { ConfigurationStyles } from "../configuration/_styles/configurationStyles";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons/faSpinner";
-import { DropdownSelectorRenderer } from "common/components/entitiesDropdown/_overrideableParts/dropdownSelectorRenderer/DropdownSelectorRenderer";
+import { DropdownSelectorRenderer } from "./_overrideableParts/dropdownSelectorRenderer/DropdownSelectorRenderer";
 import { TippyProps } from "@tippy.js/react";
 
 //region [[ Styles ]]

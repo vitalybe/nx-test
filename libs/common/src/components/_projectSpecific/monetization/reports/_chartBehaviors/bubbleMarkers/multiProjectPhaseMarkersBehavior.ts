@@ -1,20 +1,20 @@
-import { MonetizationProjectEntity } from "common/components/_projectSpecific/monetization/_domain/monetizationProjectEntity";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
+import { MonetizationProjectEntity } from "../../../_domain/monetizationProjectEntity";
+import { ChartSeriesArray } from "../../../../../qwiltChart/_domain/chartSeriesArray";
+import { ChartBehavior } from "../../../../../qwiltChart/_domain/chartBehavior";
 import { ElementObject } from "highcharts";
-import { ChartBubbles } from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/bubbleMarkers/_utils/chartBubbles";
-import { CommonColors } from "common/styling/commonColors";
+import { ChartBubbles } from "./_utils/chartBubbles";
+import { CommonColors } from "../../../../../../styling/commonColors";
 import tippy from "tippy.js";
 import { ReactElement } from "react";
 import ReactDOMServer from "react-dom/server";
 import {
   ProjectBubbleTooltip,
   Props as TooltipProps,
-} from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/bubbleMarkers/_parts/projectBubbleTooltip/ProjectBubbleTooltip";
+} from "./_parts/projectBubbleTooltip/ProjectBubbleTooltip";
 import {
   MonetizationProviderUtils,
   ProjectEventData,
-} from "common/components/_projectSpecific/monetization/_utils/monetizationProviderUtils/monetizationProviderUtils";
+} from "../../../_utils/monetizationProviderUtils/monetizationProviderUtils";
 import _ from "lodash";
 
 interface BehaviorOptions {

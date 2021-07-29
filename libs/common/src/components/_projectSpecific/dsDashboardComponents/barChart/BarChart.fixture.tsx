@@ -1,12 +1,12 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { BarChart, Props } from "common/components/_projectSpecific/dsDashboardComponents/barChart/BarChart";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
+import { BarChart, Props } from "./BarChart";
+import { UnitKindEnum } from "../../../../utils/unitsFormatter";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
-import { BarChartModel } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_types/barChartModel";
+import { BarChartModel } from "./_types/barChartModel";
 
 const View = styled(FixtureDecorator)`
   width: 600px;

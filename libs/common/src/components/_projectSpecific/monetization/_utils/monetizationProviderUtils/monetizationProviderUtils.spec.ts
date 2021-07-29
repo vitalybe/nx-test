@@ -1,8 +1,8 @@
-import { MonetizationApiSpMonthSampleType } from "common/backend/monetizationReports/_types/monetizationReportsTypes";
+import { MonetizationApiSpMonthSampleType } from "../../../../../backend/monetizationReports/_types/monetizationReportsTypes";
 import { DateTime } from "luxon";
-import { MonetizationProviderUtils } from "common/components/_projectSpecific/monetization/_utils/monetizationProviderUtils/monetizationProviderUtils";
-import { QwiltPieChartPart } from "common/components/qwiltPieChart/_types";
-import { MonetizationColors } from "common/components/_projectSpecific/monetization/_utils/monetizationColors";
+import { MonetizationProviderUtils } from "./monetizationProviderUtils";
+import { QwiltPieChartPart } from "../../../../qwiltPieChart/_types";
+import { MonetizationColors } from "../monetizationColors";
 
 describe("MonetizationProviderUtils", function () {
   it("should fill empty data points for monthly graphs", function () {

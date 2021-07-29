@@ -1,9 +1,9 @@
-import { loggerCreator } from "common/utils/logger";
-import { EntityTypeEnum } from "common/backend/qnDeployment/_types/entitiesApiType";
-import { NameWithId } from "common/domain/nameWithId";
-import { DeploymentEntityWithChildren } from "common/domain/qwiltDeployment/deploymentEntityWithChildren";
+import { loggerCreator } from "../../../../utils/logger";
+import { EntityTypeEnum } from "../../../../backend/qnDeployment/_types/entitiesApiType";
+import { NameWithId } from "../../../../domain/nameWithId";
+import { DeploymentEntityWithChildren } from "../../../../domain/qwiltDeployment/deploymentEntityWithChildren";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SystemUpdateFormEntity {
   networksHierarchy!: DeploymentEntityWithChildren[];

@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { BooleanToggle, Props } from "common/components/booleanToggle/BooleanToggle";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { BooleanToggle, Props } from "./BooleanToggle";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

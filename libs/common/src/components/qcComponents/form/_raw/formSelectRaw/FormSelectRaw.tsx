@@ -1,13 +1,13 @@
 import * as React from "react";
 import { ReactNode, ReactText, useEffect, useState } from "react";
 import { Select } from "antd";
-import { FormInputContainer } from "common/components/qcComponents/form/_parts/formInputContainer/FormInputContainer";
+import { FormInputContainer } from "../../_parts/formInputContainer/FormInputContainer";
 import styled from "styled-components";
-import { ErrorIndicationIconAbsolute } from "common/components/qcComponents/form/_parts/inputErrorIndication/InputErrorIndication";
+import { ErrorIndicationIconAbsolute } from "../../_parts/inputErrorIndication/InputErrorIndication";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons/faChevronUp";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../../styling/commonColors";
 import "antd/dist/antd.css";
 
 const { Option } = Select;

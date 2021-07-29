@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
-const errorIcon = require("common/components/qcComponents/_media/error-small.svg");
+const errorIcon = require("../_media/error-small.svg");
 
 const ErrorIndicationImg = styled.img`
   z-index: 99;

@@ -1,16 +1,16 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquare } from "@fortawesome/free-solid-svg-icons";
-import { CommonStyles } from "common/styling/commonStyles";
+import { CommonStyles } from "../../../styling/commonStyles";
 import { DateTime } from "luxon";
-import { openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { RecordFinishedDialog } from "common/components/supportRecording/recordFinishedDialog/RecordFinishedDialog";
-import { RecordingStyles } from "common/components/supportRecording/_styles/recordingStyles";
+import { openQwiltModal } from "../../qwiltModal/QwiltModal";
+import { RecordFinishedDialog } from "../recordFinishedDialog/RecordFinishedDialog";
+import { RecordingStyles } from "../_styles/recordingStyles";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const SIZE_SMALL = "16px";
 const SIZE_BIG = "40px";

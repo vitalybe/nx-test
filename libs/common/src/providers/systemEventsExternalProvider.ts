@@ -1,18 +1,18 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { SystemEventsExternalApi } from "common/backend/systemEvents";
+import { loggerCreator } from "../utils/logger";
+import { AjaxMetadata } from "../utils/ajax";
+import { SystemEventsExternalApi } from "../backend/systemEvents";
 import {
   SystemEventApiType,
   SystemEventsExternalSearchParams,
   SystemUpdateExternalApiType,
-} from "common/backend/systemEvents/_types/systemEventsTypes";
+} from "../backend/systemEvents/_types/systemEventsTypes";
 import { DateTime } from "luxon";
-import { SystemUpdateExternalEntity } from "common/domain/systemEventsExternal/systemUpdateExternalEntity";
-import { SystemEventExternalEntity } from "common/domain/systemEventsExternal/systemEventExternalEntity";
+import { SystemUpdateExternalEntity } from "../domain/systemEventsExternal/systemUpdateExternalEntity";
+import { SystemEventExternalEntity } from "../domain/systemEventsExternal/systemEventExternalEntity";
 import _, { Dictionary } from "lodash";
-import { Utils } from "common/utils/utils";
+import { Utils } from "../utils/utils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SystemEventsExternalProvider {
   private constructor() {}

@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { FormikContainer } from "../../../configuration/formik/formikContainer/FormikContainer";
 import { ApiOverrideSchema, ApiOverrideSchemaType } from "./_domain/overrideSchema";
 import { FormikInput } from "../../../configuration/formik/formikInput/FormikInput";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { API_OVERRIDE_PREFIX } from "common/urlParams/commonUrlParams";
+import { UrlStore } from "../../../../stores/urlStore/urlStore";
+import { API_OVERRIDE_PREFIX } from "../../../../urlParams/commonUrlParams";
 import { ValidationError } from "yup";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

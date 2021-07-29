@@ -1,11 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { ElementObject } from "highcharts";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { mockUtils } from "common/utils/mockUtils";
-import { MeasuredPeakLayer } from "common/components/qwiltChart/_behaviors/measuredPeakBehavior/MeasuredPeakLayer";
-import { ApiDetailedSeriesStat } from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
+import { ChartSeriesArray } from "../../_domain/chartSeriesArray";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { mockUtils } from "../../../../utils/mockUtils";
+import { MeasuredPeakLayer } from "./MeasuredPeakLayer";
+import { ApiDetailedSeriesStat } from "../../../../backend/mediaAnalytics/mediaAnalyticsTypes";
 
 export class MeasuredPeakBehavior implements ChartBehavior {
   constructor(private peakData: ApiDetailedSeriesStat) {}

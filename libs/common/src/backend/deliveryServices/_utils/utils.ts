@@ -1,4 +1,4 @@
-import { DeliveryServicesApiType } from "common/backend/deliveryServices/_types/deliveryServicesTypes";
+import { DeliveryServicesApiType } from "../_types/deliveryServicesTypes";
 
 export class DeliveryServicesUtils {
   static lastId = 0;

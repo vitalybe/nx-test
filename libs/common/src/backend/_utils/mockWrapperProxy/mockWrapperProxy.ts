@@ -1,12 +1,12 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { MockNetworkRequestEntity } from "common/backend/_utils/mockWrapperProxy/mockNetworkRequestEntity";
-import { loggerCreator } from "common/utils/logger";
+import { MockNetworkRequestEntity } from "./mockNetworkRequestEntity";
+import { loggerCreator } from "../../../utils/logger";
 import * as _ from "lodash";
-import { getQcServicesWindow } from "common/utils/qcServicesWindow";
+import { getQcServicesWindow } from "../../../utils/qcServicesWindow";
 import { Mutex } from "await-semaphore";
 
 //noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const mockedNetworkRequests = [] as MockNetworkRequestEntity[];
 const mockedNetworkResponses = [] as MockNetworkRequestEntity[];

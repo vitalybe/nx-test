@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { NotificationEntity } from "common/utils/notifications/_domain/notificationEntity";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { loggerCreator } from "../../../logger";
+import { NotificationEntity } from "../../_domain/notificationEntity";
+import { Clickable } from "../../../../components/configuration/clickable/Clickable";
 import { faCopy, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NotificationItem } from "common/utils/notifications/notificationsContainer/notificationsList/notificationItem/NotificationItem";
-import { Button } from "common/components/configuration/button/Button";
-import { CommonColors } from "common/styling/commonColors";
+import { NotificationItem } from "./notificationItem/NotificationItem";
+import { Button } from "../../../../components/configuration/button/Button";
+import { CommonColors } from "../../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

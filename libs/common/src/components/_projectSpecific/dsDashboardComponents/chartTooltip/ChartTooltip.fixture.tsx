@@ -1,15 +1,15 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
+import { ChartSeriesData } from "../../../qwiltChart/_domain/chartSeriesData";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
-import { Shadows } from "common/styling/shadows";
+import { Shadows } from "../../../../styling/shadows";
 import {
   ChartTooltip,
   Props,
-} from "common/components/_projectSpecific/dsDashboardComponents/chartTooltip/ChartTooltip";
+} from "./ChartTooltip";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

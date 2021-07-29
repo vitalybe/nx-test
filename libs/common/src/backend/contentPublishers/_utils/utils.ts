@@ -1,4 +1,4 @@
-import { ContentPublisherApiType } from "common/backend/contentPublishers/_types/contentPublishersTypes";
+import { ContentPublisherApiType } from "../_types/contentPublishersTypes";
 
 export class ContentPublisherUtils {
   static lastId = 0;

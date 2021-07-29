@@ -1,15 +1,15 @@
 import * as React from "react";
 import { FocusEventHandler, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CommonUrls, QueryParam } from "common/utils/commonUrls";
-import { combineUrl } from "common/utils/combineUrl";
-import { RouteMetadata } from "common/stores/_models/routeMetadata";
-import { SideBarStyles } from "common/components/sideBar/_styles/sideBarStyles";
-import { SidebarButton } from "common/components/sideBar/sidebarButton/SidebarButton";
-import { Utils } from "common/utils/utils";
+import { loggerCreator } from "../../../utils/logger";
+import { CommonUrls, QueryParam } from "../../../utils/commonUrls";
+import { combineUrl } from "../../../utils/combineUrl";
+import { RouteMetadata } from "../../../stores/_models/routeMetadata";
+import { SideBarStyles } from "../_styles/sideBarStyles";
+import { SidebarButton } from "../sidebarButton/SidebarButton";
+import { Utils } from "../../../utils/utils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

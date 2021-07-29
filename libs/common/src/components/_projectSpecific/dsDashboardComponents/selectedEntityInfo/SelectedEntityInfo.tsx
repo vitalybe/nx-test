@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { HierarchyUtils } from "common/utils/hierarchyUtils";
-import { CommonDsEntity } from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
+import { CommonColors as Colors } from "../../../../styling/commonColors";
+import { HierarchyUtils } from "../../../../utils/hierarchyUtils";
+import { CommonDsEntity } from "../_domain/commonDsEntity";
 
-const drilldownIcon = require("common/images/dsDashboardImages/drill-down-chart.svg");
-const closeIcon = require("common/images/dsDashboardImages/close-card-large-16-px.svg");
+const drilldownIcon = require("../../../../images/dsDashboardImages/drill-down-chart.svg");
+const closeIcon = require("../../../../images/dsDashboardImages/close-card-large-16-px.svg");
 
 //region [[ Styles ]]
 

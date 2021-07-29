@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { Duration } from "luxon";
-import { CommonStyles } from "common/styling/commonStyles";
+import { CommonStyles } from "../../../styling/commonStyles";
 import { transparentize } from "polished";
-import { CommonColors } from "common/styling/commonColors";
-import { CalendarStyles } from "common/components/calendar/_calendarStyles";
+import { CommonColors } from "../../../styling/commonColors";
+import { CalendarStyles } from "../_calendarStyles";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

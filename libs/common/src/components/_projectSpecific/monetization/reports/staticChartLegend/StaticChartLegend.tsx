@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { ColoredCircle } from "common/components/styled/ColoredCircle";
-import { CommonColors } from "common/styling/commonColors";
+import { ColoredCircle } from "../../../../styled/ColoredCircle";
+import { CommonColors } from "../../../../../styling/commonColors";
 
 // noinspection JSUnusedLocalSymbols
 

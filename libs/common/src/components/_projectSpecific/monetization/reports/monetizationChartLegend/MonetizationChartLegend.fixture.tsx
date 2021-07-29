@@ -5,8 +5,8 @@ import styled from "styled-components";
 import {
   MonetizationChartLegend,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/monetizationChartLegend/MonetizationChartLegend";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./MonetizationChartLegend";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 import { DateTime } from "luxon";
 
 const View = styled(FixtureDecorator)`

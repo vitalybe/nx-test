@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
+import { DropdownEntity } from "../../../_domain/dropdownEntity";
 import _ from "lodash";
-import { HierarchyUtils, SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { HierarchyUtils, SelectionModeEnum } from "../../../../../utils/hierarchyUtils";
 
 export interface SelectedItemsData {
   // all modified root items

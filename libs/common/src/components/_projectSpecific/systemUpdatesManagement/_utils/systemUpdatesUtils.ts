@@ -1,11 +1,11 @@
 import * as _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
-import { ComponentTypeEnum } from "common/backend/systemEvents/_types/systemEventsTypes";
-import { DeploymentEntityWithChildren } from "common/domain/qwiltDeployment/deploymentEntityWithChildren";
-import { EntityTypeEnum } from "common/backend/qnDeployment/_types/entitiesApiType";
-import { HierarchyUtils } from "common/utils/hierarchyUtils";
+import { loggerCreator } from "../../../../utils/logger";
+import { ComponentTypeEnum } from "../../../../backend/systemEvents/_types/systemEventsTypes";
+import { DeploymentEntityWithChildren } from "../../../../domain/qwiltDeployment/deploymentEntityWithChildren";
+import { EntityTypeEnum } from "../../../../backend/qnDeployment/_types/entitiesApiType";
+import { HierarchyUtils } from "../../../../utils/hierarchyUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SystemUpdatesUtils {
   static getComponentDisplayName(component: ComponentTypeEnum): string {

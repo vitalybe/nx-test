@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { FormikJson } from "common/components/configuration/formik/formikJson/FormikJson";
+import { FormikJson } from "./FormikJson";
 import { Formik, FormikProps } from "formik";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { CommonColors } from "common/styling/commonColors";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { CommonColors } from "../../../../styling/commonColors";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

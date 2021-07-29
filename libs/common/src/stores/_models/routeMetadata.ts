@@ -1,6 +1,6 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../utils/logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface ChildRouteMetadata {
   // use group label when a route is a single visible child of a group.

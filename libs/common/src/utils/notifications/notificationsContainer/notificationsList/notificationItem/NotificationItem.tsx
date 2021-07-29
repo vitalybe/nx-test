@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { NotificationEntity } from "common/utils/notifications/_domain/notificationEntity";
-import { NotificationIcon } from "common/utils/notifications/notificationsContainer/notificationIcon/NotificationIcon";
-import { CommonColors } from "common/styling/commonColors";
+import { loggerCreator } from "../../../../logger";
+import { NotificationEntity } from "../../../_domain/notificationEntity";
+import { NotificationIcon } from "../../notificationIcon/NotificationIcon";
+import { CommonColors } from "../../../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

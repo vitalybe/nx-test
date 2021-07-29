@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { PercentBar, Props } from "common/components/percentBar/PercentBar";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
+import { PercentBar, Props } from "./PercentBar";
+import { CommonColors as Colors } from "../../styling/commonColors";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
+import { UnitKindEnum } from "../../utils/unitsFormatter";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

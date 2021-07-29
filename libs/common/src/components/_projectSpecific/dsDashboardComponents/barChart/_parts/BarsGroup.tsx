@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { BarChartDataItem } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_types/_types";
-import { Tooltip } from "common/components/Tooltip";
-import { BarChartTooltip } from "common/components/_projectSpecific/dsDashboardComponents/barChart/barChartTooltip/BarChartTooltip";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { Bar, BarView } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_parts/Bar";
-import { ImageWithFallback } from "common/components/imageWithFallback/ImageWithFallback";
-import { TruncatedSpn } from "common/components/styled/TruncatedSpn";
+import { BarChartDataItem } from "../_types/_types";
+import { Tooltip } from "../../../../Tooltip";
+import { BarChartTooltip } from "../barChartTooltip/BarChartTooltip";
+import { UnitKindEnum, unitsFormatter } from "../../../../../utils/unitsFormatter";
+import { Bar, BarView } from "./Bar";
+import { ImageWithFallback } from "../../../../imageWithFallback/ImageWithFallback";
+import { TruncatedSpn } from "../../../../styled/TruncatedSpn";
 
 //region [[ Styles ]]
 export const BARS_GROUP_MAX_WIDTH = 150;

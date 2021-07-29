@@ -1,11 +1,11 @@
 import * as React from "react";
 import { forwardRef, ReactText } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { FormInputContainer } from "common/components/qcComponents/form/_parts/formInputContainer/FormInputContainer";
-import { CommonColors } from "common/styling/commonColors";
+import { loggerCreator } from "../../../../../utils/logger";
+import { FormInputContainer } from "../../_parts/formInputContainer/FormInputContainer";
+import { CommonColors } from "../../../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

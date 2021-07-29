@@ -1,7 +1,7 @@
 import React from "react";
 import { fireEvent, render } from "@testing-library/react";
-import { DropdownListItem } from "common/components/entitiesDropdown/_parts/entitiesSelectionMenu/_parts/dropdownListItem/DropdownListItem";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
+import { DropdownListItem } from "./DropdownListItem";
+import { DropdownEntity } from "../../../../_domain/dropdownEntity";
 
 describe("DropdownListItem component", function () {
   it("should display title", async () => {

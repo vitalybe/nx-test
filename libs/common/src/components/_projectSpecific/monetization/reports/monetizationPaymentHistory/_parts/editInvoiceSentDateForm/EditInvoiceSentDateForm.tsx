@@ -1,22 +1,22 @@
 import * as React from "react";
 import { useEffect } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../../../utils/logger";
 import { DateTime } from "luxon";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { useQcForm } from "common/components/qcComponents/form/_parts/QcFormProvider";
-import { useMountedRef } from "common/utils/hooks/useMountedRef";
-import { createTypedDatePicker } from "common/components/qcComponents/form/formDatePicker/FormDatePicker";
-import { QcForm } from "common/components/qcComponents/form/qcForm/QcForm";
-import { Notifier } from "common/utils/notifications/notifier";
+import { useEventCallback } from "../../../../../../../utils/hooks/useEventCallback";
+import { useQcForm } from "../../../../../../qcComponents/form/_parts/QcFormProvider";
+import { useMountedRef } from "../../../../../../../utils/hooks/useMountedRef";
+import { createTypedDatePicker } from "../../../../../../qcComponents/form/formDatePicker/FormDatePicker";
+import { QcForm } from "../../../../../../qcComponents/form/qcForm/QcForm";
+import { Notifier } from "../../../../../../../utils/notifications/notifier";
 import { editInvoiceSentDateFormSchema, EditInvoiceSentDateFormType } from "./editInvoiceSentDateFormSchema";
 import _ from "lodash";
-import { SelectOption } from "common/components/qcComponents/form/_raw/formSelectRaw/FormSelectRaw";
-import { createTypedSelect } from "common/components/qcComponents/form/formSelect/FormSelect";
-import { MonetizationPaymentEntity } from "common/components/_projectSpecific/monetization/_domain/monetizationPaymentEntity";
+import { SelectOption } from "../../../../../../qcComponents/form/_raw/formSelectRaw/FormSelectRaw";
+import { createTypedSelect } from "../../../../../../qcComponents/form/formSelect/FormSelect";
+import { MonetizationPaymentEntity } from "../../../../_domain/monetizationPaymentEntity";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,10 +1,10 @@
 import { loggerCreator } from "../utils/logger";
 import { AjaxMetadata } from "../utils/ajax";
-import { OrgEntity } from "common/domain/orgEntity";
+import { OrgEntity } from "../domain/orgEntity";
 import { AuthDataApi } from "../backend/authData";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+import { PrepareQueryResult } from "../utils/reactQueryUtils/prepareQueryResult";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export type OrgMap = Record<string, OrgEntity>;
 

@@ -1,6 +1,6 @@
-import { UrlStore } from "common/stores/urlStore/urlStore";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
 import { getOriginForApi } from "../../backendOrigin";
-import { Params } from "common/urlParams/cfgDashboardUrlParams";
+import { Params } from "../../../urlParams/cfgDashboardUrlParams";
 
 const API_NAME = "csm";
 

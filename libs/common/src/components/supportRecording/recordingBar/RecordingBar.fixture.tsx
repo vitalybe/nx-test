@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { Props, RecordingBar } from "common/components/supportRecording/recordingBar/RecordingBar";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Props, RecordingBar } from "./RecordingBar";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

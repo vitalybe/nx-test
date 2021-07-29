@@ -1,9 +1,9 @@
-import { mockUtils } from "common/utils/mockUtils";
-import { CommonColors } from "common/styling/commonColors";
+import { mockUtils } from "../../../utils/mockUtils";
+import { CommonColors } from "../../../styling/commonColors";
 import { ReactNode } from "react";
-import { Props as RowItemProps, RowItem } from "common/components/entitiesDropdown/_common/rowItem/RowItem";
-import { OnlyData } from "common/utils/typescriptUtils";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { Props as RowItemProps, RowItem } from "../_common/rowItem/RowItem";
+import { OnlyData } from "../../../utils/typescriptUtils";
+import { SelectionModeEnum } from "../../../utils/hierarchyUtils";
 
 export class DropdownEntity {
   id!: string;
@@ -46,9 +46,9 @@ export class DropdownEntity {
   ) {
     const colors = [undefined, undefined, undefined, CommonColors.DODGER_BLUE];
     const icons: Array<string | undefined> = [
-      require("common/images/isps/icons/rgnAmerica_cnUsa_nwkCox.png"),
-      require("common/images/isps/icons/rgnAmerica_cnUsa_nwkCharterUber.png"),
-      require("common/images/isps/icons/rgnAmerica_cnUsa_nwkKernValley.png"),
+      require("../../../images/isps/icons/rgnAmerica_cnUsa_nwkCox.png"),
+      require("../../../images/isps/icons/rgnAmerica_cnUsa_nwkCharterUber.png"),
+      require("../../../images/isps/icons/rgnAmerica_cnUsa_nwkKernValley.png"),
       undefined,
     ];
 

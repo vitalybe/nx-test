@@ -4,9 +4,9 @@ import styled from "styled-components";
 import {
   NotificationIcon,
   Props,
-} from "common/utils/notifications/notificationsContainer/notificationIcon/NotificationIcon";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { NotificationLevel } from "common/utils/notifications/_domain/notificationEntity";
+} from "./NotificationIcon";
+import FixtureDecorator from "../../../cosmos/FixtureDecorator";
+import { NotificationLevel } from "../../_domain/notificationEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

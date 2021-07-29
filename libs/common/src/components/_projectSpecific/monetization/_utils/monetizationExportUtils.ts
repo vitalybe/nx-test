@@ -1,9 +1,9 @@
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
+import { HistogramSeries } from "../../../../utils/histograms/domain/histogramSeries";
 import { DateTime } from "luxon";
-import { FeatureSectionColumnsData } from "common/components/_projectSpecific/monetization/_utils/export/_types";
-import { loggerCreator } from "common/utils/logger";
+import { FeatureSectionColumnsData } from "./export/_types";
+import { loggerCreator } from "../../../../utils/logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const MONTHLY_TIME_FORMAT = "MMM yyyy";
 

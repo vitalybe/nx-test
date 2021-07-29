@@ -1,11 +1,11 @@
 import { DateTime } from "luxon";
-import { ComponentTypeEnum, SystemUpdateType } from "common/backend/systemEvents/_types/systemEventsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { OnlyData } from "common/utils/typescriptUtils";
-import { mockUtils } from "common/utils/mockUtils";
-import { SystemEventExternalEntity } from "common/domain/systemEventsExternal/systemEventExternalEntity";
+import { ComponentTypeEnum, SystemUpdateType } from "../../backend/systemEvents/_types/systemEventsTypes";
+import { loggerCreator } from "../../utils/logger";
+import { OnlyData } from "../../utils/typescriptUtils";
+import { mockUtils } from "../../utils/mockUtils";
+import { SystemEventExternalEntity } from "./systemEventExternalEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SystemUpdateExternalEntity {
   id!: string;

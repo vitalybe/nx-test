@@ -1,31 +1,31 @@
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ComponentTypeEnum } from "common/backend/systemEvents/_types/systemEventsTypes";
-import { Checkbox } from "common/components/checkbox/Checkbox";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { ComponentTypeEnum } from "../../../../backend/systemEvents/_types/systemEventsTypes";
+import { Checkbox } from "../../../checkbox/Checkbox";
+import { Clickable } from "../../../configuration/clickable/Clickable";
 import {
   FormikContainer,
   OverrideButtons,
-} from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { FormikDateTimePicker } from "common/components/configuration/formik/formikDateTimePicker/FormikDateTimePicker";
-import { FormikInput } from "common/components/configuration/formik/formikInput/FormikInput";
-import { FormikSelect } from "common/components/configuration/formik/formikSelect/FormikSelect";
-import { FormikToggle } from "common/components/configuration/formik/formikToggle/FormikToggle";
-import { QwiltFormGroup } from "common/components/configuration/qwiltForm/qwiltFormGroup/QwiltFormGroup";
-import { QwiltToggle } from "common/components/configuration/qwiltForm/qwiltToggle/QwiltToggle";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { AffectedEntitiesDropdown } from "common/components/_projectSpecific/systemUpdatesManagement/systemUpdatesForm/affectedEntitiesDropdown/AffectedEntitiesDropdown";
-import { DsDropdown } from "common/components/_projectSpecific/systemUpdatesManagement/systemUpdatesForm/dsDropdown/DsDropdown";
-import { SystemUpdateInternalEntity } from "common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateInternalEntity";
+} from "../../../configuration/formik/formikContainer/FormikContainer";
+import { FormikDateTimePicker } from "../../../configuration/formik/formikDateTimePicker/FormikDateTimePicker";
+import { FormikInput } from "../../../configuration/formik/formikInput/FormikInput";
+import { FormikSelect } from "../../../configuration/formik/formikSelect/FormikSelect";
+import { FormikToggle } from "../../../configuration/formik/formikToggle/FormikToggle";
+import { QwiltFormGroup } from "../../../configuration/qwiltForm/qwiltFormGroup/QwiltFormGroup";
+import { QwiltToggle } from "../../../configuration/qwiltForm/qwiltToggle/QwiltToggle";
+import { ConfigurationStyles } from "../../../configuration/_styles/configurationStyles";
+import { AffectedEntitiesDropdown } from "./affectedEntitiesDropdown/AffectedEntitiesDropdown";
+import { DsDropdown } from "./dsDropdown/DsDropdown";
+import { SystemUpdateInternalEntity } from "../_domain/systemUpdateInternalEntity";
 import {
   SystemUpdateKind,
   SystemUpdateSchema,
   SystemUpdateSchemaType,
-} from "common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateSchema";
-import { SystemUpdatesUtils } from "common/components/_projectSpecific/systemUpdatesManagement/_utils/systemUpdatesUtils";
-import { loggerCreator } from "common/utils/logger";
-import { enumValues } from "common/utils/typescriptUtils";
+} from "../_domain/systemUpdateSchema";
+import { SystemUpdatesUtils } from "../_utils/systemUpdatesUtils";
+import { loggerCreator } from "../../../../utils/logger";
+import { enumValues } from "../../../../utils/typescriptUtils";
 import { Field, FieldProps, FormikProps } from "formik";
 import { DateTime } from "luxon";
 import * as React from "react";
@@ -33,9 +33,9 @@ import { ReactNode, useState } from "react";
 import styled, { css } from "styled-components";
 import { ValidationError } from "yup";
 import { SystemUpdateFormEntity } from "../_domain/systemUpdateFormEntity";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

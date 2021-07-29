@@ -1,13 +1,13 @@
-import { loggerCreator } from "common/utils/logger";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { HealthReporterApiMock } from "common/backend/healthReporter";
-import { HealthReporterApiResult } from "common/backend/healthReporter/_types/healthReporterTypes";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
+import { loggerCreator } from "../../../utils/logger";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { HealthReporterApiMock } from "../../healthReporter";
+import { HealthReporterApiResult } from "../_types/healthReporterTypes";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const ENDPOINT = "/publish/OperStatus";
 
 export class HealthReporterApi {

@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { ItemsCard, Props } from "common/components/configuration/itemsCard/ItemsCard";
-import { mockUtils } from "common/utils/mockUtils";
+import { ItemsCard, Props } from "./ItemsCard";
+import { mockUtils } from "../../../utils/mockUtils";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -3,7 +3,7 @@
 // validation.txt is used as a file by which we know whether access is granted
 
 // @ts-ignore
-import { CommonUrls } from "common/utils/commonUrls";
+import { CommonUrls } from "../commonUrls";
 
 const validationText = require("./validation.txt");
 

@@ -3,7 +3,7 @@ import { ChangeEvent } from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
 import { action } from "mobx";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
+import { devToolsStore } from "./_stores/devToolsStore";
 
 const DevToolsView = styled.div`
   ${(props: { isMockMode: boolean }) => {

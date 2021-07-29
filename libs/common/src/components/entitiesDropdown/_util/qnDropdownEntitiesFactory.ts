@@ -1,16 +1,16 @@
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { EntityTypeEnum } from "common/backend/qnDeployment/_types/entitiesApiType";
-import { Utils } from "common/utils/utils";
-import { HierarchyUtils, SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { loggerCreator } from "common/utils/logger";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { RowItem } from "common/components/entitiesDropdown/_common/rowItem/RowItem";
-import { DeploymentEntityWithChildren } from "common/domain/qwiltDeployment/deploymentEntityWithChildren";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { Icons } from "common/styling/icons";
+import { DropdownEntity } from "../_domain/dropdownEntity";
+import { EntityTypeEnum } from "../../../backend/qnDeployment/_types/entitiesApiType";
+import { Utils } from "../../../utils/utils";
+import { HierarchyUtils, SelectionModeEnum } from "../../../utils/hierarchyUtils";
+import { loggerCreator } from "../../../utils/logger";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { RowItem } from "../_common/rowItem/RowItem";
+import { DeploymentEntityWithChildren } from "../../../domain/qwiltDeployment/deploymentEntityWithChildren";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
+import { DeploymentEntity } from "../../../domain/qwiltDeployment/deploymentEntity";
+import { Icons } from "../../../styling/icons";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class QnDropdownEntitiesFactory {
   static fromQnDeploymentHierarchy(

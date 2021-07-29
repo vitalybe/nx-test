@@ -1,4 +1,4 @@
-import { UnitKindEnum } from "common/utils/unitsFormatter";
+import { UnitKindEnum } from "../../../../../utils/unitsFormatter";
 
 export interface BarChartDataItem {
   [key: string]: unknown;

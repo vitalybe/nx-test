@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../utils/logger";
 import { QcButton } from "../../../_styled/qcButton/QcButton";
 import { AsyncQcButton } from "../../../asyncQcButton/AsyncQcButton";
 import { QcButtonTheme } from "../../../_styled/qcButton/_themes";
 import { useFormContext } from "react-hook-form";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const AsyncSubmitButton = styled(AsyncQcButton)`

@@ -1,10 +1,10 @@
-import { TimeConfig } from "common/utils/timeConfig";
-import { AnalyticsParams, ApiHistogramType } from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
-import { AjaxMetadata } from "common/utils/ajax";
-import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
-import { HistogramPoint } from "common/utils/histograms/domain/histogramPoint";
-import { MediaAnalyticsApi } from "common/backend/mediaAnalytics";
+import { TimeConfig } from "../../timeConfig";
+import { AnalyticsParams, ApiHistogramType } from "../../../backend/mediaAnalytics/mediaAnalyticsTypes";
+import { AjaxMetadata } from "../../ajax";
+import { MediaAnalyticsSeries } from "../../../backend/mediaAnalytics/mediaAnalyticsSeries";
+import { HistogramSeries } from "../domain/histogramSeries";
+import { HistogramPoint } from "../domain/histogramPoint";
+import { MediaAnalyticsApi } from "../../../backend/mediaAnalytics";
 
 type MediaAnalyticsSeriesByKey = { [key: string]: MediaAnalyticsSeries };
 type HistogramSeriesByKey<T> = { [key in keyof T]: HistogramSeries };

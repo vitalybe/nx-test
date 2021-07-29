@@ -1,9 +1,9 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
-import { CommonColors } from "common/styling/commonColors";
+import { loggerCreator } from "../../../../utils/logger";
+import { CommonColors } from "../../../../styling/commonColors";
 import styled from "styled-components";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

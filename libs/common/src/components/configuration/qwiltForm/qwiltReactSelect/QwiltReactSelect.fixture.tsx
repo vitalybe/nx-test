@@ -2,10 +2,10 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { Props, QwiltReactSelect } from "common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
+import { Props, QwiltReactSelect } from "./QwiltReactSelect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 import { faDog } from "@fortawesome/free-solid-svg-icons/faDog";
 

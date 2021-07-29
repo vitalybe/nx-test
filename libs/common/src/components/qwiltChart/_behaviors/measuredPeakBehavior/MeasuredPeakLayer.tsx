@@ -1,11 +1,11 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { OverallPeak } from "common/components/qwiltChart/_behaviors/overallPeakBehavior/overallPeak/OverallPeak";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { ApiDetailedSeriesStat } from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
-import { HistogramPointType } from "common/utils/histograms/utils/histogramUtils";
+import { OverallPeak } from "../overallPeakBehavior/overallPeak/OverallPeak";
+import { ChartSeriesArray } from "../../_domain/chartSeriesArray";
+import { ApiDetailedSeriesStat } from "../../../../backend/mediaAnalytics/mediaAnalyticsTypes";
+import { UnitKindEnum } from "../../../../utils/unitsFormatter";
+import { HistogramPointType } from "../../../../utils/histograms/utils/histogramUtils";
 
 //region [[ Styles ]]
 

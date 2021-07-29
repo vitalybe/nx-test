@@ -3,12 +3,12 @@
 import * as React from "react";
 import styled from "styled-components";
 import { OverallRevenueChartPrint, Props } from "./OverallRevenueChartPrint";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { MonetizationProjectEntity } from "common/components/_projectSpecific/monetization/_domain/monetizationProjectEntity";
-import { HistogramPoint } from "common/utils/histograms/domain/histogramPoint";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
-import { createYearsOfMockProjectData } from "common/components/_projectSpecific/monetization/_utils/monetizationMockUtils";
+import FixtureDecorator from "../../../../../../utils/cosmos/FixtureDecorator";
+import { MonetizationProjectEntity } from "../../../_domain/monetizationProjectEntity";
+import { HistogramPoint } from "../../../../../../utils/histograms/domain/histogramPoint";
+import { ChartSeriesData } from "../../../../../qwiltChart/_domain/chartSeriesData";
+import { HistogramSeries } from "../../../../../../utils/histograms/domain/histogramSeries";
+import { createYearsOfMockProjectData } from "../../../_utils/monetizationMockUtils";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,13 +1,13 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { SystemUpdateFormEntity } from "common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateFormEntity";
-import { DeliveryServicesApi } from "common/backend/deliveryServices";
-import { DeliveryServicesApiType } from "common/backend/deliveryServices/_types/deliveryServicesTypes";
-import { Notifier } from "common/utils/notifications/notifier";
-import { NameWithId } from "common/domain/nameWithId";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
+import { loggerCreator } from "../../../../utils/logger";
+import { AjaxMetadata } from "../../../../utils/ajax";
+import { SystemUpdateFormEntity } from "../_domain/systemUpdateFormEntity";
+import { DeliveryServicesApi } from "../../../../backend/deliveryServices";
+import { DeliveryServicesApiType } from "../../../../backend/deliveryServices/_types/deliveryServicesTypes";
+import { Notifier } from "../../../../utils/notifications/notifier";
+import { NameWithId } from "../../../../domain/nameWithId";
+import { DeploymentEntitiesProvider } from "../../../../providers/deploymentEntitiesProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SystemUpdateFormProvider {
   private constructor() {}

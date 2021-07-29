@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { VersionItem } from "common/components/experimentsToolbar/versionPicker/versionPickerDropdown/versionItem/VersionItem";
-import { VersionEntity } from "common/components/experimentsToolbar/_domain/versionEntity";
+import { loggerCreator } from "../../../../utils/logger";
+import { VersionItem } from "./versionItem/VersionItem";
+import { VersionEntity } from "../../_domain/versionEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 
