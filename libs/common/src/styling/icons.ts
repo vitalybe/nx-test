@@ -53,15 +53,6 @@ interface DeploymentIconOptions {
   hideIspIcon?: boolean;
 }
 
-// NOTE: Helper to ignore "require.context" in Jest
-// @ts-ignore
-if (typeof require.context === "undefined") {
-  // @ts-ignore
-  require.context = () => {
-    return () => {};
-  };
-}
-
 // @ts-ignore
 const entitiesIconsCtx = require.context("../images/deploymentEntities");
 
