@@ -1,3 +1,3 @@
-import Highcharts = require("common/@qwiltTypes/highcharts/index");
+import Highcharts = require("../../index");
 
 export = Highcharts;

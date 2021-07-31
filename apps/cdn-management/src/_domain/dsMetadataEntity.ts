@@ -7,7 +7,7 @@ import { MetadataServiceTypeEnum } from "@qwilt/common/backend/deliveryServices/
 // noinspection JSUnusedLocalSymbols
 const moduleLogger = loggerCreator("__filename");
 
-export const defaultIcon = require("common/images/no-cp.svg");
+export const defaultIcon = require("@qwilt/common/images/no-cp.svg");
 
 interface DsMetadataEntityParams {
   id: string;

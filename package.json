@@ -77,6 +77,7 @@
     "json-stable-stringify": "^1.0.1",
     "jsondiffpatch": "^0.4.1",
     "jsoneditor": "^7.2.1",
+    "jsonlint": "https://github.com/josdejong/jsonlint",
     "jspdf": "^2.3.1",
     "lodash": "4.17.20",
     "logrocket": "^1.0.3",
