@@ -36,25 +36,6 @@ function nrwlConfig(config) {
     },
   });
 
-  // TODO(jack): support webpack 5
-  if (!isWebpack5 && config.mode === "development" && config["devServer"]?.hot) {
-    // add `react-refresh/babel` to babel loader plugin
-    const babelLoader = config.module.rules.find((rule) => rule.loader.toString().includes("babel-loader"));
-    if (babelLoader) {
-      babelLoader.options["plugins"] = [
-        ...(babelLoader.options["plugins"] || []),
-        [
-          require.resolve("react-refresh/babel"),
-          {
-            skipEnvCheck: true,
-          },
-        ],
-      ];
-    }
-    // add https://github.com/pmmmwh/react-refresh-webpack-plugin to webpack plugin
-    config.plugins.push(new ReactRefreshPlugin());
-  }
-
   // Remove ForkTsCheckerWebpackPlugin - It just slows us down during development
   config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== "ForkTsCheckerWebpackPlugin");
 
