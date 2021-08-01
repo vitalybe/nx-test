@@ -8,7 +8,7 @@
       }
     ]
   ],
-  "plugins": [],
+  "plugins": [["styled-components", { "pure": true, "ssr": true, "displayName": true }]],
   "env": {
     "test": {
       "plugins": ["transform-require-context"]
