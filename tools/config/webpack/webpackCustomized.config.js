@@ -55,7 +55,17 @@ function nrwlConfig(config) {
     config.plugins.push(new ReactRefreshPlugin());
   }
 
-  // ignore node related imports in node specific libraries (e.g. jsonlint)
+  config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== "ForkTsCheckerWebpackPlugin");
+
+  // NOTE: Used to list plugins
+  // console.log(
+  //   JSON.stringify(
+  //     config.plugins.map((p) => p.constructor.name),
+  //     null,
+  //     2
+  //   )
+  // );
+
   config.node = {
     dgram: "empty",
     fs: "empty",
