@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 import "../support/index";
-import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
 
 const CDN_ID = "9b2d89fe-7078-41e1-89c9-077f041ba480";
 const CDN_NAME = "cypress-cdn";
@@ -32,63 +31,110 @@ context("Monitors and Routers tab", () => {
     cy.visit(`http://localhost:8005/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}`);
 
     cy.getCypressCdn();
-
-    cy.mockRequest({
-      method: "GET",
-      url: `https://${PARTIAL_HOSTNAME}.cqloud.com/api/1/cdns/${CDN_NAME}/${PARTIAL_HOSTNAME}/servers`,
-      body: {
-        servers: [
-          {
-            ...COMMON_SERVER_MOCK,
-            type: ServerType.HEALTH_COLLECTOR,
-          },
-          {
-            ...COMMON_SERVER_MOCK,
-            type: ServerType.MONITOR,
-          },
-          {
-            ...COMMON_SERVER_MOCK,
-            type: ServerType.DNS_ROUTER,
-          },
-          {
-            ...COMMON_SERVER_MOCK,
-            type: ServerType.HTTP_ROUTER,
-          },
-        ],
-      },
-    });
     cy.mockFinished();
   });
 
   it("Monitors: Should update status to offline", () => {
-    cy.changeServerStateOffline("Monitor");
+    cy.get(`div[type="Monitor"]`).click();
+
+    const TESTED_ID = "e2e test";
+    cy.get(`.grid-rendered [role=row][row-index="0"] .cell-mounted [data-icon="edit"]`).click();
+    cy.get(`[class*="EditorContent"] input[name="Segment ID"]`).clear().type(TESTED_ID);
+    cy.get('[type="submit"]').click();
+
+    cy.validateRequest({
+      method: "PUT",
+      partialHostname: PARTIAL_HOSTNAME,
+      path: `/api/2/cdns/${CDN_NAME}/monitors/tc-dng1.cqloud.com`,
+      body: {
+        groupServerDsRemapConfigEnabled: true,
+        segmentId: TESTED_ID,
+        status: "online",
+      },
+    });
   });
 
   it("DNS Routers: Should update status to offline", () => {
-    cy.changeServerStateOffline("DNS Router");
+    cy.get(`div[type="DNS Router"]`).click();
+
+    const TESTED_ID = "e2e test";
+    cy.get(`.grid-rendered [role=row][row-index="0"] .cell-mounted [data-icon="edit"]`).click();
+    cy.get(`[class*="EditorContent"] input[name="DNS Routing Segment ID"]`).clear().type(TESTED_ID);
+    cy.get('[type="submit"]').click();
+
+    cy.validateRequest({
+      method: "PUT",
+      partialHostname: PARTIAL_HOSTNAME,
+      path: `/api/2/cdns/${CDN_NAME}/dns-routers/tc-dng1.cqloud.com`,
+      body: {
+        dnsRoutingSegmentId: TESTED_ID,
+        groupServerDsRemapConfigEnabled: true,
+        healthProviders: [
+          {
+            name: "health1",
+            priority: 1,
+          },
+          {
+            name: "health2",
+            priority: 2,
+          },
+        ],
+        status: "online",
+      },
+    });
   });
 
   it("HTTP Routers: Should update status to offline", () => {
-    cy.changeServerStateOffline("HTTP Router");
+    const TAB_TYPE = "HTTP Router";
+    const TESTED_ID = "e2e test";
+
+    cy.get(`div[type="${TAB_TYPE}"]`).click();
+
+    cy.get(`.grid-rendered [role=row][row-index="0"] .cell-mounted [data-icon="edit"]`).click();
+    cy.get(`[class*="EditorContent"] input[name="HTTP Router Group Name"]`).clear().type(TESTED_ID);
+    cy.get('[type="submit"]').click();
+
+    cy.validateRequest({
+      method: "PUT",
+      partialHostname: PARTIAL_HOSTNAME,
+      path: `/api/2/cdns/${CDN_NAME}/http-routers/tc-dng1.cqloud.com`,
+      body: {
+        httpRouterGroupName: TESTED_ID,
+        groupServerDsRemapConfigEnabled: true,
+        healthProviders: [
+          {
+            name: "health1",
+            priority: 1,
+          },
+          {
+            name: "health2",
+            priority: 2,
+          },
+        ],
+        status: "online",
+      },
+    });
   });
 
   it("Health Collectors: Should update status to offline", () => {
-    cy.changeServerStateOffline("Health Collector");
-  });
-});
+    const TAB_TYPE = "Health Collector";
+    const TESTED_ID = "e2e test";
 
-Cypress.Commands.add("changeServerStateOffline", (type) => {
-  cy.get(`div[type="${type}"]`).click();
+    cy.get(`div[type="${TAB_TYPE}"]`).click();
 
-  cy.get(".grid-rendered [role=row][row-index=0] .cell-mounted select").last().select("Offline");
-  cy.get('[type="submit"]').click();
+    cy.get(`.grid-rendered [role=row][row-index="0"] .cell-mounted [data-icon="edit"]`).click();
+    cy.get(`[class*="EditorContent"] input[name="Health Collector Region"]`).clear().type(TESTED_ID);
+    cy.get('[type="submit"]').click();
 
-  cy.validateRequest({
-    method: "PUT",
-    partialHostname: PARTIAL_HOSTNAME,
-    path: `/api/1/cdns/${CDN_NAME}/${PARTIAL_HOSTNAME}/servers/${COMMON_SERVER_MOCK.hostname}`,
-    body: {
-      status: "offline",
-    },
+    cy.validateRequest({
+      method: "PUT",
+      partialHostname: PARTIAL_HOSTNAME,
+      path: `/api/2/cdns/${CDN_NAME}/health-collectors/tc-dng1.cqloud.com`,
+      body: {
+        healthCollectorRegion: TESTED_ID,
+        groupServerDsRemapConfigEnabled: true,
+        status: "online",
+      },
+    });
   });
 });

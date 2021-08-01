@@ -1,8 +1,6 @@
 const webpack = require("webpack");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const IgnoreNotFoundExportPlugin = require("ignore-not-found-export-webpack-plugin");
-const createStyledComponentsTransformer = require("typescript-plugin-styled-components").default;
-const styledComponentsTransformer = createStyledComponentsTransformer();
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = (config, context) => {

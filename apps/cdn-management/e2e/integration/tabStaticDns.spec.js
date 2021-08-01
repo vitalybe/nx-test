@@ -11,11 +11,7 @@ const DNS_RECORD_ID = "64a25b0e-20a8-4f56-b38d-b9d9e0c3c975";
 context("Static DNS tab", () => {
   beforeEach(() => {
     cy.viewport(1300, 660);
-    cy.visit(
-      `http://localhost:${Cypress.env(
-        "APP_PORT"
-      )}/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}&selectedDs=${DS_ID}`
-    );
+    cy.visit(`http://localhost:8005/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}&selectedDs=${DS_ID}`);
 
     cy.getCypressCdn();
 
@@ -61,7 +57,7 @@ context("Static DNS tab", () => {
   it("Should create a new record", () => {
     cy.get("div").contains("Records").parent().find("span").contains("Add").parent().click();
 
-    cy.get('[class^="FormikContainerView"] select').select("A");
+    cy.get('[class*="FormikContainerView"] select').select("A");
     cy.get("input[name=Name]").type("test");
     cy.get("input[name=Value]").type("test");
     cy.get("input[name=TTL]").type("123");
@@ -87,7 +83,7 @@ context("Static DNS tab", () => {
   it("Should edit tester", () => {
     cy.get(`.grid-rendered [role=row][row-index="0"] .cell-mounted svg[data-icon="edit"]`).parent().click();
 
-    cy.get('[class^="FormikContainerView"] select').select("A");
+    cy.get('[class*="FormikContainerView"] select').select("A");
 
     cy.get('[type="submit"]').click();
 

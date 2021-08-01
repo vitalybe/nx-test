@@ -119,7 +119,7 @@ context("Cache Groups tab", () => {
     cy.mockFinished();
   });
 
-  it("should create a new dug", () => {
+  it.only("should create a new dug", () => {
     cy.validateRequest({
       method: "GET",
       partialHostname: "cdns",
@@ -128,9 +128,9 @@ context("Cache Groups tab", () => {
 
     cy.get("div").contains("Cache Groups").parent().find("span").contains("Add").parent().click();
 
-    cy.get('[class^="FormikContainerView"] label').contains("Network").parent().click();
+    cy.get('[class*="FormikContainerView"] label').contains("Network").parent().click();
 
-    cy.get('[class^="OptionContainer"]').contains("network_100").parent().click();
+    cy.get('[class*="OptionContainer"]').contains("network_100").parent().click();
 
     cy.get("input[name=Name]").type("form");
     cy.get('[type="submit"]').click();
