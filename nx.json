@@ -27,6 +27,9 @@
     ]
   },
   "projects": {
+    "cdn-management": {
+      "tags": []
+    },
     "common": {
       "tags": []
     }

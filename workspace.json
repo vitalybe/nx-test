@@ -1,6 +1,123 @@
 {
   "version": 2,
   "projects": {
+    "cdn-management": {
+      "root": "apps/cdn-management",
+      "sourceRoot": "apps/cdn-management/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/cdn-management",
+            "index": "apps/cdn-management/src/index.html",
+            "main": "apps/cdn-management/src/index.tsx",
+            "polyfills": "apps/cdn-management/src/polyfills.ts",
+            "tsConfig": "apps/cdn-management/tsconfig.app.json",
+            "assets": ["apps/cdn-management/src/favicon.ico", "apps/cdn-management/src/assets"],
+            "styles": [],
+            "scripts": [],
+            "webpackConfig": "tools/config/webpack/webpackCustomized.config.js"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/cdn-management/src/environments/environment.ts",
+                  "with": "apps/cdn-management/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/web:dev-server",
+          "options": {
+            "buildTarget": "cdn-management:build",
+            "hmr": true,
+            "host": "dev-localhost.cqloud.com",
+            "port": 8001,
+            "ssl": true,
+            "sslCert": "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com.pem",
+            "sslKey": "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com-key.pem"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "cdn-management:build:production",
+              "hmr": false
+            },
+            "e2e": {
+              "port": 8005,
+              "ssl": false
+            }
+          },
+          "dependsOn": [
+            {
+              "target": "z-internal-validate",
+              "projects": "self"
+            }
+          ]
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/cdn-management/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/cdn-management"],
+          "options": {
+            "jestConfig": "apps/cdn-management/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "tsc": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "yarn run tsc -b apps/cdn-management/tsconfig.app.json --incremental"
+          }
+        },
+        "z-internal-validate": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "tools/scripts/validate/validate.sh"
+              }
+            ]
+          }
+        },
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/cdn-management/e2e/cypress.json",
+            "tsConfig": "apps/cdn-management/e2e/tsconfig.e2e.json",
+            "devServerTarget": "cdn-management:serve:e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "cdn-management:serve:production"
+            }
+          }
+        }
+      }
+    },
     "common": {
       "root": "libs/common",
       "sourceRoot": "libs/common/src",
@@ -47,5 +164,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "cdn-management"
 }
