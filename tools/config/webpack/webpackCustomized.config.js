@@ -55,5 +55,16 @@ function nrwlConfig(config) {
     config.plugins.push(new ReactRefreshPlugin());
   }
 
+  // ignore node related imports in node specific libraries (e.g. jsonlint)
+  config.node = {
+    dgram: "empty",
+    fs: "empty",
+    net: "empty",
+    tls: "empty",
+    child_process: "empty",
+    __filename: true,
+    __dirname: true,
+  };
+
   return config;
 }
