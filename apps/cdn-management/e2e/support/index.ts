@@ -1,4 +1,4 @@
-import "../../common/cypress/commonSupport";
+import "@qwilt/common/cypress/commonSupport";
 
 Cypress.Commands.add("triggerItemWithActions", (edit, itemCardLabel, itemWithActionLabel) => {
   cy.get("div")
@@ -11,7 +11,7 @@ Cypress.Commands.add("triggerItemWithActions", (edit, itemCardLabel, itemWithAct
     .parent()
     .siblings()
     .find("div")
-    .then(options => {
+    .then((options) => {
       if (edit) {
         options[0].click();
       } else {

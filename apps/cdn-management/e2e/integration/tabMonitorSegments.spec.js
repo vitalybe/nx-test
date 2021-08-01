@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 import "../support/index";
-import { ServerType } from "../../common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
 
 const CDN_ID = "9b2d89fe-7078-41e1-89c9-077f041ba480";
 const CDN_NAME = "cypress-cdn";
@@ -28,7 +28,7 @@ const COMMON_SERVER_MOCK = {
 context("Monitoring segments tab", () => {
   beforeEach(() => {
     cy.viewport(1300, 660);
-    cy.visit(`http://localhost:${Cypress.env("APP_PORT")}/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}`);
+    cy.visit(`http://localhost:8005/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}`);
 
     cy.getCypressCdn();
 

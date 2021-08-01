@@ -14,7 +14,7 @@ const CDNS_URL = "https://cdns.cqloud.com/api/1.0/cdns/";
 context("Caches tab", () => {
   beforeEach(() => {
     cy.viewport(1300, 660);
-    cy.visit(`http://localhost:${Cypress.env("APP_PORT")}/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}`);
+    cy.visit(`http://localhost:8005/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}`);
 
     cy.getCypressCdn();
 
@@ -43,8 +43,7 @@ context("Caches tab", () => {
 
     cy.mockRequest({
       method: "GET",
-      url:
-        "https://qn-deployment.cqloud.com/api/2.1/entities/?types=network&entities_list_format=details&contained_in_list_format=none&contains_list_format=none",
+      url: "https://qn-deployment.cqloud.com/api/2.1/entities/?types=network&entities_list_format=details&contained_in_list_format=none&contains_list_format=none",
       body: {
         entities: [
           {
@@ -130,60 +129,51 @@ context("Caches tab", () => {
       body: {
         caches: [
           {
-            "systemId": "testQn007",
-            "networkId": 0,
-            "interfaces": [
-
-            ]
+            systemId: "testQn007",
+            networkId: 0,
+            interfaces: [],
           },
           {
-            "systemId": "testQn008",
-            "networkId": 0,
-            "interfaces": [
-
-            ]
+            systemId: "testQn008",
+            networkId: 0,
+            interfaces: [],
           },
           {
-            "systemId": "59CWH42",
-            "networkId": 100,
-            "interfaces": [
-
-            ]
+            systemId: "59CWH42",
+            networkId: 100,
+            interfaces: [],
           },
           {
-            "systemId": "3T0DF5J",
-            "networkId": 100,
-            "interfaces": [
-
-            ]
+            systemId: "3T0DF5J",
+            networkId: 100,
+            interfaces: [],
           },
           {
-            "systemId": "4683ZX1",
-            "networkId": 100,
-            "interfaces": [
+            systemId: "4683ZX1",
+            networkId: 100,
+            interfaces: [
               {
-                "interfaceName": "yuval-test-interface",
-                "ipv4Address": "10.0.0.3",
-                "ipv6Address": "2001:abc::1",
+                interfaceName: "yuval-test-interface",
+                ipv4Address: "10.0.0.3",
+                ipv6Address: "2001:abc::1",
               },
               {
-                "interfaceName": "TenGigE0/1",
-                "ipv4Address": "10.0.0.3",
-                "ipv6Address": null,
+                interfaceName: "TenGigE0/1",
+                ipv4Address: "10.0.0.3",
+                ipv6Address: null,
               },
               {
-                "interfaceName": "yuval-test-interface2",
-                "ipv4Address": "10.0.0.3",
-                "ipv6Address": null,
-              }
-            ]
+                interfaceName: "yuval-test-interface2",
+                ipv4Address: "10.0.0.3",
+                ipv6Address: null,
+              },
+            ],
           },
           {
-            "systemId": "53GXG62",
-            "networkId": 100,
-            "interfaces": [
-            ]
-          }
+            systemId: "53GXG62",
+            networkId: 100,
+            interfaces: [],
+          },
         ],
       },
     });
@@ -193,9 +183,7 @@ context("Caches tab", () => {
   it("should edit test-du", () => {
     cy.validateRequest({ method: "GET", partialHostname: "cdns", path: `/api/1.0/cdns/${CDN_ID}/delivery-units` });
 
-    cy.get(`.grid-rendered [role=row][row-index="2"] .cell-mounted svg[data-icon="edit"]`)
-      .parent()
-      .click();
+    cy.get(`.grid-rendered [role=row][row-index="2"] .cell-mounted svg[data-icon="edit"]`).parent().click();
 
     cy.get('[type="submit"]').click();
 
@@ -229,9 +217,7 @@ context("Caches tab", () => {
   it("should delete test-du", () => {
     cy.validateRequest({ method: "GET", partialHostname: "cdns", path: `/api/1.0/cdns/${CDN_ID}/delivery-units` });
 
-    cy.get(`.grid-rendered [role=row][row-index="2"] .cell-mounted svg[data-icon="trash-alt"]`)
-      .parent()
-      .click();
+    cy.get(`.grid-rendered [role=row][row-index="2"] .cell-mounted svg[data-icon="trash-alt"]`).parent().click();
 
     cy.get('[type="submit"]').click();
 

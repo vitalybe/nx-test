@@ -13,7 +13,7 @@ const CDNS_URL = "https://cdns.cqloud.com/api/1.0/cdns/";
 context("Cache Groups tab", () => {
   beforeEach(() => {
     cy.viewport(1300, 660);
-    cy.visit(`http://localhost:${Cypress.env("APP_PORT")}/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}`);
+    cy.visit(`http://localhost:8005/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}`);
 
     cy.getCypressCdn();
 
@@ -42,8 +42,7 @@ context("Cache Groups tab", () => {
 
     cy.mockRequest({
       method: "GET",
-      url:
-        "https://qn-deployment.cqloud.com/api/2.1/entities/?types=network&entities_list_format=details&contained_in_list_format=none&contains_list_format=none",
+      url: "https://qn-deployment.cqloud.com/api/2.1/entities/?types=network&entities_list_format=details&contained_in_list_format=none&contains_list_format=none",
       body: {
         entities: [
           {

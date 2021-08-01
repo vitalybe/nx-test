@@ -9,7 +9,7 @@ const DNS_ROUTING_SEGMENT_ID = "tester";
 context("DNS Routing Segments tab", () => {
   beforeEach(() => {
     cy.viewport(1300, 660);
-    cy.visit(`http://localhost:${Cypress.env("APP_PORT")}/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}`);
+    cy.visit(`http://localhost:8005/${TAB}?mock&smockSleepTime=0&selectedCdnId=${CDN_ID}`);
 
     cy.getCypressCdn();
 
@@ -31,13 +31,7 @@ context("DNS Routing Segments tab", () => {
   it("Should create a dns routing segment", () => {
     cy.validateRequest({ method: "GET", partialHostname: "cdns", path: `/api/1/cdns/${CDN_ID}/${TAB}` });
 
-    cy.get("div")
-      .contains("Segments")
-      .parent()
-      .find("span")
-      .contains("Add")
-      .parent()
-      .click();
+    cy.get("div").contains("Segments").parent().find("span").contains("Add").parent().click();
 
     cy.get("input[name=ID]").type("test");
     cy.get('[type="submit"]').click();
@@ -58,13 +52,7 @@ context("DNS Routing Segments tab", () => {
 
     //cy.triggerItemWithActions(true, "Segments", DNS_ROUTING_SEGMENT_ID);
 
-    cy.get("div")
-      .contains("Segments")
-      .parent()
-      .parent()
-      .find(`svg[data-icon="edit"]`)
-      .parent()
-      .click();
+    cy.get("div").contains("Segments").parent().parent().find(`svg[data-icon="edit"]`).parent().click();
 
     cy.get(`input[name="Sub Domain"]`).type(" edited");
     cy.get('[type="submit"]').click();
@@ -83,13 +71,7 @@ context("DNS Routing Segments tab", () => {
   it("Should delete tester", () => {
     cy.validateRequest({ method: "GET", partialHostname: "cdns", path: `/api/1/cdns/${CDN_ID}/${TAB}` });
 
-    cy.get("div")
-      .contains("Segments")
-      .parent()
-      .parent()
-      .find(`svg[data-icon="trash-alt"]`)
-      .parent()
-      .click();
+    cy.get("div").contains("Segments").parent().parent().find(`svg[data-icon="trash-alt"]`).parent().click();
 
     cy.get('[type="submit"]').click();
 
