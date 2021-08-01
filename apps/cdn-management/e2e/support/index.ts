@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import "@qwilt/common/cypress/commonSupport";
 
 Cypress.Commands.add("triggerItemWithActions", (edit, itemCardLabel, itemWithActionLabel) => {
@@ -21,6 +22,7 @@ Cypress.Commands.add("triggerItemWithActions", (edit, itemCardLabel, itemWithAct
 });
 
 Cypress.Commands.add("getCypressCdn", () => {
+  // @ts-ignore
   cy.mockRequest({
     method: "GET",
     url: "https://cdns.cqloud.com/api/1.0/cdns/",

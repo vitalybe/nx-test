@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+/* eslint-disable no-undef */
 
 import "../support/index";
 
