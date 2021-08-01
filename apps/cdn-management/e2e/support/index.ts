@@ -1,17 +1,44 @@
-// ***********************************************************
-// This example support/index.js is processed and
-// loaded automatically before your test files.
-//
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
-//
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/configuration
-// ***********************************************************
+import "../../common/cypress/commonSupport";
 
-// Import commands.js using ES2015 syntax:
-import "./commands";
+Cypress.Commands.add("triggerItemWithActions", (edit, itemCardLabel, itemWithActionLabel) => {
+  cy.get("div")
+    .contains(itemCardLabel)
+    .parent()
+    .parent()
+    .find("span")
+    .contains(itemWithActionLabel)
+    .parent()
+    .parent()
+    .siblings()
+    .find("div")
+    .then(options => {
+      if (edit) {
+        options[0].click();
+      } else {
+        options[1].click();
+      }
+    });
+});
+
+Cypress.Commands.add("getCypressCdn", () => {
+  cy.mockRequest({
+    method: "GET",
+    url: "https://cdns.cqloud.com/api/1.0/cdns/",
+    body: {
+      cdns: [
+        {
+          cdnId: "9b2d89fe-7078-41e1-89c9-077f041ba480",
+          name: "cypress-cdn",
+          description: "",
+          httpRootHostedZone: "cypress-cdn.cqloud.com",
+          httpCdnSubDomain: "",
+          httpSubDomain: "",
+          dnsRootHostedZone: "cypress-cdn.cqloud.com",
+          dnsCdnSubDomain: "",
+          dnsSubDomain: "",
+          ctrSubDomain: null,
+        },
+      ],
+    },
+  });
+});
