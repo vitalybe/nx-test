@@ -43,6 +43,10 @@ export async function generateAddE2E(host: Tree, schema: { appName: string }) {
         devServerTarget: `${schema.appName}:serve:e2e`,
       },
       configurations: {
+        open: {
+          headless: false,
+          watch: true,
+        },
         production: {
           devServerTarget: `${schema.appName}:serve:production`,
         },
