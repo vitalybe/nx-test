@@ -1,6 +1,8 @@
 const webpack = require("webpack");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const IgnoreNotFoundExportPlugin = require("ignore-not-found-export-webpack-plugin");
+const createStyledComponentsTransformer = require("typescript-plugin-styled-components").default;
+const styledComponentsTransformer = createStyledComponentsTransformer();
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = (config, context) => {
@@ -57,15 +59,6 @@ function nrwlConfig(config) {
 
   config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== "ForkTsCheckerWebpackPlugin");
 
-  // NOTE: Used to list plugins
-  // console.log(
-  //   JSON.stringify(
-  //     config.plugins.map((p) => p.constructor.name),
-  //     null,
-  //     2
-  //   )
-  // );
-
   config.node = {
     dgram: "empty",
     fs: "empty",
@@ -85,5 +78,20 @@ function nrwlConfig(config) {
     public: "dev-localhost.cqloud.com:443",
     disableHostCheck: true,
   };
+
+  // NOTE: Used to list plugins
+  // console.log(
+  //   JSON.stringify(
+  //     config.plugins.map((p) => p.constructor.name),
+  //     null,
+  //     2
+  //   )
+  // );
+  // process.exit(0)
+
+  // NOTE: Used to preview config
+  // console.log(JSON.stringify(config, null, 2));
+  // process.exit(0);
+
   return config;
 }
