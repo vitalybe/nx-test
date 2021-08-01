@@ -58,15 +58,6 @@ function nrwlConfig(config) {
   // Remove ForkTsCheckerWebpackPlugin - It just slows us down during development
   config.plugins = config.plugins.filter((plugin) => plugin.constructor.name !== "ForkTsCheckerWebpackPlugin");
 
-  // NOTE: Used to list plugins
-  // console.log(
-  //   JSON.stringify(
-  //     config.plugins.map((p) => p.constructor.name),
-  //     null,
-  //     2
-  //   )
-  // );
-
   config.node = {
     dgram: "empty",
     fs: "empty",
@@ -76,6 +67,22 @@ function nrwlConfig(config) {
     __filename: true,
     __dirname: true,
   };
+
+  // Needed since we do port forwarding of 8001 to 443
+  config["devServer"]["sockPort"] = 443;
+
+  // NOTE: Used to list plugin names
+  // console.log(
+  //   JSON.stringify(
+  //     config.plugins.map((p) => p.constructor.name),
+  //     null,
+  //     2
+  //   )
+  // );
+
+  // NOTE: Debugging - Output final config
+  // console.log(JSON.stringify(config, null, 2));
+  // process.exit(0);
 
   return config;
 }
