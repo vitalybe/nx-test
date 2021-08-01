@@ -54,6 +54,15 @@ export default async function (host: Tree, options: MySchema) {
     };
   });
 
+  const contents = host.read("jest.preset.js").toString("utf8");
+  host.write(
+    "jest.preset.js",
+    contents.replace(
+      /(^.*DO NOT EDIT BELOW THIS LINE - GENERATED - moduleNameMapper.*$)/gm,
+      `$1\n  "^@qwilt/${options.name}(.*)$": "${projectConfig.root}$$1",`
+    )
+  );
+
   await formatFiles(host);
   return () => {
     installPackagesTask(host);

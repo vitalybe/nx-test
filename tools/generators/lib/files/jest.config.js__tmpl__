@@ -1,3 +1,6 @@
+const _ = require("lodash");
+const basePreset = require("<%= offsetFromRoot %>jest.preset.js");
+
 module.exports = {
   displayName: "<%= name %>",
   preset: "<%= offsetFromRoot %>jest.preset.js",
@@ -8,4 +11,7 @@ module.exports = {
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
   coverageDirectory: "<%= offsetFromRoot %>coverage/libs/<%= name %>",
+  moduleNameMapper: {
+    ..._.mapValues(basePreset.moduleNameMapper, (value) => `<%= offsetFromRoot %>${value}`),
+  }
 };

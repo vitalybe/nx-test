@@ -102,8 +102,8 @@ async function generateApp(host: Tree, schema: Schema) {
 
     // Build budgets (out-of-memory handling)
     const productionConfiguration = projectConfig.targets["build"]["configurations"]["production"];
-    productionConfiguration["budgets"] = {
-      ...productionConfiguration["budgets"],
+    productionConfiguration["budgets"][0] = {
+      ...productionConfiguration["budgets"][0],
       maximumWarning: "5mb",
       maximumError: "10mb",
     };
