@@ -77,7 +77,7 @@ function nrwlConfig(config) {
   };
 
   // Needed since we do port forwarding of 8001 to 443
-  config["devServer"]["sockPort"] = 443;
+  config["devServer"] = {
     ...config["devServer"],
     sockPort: 443,
     // Below properties are possibly redundant

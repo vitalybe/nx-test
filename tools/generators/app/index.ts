@@ -100,6 +100,14 @@ async function generateApp(host: Tree, schema: Schema) {
       ssl: false,
     };
 
+    // Build budgets (out-of-memory handling)
+    const productionConfiguration = projectConfig.targets["build"]["configurations"]["production"];
+    productionConfiguration["budgets"] = {
+      ...productionConfiguration["budgets"],
+      maximumWarning: "5mb",
+      maximumError: "10mb",
+    };
+
     // Serve target - Add validation depedency
     serveTarget["dependsOn"] = [
       {
