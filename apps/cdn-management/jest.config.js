@@ -1,3 +1,6 @@
+const _ = require("lodash");
+const basePreset = require("../../jest.preset.js");
+
 module.exports = {
   displayName: "cdn-management",
   preset: "../../jest.preset.js",
@@ -8,4 +11,7 @@ module.exports = {
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
   coverageDirectory: "../../coverage/apps/cdn-management",
+  moduleNameMapper: {
+    ..._.mapValues(basePreset.moduleNameMapper, (value) => `<rootDir>../../${value}`),
+  },
 };
