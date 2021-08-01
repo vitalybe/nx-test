@@ -49,7 +49,7 @@
           "executor": "@nrwl/web:dev-server",
           "options": {
             "buildTarget": "cdn-management:build",
-            "hmr": true,
+            "hmr": false,
             "host": "dev-localhost.cqloud.com",
             "port": 8001,
             "ssl": true,
