@@ -1,20 +1,20 @@
-import { ProvisionFlowsApiMock } from "common/backend/provisionFlows";
-import { StepOutputApiResult } from "common/backend/provisionFlows/_types/provisionFlowsTypes";
-import { EntityTypeEnum } from "common/backend/qnDeployment/_types/entitiesApiType";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
-import { AjaxMetadata } from "common/utils/ajax";
-import { UnknownObject } from "common/utils/typescriptUtils";
-import { ContextDiffItemEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffItemEntity";
-import { ContextDiffListEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffListEntity";
-import { ContextDiffEntityTypeEnum } from "src/workflowStatus/contextDiff/_domain/contextEntityType";
+import { ProvisionFlowsApiMock } from "@qwilt/common/backend/provisionFlows";
+import { StepOutputApiResult } from "@qwilt/common/backend/provisionFlows/_types/provisionFlowsTypes";
+import { EntityTypeEnum } from "@qwilt/common/backend/qnDeployment/_types/entitiesApiType";
+import { DeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/deploymentEntity";
+import { DeploymentEntitiesProvider } from "@qwilt/common/providers/deploymentEntitiesProvider";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { UnknownObject } from "@qwilt/common/utils/typescriptUtils";
+import { ContextDiffItemEntity } from "../_domain/contextDiffItemEntity";
+import { ContextDiffListEntity } from "../_domain/contextDiffListEntity";
+import { ContextDiffEntityTypeEnum } from "../_domain/contextEntityType";
 import {
   ContextDiffSegmentsProvider,
   ListNameEnum,
-} from "src/workflowStatus/contextDiff/_providers/contextDiffSegmentsProvider";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { DeliveryServicesProvider } from "src/_providers/deliveryServicesProvider";
+} from "./contextDiffSegmentsProvider";
+import { WorkflowEntity } from "../../_domain/workflowEntity";
+import { DeliveryServiceEntity } from "../../../_domain/deliveryServiceEntity";
+import { DeliveryServicesProvider } from "../../../_providers/deliveryServicesProvider";
 
 async function getContextDiffSegmentsProviderResult(
   dataLeft: UnknownObject,

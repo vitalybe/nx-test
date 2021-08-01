@@ -2,9 +2,9 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { DnsRoutersTab, Props } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/DnsRoutersTab";
-import { DnsRouterEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/_domain/dnsRouterEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { DnsRoutersTab, Props } from "./DnsRoutersTab";
+import { DnsRouterEntity } from "./_domain/dnsRouterEntity";
+import { SelectedCdnFixtureDecorator } from "../../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

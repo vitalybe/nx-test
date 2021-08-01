@@ -1,20 +1,20 @@
-import { loggerCreator } from "common/utils/logger";
-import { StepEntity } from "src/workflowStatus/_domain/stepEntity";
-import { WorkflowStore, WorkflowStoreContextProvider } from "src/workflowStatus/_stores/workflowStore";
-import { DiffRequestEntity } from "src/workflowStatus/representationDiff/_domain/diffRequestEntity";
-import { ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
-import { openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { ContextDiffContainer } from "src/workflowStatus/contextDiff/ContextDiffContainer";
-import { RepresentationDiffContainer } from "src/workflowStatus/representationDiff/RepresentationDiffContainer";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { StepEntity } from "../_domain/stepEntity";
+import { WorkflowStore, WorkflowStoreContextProvider } from "../_stores/workflowStore";
+import { DiffRequestEntity } from "../representationDiff/_domain/diffRequestEntity";
+import { ProvisionFlowsStepsEnum } from "@qwilt/common/backend/provisionFlows";
+import { openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { ContextDiffContainer } from "../contextDiff/ContextDiffContainer";
+import { RepresentationDiffContainer } from "../representationDiff/RepresentationDiffContainer";
 import * as React from "react";
-import { WorkflowsProvider } from "src/workflowStatus/_providers/workflowsProvider";
-import { AjaxMetadata } from "common/utils/ajax";
+import { WorkflowsProvider } from "../_providers/workflowsProvider";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
 import {
   DiffRequestSerializable,
   WorkflowOpenDialogUrlParam,
-} from "src/workflowStatus/_util/workflowOpenDialogUrlParam";
+} from "./workflowOpenDialogUrlParam";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DiffOpenUtil {
   static async openDiffFromUrlParam(store: WorkflowStore, param: DiffRequestSerializable) {

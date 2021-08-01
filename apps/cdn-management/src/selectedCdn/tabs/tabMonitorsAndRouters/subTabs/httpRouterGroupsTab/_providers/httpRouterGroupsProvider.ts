@@ -1,12 +1,12 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { HttpRouterGroupEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/_domain/httpRouterGroupEntity";
-import { HttpRouterGroupType } from "common/backend/cdns/_types/httpRouterGroupType";
-import { HttpRouterGroupsFormData } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/_domain/httpRouterGroupsFormData";
-import { CdnsApi } from "common/backend/cdns";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { HttpRouterGroupEntity } from "../_domain/httpRouterGroupEntity";
+import { HttpRouterGroupType } from "@qwilt/common/backend/cdns/_types/httpRouterGroupType";
+import { HttpRouterGroupsFormData } from "../_domain/httpRouterGroupsFormData";
+import { CdnsApi } from "@qwilt/common/backend/cdns";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class HttpRouterGroupsProvider {
   private constructor() {}

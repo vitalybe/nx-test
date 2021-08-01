@@ -1,9 +1,9 @@
 import _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { DsRuleEntity, RuleType } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
-import { DsAssignmentsApi } from "common/backend/ds-assignments";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { DsRuleEntity, RuleType } from "../_domain/dsRuleEntity";
+import { DsAssignmentsApi } from "@qwilt/common/backend/ds-assignments";
+import { DeliveryServiceEntity } from "../../../../_domain/deliveryServiceEntity";
 import {
   ApiDsRule,
   ApiEntityRuleType,
@@ -12,28 +12,28 @@ import {
   AssignmentsApiType,
   RoutingDuApiType,
   RoutingNetworkApiType,
-} from "common/backend/ds-assignments/_types/dsAssignmentsTypes";
-import { Notifier } from "common/utils/notifications/notifier";
-import { Utils } from "common/utils/utils";
-import { ServerType } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { ServersProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_providers/serversProvider";
-import { ServersProvider as ServersProviderOld } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_providers/oldServersProvider";
-import { DeliveryServicesProvider } from "src/_providers/deliveryServicesProvider";
-import { HierarchyUtils, SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { DeliveryAgreementsApi } from "common/backend/deliveryAgreements";
-import { DeliveryAgreementApiEntity } from "common/backend/deliveryAgreements/_types/deliveryAgreementsTypes";
-import { MissingAgreementLinkEntity } from "src/_domain/missingAgreementLinkEntity";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { GenericServerEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/genericServerEntity";
-import { CachesProvider } from "src/_providers/cachesProvider";
-import { KeyType, PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { NameWithId } from "common/domain/nameWithId";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { CacheGroupsProvider } from "src/_providers/cacheGroupsProvider";
+} from "@qwilt/common/backend/ds-assignments/_types/dsAssignmentsTypes";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { Utils } from "@qwilt/common/utils/utils";
+import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { ServersProvider } from "../../tabMonitorsAndRouters/_providers/serversProvider";
+import { ServersProvider as ServersProviderOld } from "../../tabMonitorsAndRouters/_providers/oldServersProvider";
+import { DeliveryServicesProvider } from "../../../../_providers/deliveryServicesProvider";
+import { HierarchyUtils, SelectionModeEnum } from "@qwilt/common/utils/hierarchyUtils";
+import { DeliveryAgreementsApi } from "@qwilt/common/backend/deliveryAgreements";
+import { DeliveryAgreementApiEntity } from "@qwilt/common/backend/deliveryAgreements/_types/deliveryAgreementsTypes";
+import { MissingAgreementLinkEntity } from "../../../../_domain/missingAgreementLinkEntity";
+import { ProjectUrlStore } from "../../../../_stores/projectUrlStore";
+import { ProjectUrlParams } from "../../../../_stores/projectUrlParams";
+import { GenericServerEntity } from "../../tabMonitorsAndRouters/_domain/server/genericServerEntity";
+import { CachesProvider } from "../../../../_providers/cachesProvider";
+import { KeyType, PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { CacheEntity } from "../../../../_domain/cacheEntity";
+import { NameWithId } from "@qwilt/common/domain/nameWithId";
+import { CacheGroupEntity } from "../../../../_domain/cacheGroupEntity";
+import { CacheGroupsProvider } from "../../../../_providers/cacheGroupsProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 export const UNASSIGNED_VALUE = "unassigned";
 export const EMPTY_VALUE = "empty";
 

@@ -1,13 +1,13 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { MissingAgreementLinkEntity } from "src/_domain/missingAgreementLinkEntity";
-import { NameWithId } from "common/domain/nameWithId";
-import { Notifier } from "common/utils/notifications/notifier";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { DeliveryServiceEntity } from "../../../../_domain/deliveryServiceEntity";
+import { SelectionModeEnum } from "@qwilt/common/utils/hierarchyUtils";
+import { MissingAgreementLinkEntity } from "../../../../_domain/missingAgreementLinkEntity";
+import { NameWithId } from "@qwilt/common/domain/nameWithId";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface AssignmentRule {
   ruleId: string;

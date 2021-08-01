@@ -2,8 +2,8 @@ import * as _ from "lodash";
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
 import {
   getDeleteAction,
   getEditAction,
@@ -12,28 +12,28 @@ import {
   QwiltGrid,
   QwiltGridColumnDef,
   QwiltGridTreeColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { openConfirmModal, openQwiltModal } from "common/components/qwiltModal/QwiltModal";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { useEventCallback } from "@qwilt/common/utils/hooks/useEventCallback";
+import { openConfirmModal, openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
 
-import { FallbacksContainer } from "src/selectedCdn/tabs/tabCacheGroups/fallbacksContainer/FallbacksContainer";
+import { FallbacksContainer } from "./fallbacksContainer/FallbacksContainer";
 import { GridOptions, RowNode } from "ag-grid-community";
-import { SimpleTextFloatingFilter } from "common/components/qwiltGrid/simpleTextFloatingFilter/SimpleTextFloatingFilter";
-import { CdnsApi } from "common/backend/cdns";
-import { Notifier } from "common/utils/notifications/notifier";
-import { useUrlState } from "common/utils/hooks/useUrlState";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { CacheGroupIcon } from "common/components/configuration/configurationIcons";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
-import { Utils } from "common/utils/utils";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { EditorCacheGroupContainer } from "src/selectedCdn/tabs/tabCacheGroups/editorCacheGroup/editorCacheGroupContainer";
+import { SimpleTextFloatingFilter } from "@qwilt/common/components/qwiltGrid/simpleTextFloatingFilter/SimpleTextFloatingFilter";
+import { CdnsApi } from "@qwilt/common/backend/cdns";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { useUrlState } from "@qwilt/common/utils/hooks/useUrlState";
+import { ProjectUrlParams } from "../../../_stores/projectUrlParams";
+import { CacheGroupIcon } from "@qwilt/common/components/configuration/configurationIcons";
+import { ProjectUrlStore } from "../../../_stores/projectUrlStore";
+import { Utils } from "@qwilt/common/utils/utils";
+import { CacheGroupEntity } from "../../../_domain/cacheGroupEntity";
+import { EditorCacheGroupContainer } from "./editorCacheGroup/editorCacheGroupContainer";
 import { useMutation } from "react-query";
-import { CachesProvider } from "src/_providers/cachesProvider";
-import { CacheGroupsProvider } from "src/_providers/cacheGroupsProvider";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
+import { CachesProvider } from "../../../_providers/cachesProvider";
+import { CacheGroupsProvider } from "../../../_providers/cacheGroupsProvider";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

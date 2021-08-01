@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { MissingAgreementLinkEntity } from "src/_domain/missingAgreementLinkEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { MissingAgreementLinkEntity } from "../../../../../_domain/missingAgreementLinkEntity";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkSquareAlt";
-import { CommonUrls } from "common/utils/commonUrls";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { Params as DeliveryAgreementsParams } from "common/urlParams/deliveryAgreementsManagementUrlParams";
+import { CommonUrls } from "@qwilt/common/utils/commonUrls";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { Params as DeliveryAgreementsParams } from "@qwilt/common/urlParams/deliveryAgreementsManagementUrlParams";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

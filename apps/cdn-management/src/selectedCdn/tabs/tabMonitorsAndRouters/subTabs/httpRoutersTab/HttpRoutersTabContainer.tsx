@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { HttpRoutersTab } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRoutersTab/HttpRoutersTab";
-import { HttpRoutersProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRoutersTab/_providers/httpRoutersProvider";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { HttpRoutersTab } from "./HttpRoutersTab";
+import { HttpRoutersProvider } from "./_providers/httpRoutersProvider";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { useSelectedCdn } from "../../../../../_stores/selectedCdnStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

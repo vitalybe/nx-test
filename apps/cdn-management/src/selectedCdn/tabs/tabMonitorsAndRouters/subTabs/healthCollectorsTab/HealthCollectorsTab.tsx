@@ -2,16 +2,16 @@ import * as _ from "lodash";
 import * as React from "react";
 import { useMemo, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { HealthCollectorEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthCollectorsTab/_domain/healthCollectorEntity";
-import { openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { HealthCollectorEditor } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthCollectorsTab/healthCollectorEditor/HealthCollectorEditor";
-import { getEditAction, GridValueRenderer, QwiltGridColumnDef } from "common/components/qwiltGrid/QwiltGrid";
-import { MonitorsAndRoutersGridUtils } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/_utils/monitorsAndRoutersGridUtils";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { HealthCollectorEntity } from "./_domain/healthCollectorEntity";
+import { openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { HealthCollectorEditor } from "./healthCollectorEditor/HealthCollectorEditor";
+import { getEditAction, GridValueRenderer, QwiltGridColumnDef } from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { MonitorsAndRoutersGridUtils } from "../_utils/monitorsAndRoutersGridUtils";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

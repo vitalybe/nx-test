@@ -1,15 +1,15 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
 import {
   ServerApiTypeV2,
   ServerStatus,
   ServerType,
-} from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { GenericServerEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/genericServerEntity";
-import { TrafficRoutersMonitorsApi } from "common/backend/trafficRoutersMonitors";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+} from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { GenericServerEntity } from "../_domain/server/genericServerEntity";
+import { TrafficRoutersMonitorsApi } from "@qwilt/common/backend/trafficRoutersMonitors";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 type ServerWithStatus = ServerApiTypeV2 & { status: ServerStatus };
 

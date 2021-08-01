@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   HttpRouterEditor,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRoutersTab/httpRouterEditor/HttpRouterEditor";
-import { HttpRouterEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRoutersTab/_domain/httpRouterEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+} from "./HttpRouterEditor";
+import { HttpRouterEntity } from "../_domain/httpRouterEntity";
+import { SelectedCdnFixtureDecorator } from "../../../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

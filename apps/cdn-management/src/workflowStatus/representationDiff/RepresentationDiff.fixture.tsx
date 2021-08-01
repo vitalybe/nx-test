@@ -2,14 +2,14 @@
 import * as React from "react";
 import { ReactNode } from "react";
 import styled from "styled-components";
-import { Props, RepresentationDiff } from "src/workflowStatus/representationDiff/RepresentationDiff";
-import { DiffMetadataEntity } from "src/workflowStatus/representationDiff/_domain/diffMetadataEntity";
-import FixtureStoreDecorator from "src/workflowStatus/_util/FixtureDecorator";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { WorkflowStore, WorkflowStoreContextProvider } from "src/workflowStatus/_stores/workflowStore";
-import { JsonDiffEntity } from "src/workflowStatus/_domain/jsonDiffEntity";
+import { Props, RepresentationDiff } from "./RepresentationDiff";
+import { DiffMetadataEntity } from "./_domain/diffMetadataEntity";
+import FixtureStoreDecorator from "../_util/FixtureDecorator";
+import { WorkflowEntity } from "../_domain/workflowEntity";
+import { WorkflowStore, WorkflowStoreContextProvider } from "../_stores/workflowStore";
+import { JsonDiffEntity } from "../_domain/jsonDiffEntity";
 import * as _ from "lodash";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { CdnEntity } from "../../_domain/cdnEntity";
 
 const View = styled(FixtureStoreDecorator)`
   margin: 1em;

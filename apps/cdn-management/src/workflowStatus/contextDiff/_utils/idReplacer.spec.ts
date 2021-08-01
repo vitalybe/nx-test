@@ -1,5 +1,5 @@
-import { IdReplacer } from "src/workflowStatus/contextDiff/_utils/idReplacer";
-import { UnknownObject } from "common/utils/typescriptUtils";
+import { IdReplacer } from "./idReplacer";
+import { UnknownObject } from "@qwilt/common/utils/typescriptUtils";
 
 describe("IdReplacer should replace IDs", function () {
   it("using string accessors", function () {

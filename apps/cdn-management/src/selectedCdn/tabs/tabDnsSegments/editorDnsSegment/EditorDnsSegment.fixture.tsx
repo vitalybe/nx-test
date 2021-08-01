@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { EditorDnsSegment, Props } from "src/selectedCdn/tabs/tabDnsSegments/editorDnsSegment/EditorDnsSegment";
+import { EditorDnsSegment, Props } from "./EditorDnsSegment";
 
-import { DnsSegmentEntity } from "src/selectedCdn/tabs/tabDnsSegments/_domain/DnsSegmentEntity";
+import { DnsSegmentEntity } from "../_domain/DnsSegmentEntity";
 
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { SelectedCdnFixtureDecorator } from "../../_utils/SelectedCdnFixtureDecorator";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

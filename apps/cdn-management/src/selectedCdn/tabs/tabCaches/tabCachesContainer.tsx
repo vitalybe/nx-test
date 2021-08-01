@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { TabCaches } from "src/selectedCdn/tabs/tabCaches/TabCaches";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { TabCachesProvider } from "src/selectedCdn/tabs/tabCaches/_providers/tabCachesProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { TabCaches } from "./TabCaches";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { TabCachesProvider } from "./_providers/tabCachesProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

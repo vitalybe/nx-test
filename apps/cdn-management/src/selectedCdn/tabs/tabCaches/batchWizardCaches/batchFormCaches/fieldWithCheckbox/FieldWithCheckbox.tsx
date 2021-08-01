@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Checkbox } from "common/components/checkbox/Checkbox";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { Checkbox } from "@qwilt/common/components/checkbox/Checkbox";
 import { ReactNode } from "react";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { CommonColors } from "common/styling/commonColors";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import { Field, FieldProps } from "formik";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

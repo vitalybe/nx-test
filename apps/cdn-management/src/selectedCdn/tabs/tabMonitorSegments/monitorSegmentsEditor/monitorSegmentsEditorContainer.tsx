@@ -1,18 +1,18 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { MonitorSegmentsEditor } from "src/selectedCdn/tabs/tabMonitorSegments/monitorSegmentsEditor/MonitorSegmentsEditor";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { HealthCollectorsProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthCollectorsTab/_providers/healthCollectorsProvider";
-import { ServersProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_providers/oldServersProvider";
-import { ServerType } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { MonitorSegmentEntity } from "src/selectedCdn/tabs/tabMonitorSegments/_domain/MonitorSegmentEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
+import { MonitorSegmentsEditor } from "./MonitorSegmentsEditor";
+import { ProjectUrlStore } from "../../../../_stores/projectUrlStore";
+import { ProjectUrlParams } from "../../../../_stores/projectUrlParams";
+import { HealthCollectorsProvider } from "../../tabMonitorsAndRouters/subTabs/healthCollectorsTab/_providers/healthCollectorsProvider";
+import { ServersProvider } from "../../tabMonitorsAndRouters/_providers/oldServersProvider";
+import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { MonitorSegmentEntity } from "../_domain/MonitorSegmentEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

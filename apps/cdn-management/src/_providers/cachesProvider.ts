@@ -1,20 +1,20 @@
-import { loggerCreator } from "common/utils/logger";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { CdnsApi } from "common/backend/cdns";
-import { DeliveryUnitApiType, DeliveryUnitInterfaceApiType } from "common/backend/cdns/_types/deliveryUnitApiType";
-import { Notifier } from "common/utils/notifications/notifier";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { QnEntity } from "src/_domain/qnEntity";
-import { QnsProvider } from "src/_providers/qnsProvider";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { NameWithId } from "common/domain/nameWithId";
-import { CacheGroupsProvider } from "src/_providers/cacheGroupsProvider";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CacheEntity } from "../_domain/cacheEntity";
+import { CdnsApi } from "@qwilt/common/backend/cdns";
+import { DeliveryUnitApiType, DeliveryUnitInterfaceApiType } from "@qwilt/common/backend/cdns/_types/deliveryUnitApiType";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { QnEntity } from "../_domain/qnEntity";
+import { QnsProvider } from "./qnsProvider";
+import { DeploymentEntitiesProvider } from "@qwilt/common/providers/deploymentEntitiesProvider";
+import { DeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/deploymentEntity";
+import { NameWithId } from "@qwilt/common/domain/nameWithId";
+import { CacheGroupsProvider } from "./cacheGroupsProvider";
+import { CacheGroupEntity } from "../_domain/cacheGroupEntity";
 import _ from "lodash";
-import { CacheNetworkInterface } from "src/_domain/cacheNetworkInterface";
+import { CacheNetworkInterface } from "../_domain/cacheNetworkInterface";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class CachesProvider {
   constructor() {}

@@ -2,11 +2,11 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { DsList } from "src/selectedCdn/tabs/tabDsAssignment/dsList/DsList";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { DsMetadataEntity } from "src/_domain/dsMetadataEntity";
-import { MissingAgreementLinkEntity } from "src/_domain/missingAgreementLinkEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { DsList } from "./DsList";
+import { DeliveryServiceEntity } from "../../../../_domain/deliveryServiceEntity";
+import { DsMetadataEntity } from "../../../../_domain/dsMetadataEntity";
+import { MissingAgreementLinkEntity } from "../../../../_domain/missingAgreementLinkEntity";
+import { SelectedCdnFixtureDecorator } from "../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 5em;

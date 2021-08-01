@@ -1,5 +1,5 @@
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { ProjectUrlParamsType } from "src/_stores/projectUrlParams";
+import { UrlStore } from "@qwilt/common/stores/urlStore/urlStore";
+import { ProjectUrlParamsType } from "./projectUrlParams";
 
 export class ProjectUrlStore extends UrlStore<ProjectUrlParamsType> {
   static getInstance(): UrlStore<ProjectUrlParamsType> {

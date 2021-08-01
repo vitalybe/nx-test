@@ -1,19 +1,19 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { StepEntity, StepStateEnum } from "src/workflowStatus/_domain/stepEntity";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { StatusPart } from "src/workflowStatus/_parts/statusPart/StatusPart";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { StepEntity, StepStateEnum } from "../../_domain/stepEntity";
+import { WorkflowEntity } from "../../_domain/workflowEntity";
+import { StatusPart } from "../../_parts/statusPart/StatusPart";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { DiffRequestEntity } from "src/workflowStatus/representationDiff/_domain/diffRequestEntity";
+import { DiffRequestEntity } from "../../representationDiff/_domain/diffRequestEntity";
 import { faExchangeAlt } from "@fortawesome/free-solid-svg-icons/faExchangeAlt";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { Constants } from "src/workflowStatus/_util/constants";
-import { useWorkflowStore } from "src/workflowStatus/_stores/workflowStore";
-import { ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
-import { DiffOpenUtil } from "src/workflowStatus/_util/diffOpenUtil";
+import { Clickable } from "@qwilt/common/components/configuration/clickable/Clickable";
+import { Constants } from "../../_util/constants";
+import { useWorkflowStore } from "../../_stores/workflowStore";
+import { ProvisionFlowsStepsEnum } from "@qwilt/common/backend/provisionFlows";
+import { DiffOpenUtil } from "../../_util/diffOpenUtil";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

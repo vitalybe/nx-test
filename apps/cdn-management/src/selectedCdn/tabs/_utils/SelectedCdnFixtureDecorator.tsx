@@ -1,8 +1,8 @@
 import * as React from "react";
-import { SelectedCdnContextProvider } from "src/_stores/selectedCdnStore";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { TabRouterTabStoreContextProvider } from "common/components/tabRouter/_stores/tabRouterTabStore";
+import { SelectedCdnContextProvider } from "../../../_stores/selectedCdnStore";
+import { CdnEntity } from "../../../_domain/cdnEntity";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { TabRouterTabStoreContextProvider } from "@qwilt/common/components/tabRouter/_stores/tabRouterTabStore";
 
 export interface Props {
   children: React.ReactNode | React.ReactNode[];

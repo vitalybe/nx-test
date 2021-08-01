@@ -2,19 +2,19 @@ import * as _ from "lodash";
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ItemsCard, ItemsCardContent } from "common/components/configuration/itemsCard/ItemsCard";
-import { Button } from "common/components/configuration/button/Button";
-import { DiffMetadataEntity } from "src/workflowStatus/representationDiff/_domain/diffMetadataEntity";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { Constants } from "src/workflowStatus/_util/constants";
-import { useWorkflowStore } from "src/workflowStatus/_stores/workflowStore";
-import { DiffSection } from "src/workflowStatus/representationDiff/_domain/diffSection";
-import { DiffSectionButton } from "src/workflowStatus/representationDiff/diffSectionButton/DiffSectionButton";
-import { DiffSectionView } from "src/workflowStatus/representationDiff/diffSectionView/DiffSectionView";
-import { DiffFlowTitle } from "src/workflowStatus/_parts/diffFlowTitle/DiffFlowTitle";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ItemsCard, ItemsCardContent } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { Button } from "@qwilt/common/components/configuration/button/Button";
+import { DiffMetadataEntity } from "./_domain/diffMetadataEntity";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { Constants } from "../_util/constants";
+import { useWorkflowStore } from "../_stores/workflowStore";
+import { DiffSection } from "./_domain/diffSection";
+import { DiffSectionButton } from "./diffSectionButton/DiffSectionButton";
+import { DiffSectionView } from "./diffSectionView/DiffSectionView";
+import { DiffFlowTitle } from "../_parts/diffFlowTitle/DiffFlowTitle";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

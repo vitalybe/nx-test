@@ -1,4 +1,4 @@
-import { DeliveryUnitHealthProfileApiType } from "common/backend/cdns/_types/deliveryUnitApiType";
+import { DeliveryUnitHealthProfileApiType } from "@qwilt/common/backend/cdns/_types/deliveryUnitApiType";
 
 export const defaultHealthProfile: DeliveryUnitHealthProfileApiType = {
   healthMinAvailableBwKbpsEnabled: false,

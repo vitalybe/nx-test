@@ -1,8 +1,8 @@
-import { loggerCreator } from "common/utils/logger";
-import { ContextDiffBaseEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffDomainShared";
-import { ContextDiffSegmentEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffSegmentEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ContextDiffBaseEntity } from "../_domain/contextDiffDomainShared";
+import { ContextDiffSegmentEntity } from "../_domain/contextDiffSegmentEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ContextDiffPathUtils {
   private static addFirstChildren(currentPath: ContextDiffBaseEntity[]) {

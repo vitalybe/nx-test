@@ -1,10 +1,10 @@
 import * as _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { WorkflowsProvider } from "src/workflowStatus/_providers/workflowsProvider";
-import { WorkflowEntity, WorkflowStateEnum } from "src/workflowStatus/_domain/workflowEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { WorkflowsProvider } from "./workflowsProvider";
+import { WorkflowEntity, WorkflowStateEnum } from "../_domain/workflowEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ActiveWorkflowProvider {
   private constructor() {}

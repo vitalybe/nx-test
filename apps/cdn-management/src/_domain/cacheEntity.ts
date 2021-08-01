@@ -1,17 +1,17 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
 import {
   CacheOperationalModeApiEnum,
   DeliveryUnitEditApiType,
   DeliveryUnitHealthProfileApiType,
-} from "common/backend/cdns/_types/deliveryUnitApiType";
-import { NameWithId } from "common/domain/nameWithId";
-import mockData from "common/backend/_utils/mockData";
-import { Utils } from "common/utils/utils";
-import { CacheNetworkInterface } from "src/_domain/cacheNetworkInterface";
-import { defaultHealthProfile } from "src/_domain/defaultHealthProfile";
+} from "@qwilt/common/backend/cdns/_types/deliveryUnitApiType";
+import { NameWithId } from "@qwilt/common/domain/nameWithId";
+import mockData from "@qwilt/common/backend/_utils/mockData";
+import { Utils } from "@qwilt/common/utils/utils";
+import { CacheNetworkInterface } from "./cacheNetworkInterface";
+import { defaultHealthProfile } from "./defaultHealthProfile";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface CacheEntityParams {
   id: string;

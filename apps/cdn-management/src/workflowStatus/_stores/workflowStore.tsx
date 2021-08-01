@@ -1,9 +1,9 @@
 import * as React from "react";
 import { ReactNode, useContext } from "react";
-import { loggerCreator } from "common/utils/logger";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CdnEntity } from "../../_domain/cdnEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class WorkflowStore {
   constructor(public cdn: CdnEntity) {}

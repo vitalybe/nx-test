@@ -1,17 +1,17 @@
 import * as React from "react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import { MoonLoader } from "react-spinners";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import { lighten } from "polished";
-import { CopyToClipboardButton } from "common/components/copyToClipboardButton/CopyToClipboardButton";
+import { CopyToClipboardButton } from "@qwilt/common/components/copyToClipboardButton/CopyToClipboardButton";
 import _ from "lodash";
-import { CacheEntityFormType } from "src/selectedCdn/tabs/tabCaches/batchWizardCaches/_domain/cacheEntitySchema";
-import { CdnsApi } from "common/backend/cdns";
-import { CacheEntity } from "src/_domain/cacheEntity";
+import { CacheEntityFormType } from "../_domain/cacheEntitySchema";
+import { CdnsApi } from "@qwilt/common/backend/cdns";
+import { CacheEntity } from "../../../../../_domain/cacheEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 
@@ -133,8 +133,8 @@ type State = "in progress" | "succeeded" | "failed";
 
 //endregion [[ Props ]]
 
-const successSvg = require("src/images/success.svg");
-const failedSvg = require("src/images/failed.svg");
+const successSvg = require("../../../../../images/success.svg");
+const failedSvg = require("../../../../../images/failed.svg");
 
 export const BatchUpdateCaches = ({ cacheFromData, ...props }: Props) => {
   const totalCaches = props.caches.length;

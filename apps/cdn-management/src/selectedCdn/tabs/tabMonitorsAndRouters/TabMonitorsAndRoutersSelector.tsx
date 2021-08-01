@@ -1,27 +1,27 @@
-import { HealthProviderEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthProvidersTab/_domain/healthProviderEntity";
+import { HealthProviderEntity } from "./subTabs/healthProvidersTab/_domain/healthProviderEntity";
 
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { TabSelector } from "common/components/configuration/tabSelector/TabSelector";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { TabSelector } from "@qwilt/common/components/configuration/tabSelector/TabSelector";
 import { DateTime } from "luxon";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { HttpRouterGroupsProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/_providers/httpRouterGroupsProvider";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { ServerTypeIcon } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_parts/ServerTypeIcon";
-import { ServerType } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { MonitorsProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/monitorsTab/_providers/monitorsProvider";
-import { DnsRoutersProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/_providers/dnsRoutersProvider";
-import { HttpRoutersProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRoutersTab/_providers/httpRoutersProvider";
-import { HealthCollectorsProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthCollectorsTab/_providers/healthCollectorsProvider";
-import { HealthProvidersProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthProvidersTab/_providers/healthProvidersProvider";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { enumValues } from "common/utils/typescriptUtils";
-import { ServerMetadata } from "src/_domain/serverMetadata";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { HttpRouterGroupsProvider } from "./subTabs/httpRouterGroupsTab/_providers/httpRouterGroupsProvider";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { ServerTypeIcon } from "./_parts/ServerTypeIcon";
+import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { MonitorsProvider } from "./subTabs/monitorsTab/_providers/monitorsProvider";
+import { DnsRoutersProvider } from "./subTabs/dnsRoutersTab/_providers/dnsRoutersProvider";
+import { HttpRoutersProvider } from "./subTabs/httpRoutersTab/_providers/httpRoutersProvider";
+import { HealthCollectorsProvider } from "./subTabs/healthCollectorsTab/_providers/healthCollectorsProvider";
+import { HealthProvidersProvider } from "./subTabs/healthProvidersTab/_providers/healthProvidersProvider";
+import { ProjectUrlStore } from "../../../_stores/projectUrlStore";
+import { ProjectUrlParams } from "../../../_stores/projectUrlParams";
+import { enumValues } from "@qwilt/common/utils/typescriptUtils";
+import { ServerMetadata } from "../../../_domain/serverMetadata";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

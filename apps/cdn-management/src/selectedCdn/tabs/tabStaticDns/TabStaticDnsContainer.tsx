@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { TabStaticDns } from "src/selectedCdn/tabs/tabStaticDns/TabStaticDns";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { DeliveryServicesProvider } from "src/_providers/deliveryServicesProvider";
-import { StaticDnsProvider } from "src/selectedCdn/tabs/tabStaticDns/_providers/staticDnsProvider";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { TabStaticDns } from "./TabStaticDns";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { DeliveryServicesProvider } from "../../../_providers/deliveryServicesProvider";
+import { StaticDnsProvider } from "./_providers/staticDnsProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

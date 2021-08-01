@@ -1,10 +1,10 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CdnEntity } from "../_domain/cdnEntity";
 import { ReactNode, useContext } from "react";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const SelectedCdnContext = React.createContext<CdnEntity | undefined>(undefined);
 

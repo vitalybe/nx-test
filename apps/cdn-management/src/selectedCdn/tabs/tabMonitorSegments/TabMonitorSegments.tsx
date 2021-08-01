@@ -1,30 +1,30 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import {
   getDeleteAction,
   getEditAction,
   GridReactRenderer,
   QwiltGrid,
   QwiltGridColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { openConfirmModal, openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { CommonColors } from "common/styling/commonColors";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { useEventCallback } from "@qwilt/common/utils/hooks/useEventCallback";
+import { openConfirmModal, openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Icons } from "common/styling/icons";
-import { MonitorSegmentProvider } from "src/selectedCdn/tabs/tabMonitorSegments/_providers/MonitorSegmentProvider";
-import { MonitorSegmentEntity } from "src/selectedCdn/tabs/tabMonitorSegments/_domain/MonitorSegmentEntity";
-import { FallbacksContainer } from "src/selectedCdn/tabs/tabMonitorSegments/fallbacksContainer/FallbacksContainer";
-import { useUrlState } from "common/utils/hooks/useUrlState";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { MonitorSegmentsEditorContainer } from "src/selectedCdn/tabs/tabMonitorSegments/monitorSegmentsEditor/monitorSegmentsEditorContainer";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
+import { Icons } from "@qwilt/common/styling/icons";
+import { MonitorSegmentProvider } from "./_providers/MonitorSegmentProvider";
+import { MonitorSegmentEntity } from "./_domain/MonitorSegmentEntity";
+import { FallbacksContainer } from "./fallbacksContainer/FallbacksContainer";
+import { useUrlState } from "@qwilt/common/utils/hooks/useUrlState";
+import { ProjectUrlParams } from "../../../_stores/projectUrlParams";
+import { MonitorSegmentsEditorContainer } from "./monitorSegmentsEditor/monitorSegmentsEditorContainer";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

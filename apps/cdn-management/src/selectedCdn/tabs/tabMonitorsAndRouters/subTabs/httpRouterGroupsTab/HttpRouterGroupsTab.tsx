@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import {
   getDeleteAction,
   getEditAction,
@@ -9,20 +9,20 @@ import {
   GridValueRenderer,
   QwiltGrid,
   QwiltGridColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { HttpRouterGroupEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/_domain/httpRouterGroupEntity";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { openConfirmModal, openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { FallbacksContainer } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/fallbacksContainer/FallbacksContainer";
-import { Icons } from "common/styling/icons";
-import { HttpRouterGroupsEditor } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/httpRouterGroupsEditor/HttpRouterGroupsEditor";
-import { HttpRouterGroupsProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/_providers/httpRouterGroupsProvider";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { HttpRouterGroupEntity } from "./_domain/httpRouterGroupEntity";
+import { useEventCallback } from "@qwilt/common/utils/hooks/useEventCallback";
+import { openConfirmModal, openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { FallbacksContainer } from "./fallbacksContainer/FallbacksContainer";
+import { Icons } from "@qwilt/common/styling/icons";
+import { HttpRouterGroupsEditor } from "./httpRouterGroupsEditor/HttpRouterGroupsEditor";
+import { HttpRouterGroupsProvider } from "./_providers/httpRouterGroupsProvider";
+import { useSelectedCdn } from "../../../../../_stores/selectedCdnStore";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
 import { UseQueryResult } from "react-query/types/react/types";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

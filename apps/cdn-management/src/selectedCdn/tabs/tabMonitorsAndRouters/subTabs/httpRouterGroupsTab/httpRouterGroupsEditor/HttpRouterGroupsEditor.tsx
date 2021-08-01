@@ -1,25 +1,25 @@
 import * as React from "react";
 import { ReactElement, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import {
   FormikContainer,
   Props as HttpRouterGroupsEditorFormProps,
-} from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { FormikInput } from "common/components/configuration/formik/formikInput/FormikInput";
+} from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { FormikInput } from "@qwilt/common/components/configuration/formik/formikInput/FormikInput";
 import {
   HttpRouterGroupsFormData,
   HttpRouterGroupsFormSchema,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/_domain/httpRouterGroupsFormData";
+} from "../_domain/httpRouterGroupsFormData";
 import { ValidationError } from "yup";
-import { HttpRouterGroupEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/_domain/httpRouterGroupEntity";
+import { HttpRouterGroupEntity } from "../_domain/httpRouterGroupEntity";
 import { ArrayHelpers } from "formik";
-import { FormikAddRemoveItems } from "common/components/configuration/formik/formikAddRemoveItems/FormikAddRemoveItems";
-import { FormikSelect } from "common/components/configuration/formik/formikSelect/FormikSelect";
-import { HttpRouterGroupsProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRouterGroupsTab/_providers/httpRouterGroupsProvider";
-import { CdnEntity } from "src/_domain/cdnEntity"; // for everything
+import { FormikAddRemoveItems } from "@qwilt/common/components/configuration/formik/formikAddRemoveItems/FormikAddRemoveItems";
+import { FormikSelect } from "@qwilt/common/components/configuration/formik/formikSelect/FormikSelect";
+import { HttpRouterGroupsProvider } from "../_providers/httpRouterGroupsProvider";
+import { CdnEntity } from "../../../../../../_domain/cdnEntity"; // for everything
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

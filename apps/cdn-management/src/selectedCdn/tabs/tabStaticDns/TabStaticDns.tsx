@@ -1,11 +1,11 @@
 import * as React from "react";
 import { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
-import { StaticDnsEntity } from "src/selectedCdn/tabs/tabStaticDns/_domain/staticDnsEntity";
-import { EditorStaticDns } from "src/selectedCdn/tabs/tabStaticDns/editorStaticDns/EditorStaticDns";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { ItemWithActions } from "common/components/configuration/itemWithActions/ItemWithActions";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
+import { StaticDnsEntity } from "./_domain/staticDnsEntity";
+import { EditorStaticDns } from "./editorStaticDns/EditorStaticDns";
+import { DeliveryServiceEntity } from "../../../_domain/deliveryServiceEntity";
+import { ItemWithActions } from "@qwilt/common/components/configuration/itemWithActions/ItemWithActions";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
 import {
   getDeleteAction,
   getEditAction,
@@ -13,20 +13,20 @@ import {
   GridValueRenderer,
   QwiltGrid,
   QwiltGridColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
-import { CommonColors } from "common/styling/commonColors";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Icons } from "common/styling/icons";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { openConfirmModal, openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
-import { DeliveryServiceIcon } from "common/components/_projectSpecific/management/deliveryServiceIcon/DeliveryServiceIcon";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { useUrlState } from "common/utils/hooks/useUrlState";
-import { Utils } from "common/utils/utils";
+import { Icons } from "@qwilt/common/styling/icons";
+import { useEventCallback } from "@qwilt/common/utils/hooks/useEventCallback";
+import { openConfirmModal, openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { ProjectUrlStore } from "../../../_stores/projectUrlStore";
+import { DeliveryServiceIcon } from "@qwilt/common/components/_projectSpecific/management/deliveryServiceIcon/DeliveryServiceIcon";
+import { ProjectUrlParams } from "../../../_stores/projectUrlParams";
+import { useUrlState } from "@qwilt/common/utils/hooks/useUrlState";
+import { Utils } from "@qwilt/common/utils/utils";
 import * as _ from "lodash";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { StaticDnsProvider } from "src/selectedCdn/tabs/tabStaticDns/_providers/staticDnsProvider";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { StaticDnsProvider } from "./_providers/staticDnsProvider";
 
 const TabStaticDnsView = styled.div`
   display: flex;

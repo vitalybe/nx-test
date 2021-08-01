@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { Props, WizardDiffUpdate } from "src/workflowStatus/wizardDiffUpdate/WizardDiffUpdate";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { DiffRequestEntity } from "src/workflowStatus/representationDiff/_domain/diffRequestEntity";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
+import { Props, WizardDiffUpdate } from "./WizardDiffUpdate";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { DiffRequestEntity } from "../representationDiff/_domain/diffRequestEntity";
+import { WorkflowEntity } from "../_domain/workflowEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

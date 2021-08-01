@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { TabCachesTabSelector, Props } from "src/selectedCdn/tabs/tabCaches/tabCachesTabSelector";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { TabCachesTabSelector, Props } from "./tabCachesTabSelector";
+import { SelectedCdnFixtureDecorator } from "../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

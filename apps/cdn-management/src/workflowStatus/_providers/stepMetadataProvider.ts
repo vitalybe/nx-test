@@ -1,10 +1,10 @@
 import * as _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { StepMetadataEntity } from "src/workflowStatus/_domain/stepMetadataEntity";
-import { ProvisionFlowsApi } from "common/backend/provisionFlows";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { StepMetadataEntity } from "../_domain/stepMetadataEntity";
+import { ProvisionFlowsApi } from "@qwilt/common/backend/provisionFlows";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class StepMetadataProvider {
   private constructor() {}

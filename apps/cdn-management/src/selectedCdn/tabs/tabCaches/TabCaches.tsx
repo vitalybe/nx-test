@@ -2,20 +2,20 @@ import * as React from "react";
 import { useMemo, useState } from "react";
 import styled, { css } from "styled-components";
 import _ from "lodash";
-import { CachesGridEntity, CachesGridEntityType } from "src/selectedCdn/tabs/tabCaches/_domain/cachesGridEntity";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { CachesGrid } from "src/selectedCdn/tabs/tabCaches/cachesGrid/CachesGrid";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
+import { CachesGridEntity, CachesGridEntityType } from "./_domain/cachesGridEntity";
+import { SelectionModeEnum } from "@qwilt/common/utils/hierarchyUtils";
+import { CachesGrid } from "./cachesGrid/CachesGrid";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
 import { darken } from "polished";
-import { CommonColors } from "common/styling/commonColors";
-import { QnsGrid } from "src/selectedCdn/tabs/tabCaches/qnsGrid/QnsGrid";
-import { CacheIcon, UnassignedQnIcon } from "common/components/configuration/configurationIcons";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { QnEntity } from "src/_domain/qnEntity";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
+import { QnsGrid } from "./qnsGrid/QnsGrid";
+import { CacheIcon, UnassignedQnIcon } from "@qwilt/common/components/configuration/configurationIcons";
+import { CacheEntity } from "../../../_domain/cacheEntity";
+import { CdnEntity } from "../../../_domain/cdnEntity";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { QnEntity } from "../../../_domain/qnEntity";
+import { DeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/deploymentEntity";
+import { CacheGroupEntity } from "../../../_domain/cacheGroupEntity";
 
 //region [[Styles]]
 const TabCachesView = styled.div`

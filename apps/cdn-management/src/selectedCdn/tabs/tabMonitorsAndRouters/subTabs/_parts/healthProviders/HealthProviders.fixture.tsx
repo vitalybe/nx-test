@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   HealthProviders,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/_parts/healthProviders/HealthProviders";
-import { HealthProviderEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/healthProvider/healthProviderEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+} from "./HealthProviders";
+import { HealthProviderEntity } from "../../../_domain/healthProvider/healthProviderEntity";
+import { SelectedCdnFixtureDecorator } from "../../../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

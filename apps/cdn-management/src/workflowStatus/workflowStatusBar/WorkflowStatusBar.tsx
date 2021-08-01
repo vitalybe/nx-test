@@ -1,30 +1,30 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { WorkflowEntity, WorkflowStateEnum } from "src/workflowStatus/_domain/workflowEntity";
-import { ErrorBoundary } from "common/components/ErrorBoundary";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { WorkflowEntity, WorkflowStateEnum } from "../_domain/workflowEntity";
+import { ErrorBoundary } from "@qwilt/common/components/ErrorBoundary";
 import { faPlusCircle } from "@fortawesome/free-solid-svg-icons/faPlusCircle";
 import { faHistory } from "@fortawesome/free-solid-svg-icons/faHistory";
-import { StatusSection } from "src/workflowStatus/workflowStatusBar/statusSection/StatusSection";
-import { openConfirmModal, openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { HistoryGridContainer } from "src/workflowStatus/historyGrid/HistoryGridContainer";
+import { StatusSection } from "./statusSection/StatusSection";
+import { openConfirmModal, openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { HistoryGridContainer } from "../historyGrid/HistoryGridContainer";
 import {
   useWorkflowStore,
   WorkflowStore,
   WorkflowStoreContextProvider,
-} from "src/workflowStatus/_stores/workflowStore";
-import { IconWithLabel } from "src/workflowStatus/_parts/iconWithLabel/IconWithLabel";
-import { ProvisionFlowsApi, ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { Constants } from "src/workflowStatus/_util/constants";
-import { CdnEntity } from "src/_domain/cdnEntity";
+} from "../_stores/workflowStore";
+import { IconWithLabel } from "../_parts/iconWithLabel/IconWithLabel";
+import { ProvisionFlowsApi, ProvisionFlowsStepsEnum } from "@qwilt/common/backend/provisionFlows";
+import { Clickable } from "@qwilt/common/components/configuration/clickable/Clickable";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { Constants } from "../_util/constants";
+import { CdnEntity } from "../../_domain/cdnEntity";
 import { useEffect } from "react";
-import { DiffOpenUtil } from "src/workflowStatus/_util/diffOpenUtil";
-import { WorkflowOpenDialogUrlParam } from "src/workflowStatus/_util/workflowOpenDialogUrlParam";
-import { WorkflowStatusProvider } from "src/workflowStatus/workflowStatusBar/_providers/workflowStatusProvider";
+import { DiffOpenUtil } from "../_util/diffOpenUtil";
+import { WorkflowOpenDialogUrlParam } from "../_util/workflowOpenDialogUrlParam";
+import { WorkflowStatusProvider } from "./_providers/workflowStatusProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

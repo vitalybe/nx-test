@@ -1,7 +1,7 @@
-import { getEnv, getOriginForApi } from "common/backend/backendOrigin";
-import { Ajax } from "common/utils/ajax";
-import { Notifier } from "common/utils/notifications/notifier";
-import { GenericServerEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/genericServerEntity";
+import { getEnv, getOriginForApi } from "@qwilt/common/backend/backendOrigin";
+import { Ajax } from "@qwilt/common/utils/ajax";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { GenericServerEntity } from "../_domain/server/genericServerEntity";
 
 export class ServerApiUtil {
   static API_URL = `${getOriginForApi("traffic-routers-monitors", getEnv())}/api/1/cdns/`;

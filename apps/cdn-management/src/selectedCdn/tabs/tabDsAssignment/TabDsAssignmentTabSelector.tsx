@@ -1,14 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { TabSelector } from "common/components/configuration/tabSelector/TabSelector";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { TabSelector } from "@qwilt/common/components/configuration/tabSelector/TabSelector";
 import { DateTime } from "luxon";
-import { DsAssignmentsProvider } from "src/selectedCdn/tabs/tabDsAssignment/_providers/dsAssignmentsProvider";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { DsAssignmentsProvider } from "./_providers/dsAssignmentsProvider";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

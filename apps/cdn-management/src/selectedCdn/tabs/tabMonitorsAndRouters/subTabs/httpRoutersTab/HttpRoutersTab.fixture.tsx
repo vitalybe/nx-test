@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   HttpRoutersTab,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRoutersTab/HttpRoutersTab";
-import { HttpRouterEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/httpRoutersTab/_domain/httpRouterEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+} from "./HttpRoutersTab";
+import { HttpRouterEntity } from "./_domain/httpRouterEntity";
+import { SelectedCdnFixtureDecorator } from "../../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

@@ -1,7 +1,7 @@
-import { MonitorSegmentEntity } from "src/selectedCdn/tabs/tabMonitorSegments/_domain/MonitorSegmentEntity";
-import { MonitorSegmentsApi } from "common/backend/monitorSegments";
-import { MonitorSegmentsApiType } from "common/backend/monitorSegments/_types/monitorSegmentsTypes";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+import { MonitorSegmentEntity } from "../_domain/MonitorSegmentEntity";
+import { MonitorSegmentsApi } from "@qwilt/common/backend/monitorSegments";
+import { MonitorSegmentsApiType } from "@qwilt/common/backend/monitorSegments/_types/monitorSegmentsTypes";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
 
 export class MonitorSegmentProvider {
   private constructor() {}

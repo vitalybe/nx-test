@@ -1,32 +1,32 @@
 import * as React from "react";
 import { ReactElement, useMemo, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import {
   FormikContainer,
   OverrideButtons,
   Props as FormikContainerProps,
-} from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { CacheEntityFormType } from "src/selectedCdn/tabs/tabCaches/batchWizardCaches/_domain/cacheEntitySchema";
-import { FormikReactSelect } from "common/components/configuration/formik/formikReactSelect/FormikReactSelect";
-import { DropDownOption } from "common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
-import { CacheOperationalModeApiEnum } from "common/backend/cdns/_types/deliveryUnitApiType";
-import { enumValues } from "common/utils/typescriptUtils";
-import { MonitorSegmentEntity } from "src/selectedCdn/tabs/tabMonitorSegments/_domain/MonitorSegmentEntity";
-import { useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { MonitorSegmentProvider } from "src/selectedCdn/tabs/tabMonitorSegments/_providers/MonitorSegmentProvider";
+} from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { CacheEntityFormType } from "../_domain/cacheEntitySchema";
+import { FormikReactSelect } from "@qwilt/common/components/configuration/formik/formikReactSelect/FormikReactSelect";
+import { DropDownOption } from "@qwilt/common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
+import { CacheOperationalModeApiEnum } from "@qwilt/common/backend/cdns/_types/deliveryUnitApiType";
+import { enumValues } from "@qwilt/common/utils/typescriptUtils";
+import { MonitorSegmentEntity } from "../../../tabMonitorSegments/_domain/MonitorSegmentEntity";
+import { useProvider } from "@qwilt/common/components/providerDataContainer/_providers/useProvider";
+import { MonitorSegmentProvider } from "../../../tabMonitorSegments/_providers/MonitorSegmentProvider";
 import { DateTime } from "luxon";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import { FormikJson } from "common/components/configuration/formik/formikJson/FormikJson";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { FieldWithCheckbox } from "src/selectedCdn/tabs/tabCaches/batchWizardCaches/batchFormCaches/fieldWithCheckbox/FieldWithCheckbox";
-import { LoadingSpinnerGlobal } from "common/components/loadingSpinner/loadingSpinnerGlobal/LoadingSpinnerGlobal";
+import { ProviderDataContainer } from "@qwilt/common/components/providerDataContainer/ProviderDataContainer";
+import { FormikJson } from "@qwilt/common/components/configuration/formik/formikJson/FormikJson";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { FieldWithCheckbox } from "./fieldWithCheckbox/FieldWithCheckbox";
+import { LoadingSpinnerGlobal } from "@qwilt/common/components/loadingSpinner/loadingSpinnerGlobal/LoadingSpinnerGlobal";
 import _ from "lodash";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { defaultHealthProfile } from "src/_domain/defaultHealthProfile";
+import { CacheEntity } from "../../../../../_domain/cacheEntity";
+import { CacheGroupEntity } from "../../../../../_domain/cacheGroupEntity";
+import { defaultHealthProfile } from "../../../../../_domain/defaultHealthProfile";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

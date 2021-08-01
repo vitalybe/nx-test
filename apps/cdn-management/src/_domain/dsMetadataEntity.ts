@@ -1,13 +1,13 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
-import { OrgEntity } from "common/domain/orgEntity";
-import { MissingAgreementLinkEntity } from "src/_domain/missingAgreementLinkEntity";
-import { MetadataServiceTypeEnum } from "common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { OrgEntity } from "@qwilt/common/domain/orgEntity";
+import { MissingAgreementLinkEntity } from "./missingAgreementLinkEntity";
+import { MetadataServiceTypeEnum } from "@qwilt/common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
-export const defaultIcon = require("common/images/no-cp.svg");
+export const defaultIcon = require("@qwilt/common/images/no-cp.svg");
 
 interface DsMetadataEntityParams {
   id: string;

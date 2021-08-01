@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { EditorConfig } from "src/selectedCdn/tabs/tabMonitorsAndRouters/editorConfig/EditorConfig";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { TrafficRoutersMonitorsApi } from "common/backend/trafficRoutersMonitors";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
+import { EditorConfig } from "./EditorConfig";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { TrafficRoutersMonitorsApi } from "@qwilt/common/backend/trafficRoutersMonitors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

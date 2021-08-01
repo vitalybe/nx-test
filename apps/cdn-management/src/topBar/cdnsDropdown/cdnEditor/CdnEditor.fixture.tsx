@@ -2,9 +2,9 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { CdnEditor, Props } from "src/topBar/cdnsDropdown/cdnEditor/CdnEditor";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { CdnEditor, Props } from "./CdnEditor";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { CdnEntity } from "../../../_domain/cdnEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

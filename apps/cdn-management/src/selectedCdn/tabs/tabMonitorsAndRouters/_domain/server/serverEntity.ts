@@ -1,7 +1,7 @@
-import { loggerCreator } from "common/utils/logger";
-import { ServerStatus } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ServerStatus } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export interface ServerEntityParams {
   hostname: string;

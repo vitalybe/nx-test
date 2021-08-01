@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
 import { toast } from "react-toastify";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import { lighten } from "polished";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

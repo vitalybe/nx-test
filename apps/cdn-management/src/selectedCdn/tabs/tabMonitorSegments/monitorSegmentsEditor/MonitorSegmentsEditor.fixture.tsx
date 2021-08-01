@@ -4,10 +4,10 @@ import styled from "styled-components";
 import {
   MonitorSegmentsEditor,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorSegments/monitorSegmentsEditor/MonitorSegmentsEditor";
-import { MonitorSegmentEntity } from "src/selectedCdn/tabs/tabMonitorSegments/_domain/MonitorSegmentEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
-import { CdnEntity } from "src/_domain/cdnEntity";
+} from "./MonitorSegmentsEditor";
+import { MonitorSegmentEntity } from "../_domain/MonitorSegmentEntity";
+import { SelectedCdnFixtureDecorator } from "../../_utils/SelectedCdnFixtureDecorator";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

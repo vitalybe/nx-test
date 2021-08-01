@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { TabSelector } from "common/components/configuration/tabSelector/TabSelector";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { TabSelector } from "@qwilt/common/components/configuration/tabSelector/TabSelector";
 import { DateTime } from "luxon";
-import { MonitorSegmentProvider } from "src/selectedCdn/tabs/tabMonitorSegments/_providers/MonitorSegmentProvider";
+import { MonitorSegmentProvider } from "./_providers/MonitorSegmentProvider";
 import pluralize from "pluralize";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

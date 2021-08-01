@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   MonitorEditor,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/monitorsTab/monitorEditor/MonitorEditor";
-import { MonitorEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/monitorsTab/_domain/monitorEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+} from "./MonitorEditor";
+import { MonitorEntity } from "../_domain/monitorEntity";
+import { SelectedCdnFixtureDecorator } from "../../../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

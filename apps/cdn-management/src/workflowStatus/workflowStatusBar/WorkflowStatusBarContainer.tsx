@@ -2,17 +2,17 @@ import * as _ from "lodash";
 import * as React from "react";
 import { useRef } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { WorkflowStore, WorkflowStoreContextProvider } from "src/workflowStatus/_stores/workflowStore";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { WorkflowEntity } from "../_domain/workflowEntity";
+import { WorkflowStore, WorkflowStoreContextProvider } from "../_stores/workflowStore";
 import { observer } from "mobx-react-lite";
-import { WorkflowStatusProvider } from "src/workflowStatus/workflowStatusBar/_providers/workflowStatusProvider";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { WorkflowStatusBar } from "src/workflowStatus/workflowStatusBar/WorkflowStatusBar";
-import { Utils } from "common/utils/utils";
+import { WorkflowStatusProvider } from "./_providers/workflowStatusProvider";
+import { CdnEntity } from "../../_domain/cdnEntity";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { WorkflowStatusBar } from "./WorkflowStatusBar";
+import { Utils } from "@qwilt/common/utils/utils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

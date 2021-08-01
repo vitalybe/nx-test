@@ -2,12 +2,12 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 import {
   HealthProviderEditor,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthProvidersTab/healthProviderEditor/HealthProviderEditor";
-import { HealthProviderEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthProvidersTab/_domain/healthProviderEntity";
+} from "./HealthProviderEditor";
+import { HealthProviderEntity } from "../_domain/healthProviderEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { TabDsAssignment } from "src/selectedCdn/tabs/tabDsAssignment/TabDsAssignment";
-import { DsAssignmentsProvider } from "src/selectedCdn/tabs/tabDsAssignment/_providers/dsAssignmentsProvider";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { TabDsAssignment } from "./TabDsAssignment";
+import { DsAssignmentsProvider } from "./_providers/dsAssignmentsProvider";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,8 +1,8 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import { DateTime } from "luxon";
-import { ProvisionFlowsStepsEnum } from "common/backend/provisionFlows";
+import { ProvisionFlowsStepsEnum } from "@qwilt/common/backend/provisionFlows";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export enum StepStateEnum {
   IN_PROGRESS = "IN_PROGRESS",

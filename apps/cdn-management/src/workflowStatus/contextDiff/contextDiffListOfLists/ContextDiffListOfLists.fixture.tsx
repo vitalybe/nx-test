@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   ContextDiffListOfLists,
   Props,
-} from "src/workflowStatus/contextDiff/contextDiffListOfLists/ContextDiffListOfLists";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { ContextDiffListEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffListEntity";
+} from "./ContextDiffListOfLists";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { ContextDiffListEntity } from "../_domain/contextDiffListEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

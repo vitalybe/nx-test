@@ -1,12 +1,12 @@
-import { TrafficRoutersMonitorsApi } from "common/backend/trafficRoutersMonitors";
-import { loggerCreator } from "common/utils/logger";
-import { DnsRouterEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/_domain/dnsRouterEntity";
-import { DnsRouterFormType } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/_domain/dnsRouterFormType";
-import { MonitorsAndRoutersProviderUtils } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/_utils/monitorsAndRoutersProviderUtils";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+import { TrafficRoutersMonitorsApi } from "@qwilt/common/backend/trafficRoutersMonitors";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DnsRouterEntity } from "../_domain/dnsRouterEntity";
+import { DnsRouterFormType } from "../_domain/dnsRouterFormType";
+import { MonitorsAndRoutersProviderUtils } from "../../_utils/monitorsAndRoutersProviderUtils";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DnsRoutersProvider {
   private constructor() {}

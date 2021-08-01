@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
 import { observer } from "mobx-react-lite";
 import {
   getEditAction,
@@ -10,34 +10,34 @@ import {
   QwiltGrid,
   QwiltGridColumnDef,
   QwiltGridTreeColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { DsRuleEntity } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
-import { openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { EditorDsAssignment } from "src/selectedCdn/tabs/tabDsAssignment/editorDsAssignment/EditorDsAssignment";
-import { Colors } from "src/_styling/colors";
-import { HierarchyUtils, SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { CommonColors } from "common/styling/commonColors";
-import { Checkbox } from "common/components/checkbox/Checkbox";
-import { Tooltip } from "common/components/Tooltip";
+import { DsRuleEntity } from "../_domain/dsRuleEntity";
+import { openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { EditorDsAssignment } from "../editorDsAssignment/EditorDsAssignment";
+import { Colors } from "../../../../_styling/colors";
+import { HierarchyUtils, SelectionModeEnum } from "@qwilt/common/utils/hierarchyUtils";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
+import { Checkbox } from "@qwilt/common/components/checkbox/Checkbox";
+import { Tooltip } from "@qwilt/common/components/Tooltip";
 import { ColumnApi, GridApi, GridReadyEvent } from "ag-grid-community";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
+import { useEventCallback } from "@qwilt/common/utils/hooks/useEventCallback";
 import { lighten } from "polished";
-import { Icons } from "common/styling/icons";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { BatchWizard } from "src/selectedCdn/tabs/tabDsAssignment/batchWizard/BatchWizard";
+import { Icons } from "@qwilt/common/styling/icons";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
+import { BatchWizard } from "../batchWizard/BatchWizard";
 import { toast } from "react-toastify";
-import { FilterWarnToast } from "src/selectedCdn/tabs/tabDsAssignment/cardDsAssignment/filterWarn/FilterWarn";
-import { QwiltToggle } from "common/components/configuration/qwiltForm/qwiltToggle/QwiltToggle";
+import { FilterWarnToast } from "./filterWarn/FilterWarn";
+import { QwiltToggle } from "@qwilt/common/components/configuration/qwiltForm/qwiltToggle/QwiltToggle";
 import _ from "lodash";
-import { DsRuleEntityTypeIcon } from "src/selectedCdn/tabs/tabDsAssignment/DsRuleEntityTypeIcon";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { ErrorWithTooltip } from "src/selectedCdn/tabs/tabDsAssignment/_parts/errorWithTooltip/ErrorWithTooltip";
-import { MissingAgreemenentError } from "src/selectedCdn/tabs/tabDsAssignment/_parts/missingAgreemenentError/MissingAgreemenentError";
-import { SelectedCdnContextProvider, useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { DsRuleEntityTypeIcon } from "../DsRuleEntityTypeIcon";
+import { DeliveryServiceEntity } from "../../../../_domain/deliveryServiceEntity";
+import { ErrorWithTooltip } from "../_parts/errorWithTooltip/ErrorWithTooltip";
+import { MissingAgreemenentError } from "../_parts/missingAgreemenentError/MissingAgreemenentError";
+import { SelectedCdnContextProvider, useSelectedCdn } from "../../../../_stores/selectedCdnStore";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

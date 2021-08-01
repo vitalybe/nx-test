@@ -1,8 +1,8 @@
 import * as yup from "yup";
-import { HealthProviderFormSchema } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/healthProvider/healthProviderFormType";
-import { enumValues } from "common/utils/typescriptUtils";
-import { ServerEntityStatus } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/oldServerEntity";
-import { ServerStatus } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { HealthProviderFormSchema } from "../../../_domain/healthProvider/healthProviderFormType";
+import { enumValues } from "@qwilt/common/utils/typescriptUtils";
+import { ServerEntityStatus } from "../../../_domain/server/oldServerEntity";
+import { ServerStatus } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
 
 export const DnsRouterFormSchema = yup
   .object()

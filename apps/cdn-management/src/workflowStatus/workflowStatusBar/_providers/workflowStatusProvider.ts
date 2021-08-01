@@ -1,11 +1,11 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { ProvisionFlowsApi } from "common/backend/provisionFlows";
-import { WorkflowsProvider } from "src/workflowStatus/_providers/workflowsProvider";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { WorkflowEntity } from "../../_domain/workflowEntity";
+import { ProvisionFlowsApi } from "@qwilt/common/backend/provisionFlows";
+import { WorkflowsProvider } from "../../_providers/workflowsProvider";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class WorkflowStatusProvider {
   private constructor() {}

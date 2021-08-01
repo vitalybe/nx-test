@@ -1,8 +1,8 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface MissingAgreementLinkEntityParams {
   dsMetadataId: string;

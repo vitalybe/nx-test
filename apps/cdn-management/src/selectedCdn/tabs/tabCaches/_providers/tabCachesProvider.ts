@@ -1,16 +1,16 @@
-import { loggerCreator } from "common/utils/logger";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
-import { CachesProvider } from "src/_providers/cachesProvider";
-import { CacheGroupsProvider } from "src/_providers/cacheGroupsProvider";
-import { QnsProvider } from "src/_providers/qnsProvider";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { QnEntity } from "src/_domain/qnEntity";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
+import { CachesProvider } from "../../../../_providers/cachesProvider";
+import { CacheGroupsProvider } from "../../../../_providers/cacheGroupsProvider";
+import { QnsProvider } from "../../../../_providers/qnsProvider";
+import { DeploymentEntitiesProvider } from "@qwilt/common/providers/deploymentEntitiesProvider";
+import { CacheEntity } from "../../../../_domain/cacheEntity";
+import { CacheGroupEntity } from "../../../../_domain/cacheGroupEntity";
+import { QnEntity } from "../../../../_domain/qnEntity";
+import { DeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/deploymentEntity";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class TabCachesProvider {
   private constructor() {}

@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { Props, WorkflowStatusBar } from "src/workflowStatus/workflowStatusBar/WorkflowStatusBar";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import FixtureStoreDecorator from "src/workflowStatus/_util/FixtureDecorator";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { Props, WorkflowStatusBar } from "./WorkflowStatusBar";
+import { WorkflowEntity } from "../_domain/workflowEntity";
+import FixtureStoreDecorator from "../_util/FixtureDecorator";
+import { CdnEntity } from "../../_domain/cdnEntity";
 
 const View = styled(FixtureStoreDecorator)`
   margin: 1em;

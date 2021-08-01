@@ -1,18 +1,18 @@
 import * as _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { DiffMetadataEntity } from "src/workflowStatus/representationDiff/_domain/diffMetadataEntity";
-import { DiffRequestEntity } from "src/workflowStatus/representationDiff/_domain/diffRequestEntity";
-import { ProvisionFlowsApi } from "common/backend/provisionFlows";
-import { Notifier } from "common/utils/notifications/notifier";
-import { DiffSectionDefinition } from "src/workflowStatus/representationDiff/_domain/diffSection";
-import { StepOutputApiResult } from "common/backend/provisionFlows/_types/provisionFlowsTypes";
-import { Utils } from "common/utils/utils";
-import { UnknownObject } from "common/utils/typescriptUtils";
-import { ActiveWorkflowProvider } from "src/workflowStatus/_providers/activeWorkflowProviderProvider";
-import { IdReplacer } from "src/workflowStatus/contextDiff/_utils/idReplacer";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { DiffMetadataEntity } from "../_domain/diffMetadataEntity";
+import { DiffRequestEntity } from "../_domain/diffRequestEntity";
+import { ProvisionFlowsApi } from "@qwilt/common/backend/provisionFlows";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { DiffSectionDefinition } from "../_domain/diffSection";
+import { StepOutputApiResult } from "@qwilt/common/backend/provisionFlows/_types/provisionFlowsTypes";
+import { Utils } from "@qwilt/common/utils/utils";
+import { UnknownObject } from "@qwilt/common/utils/typescriptUtils";
+import { ActiveWorkflowProvider } from "../../_providers/activeWorkflowProviderProvider";
+import { IdReplacer } from "../../contextDiff/_utils/idReplacer";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const sectionsDefinitions: DiffSectionDefinition[] = [
   { name: "certificates", identifierGetter: (obj) => obj["certificateId"] },

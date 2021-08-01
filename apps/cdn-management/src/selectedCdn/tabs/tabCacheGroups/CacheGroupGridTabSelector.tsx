@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CacheGroupIcon } from "common/components/configuration/configurationIcons";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { CacheGroupsProvider } from "src/_providers/cacheGroupsProvider";
-import { TabSelector } from "common/components/configuration/tabSelector/TabSelector";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CacheGroupIcon } from "@qwilt/common/components/configuration/configurationIcons";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
+import { CacheGroupsProvider } from "../../../_providers/cacheGroupsProvider";
+import { TabSelector } from "@qwilt/common/components/configuration/tabSelector/TabSelector";
 import { DateTime } from "luxon";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

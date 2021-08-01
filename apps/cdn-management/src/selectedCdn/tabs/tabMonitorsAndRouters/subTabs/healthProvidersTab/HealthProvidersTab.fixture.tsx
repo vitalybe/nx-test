@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   HealthProvidersTab,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthProvidersTab/HealthProvidersTab";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { HealthProviderEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthProvidersTab/_domain/healthProviderEntity";
+} from "./HealthProvidersTab";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { HealthProviderEntity } from "./_domain/healthProviderEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

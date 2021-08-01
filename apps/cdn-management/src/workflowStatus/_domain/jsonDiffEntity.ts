@@ -1,9 +1,9 @@
 import * as _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import { Delta, DiffPatcher } from "jsondiffpatch";
-import { OnlyData } from "common/utils/typescriptUtils";
+import { OnlyData } from "@qwilt/common/utils/typescriptUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class JsonDiffEntity {
   left!: object | undefined;

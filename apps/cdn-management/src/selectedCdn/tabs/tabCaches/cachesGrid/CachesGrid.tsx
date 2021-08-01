@@ -1,18 +1,18 @@
 import * as React from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CachesGridEntity } from "src/selectedCdn/tabs/tabCaches/_domain/cachesGridEntity";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { CommonColors } from "common/styling/commonColors";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CachesGridEntity } from "../_domain/cachesGridEntity";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import { lighten } from "polished";
-import { openConfirmModal, openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { Icons } from "common/styling/icons";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { openConfirmModal, openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { Icons } from "@qwilt/common/styling/icons";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { HierarchyUtils, SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { HierarchyUtils, SelectionModeEnum } from "@qwilt/common/utils/hierarchyUtils";
 import { ColumnApi, GridApi, GridReadyEvent } from "ag-grid-community";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
+import { useEventCallback } from "@qwilt/common/utils/hooks/useEventCallback";
 import {
   ActionData,
   getDeleteAction,
@@ -21,27 +21,27 @@ import {
   QwiltGrid,
   QwiltGridColumnDef,
   QwiltGridTreeColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
-import { Checkbox } from "common/components/checkbox/Checkbox";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { Checkbox } from "@qwilt/common/components/checkbox/Checkbox";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
 import _ from "lodash";
-import { FilterWarnToast } from "src/selectedCdn/tabs/tabDsAssignment/cardDsAssignment/filterWarn/FilterWarn";
+import { FilterWarnToast } from "../../tabDsAssignment/cardDsAssignment/filterWarn/FilterWarn";
 import { toast } from "react-toastify";
-import { CdnsApi } from "common/backend/cdns";
-import { Notifier } from "common/utils/notifications/notifier";
-import { Tooltip } from "common/components/Tooltip";
-import { InterfacesContainer } from "src/selectedCdn/tabs/tabCaches/cachesGrid/interfacesContainer/InterfacesContainer";
-import { BatchWizardCaches } from "src/selectedCdn/tabs/tabCaches/batchWizardCaches/BatchWizardCaches";
-import { CachesGridEntityTypeIcon } from "src/selectedCdn/tabs/tabCaches/_parts/CachesGridEntityTypeIcon";
+import { CdnsApi } from "@qwilt/common/backend/cdns";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { Tooltip } from "@qwilt/common/components/Tooltip";
+import { InterfacesContainer } from "./interfacesContainer/InterfacesContainer";
+import { BatchWizardCaches } from "../batchWizardCaches/BatchWizardCaches";
+import { CachesGridEntityTypeIcon } from "../_parts/CachesGridEntityTypeIcon";
 import { useMutation } from "react-query";
-import { CachesProvider } from "src/_providers/cachesProvider";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { SelectedCdnContextProvider, useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { CdnEntity } from "src/_domain/cdnEntity";
-import { EditorCacheContainer } from "src/selectedCdn/tabs/tabCaches/editorCache/EditorCacheContainer";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
+import { CachesProvider } from "../../../../_providers/cachesProvider";
+import { CacheEntity } from "../../../../_domain/cacheEntity";
+import { SelectedCdnContextProvider, useSelectedCdn } from "../../../../_stores/selectedCdnStore";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
+import { EditorCacheContainer } from "../editorCache/EditorCacheContainer";
+import { CacheGroupEntity } from "../../../../_domain/cacheGroupEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

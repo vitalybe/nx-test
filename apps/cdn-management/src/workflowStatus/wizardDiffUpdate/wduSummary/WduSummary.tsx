@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { SmallTitle } from "common/components/configuration/_styles/configurationCommon";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { Button } from "common/components/configuration/button/Button";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { SmallTitle } from "@qwilt/common/components/configuration/_styles/configurationCommon";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { Button } from "@qwilt/common/components/configuration/button/Button";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

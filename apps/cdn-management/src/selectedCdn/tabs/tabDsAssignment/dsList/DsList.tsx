@@ -1,16 +1,16 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { groupByToCollections } from "common/utils/groupByToCollecitons";
-import { DsMetadataEntity } from "src/_domain/dsMetadataEntity";
-import { DsMetadataItem } from "src/selectedCdn/tabs/tabDsAssignment/dsList/dsMetadataItem/DsMetadataItem";
-import { MetadataServiceTypeEnum } from "common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DeliveryServiceEntity } from "../../../../_domain/deliveryServiceEntity";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { groupByToCollections } from "@qwilt/common/utils/groupByToCollecitons";
+import { DsMetadataEntity } from "../../../../_domain/dsMetadataEntity";
+import { DsMetadataItem } from "./dsMetadataItem/DsMetadataItem";
+import { MetadataServiceTypeEnum } from "@qwilt/common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -2,9 +2,9 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { NavigationBar, Props } from "src/workflowStatus/contextDiff/navigationBar/NavigationBar";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { ContextDiffEntityTypeEnum } from "src/workflowStatus/contextDiff/_domain/contextEntityType";
+import { NavigationBar, Props } from "./NavigationBar";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { ContextDiffEntityTypeEnum } from "../_domain/contextEntityType";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,9 +1,9 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { Props, TabDnsSegments } from "src/selectedCdn/tabs/tabDnsSegments/TabDnsSegments";
+import { Props, TabDnsSegments } from "./TabDnsSegments";
 
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { SelectedCdnFixtureDecorator } from "../_utils/SelectedCdnFixtureDecorator";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 

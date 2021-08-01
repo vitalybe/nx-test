@@ -1,7 +1,7 @@
-import { loggerCreator } from "common/utils/logger";
-import { ServerType } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ServerType } from "@qwilt/common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface ServerMetadataType {
   title: string;

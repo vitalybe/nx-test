@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { CacheGroupGrid, Props } from "src/selectedCdn/tabs/tabCacheGroups/CacheGroupGrid";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { CacheGroupGrid, Props } from "./CacheGroupGrid";
+import { CacheGroupEntity } from "../../../_domain/cacheGroupEntity";
+import { SelectedCdnFixtureDecorator } from "../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

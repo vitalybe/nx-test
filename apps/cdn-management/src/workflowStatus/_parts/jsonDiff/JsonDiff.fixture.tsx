@@ -2,9 +2,9 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { JsonDiff, Props } from "src/workflowStatus/_parts/jsonDiff/JsonDiff";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { JsonDiffEntity } from "src/workflowStatus/_domain/jsonDiffEntity";
+import { JsonDiff, Props } from "./JsonDiff";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { JsonDiffEntity } from "../../_domain/jsonDiffEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

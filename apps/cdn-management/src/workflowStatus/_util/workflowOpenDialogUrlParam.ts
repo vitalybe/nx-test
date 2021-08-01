@@ -1,9 +1,9 @@
-import { loggerCreator } from "common/utils/logger";
-import { ProjectUrlParams } from "src/_stores/projectUrlParams";
-import { ProjectUrlStore } from "src/_stores/projectUrlStore";
-import { DiffRequestEntity } from "src/workflowStatus/representationDiff/_domain/diffRequestEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ProjectUrlParams } from "../../_stores/projectUrlParams";
+import { ProjectUrlStore } from "../../_stores/projectUrlStore";
+import { DiffRequestEntity } from "../representationDiff/_domain/diffRequestEntity";
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class WorkflowOpenDialogUrlParam {
   static clear() {

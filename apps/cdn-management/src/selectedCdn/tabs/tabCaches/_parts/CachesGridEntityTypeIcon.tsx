@@ -1,12 +1,12 @@
 import * as React from "react";
-import { CachesGridEntity } from "src/selectedCdn/tabs/tabCaches/_domain/cachesGridEntity";
+import { CachesGridEntity } from "../_domain/cachesGridEntity";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestion } from "@fortawesome/free-solid-svg-icons/faQuestion";
-import { CacheIcon, CacheGroupIcon, OfflineQnIcon } from "common/components/configuration/configurationIcons";
+import { CacheIcon, CacheGroupIcon, OfflineQnIcon } from "@qwilt/common/components/configuration/configurationIcons";
 import styled from "styled-components";
-import { IspPlaceholderIcon } from "common/components/svg/entityIcons/IspPlaceholderIcon";
-import { Colors } from "src/_styling/colors";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { IspPlaceholderIcon } from "@qwilt/common/components/svg/entityIcons/IspPlaceholderIcon";
+import { Colors } from "../../../../_styling/colors";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
 import _ from "lodash";
 
 export interface Props {

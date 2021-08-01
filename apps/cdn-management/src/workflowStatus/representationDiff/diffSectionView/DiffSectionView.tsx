@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DiffSection } from "src/workflowStatus/representationDiff/_domain/diffSection";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DiffSection } from "../_domain/diffSection";
 // @ts-ignore
-import { Checkbox } from "common/components/checkbox/Checkbox";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { Checkbox } from "@qwilt/common/components/checkbox/Checkbox";
+import { Clickable } from "@qwilt/common/components/configuration/clickable/Clickable";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons/faArrowLeft";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "jsondiffpatch/dist/formatters-styles/html.css";
 import "jsondiffpatch/dist/formatters-styles/annotated.css";
-import { JsonDiff } from "src/workflowStatus/_parts/jsonDiff/JsonDiff";
+import { JsonDiff } from "../../_parts/jsonDiff/JsonDiff";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

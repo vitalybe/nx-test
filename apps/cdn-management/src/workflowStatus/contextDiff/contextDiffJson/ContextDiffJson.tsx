@@ -1,18 +1,18 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Checkbox } from "common/components/checkbox/Checkbox";
-import { JsonDiff } from "src/workflowStatus/_parts/jsonDiff/JsonDiff";
-import { ContextDiffItemEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffItemEntity";
-import { Button } from "common/components/configuration/button/Button";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { Checkbox } from "@qwilt/common/components/checkbox/Checkbox";
+import { JsonDiff } from "../../_parts/jsonDiff/JsonDiff";
+import { ContextDiffItemEntity } from "../_domain/contextDiffItemEntity";
+import { Button } from "@qwilt/common/components/configuration/button/Button";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons/faChevronUp";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { TextTooltip } from "@qwilt/common/components/textTooltip/TextTooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

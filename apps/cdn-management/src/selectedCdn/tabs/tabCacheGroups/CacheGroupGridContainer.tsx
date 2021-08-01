@@ -1,14 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CacheGroupsProvider } from "src/_providers/cacheGroupsProvider";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { CacheGroupGrid } from "src/selectedCdn/tabs/tabCacheGroups/CacheGroupGrid";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CacheGroupsProvider } from "../../../_providers/cacheGroupsProvider";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { CacheGroupGrid } from "./CacheGroupGrid";
+import { useSelectedCdn } from "../../../_stores/selectedCdnStore";
 import { UseQueryResult } from "react-query/types/react/types";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
+import { CacheGroupEntity } from "../../../_domain/cacheGroupEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

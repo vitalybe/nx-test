@@ -1,27 +1,27 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CachesGridEntity } from "src/selectedCdn/tabs/tabCaches/_domain/cachesGridEntity";
-import { CommonColors } from "common/styling/commonColors";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CachesGridEntity } from "../../_domain/cachesGridEntity";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import { lighten } from "polished";
-import { HierarchyUtils, SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { HierarchyUtils, SelectionModeEnum } from "@qwilt/common/utils/hierarchyUtils";
 import { GridReadyEvent } from "ag-grid-community";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
+import { useEventCallback } from "@qwilt/common/utils/hooks/useEventCallback";
 import {
   GridReactRenderer,
   QwiltGrid,
   QwiltGridColumnDef,
   QwiltGridTreeColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
+} from "@qwilt/common/components/qwiltGrid/QwiltGrid";
 import _ from "lodash";
-import { Tooltip } from "common/components/Tooltip";
-import { InterfacesContainer } from "src/selectedCdn/tabs/tabCaches/cachesGrid/interfacesContainer/InterfacesContainer";
-import { Colors } from "src/_styling/colors";
-import { CachesGridEntityTypeIcon } from "src/selectedCdn/tabs/tabCaches/_parts/CachesGridEntityTypeIcon";
-import { CacheEntity } from "src/_domain/cacheEntity";
+import { Tooltip } from "@qwilt/common/components/Tooltip";
+import { InterfacesContainer } from "../../cachesGrid/interfacesContainer/InterfacesContainer";
+import { Colors } from "../../../../../_styling/colors";
+import { CachesGridEntityTypeIcon } from "../../_parts/CachesGridEntityTypeIcon";
+import { CacheEntity } from "../../../../../_domain/cacheEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

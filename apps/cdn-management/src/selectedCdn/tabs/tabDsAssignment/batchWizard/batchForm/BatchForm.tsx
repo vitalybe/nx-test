@@ -1,20 +1,20 @@
 import * as React from "react";
 import { ReactElement } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import {
   FormikContainer,
   OverrideButtons,
   Props as FormikContainerProps,
-} from "common/components/configuration/formik/formikContainer/FormikContainer";
-import { EditorDsAssignmentFields } from "src/selectedCdn/tabs/tabDsAssignment/editorDsAssignment/editorDsAssignmentFields/EditorDsAssignmentFields";
-import { DeliveryServiceEntity, Revision } from "src/_domain/deliveryServiceEntity";
-import { DropDownOption } from "common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
-import { EMPTY_VALUE, UNASSIGNED_VALUE } from "src/selectedCdn/tabs/tabDsAssignment/_providers/dsAssignmentsProvider";
+} from "@qwilt/common/components/configuration/formik/formikContainer/FormikContainer";
+import { EditorDsAssignmentFields } from "../../editorDsAssignment/editorDsAssignmentFields/EditorDsAssignmentFields";
+import { DeliveryServiceEntity, Revision } from "../../../../../_domain/deliveryServiceEntity";
+import { DropDownOption } from "@qwilt/common/components/configuration/qwiltForm/qwiltReactSelect/QwiltReactSelect";
+import { EMPTY_VALUE, UNASSIGNED_VALUE } from "../../_providers/dsAssignmentsProvider";
 import _ from "lodash";
-import { DsAssignmentFormData } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsAssignmentFormData";
+import { DsAssignmentFormData } from "../../_domain/dsAssignmentFormData";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

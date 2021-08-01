@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useMemo, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DsRuleEntity } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
-import { BatchPreview } from "src/selectedCdn/tabs/tabDsAssignment/batchWizard/batchPreview/BatchPreview";
-import { BatchForm } from "src/selectedCdn/tabs/tabDsAssignment/batchWizard/batchForm/BatchForm";
-import { BatchUpdate } from "src/selectedCdn/tabs/tabDsAssignment/batchWizard/batchUpdate/BatchUpdate";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { SmallTitle } from "common/components/configuration/_styles/configurationCommon";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DsRuleEntity } from "../_domain/dsRuleEntity";
+import { BatchPreview } from "./batchPreview/BatchPreview";
+import { BatchForm } from "./batchForm/BatchForm";
+import { BatchUpdate } from "./batchUpdate/BatchUpdate";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { SmallTitle } from "@qwilt/common/components/configuration/_styles/configurationCommon";
 import _ from "lodash";
-import { HierarchyUtils } from "common/utils/hierarchyUtils";
-import { DeliveryServiceEntity } from "src/_domain/deliveryServiceEntity";
-import { DsAssignmentFormData } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsAssignmentFormData";
+import { HierarchyUtils } from "@qwilt/common/utils/hierarchyUtils";
+import { DeliveryServiceEntity } from "../../../../_domain/deliveryServiceEntity";
+import { DsAssignmentFormData } from "../_domain/dsAssignmentFormData";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

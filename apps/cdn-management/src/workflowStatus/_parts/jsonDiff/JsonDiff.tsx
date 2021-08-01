@@ -1,11 +1,11 @@
 import * as React from "react";
 import { useEffect, useRef } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import { formatters } from "jsondiffpatch";
-import { JsonDiffEntity } from "src/workflowStatus/_domain/jsonDiffEntity";
+import { JsonDiffEntity } from "../../_domain/jsonDiffEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

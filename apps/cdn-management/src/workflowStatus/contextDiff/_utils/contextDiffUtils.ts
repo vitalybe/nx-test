@@ -1,11 +1,11 @@
 import * as _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
-import { GridValueRenderer } from "common/components/qwiltGrid/QwiltGrid";
-import { Colors } from "src/_styling/colors";
-import { ContextDiffBaseEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffDomainShared";
-import { ContextDiffItemEntity } from "src/workflowStatus/contextDiff/_domain/contextDiffItemEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { GridValueRenderer } from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { Colors } from "../../../_styling/colors";
+import { ContextDiffBaseEntity } from "../_domain/contextDiffDomainShared";
+import { ContextDiffItemEntity } from "../_domain/contextDiffItemEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ContextDiffUtils {
   static isEntityReviewed(entity: ContextDiffBaseEntity, reviewedIds: Set<string>): boolean {

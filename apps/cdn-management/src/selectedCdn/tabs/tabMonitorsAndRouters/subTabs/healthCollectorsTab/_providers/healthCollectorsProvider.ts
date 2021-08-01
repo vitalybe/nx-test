@@ -1,12 +1,12 @@
-import { TrafficRoutersMonitorsApi } from "common/backend/trafficRoutersMonitors";
-import { loggerCreator } from "common/utils/logger";
-import { HealthCollectorEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthCollectorsTab/_domain/healthCollectorEntity";
-import { HealthCollectorFormType } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthCollectorsTab/_domain/healthCollectorFormType";
-import { MonitorsAndRoutersProviderUtils } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/_utils/monitorsAndRoutersProviderUtils";
-import { PrepareQueryResult } from "common/utils/reactQueryUtils/prepareQueryResult";
+import { TrafficRoutersMonitorsApi } from "@qwilt/common/backend/trafficRoutersMonitors";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { HealthCollectorEntity } from "../_domain/healthCollectorEntity";
+import { HealthCollectorFormType } from "../_domain/healthCollectorFormType";
+import { MonitorsAndRoutersProviderUtils } from "../../_utils/monitorsAndRoutersProviderUtils";
+import { PrepareQueryResult } from "@qwilt/common/utils/reactQueryUtils/prepareQueryResult";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class HealthCollectorsProvider {
   private constructor() {}

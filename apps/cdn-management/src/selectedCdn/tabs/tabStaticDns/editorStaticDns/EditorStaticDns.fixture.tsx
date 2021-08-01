@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { EditorStaticDns, Props } from "src/selectedCdn/tabs/tabStaticDns/editorStaticDns/EditorStaticDns";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
-import { StaticDnsEntity } from "src/selectedCdn/tabs/tabStaticDns/_domain/staticDnsEntity";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { EditorStaticDns, Props } from "./EditorStaticDns";
+import { SelectedCdnFixtureDecorator } from "../../_utils/SelectedCdnFixtureDecorator";
+import { StaticDnsEntity } from "../_domain/staticDnsEntity";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

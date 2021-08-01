@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DnsRoutersTab } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/DnsRoutersTab";
-import { DnsRoutersProvider } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/dnsRoutersTab/_providers/dnsRoutersProvider";
-import { QueryDataContainer } from "common/components/queryDataContainer/QueryDataContainer";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DnsRoutersTab } from "./DnsRoutersTab";
+import { DnsRoutersProvider } from "./_providers/dnsRoutersProvider";
+import { QueryDataContainer } from "@qwilt/common/components/queryDataContainer/QueryDataContainer";
+import { useSelectedCdn } from "../../../../../_stores/selectedCdnStore";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

@@ -1,4 +1,4 @@
-import { JsonDiffEntity } from "src/workflowStatus/_domain/jsonDiffEntity";
+import { JsonDiffEntity } from "../../_domain/jsonDiffEntity";
 
 export interface DiffSectionDefinition {
   name: string;

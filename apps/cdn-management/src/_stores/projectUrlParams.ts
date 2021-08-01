@@ -1,4 +1,4 @@
-import { Metadata, Params } from "common/urlParams/cdnManagementUrlParams";
+import { Metadata, Params } from "@qwilt/common/urlParams/cdnManagementUrlParams";
 
 type ProjectUrlParamsType = Params;
 const ProjectUrlParams = Params;

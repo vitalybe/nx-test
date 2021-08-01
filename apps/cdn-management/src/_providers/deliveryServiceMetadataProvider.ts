@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { OrganizationsProvider, OrgMap } from "common/providers/organizationsProvider";
-import { DsMetadataEntity } from "src/_domain/dsMetadataEntity";
-import { DeliveryServicesApi } from "common/backend/deliveryServices";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { AjaxMetadata } from "@qwilt/common/utils/ajax";
+import { OrganizationsProvider, OrgMap } from "@qwilt/common/providers/organizationsProvider";
+import { DsMetadataEntity } from "../_domain/dsMetadataEntity";
+import { DeliveryServicesApi } from "@qwilt/common/backend/deliveryServices";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DeliveryServiceMetadataProvider {
   private constructor() {}

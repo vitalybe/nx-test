@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DsRuleEntity } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsRuleEntity";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DsRuleEntity } from "../../_domain/dsRuleEntity";
 import { MoonLoader } from "react-spinners";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "@qwilt/common/styling/commonColors";
 import { lighten } from "polished";
-import { CopyToClipboardButton } from "common/components/copyToClipboardButton/CopyToClipboardButton";
-import { updateRule } from "src/selectedCdn/tabs/tabDsAssignment/editorDsAssignment/EditorDsAssignment";
+import { CopyToClipboardButton } from "@qwilt/common/components/copyToClipboardButton/CopyToClipboardButton";
+import { updateRule } from "../../editorDsAssignment/EditorDsAssignment";
 import _ from "lodash";
-import { DsAssignmentFormData } from "src/selectedCdn/tabs/tabDsAssignment/_domain/dsAssignmentFormData";
-import { useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { DsAssignmentsProvider } from "src/selectedCdn/tabs/tabDsAssignment/_providers/dsAssignmentsProvider";
+import { DsAssignmentFormData } from "../../_domain/dsAssignmentFormData";
+import { useSelectedCdn } from "../../../../../_stores/selectedCdnStore";
+import { DsAssignmentsProvider } from "../../_providers/dsAssignmentsProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 
@@ -133,8 +133,8 @@ type State = "in progress" | "succeeded" | "failed";
 
 //endregion [[ Props ]]
 
-const successSvg = require("src/images/success.svg");
-const failedSvg = require("src/images/failed.svg");
+const successSvg = require("../../../../../images/success.svg");
+const failedSvg = require("../../../../../images/failed.svg");
 
 export const BatchUpdate = ({ globalAssignments, ...props }: Props) => {
   const cdn = useSelectedCdn();

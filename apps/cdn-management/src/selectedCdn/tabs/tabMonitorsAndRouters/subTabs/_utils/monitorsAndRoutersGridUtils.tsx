@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { GridValueRenderer, QwiltGrid, QwiltGridColumnDef } from "common/components/qwiltGrid/QwiltGrid";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { ServerEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/server/serverEntity";
-import { HealthProviderEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/_domain/healthProvider/healthProviderEntity";
+import { GridValueRenderer, QwiltGrid, QwiltGridColumnDef } from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { ServerEntity } from "../../_domain/server/serverEntity";
+import { HealthProviderEntity } from "../../_domain/healthProvider/healthProviderEntity";
 import { GridOptions } from "ag-grid-community/dist/lib/entities/gridOptions";
 import { ICellRendererParams } from "ag-grid-community";
-import { HealthProviders } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/_parts/healthProviders/HealthProviders";
+import { HealthProviders } from "../_parts/healthProviders/HealthProviders";
 import * as React from "react";
 import { darken } from "polished";
 

@@ -1,12 +1,12 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { EditorCache, Props } from "src/selectedCdn/tabs/tabCaches/editorCache/EditorCache";
+import { EditorCache, Props } from "./EditorCache";
 
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { MonitorSegmentEntity } from "src/selectedCdn/tabs/tabMonitorSegments/_domain/MonitorSegmentEntity";
-import { CacheGroupEntity } from "src/_domain/cacheGroupEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+import { CacheEntity } from "../../../../_domain/cacheEntity";
+import { MonitorSegmentEntity } from "../../tabMonitorSegments/_domain/MonitorSegmentEntity";
+import { CacheGroupEntity } from "../../../../_domain/cacheGroupEntity";
+import { SelectedCdnFixtureDecorator } from "../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

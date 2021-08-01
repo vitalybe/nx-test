@@ -1,14 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { useProvider } from "common/components/providerDataContainer/_providers/useProvider";
-import { DiffRequestEntity } from "src/workflowStatus/representationDiff/_domain/diffRequestEntity";
-import { DiffWorkflowsProvider } from "src/workflowStatus/representationDiff/_providers/diffWorkflowsProvider";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import { RepresentationDiff } from "src/workflowStatus/representationDiff/RepresentationDiff";
-import { Button } from "common/components/configuration/button/Button";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { useProvider } from "@qwilt/common/components/providerDataContainer/_providers/useProvider";
+import { DiffRequestEntity } from "./_domain/diffRequestEntity";
+import { DiffWorkflowsProvider } from "./_providers/diffWorkflowsProvider";
+import { ProviderDataContainer } from "@qwilt/common/components/providerDataContainer/ProviderDataContainer";
+import { RepresentationDiff } from "./RepresentationDiff";
+import { Button } from "@qwilt/common/components/configuration/button/Button";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

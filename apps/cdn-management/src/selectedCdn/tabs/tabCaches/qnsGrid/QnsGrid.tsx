@@ -1,22 +1,22 @@
 import * as React from "react";
 import { useMemo, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ItemsCard } from "common/components/configuration/itemsCard/ItemsCard";
-import { ActionData, GridReactRenderer, QwiltGrid, QwiltGridColumnDef } from "common/components/qwiltGrid/QwiltGrid";
-import { Notifier } from "common/utils/notifications/notifier";
-import { CacheOperationalModeApiEnum } from "common/backend/cdns/_types/deliveryUnitApiType";
-import { openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { QnPlugIcon, UnassignedQnIcon } from "common/components/configuration/configurationIcons";
-import { SelectedCdnContextProvider, useSelectedCdn } from "src/_stores/selectedCdnStore";
-import { QnEntity } from "src/_domain/qnEntity";
-import { CacheEntity } from "src/_domain/cacheEntity";
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { NameWithId } from "common/domain/nameWithId";
-import { EditorCacheContainer } from "src/selectedCdn/tabs/tabCaches/editorCache/EditorCacheContainer";
-import { defaultHealthProfile } from "src/_domain/defaultHealthProfile";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { ItemsCard } from "@qwilt/common/components/configuration/itemsCard/ItemsCard";
+import { ActionData, GridReactRenderer, QwiltGrid, QwiltGridColumnDef } from "@qwilt/common/components/qwiltGrid/QwiltGrid";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { CacheOperationalModeApiEnum } from "@qwilt/common/backend/cdns/_types/deliveryUnitApiType";
+import { openQwiltModal } from "@qwilt/common/components/qwiltModal/QwiltModal";
+import { QnPlugIcon, UnassignedQnIcon } from "@qwilt/common/components/configuration/configurationIcons";
+import { SelectedCdnContextProvider, useSelectedCdn } from "../../../../_stores/selectedCdnStore";
+import { QnEntity } from "../../../../_domain/qnEntity";
+import { CacheEntity } from "../../../../_domain/cacheEntity";
+import { DeploymentEntity } from "@qwilt/common/domain/qwiltDeployment/deploymentEntity";
+import { NameWithId } from "@qwilt/common/domain/nameWithId";
+import { EditorCacheContainer } from "../editorCache/EditorCacheContainer";
+import { defaultHealthProfile } from "../../../../_domain/defaultHealthProfile";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

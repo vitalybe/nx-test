@@ -4,8 +4,8 @@ import styled from "styled-components";
 import {
   Props,
   WduSystemUpdateForm,
-} from "src/workflowStatus/wizardDiffUpdate/wduSystemUpdateForm/WduSystemUpdateForm";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./WduSystemUpdateForm";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

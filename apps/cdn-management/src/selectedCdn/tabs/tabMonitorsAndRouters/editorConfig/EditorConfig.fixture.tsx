@@ -1,9 +1,9 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { EditorConfig, Props } from "src/selectedCdn/tabs/tabMonitorsAndRouters/editorConfig/EditorConfig";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
-import { CdnEntity } from "src/_domain/cdnEntity";
+import { EditorConfig, Props } from "./EditorConfig";
+import { SelectedCdnFixtureDecorator } from "../../_utils/SelectedCdnFixtureDecorator";
+import { CdnEntity } from "../../../../_domain/cdnEntity";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

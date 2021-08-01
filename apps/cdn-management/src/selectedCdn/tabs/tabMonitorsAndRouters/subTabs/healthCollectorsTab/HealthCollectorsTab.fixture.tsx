@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   HealthCollectorsTab,
   Props,
-} from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthCollectorsTab/HealthCollectorsTab";
-import { HealthCollectorEntity } from "src/selectedCdn/tabs/tabMonitorsAndRouters/subTabs/healthCollectorsTab/_domain/healthCollectorEntity";
-import { SelectedCdnFixtureDecorator } from "src/selectedCdn/tabs/_utils/SelectedCdnFixtureDecorator";
+} from "./HealthCollectorsTab";
+import { HealthCollectorEntity } from "./_domain/healthCollectorEntity";
+import { SelectedCdnFixtureDecorator } from "../../../_utils/SelectedCdnFixtureDecorator";
 
 const View = styled(SelectedCdnFixtureDecorator)`
   margin: 1em;

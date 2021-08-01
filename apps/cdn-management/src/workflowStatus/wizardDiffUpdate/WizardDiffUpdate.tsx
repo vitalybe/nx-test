@@ -1,17 +1,17 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { DiffRequestEntity } from "src/workflowStatus/representationDiff/_domain/diffRequestEntity";
-import { WorkflowEntity } from "src/workflowStatus/_domain/workflowEntity";
-import { RepresentationDiffContainer } from "src/workflowStatus/representationDiff/RepresentationDiffContainer";
-import { WduSystemUpdateForm } from "src/workflowStatus/wizardDiffUpdate/wduSystemUpdateForm/WduSystemUpdateForm";
-import { WduSummary } from "src/workflowStatus/wizardDiffUpdate/wduSummary/WduSummary";
-import { SystemUpdateSchemaType } from "common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateSchema";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { Notifier } from "common/utils/notifications/notifier";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { DiffRequestEntity } from "../representationDiff/_domain/diffRequestEntity";
+import { WorkflowEntity } from "../_domain/workflowEntity";
+import { RepresentationDiffContainer } from "../representationDiff/RepresentationDiffContainer";
+import { WduSystemUpdateForm } from "./wduSystemUpdateForm/WduSystemUpdateForm";
+import { WduSummary } from "./wduSummary/WduSummary";
+import { SystemUpdateSchemaType } from "@qwilt/common/components/_projectSpecific/systemUpdatesManagement/_domain/systemUpdateSchema";
+import { ConfigurationStyles } from "@qwilt/common/components/configuration/_styles/configurationStyles";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 
