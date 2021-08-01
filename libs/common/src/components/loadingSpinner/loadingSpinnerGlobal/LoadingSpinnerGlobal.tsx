@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { loggerCreator } from "../../../utils/logger";
+import { LoadingSpinner } from "../loadingSpinner/LoadingSpinner";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

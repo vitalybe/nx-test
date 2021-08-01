@@ -1,13 +1,13 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { ElementObject } from "highcharts";
-import { loggerCreator } from "common/utils/logger";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { mockUtils } from "common/utils/mockUtils";
-import { OverallPeakLayer } from "common/components/qwiltChart/_behaviors/overallPeakBehavior/overallPeak/OverallPeakLayer";
+import { loggerCreator } from "../../../../utils/logger";
+import { ChartSeriesArray } from "../../_domain/chartSeriesArray";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { mockUtils } from "../../../../utils/mockUtils";
+import { OverallPeakLayer } from "./overallPeak/OverallPeakLayer";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class OverallPeakBehavior implements ChartBehavior {
   constructor(private seriesWithoutPeak: string[] = []) {}

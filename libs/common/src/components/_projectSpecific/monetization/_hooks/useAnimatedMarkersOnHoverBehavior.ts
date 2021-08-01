@@ -1,14 +1,14 @@
 import {
   MarkersOnHoverBehavior,
   MarkersOnHoverOptions,
-} from "common/components/qwiltChart/_behaviors/markersOnHoverBehavior/markersOnHoverBehavior";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
+} from "../../../qwiltChart/_behaviors/markersOnHoverBehavior/markersOnHoverBehavior";
+import { ChartSeriesData } from "../../../qwiltChart/_domain/chartSeriesData";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
+import { ChartSeriesArray } from "../../../qwiltChart/_domain/chartSeriesArray";
+import { useEventCallback } from "../../../../utils/hooks/useEventCallback";
 import { ChartObject } from "highcharts";
-import { ChartSeries } from "common/components/qwiltChart/_domain/chartSeries";
-import { NativeAnimations } from "common/styling/animations/nativeAnimations";
+import { ChartSeries } from "../../../qwiltChart/_domain/chartSeries";
+import { NativeAnimations } from "../../../../styling/animations/nativeAnimations";
 
 interface HookReturnType {
   hoveredIndex: number | undefined;

@@ -2,13 +2,13 @@ import * as React from "react";
 import { ReactChild, ReactNode, RefObject, useEffect } from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react-lite";
-import { CommonColors } from "common/styling/commonColors";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { CommonStyles } from "common/styling/commonStyles";
-import { OverflowingText } from "common/components/overflowingText/OverflowingText";
-import { Checkbox } from "common/components/checkbox/Checkbox";
+import { CommonColors } from "../../../styling/commonColors";
+import { Clickable } from "../clickable/Clickable";
+import { TextTooltip } from "../../textTooltip/TextTooltip";
+import { ConfigurationStyles } from "../_styles/configurationStyles";
+import { CommonStyles } from "../../../styling/commonStyles";
+import { OverflowingText } from "../../overflowingText/OverflowingText";
+import { Checkbox } from "../../checkbox/Checkbox";
 
 const ItemWithActionsView = styled.div<{ disabled: boolean; isSelectable: boolean; isSelected: boolean }>`
   display: flex;

@@ -1,23 +1,23 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { DeliveryAgreementsApiMock } from "common/backend/deliveryAgreements";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { DeliveryAgreementsApiMock } from "../../deliveryAgreements";
 import {
   DeliveryAgreementApiEntity,
   DeliveryAgreementUpdateApiEntity,
-} from "common/backend/deliveryAgreements/_types/deliveryAgreementsTypes";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
+} from "../_types/deliveryAgreementsTypes";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
 import {
   DeliveryAgreementsObfuscation,
   validateDeliveryAgreements,
-} from "common/backend/deliveryAgreements/deliveryAgreementsUtils";
+} from "../deliveryAgreementsUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("delivery-agreements"), "/api/1.0/delivery-agreements/");
 
 export type ValidatedDeliveryAgreement = Required<

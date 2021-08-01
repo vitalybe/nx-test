@@ -1,10 +1,10 @@
-import { sleep } from "common/utils/sleep";
-import { ContentManagementApi } from "common/backend/contentManagement";
-import { loggerCreator } from "common/utils/logger";
-import { PurgeRuleApi } from "common/backend/contentManagement/_types/contentManagementTypes";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { ContentManagementApi } from "../../contentManagement";
+import { loggerCreator } from "../../../utils/logger";
+import { PurgeRuleApi } from "../_types/contentManagementTypes";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class ContentManagementApiMock extends ContentManagementApi {
   async list(): Promise<PurgeRuleApi[]> {

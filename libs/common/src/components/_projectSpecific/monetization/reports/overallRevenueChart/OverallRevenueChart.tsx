@@ -1,19 +1,19 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QwiltChart } from "common/components/qwiltChart/QwiltChart";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { useAnimatedMarkersOnHoverBehavior } from "common/components/_projectSpecific/monetization/_hooks/useAnimatedMarkersOnHoverBehavior";
-import { useLiveValuesLegend } from "common/components/_projectSpecific/monetization/_hooks/useLiveValuesLegend";
+import { loggerCreator } from "../../../../../utils/logger";
+import { QwiltChart } from "../../../../qwiltChart/QwiltChart";
+import { ChartSeriesData } from "../../../../qwiltChart/_domain/chartSeriesData";
+import { useAnimatedMarkersOnHoverBehavior } from "../../_hooks/useAnimatedMarkersOnHoverBehavior";
+import { useLiveValuesLegend } from "../../_hooks/useLiveValuesLegend";
 import { getOverallRevenueChartBehaviors } from "./_utils";
-import { MonetizationProjectEntity } from "common/components/_projectSpecific/monetization/_domain/monetizationProjectEntity";
+import { MonetizationProjectEntity } from "../../_domain/monetizationProjectEntity";
 import _ from "lodash";
-import { MonetizationPanelHeader } from "common/components/_projectSpecific/monetization/reports/monetizationPanelHeader/MonetizationPanelHeader";
-import { MonetizationChartLegend } from "common/components/_projectSpecific/monetization/reports/monetizationChartLegend/MonetizationChartLegend";
-import { OverallRevenuePrintLegend } from "common/components/_projectSpecific/monetization/reports/print/overallRevenuePrintLegend/OverallRevenuePrintLegend";
+import { MonetizationPanelHeader } from "../monetizationPanelHeader/MonetizationPanelHeader";
+import { MonetizationChartLegend } from "../monetizationChartLegend/MonetizationChartLegend";
+import { OverallRevenuePrintLegend } from "../print/overallRevenuePrintLegend/OverallRevenuePrintLegend";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

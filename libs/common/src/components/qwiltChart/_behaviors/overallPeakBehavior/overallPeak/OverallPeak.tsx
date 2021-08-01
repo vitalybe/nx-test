@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Tooltip } from "common/components/Tooltip";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { CommonColors } from "common/styling/commonColors";
-import { BwPeakIcon } from "common/components/metrics/icons/bwPeakIcon/BwPeakIcon";
+import { loggerCreator } from "../../../../../utils/logger";
+import { Tooltip } from "../../../../Tooltip";
+import { UnitKindEnum, unitsFormatter } from "../../../../../utils/unitsFormatter";
+import { CommonColors } from "../../../../../styling/commonColors";
+import { BwPeakIcon } from "../../../../metrics/icons/bwPeakIcon/BwPeakIcon";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

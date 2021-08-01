@@ -12,15 +12,15 @@ import {
   ApiHistogramType,
   ApiPercentileType,
   ApiSeries,
-} from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
-import { TimeConfig } from "common/utils/timeConfig";
-import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
-import { MediaAnalyticsApi } from "common/backend/mediaAnalytics";
+} from "../mediaAnalyticsTypes";
+import { TimeConfig } from "../../../utils/timeConfig";
+import { MediaAnalyticsSeries } from "../mediaAnalyticsSeries";
+import { MediaAnalyticsApi } from "../../mediaAnalytics";
 import { DateTime, Duration } from "luxon";
-import { Utils } from "common/utils/utils";
-import mockData from "common/backend/_utils/mockData";
-import { sleep } from "common/utils/sleep";
-import { mockNetworkSleep, mockUtils } from "common/utils/mockUtils";
+import { Utils } from "../../../utils/utils";
+import mockData from "../../_utils/mockData";
+import { sleep } from "../../../utils/sleep";
+import { mockNetworkSleep, mockUtils } from "../../../utils/mockUtils";
 
 interface HistogramOptions {
   from: DateTime;

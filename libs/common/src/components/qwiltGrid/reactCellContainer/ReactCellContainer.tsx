@@ -1,11 +1,11 @@
 import * as React from "react";
 import { ReactElement } from "react";
-import { loggerCreator } from "common/utils/logger";
-import { ColDef, QwiltGridColumnDef, ReactRendererProps } from "common/components/qwiltGrid/QwiltGrid";
+import { loggerCreator } from "../../../utils/logger";
+import { ColDef, QwiltGridColumnDef, ReactRendererProps } from "../QwiltGrid";
 import { ICellRendererParams } from "ag-grid-community";
-import { ReactCellWrapper } from "common/components/qwiltGrid/reactCellWrapper/ReactCellWrapper";
+import { ReactCellWrapper } from "../reactCellWrapper/ReactCellWrapper";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Props ]]
 

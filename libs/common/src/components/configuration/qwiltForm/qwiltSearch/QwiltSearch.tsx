@@ -1,14 +1,14 @@
 import * as React from "react";
 import { ChangeEvent, useState } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { loggerCreator } from "../../../../utils/logger";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
 import { faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CommonColors } from "common/styling/commonColors";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
+import { CommonColors } from "../../../../styling/commonColors";
+import { Clickable } from "../../clickable/Clickable";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

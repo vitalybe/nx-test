@@ -1,15 +1,15 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { DeliveryAgreementsApi, ValidatedDeliveryAgreement } from "common/backend/deliveryAgreements";
+import { loggerCreator } from "../utils/logger";
+import { AjaxMetadata } from "../utils/ajax";
+import { DeliveryAgreementsApi, ValidatedDeliveryAgreement } from "../backend/deliveryAgreements";
 import _ from "lodash";
-import { ContentPublisherEntity } from "common/domain/contentPublishers/contentPublisherEntity";
+import { ContentPublisherEntity } from "../domain/contentPublishers/contentPublisherEntity";
 import {
   ContentPublishersEntities,
   EntitiesRestrictionsObject,
-} from "common/domain/contentPublishers/contentPublishersEntities";
+} from "../domain/contentPublishers/contentPublishersEntities";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DeliveryAgreementCpEntitiesProvider {
   private constructor() {}

@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { CommonColors, CommonColors as Colors } from "common/styling/commonColors";
+import { CommonColors, CommonColors as Colors } from "../../../styling/commonColors";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 export enum GridClasses {

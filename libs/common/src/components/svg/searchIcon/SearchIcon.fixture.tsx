@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { SearchIcon, Props } from "common/components/svg/searchIcon/SearchIcon";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { SearchIcon, Props } from "./SearchIcon";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

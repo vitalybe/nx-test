@@ -1,19 +1,19 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { mockNetworkSleep, mockUtils } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { SubscriptionsApi } from "common/backend/subscriptions";
+import { mockNetworkSleep, mockUtils } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { SubscriptionsApi } from "../../subscriptions";
 import {
   DestinationApiType,
   DestinationApiTypePayload,
   QcApiTypeEnum,
   SubscriptionsApiResult,
   SubscriptionsApiTypePayload,
-} from "common/backend/subscriptions/_types/subscriptionsTypes";
-import { loggerCreator } from "common/utils/logger";
+} from "../_types/subscriptionsTypes";
+import { loggerCreator } from "../../../utils/logger";
 import _ from "lodash";
-import { AuthTypeEnum, HTTPMethodEnum } from "common/backend/subscriptions/_types/subscriptionsTypes";
+import { AuthTypeEnum, HTTPMethodEnum } from "../_types/subscriptionsTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SubscriptionsApiMock implements SubscriptionsApi {
   async list(): Promise<SubscriptionsApiResult> {

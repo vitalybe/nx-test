@@ -1,15 +1,15 @@
 import * as React from "react";
 import { CSSProperties, ReactNode, useEffect } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CloseButton } from "common/components/closeButton/CloseButton";
-import { CssAnimations } from "common/styling/animations/cssAnimations";
-import { SetterRegisterFn, useRegisteredData } from "common/utils/hooks/useRegisterSetter";
-import { Shadows } from "common/styling/shadows";
-import { CommonColors } from "common/styling/commonColors";
-import { QwiltModalStyles } from "common/components/qwiltModal/qwiltModalStyles";
+import { loggerCreator } from "../../../utils/logger";
+import { CloseButton } from "../../closeButton/CloseButton";
+import { CssAnimations } from "../../../styling/animations/cssAnimations";
+import { SetterRegisterFn, useRegisteredData } from "../../../utils/hooks/useRegisterSetter";
+import { Shadows } from "../../../styling/shadows";
+import { CommonColors } from "../../../styling/commonColors";
+import { QwiltModalStyles } from "../../qwiltModal/qwiltModalStyles";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const CloseButtonStyled = styled(CloseButton).attrs({ color: CommonColors.NAVY_4 })`

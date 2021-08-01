@@ -1,17 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Content, RecordingDialog } from "common/components/supportRecording/_parts/recordingDialog/RecordingDialog";
-import { Button } from "common/components/configuration/button/Button";
-import { CommonColors } from "common/styling/commonColors";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { RecordingUtils } from "common/components/supportRecording/_utils/recordingUtils";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { loggerCreator } from "../../../../utils/logger";
+import { Content, RecordingDialog } from "../../_parts/recordingDialog/RecordingDialog";
+import { Button } from "../../../configuration/button/Button";
+import { CommonColors } from "../../../../styling/commonColors";
+import { TextTooltip } from "../../../textTooltip/TextTooltip";
+import { RecordingUtils } from "../../_utils/recordingUtils";
+import { LoadingSpinner } from "../../../loadingSpinner/loadingSpinner/LoadingSpinner";
 import { lighten, transparentize } from "polished";
-import { RecordingStyles } from "common/components/supportRecording/_styles/recordingStyles";
-import { SubmissionStateType } from "common/components/supportRecording/recordFinishedDialog/RecordFinishedDialog";
+import { RecordingStyles } from "../../_styles/recordingStyles";
+import { SubmissionStateType } from "../RecordFinishedDialog";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

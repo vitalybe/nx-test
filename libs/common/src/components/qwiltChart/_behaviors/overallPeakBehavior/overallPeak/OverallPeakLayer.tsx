@@ -1,13 +1,13 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
-import { OverallPeak } from "common/components/qwiltChart/_behaviors/overallPeakBehavior/overallPeak/OverallPeak";
+import { loggerCreator } from "../../../../../utils/logger";
+import { HistogramSeries } from "../../../../../utils/histograms/domain/histogramSeries";
+import { ChartSeriesArray } from "../../../_domain/chartSeriesArray";
+import { UnitKindEnum } from "../../../../../utils/unitsFormatter";
+import { OverallPeak } from "./OverallPeak";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

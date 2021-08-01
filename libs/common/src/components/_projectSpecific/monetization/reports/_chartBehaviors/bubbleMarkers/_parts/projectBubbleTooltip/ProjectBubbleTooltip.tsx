@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../../../../utils/logger";
 import { DateTime } from "luxon";
-import { OverflowingText } from "common/components/overflowingText/OverflowingText";
-import { CommonColors } from "common/styling/commonColors";
+import { OverflowingText } from "../../../../../../../overflowingText/OverflowingText";
+import { CommonColors } from "../../../../../../../../styling/commonColors";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

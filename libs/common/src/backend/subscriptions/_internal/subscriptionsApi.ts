@@ -1,20 +1,20 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { SubscriptionsApiMock } from "common/backend/subscriptions";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { SubscriptionsApiMock } from "../../subscriptions";
 import {
   DestinationApiType,
   DestinationApiTypePayload,
   SubscriptionsApiResult,
   SubscriptionsApiTypePayload,
-} from "common/backend/subscriptions/_types/subscriptionsTypes";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
-import { QcApiTypeEnum } from "common/backend/subscriptions/_types/subscriptionsTypes";
+} from "../_types/subscriptionsTypes";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
+import { QcApiTypeEnum } from "../_types/subscriptionsTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("subscriptions-manager"), "/api/1/subscriptions");
 const QC_ORG_ID_HEADER = "x-qc-orgid";
 

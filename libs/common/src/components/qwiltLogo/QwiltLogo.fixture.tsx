@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, QwiltLogo } from "common/components/qwiltLogo/QwiltLogo";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Props, QwiltLogo } from "./QwiltLogo";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

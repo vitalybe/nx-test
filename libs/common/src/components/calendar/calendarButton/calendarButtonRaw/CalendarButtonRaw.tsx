@@ -3,13 +3,13 @@ import styled, { css, FlattenSimpleInterpolation as StyledCSS } from "styled-com
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { transparentize } from "polished";
-import { CalendarStyles } from "common/components/calendar/_calendarStyles";
-import { CommonColors } from "common/styling/commonColors";
-import { CommonStyles } from "common/styling/commonStyles";
-import { loggerCreator } from "common/utils/logger";
-import { Button } from "common/components/configuration/button/Button";
+import { CalendarStyles } from "../../_calendarStyles";
+import { CommonColors } from "../../../../styling/commonColors";
+import { CommonStyles } from "../../../../styling/commonStyles";
+import { loggerCreator } from "../../../../utils/logger";
+import { Button } from "../../../configuration/button/Button";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

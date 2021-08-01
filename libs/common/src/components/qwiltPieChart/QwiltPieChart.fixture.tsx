@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { Props, QwiltPieChart } from "common/components/qwiltPieChart/QwiltPieChart";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Props, QwiltPieChart } from "./QwiltPieChart";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

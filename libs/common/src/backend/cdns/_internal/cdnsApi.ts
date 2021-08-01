@@ -1,18 +1,18 @@
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { CdnApiResult, CdnEditApiType } from "common/backend/cdns/_types/cdnApiType";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { DeliveryUnitApiResult, DeliveryUnitEditApiType } from "common/backend/cdns/_types/deliveryUnitApiType";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { CdnApiResult, CdnEditApiType } from "../_types/cdnApiType";
+import { getOriginForApi } from "../../backendOrigin";
+import { DeliveryUnitApiResult, DeliveryUnitEditApiType } from "../_types/deliveryUnitApiType";
 import {
   DeliveryUnitGroupApiResult,
   DeliveryUnitGroupEditApiType,
-} from "common/backend/cdns/_types/deliveryUnitGroupApiType";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { CdnLocationApiResult, CdnLocationEditApiType } from "common/backend/cdns/_types/cdnLocationApiType";
-import { HttpRouterGroupsApiResult, HttpRouterGroupType } from "common/backend/cdns/_types/httpRouterGroupType";
-import { CdnsApiMock } from "common/backend/cdns/_internal/cdnsApiMock";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
+} from "../_types/deliveryUnitGroupApiType";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { CdnLocationApiResult, CdnLocationEditApiType } from "../_types/cdnLocationApiType";
+import { HttpRouterGroupsApiResult, HttpRouterGroupType } from "../_types/httpRouterGroupType";
+import { CdnsApiMock } from "./cdnsApiMock";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
 
 const BACKEND_URL = combineUrl(getOriginForApi("cdns"), "/api/1.0/");
 

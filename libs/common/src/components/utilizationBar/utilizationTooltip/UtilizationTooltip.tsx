@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { ReservedThreshold } from "common/components/utilizationBar/_parts/ReservedThreshold";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { ColoredDiv } from "common/components/styled/ColoredDiv";
+import { CommonColors as Colors } from "../../../styling/commonColors";
+import { ReservedThreshold } from "../_parts/ReservedThreshold";
+import { UnitKindEnum, unitsFormatter } from "../../../utils/unitsFormatter";
+import { ColoredDiv } from "../../styled/ColoredDiv";
 
 //region [[ Styles ]]
 

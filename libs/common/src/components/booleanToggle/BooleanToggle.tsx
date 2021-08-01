@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { CommonColors as Colors } from "../../styling/commonColors";
+import { TextTooltip } from "../textTooltip/TextTooltip";
 
 //region [[ Styles ]]
 

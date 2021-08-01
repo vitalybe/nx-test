@@ -1,21 +1,21 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../utils/logger";
 import {
   EntitiesDropdown,
   EntitiesDropdownSelectionMode,
   ToggleIcon,
-} from "common/components/entitiesDropdown/EntitiesDropdown";
-import { DropdownSelectorRenderer } from "common/components/entitiesDropdown/_overrideableParts/dropdownSelectorRenderer/DropdownSelectorRenderer";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { FormInputContainer } from "common/components/qcComponents/form/_parts/formInputContainer/FormInputContainer";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { ErrorIndicationIconAbsolute } from "common/components/qcComponents/form/_parts/inputErrorIndication/InputErrorIndication";
-import { CommonColors } from "common/styling/commonColors";
+} from "../../../../entitiesDropdown/EntitiesDropdown";
+import { DropdownSelectorRenderer } from "../../../../entitiesDropdown/_overrideableParts/dropdownSelectorRenderer/DropdownSelectorRenderer";
+import { DropdownEntity } from "../../../../entitiesDropdown/_domain/dropdownEntity";
+import { SelectionModeEnum } from "../../../../../utils/hierarchyUtils";
+import { FormInputContainer } from "../../_parts/formInputContainer/FormInputContainer";
+import { useEventCallback } from "../../../../../utils/hooks/useEventCallback";
+import { ErrorIndicationIconAbsolute } from "../../_parts/inputErrorIndication/InputErrorIndication";
+import { CommonColors } from "../../../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const dropdownMenuStyles = css`

@@ -1,28 +1,28 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { useAnimatedMarkersOnHoverBehavior } from "common/components/_projectSpecific/monetization/_hooks/useAnimatedMarkersOnHoverBehavior";
-import { useLiveValuesLegend } from "common/components/_projectSpecific/monetization/_hooks/useLiveValuesLegend";
-import { QwiltChart } from "common/components/qwiltChart/QwiltChart";
-import { MonetizationChartLegend } from "common/components/_projectSpecific/monetization/reports/monetizationChartLegend/MonetizationChartLegend";
-import { MonetizationPanelHeader } from "common/components/_projectSpecific/monetization/reports/monetizationPanelHeader/MonetizationPanelHeader";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { MarkersOnHoverBehavior } from "common/components/qwiltChart/_behaviors/markersOnHoverBehavior/markersOnHoverBehavior";
-import { AddSeriesBehavior } from "common/components/qwiltChart/_behaviors/addSeriesBehavior/addSeriesBehavior";
-import { XAxisBehavior } from "common/components/qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
-import { YAxisBehavior } from "common/components/qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
-import { GlobalFontStore } from "common/components/GlobalFontProvider";
-import { CurrencyUnitEnum } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
+import { loggerCreator } from "../../../../../utils/logger";
+import { useAnimatedMarkersOnHoverBehavior } from "../../_hooks/useAnimatedMarkersOnHoverBehavior";
+import { useLiveValuesLegend } from "../../_hooks/useLiveValuesLegend";
+import { QwiltChart } from "../../../../qwiltChart/QwiltChart";
+import { MonetizationChartLegend } from "../monetizationChartLegend/MonetizationChartLegend";
+import { MonetizationPanelHeader } from "../monetizationPanelHeader/MonetizationPanelHeader";
+import { ChartSeriesData } from "../../../../qwiltChart/_domain/chartSeriesData";
+import { MarkersOnHoverBehavior } from "../../../../qwiltChart/_behaviors/markersOnHoverBehavior/markersOnHoverBehavior";
+import { AddSeriesBehavior } from "../../../../qwiltChart/_behaviors/addSeriesBehavior/addSeriesBehavior";
+import { XAxisBehavior } from "../../../../qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
+import { YAxisBehavior } from "../../../../qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
+import { GlobalFontStore } from "../../../../GlobalFontProvider";
+import { CurrencyUnitEnum } from "../../_utils/currencyUtils";
 import {
   commonXAxisOptions,
   getCommonYAxisOptions,
-} from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/_constants";
-import { ColumnSeriesBehavior } from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/columnSeriesBehavior";
-import { NoTooltipBehavior } from "common/components/_projectSpecific/monetization/reports/_chartBehaviors/noTooltipBehavior";
-import { CommonColors } from "common/styling/commonColors";
+} from "../_chartBehaviors/_constants";
+import { ColumnSeriesBehavior } from "../_chartBehaviors/columnSeriesBehavior";
+import { NoTooltipBehavior } from "../_chartBehaviors/noTooltipBehavior";
+import { CommonColors } from "../../../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

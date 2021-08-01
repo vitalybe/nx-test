@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { TimezoneDropdown } from "common/components/timezonePicker/timezoneDropdown/TimezoneDropdown";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { TimezoneDropdown } from "./TimezoneDropdown";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

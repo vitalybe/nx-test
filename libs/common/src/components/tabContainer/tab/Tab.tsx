@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../styling/commonColors";
 
 const TabView = styled.div`
   ${(props: { isSelected: boolean }) => css`

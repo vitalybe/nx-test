@@ -1,8 +1,8 @@
-import { loggerCreator } from "common/utils/logger";
-import { EntityTypeEnum } from "common/backend/qnDeployment/_types/entitiesApiType";
-import { mockUtils } from "common/utils/mockUtils";
+import { loggerCreator } from "../../utils/logger";
+import { EntityTypeEnum } from "../../backend/qnDeployment/_types/entitiesApiType";
+import { mockUtils } from "../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DeploymentEntity {
   name!: string;

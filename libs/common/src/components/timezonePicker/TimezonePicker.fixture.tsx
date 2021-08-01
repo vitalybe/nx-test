@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, TimezonePicker } from "common/components/timezonePicker/TimezonePicker";
+import { Props, TimezonePicker } from "./TimezonePicker";
 import { DateTime } from "luxon";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

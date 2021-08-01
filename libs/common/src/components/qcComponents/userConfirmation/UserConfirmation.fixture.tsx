@@ -3,7 +3,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { Props, UserConfirmation } from "./UserConfirmation";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;
@@ -34,7 +34,7 @@ export default {
         message={"Are you sure you're sure?"}
         confirmText={"Yes I am sure"}
         closeText={"Not sure I'm sure"}
-        icon={<img alt={"trash icon"} src={require("common/components/qcComponents/_media/trash-delete-x.svg")} />}
+        icon={<img alt={"trash icon"} src={require("../_media/trash-delete-x.svg")} />}
       />
     </View>
   ),

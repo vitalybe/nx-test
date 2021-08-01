@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Content, EntitiesDropdown } from "common/components/entitiesDropdown/EntitiesDropdown";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { NameWithId } from "common/domain/nameWithId";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { loggerCreator } from "../../../../../utils/logger";
+import { Content, EntitiesDropdown } from "../../../../entitiesDropdown/EntitiesDropdown";
+import { DropdownEntity } from "../../../../entitiesDropdown/_domain/dropdownEntity";
+import { ConfigurationStyles } from "../../../../configuration/_styles/configurationStyles";
+import { NameWithId } from "../../../../../domain/nameWithId";
+import { SelectionModeEnum } from "../../../../../utils/hierarchyUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

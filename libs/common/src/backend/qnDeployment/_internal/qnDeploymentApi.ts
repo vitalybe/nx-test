@@ -1,23 +1,23 @@
-import { getEnv, getOriginForApi } from "common/backend/backendOrigin";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { QnDeploymentApiMock } from "common/backend/qnDeployment";
+import { getEnv, getOriginForApi } from "../../backendOrigin";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { UrlParams } from "../../_utils/urlParams";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { QnDeploymentApiMock } from "../../qnDeployment";
 import {
   EntitiesApiModel,
   EntitiesParams,
   EntityHistoryModel,
   PostEntityModel,
   PostResponse,
-} from "common/backend/qnDeployment/_types/entitiesApiType";
-import { loggerCreator } from "common/utils/logger";
-import { combineUrl } from "common/utils/combineUrl";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { QnDeploymentUtils } from "common/backend/qnDeployment/_utils/utils";
+} from "../_types/entitiesApiType";
+import { loggerCreator } from "../../../utils/logger";
+import { combineUrl } from "../../../utils/combineUrl";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
+import { QnDeploymentUtils } from "../_utils/utils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 // writer is a central qn-deployment that doesn't suffer from eventual consistency issues.
 // however, it is only available in prod

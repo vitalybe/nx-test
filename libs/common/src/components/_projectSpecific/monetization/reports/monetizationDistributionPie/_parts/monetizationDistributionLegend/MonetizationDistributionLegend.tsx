@@ -1,17 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { ColoredCircle } from "common/components/styled/ColoredCircle";
-import { VirtualizedListButton } from "common/components/virtualizedListButton/VirtualizedListButton";
-import { CurrencyUnitEnum, CurrencyUtils } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
-import { QwiltPieChartPart } from "common/components/qwiltPieChart/_types";
+import { loggerCreator } from "../../../../../../../utils/logger";
+import { UnitKindEnum, unitsFormatter } from "../../../../../../../utils/unitsFormatter";
+import { ColoredCircle } from "../../../../../../styled/ColoredCircle";
+import { VirtualizedListButton } from "../../../../../../virtualizedListButton/VirtualizedListButton";
+import { CurrencyUnitEnum, CurrencyUtils } from "../../../../_utils/currencyUtils";
+import { QwiltPieChartPart } from "../../../../../../qwiltPieChart/_types";
 import _ from "lodash";
-import { CommonColors } from "common/styling/commonColors";
-import { OverflowingText } from "common/components/overflowingText/OverflowingText";
+import { CommonColors } from "../../../../../../../styling/commonColors";
+import { OverflowingText } from "../../../../../../overflowingText/OverflowingText";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

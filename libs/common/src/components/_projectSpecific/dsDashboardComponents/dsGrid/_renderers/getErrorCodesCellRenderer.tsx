@@ -1,17 +1,17 @@
 import * as React from "react";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { CommonDsEntity } from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { Tooltip } from "common/components/Tooltip";
+import { UnitKindEnum, unitsFormatter } from "../../../../../utils/unitsFormatter";
+import { CommonDsEntity } from "../../_domain/commonDsEntity";
+import { CommonColors as Colors } from "../../../../../styling/commonColors";
+import { Tooltip } from "../../../../Tooltip";
 import styled, { css } from "styled-components";
-import { SvgPieChart } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_parts/svgPieChart/SvgPieChart";
+import { SvgPieChart } from "../_parts/svgPieChart/SvgPieChart";
 import { transparentize } from "polished";
-import { IconImg } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_styles/iconImg";
-import { Cell } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_styles/cell";
-import { GridReactRenderer } from "common/components/qwiltGrid/QwiltGrid";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { IconImg } from "../_styles/iconImg";
+import { Cell } from "../_styles/cell";
+import { GridReactRenderer } from "../../../../qwiltGrid/QwiltGrid";
+import { TextTooltip } from "../../../../textTooltip/TextTooltip";
 
-const pieChartIcon = require("common/images/dsDashboardImages/pie-chart.svg");
+const pieChartIcon = require("../../../../../images/dsDashboardImages/pie-chart.svg");
 
 const SvgPieChartStyled = styled(SvgPieChart)`
   width: 200px;

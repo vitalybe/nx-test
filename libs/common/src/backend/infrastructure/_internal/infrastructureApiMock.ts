@@ -1,10 +1,10 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { InfrastructureApi } from "common/backend/infrastructure";
-import { loggerCreator } from "common/utils/logger";
-import { CacheApiResult, InfrastructureResponse } from "common/backend/infrastructure/_types/infrastructureTypes";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { InfrastructureApi } from "../../infrastructure";
+import { loggerCreator } from "../../../utils/logger";
+import { CacheApiResult, InfrastructureResponse } from "../_types/infrastructureTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class InfrastructureApiMock implements InfrastructureApi {
   async cachesList(cdnId: string, metadata: AjaxMetadata): Promise<CacheApiResult> {

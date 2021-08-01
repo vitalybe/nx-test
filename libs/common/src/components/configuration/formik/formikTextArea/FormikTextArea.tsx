@@ -1,7 +1,7 @@
 import * as React from "react";
 import { observer } from "mobx-react";
 import { Field, FieldProps } from "formik";
-import { QwiltTextArea } from "common/components/configuration/qwiltForm/qwiltTextArea/QwiltTextArea";
+import { QwiltTextArea } from "../../qwiltForm/qwiltTextArea/QwiltTextArea";
 
 export interface Props {
   field: string;

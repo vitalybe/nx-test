@@ -2,7 +2,7 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 import { ExportDialog, Props } from "./ExportDialog";
 import { forwardRef, Ref } from "react";
 
@@ -28,7 +28,7 @@ const ExportPageExample = forwardRef((props, ref: Ref<HTMLDivElement>) => {
   return (
     <div ref={ref} style={{ display: "flex", width: "900px", height: "1400px" }}>
       <span>
-        PDF Example <img src={require("common/images/orgs/british-telecom.png")} alt={"img"} />
+        PDF Example <img src={require("../../../../../images/orgs/british-telecom.png")} alt={"img"} />
       </span>
     </div>
   );

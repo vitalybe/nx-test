@@ -1,12 +1,12 @@
 import * as React from "react";
 import { memo, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { Utils } from "common/utils/utils";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { DistributionPartInfo } from "common/components/distributionBars/DistributionBars";
-import { CssAnimations } from "common/styling/animations/cssAnimations";
-import { TextValues } from "common/components/percentBar/_parts/textValues/TextValues";
-import { AnimatedBar } from "common/components/percentBar/_parts/animatedBar/AnimatedBar";
+import { Utils } from "../../utils/utils";
+import { CommonColors as Colors } from "../../styling/commonColors";
+import { DistributionPartInfo } from "../distributionBars/DistributionBars";
+import { CssAnimations } from "../../styling/animations/cssAnimations";
+import { TextValues } from "./_parts/textValues/TextValues";
+import { AnimatedBar } from "./_parts/animatedBar/AnimatedBar";
 
 //region [[ Styles ]]
 const Threshold = styled.svg`

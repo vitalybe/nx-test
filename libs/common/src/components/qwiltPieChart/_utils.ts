@@ -1,7 +1,7 @@
 import { Options } from "highcharts";
 import { renderToString } from "react-dom/server";
-import { PieChartTooltip } from "common/components/qwiltPieChart/_parts/PieChartTooltip";
-import { QwiltPieChartOptions, ThisTooltip } from "common/components/qwiltPieChart/_types";
+import { PieChartTooltip } from "./_parts/PieChartTooltip";
+import { QwiltPieChartOptions, ThisTooltip } from "./_types";
 import _ from "lodash";
 
 export function formatPercentage(percentage: number) {

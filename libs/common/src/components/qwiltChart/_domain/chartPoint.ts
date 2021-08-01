@@ -1,7 +1,7 @@
-import { loggerCreator } from "common/utils/logger";
-import { HistogramPointType } from "common/utils/histograms/utils/histogramUtils";
+import { loggerCreator } from "../../../utils/logger";
+import { HistogramPointType } from "../../../utils/histograms/utils/histogramUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export interface ChartPoint extends HistogramPointType {
   index: number;

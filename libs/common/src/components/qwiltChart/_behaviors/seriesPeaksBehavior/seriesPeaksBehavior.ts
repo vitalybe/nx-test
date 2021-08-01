@@ -1,8 +1,8 @@
 import { ElementObject } from "highcharts";
-import { ChartSvg } from "common/utils/chartSvg";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { ChartSeries } from "common/components/qwiltChart/_domain/chartSeries";
+import { ChartSvg } from "../../../../utils/chartSvg";
+import { ChartSeriesArray } from "../../_domain/chartSeriesArray";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { ChartSeries } from "../../_domain/chartSeries";
 
 export class SeriesPeaksBehavior implements ChartBehavior {
   constructor(

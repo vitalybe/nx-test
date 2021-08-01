@@ -1,4 +1,4 @@
-import { HistogramPointType } from "common/utils/histograms/utils/histogramUtils";
+import { HistogramPointType } from "../utils/histogramUtils";
 import { BarStates, LineStates } from "highcharts";
 import { DateTime } from "luxon";
 

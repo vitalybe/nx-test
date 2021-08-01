@@ -1,14 +1,14 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { AuditLogApiMock } from "common/backend/auditLog";
-import { AuditLogApiRequest, AuditLogApiResult } from "common/backend/auditLog/_types/auditLogTypes";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { AuditLogApiMock } from "../../auditLog";
+import { AuditLogApiRequest, AuditLogApiResult } from "../_types/auditLogTypes";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("audit-log"), "/api/1/");
 
 export class AuditLogApi {

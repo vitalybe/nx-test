@@ -1,17 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Content, RecordingDialog } from "common/components/supportRecording/_parts/recordingDialog/RecordingDialog";
-import { Button } from "common/components/configuration/button/Button";
+import { loggerCreator } from "../../../utils/logger";
+import { Content, RecordingDialog } from "../_parts/recordingDialog/RecordingDialog";
+import { Button } from "../../configuration/button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { CommonStyles } from "common/styling/commonStyles";
-import { RecordingUtils } from "common/components/supportRecording/_utils/recordingUtils";
-import { RecordingStyles } from "common/components/supportRecording/_styles/recordingStyles";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
+import { TextTooltip } from "../../textTooltip/TextTooltip";
+import { CommonStyles } from "../../../styling/commonStyles";
+import { RecordingUtils } from "../_utils/recordingUtils";
+import { RecordingStyles } from "../_styles/recordingStyles";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

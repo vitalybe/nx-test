@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ColoredDiv } from "common/components/styled/ColoredDiv";
+import { ColoredDiv } from "./ColoredDiv";
 
 export const ColoredCircle = styled(ColoredDiv)`
   position: relative;

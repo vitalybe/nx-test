@@ -1,16 +1,16 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { SystemEventsInternalApi } from "common/backend/systemEvents";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { SystemEventsInternalApi } from "../../systemEvents";
 import {
   ComponentTypeEnum,
   SystemUpdateInternalApiPayloadType,
   SystemUpdatesInternalResult,
-} from "common/backend/systemEvents/_types/systemEventsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
+} from "../_types/systemEventsTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { AjaxMetadata } from "../../../utils/ajax";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SystemEventsInternalApiMock implements SystemEventsInternalApi {
   async listSystemUpdates(metadata: AjaxMetadata): Promise<SystemUpdatesInternalResult> {

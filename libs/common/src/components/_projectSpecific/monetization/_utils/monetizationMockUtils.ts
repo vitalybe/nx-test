@@ -1,17 +1,17 @@
 import { DateTime, Duration } from "luxon";
-import { HistogramPoint } from "common/utils/histograms/domain/histogramPoint";
+import { HistogramPoint } from "../../../../utils/histograms/domain/histogramPoint";
 import _ from "lodash";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
+import { ChartSeriesData } from "../../../qwiltChart/_domain/chartSeriesData";
 import { ColumnChartSeriesOptions } from "highcharts";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
-import { CommonColors } from "common/styling/commonColors";
-import { MonetizationColors } from "common/components/_projectSpecific/monetization/_utils/monetizationColors";
+import { HistogramSeries } from "../../../../utils/histograms/domain/histogramSeries";
+import { UnitKindEnum } from "../../../../utils/unitsFormatter";
+import { CommonColors } from "../../../../styling/commonColors";
+import { MonetizationColors } from "./monetizationColors";
 import { darken } from "polished";
 import {
   CAPACITY_UTIL_PEAK_SERIES_ID,
   CAPACITY_UTIL_REST_SERIES_ID,
-} from "common/components/_projectSpecific/monetization/reports/monetizationMiniCharts/capacityUtilizationChart/CapacityUtilizationChart";
+} from "../reports/monetizationMiniCharts/capacityUtilizationChart/CapacityUtilizationChart";
 
 function createMockPoints(startDate: DateTime, endDate: DateTime, interval: Duration): HistogramPoint[] {
   const data: HistogramPoint[] = [];

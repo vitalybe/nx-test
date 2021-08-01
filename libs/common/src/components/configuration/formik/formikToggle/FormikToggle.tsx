@@ -1,9 +1,9 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { Field, FieldProps } from "formik";
-import { QwiltToggle } from "common/components/configuration/qwiltForm/qwiltToggle/QwiltToggle";
+import { QwiltToggle } from "../../qwiltForm/qwiltToggle/QwiltToggle";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]´
 

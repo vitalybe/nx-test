@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { SearchIcon } from "common/components/svg/searchIcon/SearchIcon";
-import { CommonColors } from "common/styling/commonColors";
+import { useEventCallback } from "../../utils/hooks/useEventCallback";
+import { SearchIcon } from "../svg/searchIcon/SearchIcon";
+import { CommonColors } from "../../styling/commonColors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons/faTimesCircle";
 

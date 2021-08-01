@@ -1,4 +1,4 @@
-import { HierarchyUtils, SelectableHierarchyEntity, SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { HierarchyUtils, SelectableHierarchyEntity, SelectionModeEnum } from "./hierarchyUtils";
 
 function getItems(): SelectableHierarchyEntity[] {
   return [

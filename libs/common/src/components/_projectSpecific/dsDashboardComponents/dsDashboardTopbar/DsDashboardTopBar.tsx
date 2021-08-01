@@ -1,10 +1,10 @@
 import * as React from "react";
 import { memo, ReactChild } from "react";
 import styled from "styled-components";
-import { DescriptionRow, Metric, Unit, Value, ValueRow } from "common/components/metrics/Metric";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { UnitNameEnum, UnitsFormatterResult } from "common/utils/unitsFormatter";
-import { CssAnimations } from "common/styling/animations/cssAnimations";
+import { DescriptionRow, Metric, Unit, Value, ValueRow } from "../../../metrics/Metric";
+import { CommonColors as Colors } from "../../../../styling/commonColors";
+import { UnitNameEnum, UnitsFormatterResult } from "../../../../utils/unitsFormatter";
+import { CssAnimations } from "../../../../styling/animations/cssAnimations";
 
 export interface MetricData {
   value?: UnitsFormatterResult;

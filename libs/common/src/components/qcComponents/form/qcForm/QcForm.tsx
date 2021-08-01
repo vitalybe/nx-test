@@ -1,15 +1,15 @@
 import * as React from "react";
 import { FormHTMLAttributes, PropsWithChildren, ReactNode } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { useFormContext, UseFormMethods } from "react-hook-form";
 import {
   QcFormControls,
   QcFormControlsOptions,
-} from "common/components/qcComponents/form/_parts/qcFormControls/QcFormControls";
-import { QcFormProvider } from "common/components/qcComponents/form/_parts/QcFormProvider";
+} from "../_parts/qcFormControls/QcFormControls";
+import { QcFormProvider } from "../_parts/QcFormProvider";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const QcFormView = styled.form`

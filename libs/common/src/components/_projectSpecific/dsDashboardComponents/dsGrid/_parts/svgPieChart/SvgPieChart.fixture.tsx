@@ -3,10 +3,10 @@ import styled from "styled-components";
 import {
   Props,
   SvgPieChart,
-} from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_parts/svgPieChart/SvgPieChart";
-import { CommonColors as Colors } from "common/styling/commonColors";
+} from "./SvgPieChart";
+import { CommonColors as Colors } from "../../../../../../styling/commonColors";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../../../utils/cosmos/FixtureDecorator";
 import { UnitKindEnum } from "../../../../../../utils/unitsFormatter";
 
 const View = styled(FixtureDecorator)`

@@ -11,7 +11,7 @@ import _ from "lodash";
 import styled, { FlattenSimpleInterpolation } from "styled-components";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const SeparatorGridView = styled.div<{ customStyles: FlattenSimpleInterpolation }>`

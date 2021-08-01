@@ -1,15 +1,15 @@
 import * as React from "react";
 import { useRef, useState } from "react";
-import { loggerCreator } from "common/utils/logger";
-import { Notifier } from "common/utils/notifications/notifier";
-import { RecordFinishedDialogRaw } from "common/components/supportRecording/recordFinishedDialog/recordFinishedDialogRaw/RecordFinishedDialogRaw";
-import { LogRocketUtils } from "common/utils/telemetryRecording/logRocketUtils";
+import { loggerCreator } from "../../../utils/logger";
+import { Notifier } from "../../../utils/notifications/notifier";
+import { RecordFinishedDialogRaw } from "./recordFinishedDialogRaw/RecordFinishedDialogRaw";
+import { LogRocketUtils } from "../../../utils/telemetryRecording/logRocketUtils";
 import { observer } from "mobx-react-lite";
 import { DateTime } from "luxon";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { useProgressPercent } from "common/utils/hooks/useProgressPercent";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
+import { useProgressPercent } from "../../../utils/hooks/useProgressPercent";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Props ]]
 

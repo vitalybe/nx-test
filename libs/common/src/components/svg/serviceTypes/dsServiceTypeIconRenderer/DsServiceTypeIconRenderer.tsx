@@ -1,16 +1,16 @@
 import * as React from "react";
 import { ReactElement } from "react";
-import { loggerCreator } from "common/utils/logger";
-import { CommonColors } from "common/styling/commonColors";
-import { LiveServiceIcon } from "common/components/svg/serviceTypes/liveServiceIcon";
-import { MusicServiceIcon } from "common/components/svg/serviceTypes/musicServiceIcon";
-import { DownloadServiceIcon } from "common/components/svg/serviceTypes/downloadServiceIcon";
-import { VodServiceIcon } from "common/components/svg/serviceTypes/vodServiceIcon";
+import { loggerCreator } from "../../../../utils/logger";
+import { CommonColors } from "../../../../styling/commonColors";
+import { LiveServiceIcon } from "../liveServiceIcon";
+import { MusicServiceIcon } from "../musicServiceIcon";
+import { DownloadServiceIcon } from "../downloadServiceIcon";
+import { VodServiceIcon } from "../vodServiceIcon";
 import styled from "styled-components";
-import { Fonts } from "common/styling/fonts";
+import { Fonts } from "../../../../styling/fonts";
 import { MetadataServiceTypeEnum } from "../../../../backend/deliveryServices/_types/deliveryServiceMetadataTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Props ]]
 const SvgText = styled.text.attrs({ x: 1.5, y: 12 })`

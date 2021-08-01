@@ -3,10 +3,10 @@ import styled from "styled-components";
 import {
   EntitiesSelectionMenu,
   Props,
-} from "common/components/entitiesDropdown/_parts/entitiesSelectionMenu/EntitiesSelectionMenu";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
+} from "./EntitiesSelectionMenu";
+import { DropdownEntity } from "../../_domain/dropdownEntity";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { SelectionModeEnum } from "../../../../utils/hierarchyUtils";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -2,10 +2,10 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { Props, QcForm } from "common/components/qcComponents/form/qcForm/QcForm";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Props, QcForm } from "./QcForm";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 import * as yup from "yup";
-import { FormInput } from "common/components/qcComponents/form/formInput/FormInput";
+import { FormInput } from "../formInput/FormInput";
 import { useQcForm } from "../_parts/QcFormProvider";
 
 const View = styled(FixtureDecorator)`

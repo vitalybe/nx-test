@@ -4,12 +4,12 @@ import styled from "styled-components";
 import {
   BarChartTooltip,
   Props,
-} from "common/components/_projectSpecific/dsDashboardComponents/barChart/barChartTooltip/BarChartTooltip";
-import { Shadows } from "common/styling/shadows";
+} from "./BarChartTooltip";
+import { Shadows } from "../../../../../styling/shadows";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
+import { UnitKindEnum, unitsFormatter } from "../../../../../utils/unitsFormatter";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;
@@ -33,7 +33,7 @@ export default {
   ),
   "-With Icon": (
     <View>
-      <BarChartTooltip {...getProps()} icon={"common/images/isps/icons/rgnAmerica_cnUsa_nwkCharter.png"} />
+      <BarChartTooltip {...getProps()} icon={"../../../../../images/isps/icons/rgnAmerica_cnUsa_nwkCharter.png"} />
     </View>
   ),
 };

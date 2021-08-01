@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { AnimatedBar, Props } from "common/components/percentBar/_parts/animatedBar/AnimatedBar";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { CommonColors } from "common/styling/commonColors";
+import { AnimatedBar, Props } from "./AnimatedBar";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { CommonColors } from "../../../../styling/commonColors";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

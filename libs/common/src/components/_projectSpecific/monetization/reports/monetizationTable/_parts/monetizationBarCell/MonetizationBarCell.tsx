@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { CurrencyUnitEnum, CurrencyUtils } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
-import { BarsContainer, UtilizationBar } from "common/components/utilizationBar/UtilizationBar";
+import { loggerCreator } from "../../../../../../../utils/logger";
+import { UnitKindEnum, unitsFormatter } from "../../../../../../../utils/unitsFormatter";
+import { CurrencyUnitEnum, CurrencyUtils } from "../../../../_utils/currencyUtils";
+import { BarsContainer, UtilizationBar } from "../../../../../../utilizationBar/UtilizationBar";
 import { CellDiv } from "../_styled";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const ColoredPercentBar = styled(UtilizationBar)`

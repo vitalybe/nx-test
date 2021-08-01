@@ -1,7 +1,7 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { ReactNode } from "react";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 export class SeparatorEntity<T> {
   value!: string | undefined;
   children!: T[];

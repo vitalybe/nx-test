@@ -1,12 +1,12 @@
 import * as React from "react";
 import { useMemo } from "react";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
+import { UnitKindEnum, unitsFormatter } from "../../../../../utils/unitsFormatter";
 import styled from "styled-components";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { CssAnimations } from "common/styling/animations/cssAnimations";
-import { BarChartYAxisOptions } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_types/_types";
-import { BarChartModel } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_types/barChartModel";
-import { HierarchyUtils } from "common/utils/hierarchyUtils";
+import { CommonColors as Colors } from "../../../../../styling/commonColors";
+import { CssAnimations } from "../../../../../styling/animations/cssAnimations";
+import { BarChartYAxisOptions } from "../_types/_types";
+import { BarChartModel } from "../_types/barChartModel";
+import { HierarchyUtils } from "../../../../../utils/hierarchyUtils";
 import _ from "lodash";
 
 //region [[ Styles ]]

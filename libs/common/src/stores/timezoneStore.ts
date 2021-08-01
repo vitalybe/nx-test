@@ -1,11 +1,11 @@
-import { loggerCreator } from "common/utils/logger";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { TimezoneUtil } from "common/components/timezonePicker/_utils/timezoneUtil";
+import { loggerCreator } from "../utils/logger";
+import { CommonUrlParams } from "../urlParams/commonUrlParams";
+import { TimezoneUtil } from "../components/timezonePicker/_utils/timezoneUtil";
 import { computed, observable } from "mobx";
 import { DateTime, Zone } from "luxon";
-import { UrlStore } from "common/stores/urlStore/urlStore";
+import { UrlStore } from "./urlStore/urlStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class TimezoneStore {
   private constructor() {}

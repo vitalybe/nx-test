@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../utils/logger";
 import { MetadataServiceTypeEnum } from "../../../../../backend/deliveryServices/_types/deliveryServiceMetadataTypes";
-import { DsServiceTypeIconRenderer } from "common/components/svg/serviceTypes/dsServiceTypeIconRenderer/DsServiceTypeIconRenderer";
-import { CommonColors } from "common/styling/commonColors";
+import { DsServiceTypeIconRenderer } from "../../../../svg/serviceTypes/dsServiceTypeIconRenderer/DsServiceTypeIconRenderer";
+import { CommonColors } from "../../../../../styling/commonColors";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

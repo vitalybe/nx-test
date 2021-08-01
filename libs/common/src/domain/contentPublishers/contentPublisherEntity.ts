@@ -1,5 +1,5 @@
 import { MetadataServiceTypeEnum } from "../../backend/deliveryServices/_types/deliveryServiceMetadataTypes";
-import { OnlyData } from "common/utils/typescriptUtils";
+import { OnlyData } from "../../utils/typescriptUtils";
 
 export class ContentPublisherEntity {
   id!: string;

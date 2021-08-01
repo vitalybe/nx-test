@@ -1,7 +1,7 @@
 /* eslint-disable unused-imports/no-unused-vars */
 import * as _ from "lodash";
-import { AjaxMetadata } from "common/utils/ajax";
-import { QnDeploymentApi } from "common/backend/qnDeployment";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { QnDeploymentApi } from "../../qnDeployment";
 import {
   EntitiesApiModel,
   EntitiesParams,
@@ -9,10 +9,10 @@ import {
   EntityTypeEnum,
   PostEntityModel,
   PostResponse,
-} from "common/backend/qnDeployment/_types/entitiesApiType";
-import mockData from "common/backend/_utils/mockData";
-import { sleep } from "common/utils/sleep";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/entitiesApiType";
+import mockData from "../../_utils/mockData";
+import { sleep } from "../../../utils/sleep";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
 export class QnDeploymentApiMock implements QnDeploymentApi {
   mockConfigOfNetworks: string[] = mockData.networks.slice();
@@ -29,7 +29,7 @@ export class QnDeploymentApiMock implements QnDeploymentApi {
         contains_list_format: "none",
       })
     ) {
-      return require("common/backend/qnDeployment/_internal/mockData/networkHierarchyMockData").default;
+      return require("./mockData/networkHierarchyMockData").default;
     } else if (params.types === EntityTypeEnum.QN) {
       return {
         entities: this.mockConfigOfQns.map((qnSystemId) => ({
@@ -102,7 +102,7 @@ export class QnDeploymentApiMock implements QnDeploymentApi {
       params.entities_list_format === "details" &&
       params.contains_list_recursive === "true"
     ) {
-      return require("common/backend/qnDeployment/_internal/mockData/qnDeploymentFullHierarchyMockData.json");
+      return require("./mockData/qnDeploymentFullHierarchyMockData.json");
     } else if (
       params.types === EntityTypeEnum.REGION &&
       params.contains_list_format === "none" &&
@@ -110,7 +110,7 @@ export class QnDeploymentApiMock implements QnDeploymentApi {
       params.entities_list_format === "details" &&
       params.contains_list_recursive !== "true"
     ) {
-      return require("common/backend/qnDeployment/_internal/mockData/qnDeploymentRegionsMockData.json");
+      return require("./mockData/qnDeploymentRegionsMockData.json");
     } else if (
       params.entities_list_format === "details" &&
       params.contained_in_list_format === "none" &&
