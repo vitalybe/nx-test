@@ -1,0 +1,52 @@
+[
+  {
+    "paymentId": "1",
+    "month": "03-2020",
+    "contractId": "project-british-telecom-1",
+    "spId": "british-telecom",
+    "amount": 34000000,
+    "volume": 19000000000000,
+    "currency": "usd",
+    "paymentStatus": "pending",
+    "invoiceSentDate": "2020-03-20",
+    "invoiceSentDateEpoch": 1584662400,
+    "paymentSentDate": "2020-04-10",
+    "paymentSentDateEpoch": 1586476800,
+    "receiptReceivedDate": "2020-04-10",
+    "receiptReceivedDateEpoch": 1586476800,
+    "allCpPaymentsReceived": true,
+    "cpPayments": [
+      {
+        "cpId": "disney",
+        "amount": 34000000,
+        "volume": 19000000000000,
+        "currency": "usd"
+      }
+    ]
+  },
+  {
+    "paymentId": "2",
+    "month": "04-2020",
+    "contractId": "project-british-telecom-1",
+    "spId": "british-telecom",
+    "amount": 42615000,
+    "volume": 21000000000000,
+    "currency": "usd",
+    "paymentStatus": "pending",
+    "invoiceSentDate": "2020-04-20",
+    "invoiceSentDateEpoch": 1587254400,
+    "paymentSentDate": "2020-05-10",
+    "paymentSentDateEpoch": 1589068800,
+    "receiptReceivedDate": "2020-05-10",
+    "receiptReceivedDateEpoch": 1589068800,
+    "allCpPaymentsReceived": true,
+    "cpPayments": [
+      {
+        "cpId": "disney",
+        "amount": 42615000,
+        "volume": 21000000000000,
+        "currency": "usd"
+      }
+    ]
+  }
+]
