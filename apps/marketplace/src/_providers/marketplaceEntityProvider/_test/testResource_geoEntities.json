@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "id": "geo_6295630",
+      "displayName": "Earth",
+      "isoName": "",
+      "type": "area",
+      "coveragePercentage": 1,
+      "isps": [],
+      "contains": [
+        {
+          "id": "geo_6255151",
+          "displayName": "Oceania",
+          "isoName": "",
+          "type": "continent",
+          "coveragePercentage": 1,
+          "isps": [],
+          "contains": [
+            {
+              "id": "geo_4032283",
+              "displayName": "Kingdom of Tonga",
+              "isoName": "TO",
+              "type": "country",
+              "coveragePercentage": 50,
+              "isps": [
+                {
+                  "id": "isp_124",
+                  "coveragePercent": 100
+                }
+              ],
+              "contains": [],
+              "lng": -175.0,
+              "lat": -20.0
+            },
+            {
+              "id": "geo_2077456",
+              "displayName": "Commonwealth of Australia",
+              "isoName": "AU",
+              "type": "country",
+              "coveragePercentage": 1,
+              "isps": [
+                {
+                  "id": "isp_124",
+                  "coveragePercent": 100
+                },
+                {
+                  "id": "isp_119",
+                  "coveragePercent": 100
+                }
+              ],
+              "contains": [],
+              "lng": 135.0,
+              "lat": -25.0
+            }
+          ],
+          "lng": 138.51562,
+          "lat": -18.31281
+        }
+      ],
+      "lng": 0.0,
+      "lat": 0.0
+    }
+  ],
+  "debugSection": {
+    "fields": {
+      "geoLastUpdated": "2018-12-11 06:32:03",
+      "footprintLastUpdated": "2018-12-11 12:18:02",
+      "qnDeploymentLastUpdated": "2018-12-11 12:27:48"
+    }
+  }
+}
