@@ -2,14 +2,14 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { EntitiesDropdown, Props } from "common/components/entitiesDropdown/EntitiesDropdown";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
+import { EntitiesDropdown, Props } from "./EntitiesDropdown";
+import { DropdownEntity } from "./_domain/dropdownEntity";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { CommonColors } from "common/styling/commonColors";
-import { EntitiesDropdownMocks } from "common/components/entitiesDropdown/_util/entitiesDropdownMocks";
-import { DropdownSelectorRenderer } from "common/components/entitiesDropdown/_overrideableParts/dropdownSelectorRenderer/DropdownSelectorRenderer";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
+import { CommonColors } from "../../styling/commonColors";
+import { EntitiesDropdownMocks } from "./_util/entitiesDropdownMocks";
+import { DropdownSelectorRenderer } from "./_overrideableParts/dropdownSelectorRenderer/DropdownSelectorRenderer";
+import { SelectionModeEnum } from "../../utils/hierarchyUtils";
 
 const View = styled(FixtureDecorator)<{ isDark?: boolean }>`
   margin: 1em;

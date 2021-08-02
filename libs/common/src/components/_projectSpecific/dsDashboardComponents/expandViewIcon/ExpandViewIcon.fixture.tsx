@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { ExpandViewIcon } from "common/components/_projectSpecific/dsDashboardComponents/expandViewIcon/ExpandViewIcon";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { ExpandViewIcon } from "./ExpandViewIcon";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

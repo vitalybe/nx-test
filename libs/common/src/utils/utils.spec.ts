@@ -1,4 +1,4 @@
-import { sleep } from "common/utils/sleep";
+import { sleep } from "./sleep";
 import { Utils } from "./utils";
 
 describe("commonBackendUtils", function() {

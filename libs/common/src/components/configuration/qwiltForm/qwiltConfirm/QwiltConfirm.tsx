@@ -1,13 +1,13 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { SmallTitle } from "common/components/configuration/_styles/configurationCommon";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { Button } from "common/components/configuration/button/Button";
+import { loggerCreator } from "../../../../utils/logger";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
+import { SmallTitle } from "../../_styles/configurationCommon";
+import { LoadingSpinner } from "../../../loadingSpinner/loadingSpinner/LoadingSpinner";
+import { Button } from "../../button/Button";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

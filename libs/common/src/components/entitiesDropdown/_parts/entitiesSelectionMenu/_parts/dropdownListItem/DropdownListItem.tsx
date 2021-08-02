@@ -1,14 +1,14 @@
 import React, { MouseEvent, useEffect, useState, CSSProperties } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { CommonColors as Colors, CommonColors } from "common/styling/commonColors";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { Checkbox } from "common/components/checkbox/Checkbox";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { ExpandCaret } from "common/components/svg/expandCaret/ExpandCaret";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { loggerCreator } from "../../../../../../utils/logger";
+import { CommonColors as Colors, CommonColors } from "../../../../../../styling/commonColors";
+import { DropdownEntity } from "../../../../_domain/dropdownEntity";
+import { Checkbox } from "../../../../../checkbox/Checkbox";
+import { useEventCallback } from "../../../../../../utils/hooks/useEventCallback";
+import { ExpandCaret } from "../../../../../svg/expandCaret/ExpandCaret";
+import { SelectionModeEnum } from "../../../../../../utils/hierarchyUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const ExpandContainer = styled.div`

@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   FormEntitiesDropdownRaw,
   Props,
-} from "common/components/qcComponents/form/_raw/formEntitiesDropdownRaw/FormEntitiesDropdownRaw";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
+} from "./FormEntitiesDropdownRaw";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
+import { DropdownEntity } from "../../../../entitiesDropdown/_domain/dropdownEntity";
 const View = styled(FixtureDecorator)`
   margin: 1em;
   padding: 1em;

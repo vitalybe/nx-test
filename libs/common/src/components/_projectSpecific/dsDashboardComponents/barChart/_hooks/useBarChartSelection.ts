@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import {
   CommonDsEntity,
   DsEntityType,
-} from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
+} from "../../_domain/commonDsEntity";
 
 interface Options {
   selectedEntity: CommonDsEntity | undefined;

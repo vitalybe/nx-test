@@ -9,11 +9,11 @@ import {
   DsgsApiDsgType,
   DsgsApiMappingType,
   DsgsApiResultType,
-} from "common/backend/resourceManager/_types/resourceManagerTypes";
-import mockData from "common/backend/_utils/mockData";
-import { Omit } from "common/utils/typescriptUtils";
-import { ResourceManagerApi } from "common/backend/resourceManager";
-import { AjaxMetadata } from "common/utils/ajax";
+} from "../_types/resourceManagerTypes";
+import mockData from "../../_utils/mockData";
+import { Omit } from "../../../utils/typescriptUtils";
+import { ResourceManagerApi } from "../../resourceManager";
+import { AjaxMetadata } from "../../../utils/ajax";
 import { Duration } from "luxon";
 
 interface MockConfigOfDsgs {

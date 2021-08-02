@@ -1,11 +1,11 @@
 import * as React from "react";
 import { useContext } from "react";
 import styled from "styled-components";
-import { CommonColors } from "common/styling/commonColors";
-import { CssAnimations } from "common/styling/animations/cssAnimations";
-import { Tooltip } from "common/components/Tooltip";
-import { GlobalFontContext } from "common/components/GlobalFontProvider";
-import { ErrorIndication } from "common/components/qcComponents/errorIndication/ErrorIndication";
+import { CommonColors } from "../../../../../styling/commonColors";
+import { CssAnimations } from "../../../../../styling/animations/cssAnimations";
+import { Tooltip } from "../../../../Tooltip";
+import { GlobalFontContext } from "../../../../GlobalFontProvider";
+import { ErrorIndication } from "../../../errorIndication/ErrorIndication";
 
 //region [[ Styles ]]
 const ErrorTooltipContent = styled.div`

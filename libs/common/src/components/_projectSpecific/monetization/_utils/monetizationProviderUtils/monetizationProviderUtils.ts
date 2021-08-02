@@ -1,11 +1,11 @@
 import _ from "lodash";
 import { ColumnChartSeriesOptions } from "highcharts";
-import { GlobalFontStore } from "common/components/GlobalFontProvider";
+import { GlobalFontStore } from "../../../../GlobalFontProvider";
 import { DateTime, DurationObject } from "luxon";
-import { HistogramPoint } from "common/utils/histograms/domain/histogramPoint";
-import { MonetizationProjectEntity } from "common/components/_projectSpecific/monetization/_domain/monetizationProjectEntity";
-import { QwiltPieChartPart } from "common/components/qwiltPieChart/_types";
-import { MonetizationColors } from "common/components/_projectSpecific/monetization/_utils/monetizationColors";
+import { HistogramPoint } from "../../../../../utils/histograms/domain/histogramPoint";
+import { MonetizationProjectEntity } from "../../_domain/monetizationProjectEntity";
+import { QwiltPieChartPart } from "../../../../qwiltPieChart/_types";
+import { MonetizationColors } from "../monetizationColors";
 
 export interface ProjectEventData {
   date: DateTime;

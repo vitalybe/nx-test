@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   MonetizationMetrics,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/monetizationMetrics/MonetizationMetrics";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
+} from "./MonetizationMetrics";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
+import { UnitKindEnum, unitsFormatter } from "../../../../../utils/unitsFormatter";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

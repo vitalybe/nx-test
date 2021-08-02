@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CommonDsEntity } from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
-import { Props } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/DsGrid";
+import { CommonDsEntity } from "../components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
+import { Props } from "../components/_projectSpecific/dsDashboardComponents/dsGrid/DsGrid";
 
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
 export type ValueOf<T> = T[keyof T];

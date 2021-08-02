@@ -2,7 +2,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { OptionsMenu, Props } from "./OptionsMenu";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const OptionsMenuStyled = styled(OptionsMenu)`
   position: absolute;

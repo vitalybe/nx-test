@@ -1,7 +1,7 @@
 import * as React from "react";
 import { TooltipContentView, TooltipTitle, TooltipValue } from "../_styled/tooltipParts";
 import styled from "styled-components";
-import { UnitNameEnum } from "common/utils/unitsFormatter";
+import { UnitNameEnum } from "../../../../utils/unitsFormatter";
 
 const TooltipContentViewStyled = styled(TooltipContentView)`
   min-width: 6.25rem;

@@ -1,13 +1,13 @@
-import { sleep } from "common/utils/sleep";
-import { FootprintAssignmentsApi } from "common/backend/coverage/footprintAssignments/index";
+import { sleep } from "../../../../utils/sleep";
+import { FootprintAssignmentsApi } from "../index";
 import {
   FootprintAssignmentsApiResult,
   FootprintAssignmentsApiType,
-} from "common/backend/coverage/footprintAssignments/_types/footprintAssignmentsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/footprintAssignmentsTypes";
+import { loggerCreator } from "../../../../utils/logger";
+import { mockNetworkSleep } from "../../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class FootprintAssignmentsApiMock extends FootprintAssignmentsApi {
   async List(): Promise<FootprintAssignmentsApiResult> {

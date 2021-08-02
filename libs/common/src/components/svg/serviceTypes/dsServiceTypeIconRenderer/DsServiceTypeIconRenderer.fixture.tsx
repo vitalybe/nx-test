@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   DsServiceTypeIconRenderer,
   Props,
-} from "common/components/svg/serviceTypes/dsServiceTypeIconRenderer/DsServiceTypeIconRenderer";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { CommonColors } from "common/styling/commonColors";
+} from "./DsServiceTypeIconRenderer";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
+import { CommonColors } from "../../../../styling/commonColors";
 import { MetadataServiceTypeEnum } from "../../../../backend/deliveryServices/_types/deliveryServiceMetadataTypes";
 
 const DsServiceTypeIconRendererStyled = styled(DsServiceTypeIconRenderer)`

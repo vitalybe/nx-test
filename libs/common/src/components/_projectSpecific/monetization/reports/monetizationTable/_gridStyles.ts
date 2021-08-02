@@ -1,8 +1,8 @@
 import { css } from "styled-components";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { Fonts } from "common/styling/fonts";
-import { CommonColors } from "common/styling/commonColors";
-import { CellIconImgHidden } from "common/components/_projectSpecific/monetization/reports/monetizationTable/_parts/_styled";
+import { Fonts } from "../../../../../styling/fonts";
+import { CommonColors } from "../../../../../styling/commonColors";
+import { CellIconImgHidden } from "./_parts/_styled";
 
 export enum MonetizationGridClasses {
   CELL_CENTERED = "cell-centered",

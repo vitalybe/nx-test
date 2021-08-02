@@ -1,8 +1,8 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { AuthDataApi } from "common/backend/authData";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { AuthDataApi } from "../../authData";
 import {
   AccountEmailVerificationStatus,
   AccountsApiUser,
@@ -10,14 +10,14 @@ import {
   AccountStatusEnum,
   AuthDataGroupsApiResponse,
   OrganizationsApiResponse,
-} from "common/backend/authData/_types/authDataTypes";
-import { loggerCreator } from "common/utils/logger";
+} from "../_types/authDataTypes";
+import { loggerCreator } from "../../../utils/logger";
 import _ from "lodash";
 
-const moduleLogger = loggerCreator(__filename);
-const authDataApiRolesResult: AuthDataGroupsApiResponse = require("common/backend/authData/_internal/qc-auth-data-prod-roles.json");
-const authDataApiTenantsResult: AuthDataGroupsApiResponse = require("common/backend/authData/_internal/qc-auth-data-prod-tenants.json");
-const authDataApiOrgResult: OrganizationsApiResponse = require("common/backend/authData/_internal/qc-auth-data-prod-orgs.json");
+const moduleLogger = loggerCreator("__filename");
+const authDataApiRolesResult: AuthDataGroupsApiResponse = require("./qc-auth-data-prod-roles.json");
+const authDataApiTenantsResult: AuthDataGroupsApiResponse = require("./qc-auth-data-prod-tenants.json");
+const authDataApiOrgResult: OrganizationsApiResponse = require("./qc-auth-data-prod-orgs.json");
 
 export class AuthDataApiMock implements AuthDataApi {
   async roleGroups(metadata: AjaxMetadata): Promise<AuthDataGroupsApiResponse> {

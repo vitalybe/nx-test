@@ -1,8 +1,8 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { CopyToClipboardToast } from "common/components/copyToClipboardButton/copyToClipboardToast/CopyToClipboardToast";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { CopyToClipboardToast } from "./CopyToClipboardToast";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

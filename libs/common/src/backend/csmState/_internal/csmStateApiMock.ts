@@ -1,18 +1,18 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { CsmStateApi } from "common/backend/csmState";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { CsmStateApi } from "../../csmState";
 import {
   CsmStateDevicesStatusApiType,
   CsmStateParcelApiType,
   DependencyVerticalsApiResult,
-} from "common/backend/csmState/_types/csmStateTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/csmStateTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 import { ConfigurationCdnEndpoint } from "../_utils/utils";
-import { ParcelStoreData } from "common/backend/csmState/_types/csmStateTypes";
+import { ParcelStoreData } from "../_types/csmStateTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class CsmStateApiMock implements CsmStateApi {
   async listParcels(

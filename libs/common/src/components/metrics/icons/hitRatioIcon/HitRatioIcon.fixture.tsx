@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { HitRatioIcon } from "common/components/metrics/icons/hitRatioIcon/HitRatioIcon";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { HitRatioIcon } from "./HitRatioIcon";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

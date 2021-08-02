@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   MonetizationTable,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/monetizationTable/MonetizationTable";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { GridValueRenderer } from "common/components/qwiltGrid/QwiltGrid";
+} from "./MonetizationTable";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
+import { GridValueRenderer } from "../../../../qwiltGrid/QwiltGrid";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

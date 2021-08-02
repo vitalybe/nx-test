@@ -4,11 +4,11 @@ import styled from "styled-components";
 import {
   DropdownListItem,
   Props,
-} from "common/components/entitiesDropdown/_parts/entitiesSelectionMenu/_parts/dropdownListItem/DropdownListItem";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { RowItem } from "common/components/entitiesDropdown/_common/rowItem/RowItem";
+} from "./DropdownListItem";
+import FixtureDecorator from "../../../../../../utils/cosmos/FixtureDecorator";
+import { DropdownEntity } from "../../../../_domain/dropdownEntity";
+import { SelectionModeEnum } from "../../../../../../utils/hierarchyUtils";
+import { RowItem } from "../../../../_common/rowItem/RowItem";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

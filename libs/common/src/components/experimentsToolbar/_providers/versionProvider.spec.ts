@@ -1,8 +1,8 @@
-import { VersionsProvider } from "common/components/experimentsToolbar/_providers/versionsProvider";
-import { AjaxMetadata } from "common/utils/ajax";
-import { QwosVersionsApi } from "common/backend/qwosVersions";
-import { QwosVersionsApiResult } from "common/backend/qwosVersions/_types/qwosVersionsTypes";
-import { QnDeploymentEntity } from "common/domain/qwiltDeployment/qnDeploymentEntity";
+import { VersionsProvider } from "./versionsProvider";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { QwosVersionsApi } from "../../../backend/qwosVersions";
+import { QwosVersionsApiResult } from "../../../backend/qwosVersions/_types/qwosVersionsTypes";
+import { QnDeploymentEntity } from "../../../domain/qwiltDeployment/qnDeploymentEntity";
 import { DeploymentEntitiesProvider } from "../../../providers/deploymentEntitiesProvider";
 
 describe("versionProvider", function() {

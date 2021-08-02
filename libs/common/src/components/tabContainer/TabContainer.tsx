@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
-import { Tab } from "common/components/tabContainer/tab/Tab";
-import { CommonColors } from "common/styling/commonColors";
+import { Tab } from "./tab/Tab";
+import { CommonColors } from "../../styling/commonColors";
 
 const StyledTab = styled(Tab)<{ Color?: string }>`
   background-color: ${(props) => props.Color || CommonColors.GEYSER};

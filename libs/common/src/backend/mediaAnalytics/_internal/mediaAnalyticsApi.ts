@@ -1,6 +1,6 @@
 import * as _ from "lodash";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { UrlParams } from "common/backend/_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { UrlParams } from "../../_utils/urlParams";
 import {
   AnalyticsGeneralParamsEnum,
   AnalyticsHistogramStatsEnum,
@@ -18,17 +18,17 @@ import {
   ApiReportType,
   ApiSeries,
   ErrorStatusApiType,
-} from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
-import { TimeConfig } from "common/utils/timeConfig";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
+} from "../mediaAnalyticsTypes";
+import { TimeConfig } from "../../../utils/timeConfig";
+import { getOriginForApi } from "../../backendOrigin";
+import { MediaAnalyticsSeries } from "../mediaAnalyticsSeries";
 import { DateTime, Duration } from "luxon";
-import { loggerCreator } from "common/utils/logger";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { MediaAnalyticsApiMock } from "common/backend/mediaAnalytics";
-import { Notifier } from "common/utils/notifications/notifier";
+import { loggerCreator } from "../../../utils/logger";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { MediaAnalyticsApiMock } from "../../mediaAnalytics";
+import { Notifier } from "../../../utils/notifications/notifier";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class MediaAnalyticsApi {
   protected readonly originUrl = getOriginForApi("media-analytics");

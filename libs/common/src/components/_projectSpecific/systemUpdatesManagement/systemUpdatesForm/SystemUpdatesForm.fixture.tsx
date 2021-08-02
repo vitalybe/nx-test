@@ -4,8 +4,8 @@ import styled from "styled-components";
 import {
   Props,
   SystemUpdatesForm,
-} from "common/components/_projectSpecific/systemUpdatesManagement/systemUpdatesForm/SystemUpdatesForm";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./SystemUpdatesForm";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 import { SystemUpdateFormEntity } from "../_domain/systemUpdateFormEntity";
 
 const View = styled(FixtureDecorator)`

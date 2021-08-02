@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { createPeakBandwidthSeriesData } from "common/components/_projectSpecific/monetization/_utils/monetizationMockUtils";
+import FixtureDecorator from "../../../../../../utils/cosmos/FixtureDecorator";
+import { createPeakBandwidthSeriesData } from "../../../_utils/monetizationMockUtils";
 import { PeakBandwidthChartPrint, Props } from "./PeakBandwidthChartPrint";
 
 const View = styled(FixtureDecorator)`

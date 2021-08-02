@@ -1,16 +1,16 @@
 /* eslint-disable */
-import { sleep } from "common/utils/sleep";
-import { DeliveryServicesApi } from "common/backend/deliveryServices";
+import { sleep } from "../../../utils/sleep";
+import { DeliveryServicesApi } from "../../deliveryServices";
 import {
   DeliveryServicesApiDocsType,
   DeliveryServicesApiResult,
   DeliveryServicesApiType,
   DeliveryServicesEditApiType,
   DeliveryServicesLabelsApiType,
-} from "common/backend/deliveryServices/_types/deliveryServicesTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import mockData from "common/backend/_utils/mockData";
+} from "../_types/deliveryServicesTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import mockData from "../../_utils/mockData";
 import {
   BatchApiType,
   TemplateRevisionApiResult,
@@ -20,21 +20,21 @@ import {
   TemplatesApiResult,
   TemplatesApiType,
   TemplatesEditApiType,
-} from "common/backend/deliveryServices/_types/deliveryServicesTemplatesTypes";
+} from "../_types/deliveryServicesTemplatesTypes";
 import {
   RevisionApiType,
   RevisionLabelsApiType,
-} from "common/backend/deliveryServices/_types/deliveryServiceRevisionTypes";
-import { AjaxMetadata } from "common/utils/ajax";
+} from "../_types/deliveryServiceRevisionTypes";
+import { AjaxMetadata } from "../../../utils/ajax";
 import {
   DeliveryServiceMetadataApiResult,
   DeliveryServiceMetadataCreateApiType,
   DeliveryServiceMetadataEditApiType,
   DeliveryServiceMetadataIconType,
   MetadataServiceTypeEnum,
-} from "common/backend/deliveryServices/_types/deliveryServiceMetadataTypes";
+} from "../_types/deliveryServiceMetadataTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DeliveryServicesApiMock extends DeliveryServicesApi {
   async apiDocs(): Promise<DeliveryServicesApiDocsType> {

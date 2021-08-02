@@ -1,16 +1,16 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { MonetizationPanelHeader } from "common/components/_projectSpecific/monetization/reports/monetizationPanelHeader/MonetizationPanelHeader";
+import { loggerCreator } from "../../../../../utils/logger";
+import { MonetizationPanelHeader } from "../monetizationPanelHeader/MonetizationPanelHeader";
 import { GridOptions } from "ag-grid-community";
-import { QwiltGrid, QwiltGridColumnDef } from "common/components/qwiltGrid/QwiltGrid";
+import { QwiltGrid, QwiltGridColumnDef } from "../../../../qwiltGrid/QwiltGrid";
 import { MonetizationGridClasses, monetizationGridStyles } from "./_gridStyles";
-import { ProviderMetadata } from "common/components/providerDataContainer/_providers/useProvider";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
+import { ProviderMetadata } from "../../../../providerDataContainer/_providers/useProvider";
+import { ProviderDataContainer } from "../../../../providerDataContainer/ProviderDataContainer";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const QwiltGridStyled = styled(QwiltGrid)`

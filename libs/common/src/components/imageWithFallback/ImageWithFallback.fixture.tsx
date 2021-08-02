@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { ImageWithFallback, Props } from "common/components/imageWithFallback/ImageWithFallback";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { ImageWithFallback, Props } from "./ImageWithFallback";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)``;
 

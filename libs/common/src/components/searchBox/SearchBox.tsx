@@ -1,15 +1,15 @@
 import * as React from "react";
 import { useCallback, useState } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../utils/logger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../styling/commonColors";
 import { darken } from "polished";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
-import { SearchIconStyled as SearchIcon } from "common/components/searchInput/SearchInput";
+import { SearchIconStyled as SearchIcon } from "../searchInput/SearchInput";
 import _ from "lodash";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

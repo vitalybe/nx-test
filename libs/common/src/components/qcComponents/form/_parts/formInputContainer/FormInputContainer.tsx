@@ -1,12 +1,12 @@
 import * as React from "react";
 import { forwardRef, ReactNode } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { InputErrorIndication } from "common/components/qcComponents/form/_parts/inputErrorIndication/InputErrorIndication";
-import { HelpIcon } from "common/components/svg/helpIcon/HelpIcon";
-import { Tooltip } from "common/components/Tooltip";
+import { loggerCreator } from "../../../../../utils/logger";
+import { InputErrorIndication } from "../inputErrorIndication/InputErrorIndication";
+import { HelpIcon } from "../../../../svg/helpIcon/HelpIcon";
+import { Tooltip } from "../../../../Tooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const PrefixSpn = styled.span`

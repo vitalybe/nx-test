@@ -1,11 +1,11 @@
 import {
   SelectedItemsData,
   useSelectedItems,
-} from "common/components/entitiesDropdown/_parts/entitiesSelectionMenu/_hooks/useSelectedItems";
-import { EntitiesDropdownMocks } from "common/components/entitiesDropdown/_util/entitiesDropdownMocks";
+} from "./useSelectedItems";
+import { EntitiesDropdownMocks } from "../../../_util/entitiesDropdownMocks";
 import { act, renderHook as renderHookLib } from "@testing-library/react-hooks";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
+import { DropdownEntity } from "../../../_domain/dropdownEntity";
+import { SelectionModeEnum } from "../../../../../utils/hierarchyUtils";
 
 interface HookParams {
   originalItems: DropdownEntity[];

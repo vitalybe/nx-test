@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react";
 import styled from "styled-components";
-import { CopyToClipboardButton, Props } from "common/components/copyToClipboardButton/CopyToClipboardButton";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { CopyToClipboardButton, Props } from "./CopyToClipboardButton";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

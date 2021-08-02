@@ -1,7 +1,7 @@
 import * as React from "react";
 import { computed } from "mobx";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
 
 export class MainStore {
   @computed

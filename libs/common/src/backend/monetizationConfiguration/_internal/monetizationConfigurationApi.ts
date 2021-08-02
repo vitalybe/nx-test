@@ -1,17 +1,17 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { MonetizationConfigurationApiMock } from "common/backend/monetizationConfiguration";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { MonetizationConfigurationApiMock } from "../../monetizationConfiguration";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
 import {
   ApiCpContractType,
   ApiSpContractType,
-} from "common/backend/monetizationConfiguration/_types/monetizationConfigurationTypes";
+} from "../_types/monetizationConfigurationTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("monetization-docs"), "/api/1/");
 
 export class MonetizationConfigurationApi {

@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
 import _ from "lodash";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { NoDataFallback } from "common/components/qcComponents/noDataFallback/NoDataFallback";
-import { ColoredCircle } from "common/components/styled/ColoredCircle";
+import { UnitKindEnum, unitsFormatter } from "../../../../../../utils/unitsFormatter";
+import { CommonColors as Colors } from "../../../../../../styling/commonColors";
+import { NoDataFallback } from "../../../../../qcComponents/noDataFallback/NoDataFallback";
+import { ColoredCircle } from "../../../../../styled/ColoredCircle";
 
 //region [[ Styles ]]
 

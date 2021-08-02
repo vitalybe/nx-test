@@ -1,11 +1,11 @@
 import * as React from "react";
 import { ReactNode, ReactText } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { Control, FieldError, FieldName, useFormContext } from "react-hook-form";
 import { useTypedController } from "@hookform/strictly-typed";
 import "antd/dist/antd.css";
-import { FormRadioRaw } from "common/components/qcComponents/form/_raw/formRadioRaw/FormRadioRaw";
+import { FormRadioRaw } from "../_raw/formRadioRaw/FormRadioRaw";
 import {
   DeepPath,
   DeepPathValue,
@@ -14,7 +14,7 @@ import {
 } from "@hookform/strictly-typed/dist/types";
 import { CheckboxOptionType } from "antd/es/checkbox";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 const FormRadioView = styled.div<{ colSpan?: string }>`

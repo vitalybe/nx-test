@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { FormSelectRaw, Props } from "common/components/qcComponents/form/_raw/formSelectRaw/FormSelectRaw";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { FormSelectRaw, Props } from "./FormSelectRaw";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

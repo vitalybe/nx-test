@@ -1,10 +1,10 @@
 import { useCallback } from "react";
 import * as yup from "yup";
-import { loggerCreator } from "common/utils/logger";
-import { useMountedRef } from "common/utils/hooks/useMountedRef";
+import { loggerCreator } from "../../../../utils/logger";
+import { useMountedRef } from "../../../../utils/hooks/useMountedRef";
 import { ResolverResult } from "react-hook-form/dist/types/resolvers";
 
-const logger = loggerCreator(__filename);
+const logger = loggerCreator("__filename");
 
 export function useYupValidationResolver<T extends object = {}>(
   validationSchema: yup.ObjectSchema<yup.Shape<T, object>>

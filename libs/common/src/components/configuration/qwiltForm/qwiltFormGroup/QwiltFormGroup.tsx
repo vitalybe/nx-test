@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { CommonColors } from "common/styling/commonColors";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
+import { CommonColors } from "../../../../styling/commonColors";
 
 const FormikGroupView = styled.div`
   padding: 2em 0.5em 0;

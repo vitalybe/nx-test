@@ -1,4 +1,4 @@
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
+import { ChartBehavior } from "../../../../qwiltChart/_domain/chartBehavior";
 import { ColumnChartSeriesOptions } from "highcharts";
 
 export class ColumnSeriesBehavior implements ChartBehavior {

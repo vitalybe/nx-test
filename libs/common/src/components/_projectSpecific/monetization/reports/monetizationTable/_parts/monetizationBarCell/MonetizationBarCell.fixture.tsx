@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   MonetizationBarCell,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/monetizationTable/_parts/monetizationBarCell/MonetizationBarCell";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { MonetizationColors } from "common/components/_projectSpecific/monetization/_utils/monetizationColors";
+} from "./MonetizationBarCell";
+import FixtureDecorator from "../../../../../../../utils/cosmos/FixtureDecorator";
+import { MonetizationColors } from "../../../../_utils/monetizationColors";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

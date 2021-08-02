@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, QwiltConfirm } from "common/components/configuration/qwiltForm/qwiltConfirm/QwiltConfirm";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Props, QwiltConfirm } from "./QwiltConfirm";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

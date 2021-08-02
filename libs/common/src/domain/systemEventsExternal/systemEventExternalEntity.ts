@@ -3,12 +3,12 @@ import {
   ComponentTypeEnum,
   SystemUpdateType,
   SystemUpdateTypeEnum,
-} from "common/backend/systemEvents/_types/systemEventsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { OnlyData } from "common/utils/typescriptUtils";
-import { mockUtils } from "common/utils/mockUtils";
+} from "../../backend/systemEvents/_types/systemEventsTypes";
+import { loggerCreator } from "../../utils/logger";
+import { OnlyData } from "../../utils/typescriptUtils";
+import { mockUtils } from "../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class SystemEventExternalEntity {
   id!: string;

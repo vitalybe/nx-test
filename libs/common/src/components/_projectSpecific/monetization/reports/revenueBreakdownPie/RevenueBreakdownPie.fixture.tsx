@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { MonetizationColors } from "common/components/_projectSpecific/monetization/_utils/monetizationColors";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
+import { MonetizationColors } from "../../_utils/monetizationColors";
 import { RevenueBreakdownPie, Props } from "./RevenueBreakdownPie";
 
 const View = styled(FixtureDecorator)`

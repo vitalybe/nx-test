@@ -3,13 +3,13 @@ import { MutableRefObject, ReactNode, Ref } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons/faExclamationTriangle";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { loggerCreator } from "common/utils/logger";
+import { LoadingSpinner } from "../loadingSpinner/loadingSpinner/LoadingSpinner";
+import { loggerCreator } from "../../utils/logger";
 import { transparentize } from "polished";
-import { ProviderMetadata } from "common/components/providerDataContainer/_providers/useProvider";
-import { CommonColors } from "common/styling/commonColors";
+import { ProviderMetadata } from "./_providers/useProvider";
+import { CommonColors } from "../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const ProviderDataContainerView = styled.div`
   position: relative;

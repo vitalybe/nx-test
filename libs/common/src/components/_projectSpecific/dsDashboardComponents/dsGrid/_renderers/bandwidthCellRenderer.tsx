@@ -1,10 +1,10 @@
-import { CommonDsEntity } from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
-import { Cell } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_styles/cell";
-import { UtilizationBar } from "common/components/utilizationBar/UtilizationBar";
+import { CommonDsEntity } from "../../_domain/commonDsEntity";
+import { UnitKindEnum, unitsFormatter } from "../../../../../utils/unitsFormatter";
+import { Cell } from "../_styles/cell";
+import { UtilizationBar } from "../../../../utilizationBar/UtilizationBar";
 import * as React from "react";
 import styled from "styled-components";
-import { GridReactRenderer, ReactRendererProps } from "common/components/qwiltGrid/QwiltGrid";
+import { GridReactRenderer, ReactRendererProps } from "../../../../qwiltGrid/QwiltGrid";
 
 const UnitSpn = styled.span`
   font-weight: 500;

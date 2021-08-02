@@ -1,14 +1,14 @@
 import React from "react";
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { EntitiesDropdown, Props } from "common/components/entitiesDropdown/EntitiesDropdown";
-import { EntitiesDropdownMocks } from "common/components/entitiesDropdown/_util/entitiesDropdownMocks";
+import { EntitiesDropdown, Props } from "./EntitiesDropdown";
+import { EntitiesDropdownMocks } from "./_util/entitiesDropdownMocks";
 import {
   DropdownSelectorRenderer,
   MAXIMUM_SHOWN_ICONS,
-} from "common/components/entitiesDropdown/_overrideableParts/dropdownSelectorRenderer/DropdownSelectorRenderer";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
+} from "./_overrideableParts/dropdownSelectorRenderer/DropdownSelectorRenderer";
+import { DropdownEntity } from "./_domain/dropdownEntity";
+import { SelectionModeEnum } from "../../utils/hierarchyUtils";
 
 const allItemsSelectedText = "all items selected";
 

@@ -1,9 +1,9 @@
-import { loggerCreator } from "common/utils/logger";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { Ajax } from "common/utils/ajax";
-import { CommonUrls } from "common/utils/commonUrls";
+import { loggerCreator } from "../../../utils/logger";
+import { devToolsStore } from "../../devTools/_stores/devToolsStore";
+import { Ajax } from "../../../utils/ajax";
+import { CommonUrls } from "../../../utils/commonUrls";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 interface ProjectEnvVersions {
   projects: {

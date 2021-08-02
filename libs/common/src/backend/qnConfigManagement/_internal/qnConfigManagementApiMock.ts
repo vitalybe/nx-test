@@ -1,15 +1,15 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { QnConfigManagementApi } from "common/backend/qnConfigManagement";
-import { loggerCreator } from "common/utils/logger";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { QnConfigManagementApi } from "../../qnConfigManagement";
+import { loggerCreator } from "../../../utils/logger";
 import {
   QnConfigHierarchyApiResult,
   QnConfigMappingApiResult,
-} from "common/backend/qnConfigManagement/_types/qnConfigManagementTypes";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/qnConfigManagementTypes";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class QnConfigManagementApiMock extends QnConfigManagementApi {
   async hierarchyGet(qnDeploymentId: string, metadata: AjaxMetadata): Promise<QnConfigHierarchyApiResult> {

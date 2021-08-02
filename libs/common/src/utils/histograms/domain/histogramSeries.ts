@@ -1,9 +1,9 @@
 import * as _ from "lodash";
-import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
-import { HistogramPoint } from "common/utils/histograms/domain/histogramPoint";
-import { TimeConfig } from "common/utils/timeConfig";
-import { mockUtils } from "common/utils/mockUtils";
-import { HistogramUtils, HistogramPointsSeries } from "common/utils/histograms/utils/histogramUtils";
+import { MediaAnalyticsSeries } from "../../../backend/mediaAnalytics/mediaAnalyticsSeries";
+import { HistogramPoint } from "./histogramPoint";
+import { TimeConfig } from "../../timeConfig";
+import { mockUtils } from "../../mockUtils";
+import { HistogramUtils, HistogramPointsSeries } from "../utils/histogramUtils";
 
 const murmur = require("murmurhash-js");
 

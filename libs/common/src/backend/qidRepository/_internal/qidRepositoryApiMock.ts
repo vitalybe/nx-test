@@ -1,10 +1,10 @@
-import { sleep } from "common/utils/sleep";
-import { QidRepositoryApi } from "common/backend/qidRepository";
-import { loggerCreator } from "common/utils/logger";
-import { QidMetadata } from "common/backend/qidRepository/_types/qidRepositoryTypes";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { QidRepositoryApi } from "../../qidRepository";
+import { loggerCreator } from "../../../utils/logger";
+import { QidMetadata } from "../_types/qidRepositoryTypes";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class QidRepositoryApiMock extends QidRepositoryApi {
   async list(): Promise<QidMetadata[]> {

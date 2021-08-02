@@ -5,9 +5,9 @@ import styled from "styled-components";
 import {
   MonetizationMonthlyChartPrint,
   Props,
-} from "common/components/_projectSpecific/monetization/reports/print/monetizationMonthlyChartPrint/MonetizationMonthlyChartPrint";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { createMockMonthlyRevenue } from "common/components/_projectSpecific/monetization/_utils/monetizationMockUtils";
+} from "./MonetizationMonthlyChartPrint";
+import FixtureDecorator from "../../../../../../utils/cosmos/FixtureDecorator";
+import { createMockMonthlyRevenue } from "../../../_utils/monetizationMockUtils";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

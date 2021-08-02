@@ -1,7 +1,7 @@
-import { BarChartDataItem } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_types/_types";
-import { CommonColors as Colors } from "common/styling/commonColors";
+import { BarChartDataItem } from "./_types";
+import { CommonColors as Colors } from "../../../../../styling/commonColors";
 import _ from "lodash";
-import { HierarchyUtils } from "common/utils/hierarchyUtils";
+import { HierarchyUtils } from "../../../../../utils/hierarchyUtils";
 
 export class BarChartModel {
   data!: BarChartDataItem[];

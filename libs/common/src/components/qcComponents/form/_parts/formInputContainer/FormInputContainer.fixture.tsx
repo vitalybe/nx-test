@@ -5,8 +5,8 @@ import styled from "styled-components";
 import {
   FormInputContainer,
   Props,
-} from "common/components/qcComponents/form/_parts/formInputContainer/FormInputContainer";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./FormInputContainer";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

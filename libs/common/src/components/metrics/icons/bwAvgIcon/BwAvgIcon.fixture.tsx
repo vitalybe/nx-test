@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { BwAvgIcon } from "common/components/metrics/icons/bwAvgIcon/BwAvgIcon";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { BwAvgIcon } from "./BwAvgIcon";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled, { css, FlattenSimpleInterpolation } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
+import { loggerCreator } from "../../../../utils/logger";
+import { ConfigurationStyles } from "../../_styles/configurationStyles";
 import Switch from "react-switch";
 import { transparentize } from "polished";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

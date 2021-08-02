@@ -1,8 +1,8 @@
-import { mockUtils } from "common/utils/mockUtils";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
-import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
-import { TimeConfig } from "common/utils/timeConfig";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
+import { mockUtils } from "../../../utils/mockUtils";
+import { HistogramSeries } from "../../../utils/histograms/domain/histogramSeries";
+import { MediaAnalyticsSeries } from "../../../backend/mediaAnalytics/mediaAnalyticsSeries";
+import { TimeConfig } from "../../../utils/timeConfig";
+import { UnitKindEnum } from "../../../utils/unitsFormatter";
 import { IndividualSeriesOptions } from "highcharts";
 
 type ConstructorType<T> = { name: string; histogram: HistogramSeries } & Partial<ChartSeriesData<T>>;

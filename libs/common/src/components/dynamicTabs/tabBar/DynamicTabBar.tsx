@@ -2,10 +2,10 @@ import * as React from "react";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../styling/commonColors";
 import { DynamicTabData } from "../DynamicTabs";
 import { DynamicTabButton } from "./tabButton/DynamicTabButton";
-import { Tooltip } from "common/components/Tooltip";
+import { Tooltip } from "../../Tooltip";
 
 //region [[ Styles ]]
 

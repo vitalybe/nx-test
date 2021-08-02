@@ -1,11 +1,11 @@
 import { AxisLabelFormatterOptions, ElementObject, Options, PlotLines } from "highcharts";
 import { DateTime, Duration, DurationUnit, Zone } from "luxon";
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { OnlyData } from "common/utils/typescriptUtils";
-import { BehaviorUtils } from "common/components/qwiltChart/_behaviors/utils/behaviorUtils";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
+import { ChartBehavior } from "../../_domain/chartBehavior";
+import { ChartSeriesData } from "../../_domain/chartSeriesData";
+import { OnlyData } from "../../../../utils/typescriptUtils";
+import { BehaviorUtils } from "../utils/behaviorUtils";
+import { ChartSeriesArray } from "../../_domain/chartSeriesArray";
+import { HistogramSeries } from "../../../../utils/histograms/domain/histogramSeries";
 
 const MAXIMUM_TICKS = 30;
 // Possibilities of every few X the ticks would be

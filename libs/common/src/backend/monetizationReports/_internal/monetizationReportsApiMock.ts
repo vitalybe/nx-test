@@ -1,8 +1,8 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { MonetizationReportsApi } from "common/backend/monetizationReports";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { MonetizationReportsApi } from "../../monetizationReports";
 import {
   ApiCpPaymentPayloadType,
   ApiCpPaymentType,
@@ -22,11 +22,11 @@ import {
   MonetizationApiSpOvertimeResponse,
   MonetizationApiSpPaymentsResponse,
   MonetizationApiSpPeaksResponse,
-} from "common/backend/monetizationReports/_types/monetizationReportsTypes";
-import { loggerCreator } from "common/utils/logger";
+} from "../_types/monetizationReportsTypes";
+import { loggerCreator } from "../../../utils/logger";
 import { DateTime } from "luxon";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const overtimeReportCpMock: MonetizationApiCpOvertimeResponse = require("../_mocks/monetization-reports-cp-overtime.json");
 const monthlyReportCpMock: MonetizationApiCpMonthlyResponse = require("../_mocks/monetization-reports-cp-monthly.json");
 const overtimeReportSpMock: MonetizationApiSpOvertimeResponse = require("../_mocks/monetization-reports-sp-overtime.json");

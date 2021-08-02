@@ -3,8 +3,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import { EditInvoiceSentDateForm, Props } from "./EditInvoiceSentDateForm";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { MonetizationPaymentEntity } from "common/components/_projectSpecific/monetization/_domain/monetizationPaymentEntity";
+import FixtureDecorator from "../../../../../../../utils/cosmos/FixtureDecorator";
+import { MonetizationPaymentEntity } from "../../../../_domain/monetizationPaymentEntity";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

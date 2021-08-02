@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ExperimentsBarStyles } from "common/components/experimentsToolbar/_styling/experimentsBarStyles";
-import { CommonColors } from "common/styling/commonColors";
+import { loggerCreator } from "../../../utils/logger";
+import { ExperimentsBarStyles } from "../_styling/experimentsBarStyles";
+import { CommonColors } from "../../../styling/commonColors";
 import _ from "lodash";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

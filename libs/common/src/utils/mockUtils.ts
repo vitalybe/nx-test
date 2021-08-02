@@ -1,12 +1,12 @@
-import { sleep } from "common/utils/sleep";
-import { loggerCreator } from "common/utils/logger";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
+import { sleep } from "./sleep";
+import { loggerCreator } from "./logger";
+import { CommonUrlParams } from "../urlParams/commonUrlParams";
 
 const murmur = require("murmurhash-js");
 const uuidv1 = require("uuid/v1");
 
 //noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const DEFAULT_MOCK_SLEEP_TIME = 100;
 const mockSleepTimeParam = new URLSearchParams(location.search).get(CommonUrlParams.mockSleepTime);

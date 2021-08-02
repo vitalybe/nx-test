@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons/faExclamationCircle";
-import { Snippets } from "common/utils/snippets";
-import { CommonColors } from "common/styling/commonColors";
+import { Snippets } from "../../../utils/snippets";
+import { CommonColors } from "../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 
@@ -52,7 +52,7 @@ export interface Props {
 //endregion [[ Props ]]
 
 //region [[ Functions ]]
-const qcLogo = require("common/images/logo/qc-logo.png");
+const qcLogo = require("../../../images/logo/qc-logo.png");
 //endregion [[ Functions ]]
 
 export const LoadingFailed = ({ ...props }: Props) => {

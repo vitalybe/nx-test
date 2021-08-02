@@ -1,24 +1,24 @@
 import * as _ from "lodash";
 import * as React from "react";
 
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../logger";
 import { toast, ToastContent, ToastOptions, Zoom } from "react-toastify";
 import styled from "styled-components";
-import { NotificationEntity, NotificationLevel } from "common/utils/notifications/_domain/notificationEntity";
+import { NotificationEntity, NotificationLevel } from "./_domain/notificationEntity";
 import { action, observable } from "mobx";
 import Dotdotdot from "react-dotdotdot";
-import { NotifierShared } from "common/utils/notifications/notifierShared";
-import { CommonUrls } from "common/utils/commonUrls";
-import { RecordSession } from "common/utils/telemetryRecording/recordSession";
-import { NetworkError } from "common/utils/ajax";
-import { openCustomConfirmModal } from "common/components/qwiltModal/QwiltModal";
-import { DialogModal } from "common/components/qcComponents/dialogModal/DialogModal";
-import { UserConfirmation } from "common/components/qcComponents/userConfirmation/UserConfirmation";
+import { NotifierShared } from "./notifierShared";
+import { CommonUrls } from "../commonUrls";
+import { RecordSession } from "../telemetryRecording/recordSession";
+import { NetworkError } from "../ajax";
+import { openCustomConfirmModal } from "../../components/qwiltModal/QwiltModal";
+import { DialogModal } from "../../components/qcComponents/dialogModal/DialogModal";
+import { UserConfirmation } from "../../components/qcComponents/userConfirmation/UserConfirmation";
 import { transparentize } from "polished";
-import { CommonColors } from "common/styling/commonColors";
-import { QcButtonThemes } from "common/components/qcComponents/_styled/qcButton/_themes";
+import { CommonColors } from "../../styling/commonColors";
+import { QcButtonThemes } from "../../components/qcComponents/_styled/qcButton/_themes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

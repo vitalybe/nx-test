@@ -1,13 +1,13 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { HealthReporterApi } from "common/backend/healthReporter";
-import { HealthReporterApiResult } from "common/backend/healthReporter/_types/healthReporterTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { HealthReporterApi } from "../../healthReporter";
+import { HealthReporterApiResult } from "../_types/healthReporterTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class HealthReporterApiMock implements HealthReporterApi {
   async getEntities(url: string, metadata: AjaxMetadata): Promise<HealthReporterApiResult> {

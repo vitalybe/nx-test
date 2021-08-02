@@ -11,9 +11,9 @@ import {
   Props,
   QwiltGrid,
   QwiltGridColumnDef,
-} from "common/components/qwiltGrid/QwiltGrid";
+} from "./QwiltGrid";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 import { DateTime } from "luxon";
 

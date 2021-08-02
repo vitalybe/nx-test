@@ -1,7 +1,7 @@
-import { DeploymentEntity } from "common/domain/qwiltDeployment/deploymentEntity";
-import { loggerCreator } from "common/utils/logger";
+import { DeploymentEntity } from "./deploymentEntity";
+import { loggerCreator } from "../../utils/logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DeploymentEntityWithChildren extends DeploymentEntity {
   children!: DeploymentEntityWithChildren[];

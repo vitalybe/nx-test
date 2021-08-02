@@ -3,8 +3,8 @@ import { PropsWithChildren, useRef, useState } from "react";
 import styled from "styled-components";
 import _ from "lodash";
 
-const leftArrowSrc = require("common/images/left-arrow.svg");
-const rightArrowSrc = require("common/images/right-arrow.svg");
+const leftArrowSrc = require("../../../../../images/left-arrow.svg");
+const rightArrowSrc = require("../../../../../images/right-arrow.svg");
 
 // region [[ Styles ]]
 const ArrowImg = styled.img`

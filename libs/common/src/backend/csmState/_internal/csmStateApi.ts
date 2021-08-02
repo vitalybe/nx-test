@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { CsmStateApiMock } from "common/backend/csmState";
-import { MockWrapperProxy } from "common/backend/_utils/mockWrapperProxy/mockWrapperProxy";
+import { loggerCreator } from "../../../utils/logger";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { CsmStateApiMock } from "../../csmState";
+import { MockWrapperProxy } from "../../_utils/mockWrapperProxy/mockWrapperProxy";
 import {
   CsmStateDevicesStatusApiType,
   CsmStateParcelApiType,
@@ -12,9 +12,9 @@ import {
   ParcelStoreData,
 } from "../_types/csmStateTypes";
 import { ConfigurationCdnEndpoint, CsmStateUtils } from "../_utils/utils";
-import { getOriginForApi } from "common/backend/backendOrigin";
+import { getOriginForApi } from "../../backendOrigin";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_ENDPOINT = "debug/dashboard/";
 
 export class CsmStateApi {
