@@ -1,22 +1,22 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
 import * as _ from "lodash";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import styled, { css } from "styled-components";
 import { autorun } from "mobx";
-import { MapMarker } from "src/map/mapMarker/MapMarker";
-import { MapMarkerModel } from "src/map/mapMarker/mapMarkerModel";
+import { MapMarker } from "./mapMarker/MapMarker";
+import { MapMarkerModel } from "./mapMarker/mapMarkerModel";
 import { observer } from "mobx-react";
-import { MapModel } from "src/map/mapModel";
+import { MapModel } from "./mapModel";
 // @ts-ignore
 import GoogleMapReact from "google-map-react";
-import { MapMarkerFuture } from "src/map/mapMarkerFuture/MapMarkerFuture";
-import { PolygonsProvider } from "src/map/_providers/polygonsProvider";
-import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
+import { MapMarkerFuture } from "./mapMarkerFuture/MapMarkerFuture";
+import { PolygonsProvider } from "./_providers/polygonsProvider";
+import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
-const mapStyle = require("src/map/mapStyle.json");
+const mapStyle = require("./mapStyle.json");
 
 const MAP_MIN_ZOOM = 3;
 const MAP_MAX_ZOOM = 6;

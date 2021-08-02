@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DrillDownChart, Props } from "src/drillDown/chart/DrillDownChart";
+import { DrillDownChart, Props } from "./DrillDownChart";
 import { DrillDownChartModel } from "./drillDownChartModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   padding: 1em;

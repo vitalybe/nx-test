@@ -1,16 +1,16 @@
 import * as React from "react";
 import { useCallback } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common//utils/logger";
-import { MapMarkerBubble } from "src/map/_parts/mapMarkerBubble/MapMarkerBubble";
-import { Colors } from "src/_styling/colors";
-import { Tooltip } from "common/components/Tooltip";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { loggerCreator } from "@qwilt/common//utils/logger";
+import { MapMarkerBubble } from "../_parts/mapMarkerBubble/MapMarkerBubble";
+import { Colors } from "../../_styling/colors";
+import { Tooltip } from "@qwilt/common/components/Tooltip";
+import { MarketplaceStore } from "../../_stores/marketplaceStore";
 import { observer } from "mobx-react-lite";
-import { Fonts } from "common/styling/fonts";
+import { Fonts } from "@qwilt/common/styling/fonts";
 import { transparentize } from "polished";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

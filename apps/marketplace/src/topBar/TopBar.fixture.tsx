@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, TopBar } from "src/topBar/TopBar";
-import { TopBarModel } from "src/topBar/topBarModel";
-import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
+import { Props, TopBar } from "./TopBar";
+import { TopBarModel } from "./topBarModel";
+import { MarketplaceMetrics } from "../_domain/marketplaceMetrics";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { MarketplaceStore } from "../_stores/marketplaceStore";
 import { PromisedComputedValue } from "computed-async-mobx";
 
 const View = styled(FixtureDecorator)``;

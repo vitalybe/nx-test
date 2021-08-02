@@ -1,12 +1,12 @@
-import { loggerCreator } from "common/utils/logger";
-import { mockUtils } from "common/utils/mockUtils";
-import { DrillDownTableRowModel } from "src/drillDown/table/row/drillDownTableRowModel";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { DrillDownTableRowModel } from "./row/drillDownTableRowModel";
 import { action, computed, observable } from "mobx";
-import { MetricTypesEnum } from "src/_domain/metricTypes";
-import { DrillDownStore } from "src/drillDown/_stores/drillDownStore";
+import { MetricTypesEnum } from "../../_domain/metricTypes";
+import { DrillDownStore } from "../_stores/drillDownStore";
 import * as _ from "lodash";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export type TableMetricType = MetricTypesEnum | "coverage" | "ispCount";
 

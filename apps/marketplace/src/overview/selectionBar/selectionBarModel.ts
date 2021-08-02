@@ -1,8 +1,8 @@
-import { SelectionBarCardModel } from "src/overview/selectionBar/selectionCard/selectionBarCardModel";
+import { SelectionBarCardModel } from "./selectionCard/selectionBarCardModel";
 import { action, computed } from "mobx";
 import * as _ from "lodash";
-import { mockUtils } from "common/utils/mockUtils";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { MarketplaceStore } from "../../_stores/marketplaceStore";
 
 export class SelectionBarModel {
   constructor(private marketplace: MarketplaceStore) {}

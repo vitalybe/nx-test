@@ -1,12 +1,12 @@
-import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
-import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { MarketplaceMetrics } from "../marketplaceMetrics";
+import { MarketplaceEntity } from "./marketplaceEntity";
+import { MarketplaceEntityGeo } from "./marketplaceEntityGeo";
 import { computed, observable, runInAction } from "mobx";
-import { ParentLocation } from "src/_domain/parentLocation";
-import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
-import { MarketplaceQnEntity } from "src/_domain/marketplaceEntity/marketplaceQnEntity";
-import { marketplaceMetricsProvider } from "src/_providers/marketplaceMetricsProvider";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { ParentLocation } from "../parentLocation";
+import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
+import { MarketplaceQnEntity } from "./marketplaceQnEntity";
+import { marketplaceMetricsProvider } from "../../_providers/marketplaceMetricsProvider";
+import { MarketplaceStore } from "../../_stores/marketplaceStore";
 
 export class MarketplaceEntityIsp implements MarketplaceEntity {
   public ispCount: number = 1;

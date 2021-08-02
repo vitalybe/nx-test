@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { Colors } from "src/_styling/colors";
+import { Colors } from "../../../../_styling/colors";
 import transparentize from "polished/lib/color/transparentize";
-import { CardStyle } from "src/card/cardStyle";
-import { ParentLocation } from "src/_domain/parentLocation";
-import { Tooltip } from "common/components/Tooltip";
-import { MarketplaceImageWithFallback } from "src/_parts/marketplaceImageWithFallback/MarketplaceImageWithFallback";
+import { CardStyle } from "../../../cardStyle";
+import { ParentLocation } from "../../../../_domain/parentLocation";
+import { Tooltip } from "@qwilt/common/components/Tooltip";
+import { MarketplaceImageWithFallback } from "../../../../_parts/marketplaceImageWithFallback/MarketplaceImageWithFallback";
 
 const CardListRowView = styled.div`
   display: flex;

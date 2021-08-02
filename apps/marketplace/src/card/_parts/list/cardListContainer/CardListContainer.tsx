@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { Fonts } from "common/styling/fonts";
-import { Colors } from "src/_styling/colors";
-import { CardListRow } from "src/card/_parts/list/cardListRow/CardListRow";
-import { CardStyle } from "src/card/cardStyle";
+import { Fonts } from "@qwilt/common/styling/fonts";
+import { Colors } from "../../../../_styling/colors";
+import { CardListRow } from "../cardListRow/CardListRow";
+import { CardStyle } from "../../../cardStyle";
 
 const CardListContainerView = styled.div`
   border-top: 1px solid ${Colors.GRAY_4};

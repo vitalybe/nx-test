@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { MarketplaceEntityHeader } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeader";
+import { MarketplaceEntityHeader } from "../../_parts/marketplaceEntityHeader/marketplaceEntityHeader";
 import { observer } from "mobx-react";
 import { Flipped } from "react-flip-toolkit";
-import { FlipperIds } from "common/config/flipperIds";
-import { CardMapHoverModel } from "src/card/cardMapHover/cardMapHoverModel";
+import { FlipperIds } from "@qwilt/common/config/flipperIds";
+import { CardMapHoverModel } from "./cardMapHoverModel";
 
 const CardMapHoverView = styled.div`
   position: relative;

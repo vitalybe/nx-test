@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Colors } from "src/_styling/colors";
+import { Colors } from "../../_styling/colors";
 
 export const ToggleButton = styled.button`
   ${(props: { isSelected: boolean }) => css`

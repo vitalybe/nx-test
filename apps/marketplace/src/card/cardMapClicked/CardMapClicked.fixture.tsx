@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardMapClicked, Props } from "src/card/cardMapClicked/cardMapClicked";
-import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
-import { CardMapClickedModel } from "src/card/cardMapClicked/cardMapClickedModel";
+import { CardMapClicked, Props } from "./cardMapClicked";
+import { MarketplaceMetrics } from "../../_domain/marketplaceMetrics";
+import { CardMapClickedModel } from "./cardMapClickedModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
-import { CardSharedTopModel } from "src/card/_parts/cardSharedTop/cardSharedTopModel";
-import { MarketplaceEntityHeaderModel } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
+import { CardSharedTopModel } from "../_parts/cardSharedTop/cardSharedTopModel";
+import { MarketplaceEntityHeaderModel } from "../../_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

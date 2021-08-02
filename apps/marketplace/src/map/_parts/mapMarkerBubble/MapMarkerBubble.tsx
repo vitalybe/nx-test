@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { loggerCreator } from "common/utils/logger";
-import { bubbleAnimationDirector } from "src/map/_parts/mapMarkerBubble/bubbleAnimationDirector";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { bubbleAnimationDirector } from "./bubbleAnimationDirector";
 import { darken, transparentize } from "polished";
 
 //noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const MapMarkerBubbleView = styled.div``;
 

@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { TopBarMetrics, Props } from "src/topBar/_parts/topBarMetrics/TopBarMetrics";
-import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
+import { TopBarMetrics, Props } from "./TopBarMetrics";
+import { MarketplaceMetrics } from "../../../_domain/marketplaceMetrics";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;
@@ -10,7 +10,7 @@ const View = styled(FixtureDecorator)`
   justify-content: center;
 `;
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 function getProps(): Props {
   return {

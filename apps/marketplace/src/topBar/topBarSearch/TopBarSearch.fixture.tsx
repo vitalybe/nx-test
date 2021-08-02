@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, TopBarSearch } from "src/topBar/topBarSearch/TopBarSearch";
-import { TopBarSearchModel } from "src/topBar/topBarSearch/topBarSearchModel";
+import { Props, TopBarSearch } from "./TopBarSearch";
+import { TopBarSearchModel } from "./topBarSearchModel";
 
 const View = styled(FixtureDecorator)`
   padding: 3em;
@@ -9,7 +9,7 @@ const View = styled(FixtureDecorator)`
   background-color: #f7fafb;
 `;
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 function getProps(): Props {
   return {

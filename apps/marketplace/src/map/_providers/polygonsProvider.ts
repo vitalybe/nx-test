@@ -1,9 +1,9 @@
-import { loggerCreator } from "common//utils/logger";
-import { PolygonEntity } from "src/map/_domain/polygonEntity";
-import { LatLng } from "src/_domain/latLng";
-import { Utils } from "common/utils/utils";
+import { loggerCreator } from "@qwilt/common//utils/logger";
+import { PolygonEntity } from "../_domain/polygonEntity";
+import { LatLng } from "../../_domain/latLng";
+import { Utils } from "@qwilt/common/utils/utils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 type JsonCoordinate = [number, number];
 type JsonPolygon = [JsonCoordinate[]];

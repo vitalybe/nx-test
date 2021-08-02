@@ -1,8 +1,8 @@
-import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
+import { MarketplaceEntity } from "../../_domain/marketplaceEntity/marketplaceEntity";
 import { computed } from "mobx";
-import { imageResourcePathProvider } from "src/_providers/imageResourcePathProvider";
-import { mockUtils } from "common/utils/mockUtils";
-import { ParentLocation } from "src/_domain/parentLocation";
+import { imageResourcePathProvider } from "../../_providers/imageResourcePathProvider";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { ParentLocation } from "../../_domain/parentLocation";
 
 export class MarketplaceEntityHeaderModel {
   constructor(private marketplaceEntity: MarketplaceEntity) {}

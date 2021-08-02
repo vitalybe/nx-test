@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { CardSharedTop } from "src/card/_parts/cardSharedTop/CardSharedTop";
-import { CardCapabilities } from "src/card/_parts/cardCapabilities/CardCapabilities";
-import { CardContainer } from "src/card/_parts/cardContainer/CardContainer";
-import { CardMoreDetailsContainerModel } from "src/card/_parts/cardMoreDetailsContainer/cardMoreDetailsContainerModel";
+import { CardSharedTop } from "../cardSharedTop/CardSharedTop";
+import { CardCapabilities } from "../cardCapabilities/CardCapabilities";
+import { CardContainer } from "../cardContainer/CardContainer";
+import { CardMoreDetailsContainerModel } from "./cardMoreDetailsContainerModel";
 
 const CardContainerStyled = styled(CardContainer)`
   height: 100%;

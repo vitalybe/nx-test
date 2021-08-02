@@ -1,14 +1,14 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardMoreDetails, Props } from "src/card/cardMoreDetails/CardMoreDetails";
-import { CardMoreDetailsModel } from "src/card/cardMoreDetails/cardMoreDetailsModel";
-import { mockUtils } from "common/utils/mockUtils";
+import { CardMoreDetails, Props } from "./CardMoreDetails";
+import { CardMoreDetailsModel } from "./cardMoreDetailsModel";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
-import { CardGeoModel } from "src/card/cardGeo/cardGeoModel";
-import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
-import { CardIspLocationModel } from "src/card/cardIspLocation/cardIspLocationModel";
+import { CardGeoModel } from "../cardGeo/cardGeoModel";
+import { MarketplaceEntityIsp } from "../../_domain/marketplaceEntity/marketplaceEntityIsp";
+import { CardIspLocationModel } from "../cardIspLocation/cardIspLocationModel";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

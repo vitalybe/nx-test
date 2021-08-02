@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { Tooltip } from "common/components/Tooltip";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { Tooltip } from "@qwilt/common/components/Tooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 
@@ -94,7 +94,7 @@ export interface Props {
 //region [[ Functions ]]
 //endregion [[ Functions ]]
 
-const closeCardIcon = require("common/images/close-card-large.svg");
+const closeCardIcon = require("@qwilt/common/images/close-card-large.svg");
 
 export const RemoveCardCloseButton = ({ closeToast }: { closeToast?: any }) => (
   <CloseCardImg alt={"qwilt logo"} src={closeCardIcon} onClick={closeToast} />

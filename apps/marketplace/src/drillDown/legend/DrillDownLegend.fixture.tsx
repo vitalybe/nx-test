@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DrillDownLegend, Props } from "src/drillDown/legend/DrillDownLegend";
-import { DrillDownLegendModel } from "src/drillDown/legend/drillDownLegendModel";
+import { DrillDownLegend, Props } from "./DrillDownLegend";
+import { DrillDownLegendModel } from "./drillDownLegendModel";
 import { transparentize } from "polished";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
-import { Colors } from "src/_styling/colors";
+import { Colors } from "../../_styling/colors";
 
 const View = styled(FixtureDecorator)`
   margin: 1em auto;

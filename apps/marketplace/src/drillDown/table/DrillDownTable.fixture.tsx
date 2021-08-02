@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DrillDownTable, Props } from "src/drillDown/table/DrillDownTable";
-import { DrillDownTableModel } from "src/drillDown/table/drillDownTableModel";
-import { MetricTypesEnum } from "src/_domain/metricTypes";
+import { DrillDownTable, Props } from "./DrillDownTable";
+import { DrillDownTableModel } from "./drillDownTableModel";
+import { MetricTypesEnum } from "../../_domain/metricTypes";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   padding: 1em;

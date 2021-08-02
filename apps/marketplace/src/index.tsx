@@ -1,10 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { Marketplace } from "src/Marketplace";
-import { MarketplaceModel } from "src/marketplaceModel";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { ProjectFrame } from "common/components/projectFrame/ProjectFrame";
+import { Marketplace } from "./Marketplace";
+import { MarketplaceModel } from "./marketplaceModel";
+import { MarketplaceStore } from "./_stores/marketplaceStore";
+import { UrlStore } from "@qwilt/common/stores/urlStore/urlStore";
+import { ProjectFrame } from "@qwilt/common/components/projectFrame/ProjectFrame";
 import { ProjectUrlParamsMetadata } from "./_stores/projectUrlParams";
 
 const urlStore = UrlStore.getInstance();

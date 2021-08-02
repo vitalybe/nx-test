@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { MarketplaceOverviewModel } from "src/overview/marketplaceOverviewModel";
-import { SelectionBar } from "src/overview/selectionBar/SelectionBar";
+import { MarketplaceOverviewModel } from "./marketplaceOverviewModel";
+import { SelectionBar } from "./selectionBar/SelectionBar";
 import { Flipped, Flipper } from "react-flip-toolkit";
-import { fadeIn, fadeOut } from "common/styling/animations/animeAnimations";
-import { FlipperIds } from "common/config/flipperIds";
-import { CardMoreDetails } from "src/card/cardMoreDetails/CardMoreDetails";
+import { fadeIn, fadeOut } from "@qwilt/common/styling/animations/animeAnimations";
+import { FlipperIds } from "@qwilt/common/config/flipperIds";
+import { CardMoreDetails } from "../card/cardMoreDetails/CardMoreDetails";
 
 const FlipperMarketplaceOverviewView = styled(Flipper as any)`
   display: flex;

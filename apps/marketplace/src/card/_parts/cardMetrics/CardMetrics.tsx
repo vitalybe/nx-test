@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
+import { MarketplaceMetrics } from "../../../_domain/marketplaceMetrics";
 import { observer } from "mobx-react";
-import { CardStyle } from "src/card/cardStyle";
-import { Colors } from "src/_styling/colors";
-import { Description, Metric, Unit, Value } from "common/components/metrics/Metric";
-import { Fonts } from "common/styling/fonts";
+import { CardStyle } from "../../cardStyle";
+import { Colors } from "../../../_styling/colors";
+import { Description, Metric, Unit, Value } from "@qwilt/common/components/metrics/Metric";
+import { Fonts } from "@qwilt/common/styling/fonts";
 
 const MapCardMetricsView = styled.div`
   display: flex;

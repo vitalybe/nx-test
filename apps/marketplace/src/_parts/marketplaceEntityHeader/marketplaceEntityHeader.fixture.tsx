@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { MarketplaceEntityHeader } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeader";
-import { MarketplaceEntityHeaderModel } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
+import { MarketplaceEntityHeader } from "./marketplaceEntityHeader";
+import { MarketplaceEntityHeaderModel } from "./marketplaceEntityHeaderModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   position: absolute;

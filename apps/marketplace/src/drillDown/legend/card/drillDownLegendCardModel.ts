@@ -1,14 +1,14 @@
 import { action, computed } from "mobx";
-import { DrillDownEntity } from "src/drillDown/_domain/drillDownEntity";
-import { UnitKindEnum, unitsFormatter, UnitsFormatterResult } from "common/utils/unitsFormatter";
-import { mockUtils } from "common/utils/mockUtils";
-import { Colors } from "src/_styling/colors";
-import { Utils } from "common/utils/utils";
-import { MetricTypesEnum } from "src/_domain/metricTypes";
-import { HistogramValue } from "src/drillDown/_domain/drillDownHistogram";
-import { DrillDownChartAreaStore } from "src/drillDown/_stores/drillDownChartAreaStore";
+import { DrillDownEntity } from "../../_domain/drillDownEntity";
+import { UnitKindEnum, unitsFormatter, UnitsFormatterResult } from "@qwilt/common/utils/unitsFormatter";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { Colors } from "../../../_styling/colors";
+import { Utils } from "@qwilt/common/utils/utils";
+import { MetricTypesEnum } from "../../../_domain/metricTypes";
+import { HistogramValue } from "../../_domain/drillDownHistogram";
+import { DrillDownChartAreaStore } from "../../_stores/drillDownChartAreaStore";
 import { MouseEvent } from "react";
-import { ParentLocation } from "src/_domain/parentLocation";
+import { ParentLocation } from "../../../_domain/parentLocation";
 import { DateTime } from "luxon";
 
 export class DrillDownLegendCardModel {

@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { RemoveCardModal, Props } from "src/drillDown/removeCardModal/RemoveCardModal";
+import { RemoveCardModal, Props } from "./RemoveCardModal";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;
@@ -9,7 +9,7 @@ const View = styled(FixtureDecorator)`
   border: 3px dashed lightgrey;
 `;
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 function getProps(propsOverrides?: Partial<Props>): Props {
   return {

@@ -1,6 +1,6 @@
-import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
-import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
+import { MarketplaceEntity } from "../_domain/marketplaceEntity/marketplaceEntity";
+import { MarketplaceEntityGeo } from "../_domain/marketplaceEntity/marketplaceEntityGeo";
+import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
 
 class ParentLocationStringProvider {
   private provideGeneric(

@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { TopBarDropdownIndicator } from "src/topBar/topBarSearch/_parts/topBarDropdownIndicator/TopBarDropdownIndicator";
+import { TopBarDropdownIndicator } from "./TopBarDropdownIndicator";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;
@@ -9,7 +9,7 @@ const View = styled(FixtureDecorator)`
   justify-content: center;
 `;
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 function getProps() {
   return {};

@@ -2,18 +2,18 @@ import {
   AnalyticsFilterParamsEnum,
   AnalyticsGeneralParamsEnum,
   ApiHistogramGroupType,
-} from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
-import { MarketplaceMetricDefinition, MarketplaceMetricTypes, MetricTypesEnum } from "src/_domain/metricTypes";
+} from "@qwilt/common/backend/mediaAnalytics/mediaAnalyticsTypes";
+import { MarketplaceMetricDefinition, MarketplaceMetricTypes, MetricTypesEnum } from "../../../_domain/metricTypes";
 import {
   HistogramByType,
   HistogramTypeByEntityId,
   HistogramValue,
   HistogramValuesByDate,
-} from "src/drillDown/_domain/drillDownHistogram";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { sleep } from "common/utils/sleep";
-import { MediaAnalyticsApi } from "common/backend/mediaAnalytics";
-import { TimeConfig } from "common/utils/timeConfig";
+} from "../../_domain/drillDownHistogram";
+import { devToolsStore } from "@qwilt/common/components/devTools/_stores/devToolsStore";
+import { sleep } from "@qwilt/common/utils/sleep";
+import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
+import { TimeConfig } from "@qwilt/common/utils/timeConfig";
 import { Duration } from "luxon";
 
 interface HistogramProvider extends HistogramProviderMock {}

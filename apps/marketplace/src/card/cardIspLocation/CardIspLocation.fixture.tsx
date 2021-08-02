@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardIspLocation, Props } from "src/card/cardIspLocation/CardIspLocation";
-import { CardIspLocationModel } from "src/card/cardIspLocation/cardIspLocationModel";
-import { mockUtils } from "common/utils/mockUtils";
+import { CardIspLocation, Props } from "./CardIspLocation";
+import { CardIspLocationModel } from "./cardIspLocationModel";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

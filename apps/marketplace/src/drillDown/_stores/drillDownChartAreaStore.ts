@@ -1,7 +1,7 @@
 import { action, computed, observable } from "mobx";
-import { HistogramTypeByEntityId } from "src/drillDown/_domain/drillDownHistogram";
-import { DrillDownChartHistogram } from "src/drillDown/_domain/drillDownChartHistogram";
-import { DrillDownStore } from "src/drillDown/_stores/drillDownStore";
+import { HistogramTypeByEntityId } from "../_domain/drillDownHistogram";
+import { DrillDownChartHistogram } from "../_domain/drillDownChartHistogram";
+import { DrillDownStore } from "./drillDownStore";
 
 export class DrillDownChartAreaStore {
   constructor(public marketplaceDrillDown: DrillDownStore) {}
