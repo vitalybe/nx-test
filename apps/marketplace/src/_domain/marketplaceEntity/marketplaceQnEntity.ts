@@ -1,5 +1,4 @@
 import { loggerCreator } from "@qwilt/common//utils/logger";
-import { mockUtils } from "@qwilt/common//utils/mockUtils";
 import { LatLng } from "../latLng";
 import { OnlyData } from "@qwilt/common/utils/typescriptUtils";
 
@@ -22,7 +21,7 @@ export class MarketplaceQnEntity {
   }
 
   // Mock
-  static createMock(overrides?: Partial<MarketplaceQnEntity>, id: number = mockUtils.sequentialId()) {
+  static createMock(overrides?: Partial<MarketplaceQnEntity>) {
     return new MarketplaceQnEntity({
       location: { lat: 0, lng: 0 },
       isFutureDeployment: false,

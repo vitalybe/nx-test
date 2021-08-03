@@ -16,10 +16,7 @@ export class CardIspModel {
 
   @computed
   get ispsInGeo(): MarketplaceEntity[] {
-    const header = "locations";
-    const locationsCount = 15;
-
-    return this.marketplace.marketplaceEntities.entities.filter(entity => {
+    return this.marketplace.marketplaceEntities.entities.filter((entity) => {
       const isSameIsp = entity instanceof MarketplaceEntityIsp && entity.ispId === this.marketplaceEntityIsp.ispId;
       return entity.geoParent && isSameIsp;
     });

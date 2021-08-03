@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { CardContainer } from "../_parts/cardContainer/CardContainer";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import { Colors } from "../../_styling/colors";

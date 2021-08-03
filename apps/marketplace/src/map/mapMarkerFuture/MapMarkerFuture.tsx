@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useCallback } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { loggerCreator } from "@qwilt/common//utils/logger";
 import { MapMarkerBubble } from "../_parts/mapMarkerBubble/MapMarkerBubble";
 import { Colors } from "../../_styling/colors";
@@ -24,7 +24,7 @@ const TooltipContent = styled.div`
 
 //endregion
 
-function onTooltipShown(marketplaceStore: MarketplaceStore) {}
+function onTooltipShown() {}
 
 export interface Props {
   currentZoom: number;
@@ -41,7 +41,7 @@ export const MapMarkerFuture = observer(({ ...props }: Props) => {
       <Tooltip
         delay={500}
         content={<TooltipContent>Future deployment</TooltipContent>}
-        onShow={useCallback(() => onTooltipShown(props.marketplaceStore), [props.marketplaceStore])}>
+        onShow={useCallback(() => onTooltipShown(), [])}>
         <MapMarkerBubble
           id={"Future"}
           color={Colors.WHITE}

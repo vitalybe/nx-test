@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { observer } from "mobx-react";
 import { MetricTypesEnum } from "../../../_domain/metricTypes";
 import { ToggleButton } from "../../_parts/ToggleButton";

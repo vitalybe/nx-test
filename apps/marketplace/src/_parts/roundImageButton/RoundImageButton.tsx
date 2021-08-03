@@ -51,7 +51,7 @@ export class RoundImageButton extends React.Component<Props, State> {
   render() {
     return (
       <RoundImageButtonView className={this.props.className} onClick={this.props.onClick} {...this.props}>
-        <img src={this.props.imagePath} />
+        <img src={this.props.imagePath} alt={""} />
       </RoundImageButtonView>
     );
   }

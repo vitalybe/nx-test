@@ -7,7 +7,6 @@ import {
 } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
 import { MarketplaceEntityGeo } from "../../_domain/marketplaceEntity/marketplaceEntityGeo";
 import { MarketplaceEntityIsp } from "../../_domain/marketplaceEntity/marketplaceEntityIsp";
-import { ApiAggregationGroupType, ApiHistogramGroupType } from "@qwilt/common/backend/mediaAnalytics/mediaAnalyticsTypes";
 import { MarketplaceEntity } from "../../_domain/marketplaceEntity/marketplaceEntity";
 import { MarketplaceEntities } from "../../_domain/marketplaceEntity/marketplaceEntities";
 import { MarketplaceNoServiceEntity } from "../../_domain/marketplaceEntity/marketplaceNoServiceEntity";
@@ -17,12 +16,6 @@ import { devToolsStore } from "@qwilt/common/components/devTools/_stores/devTool
 import { MarketplaceQnEntity } from "../../_domain/marketplaceEntity/marketplaceQnEntity";
 import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
 
-interface CombinedReport {
-  availableTps: ApiHistogramGroupType;
-  availableBw: ApiHistogramGroupType;
-  bitrate: ApiAggregationGroupType;
-}
-
 class MarketplaceEntitiesProviderReal {
   provide = async (mediaAnalyticsApi: MediaAnalyticsApi, geoDeploymentApi: GeoDeploymentApiInterface) => {
     const [geoEntities, ispEntities] = await Promise.all([geoDeploymentApi.getEntities(), geoDeploymentApi.getIsps()]);
@@ -31,7 +24,7 @@ class MarketplaceEntitiesProviderReal {
     // add global isp entities
     for (const apiIsp of ispEntities.isps) {
       const isIspWithRegions = marketplaceEntities.find(
-        entity => entity instanceof MarketplaceEntityIsp && entity.ispId === apiIsp.id
+        (entity) => entity instanceof MarketplaceEntityIsp && entity.ispId === apiIsp.id
       );
       if (isIspWithRegions) {
         // NOTE: coverage is hard-coded just so the ISP will considered as covered entity. However, the actual coverage will be load lazily
@@ -66,7 +59,7 @@ class MarketplaceEntitiesProviderReal {
         collection = collection.concat(this.provideEntities(entity.contains, apiIsps, marketplaceEntityGeo));
 
         for (const childIsp of entity.isps) {
-          const apiIsp = apiIsps.isps.find(isp => isp.id === childIsp.id);
+          const apiIsp = apiIsps.isps.find((isp) => isp.id === childIsp.id);
 
           if (apiIsp && childIsp.coveragePercent > 0) {
             const marketplaceEntityIsp = this.provideIsp(
@@ -107,9 +100,9 @@ class MarketplaceEntitiesProviderReal {
   };
 
   private getChildIsps = (entity: ApiGeoEntity, containedIsps = new Set<string>()) => {
-    entity.isps.forEach(isp => containedIsps.add(isp.id));
+    entity.isps.forEach((isp) => containedIsps.add(isp.id));
 
-    entity.contains.forEach(child => {
+    entity.contains.forEach((child) => {
       this.getChildIsps(child, containedIsps);
     });
 
@@ -117,7 +110,7 @@ class MarketplaceEntitiesProviderReal {
   };
 
   provideGeo = (geoEntity: ApiGeoEntity, geoParent?: MarketplaceEntityGeo): MarketplaceEntityGeo => {
-    const type = Object.values(ApiGeoEntityType).find(type => type === geoEntity.type);
+    const type = Object.values(ApiGeoEntityType).find((type) => type === geoEntity.type);
     if (!type) {
       throw new Error(`failed to find type: ${geoEntity.type}`);
     }
@@ -156,9 +149,9 @@ class MarketplaceEntitiesProviderReal {
 class MarketplaceEntitiesProviderMock {
   provide = async (
     // NOTE: Supressing due to the need of matching the interface of MarketplaceEntitiesProviderReal
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    // eslint-disable-next-line unused-imports/no-unused-vars
     mediaAnalyticsApi: MediaAnalyticsApi,
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    // eslint-disable-next-line unused-imports/no-unused-vars
     geoDeploymentApi: GeoDeploymentApiInterface
   ) => {
     return MarketplaceEntities.createMock();

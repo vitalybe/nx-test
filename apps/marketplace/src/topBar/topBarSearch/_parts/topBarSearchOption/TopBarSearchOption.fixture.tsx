@@ -18,7 +18,7 @@ function getProps(overrides?: Partial<TopBarSearchOptionModel>, propsOverrides?:
     data: TopBarSearchOptionModel.createMock(overrides),
     selectProps: { inputValue: "" },
     isFocused: false,
-    setValue: () => console.log("setting value"),
+    setValue: () => {},
     ...propsOverrides,
   };
 }

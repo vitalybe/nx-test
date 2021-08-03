@@ -1,7 +1,6 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { observer } from "mobx-react";
-// @ts-ignore
 import Select from "react-select";
 import { Colors } from "../../_styling/colors";
 import { transparentize } from "polished";
@@ -18,6 +17,7 @@ const TopBarSearchView = styled.div`
 const placeholderColor = transparentize(0.5, Colors.NAVY_7);
 
 const selectStyle = {
+  // eslint-disable-next-line
   control: (base: any, state: any) => ({
     ...base,
     fontSize: 12,
@@ -34,6 +34,7 @@ const selectStyle = {
     transition: "0.3s ease",
   }),
 
+  // eslint-disable-next-line
   input: (base: any, state: any) => ({
     ...base,
     color: Colors.NAVY_7,
@@ -43,7 +44,7 @@ const selectStyle = {
     },
   }),
 
-  placeholder: (base: any, state: any) => ({
+  placeholder: () => ({
     marginLeft: 2,
     marginRight: 2,
     position: "absolute",
@@ -54,7 +55,7 @@ const selectStyle = {
       opacity: 1,
     },
   }),
-  groupHeading: (base: any, state: any) => ({
+  groupHeading: () => ({
     paddingLeft: "0.7em",
     textTransform: "uppercase",
   }),
@@ -111,9 +112,13 @@ export class TopBarSearch extends React.Component<Props, State> {
     return this.setState({ hasSearchString: !!inputValue });
   };
   render() {
+    // NOTE: Hack due to NX transition
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const SelectHack = Select as any;
+
     return (
       <TopBarSearchView className={this.props.className}>
-        <Select
+        <SelectHack
           styles={selectStyle}
           menuPortalTarget={document.body}
           options={this.props.model.searchGroupsModel}

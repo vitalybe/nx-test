@@ -3,12 +3,12 @@ import styled from "styled-components";
 import { DrillDownTableRowCircle, Props } from "./DrillDownTableRowCircle";
 import { mockUtils } from "@qwilt/common/utils/mockUtils";
 
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+
 const View = styled(FixtureDecorator)`
   margin: 1em;
   width: 200px;
 `;
-
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 function getProps(): Props {
   return {

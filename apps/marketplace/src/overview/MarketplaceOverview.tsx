@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { observer } from "mobx-react";
 import { MarketplaceOverviewModel } from "./marketplaceOverviewModel";
 import { SelectionBar } from "./selectionBar/SelectionBar";
@@ -8,7 +8,7 @@ import { fadeIn, fadeOut } from "@qwilt/common/styling/animations/animeAnimation
 import { FlipperIds } from "@qwilt/common/config/flipperIds";
 import { CardMoreDetails } from "../card/cardMoreDetails/CardMoreDetails";
 
-const FlipperMarketplaceOverviewView = styled(Flipper as any)`
+const FlipperMarketplaceOverviewView = styled(Flipper)`
   display: flex;
   flex-direction: column;
   pointer-events: none;
@@ -65,7 +65,7 @@ export class MarketplaceOverview extends React.Component<Props, State> {
                 />
               </MapCardContainer>
             </Flipped>
-          ) as any)}
+          ) as unknown)}
         {model.selectionBar.selectionCards.length > 0 &&
           ((
             <SelectionBarContainer key={"selectionBar"}>
@@ -73,7 +73,7 @@ export class MarketplaceOverview extends React.Component<Props, State> {
                 <SelectionBar model={model.selectionBar} />
               </Flipped>
             </SelectionBarContainer>
-          ) as any)}
+          ) as unknown)}
         <Flipped flipId={FlipperIds.DRILL_DOWN_TABLE_CONTAINER}>
           <HiddenTableContainer />
         </Flipped>

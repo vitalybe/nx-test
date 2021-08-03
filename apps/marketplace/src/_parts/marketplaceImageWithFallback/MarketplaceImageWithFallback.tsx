@@ -13,6 +13,7 @@ const pathToImages = "common/images/";
 const pathToImagesContext = require.context("@qwilt/common/images/", true);
 
 export const MarketplaceImageWithFallback = ({ ...props }: ImageWithFallbackProps) => {
+  // eslint-disable-next-line prefer-const
   let { imagePath: requestedPath, ...otherProps } = props;
   let imagePath = "";
   try {
@@ -26,7 +27,7 @@ export const MarketplaceImageWithFallback = ({ ...props }: ImageWithFallbackProp
 
     imagePath = pathToImagesContext(`./${requestedPath}`);
   } catch (e) {
-    console.warn("failed to load isp image for: " + requestedPath, e);
+    moduleLogger.warn("failed to load isp image for: " + requestedPath, e);
   }
 
   return <ImageWithFallback {...otherProps} imagePath={imagePath} className={props.className} />;

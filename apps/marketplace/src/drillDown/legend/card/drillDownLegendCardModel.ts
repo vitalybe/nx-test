@@ -87,19 +87,19 @@ export class DrillDownLegendCardModel {
   @action
   handleClick = () => {
     const id = this.entity.marketplaceEntity.id;
-    const enabledEntities = this.marketplaceDrillDown.drillDownEntities.filter(entity => entity.isEnabled);
+    const enabledEntities = this.marketplaceDrillDown.drillDownEntities.filter((entity) => entity.isEnabled);
     const isAllEnabled = this.marketplaceDrillDown.drillDownEntities.length === enabledEntities.length;
     const isEntityIsolated = enabledEntities.length === 1 && enabledEntities[0].marketplaceEntity.id === id;
 
     if (isAllEnabled) {
       // isolation mode - disable everyone except clicked
-      this.marketplace.selectedEntities.forEach(entity => {
+      this.marketplace.selectedEntities.forEach((entity) => {
         const isEnabled = entity.marketplaceEntity.id === id;
         this.marketplace.selectedEntitySetEnabled(entity.marketplaceEntity.id, isEnabled);
       });
     } else if (isEntityIsolated) {
       // exit isolation mode
-      this.marketplace.selectedEntities.forEach(entity => {
+      this.marketplace.selectedEntities.forEach((entity) => {
         this.marketplace.selectedEntitySetEnabled(entity.marketplaceEntity.id, true);
       });
     } else {
@@ -113,16 +113,16 @@ export class DrillDownLegendCardModel {
       e.stopPropagation();
     }
 
-    const removeIndex = this.marketplace.selectedEntities.map(entity => entity.id).indexOf(this.id);
+    const removeIndex = this.marketplace.selectedEntities.map((entity) => entity.id).indexOf(this.id);
 
     this.undoState = { id: this.id, index: removeIndex };
 
     this.marketplace.removeSelectedEntitiesIds(this.id);
 
     const drillDownEntities = this.marketplaceDrillDown.drillDownEntities;
-    if (drillDownEntities.length && drillDownEntities.filter(entity => entity.isEnabled).length === 0) {
+    if (drillDownEntities.length && drillDownEntities.filter((entity) => entity.isEnabled).length === 0) {
       // all the remaining entities are disabled, enable everything to prevent everything from being disabled
-      drillDownEntities.forEach(entity => {
+      drillDownEntities.forEach((entity) => {
         this.marketplace.selectedEntitySetEnabled(entity.marketplaceEntity.id, true);
       });
     }
@@ -145,7 +145,7 @@ export class DrillDownLegendCardModel {
     const entityNames = ["france", "usa", "germany", "italy", "israel", "philippines", "comcast", "cox", "fios"];
     const isps = ["comcast", "cox", "fios"];
     const randomMetricValue = () => Math.round(Math.random() * Math.pow(10, 13));
-    const randomIndexOf = (arr: any[]) => arr[Math.floor(Math.random() * arr.length)];
+    const randomIndexOf = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)];
     const title = randomIndexOf(entityNames);
     const hasParent = isps.includes(title) && Math.random() > 0.5;
     return mockUtils.createMockObject<DrillDownLegendCardModel>({

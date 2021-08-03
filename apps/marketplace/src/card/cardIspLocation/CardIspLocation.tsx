@@ -1,12 +1,8 @@
-import * as _ from "lodash";
 import * as React from "react";
-import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
 import { CardIspLocationModel } from "./cardIspLocationModel";
 import { CardMoreDetailsContainer } from "../_parts/cardMoreDetailsContainer/CardMoreDetailsContainer";
 import { CardHistogram } from "./_parts/cardHistogram/CardHistogram";
-
-const CardIspLocationView = styled.div``;
 
 export interface Props {
   model: CardIspLocationModel;

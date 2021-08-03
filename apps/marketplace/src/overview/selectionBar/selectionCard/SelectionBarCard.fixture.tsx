@@ -17,7 +17,7 @@ const View = styled(FixtureDecorator)`
 function getProps(overrides?: Partial<SelectionBarCardModel>, propsOverrides?: Partial<Props>): Props {
   return {
     model: SelectionBarCardModel.createMock(undefined, overrides),
-    onClose: () => console.log("onClose"),
+    onClose: () => {},
     ...propsOverrides,
   };
 }

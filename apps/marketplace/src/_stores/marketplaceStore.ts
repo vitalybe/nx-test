@@ -67,7 +67,7 @@ export class MarketplaceStore {
   }
   @computed
   get coveredMarketplaceEntities(): Array<MarketplaceEntityGeo | MarketplaceEntityIsp> {
-    return this.marketplaceEntities.entities.filter(entity => entity.coverage > 0) as Array<
+    return this.marketplaceEntities.entities.filter((entity) => entity.coverage > 0) as Array<
       MarketplaceEntityGeo | MarketplaceEntityIsp
     >;
   }
@@ -77,7 +77,7 @@ export class MarketplaceStore {
 
   get futureDeployments(): MarketplaceQnEntity[] {
     return futureLocations.map(
-      location =>
+      (location) =>
         new MarketplaceQnEntity({
           location: { lat: location.latitude, lng: location.longitude },
           isFutureDeployment: true,
@@ -93,7 +93,7 @@ export class MarketplaceStore {
     if (this.coveredMarketplaceEntities.length === 0) {
       this.status.setError("No coverage was reported");
     }
-    const worldWideEntity = this.coveredMarketplaceEntities.find(entity => !entity.geoParent);
+    const worldWideEntity = this.coveredMarketplaceEntities.find((entity) => !entity.geoParent);
     if (worldWideEntity) {
       this.status.clearError();
       try {
@@ -140,8 +140,8 @@ export class MarketplaceStore {
   get selectedEntities(): MarketplaceEntitySelected[] {
     const enabledEntityIds = this.enabledEntitiesIds;
     return this.manuallySelectedEntities
-      .map(entity => {
-        const isEnabled = enabledEntityIds.some(enabledEntityId => enabledEntityId === entity.id);
+      .map((entity) => {
+        const isEnabled = enabledEntityIds.some((enabledEntityId) => enabledEntityId === entity.id);
         return new MarketplaceEntitySelected(entity, isEnabled);
       })
       .slice()
@@ -152,8 +152,8 @@ export class MarketplaceStore {
   private get manuallySelectedEntities(): Array<MarketplaceEntityGeo | MarketplaceEntityIsp> {
     const selectedEntityIds = Array.from(this.selectedEntitiesIds);
     return selectedEntityIds
-      .map(id => this.coveredMarketplaceEntities.find(entity => entity.id === id))
-      .filter(entity => !!entity) as Array<MarketplaceEntityGeo | MarketplaceEntityIsp>;
+      .map((id) => this.coveredMarketplaceEntities.find((entity) => entity.id === id))
+      .filter((entity) => !!entity) as Array<MarketplaceEntityGeo | MarketplaceEntityIsp>;
   }
 
   @action
@@ -178,7 +178,7 @@ export class MarketplaceStore {
   removeSelectedEntitiesIds(id: string) {
     let selectedIds = this.selectedEntitiesIds;
 
-    selectedIds = selectedIds.filter(item => item !== id);
+    selectedIds = selectedIds.filter((item) => item !== id);
 
     this.selectedEntitiesIds = selectedIds;
     this.selectedEntitySetEnabled(id, false);
@@ -199,7 +199,7 @@ export class MarketplaceStore {
       if (isEnabled) {
         enabledIds.push(id);
       } else {
-        enabledIds = enabledIds.filter(enabledId => enabledId !== id);
+        enabledIds = enabledIds.filter((enabledId) => enabledId !== id);
       }
 
       this.enabledEntitiesIds = enabledIds;
@@ -217,7 +217,7 @@ export class MarketplaceStore {
   // NOTE: activeHoverCardId has to reside in marketplace because it is used beyond MapMarker - Map is also using information
   // to layer the markers above/below each other.
 
-  private hideHoverCardTimeoutId: number | undefined;
+  private hideHoverCardTimeoutId: ReturnType<typeof setTimeout> | undefined;
 
   private cancelHideHoverCard() {
     if (this.hideHoverCardTimeoutId) {
@@ -294,7 +294,7 @@ export class MarketplaceStore {
     const id = this.moreDetailsCardId;
     if (id) {
       // can happen if id comes from a URL and points to entity that no longer exists
-      const foundEntity = this.marketplaceEntities.entities.find(entity => entity.id === id);
+      const foundEntity = this.marketplaceEntities.entities.find((entity) => entity.id === id);
       if (foundEntity) {
         activeCardMoreDetails = new CardMoreDetailsModel(foundEntity, this);
       }
@@ -318,7 +318,7 @@ export class MarketplaceStore {
   // Helpers
 
   private findEntityById(id: string) {
-    const foundEntity = this.marketplaceEntities.entities.find(entity => entity.id === id);
+    const foundEntity = this.marketplaceEntities.entities.find((entity) => entity.id === id);
     if (!foundEntity) {
       throw new Error(`Entity not found by ID: ${id}`);
     }

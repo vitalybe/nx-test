@@ -4,8 +4,6 @@ import { MarketplaceEntityIsp } from "../_domain/marketplaceEntity/marketplaceEn
 import { MarketplaceStore } from "../_stores/marketplaceStore";
 import { MarketplaceQnEntity } from "../_domain/marketplaceEntity/marketplaceQnEntity";
 
-const murmur = require("murmurhash-js");
-
 export class MapModel {
   constructor(public marketplace: MarketplaceStore) {}
 
@@ -14,11 +12,11 @@ export class MapModel {
     const existingGeoIds = new Set<string>();
 
     const ispEntitiesInGeo = this.marketplace.coveredMarketplaceEntities.filter(
-      entity => entity instanceof MarketplaceEntityIsp && entity.geoParent
+      (entity) => entity instanceof MarketplaceEntityIsp && entity.geoParent
     ) as MarketplaceEntityIsp[];
 
     const markers = ispEntitiesInGeo
-      .map(entity => {
+      .map((entity) => {
         const id = entity.geoParent!.id;
         const ispEntity = entity as MarketplaceEntityIsp;
 
@@ -27,7 +25,7 @@ export class MapModel {
           existingGeoIds.add(id);
         }
 
-        return ispEntity.qns.map(qn => {
+        return ispEntity.qns.map((qn) => {
           const mapMarker = new MapMarkerModel(ispEntity, qn, this.marketplace, isNewId);
           isNewId = false;
           return mapMarker;
@@ -36,9 +34,9 @@ export class MapModel {
       .flat();
 
     const coverageOnlyMarkers = ispEntitiesInGeo
-      .filter(entity => !existingGeoIds.has(entity.geoParent!.id))
+      .filter((entity) => !existingGeoIds.has(entity.geoParent!.id))
       .map(
-        ispEntityWithoutQns =>
+        (ispEntityWithoutQns) =>
           new MapMarkerModel(
             ispEntityWithoutQns,
             new MarketplaceQnEntity({
@@ -68,7 +66,7 @@ export class MapModel {
   @computed
   get clickedMarker() {
     if (this.marketplace.activeClickedCardId) {
-      return this.mapMarkers.find(marker => marker.card.id === this.marketplace.activeClickedCardId);
+      return this.mapMarkers.find((marker) => marker.card.id === this.marketplace.activeClickedCardId);
     } else {
       return undefined;
     }

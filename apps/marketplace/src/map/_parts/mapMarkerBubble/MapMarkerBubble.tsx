@@ -56,7 +56,7 @@ export class MapMarkerBubble extends React.Component<Props, State> {
   static defaultProps: Pick<Props, "enableAnimation"> = { enableAnimation: false };
   readonly state: State = initialState;
 
-  bubble1 = React.createRef<HTMLElement>();
+  bubble1 = React.createRef<HTMLDivElement>();
 
   componentDidMount() {
     if (this.props.enableAnimation) {
@@ -96,7 +96,7 @@ export class MapMarkerBubble extends React.Component<Props, State> {
 
     return (
       <MapMarkerBubbleView>
-        <BubbleAnimationStyled ref={this.bubble1 as any} color={color} />
+        <BubbleAnimationStyled ref={this.bubble1} color={color} />
         <CenterCircle
           size={bubbleSize}
           color={color}

@@ -3,14 +3,14 @@ import styled from "styled-components";
 import { CardContainer } from "./CardContainer";
 import { CardContainerModel } from "./cardContainerModel";
 
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+
 const View = styled(FixtureDecorator)`
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
-
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 export default {
   "Without arrow": (

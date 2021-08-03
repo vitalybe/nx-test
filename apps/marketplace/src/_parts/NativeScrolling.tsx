@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { observer } from "mobx-react";
 import { RefObject, WheelEvent } from "react";
 import Scrollbars from "react-custom-scrollbars";
@@ -37,7 +37,7 @@ export class NativeScrolling extends React.Component<Props, State> {
   static defaultProps = {};
   readonly state: State = initialState;
 
-  scrollbarRef: RefObject<any> = React.createRef();
+  scrollbarRef: RefObject<Scrollbars> = React.createRef();
   componentDidMount() {
     if (this.props.getRef) {
       this.props.getRef(this.scrollbarRef);
@@ -61,7 +61,7 @@ export class NativeScrolling extends React.Component<Props, State> {
         className={this.props.className}
         ref={this.scrollbarRef}
         onWheel={this.onWheel}
-        renderThumbHorizontal={(props: any) => <div {...props} className="thumb-horizontal" />}>
+        renderThumbHorizontal={(props: unknown) => <div {...props} className="thumb-horizontal" />}>
         {this.props.children}
       </NativeScrollingView>
     );

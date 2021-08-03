@@ -7,9 +7,8 @@ import { MetricTypesEnum } from "../../_domain/metricTypes";
 import { NativeAnimations } from "@qwilt/common/styling/animations/nativeAnimations";
 import { Colors } from "../../_styling/colors";
 import { Fonts } from "@qwilt/common/styling/fonts";
-import { ChartPeakPoint, ChartSvg } from "@qwilt/common/utils/chartSvg";
+import { ChartSvg } from "@qwilt/common/utils/chartSvg";
 import { DrillDownChartAreaStore } from "../_stores/drillDownChartAreaStore";
-import { DrillDownEntity } from "../_domain/drillDownEntity";
 import { DrillDownStore } from "../_stores/drillDownStore";
 import { DateTime } from "luxon";
 import { HistogramSeries } from "@qwilt/common/utils/histograms/domain/histogramSeries";
@@ -162,7 +161,7 @@ export class DrillDownChartModel {
         behavior.modifyConfig(
           chartOptions,
           this.seriesData.map(
-            serie =>
+            (serie) =>
               new ChartSeriesData({
                 name: serie.name,
                 histogram: HistogramSeries.fromRawValues(serie.data),
@@ -187,15 +186,15 @@ export class DrillDownChartModel {
     if (this.chartArea.currentHistogram) {
       const entities = this.marketplaceDrillDown.drillDownEntities;
       for (const entityData of this.chartArea.currentHistogram.getAllEntityData()) {
-        const entityModel = entities.find(entity => {
+        const entityModel = entities.find((entity) => {
           return entity.marketplaceEntity.id === entityData.entityId;
         });
         if (entityModel) {
           seriesData.push(
             new DrillDownChartSeries(
-              entityData.getAll().map(point => new SeriesDataPoint(point.date, point.value)),
+              entityData.getAll().map((point) => new SeriesDataPoint(point.date, point.value)),
               entityModel,
-              entities.filter(entity => entity.isEnabled).length <= 2
+              entities.filter((entity) => entity.isEnabled).length <= 2
             )
           );
         }
@@ -230,7 +229,7 @@ export class DrillDownChartModel {
     this.highlightedSeriesId = this.chartArea.highlightedSeriesId;
 
     if (this.chartInstance && this.chartInstance.series) {
-      const series = this.chartInstance.series.find(series => targetSeriesId === series.options.id);
+      const series = this.chartInstance.series.find((series) => targetSeriesId === series.options.id);
       if (series) {
         series.update({
           fillOpacity: isHighlighted ? 0.2 : 0.1,
@@ -263,25 +262,23 @@ export class DrillDownChartModel {
       this.elementG.destroy();
       this.elementG = undefined;
     }
-    this.elementG = renderer
-      .g("peak-points")
-      .attr({ zIndex: 5 })
-      .add();
+    this.elementG = renderer.g("peak-points").attr({ zIndex: 5 }).add();
 
     const workshop = new ChartSvg(renderer, this.elementG);
     if (workshop && this.chartInstance) {
       try {
         workshop.drawWeekSeparators(this.getDayPoints());
         workshop.paintBottomAxis();
+        // eslint-disable-next-line no-empty
       } catch {}
     }
   };
 
   private getEnabledSeries = (): DrillDownChartSeries[] => {
     return this.marketplace.selectedEntities
-      .filter(entity => entity.isEnabled)
-      .map(entity => this.seriesData.find(series => series.id === entity.id))
-      .filter(seriesObject => seriesObject !== undefined) as DrillDownChartSeries[];
+      .filter((entity) => entity.isEnabled)
+      .map((entity) => this.seriesData.find((series) => series.id === entity.id))
+      .filter((seriesObject) => seriesObject !== undefined) as DrillDownChartSeries[];
   };
 
   private getYAxisPlotLines = (): PlotLines[] => {
@@ -326,38 +323,6 @@ export class DrillDownChartModel {
     return lines;
   };
 
-  private getPeakPoints = () => {
-    const chart = this.chartInstance;
-    const histogram = this.chartArea.currentHistogram;
-    const points: ChartPeakPoint[] = [];
-    if (chart && chart.series && histogram) {
-      for (const series of chart.series) {
-        if (series.visible) {
-          const entityHistogram = histogram.getHistogramEntity(series.options.id!);
-          if (entityHistogram && entityHistogram.peakValue) {
-            const pointIndex = this.getPointIndexForDate(entityHistogram.peakValue.date);
-            const point = series.data[pointIndex];
-
-            let testCssClass = "NA";
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            const entity = (series.options as any).entityModel as DrillDownEntity;
-            if (entity) {
-              testCssClass = entity.marketplaceEntity.id;
-            }
-
-            points.push({
-              x: point.plotX,
-              y: point.plotY,
-              color: series.options.color as string,
-              testCssClass: testCssClass,
-            });
-          }
-        }
-      }
-    }
-    return points;
-  };
-
   private getDayPoints = () => {
     const points: { date: number; plotX: number }[] = [];
     if (this.chartInstance && this.chartInstance.xAxis) {
@@ -380,9 +345,9 @@ export class DrillDownChartModel {
   private hoverPointsAtIndex = (index: number) => {
     if (this.chartInstance && this.chartInstance.series) {
       const enabledSeries = this.getEnabledSeries();
-      enabledSeries.forEach(series => {
+      enabledSeries.forEach((series) => {
         const chartSeries =
-          this.chartInstance && this.chartInstance.series.find(chartSeries => chartSeries.options.id === series.id);
+          this.chartInstance && this.chartInstance.series.find((chartSeries) => chartSeries.options.id === series.id);
         const point = chartSeries && chartSeries.data[index];
         if (series.visible && point && point.setState) {
           point.setState();
@@ -396,7 +361,7 @@ export class DrillDownChartModel {
     const chart = this.chartInstance;
     const index = this.getPointIndexForDate(date);
     if (chart && chart.series && chart.series.length > 0) {
-      const series = !seriesId ? chart.series[0] : chart.series.find(series => series.options.id === seriesId);
+      const series = !seriesId ? chart.series[0] : chart.series.find((series) => series.options.id === seriesId);
       if (series && index) {
         return series.data[index];
       }

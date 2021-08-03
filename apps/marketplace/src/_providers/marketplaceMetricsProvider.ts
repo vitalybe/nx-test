@@ -10,11 +10,11 @@ import { devToolsStore } from "@qwilt/common/components/devTools/_stores/devTool
 import { AjaxMetadata } from "@qwilt/common/utils/ajax";
 import { TimeConfig } from "@qwilt/common/utils/timeConfig";
 import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
-import { oc } from "ts-optchain";
 
 interface MarketplaceMetricsProvider extends MarketplaceMetricsProviderMock {}
 
 class MarketplaceMetricsProviderMock {
+  // eslint-disable-next-line unused-imports/no-unused-vars
   async provide(entityIds: string[], timeConfig: TimeConfig) {
     return MarketplaceMetrics.createMock();
   }
@@ -55,12 +55,10 @@ class MarketplaceMetricsProviderReal implements MarketplaceMetricsProvider {
       geoDeploymentApi.getCoverage(entityIds, ajaxMetadata),
     ]);
 
-    const availableBwSeries = oc(availableBwHistogram).report.reports.overtime.histogram.stats.statsResults.max.series(
-      {}
-    );
-    const availableTpsSeries = oc(
-      availableTpsHistogram
-    ).report.reports.overtime.histogram.stats.statsResults.min.series({});
+    const availableBwSeries =
+      availableBwHistogram?.report?.reports?.overtime?.histogram?.stats?.statsResults?.max?.series ?? {};
+    const availableTpsSeries =
+      availableTpsHistogram?.report?.reports?.overtime?.histogram?.stats?.statsResults?.min?.series ?? {};
 
     const avgBitrateSeries = bitrateAggregation.reports.overtime.aggregation.series;
 

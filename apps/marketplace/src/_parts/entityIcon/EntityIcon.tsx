@@ -25,9 +25,9 @@ export class EntityIcon extends React.Component<Props, State> {
 
     let fallbackElement = undefined;
     if (model.fallbackType === "geo") {
-      fallbackElement = <img src={require("@qwilt/common/images/no-flag.svg")} alt={"missing location image"} />;
+      fallbackElement = <img src={require("@qwilt/common/images/no-flag.svg")} alt={"missing location"} />;
     } else if (model.fallbackType === "isp") {
-      fallbackElement = <img src={require("@qwilt/common/images/no-isp.svg")} alt={"missing isp image"} />;
+      fallbackElement = <img src={require("@qwilt/common/images/no-isp.svg")} alt={"missing isp"} />;
     }
 
     return (

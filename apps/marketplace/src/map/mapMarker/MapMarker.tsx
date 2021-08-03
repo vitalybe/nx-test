@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { MapMarkerBubble } from "../_parts/mapMarkerBubble/MapMarkerBubble";
 import { CardMapHover } from "../../card/cardMapHover/CardMapHover";
 import { CardMapClicked } from "../../card/cardMapClicked/cardMapClicked";
@@ -42,7 +42,7 @@ type State = Readonly<typeof initialState>;
 @observer
 export class MapMarker extends React.Component<Props, State> {
   readonly state: State = initialState;
-  hideHoverCardTimeout: any;
+  hideHoverCardTimeout: unknown;
 
   showActiveCard = () => {
     this.props.model.changeIsHoverCardActive(false);
@@ -118,7 +118,7 @@ export class MapMarker extends React.Component<Props, State> {
                     </Flipped>
                   </CardContainer>
                 </Flipped>
-              ) as any)}
+              ) as unknown)}
           </Flipper>
         </ErrorBoundary>
       </MapMarkerStyled>

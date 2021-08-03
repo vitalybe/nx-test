@@ -7,7 +7,6 @@ import { MarketplaceEntityHeaderModel } from "../../../_parts/marketplaceEntityH
 import { HistogramValuesByDate } from "../../_domain/drillDownHistogram";
 import { DrillDownStore } from "../../_stores/drillDownStore";
 import { TableMetricType } from "../drillDownTableModel";
-import { oc } from "ts-optchain";
 
 class TableMetricsModel {
   constructor(
@@ -111,7 +110,7 @@ export class DrillDownTableRowModel {
 
   @computed
   get coverage(): number {
-    return oc(this.drillDownEntity).marketplaceEntity.lastHourMetrics.coverage(0);
+    return this.drillDownEntity?.marketplaceEntity?.lastHourMetrics?.coverage ?? 0;
   }
 
   @computed

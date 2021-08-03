@@ -19,7 +19,6 @@ export class MarketplaceEntities {
 
     const parentEntity = new MarketplaceEntityGeo(name.toLowerCase(), iso, type, name, latLng, undefined, 5);
 
-    let childHasCoverage: boolean = false;
     createdEntities.push(parentEntity);
     for (const child of childEntities) {
       if (child instanceof MarketplaceEntityIsp && !child.geoParent) {
@@ -42,10 +41,8 @@ export class MarketplaceEntities {
           10
         );
         createdEntities.push(newIspEntity);
-        childHasCoverage = true;
       } else if (child instanceof MarketplaceEntityGeo && !child.geoParent) {
         child.geoParent = parentEntity;
-        childHasCoverage = true;
         createdEntities.push(child);
       } else {
         createdEntities.push(child);

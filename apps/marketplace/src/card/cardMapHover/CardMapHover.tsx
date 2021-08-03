@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { MarketplaceEntityHeader } from "../../_parts/marketplaceEntityHeader/marketplaceEntityHeader";
 import { observer } from "mobx-react";
 import { Flipped } from "react-flip-toolkit";
@@ -16,31 +16,6 @@ const CardMapHoverView = styled.div`
 
   cursor: pointer;
   padding: 1em;
-`;
-
-const DownArrow = styled.div`
-  ${(props: { backgroundColor?: string }) => css`
-    width: 50px;
-    height: 25px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-    pointer-events: none;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background: ${props.backgroundColor || "white"};
-      transform: translateX(-50%) translateY(-50%) rotate(45deg);
-      top: 0;
-      left: 50%;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-    }
-  `};
 `;
 
 export interface Props {

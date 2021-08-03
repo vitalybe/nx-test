@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { observer } from "mobx-react";
 import { Fonts } from "@qwilt/common/styling/fonts";
 import { Colors } from "../../../../_styling/colors";

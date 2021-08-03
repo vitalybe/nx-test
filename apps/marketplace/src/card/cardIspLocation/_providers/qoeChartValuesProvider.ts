@@ -7,6 +7,7 @@ import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
 interface QoeChartValuesProvider extends QoeChartValuesProviderMock {}
 
 class QoeChartValuesProviderMock {
+  // eslint-disable-next-line unused-imports/no-unused-vars
   async provide(entityIds: string, timeConfig: TimeConfig) {
     return [Math.pow(10, 6), Math.pow(10, 7), Math.pow(10, 8)];
   }

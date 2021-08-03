@@ -9,6 +9,9 @@ import { mockUtils } from "@qwilt/common/utils/mockUtils";
 import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
 import { TimeConfig } from "@qwilt/common/utils/timeConfig";
 import { DateTime, Duration } from "luxon";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+
+const moduleLogger = loggerCreator(__filename);
 
 export class DrillDownStore {
   constructor(public marketplace: MarketplaceStore) {}
@@ -60,7 +63,7 @@ export class DrillDownStore {
 
   @computed
   private get missingEntityIds(): string[] {
-    const ids = this.drillDownEntities.map(entity => entity.marketplaceEntity.id);
+    const ids = this.drillDownEntities.map((entity) => entity.marketplaceEntity.id);
     // NOTE (Amir): Implement missing addition of missingIds to current data
     //return this.drillDownHistogram ? this.drillDownHistogram.verifyMissingEntityIds(ids) : ids
     return ids;
@@ -83,7 +86,7 @@ export class DrillDownStore {
       try {
         return histogramProvider.provide(MediaAnalyticsApi.instance, this.missingEntityIds, this.timeConfig);
       } catch (e) {
-        console.error(e);
+        moduleLogger.error(e);
       }
     }
   });

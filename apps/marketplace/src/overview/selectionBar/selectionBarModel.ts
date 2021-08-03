@@ -10,7 +10,7 @@ export class SelectionBarModel {
   @computed
   get selectionCards(): SelectionBarCardModel[] {
     return this.marketplace.selectedEntities.map(
-      selectedEntity => new SelectionBarCardModel(selectedEntity.marketplaceEntity, this.marketplace)
+      (selectedEntity) => new SelectionBarCardModel(selectedEntity.marketplaceEntity, this.marketplace)
     );
   }
 
@@ -34,7 +34,7 @@ export class SelectionBarModel {
 
   static createMock(overrides?: Partial<SelectionBarModel>) {
     return mockUtils.createMockObject<SelectionBarModel>({
-      selectionCards: _.range(5).map(i => SelectionBarCardModel.createMock()),
+      selectionCards: _.range(5).map(() => SelectionBarCardModel.createMock()),
       showDrilldown: mockUtils.mockAction("showDrilldown"),
       cardClose: mockUtils.mockAction("cardClose"),
       cardCloseAll: mockUtils.mockAction("cardCloseAll"),

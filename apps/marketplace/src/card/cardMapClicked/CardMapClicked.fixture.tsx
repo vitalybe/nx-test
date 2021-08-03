@@ -20,8 +20,8 @@ function getProps(overrides?: Partial<CardMapClickedModel>): Props {
   return {
     model: CardMapClickedModel.createMock(overrides),
     showArrow: true,
-    onMoreDetails: () => console.log("more details"),
-    onClose: () => console.log("closed"),
+    onMoreDetails: () => {},
+    onClose: () => {},
   };
 }
 

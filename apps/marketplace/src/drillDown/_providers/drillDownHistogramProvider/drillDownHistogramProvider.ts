@@ -80,7 +80,7 @@ class HistogramProviderReal implements HistogramProvider {
     const histogramByEntityId = new Map<string, HistogramValuesByDate>();
     const bins = histogram.reports.overtime.histogram.bins;
 
-    entityIds.forEach(entityId => {
+    entityIds.forEach((entityId) => {
       const histogramValueByDate = new Map<number, HistogramValue>();
 
       for (const bin of bins) {
