@@ -1,10 +1,10 @@
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { mockUtils } from "common/utils/mockUtils";
 import { computed } from "mobx";
-import { MarketplaceMetrics } from "../../../_domain/marketplaceMetrics";
-import { MarketplaceEntityHeaderModel } from "../../../_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
-import { EntityIconModel } from "../../../_parts/entityIcon/entityIconModel";
-import { MarketplaceEntityGeo } from "../../../_domain/marketplaceEntity/marketplaceEntityGeo";
-import { MarketplaceEntityIsp } from "../../../_domain/marketplaceEntity/marketplaceEntityIsp";
+import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
+import { MarketplaceEntityHeaderModel } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
+import { EntityIconModel } from "src/_parts/entityIcon/entityIconModel";
+import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
 
 export class CardSharedTopModel {
   constructor(private marketplaceEntity: MarketplaceEntityGeo | MarketplaceEntityIsp) {}

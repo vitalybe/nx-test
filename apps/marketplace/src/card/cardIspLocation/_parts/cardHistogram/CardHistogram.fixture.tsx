@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardHistogram } from "./CardHistogram";
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { CardHistogram } from "src/card/cardIspLocation/_parts/cardHistogram/CardHistogram";
+import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   width: 300px;

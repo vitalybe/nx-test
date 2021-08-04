@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
-import { UnitsFormatterResult } from "@qwilt/common/utils/unitsFormatter";
-import { LoadingSpinner } from "@qwilt/common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { Colors } from "../../../../_styling/colors";
-import { Metric, Unit } from "@qwilt/common/components/metrics/Metric";
-import { Fonts } from "@qwilt/common/styling/fonts";
+import { UnitsFormatterResult } from "common/utils/unitsFormatter";
+import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { Colors } from "src/_styling/colors";
+import { Metric, Unit } from "common/components/metrics/Metric";
+import { Fonts } from "common/styling/fonts";
 
 const DrillDownLoadingCellView = styled.div``;
 

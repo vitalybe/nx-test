@@ -3,17 +3,17 @@ import { MouseEvent, RefObject } from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
 import { DrillDownLegendCardModel } from "./drillDownLegendCardModel";
-import { Colors } from "../../../_styling/colors";
-import { NativeAnimations } from "@qwilt/common/styling/animations/nativeAnimations";
-import { LoadingSpinner } from "@qwilt/common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { Tooltip } from "@qwilt/common/components/Tooltip";
+import { Colors } from "src/_styling/colors";
+import { NativeAnimations } from "common/styling/animations/nativeAnimations";
+import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { Tooltip } from "common/components/Tooltip";
 import Scrollbars from "react-custom-scrollbars";
-import { RemoveCardCloseButton, RemoveCardModal } from "../../removeCardModal/RemoveCardModal";
+import { RemoveCardCloseButton, RemoveCardModal } from "src/drillDown/removeCardModal/RemoveCardModal";
 import { toast } from "react-toastify";
-import { CloseButton } from "@qwilt/common/components/closeButton/CloseButton";
-import { Metric, Unit, Value } from "@qwilt/common/components/metrics/Metric";
-import { Fonts } from "@qwilt/common/styling/fonts";
-import { MarketplaceImageWithFallback } from "../../../_parts/marketplaceImageWithFallback/MarketplaceImageWithFallback";
+import { CloseButton } from "common/components/closeButton/CloseButton";
+import { Metric, Unit, Value } from "common/components/metrics/Metric";
+import { Fonts } from "common/styling/fonts";
+import { MarketplaceImageWithFallback } from "src/_parts/marketplaceImageWithFallback/MarketplaceImageWithFallback";
 
 const LegendCardView = styled.div`
   ${(props: { isPeak: boolean; isEnabled: boolean }) => css`

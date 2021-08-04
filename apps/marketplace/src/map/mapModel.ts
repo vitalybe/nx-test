@@ -1,8 +1,8 @@
 import { computed } from "mobx";
-import { MapMarkerModel } from "./mapMarker/mapMarkerModel";
-import { MarketplaceEntityIsp } from "../_domain/marketplaceEntity/marketplaceEntityIsp";
-import { MarketplaceStore } from "../_stores/marketplaceStore";
-import { MarketplaceQnEntity } from "../_domain/marketplaceEntity/marketplaceQnEntity";
+import { MapMarkerModel } from "src/map/mapMarker/mapMarkerModel";
+import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
+import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { MarketplaceQnEntity } from "src/_domain/marketplaceEntity/marketplaceQnEntity";
 
 export class MapModel {
   constructor(public marketplace: MarketplaceStore) {}

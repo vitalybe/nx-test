@@ -1,9 +1,9 @@
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { MarketplaceEntity } from "../../_domain/marketplaceEntity/marketplaceEntity";
-import { MarketplaceStore } from "../../_stores/marketplaceStore";
-import { CardMoreDetailsContainerModel } from "../_parts/cardMoreDetailsContainer/cardMoreDetailsContainerModel";
+import { mockUtils } from "common/utils/mockUtils";
+import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
+import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { CardMoreDetailsContainerModel } from "src/card/_parts/cardMoreDetailsContainer/cardMoreDetailsContainerModel";
 import { computed } from "mobx";
-import { MarketplaceEntityIsp } from "../../_domain/marketplaceEntity/marketplaceEntityIsp";
+import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
 
 export class CardIspModel {
   constructor(private marketplaceEntityIsp: MarketplaceEntityIsp, private marketplace: MarketplaceStore) {}

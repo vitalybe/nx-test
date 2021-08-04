@@ -1,10 +1,10 @@
-import { MarketplaceEntityHeaderModel } from "../../../_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
-import { MarketplaceMetrics } from "../../../_domain/marketplaceMetrics";
+import { MarketplaceEntityHeaderModel } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
+import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
 import { action, computed } from "mobx";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { MarketplaceStore } from "../../../_stores/marketplaceStore";
-import { MarketplaceEntityIsp } from "../../../_domain/marketplaceEntity/marketplaceEntityIsp";
-import { MarketplaceEntityGeo } from "../../../_domain/marketplaceEntity/marketplaceEntityGeo";
+import { mockUtils } from "common/utils/mockUtils";
+import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
+import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
 
 export class SelectionBarCardModel {
   constructor(

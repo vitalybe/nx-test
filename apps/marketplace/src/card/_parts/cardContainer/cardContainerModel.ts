@@ -1,7 +1,7 @@
 import { action, computed } from "mobx";
-import { MarketplaceEntity } from "../../../_domain/marketplaceEntity/marketplaceEntity";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { MarketplaceStore } from "../../../_stores/marketplaceStore";
+import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
+import { mockUtils } from "common/utils/mockUtils";
+import { MarketplaceStore } from "src/_stores/marketplaceStore";
 
 export class CardContainerModel {
   constructor(private marketplaceEntity: MarketplaceEntity, private marketplace: MarketplaceStore) {}

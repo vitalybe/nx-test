@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DrillDown, Props } from "./DrillDown";
-import { DrillDownModel } from "./drillDownModel";
-import { MarketplaceStore } from "../_stores/marketplaceStore";
+import { DrillDown, Props } from "src/drillDown/DrillDown";
+import { DrillDownModel } from "src/drillDown/drillDownModel";
+import { MarketplaceStore } from "src/_stores/marketplaceStore";
 
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
 
-import { DrillDownStore } from "./_stores/drillDownStore";
+import { DrillDownStore } from "src/drillDown/_stores/drillDownStore";
 
 const View = styled(FixtureDecorator)`
   padding: 1em;

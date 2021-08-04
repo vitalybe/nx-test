@@ -1,8 +1,8 @@
-import { AnalyticsFilterParamsEnum, ApiHistogramBin } from "@qwilt/common/backend/mediaAnalytics/mediaAnalyticsTypes";
-import { MarketplaceMetricTypes } from "../../../_domain/metricTypes";
-import { devToolsStore } from "@qwilt/common/components/devTools/_stores/devToolsStore";
-import { TimeConfig } from "@qwilt/common/utils/timeConfig";
-import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
+import { AnalyticsFilterParamsEnum, ApiHistogramBin } from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
+import { MarketplaceMetricTypes } from "src/_domain/metricTypes";
+import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
+import { TimeConfig } from "common/utils/timeConfig";
+import { MediaAnalyticsApi } from "common/backend/mediaAnalytics";
 
 interface QoeChartValuesProvider extends QoeChartValuesProviderMock {}
 

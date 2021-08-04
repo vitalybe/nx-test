@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardIsp, Props } from "./CardIsp";
-import { CardIspModel } from "./cardIspModel";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { CardIsp, Props } from "src/card/cardIsp/CardIsp";
+import { CardIspModel } from "src/card/cardIsp/cardIspModel";
+import { mockUtils } from "common/utils/mockUtils";
 
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
 
-import { MarketplaceEntityIsp } from "../../_domain/marketplaceEntity/marketplaceEntityIsp";
+import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
 import * as _ from "lodash";
 
 const View = styled(FixtureDecorator)`

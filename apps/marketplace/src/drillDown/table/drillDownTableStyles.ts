@@ -1,5 +1,5 @@
 import transparentize from "polished/lib/color/transparentize";
-import { Colors } from "../../_styling/colors";
+import { Colors } from "src/_styling/colors";
 import { css } from "styled-components";
 
 export class DrillDownTableStyles {

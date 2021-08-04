@@ -1,8 +1,8 @@
-import { DrillDownLegendCardModel } from "./card/drillDownLegendCardModel";
+import { DrillDownLegendCardModel } from "src/drillDown/legend/card/drillDownLegendCardModel";
 import { action, computed } from "mobx";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { MetricTypesEnum } from "../../_domain/metricTypes";
-import { DrillDownChartAreaStore } from "../_stores/drillDownChartAreaStore";
+import { mockUtils } from "common/utils/mockUtils";
+import { MetricTypesEnum } from "src/_domain/metricTypes";
+import { DrillDownChartAreaStore } from "src/drillDown/_stores/drillDownChartAreaStore";
 import { DateTime } from "luxon";
 
 export class DrillDownLegendModel {

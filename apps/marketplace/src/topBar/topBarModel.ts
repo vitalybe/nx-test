@@ -1,14 +1,14 @@
-import { MarketplaceMetrics } from "../_domain/marketplaceMetrics";
+import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
 import { computed, observable } from "mobx";
 import { promisedComputed, PromisedComputedValue } from "computed-async-mobx";
-import { TopBarSearchModel } from "./topBarSearch/topBarSearchModel";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { MarketplaceStore } from "../_stores/marketplaceStore";
-import { StoreStatus } from "@qwilt/common/stores/_models/storeStatus";
-import { marketplaceMetricsProvider } from "../_providers/marketplaceMetricsProvider";
-import { TimeConfig } from "@qwilt/common/utils/timeConfig";
+import { TopBarSearchModel } from "src/topBar/topBarSearch/topBarSearchModel";
+import { mockUtils } from "common/utils/mockUtils";
+import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { StoreStatus } from "common/stores/_models/storeStatus";
+import { marketplaceMetricsProvider } from "src/_providers/marketplaceMetricsProvider";
+import { TimeConfig } from "common/utils/timeConfig";
 import { Duration } from "luxon";
-import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { Notifier } from "common/utils/notifications/notifier";
 
 export class TopBarModel {
   constructor(private marketplace: MarketplaceStore) {}

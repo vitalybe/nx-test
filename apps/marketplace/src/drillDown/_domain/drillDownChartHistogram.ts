@@ -1,9 +1,9 @@
-import { MetricTypesEnum } from "../../_domain/metricTypes";
+import { MetricTypesEnum } from "src/_domain/metricTypes";
 import {
   HistogramTypeByEntityId,
   HistogramValue,
   HistogramValuesByDate,
-} from "./drillDownHistogram";
+} from "src/drillDown/_domain/drillDownHistogram";
 import { computed } from "mobx";
 
 export class DrillDownChartHistogram {

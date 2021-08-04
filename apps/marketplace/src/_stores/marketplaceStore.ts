@@ -1,25 +1,25 @@
 import { action, computed, observable, runInAction } from "mobx";
-import { MarketplaceEntities } from "../_domain/marketplaceEntity/marketplaceEntities";
+import { MarketplaceEntities } from "src/_domain/marketplaceEntity/marketplaceEntities";
 import { promisedComputed } from "computed-async-mobx";
-import { MarketplaceMetrics } from "../_domain/marketplaceMetrics";
-import { MarketplaceEntitySelected } from "../_domain/marketplaceEntity/marketplaceEntitySelected";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { CardMoreDetailsModel } from "../card/cardMoreDetails/cardMoreDetailsModel";
-import { MarketplaceEntityGeo } from "../_domain/marketplaceEntity/marketplaceEntityGeo";
-import { marketplaceEntitiesProvider } from "../_providers/marketplaceEntityProvider/marketplaceEntitiesProvider";
-import { MarketplaceEntityIsp } from "../_domain/marketplaceEntity/marketplaceEntityIsp";
-import { StoreStatus } from "@qwilt/common/stores/_models/storeStatus";
-import { geoDeploymentApi } from "@qwilt/common/backend/geoDeployment/geoDeploymentApi";
-import { marketplaceMetricsProvider } from "../_providers/marketplaceMetricsProvider";
-import { MarketplaceQnEntity } from "../_domain/marketplaceEntity/marketplaceQnEntity";
-import { UrlParameterTypeEnum } from "@qwilt/common/stores/urlParameterTypeEnum";
-import { UrlStore } from "@qwilt/common/stores/urlStore/urlStore";
-import { TimeConfig } from "@qwilt/common/utils/timeConfig";
+import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
+import { MarketplaceEntitySelected } from "src/_domain/marketplaceEntity/marketplaceEntitySelected";
+import { mockUtils } from "common/utils/mockUtils";
+import { CardMoreDetailsModel } from "src/card/cardMoreDetails/cardMoreDetailsModel";
+import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { marketplaceEntitiesProvider } from "src/_providers/marketplaceEntityProvider/marketplaceEntitiesProvider";
+import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
+import { StoreStatus } from "common/stores/_models/storeStatus";
+import { geoDeploymentApi } from "common/backend/geoDeployment/geoDeploymentApi";
+import { marketplaceMetricsProvider } from "src/_providers/marketplaceMetricsProvider";
+import { MarketplaceQnEntity } from "src/_domain/marketplaceEntity/marketplaceQnEntity";
+import { UrlParameterTypeEnum } from "common/stores/urlParameterTypeEnum";
+import { UrlStore } from "common/stores/urlStore/urlStore";
+import { TimeConfig } from "common/utils/timeConfig";
 import { DateTime, Duration } from "luxon";
-import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
-import { Notifier } from "@qwilt/common/utils/notifications/notifier";
+import { MediaAnalyticsApi } from "common/backend/mediaAnalytics";
+import { Notifier } from "common/utils/notifications/notifier";
 
-const futureLocations = require("../map/futureLocations.json") as { latitude: number; longitude: number }[];
+const futureLocations = require("src/map/futureLocations.json") as { latitude: number; longitude: number }[];
 
 export class MarketplaceStore {
   constructor(private urlStore: UrlStore) {}

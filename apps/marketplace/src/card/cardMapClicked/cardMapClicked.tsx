@@ -1,17 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardContainer } from "../_parts/cardContainer/CardContainer";
+import { CardContainer } from "src/card/_parts/cardContainer/CardContainer";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
-import { Colors } from "../../_styling/colors";
+import { Colors } from "src/_styling/colors";
 import { darken, lighten } from "polished";
-import { CardMapClickedModel } from "./cardMapClickedModel";
-import { Fonts } from "@qwilt/common/styling/fonts";
+import { CardMapClickedModel } from "src/card/cardMapClicked/cardMapClickedModel";
+import { Fonts } from "common/styling/fonts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { observer } from "mobx-react";
 import { Flipped } from "react-flip-toolkit";
-import { FlipperIds } from "@qwilt/common/config/flipperIds";
-import { CardSharedTop } from "../_parts/cardSharedTop/CardSharedTop";
-import { CardShared } from "../_utils/cardShared";
+import { FlipperIds } from "common/config/flipperIds";
+import { CardSharedTop } from "src/card/_parts/cardSharedTop/CardSharedTop";
+import { CardShared } from "src/card/_utils/cardShared";
 
 const CardMapClickedView = styled.div`
   position: relative;

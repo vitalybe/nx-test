@@ -2,14 +2,14 @@ import {
   AnalyticsFilterParamsEnum,
   ApiAggregationType,
   ApiHistogramType,
-} from "@qwilt/common/backend/mediaAnalytics/mediaAnalyticsTypes";
-import { MarketplaceMetricTypes } from "../_domain/metricTypes";
-import { MarketplaceMetrics } from "../_domain/marketplaceMetrics";
-import { geoDeploymentApi } from "@qwilt/common/backend/geoDeployment/geoDeploymentApi";
-import { devToolsStore } from "@qwilt/common/components/devTools/_stores/devToolsStore";
-import { AjaxMetadata } from "@qwilt/common/utils/ajax";
-import { TimeConfig } from "@qwilt/common/utils/timeConfig";
-import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
+} from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
+import { MarketplaceMetricTypes } from "src/_domain/metricTypes";
+import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
+import { geoDeploymentApi } from "common/backend/geoDeployment/geoDeploymentApi";
+import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
+import { AjaxMetadata } from "common/utils/ajax";
+import { TimeConfig } from "common/utils/timeConfig";
+import { MediaAnalyticsApi } from "common/backend/mediaAnalytics";
 
 interface MarketplaceMetricsProvider extends MarketplaceMetricsProviderMock {}
 

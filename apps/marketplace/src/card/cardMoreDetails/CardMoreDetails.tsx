@@ -1,9 +1,9 @@
 import * as React from "react";
 import { observer } from "mobx-react";
-import { CardMoreDetailsModel } from "./cardMoreDetailsModel";
-import { CardIspLocation } from "../cardIspLocation/CardIspLocation";
-import { CardIsp } from "../cardIsp/CardIsp";
-import { CardGeo } from "../cardGeo/CardGeo";
+import { CardMoreDetailsModel } from "src/card/cardMoreDetails/cardMoreDetailsModel";
+import { CardIspLocation } from "src/card/cardIspLocation/CardIspLocation";
+import { CardIsp } from "src/card/cardIsp/CardIsp";
+import { CardGeo } from "src/card/cardGeo/CardGeo";
 
 export interface Props {
   model: CardMoreDetailsModel;

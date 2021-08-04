@@ -1,7 +1,7 @@
-import { MarketplaceEntity } from "../_domain/marketplaceEntity/marketplaceEntity";
-import { MarketplaceEntityIsp } from "../_domain/marketplaceEntity/marketplaceEntityIsp";
-import { MarketplaceEntityGeo } from "../_domain/marketplaceEntity/marketplaceEntityGeo";
-import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
+import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
+import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
+import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
 
 class ImageResourcePathProvider {
   private getCountryIso(marketplaceEntity: MarketplaceEntity): string {

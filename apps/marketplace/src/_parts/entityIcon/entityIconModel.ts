@@ -1,10 +1,10 @@
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { MarketplaceEntity } from "../../_domain/marketplaceEntity/marketplaceEntity";
+import { mockUtils } from "common/utils/mockUtils";
+import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
 import { computed } from "mobx";
-import { imageResourcePathProvider } from "../../_providers/imageResourcePathProvider";
-import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
-import { UrlStore } from "@qwilt/common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "@qwilt/common/urlParams/commonUrlParams";
+import { imageResourcePathProvider } from "src/_providers/imageResourcePathProvider";
+import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
+import { UrlStore } from "common/stores/urlStore/urlStore";
+import { CommonUrlParams } from "common/urlParams/commonUrlParams";
 
 export class EntityIconModel {
   constructor(private marketplaceEntity: MarketplaceEntity) {}

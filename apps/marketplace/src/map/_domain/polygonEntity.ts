@@ -1,7 +1,7 @@
-import { loggerCreator } from "@qwilt/common/utils/logger";
-import { LatLng } from "../../_domain/latLng";
+import { loggerCreator } from "common/utils/logger";
+import { LatLng } from "src/_domain/latLng";
 
-const moduleLogger = loggerCreator("__filename");
+const moduleLogger = loggerCreator(__filename);
 
 export class PolygonEntity {
   countryIso!: string;

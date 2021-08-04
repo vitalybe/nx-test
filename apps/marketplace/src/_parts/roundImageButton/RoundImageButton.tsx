@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { Colors } from "../../_styling/colors";
+import { Colors } from "src/_styling/colors";
 
 const RoundImageButtonView = styled.div`
   ${(props: {}) => {

@@ -2,12 +2,12 @@ import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
 import { Flipped } from "react-flip-toolkit";
-import { FlipperIds } from "@qwilt/common/config/flipperIds";
-import { ErrorBoundary } from "@qwilt/common/components/ErrorBoundary";
-import { CardShared } from "../../_utils/cardShared";
-import { Colors } from "../../../_styling/colors";
+import { FlipperIds } from "common/config/flipperIds";
+import { ErrorBoundary } from "common/components/ErrorBoundary";
+import { CardShared } from "src/card/_utils/cardShared";
+import { Colors } from "src/_styling/colors";
 import darken from "polished/lib/color/darken";
-import { CardContainerModel } from "./cardContainerModel";
+import { CardContainerModel } from "src/card/_parts/cardContainer/cardContainerModel";
 // @ts-ignore
 
 const CardContainerView = styled.div`

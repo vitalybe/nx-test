@@ -1,6 +1,6 @@
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { MarketplaceEntity } from "../../_domain/marketplaceEntity/marketplaceEntity";
-import { MarketplaceEntityHeaderModel } from "../../_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
+import { mockUtils } from "common/utils/mockUtils";
+import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
+import { MarketplaceEntityHeaderModel } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
 
 export class CardMapHoverModel {
   constructor(private marketplaceEntity: MarketplaceEntity) {}

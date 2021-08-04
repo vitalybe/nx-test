@@ -1,7 +1,7 @@
-import { MarketplaceMetrics } from "../marketplaceMetrics";
-import { MarketplaceEntityGeo } from "./marketplaceEntityGeo";
-import { ParentLocation } from "../parentLocation";
-import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
+import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
+import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { ParentLocation } from "src/_domain/parentLocation";
+import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
 
 export interface MarketplaceEntity {
   id: string;

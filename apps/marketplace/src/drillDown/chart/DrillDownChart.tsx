@@ -3,11 +3,11 @@ import { RefObject } from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
 import { DrillDownChartModel } from "./drillDownChartModel";
-import { LoadingSpinner } from "@qwilt/common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { ToggleButton } from "../_parts/ToggleButton";
-import { Fonts } from "@qwilt/common/styling/fonts";
-import { Colors } from "../../_styling/colors";
-import { ReactHighchartWrapper } from "@qwilt/common/components/qwiltChart/reactHighchartWrapper/ReactHighchartWrapper";
+import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { ToggleButton } from "src/drillDown/_parts/ToggleButton";
+import { Fonts } from "common/styling/fonts";
+import { Colors } from "src/_styling/colors";
+import { ReactHighchartWrapper } from "common/components/qwiltChart/reactHighchartWrapper/ReactHighchartWrapper";
 
 const DrillDownChartView = styled.div`
   height: 300px;

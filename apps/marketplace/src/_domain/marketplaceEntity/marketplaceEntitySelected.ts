@@ -1,5 +1,5 @@
-import { MarketplaceEntityGeo } from "./marketplaceEntityGeo";
-import { MarketplaceEntityIsp } from "./marketplaceEntityIsp";
+import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
 
 export class MarketplaceEntitySelected {
   constructor(

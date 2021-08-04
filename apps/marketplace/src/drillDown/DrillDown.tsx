@@ -2,17 +2,17 @@ import * as React from "react";
 import { SyntheticEvent } from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { DrillDownModel } from "./drillDownModel";
-import { DrillDownTable } from "./table/DrillDownTable";
+import { DrillDownModel } from "src/drillDown/drillDownModel";
+import { DrillDownTable } from "src/drillDown/table/DrillDownTable";
 import { Flipped } from "react-flip-toolkit";
-import { fadeIn, fadeOut } from "@qwilt/common/styling/animations/animeAnimations";
-import { DrillDownLegend } from "./legend/DrillDownLegend";
-import { DrillDownChart } from "./chart/DrillDownChart";
-import { Colors } from "../_styling/colors";
+import { fadeIn, fadeOut } from "common/styling/animations/animeAnimations";
+import { DrillDownLegend } from "src/drillDown/legend/DrillDownLegend";
+import { DrillDownChart } from "src/drillDown/chart/DrillDownChart";
+import { Colors } from "src/_styling/colors";
 import { transparentize } from "polished";
-import { RoundImageButton } from "../_parts/roundImageButton/RoundImageButton";
-import { FlipperIds } from "@qwilt/common/config/flipperIds";
-import { CardMoreDetails } from "../card/cardMoreDetails/CardMoreDetails";
+import { RoundImageButton } from "src/_parts/roundImageButton/RoundImageButton";
+import { FlipperIds } from "common/config/flipperIds";
+import { CardMoreDetails } from "src/card/cardMoreDetails/CardMoreDetails";
 
 const DrillDownView = styled.div`
   position: relative;
@@ -122,7 +122,7 @@ export class DrillDown extends React.Component<Props, State> {
           </Content>
           {model.isDrilldownActive && (
             <HideDrillDownButton
-              imagePath={require("@qwilt/common/images/map.svg")}
+              imagePath={require("common/images/map.svg")}
               onClick={this.props.model.hideDrilldown}
             />
           )}

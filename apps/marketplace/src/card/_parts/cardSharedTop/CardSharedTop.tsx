@@ -1,16 +1,16 @@
 import * as React from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
-import { CardSharedTopModel } from "./cardSharedTopModel";
+import { CardSharedTopModel } from "src/card/_parts/cardSharedTop/cardSharedTopModel";
 import { Flipped } from "react-flip-toolkit";
-import { FlipperIds } from "@qwilt/common/config/flipperIds";
-import { CloseButton } from "@qwilt/common/components/closeButton/CloseButton";
-import { MarketplaceEntityHeader } from "../../../_parts/marketplaceEntityHeader/marketplaceEntityHeader";
-import { CardMetrics } from "../cardMetrics/CardMetrics";
-import { CardShared } from "../../_utils/cardShared";
-import { EntityIcon } from "../../../_parts/entityIcon/EntityIcon";
-import { CardStyle } from "../../cardStyle";
-import { LoadingSpinner } from "@qwilt/common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { FlipperIds } from "common/config/flipperIds";
+import { CloseButton } from "common/components/closeButton/CloseButton";
+import { MarketplaceEntityHeader } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeader";
+import { CardMetrics } from "src/card/_parts/cardMetrics/CardMetrics";
+import { CardShared } from "src/card/_utils/cardShared";
+import { EntityIcon } from "src/_parts/entityIcon/EntityIcon";
+import { CardStyle } from "src/card/cardStyle";
+import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
 
 const CardSharedTopView = styled.div``;
 

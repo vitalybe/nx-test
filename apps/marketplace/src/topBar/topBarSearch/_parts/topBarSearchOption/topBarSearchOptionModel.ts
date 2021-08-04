@@ -1,11 +1,11 @@
-import { MarketplaceEntity } from "../../../../_domain/marketplaceEntity/marketplaceEntity";
+import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
 import { computed } from "mobx";
-import { MarketplaceEntityIsp } from "../../../../_domain/marketplaceEntity/marketplaceEntityIsp";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { EntityIconModel } from "../../../../_parts/entityIcon/entityIconModel";
-import { ParentLocation } from "../../../../_domain/parentLocation";
-import { MarketplaceEntityGeo } from "../../../../_domain/marketplaceEntity/marketplaceEntityGeo";
-import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
+import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
+import { mockUtils } from "common/utils/mockUtils";
+import { EntityIconModel } from "src/_parts/entityIcon/entityIconModel";
+import { ParentLocation } from "src/_domain/parentLocation";
+import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
 
 export class TopBarSearchOptionModel {
   constructor(private marketplaceEntity: MarketplaceEntity) {}

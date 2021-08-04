@@ -1,5 +1,5 @@
-import { MediaAnalyticsSeries } from "@qwilt/common/backend/mediaAnalytics/mediaAnalyticsSeries";
-import { ApiSeries } from "@qwilt/common/backend/mediaAnalytics/mediaAnalyticsTypes";
+import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
+import { ApiSeries } from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
 
 export enum MetricTypesEnum {
   AVAILABLE_BW,

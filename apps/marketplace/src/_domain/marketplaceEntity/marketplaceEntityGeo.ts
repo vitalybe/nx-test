@@ -1,11 +1,11 @@
-import { LatLng } from "../latLng";
-import { MarketplaceMetrics } from "../marketplaceMetrics";
-import { MarketplaceEntity } from "./marketplaceEntity";
+import { LatLng } from "src/_domain/latLng";
+import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
+import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
 import { computed, observable, runInAction } from "mobx";
-import { ParentLocation } from "../parentLocation";
-import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
-import { marketplaceMetricsProvider } from "../../_providers/marketplaceMetricsProvider";
-import { MarketplaceStore } from "../../_stores/marketplaceStore";
+import { ParentLocation } from "src/_domain/parentLocation";
+import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
+import { marketplaceMetricsProvider } from "src/_providers/marketplaceMetricsProvider";
+import { MarketplaceStore } from "src/_stores/marketplaceStore";
 
 export class MarketplaceEntityGeo implements MarketplaceEntity {
   constructor(

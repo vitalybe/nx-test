@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { CardCapabilitiesModel } from "./cardCapabilitiesModel";
-import { CardNamedCapabilities } from "./cardNamedCapabilities";
-import { Colors } from "../../../_styling/colors";
-import { Fonts } from "@qwilt/common/styling/fonts";
+import { CardNamedCapabilities } from "src/card/_parts/cardCapabilities/cardNamedCapabilities";
+import { Colors } from "src/_styling/colors";
+import { Fonts } from "common/styling/fonts";
 import { observer } from "mobx-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { CardStyle } from "../../cardStyle";
+import { CardStyle } from "src/card/cardStyle";
 
 const MapCardCapabilitiesView = styled.div`
   height: 100%;

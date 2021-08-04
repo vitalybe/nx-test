@@ -2,15 +2,15 @@ import * as React from "react";
 import styled from "styled-components";
 import * as _ from "lodash";
 import { Options } from "highcharts";
-import { Fonts } from "@qwilt/common/styling/fonts";
-import { Colors } from "../../../../_styling/colors";
-import { UnitKindEnum, UnitNameEnum, unitsFormatter } from "@qwilt/common/utils/unitsFormatter";
+import { Fonts } from "common/styling/fonts";
+import { Colors } from "src/_styling/colors";
+import { UnitKindEnum, UnitNameEnum, unitsFormatter } from "common/utils/unitsFormatter";
 import { observer } from "mobx-react";
-import { LoadingSpinner } from "@qwilt/common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons/faExclamationTriangle";
-import { Snippets } from "@qwilt/common/utils/snippets";
-import { ReactHighchartWrapper } from "@qwilt/common/components/qwiltChart/reactHighchartWrapper/ReactHighchartWrapper";
+import { Snippets } from "common/utils/snippets";
+import { ReactHighchartWrapper } from "common/components/qwiltChart/reactHighchartWrapper/ReactHighchartWrapper";
 
 const GRID_LINES_COLOR = "#EDEDED";
 

@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, RoundImageButton } from "./RoundImageButton";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { Props, RoundImageButton } from "src/_parts/roundImageButton/RoundImageButton";
+import { mockUtils } from "common/utils/mockUtils";
+import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;
@@ -11,7 +11,7 @@ const View = styled(FixtureDecorator)`
 
 function getProps(): Props {
   return {
-    imagePath: require("../../_images/chart.svg"),
+    imagePath: require("src/_images/chart.svg"),
     onClick: mockUtils.mockAction("onClick"),
   };
 }

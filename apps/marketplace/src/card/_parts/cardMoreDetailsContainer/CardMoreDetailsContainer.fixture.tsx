@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { CardMoreDetailsContainerModel } from "./cardMoreDetailsContainerModel";
-import { CardMoreDetailsContainer, Props } from "./CardMoreDetailsContainer";
+import { mockUtils } from "common/utils/mockUtils";
+import { CardMoreDetailsContainerModel } from "src/card/_parts/cardMoreDetailsContainer/cardMoreDetailsContainerModel";
+import { CardMoreDetailsContainer, Props } from "src/card/_parts/cardMoreDetailsContainer/CardMoreDetailsContainer";
 
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

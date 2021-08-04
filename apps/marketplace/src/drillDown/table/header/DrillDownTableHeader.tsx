@@ -2,12 +2,12 @@ import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
 import transparentize from "polished/lib/color/transparentize";
-import { Colors } from "../../../_styling/colors";
-import { DrillDownTableStyles } from "../drillDownTableStyles";
-import { MetricTypesEnum } from "../../../_domain/metricTypes";
-import { TableMetricType } from "../drillDownTableModel";
-import { BwPeakIcon } from "@qwilt/common/components/metrics/icons/bwPeakIcon/BwPeakIcon";
-import { BwAvgIcon } from "@qwilt/common/components/metrics/icons/bwAvgIcon/BwAvgIcon";
+import { Colors } from "src/_styling/colors";
+import { DrillDownTableStyles } from "src/drillDown/table/drillDownTableStyles";
+import { MetricTypesEnum } from "src/_domain/metricTypes";
+import { TableMetricType } from "src/drillDown/table/drillDownTableModel";
+import { BwPeakIcon } from "common/components/metrics/icons/bwPeakIcon/BwPeakIcon";
+import { BwAvgIcon } from "common/components/metrics/icons/bwAvgIcon/BwAvgIcon";
 
 const DrillDownHeaderView = styled.thead`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
@@ -80,7 +80,7 @@ const SortIconComponent = styled.img`
 
 `;
 
-const sortIconPath = require("@qwilt/common/images/sort.svg");
+const sortIconPath = require("common/images/sort.svg");
 
 const SortIcon = (props: { metricType?: MetricTypesEnum; enabled: boolean; className?: string; black?: boolean }) => {
   return (

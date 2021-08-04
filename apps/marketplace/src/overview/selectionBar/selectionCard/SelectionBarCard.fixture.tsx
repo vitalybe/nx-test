@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, SelectionBarCard } from "./SelectionBarCard";
-import { SelectionBarCardModel } from "./selectionBarCardModel";
-import { MarketplaceEntityHeaderModel } from "../../../_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
+import { Props, SelectionBarCard } from "src/overview/selectionBar/selectionCard/SelectionBarCard";
+import { SelectionBarCardModel } from "src/overview/selectionBar/selectionCard/selectionBarCardModel";
+import { MarketplaceEntityHeaderModel } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
 
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

@@ -2,13 +2,13 @@ import * as React from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
 import Select from "react-select";
-import { Colors } from "../../_styling/colors";
+import { Colors } from "src/_styling/colors";
 import { transparentize } from "polished";
-import { TopBarSearchOption } from "./_parts/topBarSearchOption/TopBarSearchOption";
-import { TopBarDropdownIndicator } from "./_parts/topBarDropdownIndicator/TopBarDropdownIndicator";
-import { TopBarSearchModel } from "./topBarSearchModel";
-import { TopBarSearchGroup } from "./_models/topBarSearchGroup";
-import { TopBarSearchOptionModel } from "./_parts/topBarSearchOption/topBarSearchOptionModel";
+import { TopBarSearchOption } from "src/topBar/topBarSearch/_parts/topBarSearchOption/TopBarSearchOption";
+import { TopBarDropdownIndicator } from "src/topBar/topBarSearch/_parts/topBarDropdownIndicator/TopBarDropdownIndicator";
+import { TopBarSearchModel } from "src/topBar/topBarSearch/topBarSearchModel";
+import { TopBarSearchGroup } from "src/topBar/topBarSearch/_models/topBarSearchGroup";
+import { TopBarSearchOptionModel } from "src/topBar/topBarSearch/_parts/topBarSearchOption/topBarSearchOptionModel";
 
 const TopBarSearchView = styled.div`
   z-index: 9999;

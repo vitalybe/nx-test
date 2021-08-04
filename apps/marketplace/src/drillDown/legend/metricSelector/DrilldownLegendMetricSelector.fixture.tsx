@@ -3,13 +3,13 @@ import styled from "styled-components";
 import {
   DrilldownLegendMetricSelector,
   Props,
-} from "./DrilldownLegendMetricSelector";
-import { Colors } from "../../../_styling/colors";
+} from "src/drillDown/legend/metricSelector/DrilldownLegendMetricSelector";
+import { Colors } from "src/_styling/colors";
 import { transparentize } from "polished";
 
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
 
-import { MetricTypesEnum } from "../../../_domain/metricTypes";
+import { MetricTypesEnum } from "src/_domain/metricTypes";
 
 const View = styled(FixtureDecorator)`
   margin: 1em auto;

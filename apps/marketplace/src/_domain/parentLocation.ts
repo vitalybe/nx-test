@@ -1,8 +1,8 @@
-import { MarketplaceEntity } from "./marketplaceEntity/marketplaceEntity";
+import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
 import { computed } from "mobx";
-import { MarketplaceEntityGeo } from "./marketplaceEntity/marketplaceEntityGeo";
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
+import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { mockUtils } from "common/utils/mockUtils";
+import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
 
 class MarketplaceParent {
   constructor(private geoEntity: MarketplaceEntityGeo) {}

@@ -1,16 +1,16 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { DrillDownTableRowModel } from "./drillDownTableRowModel";
-import { ClickableImage } from "@qwilt/common/components/clickableImage/ClickableImage";
-import { Fonts } from "@qwilt/common/styling/fonts";
+import { DrillDownTableRowModel } from "src/drillDown/table/row/drillDownTableRowModel";
+import { ClickableImage } from "common/components/clickableImage/ClickableImage";
+import { Fonts } from "common/styling/fonts";
 import { transparentize } from "polished";
-import { DrillDownTableRowCircle } from "./drillDownRowCircle/DrillDownTableRowCircle";
-import { DrillDownTableStyles } from "../drillDownTableStyles";
-import { MetricTypesEnum } from "../../../_domain/metricTypes";
-import { MarketplaceEntityHeader } from "../../../_parts/marketplaceEntityHeader/marketplaceEntityHeader";
-import { UnitsFormatterResult } from "@qwilt/common/utils/unitsFormatter";
-import { DrillDownTableLoadingCell } from "./drillDownLoadingCell/DrillDownTableLoadingCell";
+import { DrillDownTableRowCircle } from "src/drillDown/table/row/drillDownRowCircle/DrillDownTableRowCircle";
+import { DrillDownTableStyles } from "src/drillDown/table/drillDownTableStyles";
+import { MetricTypesEnum } from "src/_domain/metricTypes";
+import { MarketplaceEntityHeader } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeader";
+import { UnitsFormatterResult } from "common/utils/unitsFormatter";
+import { DrillDownTableLoadingCell } from "src/drillDown/table/row/drillDownLoadingCell/DrillDownTableLoadingCell";
 
 const DrillDownRowView = styled.tr`
   ${(props: { isEnabled: boolean }) => css`
@@ -135,8 +135,8 @@ export class DrillDownTableRow extends React.Component<Props, State> {
         <Td>{model.coverage}%</Td>
         <Td>{model.ispCount}</Td>
         <TdActionsIcons>
-          <ActionIcon imagePath={require("@qwilt/common/images/card.svg")} onClick={model.showCard} />
-          <ActionIcon imagePath={require("../../../_images/x.svg")} onClick={model.removeRow} />
+          <ActionIcon imagePath={require("common/images/card.svg")} onClick={model.showCard} />
+          <ActionIcon imagePath={require("src/_images/x.svg")} onClick={model.removeRow} />
         </TdActionsIcons>
       </DrillDownRowView>
     );

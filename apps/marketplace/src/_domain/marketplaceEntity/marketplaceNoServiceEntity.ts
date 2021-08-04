@@ -1,8 +1,8 @@
-import { MarketplaceEntityGeo } from "./marketplaceEntityGeo";
-import { MarketplaceEntity } from "./marketplaceEntity";
+import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
 import { computed } from "mobx";
-import { ParentLocation } from "../parentLocation";
-import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
+import { ParentLocation } from "src/_domain/parentLocation";
+import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
 
 export class MarketplaceNoServiceEntity implements MarketplaceEntity {
   constructor(

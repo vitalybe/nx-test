@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
-import { Colors } from "../../_styling/colors";
-import { MarketplaceEntityHeaderModel } from "./marketplaceEntityHeaderModel";
+import { Colors } from "src/_styling/colors";
+import { MarketplaceEntityHeaderModel } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
 import { observer } from "mobx-react";
 // @ts-ignore
 import Dotdotdot from "react-dotdotdot";
-import { MarketplaceImageWithFallback } from "../marketplaceImageWithFallback/MarketplaceImageWithFallback";
+import { MarketplaceImageWithFallback } from "src/_parts/marketplaceImageWithFallback/MarketplaceImageWithFallback";
 
 const MarketplaceEntityHeaderView = styled.div`
   display: flex;

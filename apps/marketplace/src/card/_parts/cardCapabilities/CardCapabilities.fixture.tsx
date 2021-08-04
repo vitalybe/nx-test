@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardCapabilities, Props } from "./CardCapabilities";
+import { CardCapabilities, Props } from "src/card/_parts/cardCapabilities/CardCapabilities";
 import { CardCapabilitiesModel } from "./cardCapabilitiesModel";
 
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
 
 function createProps(): Props {
   return {

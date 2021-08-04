@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { Map } from "./map/Map";
+import { Map } from "src/map/Map";
 import { MarketplaceModel } from "./marketplaceModel";
 import { observer } from "mobx-react";
-import { TopBar } from "./topBar/TopBar";
-import { MarketplaceOverview } from "./overview/MarketplaceOverview";
-import { DrillDown } from "./drillDown/DrillDown";
+import { TopBar } from "src/topBar/TopBar";
+import { MarketplaceOverview } from "src/overview/MarketplaceOverview";
+import { DrillDown } from "src/drillDown/DrillDown";
 import { Flipper } from "react-flip-toolkit";
-import { ErrorBoundary } from "@qwilt/common/components/ErrorBoundary";
-import { LoadingSpinner } from "@qwilt/common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { ErrorBoundary } from "common/components/ErrorBoundary";
+import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
 
 const MarketplaceView = styled.div`
   height: 100%;

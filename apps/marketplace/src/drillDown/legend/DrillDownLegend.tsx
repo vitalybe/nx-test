@@ -2,15 +2,15 @@ import * as React from "react";
 import { RefObject } from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
-import { Colors } from "../../_styling/colors";
-import { Fonts } from "@qwilt/common/styling/fonts";
-import { DrillDownLegendCard } from "./card/DrillDownLegendCard";
-import { DrillDownLegendModel } from "./drillDownLegendModel";
-import { DrilldownLegendMetricSelector } from "./metricSelector/DrilldownLegendMetricSelector";
+import { Colors } from "src/_styling/colors";
+import { Fonts } from "common/styling/fonts";
+import { DrillDownLegendCard } from "src/drillDown/legend/card/DrillDownLegendCard";
+import { DrillDownLegendModel } from "src/drillDown/legend/drillDownLegendModel";
+import { DrilldownLegendMetricSelector } from "src/drillDown/legend/metricSelector/DrilldownLegendMetricSelector";
 import { Flipped } from "react-flip-toolkit";
-import { FlipperIds } from "@qwilt/common/config/flipperIds";
+import { FlipperIds } from "common/config/flipperIds";
 import Scrollbars from "react-custom-scrollbars";
-import { NativeScrolling } from "../../_parts/NativeScrolling";
+import { NativeScrolling } from "src/_parts/NativeScrolling";
 
 const LegendView = styled.div`
   padding: 0 15px 0.6em;

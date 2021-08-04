@@ -1,12 +1,12 @@
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
-import { UnitKindEnum, unitsFormatter, UnitsFormatterResult } from "@qwilt/common/utils/unitsFormatter";
+import { mockUtils } from "common/utils/mockUtils";
+import { UnitKindEnum, unitsFormatter, UnitsFormatterResult } from "common/utils/unitsFormatter";
 import { action, computed } from "mobx";
-import { DrillDownEntity } from "../../_domain/drillDownEntity";
-import { MetricTypesEnum } from "../../../_domain/metricTypes";
-import { MarketplaceEntityHeaderModel } from "../../../_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
-import { HistogramValuesByDate } from "../../_domain/drillDownHistogram";
-import { DrillDownStore } from "../../_stores/drillDownStore";
-import { TableMetricType } from "../drillDownTableModel";
+import { DrillDownEntity } from "src/drillDown/_domain/drillDownEntity";
+import { MetricTypesEnum } from "src/_domain/metricTypes";
+import { MarketplaceEntityHeaderModel } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
+import { HistogramValuesByDate } from "src/drillDown/_domain/drillDownHistogram";
+import { DrillDownStore } from "src/drillDown/_stores/drillDownStore";
+import { TableMetricType } from "src/drillDown/table/drillDownTableModel";
 
 class TableMetricsModel {
   constructor(

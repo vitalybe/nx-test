@@ -1,10 +1,10 @@
 import * as React from "react";
-import { Map } from "./Map";
+import { Map } from "src/map/Map";
 import styled from "styled-components";
-import { MapModel } from "./mapModel";
-import { MarketplaceStore } from "../_stores/marketplaceStore";
+import { MapModel } from "src/map/mapModel";
+import { MarketplaceStore } from "src/_stores/marketplaceStore";
 
-import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

@@ -1,20 +1,20 @@
-import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { mockUtils } from "common/utils/mockUtils";
 import { action, autorun, computed } from "mobx";
 import { ChartObject, ElementObject, Options, PlotLines, PointObject, RendererObject } from "highcharts";
-import { DrillDownChartSeries, SeriesDataPoint } from "../_domain/drillDownChartSeries";
-import { UnitKindEnum, unitsFormatter } from "@qwilt/common/utils/unitsFormatter";
-import { MetricTypesEnum } from "../../_domain/metricTypes";
-import { NativeAnimations } from "@qwilt/common/styling/animations/nativeAnimations";
-import { Colors } from "../../_styling/colors";
-import { Fonts } from "@qwilt/common/styling/fonts";
-import { ChartSvg } from "@qwilt/common/utils/chartSvg";
-import { DrillDownChartAreaStore } from "../_stores/drillDownChartAreaStore";
-import { DrillDownStore } from "../_stores/drillDownStore";
+import { DrillDownChartSeries, SeriesDataPoint } from "src/drillDown/_domain/drillDownChartSeries";
+import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
+import { MetricTypesEnum } from "src/_domain/metricTypes";
+import { NativeAnimations } from "common/styling/animations/nativeAnimations";
+import { Colors } from "src/_styling/colors";
+import { Fonts } from "common/styling/fonts";
+import { ChartPeakPoint, ChartSvg } from "common/utils/chartSvg";
+import { DrillDownChartAreaStore } from "src/drillDown/_stores/drillDownChartAreaStore";
+import { DrillDownStore } from "src/drillDown/_stores/drillDownStore";
 import { DateTime } from "luxon";
-import { HistogramSeries } from "@qwilt/common/utils/histograms/domain/histogramSeries";
-import { XAxisBehavior } from "@qwilt/common/components/qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
-import { ChartSeriesData } from "@qwilt/common/components/qwiltChart/_domain/chartSeriesData";
-import { HighchartsUtils } from "@qwilt/common/utils/histograms/highchartsUtils";
+import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
+import { XAxisBehavior } from "common/components/qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
+import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
+import { HighchartsUtils } from "common/utils/histograms/highchartsUtils";
 
 const yAxisDefaultOptions = {
   maxPadding: 0.3,
