@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { MapMarker, Props } from "src/map/mapMarker/MapMarker";
-import { MapMarkerModel } from "src/map/mapMarker/mapMarkerModel";
+import { MapMarker, Props } from "./MapMarker";
+import { MapMarkerModel } from "./mapMarkerModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
-import { MAP_DEFAULT_ZOOM } from "src/map/Map";
+import { MAP_DEFAULT_ZOOM } from "../Map";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

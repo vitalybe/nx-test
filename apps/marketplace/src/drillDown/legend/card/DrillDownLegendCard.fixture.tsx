@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DrillDownLegendCard, Props } from "src/drillDown/legend/card/DrillDownLegendCard";
-import { DrillDownLegendCardModel } from "src/drillDown/legend/card/drillDownLegendCardModel";
-import { Colors } from "src/_styling/colors";
+import { DrillDownLegendCard, Props } from "./DrillDownLegendCard";
+import { DrillDownLegendCardModel } from "./drillDownLegendCardModel";
+import { Colors } from "../../../_styling/colors";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 import { transparentize } from "polished";
 

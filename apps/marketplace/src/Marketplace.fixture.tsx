@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Marketplace, Props } from "src/Marketplace";
-import { MarketplaceModel } from "src/marketplaceModel";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { Marketplace, Props } from "./Marketplace";
+import { MarketplaceModel } from "./marketplaceModel";
+import { MarketplaceStore } from "./_stores/marketplaceStore";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
-import { MarketplaceEntities } from "src/_domain/marketplaceEntity/marketplaceEntities";
-import { MarketplaceEntitySelected } from "src/_domain/marketplaceEntity/marketplaceEntitySelected";
-import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { MarketplaceEntities } from "./_domain/marketplaceEntity/marketplaceEntities";
+import { MarketplaceEntitySelected } from "./_domain/marketplaceEntity/marketplaceEntitySelected";
+import { MarketplaceEntityIsp } from "./_domain/marketplaceEntity/marketplaceEntityIsp";
+import { MarketplaceEntityGeo } from "./_domain/marketplaceEntity/marketplaceEntityGeo";
 
 function getProps(): Props {
   return {

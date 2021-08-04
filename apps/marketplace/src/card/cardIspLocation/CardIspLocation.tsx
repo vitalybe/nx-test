@@ -1,8 +1,8 @@
 import * as React from "react";
 import { observer } from "mobx-react";
-import { CardIspLocationModel } from "src/card/cardIspLocation/cardIspLocationModel";
-import { CardMoreDetailsContainer } from "src/card/_parts/cardMoreDetailsContainer/CardMoreDetailsContainer";
-import { CardHistogram } from "src/card/cardIspLocation/_parts/cardHistogram/CardHistogram";
+import { CardIspLocationModel } from "./cardIspLocationModel";
+import { CardMoreDetailsContainer } from "../_parts/cardMoreDetailsContainer/CardMoreDetailsContainer";
+import { CardHistogram } from "./_parts/cardHistogram/CardHistogram";
 
 export interface Props {
   model: CardIspLocationModel;

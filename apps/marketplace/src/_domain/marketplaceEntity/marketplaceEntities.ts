@@ -1,9 +1,9 @@
-import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
-import { LatLng } from "src/_domain/latLng";
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
-import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
-import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
-import { MarketplaceQnEntity } from "src/_domain/marketplaceEntity/marketplaceQnEntity";
+import { MarketplaceEntity } from "./marketplaceEntity";
+import { LatLng } from "../latLng";
+import { MarketplaceEntityGeo } from "./marketplaceEntityGeo";
+import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
+import { MarketplaceEntityIsp } from "./marketplaceEntityIsp";
+import { MarketplaceQnEntity } from "./marketplaceQnEntity";
 
 export class MarketplaceEntities {
   constructor(public entities: MarketplaceEntity[]) {}

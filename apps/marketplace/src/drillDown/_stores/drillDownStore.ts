@@ -1,17 +1,17 @@
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { MarketplaceStore } from "../../_stores/marketplaceStore";
 import { computed, observable } from "mobx";
-import { DrillDownEntity } from "src/drillDown/_domain/drillDownEntity";
+import { DrillDownEntity } from "../_domain/drillDownEntity";
 import { promisedComputed } from "computed-async-mobx";
-import { HistogramByType } from "src/drillDown/_domain/drillDownHistogram";
-import { MetricTypesEnum } from "src/_domain/metricTypes";
-import { histogramProvider } from "src/drillDown/_providers/drillDownHistogramProvider/drillDownHistogramProvider";
-import { mockUtils } from "common/utils/mockUtils";
-import { MediaAnalyticsApi } from "common/backend/mediaAnalytics";
-import { TimeConfig } from "common/utils/timeConfig";
+import { HistogramByType } from "../_domain/drillDownHistogram";
+import { MetricTypesEnum } from "../../_domain/metricTypes";
+import { histogramProvider } from "../_providers/drillDownHistogramProvider/drillDownHistogramProvider";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
+import { TimeConfig } from "@qwilt/common/utils/timeConfig";
 import { DateTime, Duration } from "luxon";
 import { loggerCreator } from "@qwilt/common/utils/logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class DrillDownStore {
   constructor(public marketplace: MarketplaceStore) {}

@@ -1,10 +1,10 @@
 import { action, computed } from "mobx";
-import { DrillDownTableModel } from "src/drillDown/table/drillDownTableModel";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
-import { DrillDownStore } from "src/drillDown/_stores/drillDownStore";
-import { DrillDownLegendModel } from "src/drillDown/legend/drillDownLegendModel";
-import { DrillDownChartModel } from "src/drillDown/chart/drillDownChartModel";
-import { DrillDownChartAreaStore } from "src/drillDown/_stores/drillDownChartAreaStore";
+import { DrillDownTableModel } from "./table/drillDownTableModel";
+import { MarketplaceStore } from "../_stores/marketplaceStore";
+import { DrillDownStore } from "./_stores/drillDownStore";
+import { DrillDownLegendModel } from "./legend/drillDownLegendModel";
+import { DrillDownChartModel } from "./chart/drillDownChartModel";
+import { DrillDownChartAreaStore } from "./_stores/drillDownChartAreaStore";
 
 export class DrillDownModel {
   constructor(private drilldownStore: DrillDownStore) {}

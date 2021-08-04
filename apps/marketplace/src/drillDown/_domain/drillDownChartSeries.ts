@@ -1,4 +1,4 @@
-import { DrillDownEntity } from "src/drillDown/_domain/drillDownEntity";
+import { DrillDownEntity } from "./drillDownEntity";
 import { DataPoint, IndividualSeriesOptions } from "highcharts";
 
 export class SeriesDataPoint implements DataPoint {

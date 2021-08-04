@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, SelectionBar } from "src/overview/selectionBar/SelectionBar";
-import { SelectionBarModel } from "src/overview/selectionBar/selectionBarModel";
-import { SelectionBarCardModel } from "src/overview/selectionBar/selectionCard/selectionBarCardModel";
+import { Props, SelectionBar } from "./SelectionBar";
+import { SelectionBarModel } from "./selectionBarModel";
+import { SelectionBarCardModel } from "./selectionCard/selectionBarCardModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 import * as _ from "lodash";
 

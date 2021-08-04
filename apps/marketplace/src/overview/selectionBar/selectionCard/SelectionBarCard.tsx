@@ -3,14 +3,14 @@ import { SyntheticEvent } from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
 import { transparentize } from "polished";
-import { MarketplaceEntityHeader } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeader";
-import { SelectionBarCardModel } from "src/overview/selectionBar/selectionCard/selectionBarCardModel";
+import { MarketplaceEntityHeader } from "../../../_parts/marketplaceEntityHeader/marketplaceEntityHeader";
+import { SelectionBarCardModel } from "./selectionBarCardModel";
 // @ts-ignore
-import { Colors } from "src/_styling/colors";
-import { CloseButton } from "common/components/closeButton/CloseButton";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { Metric, Unit, Value } from "common/components/metrics/Metric";
-import { Fonts } from "common/styling/fonts";
+import { Colors } from "../../../_styling/colors";
+import { CloseButton } from "@qwilt/common/components/closeButton/CloseButton";
+import { LoadingSpinner } from "@qwilt/common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { Metric, Unit, Value } from "@qwilt/common/components/metrics/Metric";
+import { Fonts } from "@qwilt/common/styling/fonts";
 
 const CloseButtonStyled = styled(CloseButton)`
   position: absolute;

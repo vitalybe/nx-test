@@ -1,16 +1,16 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "@qwilt/common/utils/logger";
 import {
   ImageWithFallback,
   Props as ImageWithFallbackProps,
-} from "common/components/imageWithFallback/ImageWithFallback";
+} from "@qwilt/common/components/imageWithFallback/ImageWithFallback";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 // NOTE: Must repeat it twice
 const pathToImages = "common/images/";
 // @ts-ignore
-const pathToImagesContext = require.context("common/images/", true);
+const pathToImagesContext = require.context("@qwilt/common/images/", true);
 
 export const MarketplaceImageWithFallback = ({ ...props }: ImageWithFallbackProps) => {
   // eslint-disable-next-line prefer-const

@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { SelectionBarCard } from "src/overview/selectionBar/selectionCard/SelectionBarCard";
-import { Colors } from "src/_styling/colors";
+import { SelectionBarCard } from "./selectionCard/SelectionBarCard";
+import { Colors } from "../../_styling/colors";
 import { lighten, transparentize } from "polished";
-import { Fonts } from "common/styling/fonts";
-import { SelectionBarModel } from "src/overview/selectionBar/selectionBarModel";
-import { RoundImageButton } from "src/_parts/roundImageButton/RoundImageButton";
+import { Fonts } from "@qwilt/common/styling/fonts";
+import { SelectionBarModel } from "./selectionBarModel";
+import { RoundImageButton } from "../../_parts/roundImageButton/RoundImageButton";
 import { Flipped } from "react-flip-toolkit";
-import { FlipperIds } from "common/config/flipperIds";
-import { NativeScrolling } from "src/_parts/NativeScrolling";
+import { FlipperIds } from "@qwilt/common/config/flipperIds";
+import { NativeScrolling } from "../../_parts/NativeScrolling";
 
 const SelectionBarView = styled.div`
   background-color: ${transparentize(0.6, Colors.NAVY_3)};
@@ -111,7 +111,7 @@ export class SelectionBar extends React.Component<Props, State> {
             </Container>
           </Flipped>
         </NativeScrolling>
-        <DrillDownButton imagePath={require("src/_images/chart.svg")} onClick={model.showDrilldown} />
+        <DrillDownButton imagePath={require("../../_images/chart.svg")} onClick={model.showDrilldown} />
       </SelectionBarView>
     );
   }

@@ -1,5 +1,5 @@
-import { Utils } from "common/utils/utils";
-import { ApiHistogramGroupType } from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
+import { Utils } from "@qwilt/common/utils/utils";
+import { ApiHistogramGroupType } from "@qwilt/common/backend/mediaAnalytics/mediaAnalyticsTypes";
 
 const entities = require("./testResource_geoEntities.json");
 const ispIds = new Set<string>();

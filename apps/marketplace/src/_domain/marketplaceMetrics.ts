@@ -1,5 +1,5 @@
-import { UnitKindEnum, unitsFormatter, UnitsFormatterResult } from "common/utils/unitsFormatter";
-import { mockUtils } from "common/utils/mockUtils";
+import { UnitKindEnum, unitsFormatter, UnitsFormatterResult } from "@qwilt/common/utils/unitsFormatter";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
 
 export class MarketplaceMetrics {
   constructor(public bandwidth: number, public tps: number, public avgBitrate: number, public coverage: number) {}

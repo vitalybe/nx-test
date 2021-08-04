@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardGeo, Props } from "src/card/cardGeo/CardGeo";
-import { mockUtils } from "common/utils/mockUtils";
-import { CardGeoModel } from "src/card/cardGeo/cardGeoModel";
+import { CardGeo, Props } from "./CardGeo";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { CardGeoModel } from "./cardGeoModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

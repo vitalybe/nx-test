@@ -1,8 +1,8 @@
-import { imageResourcePathProvider } from "src/_providers/imageResourcePathProvider";
+import { imageResourcePathProvider } from "../../_providers/imageResourcePathProvider";
 import { computed } from "mobx";
-import { MarketplaceEntitySelected } from "src/_domain/marketplaceEntity/marketplaceEntitySelected";
-import { Colors } from "src/_styling/colors";
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { MarketplaceEntitySelected } from "../../_domain/marketplaceEntity/marketplaceEntitySelected";
+import { Colors } from "../../_styling/colors";
+import { MarketplaceEntityGeo } from "../../_domain/marketplaceEntity/marketplaceEntityGeo";
 
 export class DrillDownEntity {
   constructor(private selectedEntity: MarketplaceEntitySelected, private readonly originalColor: string) {}

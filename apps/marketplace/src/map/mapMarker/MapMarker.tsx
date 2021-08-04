@@ -1,15 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { MapMarkerBubble } from "src/map/_parts/mapMarkerBubble/MapMarkerBubble";
-import { CardMapHover } from "src/card/cardMapHover/CardMapHover";
-import { CardMapClicked } from "src/card/cardMapClicked/cardMapClicked";
-import { ErrorBoundary } from "common/components/ErrorBoundary";
+import { MapMarkerBubble } from "../_parts/mapMarkerBubble/MapMarkerBubble";
+import { CardMapHover } from "../../card/cardMapHover/CardMapHover";
+import { CardMapClicked } from "../../card/cardMapClicked/cardMapClicked";
+import { ErrorBoundary } from "@qwilt/common/components/ErrorBoundary";
 import { observer } from "mobx-react";
-import { MapMarkerModel } from "src/map/mapMarker/mapMarkerModel";
+import { MapMarkerModel } from "./mapMarkerModel";
 import { Flipped, Flipper } from "react-flip-toolkit";
-import { fadeIn, fadeOut, flyOutLeft } from "common/styling/animations/animeAnimations";
-import { FlipperIds } from "common/config/flipperIds";
-import { Colors } from "src/_styling/colors";
+import { fadeIn, fadeOut, flyOutLeft } from "@qwilt/common/styling/animations/animeAnimations";
+import { FlipperIds } from "@qwilt/common/config/flipperIds";
+import { Colors } from "../../_styling/colors";
 
 // NOTE: Google Maps overrides fonts which requires us to reset them here
 const MapMarkerStyled = styled.div`

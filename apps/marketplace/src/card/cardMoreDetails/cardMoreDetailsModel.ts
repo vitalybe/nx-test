@@ -1,11 +1,11 @@
-import { mockUtils } from "common/utils/mockUtils";
-import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
-import { CardIspLocationModel } from "src/card/cardIspLocation/cardIspLocationModel";
-import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
-import { CardGeoModel } from "src/card/cardGeo/cardGeoModel";
-import { CardIspModel } from "src/card/cardIsp/cardIspModel";
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { MarketplaceEntity } from "../../_domain/marketplaceEntity/marketplaceEntity";
+import { MarketplaceStore } from "../../_stores/marketplaceStore";
+import { CardIspLocationModel } from "../cardIspLocation/cardIspLocationModel";
+import { MarketplaceEntityIsp } from "../../_domain/marketplaceEntity/marketplaceEntityIsp";
+import { CardGeoModel } from "../cardGeo/cardGeoModel";
+import { CardIspModel } from "../cardIsp/cardIspModel";
+import { MarketplaceEntityGeo } from "../../_domain/marketplaceEntity/marketplaceEntityGeo";
 
 export class CardMoreDetailsModel {
   constructor(private marketplaceEntity: MarketplaceEntity, private marketplace: MarketplaceStore) {}

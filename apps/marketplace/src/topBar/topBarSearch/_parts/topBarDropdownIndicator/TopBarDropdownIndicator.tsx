@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
-import { Colors } from "src/_styling/colors";
+import { Colors } from "../../../../_styling/colors";
 import { darken } from "polished";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";

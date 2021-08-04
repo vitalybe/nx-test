@@ -2,13 +2,13 @@
 import * as React from "react";
 import * as _ from "lodash";
 
-import { MapMarkerBubble } from "src/map/_parts/mapMarkerBubble/MapMarkerBubble";
+import { MapMarkerBubble } from "./MapMarkerBubble";
 import styled from "styled-components";
-import { MAP_DEFAULT_ZOOM } from "src/map/Map";
+import { MAP_DEFAULT_ZOOM } from "../../Map";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
-import { Colors } from "src/_styling/colors";
+import { Colors } from "../../../_styling/colors";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

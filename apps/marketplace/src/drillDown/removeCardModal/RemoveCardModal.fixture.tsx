@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { RemoveCardModal, Props } from "src/drillDown/removeCardModal/RemoveCardModal";
+import { RemoveCardModal, Props } from "./RemoveCardModal";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

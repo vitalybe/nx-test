@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { EntityIcon } from "src/_parts/entityIcon/EntityIcon";
-import { EntityIconModel } from "src/_parts/entityIcon/entityIconModel";
+import { EntityIcon } from "./EntityIcon";
+import { EntityIconModel } from "./entityIconModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

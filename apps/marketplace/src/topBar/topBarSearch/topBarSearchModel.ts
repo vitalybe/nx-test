@@ -1,10 +1,10 @@
-import { TopBarSearchGroup } from "src/topBar/topBarSearch/_models/topBarSearchGroup";
+import { TopBarSearchGroup } from "./_models/topBarSearchGroup";
 import * as _ from "lodash";
-import { TopBarSearchOptionModel } from "src/topBar/topBarSearch/_parts/topBarSearchOption/topBarSearchOptionModel";
+import { TopBarSearchOptionModel } from "./_parts/topBarSearchOption/topBarSearchOptionModel";
 import { action, computed } from "mobx";
-import { mockUtils } from "common/utils/mockUtils";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
-import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { MarketplaceStore } from "../../_stores/marketplaceStore";
+import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
 
 export class TopBarSearchModel {
   constructor(private marketplace: MarketplaceStore) {}
