@@ -4,18 +4,17 @@ import {
   ApiGeoEntityType,
   ApiIspEntities,
   ApiIspEntity,
-} from "common/backend/geoDeployment/geoDeploymentTypes";
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
-import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
-import { ApiAggregationGroupType, ApiHistogramGroupType } from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
-import { MarketplaceEntity } from "src/_domain/marketplaceEntity/marketplaceEntity";
-import { MarketplaceEntities } from "src/_domain/marketplaceEntity/marketplaceEntities";
-import { MarketplaceNoServiceEntity } from "src/_domain/marketplaceEntity/marketplaceNoServiceEntity";
-import { GeoUtils } from "src/_utils/geoUtils";
-import { GeoDeploymentApiInterface } from "common/backend/geoDeployment/geoDeploymentApi";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { MarketplaceQnEntity } from "src/_domain/marketplaceEntity/marketplaceQnEntity";
-import { MediaAnalyticsApi } from "common/backend/mediaAnalytics";
+} from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
+import { MarketplaceEntityGeo } from "../../_domain/marketplaceEntity/marketplaceEntityGeo";
+import { MarketplaceEntityIsp } from "../../_domain/marketplaceEntity/marketplaceEntityIsp";
+import { MarketplaceEntity } from "../../_domain/marketplaceEntity/marketplaceEntity";
+import { MarketplaceEntities } from "../../_domain/marketplaceEntity/marketplaceEntities";
+import { MarketplaceNoServiceEntity } from "../../_domain/marketplaceEntity/marketplaceNoServiceEntity";
+import { GeoUtils } from "../../_utils/geoUtils";
+import { GeoDeploymentApiInterface } from "@qwilt/common/backend/geoDeployment/geoDeploymentApi";
+import { devToolsStore } from "@qwilt/common/components/devTools/_stores/devToolsStore";
+import { MarketplaceQnEntity } from "../../_domain/marketplaceEntity/marketplaceQnEntity";
+import { MediaAnalyticsApi } from "@qwilt/common/backend/mediaAnalytics";
 
 class MarketplaceEntitiesProviderReal {
   provide = async (mediaAnalyticsApi: MediaAnalyticsApi, geoDeploymentApi: GeoDeploymentApiInterface) => {

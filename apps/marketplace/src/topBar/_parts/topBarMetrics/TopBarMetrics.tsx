@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { Colors } from "src/_styling/colors";
-import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
-import { Tooltip } from "common/components/Tooltip";
-import { Description, DescriptionRow, Metric, Value } from "common/components/metrics/Metric";
-import { Fonts } from "common/styling/fonts";
+import { Colors } from "../../../_styling/colors";
+import { MarketplaceMetrics } from "../../../_domain/marketplaceMetrics";
+import { Tooltip } from "@qwilt/common/components/Tooltip";
+import { Description, DescriptionRow, Metric, Value } from "@qwilt/common/components/metrics/Metric";
+import { Fonts } from "@qwilt/common/styling/fonts";
 
 const TopBarMetricsView = styled.div`
   display: flex;

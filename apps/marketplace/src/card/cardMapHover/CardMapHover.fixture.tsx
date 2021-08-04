@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardMapHover, Props } from "src/card/cardMapHover/CardMapHover";
-import { mockUtils } from "common/utils/mockUtils";
-import { CardMapHoverModel } from "src/card/cardMapHover/cardMapHoverModel";
+import { CardMapHover, Props } from "./CardMapHover";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { CardMapHoverModel } from "./cardMapHoverModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
-import { MarketplaceEntityHeaderModel } from "src/_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
+import { MarketplaceEntityHeaderModel } from "../../_parts/marketplaceEntityHeader/marketplaceEntityHeaderModel";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

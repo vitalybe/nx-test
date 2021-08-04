@@ -1,10 +1,10 @@
 import * as React from "react";
 import { observer } from "mobx-react";
-import { CardMoreDetailsContainer } from "src/card/_parts/cardMoreDetailsContainer/CardMoreDetailsContainer";
-import { CardIspModel } from "src/card/cardIsp/cardIspModel";
-import { CardListContainer } from "src/card/_parts/list/cardListContainer/CardListContainer";
-import { CardListRow } from "src/card/_parts/list/cardListRow/CardListRow";
-import { imageResourcePathProvider } from "src/_providers/imageResourcePathProvider";
+import { CardMoreDetailsContainer } from "../_parts/cardMoreDetailsContainer/CardMoreDetailsContainer";
+import { CardIspModel } from "./cardIspModel";
+import { CardListContainer } from "../_parts/list/cardListContainer/CardListContainer";
+import { CardListRow } from "../_parts/list/cardListRow/CardListRow";
+import { imageResourcePathProvider } from "../../_providers/imageResourcePathProvider";
 import * as _ from "lodash";
 
 export interface Props {

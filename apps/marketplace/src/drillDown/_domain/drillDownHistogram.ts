@@ -1,4 +1,4 @@
-import { MetricTypesEnum } from "src/_domain/metricTypes";
+import { MetricTypesEnum } from "../../_domain/metricTypes";
 import { computed } from "mobx";
 import * as _ from "lodash";
 import { DateTime } from "luxon";

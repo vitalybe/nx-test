@@ -1,4 +1,4 @@
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { MarketplaceEntityGeo } from "../_domain/marketplaceEntity/marketplaceEntityGeo";
 
 export class GeoUtils {
   static getContinentIso(geoEntity: MarketplaceEntityGeo) {

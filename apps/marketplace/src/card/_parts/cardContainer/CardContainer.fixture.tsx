@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardContainer } from "src/card/_parts/cardContainer/CardContainer";
-import { CardContainerModel } from "src/card/_parts/cardContainer/cardContainerModel";
+import { CardContainer } from "./CardContainer";
+import { CardContainerModel } from "./cardContainerModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

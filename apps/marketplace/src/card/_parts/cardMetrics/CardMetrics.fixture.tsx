@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CardMetrics } from "src/card/_parts/cardMetrics/CardMetrics";
-import { MarketplaceMetrics } from "src/_domain/marketplaceMetrics";
+import { CardMetrics } from "./CardMetrics";
+import { MarketplaceMetrics } from "../../../_domain/marketplaceMetrics";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   height: 90vh;

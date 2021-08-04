@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { DrillDownTableRow, Props } from "src/drillDown/table/row/DrillDownTableRow";
-import { DrillDownTableRowModel } from "src/drillDown/table/row/drillDownTableRowModel";
+import { DrillDownTableRow, Props } from "./DrillDownTableRow";
+import { DrillDownTableRowModel } from "./drillDownTableRowModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
-import { MetricTypesEnum } from "src/_domain/metricTypes";
+import { MetricTypesEnum } from "../../../_domain/metricTypes";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,6 +1,6 @@
 import { action, computed } from "mobx";
-import { SelectionBarModel } from "src/overview/selectionBar/selectionBarModel";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
+import { SelectionBarModel } from "./selectionBar/selectionBarModel";
+import { MarketplaceStore } from "../_stores/marketplaceStore";
 
 export class MarketplaceOverviewModel {
   constructor(private marketplace: MarketplaceStore) {}

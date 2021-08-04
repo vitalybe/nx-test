@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
-import { DrillDownTableModel } from "src/drillDown/table/drillDownTableModel";
-import { DrillDownTableRow } from "src/drillDown/table/row/DrillDownTableRow";
-import { DrillDownTableHeader } from "src/drillDown/table/header/DrillDownTableHeader";
-import { ErrorBoundary } from "common/components/ErrorBoundary";
-import { Colors } from "src/_styling/colors";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { DrillDownTableModel } from "./drillDownTableModel";
+import { DrillDownTableRow } from "./row/DrillDownTableRow";
+import { DrillDownTableHeader } from "./header/DrillDownTableHeader";
+import { ErrorBoundary } from "@qwilt/common/components/ErrorBoundary";
+import { Colors } from "../../_styling/colors";
+import { LoadingSpinner } from "@qwilt/common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
 
 const DrillDownTableView = styled.div`
   position: relative;

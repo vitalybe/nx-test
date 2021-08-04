@@ -1,8 +1,8 @@
-import { loggerCreator } from "common//utils/logger";
-import { LatLng } from "src/_domain/latLng";
-import { OnlyData } from "common/utils/typescriptUtils";
+import { loggerCreator } from "@qwilt/common//utils/logger";
+import { LatLng } from "../latLng";
+import { OnlyData } from "@qwilt/common/utils/typescriptUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 let id = 0;
 

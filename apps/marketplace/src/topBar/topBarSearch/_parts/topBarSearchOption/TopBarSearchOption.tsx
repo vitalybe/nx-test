@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { Colors } from "src/_styling/colors";
+import { Colors } from "../../../../_styling/colors";
 import { transparentize } from "polished";
 import Highlighter from "react-highlight-words";
-import { TopBarSearchOptionModel } from "src/topBar/topBarSearch/_parts/topBarSearchOption/topBarSearchOptionModel";
-import { EntityIcon } from "src/_parts/entityIcon/EntityIcon";
-import { ApiGeoEntityType } from "common/backend/geoDeployment/geoDeploymentTypes";
-import { Tooltip } from "common/components/Tooltip";
+import { TopBarSearchOptionModel } from "./topBarSearchOptionModel";
+import { EntityIcon } from "../../../../_parts/entityIcon/EntityIcon";
+import { ApiGeoEntityType } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
+import { Tooltip } from "@qwilt/common/components/Tooltip";
 
 const TopBarSearchOptionView = styled.div`
   ${(props: { highlighted: boolean; disabled: boolean }) => css`

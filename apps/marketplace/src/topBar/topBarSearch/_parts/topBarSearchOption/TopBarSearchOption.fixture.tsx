@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, TopBarSearchOption } from "src/topBar/topBarSearch/_parts/topBarSearchOption/TopBarSearchOption";
-import { TopBarSearchOptionModel } from "src/topBar/topBarSearch/_parts/topBarSearchOption/topBarSearchOptionModel";
+import { Props, TopBarSearchOption } from "./TopBarSearchOption";
+import { TopBarSearchOptionModel } from "./topBarSearchOptionModel";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "@qwilt/common/utils/cosmos/FixtureDecorator";
 
-import { EntityIconModel } from "src/_parts/entityIcon/entityIconModel";
+import { EntityIconModel } from "../../../../_parts/entityIcon/entityIconModel";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

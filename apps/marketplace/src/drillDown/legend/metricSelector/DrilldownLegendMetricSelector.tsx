@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import { observer } from "mobx-react";
-import { MetricTypesEnum } from "src/_domain/metricTypes";
-import { ToggleButton } from "src/drillDown/_parts/ToggleButton";
+import { MetricTypesEnum } from "../../../_domain/metricTypes";
+import { ToggleButton } from "../../_parts/ToggleButton";
 
 const MetricSelectorView = styled.div`
   display: flex;

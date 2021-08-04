@@ -1,14 +1,14 @@
-import { mockUtils } from "common/utils/mockUtils";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
-import { CardMoreDetailsContainerModel } from "src/card/_parts/cardMoreDetailsContainer/cardMoreDetailsContainerModel";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { MarketplaceStore } from "../../_stores/marketplaceStore";
+import { CardMoreDetailsContainerModel } from "../_parts/cardMoreDetailsContainer/cardMoreDetailsContainerModel";
 import { promisedComputed } from "computed-async-mobx";
 import { computed, observable } from "mobx";
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
-import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
-import { qoeChartValuesProvider } from "src/card/cardIspLocation/_providers/qoeChartValuesProvider";
-import { StoreStatus } from "common/stores/_models/storeStatus";
-import { Snippets } from "common/utils/snippets";
-import { Notifier } from "common/utils/notifications/notifier";
+import { MarketplaceEntityGeo } from "../../_domain/marketplaceEntity/marketplaceEntityGeo";
+import { MarketplaceEntityIsp } from "../../_domain/marketplaceEntity/marketplaceEntityIsp";
+import { qoeChartValuesProvider } from "./_providers/qoeChartValuesProvider";
+import { StoreStatus } from "@qwilt/common/stores/_models/storeStatus";
+import { Snippets } from "@qwilt/common/utils/snippets";
+import { Notifier } from "@qwilt/common/utils/notifications/notifier";
 
 const qoeValuesCache: Map<string, number[]> = new Map();
 

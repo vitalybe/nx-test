@@ -1,17 +1,17 @@
-import { loggerCreator } from "common/utils/logger";
-import { CardMapClickedModel } from "src/card/cardMapClicked/cardMapClickedModel";
-import { LatLng } from "src/_domain/latLng";
+import { loggerCreator } from "@qwilt/common/utils/logger";
+import { CardMapClickedModel } from "../../card/cardMapClicked/cardMapClickedModel";
+import { LatLng } from "../../_domain/latLng";
 import { computed } from "mobx";
-import { isMarketplaceEntityContainedIn } from "src/_domain/marketplaceEntity/marketplaceEntity";
+import { isMarketplaceEntityContainedIn } from "../../_domain/marketplaceEntity/marketplaceEntity";
 import * as _ from "lodash";
-import { mockUtils } from "common/utils/mockUtils";
-import { MarketplaceEntityIsp } from "src/_domain/marketplaceEntity/marketplaceEntityIsp";
-import { MarketplaceStore } from "src/_stores/marketplaceStore";
-import { CardMapHoverModel } from "src/card/cardMapHover/cardMapHoverModel";
-import { MarketplaceQnEntity } from "src/_domain/marketplaceEntity/marketplaceQnEntity";
-import { MarketplaceEntityGeo } from "src/_domain/marketplaceEntity/marketplaceEntityGeo";
+import { mockUtils } from "@qwilt/common/utils/mockUtils";
+import { MarketplaceEntityIsp } from "../../_domain/marketplaceEntity/marketplaceEntityIsp";
+import { MarketplaceStore } from "../../_stores/marketplaceStore";
+import { CardMapHoverModel } from "../../card/cardMapHover/cardMapHoverModel";
+import { MarketplaceQnEntity } from "../../_domain/marketplaceEntity/marketplaceQnEntity";
+import { MarketplaceEntityGeo } from "../../_domain/marketplaceEntity/marketplaceEntityGeo";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class MapMarkerModel {
   public readonly geoParent: MarketplaceEntityGeo;

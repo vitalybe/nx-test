@@ -1,7 +1,7 @@
 import * as React from "react";
 import { observer } from "mobx-react";
-import { EntityIconModel } from "src/_parts/entityIcon/entityIconModel";
-import { MarketplaceImageWithFallback } from "src/_parts/marketplaceImageWithFallback/MarketplaceImageWithFallback";
+import { EntityIconModel } from "./entityIconModel";
+import { MarketplaceImageWithFallback } from "../marketplaceImageWithFallback/MarketplaceImageWithFallback";
 
 export interface Props {
   model: EntityIconModel;
@@ -25,9 +25,9 @@ export class EntityIcon extends React.Component<Props, State> {
 
     let fallbackElement = undefined;
     if (model.fallbackType === "geo") {
-      fallbackElement = <img src={require("common/images/no-flag.svg")} alt={"missing location image"} />;
+      fallbackElement = <img src={require("@qwilt/common/images/no-flag.svg")} alt={"missing location"} />;
     } else if (model.fallbackType === "isp") {
-      fallbackElement = <img src={require("common/images/no-isp.svg")} alt={"missing isp image"} />;
+      fallbackElement = <img src={require("@qwilt/common/images/no-isp.svg")} alt={"missing isp"} />;
     }
 
     return (

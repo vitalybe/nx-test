@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
 import { observer } from "mobx-react";
-import { Colors } from "src/_styling/colors";
-import { TopBarMetrics } from "src/topBar/_parts/topBarMetrics/TopBarMetrics";
-import { TopBarModel } from "src/topBar/topBarModel";
-import { LoadingSpinner } from "common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
-import { TopBarSearch } from "src/topBar/topBarSearch/TopBarSearch";
-import { Fonts } from "common/styling/fonts";
+import { Colors } from "../_styling/colors";
+import { TopBarMetrics } from "./_parts/topBarMetrics/TopBarMetrics";
+import { TopBarModel } from "./topBarModel";
+import { LoadingSpinner } from "@qwilt/common/components/loadingSpinner/loadingSpinner/LoadingSpinner";
+import { TopBarSearch } from "./topBarSearch/TopBarSearch";
+import { Fonts } from "@qwilt/common/styling/fonts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons/faExclamationTriangle";
 import { autorun } from "mobx";
