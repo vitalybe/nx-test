@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#FFA022" fill-rule="nonzero">
+            <path d="M24.14 26.335c-1.211 0-2.194-.982-2.194-2.194-.013-10.903-8.848-19.738-19.751-19.752C.983 4.39 0 3.407 0 2.195S.983 0 2.195 0C15.52.016 26.32 10.815 26.335 24.14c0 1.213-.982 2.195-2.194 2.195z" opacity=".8" transform="translate(0 37.534)"/>
+            <path d="M15.652 26.335c-1.235 0-2.236-1-2.236-2.236-.007-6.171-5.008-11.172-11.18-11.18-1.235 0-2.236-1-2.236-2.236 0-1.235 1.001-2.236 2.236-2.236 8.64.01 15.642 7.012 15.652 15.652 0 1.235-1 2.236-2.236 2.236z" opacity=".5" transform="translate(0 37.534)"/>
+            <path d="M6.708 26.335c-1.235 0-2.236-1-2.236-2.236 0-1.235-1.001-2.236-2.236-2.236-1.235 0-2.236-1-2.236-2.236 0-1.235 1.001-2.236 2.236-2.236 3.705 0 6.708 3.004 6.708 6.708 0 1.235-1.001 2.236-2.236 2.236z" opacity=".3" transform="translate(0 37.534)"/>
+        </g>
+        <path stroke="#FFA022" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M7 23L7 8 21.999 8"/>
+        <path stroke="#FFA022" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M41 23L41 8 55.999 8" transform="matrix(-1 0 0 1 97 0)"/>
+        <path stroke="#FFA022" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M41 56L41 41 55.999 41" transform="rotate(180 48.5 48.5)"/>
+        <circle cx="32" cy="32" r="10" fill="#F44336" fill-rule="nonzero"/>
+    </g>
+</svg>

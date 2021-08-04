@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  color: #01222f !important;
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-size: 16px;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em !important;
+}
+
+body {
+  overflow: hidden;
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  letter-spacing: inherit !important;
+}
+
+.login-iframe {
+  display: none;
+}
+
+.tippy-tooltip {
+  max-width: initial !important;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+.highcharts-tooltip-container {
+  z-index: 2;
+}

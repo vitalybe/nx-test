@@ -1,0 +1,209 @@
+
+[
+  {
+    "contractId": "4ba7fb05-76ff-461c-9e1a-2e87bf04e729",
+    "startDate": 1577836800,
+    "endDate": 1735682400,
+    "serviceTypes": [
+      "vod",
+      "live"
+    ],
+    "dsIds": [
+      "5fd791a372112800012910cd",
+      "5fd7917e72112800012910cc"
+    ],
+    "qnDepContexts": [
+      3
+    ],
+    "currency": "USD",
+    "operationalMode": "active",
+    "policies": [
+      {
+        "fromVolume": 0,
+        "toVolume": 20000000,
+        "rate": 2.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 20000000,
+        "toVolume": 32000000,
+        "rate": 4.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 0,
+        "toVolume": 40000000,
+        "rate": 6.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 0,
+        "toVolume": 60000000,
+        "rate": 4.6,
+        "links": [
+
+        ]
+      }
+    ],
+    "links": [
+
+    ],
+    "cp": "disney"
+  },
+  {
+    "contractId": "74385612-3b19-4a89-b25f-d9b8ca6629ae",
+    "startDate": 1643666400,
+    "endDate": 1721250000,
+    "serviceTypes": [
+      "vod",
+      "live"
+    ],
+    "dsIds": [
+      "5fd791a372112800012910cd",
+      "5fd7917e72112800012910cc"
+    ],
+    "qnDepContexts": [
+      1
+    ],
+    "currency": "USD",
+    "operationalMode": "disabled",
+    "policies": [
+      {
+        "fromVolume": 0,
+        "toVolume": 20000000,
+        "rate": 2.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 20000000,
+        "toVolume": 32000000,
+        "rate": 4.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 0,
+        "toVolume": 40000000,
+        "rate": 6.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 0,
+        "toVolume": 60000000,
+        "rate": 4.6,
+        "links": [
+
+        ]
+      }
+    ],
+    "links": [
+
+    ],
+    "cp": "disney"
+  },
+  {
+    "contractId": "05400383-b965-48f0-b029-334c0dd87ea9",
+    "startDate": 1577836800,
+    "endDate": 1735682400,
+    "serviceTypes": [
+      "vod",
+      "live"
+    ],
+    "dsIds": [
+      "5fd791a372112800012910cd",
+      "5fd7917e72112800012910cc"
+    ],
+    "qnDepContexts": [
+      3
+    ],
+    "currency": "USD",
+    "operationalMode": "draft",
+    "policies": [
+      {
+        "fromVolume": 0,
+        "toVolume": 20000000,
+        "rate": 2.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 20000000,
+        "toVolume": 32000000,
+        "rate": 4.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 0,
+        "toVolume": 40000000,
+        "rate": 6.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 0,
+        "toVolume": 60000000,
+        "rate": 4.6,
+        "links": [
+
+        ]
+      }
+    ],
+    "links": [
+
+    ],
+    "cp": "disney"
+  },
+  {
+    "contractId": "14343c87-3149-4188-9519-64b3b073bd82",
+    "startDate": 1609884000,
+    "endDate": 1609884000,
+    "serviceTypes": [
+      "live"
+    ],
+    "dsIds": [
+      "5fd7917e72112800012910cc"
+    ],
+    "qnDepContexts": [
+      3
+    ],
+    "currency": "USD",
+    "operationalMode": "active",
+    "policies": [
+      {
+        "fromVolume": 0,
+        "toVolume": 1,
+        "rate": 1.0,
+        "links": [
+
+        ]
+      },
+      {
+        "fromVolume": 0,
+        "toVolume": 2,
+        "rate": 3.0,
+        "links": [
+
+        ]
+      }
+    ],
+    "links": [
+
+    ],
+    "cp": "disney"
+  }
+]
