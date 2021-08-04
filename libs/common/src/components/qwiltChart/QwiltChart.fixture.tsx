@@ -1,20 +1,20 @@
 import * as React from "react";
 import styled from "styled-components";
-import { QwiltChart } from "common/components/qwiltChart/QwiltChart";
-import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
+import { QwiltChart } from "./QwiltChart";
+import { MediaAnalyticsSeries } from "../../backend/mediaAnalytics/mediaAnalyticsSeries";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { TimeConfig } from "common/utils/timeConfig";
+import { ChartBehavior } from "./_domain/chartBehavior";
+import { TimeConfig } from "../../utils/timeConfig";
 import { DateTime } from "luxon";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
-import { CommonColors } from "common/styling/commonColors";
-import { XAxisBehavior } from "common/components/qwiltChart/_behaviors/xAxisBehavior/xAxisBehavior";
-import { YAxisBehavior } from "common/components/qwiltChart/_behaviors/yAxisBehavior/yAxisBehavior";
-import { AddSeriesBehavior } from "common/components/qwiltChart/_behaviors/addSeriesBehavior/addSeriesBehavior";
-import { MarkersOnHoverBehavior } from "common/components/qwiltChart/_behaviors/markersOnHoverBehavior/markersOnHoverBehavior";
-import { SeriesPeaksBehavior } from "common/components/qwiltChart/_behaviors/seriesPeaksBehavior/seriesPeaksBehavior";
+import { ChartSeriesData } from "./_domain/chartSeriesData";
+import { CommonColors } from "../../styling/commonColors";
+import { XAxisBehavior } from "./_behaviors/xAxisBehavior/xAxisBehavior";
+import { YAxisBehavior } from "./_behaviors/yAxisBehavior/yAxisBehavior";
+import { AddSeriesBehavior } from "./_behaviors/addSeriesBehavior/addSeriesBehavior";
+import { MarkersOnHoverBehavior } from "./_behaviors/markersOnHoverBehavior/markersOnHoverBehavior";
+import { SeriesPeaksBehavior } from "./_behaviors/seriesPeaksBehavior/seriesPeaksBehavior";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

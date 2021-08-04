@@ -1,9 +1,9 @@
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
+import { CommonUrlParams } from "../../urlParams/commonUrlParams";
 import { useDisposable } from "mobx-react-lite";
 import { reaction } from "mobx";
-import { UrlStore } from "common/stores/urlStore/urlStore";
+import { UrlStore } from "../../stores/urlStore/urlStore";
 import { useState } from "react";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
+import { useEventCallback } from "./useEventCallback";
 //to avoid useLayoutEffect warning
 import React from "react";
 import _ from "lodash";

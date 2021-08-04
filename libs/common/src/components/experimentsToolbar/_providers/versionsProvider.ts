@@ -1,16 +1,16 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
-import { VersionEntity } from "common/components/experimentsToolbar/_domain/versionEntity";
-import { QwosVersionsApi } from "common/backend/qwosVersions";
-import { QwosVersionsApiResult } from "common/backend/qwosVersions/_types/qwosVersionsTypes";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
-import { QnDeploymentEntity } from "common/domain/qwiltDeployment/qnDeploymentEntity";
-import { VersionsUtils } from "common/components/experimentsToolbar/_utils/versionsUtils";
+import { loggerCreator } from "../../../utils/logger";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { VersionEntity } from "../_domain/versionEntity";
+import { QwosVersionsApi } from "../../../backend/qwosVersions";
+import { QwosVersionsApiResult } from "../../../backend/qwosVersions/_types/qwosVersionsTypes";
+import { DeploymentEntitiesProvider } from "../../../providers/deploymentEntitiesProvider";
+import { QnDeploymentEntity } from "../../../domain/qwiltDeployment/qnDeploymentEntity";
+import { VersionsUtils } from "../_utils/versionsUtils";
 import _ from "lodash";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class VersionsProvider {
   private constructor() {}

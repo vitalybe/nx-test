@@ -1,9 +1,9 @@
-import { loggerCreator } from "common/utils/logger";
-import { AjaxMetadata } from "common/utils/ajax";
+import { loggerCreator } from "../utils/logger";
+import { AjaxMetadata } from "../utils/ajax";
 import { MediaSitePackAllSitesData, MediaSitePackSiteData } from "../backend/mediaSitePack/_types/mediaSitePackTypes";
 import { MediaSitePackApi } from "../backend/mediaSitePack";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export enum ServiceTypesEnum {
   VOD = "VideoOnDemand",

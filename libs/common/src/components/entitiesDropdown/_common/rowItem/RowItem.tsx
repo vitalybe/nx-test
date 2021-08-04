@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { ColoredCircle } from "../../../styled/ColoredCircle";
 import { ImageWithFallback } from "../../../imageWithFallback/ImageWithFallback";
-import { SelectionModeEnum } from "common/utils/hierarchyUtils";
-import { DropdownEntity } from "common/components/entitiesDropdown/_domain/dropdownEntity";
+import { SelectionModeEnum } from "../../../../utils/hierarchyUtils";
+import { DropdownEntity } from "../../_domain/dropdownEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

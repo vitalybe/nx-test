@@ -3,13 +3,13 @@ import styled from "styled-components";
 import {
   Props,
   SelectedEntityInfo,
-} from "common/components/_projectSpecific/dsDashboardComponents/selectedEntityInfo/SelectedEntityInfo";
+} from "./SelectedEntityInfo";
 import {
   CommonDsEntity,
   DsEntityType,
-} from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
+} from "../_domain/commonDsEntity";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

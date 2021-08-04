@@ -1,7 +1,7 @@
-import { loggerCreator } from "common/utils/logger";
-import { NotificationLevel } from "common/utils/notifications/_domain/notificationEntity";
+import { loggerCreator } from "../logger";
+import { NotificationLevel } from "./_domain/notificationEntity";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class NotifierShared {
   static readonly AUTO_CLOSE_AFTER_MS = 10_000;

@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { loggerCreator } from "../logger";
+import FixtureDecorator from "./FixtureDecorator";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

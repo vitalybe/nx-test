@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Checkbox, CheckboxProps } from "common/components/checkbox/Checkbox";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Checkbox, CheckboxProps } from "./Checkbox";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

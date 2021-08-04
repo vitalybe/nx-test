@@ -1,10 +1,10 @@
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
-import { ChartSeriesArray } from "common/components/qwiltChart/_domain/chartSeriesArray";
+import { ChartBehavior } from "../../../../qwiltChart/_domain/chartBehavior";
+import { ChartSeriesArray } from "../../../../qwiltChart/_domain/chartSeriesArray";
 import { ElementObject } from "highcharts";
-import { Fonts } from "common/styling/fonts";
-import { FinancingPhaseData } from "common/components/_projectSpecific/monetization/_domain/monetizationProjectEntity";
+import { Fonts } from "../../../../../styling/fonts";
+import { FinancingPhaseData } from "../../_domain/monetizationProjectEntity";
 import { DateTime } from "luxon";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../../styling/commonColors";
 
 interface BehaviorOptions {
   financingPhaseData: FinancingPhaseData;

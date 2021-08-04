@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import * as React from "react";
 import styled from "styled-components";
-import { FormDatePickerRaw, Props } from "common/components/qcComponents/form/_raw/formDatePickerRaw/FormDatePickerRaw";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { FormDatePickerRaw, Props } from "./FormDatePickerRaw";
+import FixtureDecorator from "../../../../../utils/cosmos/FixtureDecorator";
 import { DateTime } from "luxon";
 
 const View = styled(FixtureDecorator)`

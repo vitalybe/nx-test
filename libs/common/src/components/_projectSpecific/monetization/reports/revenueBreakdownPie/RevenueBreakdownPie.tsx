@@ -1,15 +1,15 @@
 import * as React from "react";
 import { useMemo } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { QwiltPieChart } from "common/components/qwiltPieChart/QwiltPieChart";
-import { QwiltPieChartOptions, QwiltPieChartPart } from "common/components/qwiltPieChart/_types";
+import { loggerCreator } from "../../../../../utils/logger";
+import { QwiltPieChart } from "../../../../qwiltPieChart/QwiltPieChart";
+import { QwiltPieChartOptions, QwiltPieChartPart } from "../../../../qwiltPieChart/_types";
 import _ from "lodash";
-import { CurrencyUnitEnum, CurrencyUtils } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
-import { CommonColors } from "common/styling/commonColors";
-import { MonetizationPanelHeader } from "common/components/_projectSpecific/monetization/reports/monetizationPanelHeader/MonetizationPanelHeader";
+import { CurrencyUnitEnum, CurrencyUtils } from "../../_utils/currencyUtils";
+import { CommonColors } from "../../../../../styling/commonColors";
+import { MonetizationPanelHeader } from "../monetizationPanelHeader/MonetizationPanelHeader";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

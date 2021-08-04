@@ -1,12 +1,12 @@
 import * as React from "react";
 import { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from "react";
 import styled, { css } from "styled-components";
-import { loggerCreator } from "common/utils/logger";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { ClickableStyleOptions, CommonStyles } from "common/styling/commonStyles";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
+import { loggerCreator } from "../../../utils/logger";
+import { ConfigurationStyles } from "../_styles/configurationStyles";
+import { ClickableStyleOptions, CommonStyles } from "../../../styling/commonStyles";
+import { TextTooltip } from "../../textTooltip/TextTooltip";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 type Props = {
   textColor?: string;

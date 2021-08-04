@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Cell } from "common/components/_projectSpecific/dsDashboardComponents/dsGrid/_styles/cell";
-import { CommonDsEntity } from "common/components/_projectSpecific/dsDashboardComponents/_domain/commonDsEntity";
+import { Cell } from "../_styles/cell";
+import { CommonDsEntity } from "../../_domain/commonDsEntity";
 import styled from "styled-components";
-import { GridReactRenderer } from "common/components/qwiltGrid/QwiltGrid";
+import { GridReactRenderer } from "../../../../qwiltGrid/QwiltGrid";
 
 const EntityTypeIconImg = styled.img`
   width: 16px;

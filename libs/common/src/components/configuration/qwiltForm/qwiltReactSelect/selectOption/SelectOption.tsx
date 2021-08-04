@@ -1,13 +1,13 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../utils/logger";
 import * as React from "react";
 import { ReactChild, useEffect, useRef } from "react";
 import { OptionProps } from "react-select/src/components/Option";
 import scrollIntoView from "scroll-into-view-if-needed";
 import styled, { css } from "styled-components";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../../styling/commonColors";
 import { darken } from "polished";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

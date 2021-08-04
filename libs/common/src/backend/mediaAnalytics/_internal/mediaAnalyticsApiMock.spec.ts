@@ -1,14 +1,14 @@
 import * as _ from "lodash";
 
-import { TimeConfig } from "common/utils/timeConfig";
-import { MediaAnalyticsSeries } from "common/backend/mediaAnalytics/mediaAnalyticsSeries";
-import { MediaAnalyticsApiMock } from "common/backend/mediaAnalytics";
+import { TimeConfig } from "../../../utils/timeConfig";
+import { MediaAnalyticsSeries } from "../mediaAnalyticsSeries";
+import { MediaAnalyticsApiMock } from "../../mediaAnalytics";
 import { DateTime, Duration } from "luxon";
 import {
   ApiHistogramBin,
   ApiHistogramGroupBin,
   ApiHistogramType,
-} from "common/backend/mediaAnalytics/mediaAnalyticsTypes";
+} from "../mediaAnalyticsTypes";
 
 const allPossibleFilters = {
   dsgs: ["dsg1", "dsg2"],

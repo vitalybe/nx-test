@@ -1,17 +1,17 @@
 import * as React from "react";
 import { memo, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { CommonColors as Colors } from "common/styling/commonColors";
+import { CommonColors as Colors } from "../../../../../styling/commonColors";
 import _ from "lodash";
 import {
   BarChartDataItem,
   BarChartPlotOptions,
   BarChartYAxisOptions,
-} from "common/components/_projectSpecific/dsDashboardComponents/barChart/_types/_types";
-import { HierarchyUtils } from "common/utils/hierarchyUtils";
-import { BarsGroup } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_parts/BarsGroup";
-import { UnitKindEnum } from "common/utils/unitsFormatter";
-import { BarChartModel } from "common/components/_projectSpecific/dsDashboardComponents/barChart/_types/barChartModel";
+} from "../_types/_types";
+import { HierarchyUtils } from "../../../../../utils/hierarchyUtils";
+import { BarsGroup } from "./BarsGroup";
+import { UnitKindEnum } from "../../../../../utils/unitsFormatter";
+import { BarChartModel } from "../_types/barChartModel";
 
 //region [[ Styles ]]
 const AvgLine = styled.div<{ value: number }>`

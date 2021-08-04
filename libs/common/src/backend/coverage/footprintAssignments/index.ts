@@ -1,2 +1,2 @@
-export * from "common/backend/coverage/footprintAssignments/_internal/footprintAssignmentsApi";
-export * from "common/backend/coverage/footprintAssignments/_internal/footprintAssignmentsApiMock";
+export * from "./_internal/footprintAssignmentsApi";
+export * from "./_internal/footprintAssignmentsApiMock";

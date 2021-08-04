@@ -1,4 +1,4 @@
-import { BrowserHref } from "common/stores/urlStore/browserUrl/browserHref";
+import { BrowserHref } from "./browserHref";
 
 export class BrowserHrefReal implements BrowserHref {
   getDocumentHref(): string {

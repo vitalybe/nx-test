@@ -1,5 +1,5 @@
 import { ChartObject, SeriesObject } from "highcharts";
-import { UnitKindEnum, UnitNameEnum, unitsFormatter } from "common/utils/unitsFormatter";
+import { UnitKindEnum, UnitNameEnum, unitsFormatter } from "../unitsFormatter";
 
 export class HighchartsUtils {
   static getChartUnit(chart: ChartObject, type: UnitKindEnum): UnitNameEnum {

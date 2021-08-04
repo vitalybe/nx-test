@@ -1,16 +1,16 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { mockNetworkSleep } from "common/utils/mockUtils";
-import { sleep } from "common/utils/sleep";
-import { MonetizationConfigurationApi } from "common/backend/monetizationConfiguration";
-import { loggerCreator } from "common/utils/logger";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { MonetizationConfigurationApi } from "../../monetizationConfiguration";
+import { loggerCreator } from "../../../utils/logger";
 import { ApiCpContractType, ApiSpContractType } from "../_types/monetizationConfigurationTypes";
 import { DateTime, Duration } from "luxon";
-import { CurrencyUnitEnum } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
+import { CurrencyUnitEnum } from "../../../components/_projectSpecific/monetization/_utils/currencyUtils";
 
-const cpContractJsonMock = require("common/backend/monetizationConfiguration/_mocks/cp-contract-mock.json");
+const cpContractJsonMock = require("../_mocks/cp-contract-mock.json");
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class MonetizationConfigurationApiMock implements MonetizationConfigurationApi {
   async ispContracts(metadata: AjaxMetadata): Promise<ApiSpContractType[]> {

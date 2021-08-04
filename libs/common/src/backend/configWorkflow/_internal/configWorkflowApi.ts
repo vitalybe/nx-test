@@ -1,16 +1,16 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { ConfigWorkflowApiMock } from "common/backend/configWorkflow";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { ConfigWorkflowApiMock } from "../../configWorkflow";
 import {
   ConfigWorkflowStatusApiResult,
   ConfigWorkflowTriggerApiResult,
-} from "common/backend/configWorkflow/_types/configWorkflowTypes";
+} from "../_types/configWorkflowTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("cdns"), "/api/1.0/");
 
 export class ConfigWorkflowApi {

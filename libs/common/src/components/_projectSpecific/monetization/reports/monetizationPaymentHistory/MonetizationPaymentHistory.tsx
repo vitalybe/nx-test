@@ -1,17 +1,17 @@
 import * as React from "react";
 import { ReactElement, useCallback, useEffect, useMemo, useRef } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../../utils/logger";
 import {
   Props as QwiltGridProps,
   QwiltGrid,
   QwiltGridColumnDef,
   TreeData,
-} from "common/components/qwiltGrid/QwiltGrid";
+} from "../../../../qwiltGrid/QwiltGrid";
 import { GridApi, GridOptions } from "ag-grid-community";
-import { GlobalFontStore } from "common/components/GlobalFontProvider";
+import { GlobalFontStore } from "../../../../GlobalFontProvider";
 import "ag-grid-community/dist/styles/ag-theme-material.css";
-import { Fonts } from "common/styling/fonts";
+import { Fonts } from "../../../../../styling/fonts";
 import {
   BackIcon,
   ExportIcon,
@@ -19,16 +19,16 @@ import {
   SpLogoPlaceholder,
   TopbarBtn,
   TopbarTitle,
-} from "common/components/_projectSpecific/monetization/_styled/topbarParts";
-import { CurrencyUnitEnum, CurrencyUtils } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
-import { QcButton } from "common/components/qcComponents/_styled/qcButton/QcButton";
-import { FormSelectRaw, SelectOption } from "common/components/qcComponents/form/_raw/formSelectRaw/FormSelectRaw";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { ProviderMetadata } from "common/components/providerDataContainer/_providers/useProvider";
-import { ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import { CommonColors } from "common/styling/commonColors";
+} from "../../_styled/topbarParts";
+import { CurrencyUnitEnum, CurrencyUtils } from "../../_utils/currencyUtils";
+import { QcButton } from "../../../../qcComponents/_styled/qcButton/QcButton";
+import { FormSelectRaw, SelectOption } from "../../../../qcComponents/form/_raw/formSelectRaw/FormSelectRaw";
+import { TextTooltip } from "../../../../textTooltip/TextTooltip";
+import { ProviderMetadata } from "../../../../providerDataContainer/_providers/useProvider";
+import { ProviderDataContainer } from "../../../../providerDataContainer/ProviderDataContainer";
+import { CommonColors } from "../../../../../styling/commonColors";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

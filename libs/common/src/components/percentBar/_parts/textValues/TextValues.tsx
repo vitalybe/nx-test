@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CommonColors as Colors } from "common/styling/commonColors";
-import { Utils } from "common/utils/utils";
-import { UnitKindEnum, unitsFormatter } from "common/utils/unitsFormatter";
+import { CommonColors as Colors } from "../../../../styling/commonColors";
+import { Utils } from "../../../../utils/utils";
+import { UnitKindEnum, unitsFormatter } from "../../../../utils/unitsFormatter";
 
 //region [[ Styles ]]
 

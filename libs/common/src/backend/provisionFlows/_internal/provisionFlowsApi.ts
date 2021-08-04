@@ -1,18 +1,18 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { ProvisionFlowsApiMock } from "common/backend/provisionFlows";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { ProvisionFlowsApiMock } from "../../provisionFlows";
 import {
   ExecutionStatusApiResult,
   FlowStatusApiResult,
   StepOutputApiResult,
   StepsApiResult,
-} from "common/backend/provisionFlows/_types/provisionFlowsTypes";
+} from "../_types/provisionFlowsTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export enum ProvisionFlowsStepsEnum {
   SNAPSHOT_PREVIEW = "preview",

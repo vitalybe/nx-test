@@ -3,8 +3,8 @@ import { MouseEvent, MouseEventHandler, ReactNode } from "react";
 import styled from "styled-components";
 import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CssAnimations } from "common/styling/animations/cssAnimations";
-import { CommonColors } from "common/styling/commonColors";
+import { CssAnimations } from "../../styling/animations/cssAnimations";
+import { CommonColors } from "../../styling/commonColors";
 
 //region [[ Styles ]]
 

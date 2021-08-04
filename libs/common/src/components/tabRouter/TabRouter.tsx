@@ -1,13 +1,13 @@
 import * as React from "react";
 import { ReactNode } from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../utils/logger";
 // @ts-ignore
 import { RouteComponentProps, Router } from "@reach/router";
-import { CommonUrls } from "common/utils/commonUrls";
-import { TabRouterTab } from "common/components/tabRouter/tabRouterTab/TabRouterTab";
+import { CommonUrls } from "../../utils/commonUrls";
+import { TabRouterTab } from "./tabRouterTab/TabRouterTab";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

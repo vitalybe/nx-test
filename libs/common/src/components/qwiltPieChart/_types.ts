@@ -1,4 +1,4 @@
-import { UnitKindEnum } from "common/utils/unitsFormatter";
+import { UnitKindEnum } from "../../utils/unitsFormatter";
 import { DataPoint, PointObject, SeriesObject } from "highcharts";
 import { ReactElement } from "react";
 

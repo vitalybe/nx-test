@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../../styling/commonColors";
 
 //region [[ Styles ]]
 

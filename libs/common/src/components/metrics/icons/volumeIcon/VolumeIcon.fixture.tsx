@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { VolumeIcon } from "common/components/metrics/icons/volumeIcon/VolumeIcon";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { VolumeIcon } from "./VolumeIcon";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

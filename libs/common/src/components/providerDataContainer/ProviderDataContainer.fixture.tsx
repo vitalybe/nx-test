@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Props, ProviderDataContainer } from "common/components/providerDataContainer/ProviderDataContainer";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { Props, ProviderDataContainer } from "./ProviderDataContainer";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

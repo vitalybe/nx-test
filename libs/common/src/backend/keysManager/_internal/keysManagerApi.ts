@@ -1,10 +1,10 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { KeysManagerApiMock } from "common/backend/keysManager";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { KeysManagerApiMock } from "../../keysManager";
 import {
   KeyApiCreateType,
   KeyApiType,
@@ -12,9 +12,9 @@ import {
   KeysManagerKeysSetsApiResult,
   KeysSetApiReadType,
   KeysSetApiType,
-} from "common/backend/keysManager/_types/keysManagerTypes";
+} from "../_types/keysManagerTypes";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("keys-manager"), "/api/1/");
 
 export class KeysManagerApi {

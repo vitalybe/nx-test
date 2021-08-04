@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { CommonColors } from "common/styling/commonColors";
+import { CommonColors } from "../../../styling/commonColors";
 import { desaturate, lighten } from "polished";
 
 export class ConfigurationStyles {

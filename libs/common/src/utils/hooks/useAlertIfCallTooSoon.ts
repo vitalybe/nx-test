@@ -1,7 +1,7 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../logger";
 import { DependencyList, useEffect, useRef } from "react";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export function useAlertIfCallTooSoon(
   alert: string,

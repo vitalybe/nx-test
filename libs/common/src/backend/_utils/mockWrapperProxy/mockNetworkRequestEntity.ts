@@ -1,6 +1,6 @@
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 // NOTE - It is duplicated inside interface in Cypress - cypress/support/index.d.ts
 export class MockNetworkRequestEntity {

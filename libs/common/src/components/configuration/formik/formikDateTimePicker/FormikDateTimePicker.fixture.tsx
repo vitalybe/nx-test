@@ -4,8 +4,8 @@ import styled from "styled-components";
 import {
   FormikDateTimePicker,
   Props,
-} from "common/components/configuration/formik/formikDateTimePicker/FormikDateTimePicker";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+} from "./FormikDateTimePicker";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 import { Formik, FormikProps } from "formik";
 
 import { DateTime } from "luxon";

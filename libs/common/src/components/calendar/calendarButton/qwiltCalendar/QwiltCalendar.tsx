@@ -4,13 +4,13 @@ import styled from "styled-components";
 import InfiniteCalendar, { Calendar, RangedSelection, withKeyboardSupport, withRange } from "react-infinite-calendar";
 import "react-infinite-calendar/styles.css";
 import { DateTime, Interval } from "luxon";
-import { ConfigurationStyles } from "common/components/configuration/_styles/configurationStyles";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { loggerCreator } from "common/utils/logger";
-import { CommonColors } from "common/styling/commonColors";
-import { Button } from "common/components/configuration/button/Button";
+import { ConfigurationStyles } from "../../../configuration/_styles/configurationStyles";
+import { Clickable } from "../../../configuration/clickable/Clickable";
+import { loggerCreator } from "../../../../utils/logger";
+import { CommonColors } from "../../../../styling/commonColors";
+import { Button } from "../../../configuration/button/Button";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

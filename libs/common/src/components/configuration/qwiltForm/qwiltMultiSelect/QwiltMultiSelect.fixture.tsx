@@ -4,12 +4,12 @@ import * as _ from "lodash";
 import * as React from "react";
 import { useRef } from "react";
 import styled from "styled-components";
-import { Props, QwiltMultiSelect } from "common/components/configuration/qwiltForm/qwiltMultiSelect/QwiltMultiSelect";
-import { Utils } from "common/utils/utils";
-import { QwiltMultiSelectItem } from "common/components/configuration/qwiltForm/qwiltMultiSelect/_domain/QwiltMultiSelectItem";
-import { FixtureWithResults } from "common/utils/cosmos/FixtureWithResults";
+import { Props, QwiltMultiSelect } from "./QwiltMultiSelect";
+import { Utils } from "../../../../utils/utils";
+import { QwiltMultiSelectItem } from "./_domain/QwiltMultiSelectItem";
+import { FixtureWithResults } from "../../../../utils/cosmos/FixtureWithResults";
 import { Field, FieldProps, Formik } from "formik";
-import { QwiltInput } from "common/components/configuration/qwiltForm/qwiltInput/QwiltInput";
+import { QwiltInput } from "../qwiltInput/QwiltInput";
 
 const View = styled(FixtureWithResults)`
   margin: 1em;

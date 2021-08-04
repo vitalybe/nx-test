@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { CalendarButton, Props } from "common/components/calendar/calendarButton/CalendarButton";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { CalendarButton, Props } from "./CalendarButton";
+import FixtureDecorator from "../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

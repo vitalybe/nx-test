@@ -1,13 +1,13 @@
 import { action, observable, ObservableMap } from "mobx";
-import { loggerCreator } from "common/utils/logger";
-import { BrowserHrefReal } from "common/stores/urlStore/browserUrl/browserHrefReal";
-import { BrowserHref } from "common/stores/urlStore/browserUrl/browserHref";
-import { BrowserHrefMock } from "common/stores/urlStore/browserUrl/browserHrefMock";
-import { BrowserHrefBuilder } from "common/stores/urlStore/browserUrl/browserHrefBuilder";
-import { API_OVERRIDE_PREFIX, CommonUrlParams } from "common/urlParams/commonUrlParams";
+import { loggerCreator } from "../../utils/logger";
+import { BrowserHrefReal } from "./browserUrl/browserHrefReal";
+import { BrowserHref } from "./browserUrl/browserHref";
+import { BrowserHrefMock } from "./browserUrl/browserHrefMock";
+import { BrowserHrefBuilder } from "./browserUrl/browserHrefBuilder";
+import { API_OVERRIDE_PREFIX, CommonUrlParams } from "../../urlParams/commonUrlParams";
 
 //noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 // NOTE: Don't use directly - Use ProjectUrlStore instead
 export class UrlStore<T extends string = string> {

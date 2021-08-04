@@ -3,8 +3,8 @@
 import * as React from "react";
 import { PropsWithChildren } from "react";
 import styled from "styled-components";
-import { FormDatePicker, Props } from "common/components/qcComponents/form/formDatePicker/FormDatePicker";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { FormDatePicker, Props } from "./FormDatePicker";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 import { FormProvider, useForm } from "react-hook-form";
 import { DateTime } from "luxon";
 

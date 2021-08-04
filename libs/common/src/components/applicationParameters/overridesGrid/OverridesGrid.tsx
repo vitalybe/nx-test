@@ -1,26 +1,26 @@
 import * as React from "react";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../utils/logger";
 import { GridReactRenderer, QwiltGrid, QwiltGridColumnDef } from "../../qwiltGrid/QwiltGrid";
 import { useMemo } from "react";
 import "ag-grid-community/dist/styles/ag-theme-material.css";
 import styled from "styled-components";
-import { ParamsGridStyles } from "common/components/applicationParameters/paramsGridContainer/paramsGrid/paramsGridStyles";
+import { ParamsGridStyles } from "../paramsGridContainer/paramsGrid/paramsGridStyles";
 import { GridOptions } from "ag-grid-community/dist/lib/entities/gridOptions";
-import { UrlStore } from "common/stores/urlStore/urlStore";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
 import { useState } from "react";
 import { DeleteOutlined, PlusCircleOutlined } from "@ant-design/icons";
-import { Clickable } from "common/components/configuration/clickable/Clickable";
-import { OverridesGridInput } from "common/components/applicationParameters/overridesGrid/overridesGridInput/OverridesGridInput";
-import { TextTooltip } from "common/components/textTooltip/TextTooltip";
-import { openQwiltModal } from "common/components/qwiltModal/QwiltModal";
-import { OverrideEditor } from "common/components/applicationParameters/overridesGrid/overrideEditor/OverrideEditor";
+import { Clickable } from "../../configuration/clickable/Clickable";
+import { OverridesGridInput } from "./overridesGridInput/OverridesGridInput";
+import { TextTooltip } from "../../textTooltip/TextTooltip";
+import { openQwiltModal } from "../../qwiltModal/QwiltModal";
+import { OverrideEditor } from "./overrideEditor/OverrideEditor";
 import { useDisposable } from "mobx-react-lite";
 import { reaction } from "mobx";
-import { useEventCallback } from "common/utils/hooks/useEventCallback";
-import { QcButton } from "common/components/qcComponents/_styled/qcButton/QcButton";
+import { useEventCallback } from "../../../utils/hooks/useEventCallback";
+import { QcButton } from "../../qcComponents/_styled/qcButton/QcButton";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

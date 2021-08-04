@@ -3,8 +3,8 @@ import styled from "styled-components";
 import * as _ from "lodash";
 import Highcharts, { AreaChart, ChartObject, Options, PlotOptions, RendererObject } from "highcharts";
 import ReactHighcharts from "react-highcharts";
-import { loggerCreator } from "common/utils/logger";
-import { Fonts } from "common/styling/fonts";
+import { loggerCreator } from "../../../utils/logger";
+import { Fonts } from "../../../styling/fonts";
 
 const patternFillModule = require("highcharts/modules/pattern-fill.src.js");
 
@@ -12,7 +12,7 @@ if (typeof Highcharts === "object") {
   patternFillModule(Highcharts);
 }
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const ReactHighchartWrapperView = styled.div`
   height: 100%;

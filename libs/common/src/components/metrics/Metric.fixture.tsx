@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { BwPeakIcon } from "common/components/metrics/icons/bwPeakIcon/BwPeakIcon";
-import { DescriptionRow, Metric, Props, Value, ValueRow } from "common/components/metrics/Metric";
+import { BwPeakIcon } from "./icons/bwPeakIcon/BwPeakIcon";
+import { DescriptionRow, Metric, Props, Value, ValueRow } from "./Metric";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

@@ -1,20 +1,20 @@
 /* eslint-disable unused-imports/no-unused-vars,unused-imports/no-unused-vars */
-import { AjaxMetadata } from "common/utils/ajax";
-import { sleep } from "common/utils/sleep";
-import { MediaReportApi } from "common/backend/mediaReport";
+import { AjaxMetadata } from "../../../utils/ajax";
+import { sleep } from "../../../utils/sleep";
+import { MediaReportApi } from "../../mediaReport";
 import {
   MediaReportDataApiType,
   MediaReportParams,
   MediaReportResponseType,
   MediaReportTypeEnum,
-} from "common/backend/mediaReport/_types/mediaReportTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+} from "../_types/mediaReportTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 import { TimeConfig } from "../../../utils/timeConfig";
-import { HistogramSeries } from "common/utils/histograms/domain/histogramSeries";
+import { HistogramSeries } from "../../../utils/histograms/domain/histogramSeries";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 const DLTS = ["dlt1", "dlt2", "dlt3", "dlt4", "dlt5"];
 const CODES = ["201", "203", "211", "312", "301", "401", "403", "404", "500", "503"];

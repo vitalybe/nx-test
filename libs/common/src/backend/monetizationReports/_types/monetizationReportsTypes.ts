@@ -1,5 +1,5 @@
 import { MetadataServiceTypeEnum } from "../../deliveryServices/_types/deliveryServiceMetadataTypes";
-import { CurrencyUnitEnum } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
+import { CurrencyUnitEnum } from "../../../components/_projectSpecific/monetization/_utils/currencyUtils";
 // region [[ DA Report ]]
 // Overtime
 export interface MonetizationApiDaOvertimeResponse {

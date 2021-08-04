@@ -1,13 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
-import { loggerCreator } from "common/utils/logger";
+import { loggerCreator } from "../../../../utils/logger";
 import { Input } from "antd";
 import { ChangeEvent } from "react";
-import { CommonColors } from "common/styling/commonColors";
-import { useUrlState } from "common/utils/hooks/useUrlState";
+import { CommonColors } from "../../../../styling/commonColors";
+import { useUrlState } from "../../../../utils/hooks/useUrlState";
 
 // noinspection JSUnusedLocalSymbols
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

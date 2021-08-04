@@ -1,7 +1,7 @@
-import { ChartBehavior } from "common/components/qwiltChart/_domain/chartBehavior";
+import { ChartBehavior } from "../../../../qwiltChart/_domain/chartBehavior";
 import { AxisLabelFormatterOptions } from "highcharts";
-import { GlobalFontStore } from "common/components/GlobalFontProvider";
-import { ChartSeriesData } from "common/components/qwiltChart/_domain/chartSeriesData";
+import { GlobalFontStore } from "../../../../GlobalFontProvider";
+import { ChartSeriesData } from "../../../../qwiltChart/_domain/chartSeriesData";
 import _ from "lodash";
 
 interface Options {

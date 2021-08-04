@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { PercentileIcon } from "common/components/metrics/icons/percentileIcon/PercentileIcon";
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import { PercentileIcon } from "./PercentileIcon";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

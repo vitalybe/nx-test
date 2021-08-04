@@ -1,4 +1,4 @@
-import { CurrencyUnitEnum } from "common/components/_projectSpecific/monetization/_utils/currencyUtils";
+import { CurrencyUnitEnum } from "../../../components/_projectSpecific/monetization/_utils/currencyUtils";
 import { MetadataServiceTypeEnum } from "../../deliveryServices/_types/deliveryServiceMetadataTypes";
 
 export interface ApiSpContractType {

@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
-import { FormikSelect, Props } from "common/components/configuration/formik/formikSelect/FormikSelect";
+import { FormikSelect, Props } from "./FormikSelect";
 import { Formik } from "formik";
 
-import FixtureDecorator from "common/utils/cosmos/FixtureDecorator";
+import FixtureDecorator from "../../../../utils/cosmos/FixtureDecorator";
 
 const View = styled(FixtureDecorator)`
   margin: 1em;

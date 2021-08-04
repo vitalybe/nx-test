@@ -4,7 +4,7 @@ import { loggerCreator } from "../../../../utils/logger";
 import { PulseLoader } from "react-spinners";
 import { ReactNode } from "react";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 //region [[ Styles ]]
 

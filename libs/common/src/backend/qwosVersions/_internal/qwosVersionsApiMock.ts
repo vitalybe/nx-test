@@ -1,13 +1,13 @@
-import { sleep } from "common/utils/sleep";
-import { ServerApiType } from "common/backend/trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
-import { loggerCreator } from "common/utils/logger";
-import { mockNetworkSleep } from "common/utils/mockUtils";
+import { sleep } from "../../../utils/sleep";
+import { ServerApiType } from "../../trafficRoutersMonitors/_types/trafficRoutersMonitorsTypes";
+import { loggerCreator } from "../../../utils/logger";
+import { mockNetworkSleep } from "../../../utils/mockUtils";
 import { QwosVersionsApi } from "./qwosVersionsApi";
 import { QwosVersionsApiResult, SystemApiType } from "../_types/qwosVersionsTypes";
-import { DeploymentEntitiesProvider } from "common/providers/deploymentEntitiesProvider";
-import { AjaxMetadata } from "common/utils/ajax";
+import { DeploymentEntitiesProvider } from "../../../providers/deploymentEntitiesProvider";
+import { AjaxMetadata } from "../../../utils/ajax";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class QwosVersionsApiMock implements QwosVersionsApi {
   async listSystems(): Promise<QwosVersionsApiResult> {

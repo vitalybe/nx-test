@@ -1,12 +1,12 @@
-import { loggerCreator } from "common/utils/logger";
-import { RequestModel } from "common/backend/_utils/requestModel";
+import { loggerCreator } from "./logger";
+import { RequestModel } from "../backend/_utils/requestModel";
 // @ts-ignore
 import Postmate from "postmate";
-import { CommonUrls } from "common/utils/commonUrls";
-import { Utils } from "common/utils/utils";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
+import { CommonUrls } from "./commonUrls";
+import { Utils } from "./utils";
+import { devToolsStore } from "../components/devTools/_stores/devToolsStore";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export interface AjaxMetadataUsedUrl {
   url: string;

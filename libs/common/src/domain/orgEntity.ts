@@ -1,7 +1,7 @@
 import { loggerCreator } from "../utils/logger";
 import { mockUtils } from "../utils/mockUtils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 
 export class OrgEntity {
   id!: string;

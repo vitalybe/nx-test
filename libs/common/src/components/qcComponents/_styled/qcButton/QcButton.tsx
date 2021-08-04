@@ -6,7 +6,7 @@ import React, {
   ReactNode,
   RefAttributes,
 } from "react";
-import { QcButtonTheme, QcButtonThemes } from "common/components/qcComponents/_styled/qcButton/_themes";
+import { QcButtonTheme, QcButtonThemes } from "./_themes";
 
 //region [[ Props ]]
 export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {

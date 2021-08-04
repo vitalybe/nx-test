@@ -1,19 +1,19 @@
-import { loggerCreator } from "common/utils/logger";
-import { getOriginForApi } from "common/backend/backendOrigin";
-import { combineUrl } from "common/utils/combineUrl";
-import { UrlParams } from "common/backend/_utils/urlParams";
-import { Ajax, AjaxMetadata } from "common/utils/ajax";
-import { devToolsStore } from "common/components/devTools/_stores/devToolsStore";
-import { ContentPublishersApiMock } from "common/backend/contentPublishers";
+import { loggerCreator } from "../../../utils/logger";
+import { getOriginForApi } from "../../backendOrigin";
+import { combineUrl } from "../../../utils/combineUrl";
+import { UrlParams } from "../../_utils/urlParams";
+import { Ajax, AjaxMetadata } from "../../../utils/ajax";
+import { devToolsStore } from "../../../components/devTools/_stores/devToolsStore";
+import { ContentPublishersApiMock } from "../../contentPublishers";
 import {
   ContentPublisherApiType,
   ContentPublisherUpdateApiType,
-} from "common/backend/contentPublishers/_types/contentPublishersTypes";
-import { UrlStore } from "common/stores/urlStore/urlStore";
-import { CommonUrlParams } from "common/urlParams/commonUrlParams";
-import { ContentPublisherUtils } from "common/backend/contentPublishers/_utils/utils";
+} from "../_types/contentPublishersTypes";
+import { UrlStore } from "../../../stores/urlStore/urlStore";
+import { CommonUrlParams } from "../../../urlParams/commonUrlParams";
+import { ContentPublisherUtils } from "../_utils/utils";
 
-const moduleLogger = loggerCreator(__filename);
+const moduleLogger = loggerCreator("__filename");
 const BACKEND_URL = combineUrl(getOriginForApi("content-publishers"), "/api/1.0.0/");
 
 export class ContentPublishersApi {

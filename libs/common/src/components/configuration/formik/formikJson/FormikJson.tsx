@@ -5,7 +5,7 @@ import { Field, FieldProps, FormikProps } from "formik";
 import {
   Props as QwiltJsonProps,
   QwiltJsonEditor,
-} from "common/components/configuration/qwiltForm/qwiltJsonEditor/QwiltJsonEditor";
+} from "../../qwiltForm/qwiltJsonEditor/QwiltJsonEditor";
 
 //region [[ Styles ]]´
 
