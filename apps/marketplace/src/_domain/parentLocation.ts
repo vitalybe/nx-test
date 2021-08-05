@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { MarketplaceEntity } from "./marketplaceEntity/marketplaceEntity";
 import { computed } from "mobx";
 import { MarketplaceEntityGeo } from "./marketplaceEntity/marketplaceEntityGeo";
