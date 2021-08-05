@@ -6,7 +6,8 @@ const IgnoreNotFoundExportPlugin = require("ignore-not-found-export-webpack-plug
 module.exports = (config, context) => {
   nrwlConfig(config);
 
-  config.resolve.alias["@qwilt/common"] = "/Users/vitalyb/git-temp/nx-test/libs/common/src";
+  // TODO: Not sure what it is for - Should probably be removed
+  config.resolve.alias["@qwilt/common"] = "libs/common/src";
   config.plugins.push(
     new webpack.ProvidePlugin({
       process: "process/browser",
@@ -21,7 +22,7 @@ module.exports = (config, context) => {
   };
 };
 
-// Copied from: /Users/vitalyb/git-temp/nx/packages/react/plugins/webpack.ts
+// Copied and adjusted from: /Users/vitalyb/git-temp/nx/packages/react/plugins/webpack.ts
 function nrwlConfig(config) {
   // TODO(jack): Remove in Nx 13
   // const { isWebpack5 } = require('@nrwl/web/src/webpack/entry');
