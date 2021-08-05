@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const path = require("path");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const IgnoreNotFoundExportPlugin = require("ignore-not-found-export-webpack-plugin");
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
@@ -6,8 +7,8 @@ const IgnoreNotFoundExportPlugin = require("ignore-not-found-export-webpack-plug
 module.exports = (config, context) => {
   nrwlConfig(config);
 
-  // TODO: Not sure what it is for - Should probably be removed
-  config.resolve.alias["@qwilt/common"] = "libs/common/src";
+  // TODO: Not sure what it is for
+  config.resolve.alias["@qwilt/common"] = path.join(context.buildOptions.root, "libs/common/src");
   config.plugins.push(
     new webpack.ProvidePlugin({
       process: "process/browser",
