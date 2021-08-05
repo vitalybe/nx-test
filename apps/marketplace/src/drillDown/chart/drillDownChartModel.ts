@@ -7,7 +7,7 @@ import { MetricTypesEnum } from "../../_domain/metricTypes";
 import { NativeAnimations } from "@qwilt/common/styling/animations/nativeAnimations";
 import { Colors } from "../../_styling/colors";
 import { Fonts } from "@qwilt/common/styling/fonts";
-import { ChartPeakPoint, ChartSvg } from "@qwilt/common/utils/chartSvg";
+import { ChartSvg } from "@qwilt/common/utils/chartSvg";
 import { DrillDownChartAreaStore } from "../_stores/drillDownChartAreaStore";
 import { DrillDownStore } from "../_stores/drillDownStore";
 import { DateTime } from "luxon";

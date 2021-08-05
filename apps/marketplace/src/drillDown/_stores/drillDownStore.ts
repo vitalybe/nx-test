@@ -11,7 +11,7 @@ import { TimeConfig } from "@qwilt/common/utils/timeConfig";
 import { DateTime, Duration } from "luxon";
 import { loggerCreator } from "@qwilt/common/utils/logger";
 
-const moduleLogger = loggerCreator("__filename");
+const moduleLogger = loggerCreator(__filename);
 
 export class DrillDownStore {
   constructor(public marketplace: MarketplaceStore) {}

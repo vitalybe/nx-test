@@ -7,7 +7,6 @@ import {
 } from "@qwilt/common/backend/geoDeployment/geoDeploymentTypes";
 import { MarketplaceEntityGeo } from "../../_domain/marketplaceEntity/marketplaceEntityGeo";
 import { MarketplaceEntityIsp } from "../../_domain/marketplaceEntity/marketplaceEntityIsp";
-import { ApiAggregationGroupType, ApiHistogramGroupType } from "@qwilt/common/backend/mediaAnalytics/mediaAnalyticsTypes";
 import { MarketplaceEntity } from "../../_domain/marketplaceEntity/marketplaceEntity";
 import { MarketplaceEntities } from "../../_domain/marketplaceEntity/marketplaceEntities";
 import { MarketplaceNoServiceEntity } from "../../_domain/marketplaceEntity/marketplaceNoServiceEntity";
