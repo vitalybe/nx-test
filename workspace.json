@@ -131,6 +131,33 @@
           }
         }
       }
+    },
+    "vitaly-buttons": {
+      "root": "libs/vitaly-buttons",
+      "sourceRoot": "libs/vitaly-buttons/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/vitaly-buttons/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/vitaly-buttons"],
+          "options": {
+            "jestConfig": "libs/vitaly-buttons/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "tsc": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "yarn run tsc -b libs/vitaly-buttons/tsconfig.lib.json --incremental"
+          }
+        }
+      }
     }
   },
   "cli": {

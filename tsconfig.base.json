@@ -17,6 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@qwilt/common/*": ["libs/common/src/*"],
+      "@qwilt/vitaly-buttons": ["libs/vitaly-buttons/src/index.ts"],
       "ajv": ["./@qwiltTypes/ajv"],
       "highcharts": ["./@qwiltTypes/highcharts"]
     },
