@@ -3,8 +3,8 @@ const { normalizeWebBuildOptions } = require("@nrwl/web/src/utils/normalize");
 const { getDevServerConfig } = require("@nrwl/web/src/utils/devserver.config");
 const { readTargetOptions, parseTargetString } = require("@nrwl/devkit");
 
-const context = require("./executor-context.temp.json");
-const options = require("./executor-options.temp.json");
+const context = require("./temp/executor-context.temp.json");
+const options = require("./temp/executor-options.temp.json");
 
 module.exports = (storybookWebpackConfig, env) => {
   const sourceRoot = context.workspace.projects[context.projectName].sourceRoot;

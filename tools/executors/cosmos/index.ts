@@ -26,7 +26,7 @@ export default async function cosmosExecutor(options: CosmosExecutorOptions, con
     throw new Error(`No source root was found`);
   }
 
-  const configDir = path.join(path.relative(context.root, __dirname), "config");
+  const configDir = path.join(path.relative(context.root, __dirname), "config/temp");
   const cosmosConfig = {
     globalImports: ["polyfills.ts"],
     watchDirs: ["./"],
@@ -36,9 +36,9 @@ export default async function cosmosExecutor(options: CosmosExecutorOptions, con
     },
   };
 
-  shelljs.ShellString(JSON.stringify(cosmosConfig, null, 2)).to(__dirname + "/config/cosmos.temp-config.json");
-  shelljs.ShellString(JSON.stringify(context, null, 2)).to(__dirname + "/config/executor-context.temp.json");
-  shelljs.ShellString(JSON.stringify(options, null, 2)).to(__dirname + "/config/executor-options.temp.json");
+  shelljs.ShellString(JSON.stringify(cosmosConfig, null, 2)).to(__dirname + "/config/temp/cosmos.temp-config.json");
+  shelljs.ShellString(JSON.stringify(context, null, 2)).to(__dirname + "/config/temp/executor-context.temp.json");
+  shelljs.ShellString(JSON.stringify(options, null, 2)).to(__dirname + "/config/temp/executor-options.temp.json");
 
   // console.info(`Executing "cosmosExecutor" with these options:`);
   // console.info(`Options: ${JSON.stringify(options, null, 2)}`);
