@@ -120,8 +120,8 @@
             "command": "yarn run tsc -b apps/marketplace/tsconfig.app.json --incremental"
           }
         },
-        "echo": {
-          "executor": "./tools/executors/echo:echo",
+        "echo2": {
+          "executor": "./tools/executors/echo2:echo2",
           "options": {
             "textToEcho": "Hello World"
           }

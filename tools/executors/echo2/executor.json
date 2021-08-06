@@ -1,9 +1,0 @@
-{
-  "executors": {
-    "echo2": {
-      "implementation": "./index",
-      "schema": "./schema.json",
-      "description": "Does echoes twice!"
-    }
-  }
-}
