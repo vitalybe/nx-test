@@ -11,7 +11,14 @@ module.exports = (storybookWebpackConfig, env) => {
 
   const target = parseTargetString(options.buildTarget);
   const buildOptions = normalizeWebBuildOptions(readTargetOptions(target, context), context.root, sourceRoot);
-  const webpackConfig = getDevServerConfig(context.root, sourceRoot, buildOptions, options);
+  let webpackConfig = getDevServerConfig(context.root, sourceRoot, buildOptions, options);
+
+  if (buildOptions.webpackConfig) {
+    webpackConfig = require(buildOptions.webpackConfig)(webpackConfig, {
+      buildOptions,
+      configuration: options.buildTarget.split(":")[2],
+    });
+  }
 
   return webpackConfig;
 };
