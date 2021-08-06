@@ -5,8 +5,8 @@
   "watchDirs": [
     "./"
   ],
-  "rootDir": "apps/marketplace/src",
+  "rootDir": "../../../../apps/marketplace/src",
   "webpack": {
-    "overridePath": "../../../cosmos.webpack.config.js"
+    "overridePath": "../../../tools/executors/cosmos/config/cosmos.webpack.config.js"
   }
 }

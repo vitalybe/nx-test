@@ -10,11 +10,8 @@ module.exports = (storybookWebpackConfig, env) => {
   const sourceRoot = context.workspace.projects[context.projectName].sourceRoot;
 
   const target = parseTargetString(options.buildTarget);
-  const buildOptions2 = readTargetOptions(target, context);
+  const buildOptions = normalizeWebBuildOptions(readTargetOptions(target, context), context.root, sourceRoot);
+  const webpackConfig = getDevServerConfig(context.root, sourceRoot, buildOptions, options);
 
-  const buildOptions = normalizeWebBuildOptions(buildOptions2, context.root, sourceRoot);
-  let webpackConfig = getDevServerConfig(context.root, sourceRoot, buildOptions, options);
-
-  console.log(webpackConfig);
-  process.exit(0);
+  return webpackConfig;
 };
