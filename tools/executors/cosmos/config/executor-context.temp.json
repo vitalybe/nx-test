@@ -3,7 +3,7 @@
   "target": {
     "executor": "./tools/executors/cosmos:cosmos",
     "options": {
-      "textToEcho": "Hello World"
+      "buildTarget": "marketplace:build"
     }
   },
   "workspace": {
@@ -144,7 +144,7 @@
           "cosmos": {
             "executor": "./tools/executors/cosmos:cosmos",
             "options": {
-              "textToEcho": "Hello World"
+              "buildTarget": "marketplace:build"
             }
           },
           "z-internal-validate": {
