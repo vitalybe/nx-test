@@ -8,7 +8,8 @@ module.exports = (config, context) => {
   nrwlConfig(config);
 
   // TODO: Not sure what it is for
-  config.resolve.alias["@qwilt/common"] = path.join(context.buildOptions.root, "libs/common/src");
+  // config.resolve.alias["@qwilt/common"] = path.join(context.buildOptions.root, "libs/common/src");
+  config.resolve.alias["@qwilt/common"] = "/Users/vitalyb/git-temp/nx-test/libs/common/src";
   config.plugins.push(
     new webpack.ProvidePlugin({
       process: "process/browser",
