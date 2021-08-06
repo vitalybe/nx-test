@@ -36,7 +36,9 @@ export default async function cosmosExecutor(options: CosmosExecutorOptions, con
     },
   };
 
-  const cosmosTempConfig = __dirname + "/config/temp/cosmos.temp-config.json";
+  const tempConfigDirectory = path.join(__dirname, "/config/temp/");
+  const cosmosTempConfig = path.join(tempConfigDirectory, "cosmos.temp-config.json");
+  shelljs.mkdir(tempConfigDirectory);
   shelljs.ShellString(JSON.stringify(cosmosConfig, null, 2)).to(cosmosTempConfig);
   shelljs.ShellString(JSON.stringify(context, null, 2)).to(__dirname + "/config/temp/executor-context.temp.json");
   shelljs.ShellString(JSON.stringify(options, null, 2)).to(__dirname + "/config/temp/executor-options.temp.json");

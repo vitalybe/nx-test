@@ -40,3 +40,4 @@ Thumbs.db
 **/certificates/*.pem
 .env.local
 **/.idea/workspace.xml
+tools/executors/cosmos/config/temp/
