@@ -120,6 +120,12 @@
             "command": "yarn run tsc -b apps/marketplace/tsconfig.app.json --incremental"
           }
         },
+        "echo": {
+          "executor": "./tools/executors/echo:echo",
+          "options": {
+            "textToEcho": "Hello World"
+          }
+        },
         "z-internal-validate": {
           "executor": "@nrwl/workspace:run-commands",
           "options": {
