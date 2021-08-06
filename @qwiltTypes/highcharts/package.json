@@ -1,0 +1,51 @@
+{
+    "name": "@types/highcharts",
+    "version": "5.0.39",
+    "description": "TypeScript definitions for Highcharts",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Damiano Gambarotto",
+            "url": "https://github.com/damianog",
+            "githubUsername": "damianog"
+        },
+        {
+            "name": "Dan Lewi Harkestad",
+            "url": "https://github.com/baltie",
+            "githubUsername": "baltie"
+        },
+        {
+            "name": "Albert Ozimek",
+            "url": "https://github.com/AlbertOzimek",
+            "githubUsername": "AlbertOzimek"
+        },
+        {
+            "name": "Juliën Hanssens",
+            "url": "https://github.com/hanssens",
+            "githubUsername": "hanssens"
+        },
+        {
+            "name": "Johns Gresham",
+            "url": "https://github.com/jgresham",
+            "githubUsername": "jgresham"
+        },
+        {
+            "name": "ArunkeshavaReddy Sankaramaddi",
+            "url": "https://github.com/Arunkeshavareddy",
+            "githubUsername": "Arunkeshavareddy"
+        }
+    ],
+    "main": "",
+    "types": "index",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/highcharts"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/geojson": "*"
+    },
+    "typesPublisherContentHash": "e1e5454c876feb7e65d7fdc05f74952d82ecf0871dc29cf3af3c7650f1c8877e",
+    "typeScriptVersion": "2.3"
+}

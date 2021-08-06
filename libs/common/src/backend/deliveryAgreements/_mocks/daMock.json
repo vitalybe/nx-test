@@ -1,0 +1,1874 @@
+[
+  {
+    "daId": "605c41322c344a0001f3515b",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 60,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkVerizonFiOS",
+      "uiName": "Verizon FiOS",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "verizon-fios",
+      "uiName": "Verizon"
+    }
+  },
+  {
+    "daId": "605c41322c344a0001f3515a",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 2044,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnEmea_cnUK_nwkBritishTelecom",
+      "uiName": "British Telecom",
+      "country": "EMEA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "british-telecom",
+      "uiName": "British Telecom"
+    }
+  },
+  {
+    "daId": "605c41322c344a0001f35158",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 63,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkVerizonWireless",
+      "uiName": "Verizon Wireless",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "verizon-wireless",
+      "uiName": "Verizon Wireless"
+    }
+  },
+  {
+    "daId": "605c41322c344a0001f3515d",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 48,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkMediacom",
+      "uiName": "Mediacom",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "mediacom",
+      "uiName": "Mediacom"
+    }
+  },
+  {
+    "daId": "605c41322c344a0001f3515c",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 113,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnPhilippines_nwkPLDT",
+      "uiName": "PLDT",
+      "country": "Philippines"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c41322c344a0001f35159",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 72,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnEmea_cnItaly_nwkTelecomItalia",
+      "uiName": "Telecom Italia",
+      "country": "EMEA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "telecom-italia",
+      "uiName": "Telecom Italia"
+    }
+  },
+  {
+    "daId": "605c41682c344a0001f35160",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 128,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkIntech",
+      "uiName": "Intech",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c41682c344a0001f3515e",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 124,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkSpectranet",
+      "uiName": "Spectranet",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c41682c344a0001f3515f",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 108,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkSonet",
+      "uiName": "Sonet",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c41682c344a0001f35162",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 2069,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnHaiti_nwkAccess-Haiti",
+      "uiName": "Access-Haiti",
+      "country": "Haiti"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c41682c344a0001f35161",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 2216,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnThailand_nwkAIS",
+      "uiName": "AIS",
+      "country": "Thailand"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c41692c344a0001f35163",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 2040,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnPuertoRico_nwkSpeedynet",
+      "uiName": "Speedynet",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c41692c344a0001f35164",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 91,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnPeru_nwkTelefonicaPeru",
+      "uiName": "Telefonica Peru",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c41692c344a0001f35165",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 126,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnSingapore_nwkViewqwest",
+      "uiName": "Viewqwest",
+      "country": "Singapore"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c41692c344a0001f35166",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 111,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnThailand_nwkCAT",
+      "uiName": "CAT",
+      "country": "Thailand"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f35167",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 52,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkCharter",
+      "uiName": "Charter",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f35168",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 94,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkCTBC",
+      "uiName": "CTBC",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f35169",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 2620,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnKorea_nwkHCN",
+      "uiName": "HCN",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f3516a",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 86,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkGVT",
+      "uiName": "GVT",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f3516c",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 127,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnNewZealand_nwkCallPlus",
+      "uiName": "CallPlus",
+      "country": "New Zealand"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f3516b",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 110,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkDMG",
+      "uiName": "DMG",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f3516d",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 102,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkKBRO",
+      "uiName": "KBRO",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "kbro",
+      "uiName": "KBRO"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f3516e",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 1564,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkNetPlus",
+      "uiName": "NetPlus",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f3516f",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 105,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkTINP",
+      "uiName": "TINP",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42182c344a0001f35170",
+    "dsMetadataId": "6040e9e2295b130001d47bf4",
+    "networkId": 1691,
+    "dsMetadata": {
+      "reportingName": "steam-software-open-caching",
+      "contentGroupId": 5010,
+      "userFriendlyName": "Steam Software Delivery Service",
+      "type": "software_download"
+    },
+    "network": {
+      "uniqueName": "rgnJapan_cnJapan_nwkTCSJ",
+      "uiName": "TCSJ",
+      "country": "Japan"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f35171",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 2069,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnHaiti_nwkAccess-Haiti",
+      "uiName": "Access-Haiti",
+      "country": "Haiti"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f35172",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 2216,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnThailand_nwkAIS",
+      "uiName": "AIS",
+      "country": "Thailand"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f35173",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 127,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnNewZealand_nwkCallPlus",
+      "uiName": "CallPlus",
+      "country": "New Zealand"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f35174",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 111,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnThailand_nwkCAT",
+      "uiName": "CAT",
+      "country": "Thailand"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f35175",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 128,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkIntech",
+      "uiName": "Intech",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f35176",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 48,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkMediacom",
+      "uiName": "Mediacom",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "mediacom",
+      "uiName": "Mediacom"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f35177",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 108,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkSonet",
+      "uiName": "Sonet",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f35178",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 126,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnSingapore_nwkViewqwest",
+      "uiName": "Viewqwest",
+      "country": "Singapore"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f35179",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 1564,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkNetPlus",
+      "uiName": "NetPlus",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c7ab8eb79560001375873",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 110,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkDMG",
+      "uiName": "DMG",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c42bd2c344a0001f3517a",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 2040,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnPuertoRico_nwkSpeedynet",
+      "uiName": "Speedynet",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f3517b",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 2044,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnEmea_cnUK_nwkBritishTelecom",
+      "uiName": "British Telecom",
+      "country": "EMEA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "british-telecom",
+      "uiName": "British Telecom"
+    }
+  },
+  {
+    "daId": "605c431f2c344a0001f35186",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 63,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkVerizonWireless",
+      "uiName": "Verizon Wireless",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "verizon-wireless",
+      "uiName": "Verizon Wireless"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f3517c",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 52,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkCharter",
+      "uiName": "Charter",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f3517d",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 94,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkCTBC",
+      "uiName": "CTBC",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f3517e",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 110,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkDMG",
+      "uiName": "DMG",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f3517f",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 86,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkGVT",
+      "uiName": "GVT",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f35181",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 91,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnPeru_nwkTelefonicaPeru",
+      "uiName": "Telefonica Peru",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f35183",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 72,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnEmea_cnItaly_nwkTelecomItalia",
+      "uiName": "Telecom Italia",
+      "country": "EMEA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "telecom-italia",
+      "uiName": "Telecom Italia"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f35182",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 124,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkSpectranet",
+      "uiName": "Spectranet",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f35184",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 60,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkVerizonFiOS",
+      "uiName": "Verizon FiOS",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    },
+    "serviceProvider": {
+      "orgId": "verizon-fios",
+      "uiName": "Verizon"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f35180",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 2620,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnKorea_nwkHCN",
+      "uiName": "HCN",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c431e2c344a0001f35185",
+    "dsMetadataId": "6040ebee59305700018bb135",
+    "networkId": 113,
+    "dsMetadata": {
+      "reportingName": "steam-broadcasting-delivery-service",
+      "contentGroupId": 5011,
+      "userFriendlyName": "Steam Broadcasting Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnPhilippines_nwkPLDT",
+      "uiName": "PLDT",
+      "country": "Philippines"
+    },
+    "contentPublisher": {
+      "orgId": "valve",
+      "uiName": "Valve"
+    }
+  },
+  {
+    "daId": "605c7abbeb79560001375874",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 2620,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnKorea_nwkHCN",
+      "uiName": "HCN",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c7abceb79560001375875",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 48,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkMediacom",
+      "uiName": "Mediacom",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    },
+    "serviceProvider": {
+      "orgId": "mediacom",
+      "uiName": "Mediacom"
+    }
+  },
+  {
+    "daId": "605c7abceb79560001375876",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 102,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkKBRO",
+      "uiName": "KBRO",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    },
+    "serviceProvider": {
+      "orgId": "kbro",
+      "uiName": "KBRO"
+    }
+  },
+  {
+    "daId": "605c7abeeb7956000137587b",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 128,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkIntech",
+      "uiName": "Intech",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c7abfeb7956000137587c",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 68,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnEmea_cnAustria_nwkHallAG",
+      "uiName": "Hall AG",
+      "country": "EMEA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c7abfeb7956000137587d",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 2216,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnThailand_nwkAIS",
+      "uiName": "AIS",
+      "country": "Thailand"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c7abdeb79560001375877",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 72,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnEmea_cnItaly_nwkTelecomItalia",
+      "uiName": "Telecom Italia",
+      "country": "EMEA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    },
+    "serviceProvider": {
+      "orgId": "telecom-italia",
+      "uiName": "Telecom Italia"
+    }
+  },
+  {
+    "daId": "605c7abeeb79560001375879",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 60,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkVerizonFiOS",
+      "uiName": "Verizon FiOS",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    },
+    "serviceProvider": {
+      "orgId": "verizon-fios",
+      "uiName": "Verizon"
+    }
+  },
+  {
+    "daId": "605c7abdeb79560001375878",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 1564,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkNetPlus",
+      "uiName": "NetPlus",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c7abfeb7956000137587e",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 127,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnNewZealand_nwkCallPlus",
+      "uiName": "CallPlus",
+      "country": "New Zealand"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c7abeeb7956000137587a",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 63,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkVerizonWireless",
+      "uiName": "Verizon Wireless",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    },
+    "serviceProvider": {
+      "orgId": "verizon-wireless",
+      "uiName": "Verizon Wireless"
+    }
+  },
+  {
+    "daId": "605c8ff6eb7956000137587f",
+    "dsMetadataId": "6045f69b59305700018bb14b",
+    "networkId": 1691,
+    "dsMetadata": {
+      "reportingName": "dailymotion-delivery-service",
+      "contentGroupId": 5070,
+      "userFriendlyName": "Dailymotion Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnJapan_cnJapan_nwkTCSJ",
+      "uiName": "TCSJ",
+      "country": "Japan"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c9132eb79560001375880",
+    "dsMetadataId": "6045f78d295b130001d47c09",
+    "networkId": 2620,
+    "dsMetadata": {
+      "reportingName": "dailymotion-live-delivery-service",
+      "contentGroupId": 5071,
+      "userFriendlyName": "Dailymotion-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnKorea_nwkHCN",
+      "uiName": "HCN",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c916ceb79560001375881",
+    "dsMetadataId": "6045f78d295b130001d47c09",
+    "networkId": 127,
+    "dsMetadata": {
+      "reportingName": "dailymotion-live-delivery-service",
+      "contentGroupId": 5071,
+      "userFriendlyName": "Dailymotion-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnNewZealand_nwkCallPlus",
+      "uiName": "CallPlus",
+      "country": "New Zealand"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c916ceb79560001375882",
+    "dsMetadataId": "6045f78d295b130001d47c09",
+    "networkId": 2216,
+    "dsMetadata": {
+      "reportingName": "dailymotion-live-delivery-service",
+      "contentGroupId": 5071,
+      "userFriendlyName": "Dailymotion-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnThailand_nwkAIS",
+      "uiName": "AIS",
+      "country": "Thailand"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c916deb79560001375883",
+    "dsMetadataId": "6045f78d295b130001d47c09",
+    "networkId": 110,
+    "dsMetadata": {
+      "reportingName": "dailymotion-live-delivery-service",
+      "contentGroupId": 5071,
+      "userFriendlyName": "Dailymotion-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkDMG",
+      "uiName": "DMG",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c916deb79560001375884",
+    "dsMetadataId": "6045f78d295b130001d47c09",
+    "networkId": 128,
+    "dsMetadata": {
+      "reportingName": "dailymotion-live-delivery-service",
+      "contentGroupId": 5071,
+      "userFriendlyName": "Dailymotion-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkIntech",
+      "uiName": "Intech",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c916deb79560001375885",
+    "dsMetadataId": "6045f78d295b130001d47c09",
+    "networkId": 1564,
+    "dsMetadata": {
+      "reportingName": "dailymotion-live-delivery-service",
+      "contentGroupId": 5071,
+      "userFriendlyName": "Dailymotion-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkNetPlus",
+      "uiName": "NetPlus",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c916deb79560001375886",
+    "dsMetadataId": "6045f78d295b130001d47c09",
+    "networkId": 108,
+    "dsMetadata": {
+      "reportingName": "dailymotion-live-delivery-service",
+      "contentGroupId": 5071,
+      "userFriendlyName": "Dailymotion-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnNorthAsia_cnTaiwan_nwkSonet",
+      "uiName": "Sonet",
+      "country": "North ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    }
+  },
+  {
+    "daId": "605c916deb79560001375887",
+    "dsMetadataId": "6045f78d295b130001d47c09",
+    "networkId": 72,
+    "dsMetadata": {
+      "reportingName": "dailymotion-live-delivery-service",
+      "contentGroupId": 5071,
+      "userFriendlyName": "Dailymotion-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnEmea_cnItaly_nwkTelecomItalia",
+      "uiName": "Telecom Italia",
+      "country": "EMEA"
+    },
+    "contentPublisher": {
+      "orgId": "dailymotion",
+      "uiName": "Dailymotion"
+    },
+    "serviceProvider": {
+      "orgId": "telecom-italia",
+      "uiName": "Telecom Italia"
+    }
+  },
+  {
+    "daId": "605c91d0eb79560001375888",
+    "dsMetadataId": "604f0c5259305700018bb169",
+    "networkId": 2314,
+    "dsMetadata": {
+      "reportingName": "wynk-live-delivery-service",
+      "contentGroupId": 5230,
+      "userFriendlyName": "Wynk-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkAirtel",
+      "uiName": "Airtel",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "wynk",
+      "uiName": "Wynk"
+    }
+  },
+  {
+    "daId": "605c91eaeb79560001375889",
+    "dsMetadataId": "60460dc5295b130001d47c0f",
+    "networkId": 48,
+    "dsMetadata": {
+      "reportingName": "cbs-live-delivery-service",
+      "contentGroupId": 5141,
+      "userFriendlyName": "CBS-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkMediacom",
+      "uiName": "Mediacom",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "cbs",
+      "uiName": "CBS"
+    },
+    "serviceProvider": {
+      "orgId": "mediacom",
+      "uiName": "Mediacom"
+    }
+  },
+  {
+    "daId": "605c9203eb7956000137588a",
+    "dsMetadataId": "6046118959305700018bb152",
+    "networkId": 2314,
+    "dsMetadata": {
+      "reportingName": "hotstar-vod-delivery-service",
+      "contentGroupId": 5220,
+      "userFriendlyName": "Hotstar Vod Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkAirtel",
+      "uiName": "Airtel",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "hotstar",
+      "uiName": "Hotstar"
+    }
+  },
+  {
+    "daId": "605c922beb7956000137588b",
+    "dsMetadataId": "602a308759305700018bb0ad",
+    "networkId": 2044,
+    "dsMetadata": {
+      "reportingName": "disney-plus-vod-delivery-service",
+      "contentGroupId": 5160,
+      "userFriendlyName": "Disney Plus Vod Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnEmea_cnUK_nwkBritishTelecom",
+      "uiName": "British Telecom",
+      "country": "EMEA"
+    },
+    "contentPublisher": {
+      "orgId": "disney",
+      "uiName": "Disney"
+    },
+    "serviceProvider": {
+      "orgId": "british-telecom",
+      "uiName": "British Telecom"
+    }
+  },
+  {
+    "daId": "605c922beb7956000137588c",
+    "dsMetadataId": "602a308759305700018bb0ad",
+    "networkId": 48,
+    "dsMetadata": {
+      "reportingName": "disney-plus-vod-delivery-service",
+      "contentGroupId": 5160,
+      "userFriendlyName": "Disney Plus Vod Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkMediacom",
+      "uiName": "Mediacom",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "disney",
+      "uiName": "Disney"
+    },
+    "serviceProvider": {
+      "orgId": "mediacom",
+      "uiName": "Mediacom"
+    }
+  },
+  {
+    "daId": "605c922ceb7956000137588d",
+    "dsMetadataId": "602a308759305700018bb0ad",
+    "networkId": 2758,
+    "dsMetadata": {
+      "reportingName": "disney-plus-vod-delivery-service",
+      "contentGroupId": 5160,
+      "userFriendlyName": "Disney Plus Vod Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnArgentina_nwkTelecomArgentina",
+      "uiName": "Telecom Argentina",
+      "country": "Argentina"
+    },
+    "contentPublisher": {
+      "orgId": "disney",
+      "uiName": "Disney"
+    }
+  },
+  {
+    "daId": "605c922ceb7956000137588e",
+    "dsMetadataId": "602a308759305700018bb0ad",
+    "networkId": 1621,
+    "dsMetadata": {
+      "reportingName": "disney-plus-vod-delivery-service",
+      "contentGroupId": 5160,
+      "userFriendlyName": "Disney Plus Vod Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkTIM-Brazil",
+      "uiName": "TIM-Brazil",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "disney",
+      "uiName": "Disney"
+    },
+    "serviceProvider": {
+      "orgId": "tim-brazil",
+      "uiName": "TIM Brazil"
+    }
+  },
+  {
+    "daId": "605c922ceb7956000137588f",
+    "dsMetadataId": "602a308759305700018bb0ad",
+    "networkId": 60,
+    "dsMetadata": {
+      "reportingName": "disney-plus-vod-delivery-service",
+      "contentGroupId": 5160,
+      "userFriendlyName": "Disney Plus Vod Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkVerizonFiOS",
+      "uiName": "Verizon FiOS",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "disney",
+      "uiName": "Disney"
+    },
+    "serviceProvider": {
+      "orgId": "verizon-fios",
+      "uiName": "Verizon"
+    }
+  },
+  {
+    "daId": "605c9247eb79560001375890",
+    "dsMetadataId": "604f042a295b130001d47c25",
+    "networkId": 60,
+    "dsMetadata": {
+      "reportingName": "opencachehub-open-caching",
+      "contentGroupId": 5000,
+      "userFriendlyName": "Opencachehub Open Caching",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkVerizonFiOS",
+      "uiName": "Verizon FiOS",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "qwilt",
+      "uiName": null
+    },
+    "serviceProvider": {
+      "orgId": "verizon-fios",
+      "uiName": "Verizon"
+    }
+  },
+  {
+    "daId": "605c9247eb79560001375891",
+    "dsMetadataId": "604f042a295b130001d47c25",
+    "networkId": 63,
+    "dsMetadata": {
+      "reportingName": "opencachehub-open-caching",
+      "contentGroupId": 5000,
+      "userFriendlyName": "Opencachehub Open Caching",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkVerizonWireless",
+      "uiName": "Verizon Wireless",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "qwilt",
+      "uiName": null
+    },
+    "serviceProvider": {
+      "orgId": "verizon-wireless",
+      "uiName": "Verizon Wireless"
+    }
+  },
+  {
+    "daId": "605c9278eb79560001375893",
+    "dsMetadataId": "604f052359305700018bb168",
+    "networkId": 2314,
+    "dsMetadata": {
+      "reportingName": "opencachehub-delivery-service",
+      "contentGroupId": 5000,
+      "userFriendlyName": "Opencachehub Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkAirtel",
+      "uiName": "Airtel",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "qwilt",
+      "uiName": null
+    }
+  },
+  {
+    "daId": "605c9278eb79560001375892",
+    "dsMetadataId": "604f052359305700018bb168",
+    "networkId": 2216,
+    "dsMetadata": {
+      "reportingName": "opencachehub-delivery-service",
+      "contentGroupId": 5000,
+      "userFriendlyName": "Opencachehub Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnThailand_nwkAIS",
+      "uiName": "AIS",
+      "country": "Thailand"
+    },
+    "contentPublisher": {
+      "orgId": "qwilt",
+      "uiName": null
+    }
+  },
+  {
+    "daId": "605c9279eb79560001375894",
+    "dsMetadataId": "604f052359305700018bb168",
+    "networkId": 48,
+    "dsMetadata": {
+      "reportingName": "opencachehub-delivery-service",
+      "contentGroupId": 5000,
+      "userFriendlyName": "Opencachehub Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnAmerica_cnUsa_nwkMediacom",
+      "uiName": "Mediacom",
+      "country": "America"
+    },
+    "contentPublisher": {
+      "orgId": "qwilt",
+      "uiName": null
+    },
+    "serviceProvider": {
+      "orgId": "mediacom",
+      "uiName": "Mediacom"
+    }
+  },
+  {
+    "daId": "605c92e6eb79560001375895",
+    "dsMetadataId": "604f0d2d59305700018bb16b",
+    "networkId": 111,
+    "dsMetadata": {
+      "reportingName": "tune.pk-open-caching",
+      "contentGroupId": 5040,
+      "userFriendlyName": "Tune.pk Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnThailand_nwkCAT",
+      "uiName": "CAT",
+      "country": "Thailand"
+    },
+    "contentPublisher": {
+      "orgId": "tune-pk",
+      "uiName": "TunePk"
+    }
+  },
+  {
+    "daId": "605c9334eb79560001375896",
+    "dsMetadataId": "604f0cf259305700018bb16a",
+    "networkId": 2161,
+    "dsMetadata": {
+      "reportingName": "hungama-delivery-service",
+      "contentGroupId": 5190,
+      "userFriendlyName": "Hungama Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnSouthAsia_cnIndia_nwkVodafoneIndia",
+      "uiName": "Vodafone India",
+      "country": "South ASIA"
+    },
+    "contentPublisher": {
+      "orgId": "qwilt",
+      "uiName": null
+    }
+  },
+  {
+    "daId": "605c9352eb79560001375897",
+    "dsMetadataId": "60461104295b130001d47c11",
+    "networkId": 86,
+    "dsMetadata": {
+      "reportingName": "globoplay-open-caching",
+      "contentGroupId": 5030,
+      "userFriendlyName": "Globoplay Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkGVT",
+      "uiName": "GVT",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "globo",
+      "uiName": "Globo"
+    }
+  },
+  {
+    "daId": "605c9371eb79560001375898",
+    "dsMetadataId": "604610d059305700018bb150",
+    "networkId": 86,
+    "dsMetadata": {
+      "reportingName": "globo-live-delivery-service",
+      "contentGroupId": 5031,
+      "userFriendlyName": "Globo-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkGVT",
+      "uiName": "GVT",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "globo",
+      "uiName": "Globo"
+    }
+  },
+  {
+    "daId": "605c938eeb79560001375899",
+    "dsMetadataId": "6045fba959305700018bb14c",
+    "networkId": 2352,
+    "dsMetadata": {
+      "reportingName": "claro-tv-vod-delivery-service",
+      "contentGroupId": 5280,
+      "userFriendlyName": "Claro-tv-VoD Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkClaroBrazil",
+      "uiName": "Claro Brazil",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "claro-tv",
+      "uiName": "Claro-tv"
+    },
+    "serviceProvider": {
+      "orgId": "claro-brazil",
+      "uiName": "Claro Brazil"
+    }
+  },
+  {
+    "daId": "605c93a7eb7956000137589a",
+    "dsMetadataId": "6045fc1b59305700018bb14d",
+    "networkId": 2352,
+    "dsMetadata": {
+      "reportingName": "claro-tv-live-delivery-service",
+      "contentGroupId": 5281,
+      "userFriendlyName": "Claro-tv-Live Delivery Service",
+      "type": "live"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkClaroBrazil",
+      "uiName": "Claro Brazil",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "claro-tv",
+      "uiName": "Claro-tv"
+    },
+    "serviceProvider": {
+      "orgId": "claro-brazil",
+      "uiName": "Claro Brazil"
+    }
+  },
+  {
+    "daId": "605c93c2eb7956000137589b",
+    "dsMetadataId": "6045fc6c295b130001d47c0c",
+    "networkId": 2352,
+    "dsMetadata": {
+      "reportingName": "claro-tv-startover-delivery-service",
+      "contentGroupId": 5282,
+      "userFriendlyName": "Claro-tv-Startover Delivery Service",
+      "type": "vod"
+    },
+    "network": {
+      "uniqueName": "rgnLatam_cnBrazil_nwkClaroBrazil",
+      "uiName": "Claro Brazil",
+      "country": "LATAM"
+    },
+    "contentPublisher": {
+      "orgId": "claro-tv",
+      "uiName": "Claro-tv"
+    },
+    "serviceProvider": {
+      "orgId": "claro-brazil",
+      "uiName": "Claro Brazil"
+    }
+  }
+]

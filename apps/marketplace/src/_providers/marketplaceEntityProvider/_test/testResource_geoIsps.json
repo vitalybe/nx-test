@@ -1,0 +1,31 @@
+{
+  "isps": [
+    {
+      "id": "isp_119",
+      "displayName": "RedFoxCorp",
+      "autonomousSystems": [
+        {
+          "asn": "38298",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "isp_124",
+      "displayName": "Spectranet",
+      "autonomousSystems": [
+        {
+          "asn": "10029",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "debugSection": {
+    "fields": {
+      "geoLastUpdated": "2018-12-11 06:32:03",
+      "footprintLastUpdated": "2018-12-11 12:53:02",
+      "qnDeploymentLastUpdated": "2018-12-11 12:27:48"
+    }
+  }
+}

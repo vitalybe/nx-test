@@ -1,0 +1,46 @@
+import { loggerCreator } from "../utils/logger";
+import { CommonUrlParams } from "../urlParams/commonUrlParams";
+import { TimezoneUtil } from "../components/timezonePicker/_utils/timezoneUtil";
+import { computed, observable } from "mobx";
+import { DateTime, Zone } from "luxon";
+import { UrlStore } from "./urlStore/urlStore";
+
+const moduleLogger = loggerCreator("__filename");
+
+export class TimezoneStore {
+  private constructor() {}
+
+  @observable private _zone: Zone | undefined;
+
+  @computed
+  get zone() {
+    let currentZone = this._zone;
+    if (!currentZone) {
+      const timezoneParam = UrlStore.getInstance().getParam(CommonUrlParams.timezone);
+
+      if (timezoneParam) {
+        currentZone = TimezoneUtil.getZoneMetadata(timezoneParam).zone;
+      } else {
+        currentZone = DateTime.local().zone;
+      }
+    }
+
+    return currentZone;
+  }
+
+  set zone(value: Zone) {
+    UrlStore.getInstance().setParam(CommonUrlParams.timezone, value.name);
+    this._zone = value;
+  }
+
+  //region [[ Singleton ]]
+  private static _instance: TimezoneStore | undefined;
+  static get instance(): TimezoneStore {
+    if (!this._instance) {
+      this._instance = new TimezoneStore();
+    }
+
+    return this._instance;
+  }
+  //endregion
+}

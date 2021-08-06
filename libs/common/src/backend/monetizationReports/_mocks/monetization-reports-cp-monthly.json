@@ -1,0 +1,239 @@
+{
+  "_self": {
+    "link": "https://monetization-reports.cqloud.com/api/1/reports/cp/monthly?month=02-2021"
+  },
+  "services": [
+    {
+      "service": "music",
+      "charge": 165000,
+      "volume": 255000000000000,
+      "pricePerMB": 0.000647059,
+      "peakDelivery": 42000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 13000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 78,
+      "peakCETimeEpoch": 1613772000
+    },
+    {
+      "service": "software_download",
+      "charge": 95000,
+      "volume": 175000000000000,
+      "pricePerMB": 0.878095238,
+      "peakDelivery": 4800000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 4800000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 67,
+      "peakCETimeEpoch": 1613772000
+    },
+    {
+      "service": "live",
+      "charge": 31000,
+      "volume": 42000000000000,
+      "pricePerMB": 0.000647059,
+      "peakDelivery": 56000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 56000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 82,
+      "peakCETimeEpoch": 1613772000
+    },
+    {
+      "service": "vod",
+      "charge": 44000,
+      "volume": 62000000000000,
+      "pricePerMB": 0.709677419,
+      "peakDelivery": 34000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 34000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 95,
+      "peakCETimeEpoch": 1613772000
+    }
+  ],
+  "isps": [
+    {
+      "isp": "british-telecom",
+      "charge": 31000,
+      "volume": 42000000000000,
+      "pricePerMB": 0.000647059,
+      "peakDelivery": 42000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 42000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 84,
+      "peakCETimeEpoch": 1613772000,
+      "services": [
+        {
+          "service": "live",
+          "charge": 31000,
+          "volume": 42000000000000,
+          "pricePerMB": 0.000647059,
+          "peakDelivery": 42000000000000,
+          "peakDeliveryTimeEpoch": 1613772000,
+          "peakBw": 42000000000000,
+          "peakBwTimeEpoch": 1613772000,
+          "peakCE": 85,
+          "peakCETimeEpoch": 1613772000
+        }
+      ]
+    },
+    {
+      "isp": "mediacom",
+      "charge": 55000,
+      "volume": 85000000000000,
+      "pricePerMB": 0.000647059,
+      "peakDelivery": 42000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 13000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 78,
+      "peakCETimeEpoch": 1613772000,
+      "services": [
+        {
+          "service": "music",
+          "charge": 55000,
+          "volume": 85000000000000,
+          "pricePerMB": 0.647059,
+          "peakDelivery": 42000000000000,
+          "peakDeliveryTimeEpoch": 1613772000,
+          "peakBw": 13000000000000,
+          "peakBwTimeEpoch": 1613772000,
+          "peakCE": 78,
+          "peakCETimeEpoch": 1613772000
+        }
+      ]
+    },
+    {
+      "isp": "charter-uber",
+      "charge": 55000,
+      "volume": 85000000000000,
+      "pricePerMB": 0.000647059,
+      "peakDelivery": 42000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 13000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 78,
+      "peakCETimeEpoch": 1613772000,
+      "services": [
+        {
+          "service": "software_download",
+          "charge": 55000,
+          "volume": 85000000000000,
+          "pricePerMB": 0.647059,
+          "peakDelivery": 42000000000000,
+          "peakDeliveryTimeEpoch": 1613772000,
+          "peakBw": 13000000000000,
+          "peakBwTimeEpoch": 1613772000,
+          "peakCE": 78,
+          "peakCETimeEpoch": 1613772000
+        }
+      ]
+    },
+    {
+      "isp": "verizon-fios",
+      "charge": 55000,
+      "volume": 85000000000000,
+      "pricePerMB": 0.000647059,
+      "peakDelivery": 42000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 13000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 78,
+      "peakCETimeEpoch": 1613772000,
+      "services": [
+        {
+          "service": "music",
+          "charge": 55000,
+          "volume": 85000000000000,
+          "pricePerMB": 0.647059,
+          "peakDelivery": 42000000000000,
+          "peakDeliveryTimeEpoch": 1613772000,
+          "peakBw": 13000000000000,
+          "peakBwTimeEpoch": 1613772000,
+          "peakCE": 78,
+          "peakCETimeEpoch": 1613772000
+        }
+      ]
+    },
+    {
+      "isp": "verizon-wireless",
+      "charge": 55000,
+      "volume": 85000000000000,
+      "pricePerMB": 0.000647059,
+      "peakDelivery": 42000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 13000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 78,
+      "peakCETimeEpoch": 1613772000,
+      "services": [
+        {
+          "service": "music",
+          "charge": 55000,
+          "volume": 85000000000000,
+          "pricePerMB": 0.647059,
+          "peakDelivery": 42000000000000,
+          "peakDeliveryTimeEpoch": 1613772000,
+          "peakBw": 13000000000000,
+          "peakBwTimeEpoch": 1613772000,
+          "peakCE": 78,
+          "peakCETimeEpoch": 1613772000
+        }
+      ]
+    },
+    {
+      "isp": "tim-brazil",
+      "charge": 22000,
+      "volume": 31000000000000,
+      "pricePerMB": 0.000647059,
+      "peakDelivery": 31000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 31000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 86,
+      "peakCETimeEpoch": 1613772000,
+      "services": [
+        {
+          "service": "vod",
+          "charge": 22000,
+          "volume": 31000000000000,
+          "pricePerMB": 0.709677419,
+          "peakDelivery": 31000000000000,
+          "peakDeliveryTimeEpoch": 1613772000,
+          "peakBw": 31000000000000,
+          "peakBwTimeEpoch": 1613772000,
+          "peakCE": 87,
+          "peakCETimeEpoch": 1613772000
+        }
+      ]
+    },
+    {
+      "isp": "telecom-italia",
+      "charge": 22000,
+      "volume": 31000000000000,
+      "pricePerMB": 0.000647059,
+      "peakDelivery": 31000000000000,
+      "peakDeliveryTimeEpoch": 1613772000,
+      "peakBw": 31000000000000,
+      "peakBwTimeEpoch": 1613772000,
+      "peakCE": 86,
+      "peakCETimeEpoch": 1613772000,
+      "services": [
+        {
+          "service": "vod",
+          "charge": 22000,
+          "volume": 31000000000000,
+          "pricePerMB": 0.709677419,
+          "peakDelivery": 31000000000000,
+          "peakDeliveryTimeEpoch": 1613772000,
+          "peakBw": 31000000000000,
+          "peakBwTimeEpoch": 1613772000,
+          "peakCE": 87,
+          "peakCETimeEpoch": 1613772000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "_self": {
+    "link": "N/A"
+  },
+  "projects": [
+    {
+      "reportId": "bt-12-2020",
+      "cps": [
+        {
+          "cp": "disney",
+          "totalRevenue": 52000.0,
+          "totalRevenueFromProjectStart": 101400.0,
+          "volumeFromProjectStart": 78000000000000,
+          "volume": 39000000000000,
+          "services": [
+            {
+              "service": "software_download",
+              "volume": 26000000000000,
+              "volumeFromProjectStart": 52000000000000,
+              "revenue": 35534,
+              "revenueFromProjectStart": 65868,
+              "rate": 1.266615385
+            },
+            {
+              "service": "live",
+              "volume": 13000000000000,
+              "volumeFromProjectStart": 26000000000000,
+              "revenue": 16466,
+              "revenueFromProjectStart": 32932,
+              "rate": 1.266615385
+            },
+            {
+              "service": "music",
+              "volume": 26000000000000,
+              "volumeFromProjectStart": 52000000000000,
+              "revenue": 32934,
+              "revenueFromProjectStart": 65868,
+              "rate": 1.266615385
+            }
+          ]
+        },
+        {
+          "cp": "hotstar",
+          "totalRevenue": 40700.0,
+          "totalRevenueFromProjectStart": 90100.0,
+          "volumeFromProjectStart": 78000000000000,
+          "volume": 39000000000000,
+          "services": [
+            {
+              "service": "live",
+              "volume": 13000000000000,
+              "volumeFromProjectStart": 26000000000000,
+              "revenue": 7766,
+              "revenueFromProjectStart": 32932,
+              "rate": 1.266615385
+            },
+
+            {
+              "service": "vod",
+              "volume": 26000000000000,
+              "volumeFromProjectStart": 52000000000000,
+              "revenue": 32934,
+              "revenueFromProjectStart": 65868,
+              "rate": 1.266615385
+            },
+            {
+              "service": "music",
+              "volume": 26000000000000,
+              "volumeFromProjectStart": 52000000000000,
+              "revenue": 32934,
+              "revenueFromProjectStart": 65868,
+              "rate": 1.266615385
+            }
+          ]
+        },
+        {
+          "cp": "dazn",
+          "totalRevenue": 49400.0,
+          "totalRevenueFromProjectStart": 98800.0,
+          "volumeFromProjectStart": 78000000000000,
+          "volume": 39000000000000,
+          "services": [
+            {
+              "service": "live",
+              "volume": 13000000000000,
+              "volumeFromProjectStart": 26000000000000,
+              "revenue": 16466,
+              "revenueFromProjectStart": 32932,
+              "rate": 1.266615385
+            },
+            {
+              "service": "music",
+              "volume": 26000000000000,
+              "volumeFromProjectStart": 52000000000000,
+              "revenue": 32934,
+              "revenueFromProjectStart": 65868,
+              "rate": 1.266615385
+            }
+          ]
+        },
+        {
+          "cp": "valve",
+          "totalRevenue": 49400.0,
+          "totalRevenueFromProjectStart": 98800.0,
+          "volumeFromProjectStart": 78000000000000,
+          "volume": 39000000000000,
+          "services": [
+            {
+              "service": "live",
+              "volume": 13000000000000,
+              "volumeFromProjectStart": 26000000000000,
+              "revenue": 16466,
+              "revenueFromProjectStart": 32932,
+              "rate": 1.266615385
+            },
+            {
+              "service": "music",
+              "volume": 26000000000000,
+              "volumeFromProjectStart": 52000000000000,
+              "revenue": 32934,
+              "revenueFromProjectStart": 65868,
+              "rate": 1.266615385
+            }
+          ]
+        },
+        {
+          "cp": "globo",
+          "totalRevenue": 49400.0,
+          "totalRevenueFromProjectStart": 98800.0,
+          "volumeFromProjectStart": 78000000000000,
+          "volume": 39000000000000,
+          "services": [
+            {
+              "service": "live",
+              "volume": 13000000000000,
+              "volumeFromProjectStart": 26000000000000,
+              "revenue": 16466,
+              "revenueFromProjectStart": 32932,
+              "rate": 1.266615385
+            },
+            {
+              "service": "music",
+              "volume": 26000000000000,
+              "volumeFromProjectStart": 52000000000000,
+              "revenue": 32934,
+              "revenueFromProjectStart": 65868,
+              "rate": 1.266615385
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
