@@ -83,6 +83,14 @@ async function generateApp(host: Tree, schema: Schema) {
       },
     };
 
+    // Add cosmos target
+    projectConfig.targets["cosmos"] = {
+      executor: "./tools/executors/cosmos:cosmos",
+      options: {
+        buildTarget: schema.name + ":build",
+      },
+    };
+
     // Serve target - Support HTTPS
     const serveTarget = projectConfig.targets["serve"];
     serveTarget["options"] = {
