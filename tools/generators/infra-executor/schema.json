@@ -1,0 +1,17 @@
+{
+  "cli": "nx",
+  "id": "infra-executor",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Executor name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Executor description"
+    }
+
+  },
+  "required": ["name"]
+}
