@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "cosmos": {
+      "implementation": "./index",
+      "schema": "./schema.json",
+      "description": "Runs cosmsos for app/lib"
+    }
+  }
+}
