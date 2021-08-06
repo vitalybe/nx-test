@@ -53,6 +53,14 @@ export default async function (host: Tree, options: MySchema) {
         command: `yarn run tsc -b ${tsConfigPath} --incremental`,
       },
     };
+
+    // Add cosmos target
+    projectConfig.targets["cosmos"] = {
+      executor: "./tools/executors/cosmos:cosmos",
+      options: {
+        buildTarget: schema.name + ":build",
+      },
+    };
   });
 
   updateJson(host, joinPathFragments(projectConfig.root, "tsconfig.json"), (json) => {
