@@ -17,14 +17,6 @@ export interface CosmosExecutorOptions {
 // }
 
 export default async function cosmosExecutor(options: CosmosExecutorOptions, context: ExecutorContext) {
-  shelljs.exec("pwd");
-  console.log("context");
-  console.log(context);
-  console.log("options");
-  console.log(options);
-  console.log("__filename");
-  console.log(__filename);
-
   if (!context.projectName) {
     throw new Error(`No project name in context`);
   }
@@ -34,15 +26,13 @@ export default async function cosmosExecutor(options: CosmosExecutorOptions, con
     throw new Error(`No source root was found`);
   }
 
+  const configDir = path.join(path.relative(context.root, __dirname), "config");
   const cosmosConfig = {
     globalImports: ["polyfills.ts"],
     watchDirs: ["./"],
-    rootDir: sourceRoot,
+    rootDir: path.join(offsetFromRoot(configDir), sourceRoot),
     webpack: {
-      overridePath: path.join(
-        offsetFromRoot(sourceRoot),
-        "tools/executors/cosmos/config/cosmos.temp-webpack.config.js"
-      ),
+      overridePath: path.join(offsetFromRoot(sourceRoot), "tools/executors/cosmos/config/cosmos.webpack.config.js"),
     },
   };
 

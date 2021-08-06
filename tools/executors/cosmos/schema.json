@@ -3,12 +3,5 @@
   "type": "object",
   "cli": "nx",
   "properties": {
-    "name": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string",
-      "description": "Executor description"
-    }
   }
 }
