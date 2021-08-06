@@ -1,0 +1,13 @@
+{
+  "buildTarget": "marketplace:build",
+  "hmr": true,
+  "host": "dev-localhost.cqloud.com",
+  "port": 8001,
+  "ssl": true,
+  "sslCert": "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com.pem",
+  "sslKey": "tools/scripts/validate/validations/certificates/dev-localhost.cqloud.com-key.pem",
+  "watch": true,
+  "liveReload": true,
+  "open": false,
+  "baseHref": "/"
+}

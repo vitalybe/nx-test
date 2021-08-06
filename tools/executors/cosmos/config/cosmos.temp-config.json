@@ -1,0 +1,12 @@
+{
+  "globalImports": [
+    "polyfills.ts"
+  ],
+  "watchDirs": [
+    "./"
+  ],
+  "rootDir": "apps/marketplace/src",
+  "webpack": {
+    "overridePath": "../../../cosmos.webpack.config.js"
+  }
+}
