@@ -36,17 +36,12 @@ export default async function cosmosExecutor(options: CosmosExecutorOptions, con
     },
   };
 
-  shelljs.ShellString(JSON.stringify(cosmosConfig, null, 2)).to(__dirname + "/config/temp/cosmos.temp-config.json");
+  const cosmosTempConfig = __dirname + "/config/temp/cosmos.temp-config.json";
+  shelljs.ShellString(JSON.stringify(cosmosConfig, null, 2)).to(cosmosTempConfig);
   shelljs.ShellString(JSON.stringify(context, null, 2)).to(__dirname + "/config/temp/executor-context.temp.json");
   shelljs.ShellString(JSON.stringify(options, null, 2)).to(__dirname + "/config/temp/executor-options.temp.json");
 
-  // console.info(`Executing "cosmosExecutor" with these options:`);
-  // console.info(`Options: ${JSON.stringify(options, null, 2)}`);
-  //
-  // // sample code below
-  // const { stdout, stderr } = await promisify(exec)(`echo ${options.textToEcho}`);
-  // console.log(stdout);
-  // console.error(stderr);
+  shelljs.exec(`yarn cosmos --config ${cosmosTempConfig}`);
 
   // return: success/failure
   return { success: true };
