@@ -9,6 +9,7 @@ import {
   generateFiles,
   offsetFromRoot,
   getProjects,
+  updateJson,
 } from "@nrwl/devkit";
 import { Linter } from "@nrwl/linter";
 import { libraryGenerator } from "@nrwl/react";
@@ -52,6 +53,12 @@ export default async function (host: Tree, options: MySchema) {
         command: `yarn run tsc -b ${tsConfigPath} --incremental`,
       },
     };
+  });
+
+  updateJson(host, joinPathFragments(projectConfig.root, "tsconfig.json"), (json) => {
+    // for older typescript version
+    json["compilerOptions"]["jsx"] = "react";
+    return json;
   });
 
   const contents = host.read("jest.preset.js").toString("utf8");

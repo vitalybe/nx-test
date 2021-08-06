@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const path = require("path");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const IgnoreNotFoundExportPlugin = require("ignore-not-found-export-webpack-plugin");
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
@@ -6,6 +7,8 @@ const IgnoreNotFoundExportPlugin = require("ignore-not-found-export-webpack-plug
 module.exports = (config, context) => {
   nrwlConfig(config);
 
+  // TODO: Not sure what it is for
+  // config.resolve.alias["@qwilt/common"] = path.join(context.buildOptions.root, "libs/common/src");
   config.resolve.alias["@qwilt/common"] = "/Users/vitalyb/git-temp/nx-test/libs/common/src";
   config.plugins.push(
     new webpack.ProvidePlugin({
@@ -21,7 +24,7 @@ module.exports = (config, context) => {
   };
 };
 
-// Copied from: /Users/vitalyb/git-temp/nx/packages/react/plugins/webpack.ts
+// Copied and adjusted from: /Users/vitalyb/git-temp/nx/packages/react/plugins/webpack.ts
 function nrwlConfig(config) {
   // TODO(jack): Remove in Nx 13
   // const { isWebpack5 } = require('@nrwl/web/src/webpack/entry');
