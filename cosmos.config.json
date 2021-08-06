@@ -1,8 +1,0 @@
-{
-  "globalImports": ["polyfills.ts"],
-  "watchDirs": ["./"],
-  "rootDir": "apps/marketplace/src",
-  "webpack": {
-    "overridePath": "../../../test.js"
-  }
-}

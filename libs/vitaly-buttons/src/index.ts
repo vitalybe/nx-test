@@ -1,1 +1,0 @@
-export { VitalyButton } from "./VitalyButton";

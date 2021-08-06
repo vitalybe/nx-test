@@ -10,7 +10,6 @@ import { Fonts } from "@qwilt/common/styling/fonts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons/faExclamationTriangle";
 import { autorun } from "mobx";
-import { VitalyButton } from "@qwilt/vitaly-buttons";
 
 const TopBarView = styled.div`
   display: flex;
@@ -105,7 +104,6 @@ export class TopBar extends React.Component<Props, State> {
 
     return (
       <TopBarView className={this.props.className}>
-        <VitalyButton />
         <TitlePart>
           <TopTitle>
             <SelectionType>last hour</SelectionType>
