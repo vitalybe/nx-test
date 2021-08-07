@@ -38,11 +38,16 @@ export default async function (host: Tree, options: MySchema) {
   const currentWorkspaceJson = getProjects(host);
   const projectConfig = currentWorkspaceJson.get(options.name);
 
-  generateFiles(host, joinPathFragments(__dirname, "./files"), projectConfig.root, {
+  generateFiles(host, joinPathFragments(__dirname, "./files/root"), projectConfig.root, {
     ...options,
     tmpl: "",
     offsetFromRoot: offsetFromRoot(projectConfig.root),
     name: options.name,
+  });
+
+  generateFiles(host, joinPathFragments(__dirname, "./files/src"), joinPathFragments(projectConfig.root, "src"), {
+    ...options,
+    tmpl: "",
   });
 
   GeneratorUtils.getAndUpdateProject(options.name, host, (projectConfig) => {
