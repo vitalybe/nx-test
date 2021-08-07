@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "<%= nameOnly %>": {
+      "implementation": "./index",
+      "schema": "./schema.json",
+      "description": "<%= description %>"
+    }
+  }
+}

@@ -38,11 +38,16 @@ export default async function (host: Tree, options: MySchema) {
   const currentWorkspaceJson = getProjects(host);
   const projectConfig = currentWorkspaceJson.get(options.name);
 
-  generateFiles(host, joinPathFragments(__dirname, "./files"), projectConfig.root, {
+  generateFiles(host, joinPathFragments(__dirname, "./files/root"), projectConfig.root, {
     ...options,
     tmpl: "",
     offsetFromRoot: offsetFromRoot(projectConfig.root),
     name: options.name,
+  });
+
+  generateFiles(host, joinPathFragments(__dirname, "./files/src"), joinPathFragments(projectConfig.root, "src"), {
+    ...options,
+    tmpl: "",
   });
 
   GeneratorUtils.getAndUpdateProject(options.name, host, (projectConfig) => {
@@ -51,6 +56,30 @@ export default async function (host: Tree, options: MySchema) {
       executor: "@nrwl/workspace:run-commands",
       options: {
         command: `yarn run tsc -b ${tsConfigPath} --incremental`,
+      },
+    };
+
+    // Add cosmos target
+    projectConfig.targets["cosmos"] = {
+      executor: "./tools/executors/cosmos:cosmos",
+      options: {
+        buildTarget: schema.name + ":z-internal-build",
+      },
+    };
+
+    projectConfig.targets["z-internal-build"] = {
+      executor: "@nrwl/web:build",
+      outputs: ["{options.outputPath}"],
+      options: {
+        outputPath: "dist/libs/common",
+        index: `${projectConfig.root}/src/index.html`,
+        main: `${projectConfig.root}/src/index.tsx`,
+        polyfills: `${projectConfig.root}/src/polyfills.ts`,
+        tsConfig: `${projectConfig.root}/tsconfig.lib.json`,
+        assets: [],
+        styles: [],
+        scripts: [],
+        webpackConfig: "tools/config/webpack/webpackCustomized.config.js",
       },
     };
   });
