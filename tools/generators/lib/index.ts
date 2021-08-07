@@ -63,7 +63,23 @@ export default async function (host: Tree, options: MySchema) {
     projectConfig.targets["cosmos"] = {
       executor: "./tools/executors/cosmos:cosmos",
       options: {
-        buildTarget: schema.name + ":build",
+        buildTarget: schema.name + ":z-internal-build",
+      },
+    };
+
+    projectConfig.targets["z-internal-build"] = {
+      executor: "@nrwl/web:build",
+      outputs: ["{options.outputPath}"],
+      options: {
+        outputPath: "dist/libs/common",
+        index: `${projectConfig.root}/src/index.html`,
+        main: `${projectConfig.root}/src/index.tsx`,
+        polyfills: `${projectConfig.root}/src/polyfills.ts`,
+        tsConfig: `${projectConfig.root}/tsconfig.lib.json`,
+        assets: [],
+        styles: [],
+        scripts: [],
+        webpackConfig: "tools/config/webpack/webpackCustomized.config.js",
       },
     };
   });
